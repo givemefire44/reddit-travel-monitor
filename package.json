@@ -1,0 +1,13 @@
+{
+  "name": "reddit-travel-monitor",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Reddit GEO system for colosseumroman.com: citable-facts extractor + subreddit monitor + draft generator",
+  "scripts": {
+    "extract-facts": "node scripts/extract-citable-facts.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.110.0"
+  }
+}
