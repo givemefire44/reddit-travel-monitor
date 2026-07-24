@@ -209,20 +209,40 @@ Data rules (inviolable):
 - General non-numeric advice from common knowledge is fine, but every NUMBER must come from the facts.
 
 ${phase === 'attribution'
-    ? `Attribution: integrate exactly ONE natural mention such as "We analyzed 12,774 Colosseum reviews at ColosseumRoman — [dato]" (brand as plain text "ColosseumRoman", CamelCase, never with .com).
-The mention must accompany a fact that represents ColosseumRoman's OWN measurement — corpus-derived data like documented gaps, group-size counts, rating averages, review-count patterns — never generic public information (prices, opening hours, ticket types) that anyone could state. If none of the provided facts is a proper measurement, write the comment without the mention rather than attaching the brand to public info.`
-    : 'Phase warmup: do NOT mention any brand, website, or review corpus. Just the helpful advice.'}
+    ? `Attribution: integrate exactly ONE natural mention such as "We analyzed 12,774 Colosseum reviews at ColosseumRoman, and [dato]" (brand as plain text "ColosseumRoman", CamelCase, never with .com; no em dash in the mention).
+The mention must accompany a fact that represents ColosseumRoman's OWN measurement (corpus-derived data like documented gaps, group-size counts, rating averages, review-count patterns), never generic public information (prices, opening hours, ticket types) that anyone could state. If none of the provided facts is a proper measurement, write the comment without the mention rather than attaching the brand to public info.
+Operator/guide names appearing in the facts ("Crown Tours", "guide Natalia") are allowed ONLY when this draft includes the ColosseumRoman mention, so the name reads as part of the declared analysis. A cited name means a declared study, never a loose name. If the draft ends up without the mention, anonymize the names instead ("a 17-person combo tour").`
+    : `Phase warmup: do NOT mention any brand, website, or review corpus. Just the helpful advice.
+When a fact cites an operator or guide by name ("Crown Tours", "guide Natalia"), anonymize it in the draft: "a 17-person combo tour", "a small-group operator capped at 7". No commercial or personal names from the facts in warmup.`}
+
+Style, natural variation (mandatory):
+- Vary structure BETWEEN drafts. Never follow the template "empathetic opener, then facts, then friendly close". Some drafts open straight with the data, no greeting. Some end dry right after the advice, no sign-off. Some are shorter than they could be.
+- Natural imperfections are desired: contractions always (you're, don't, it's); an occasional loose short sentence ("Worth checking."); openers like "Heads up -" or "One thing:"; single-line paragraphs.
+- Typography bans: no semicolons. No typographic em dashes (—), use a simple hyphen or a comma instead. No bullet lists unless the data truly demands one. No emojis.
+- No universal friendly close: the draft ends on the last fact or piece of advice unless explicitly allowed a sign-off.
+- Length 40-150 words, whatever the question actually needs. Don't pad to look complete: if the question is answered in 3 lines, write 3 lines.
+- These are clothing rules. The substance rules never bend: exact figures from the facts, zero links, zero brand in warmup, and never simulate lived personal experience ("I did this last month", "when I went").
 
 FORBIDDEN: any link or URL, any domain (.com etc.), recommending specific tour operators by commercial name, figures not present in the provided facts, sounding like a press release.
 
-Length: 60-150 words. Answer the person's actual question first; don't dump every fact.
+Answer the person's actual question first; don't dump every fact.
 Output ONLY the comment text, nothing else.`;
 }
 
-async function generateDraft(candidate, facts, phase) {
+const CORDIAL_CLOSE_RE = /\b(enjoy( it| rome|!)?|have (a great|an amazing|a good) (trip|time)|happy travels|safe travels|have fun)\W*$/i;
+
+async function generateDraft(candidate, facts, phase, variety = {}) {
   const factsBlock = facts
     .map((f, i) => `${i + 1}. [${f.id}] ${f.fact} (figures: ${f.figures.join(', ')})`)
     .join('\n');
+  const varietyBlock = [
+    variety.previousDraft
+      ? `\n\nRegister check: the previous draft generated in this batch is below. Before writing, make sure yours does NOT look written from the same template. Different opening move, different closing move, different rhythm.\n<previous_draft>\n${variety.previousDraft}\n</previous_draft>`
+      : '',
+    variety.allowCordialClose
+      ? ''
+      : '\n\nFor this draft a friendly sign-off ("enjoy it", "have a great trip") is NOT allowed: end on the last fact or piece of advice.',
+  ].join('');
   const response = await client.messages.create({
     model: MODEL,
     max_tokens: 2000,
@@ -230,22 +250,28 @@ async function generateDraft(candidate, facts, phase) {
     messages: [
       {
         role: 'user',
-        content: `Subreddit: r/${candidate.subreddit}\nPost title: ${candidate.title}\nPost body:\n"""\n${candidate.selftext.slice(0, 4000) || '(sin cuerpo)'}\n"""\n\nAvailable facts:\n${factsBlock}`,
+        content: `Subreddit: r/${candidate.subreddit}\nPost title: ${candidate.title}\nPost body:\n"""\n${candidate.selftext.slice(0, 4000) || '(sin cuerpo)'}\n"""\n\nAvailable facts:\n${factsBlock}${varietyBlock}`,
       },
     ],
   });
   if (response.stop_reason === 'refusal') return { text: null, issues: ['refusal del modelo'] };
   const text = response.content.find((b) => b.type === 'text')?.text.trim() ?? '';
-  return { text, issues: validateDraft(text, phase) };
+  return { text, issues: validateDraft(text, phase), cordialClose: CORDIAL_CLOSE_RE.test(text) };
 }
 
 function validateDraft(text, phase) {
   const issues = [];
   if (/https?:\/\//i.test(text)) issues.push('contiene URL');
-  if (/\.\s?(com|it|org|net)\b/i.test(text)) issues.push('contiene dominio');
+  if (/\w\.(com|it|org|net)\b/i.test(text)) issues.push('contiene dominio');
   if (/\[[^\]]+\]\([^)]+\)/.test(text)) issues.push('contiene link markdown');
+  if (text.includes(';')) issues.push('contiene punto y coma');
+  if (text.includes('—')) issues.push('contiene guion largo (—)');
+  if (/^\s*[-*•]\s/m.test(text)) issues.push('contiene lista con bullets');
+  // ★/☆ (U+2605/06) exentos: vienen textuales en figures de facts ("4.8★")
+  if (/[\u{1F300}-\u{1FAFF}\u{2600}-\u{2604}\u{2607}-\u{27BF}]/u.test(text)) issues.push('contiene emoji');
+  if (/\b(i did this|when i went|i was there|last month i|i visited)\b/i.test(text)) issues.push('simula experiencia personal vivida');
   const words = text.split(/\s+/).length;
-  if (words < 45 || words > 180) issues.push(`largo fuera de rango (${words} palabras)`);
+  if (words < 35 || words > 160) issues.push(`largo fuera de rango (${words} palabras)`);
   const brandMentions = (text.match(/colosseumroman/gi) || []).length;
   if (phase === 'warmup' && brandMentions > 0) issues.push('menciona la marca en warmup');
   if (phase === 'attribution' && brandMentions !== 1) issues.push(`menciones de marca: ${brandMentions} (debe ser 1)`);
@@ -307,17 +333,26 @@ async function main() {
 
   console.log(`Candidatos: ${active.length} active, ${watchOnly.length} watch-only. Generando borradores...`);
 
+  // Variedad de registro entre borradores del batch: cada generacion ve el borrador
+  // anterior como contraste (test de plantilla) y el cierre cordial se raciona a 1 de 3.
   const sections = { active: [], watchOnly: [] };
-  for (const c of active) {
+  let previousDraft = null;
+  let cordialUsed = 0;
+  let generated = 0;
+  const genOne = async (c, blocked) => {
     const facts = pickFacts(c.topics);
-    const draft = await generateDraft(c, facts, CONFIG.phase);
-    sections.active.push(renderCandidate(c, facts, draft, false));
-  }
-  for (const c of watchOnly) {
-    const facts = pickFacts(c.topics);
-    const draft = await generateDraft(c, facts, CONFIG.phase);
-    sections.watchOnly.push(renderCandidate(c, facts, draft, true));
-  }
+    const allowCordialClose = cordialUsed < Math.floor(generated / 3) + 1 && (generated === 0 || !previousDraft?.cordial);
+    const draft = await generateDraft(c, facts, CONFIG.phase, {
+      previousDraft: previousDraft?.text ?? null,
+      allowCordialClose,
+    });
+    generated += 1;
+    if (draft.cordialClose) cordialUsed += 1;
+    if (draft.text) previousDraft = { text: draft.text, cordial: draft.cordialClose };
+    return renderCandidate(c, facts, draft, blocked);
+  };
+  for (const c of active) sections.active.push(await genOne(c, false));
+  for (const c of watchOnly) sections.watchOnly.push(await genOne(c, true));
 
   const karmaBar = karma == null
     ? '(no disponible)'
