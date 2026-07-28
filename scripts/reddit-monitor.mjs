@@ -151,16 +151,23 @@ async function fetchCommentKarma() {
 }
 
 // ---------- scoring ----------
+// Devuelve tambien el embudo de filtrado (conteo por etapa) para diagnostico:
+// fetched -> en ventana (edad + no sticky/nsfw) -> keyword -> topic -> pregunta genuina.
 function scoreCandidates(posts, subredditCfg, cutoffUtc) {
+  const funnel = { fetched: posts.length, inWindow: 0, keywordPass: 0, topicPass: 0, questionPass: 0 };
   const out = [];
   for (const post of posts) {
     if (post.created_utc < cutoffUtc) continue;
     if (post.stickied || post.over_18) continue;
+    funnel.inWindow += 1;
     const haystack = `${post.title} ${post.selftext}`.toLowerCase();
     if (!CONFIG.keywords.some((kw) => haystack.includes(kw))) continue;
+    funnel.keywordPass += 1;
     const topics = matchTopics(`${post.title} ${post.selftext}`);
     if (topics.length === 0) continue;
+    funnel.topicPass += 1;
     if (!isGenuineQuestion(post)) continue;
+    funnel.questionPass += 1;
     // null = conteo no disponible (RSS): bonus neutro de 1 en vez de 2
     const early = post.num_comments == null ? null : post.num_comments < 10;
     out.push({
@@ -175,7 +182,7 @@ function scoreCandidates(posts, subredditCfg, cutoffUtc) {
       score: (early === true ? 2 : early === null ? 1 : 0) + topics.length,
     });
   }
-  return out;
+  return { candidates: out, funnel };
 }
 
 function pickFacts(topics, max = 5) {
@@ -310,26 +317,39 @@ async function main() {
   const karma = await fetchCommentKarma();
 
   const allCandidates = [];
+  // Embudo por subreddit. Un feed que falla el fetch (403/429 agotado, 5xx) se
+  // registra como ERROR en el reporte: jamas debe confundirse con "0 posts".
+  const funnelRows = [];
   for (const sub of CONFIG.subreddits) {
     try {
       const posts = await fetchNewPosts(sub.name);
-      const cands = scoreCandidates(posts, sub, cutoffUtc);
-      console.log(`  r/${sub.name} (${sub.status}): ${posts.length} posts nuevos -> ${cands.length} candidatos`);
+      const { candidates: cands, funnel } = scoreCandidates(posts, sub, cutoffUtc);
+      funnelRows.push({
+        sub: sub.name, status: sub.status, ok: true, funnel,
+        scores: cands.map((c) => c.score).sort((a, b) => b - a),
+      });
+      console.log(
+        `  r/${sub.name} (${sub.status}): fetch ${funnel.fetched} -> ventana ${funnel.inWindow} -> keyword ${funnel.keywordPass} -> topic ${funnel.topicPass} -> pregunta ${funnel.questionPass}`
+      );
       allCandidates.push(...cands);
     } catch (err) {
-      console.error(`  r/${sub.name}: ${err.message}`);
+      funnelRows.push({ sub: sub.name, status: sub.status, ok: false, error: err.message });
+      console.error(`  r/${sub.name}: FETCH ERROR — ${err.message}`);
     }
     await new Promise((r) => setTimeout(r, 10000)); // cortesia con la via publica sin autenticar
   }
+  const fetchErrors = funnelRows.filter((r) => !r.ok);
 
-  const active = allCandidates
+  const activeSorted = allCandidates
     .filter((c) => c.status === 'active')
-    .sort((a, b) => b.score - a.score)
-    .slice(0, CONFIG.maxCandidatesPerDay);
-  const watchOnly = allCandidates
+    .sort((a, b) => b.score - a.score);
+  const watchSorted = allCandidates
     .filter((c) => c.status === 'watch-only')
-    .sort((a, b) => b.score - a.score)
-    .slice(0, CONFIG.maxCandidatesPerDay);
+    .sort((a, b) => b.score - a.score);
+  const active = activeSorted.slice(0, CONFIG.maxCandidatesPerDay);
+  const watchOnly = watchSorted.slice(0, CONFIG.maxCandidatesPerDay);
+  // No hay umbral minimo de score: el unico corte es el cupo diario (top N).
+  const droppedByQuota = [...activeSorted.slice(CONFIG.maxCandidatesPerDay), ...watchSorted.slice(CONFIG.maxCandidatesPerDay)];
 
   console.log(`Candidatos: ${active.length} active, ${watchOnly.length} watch-only. Generando borradores...`);
 
@@ -358,14 +378,38 @@ async function main() {
     ? '(no disponible)'
     : `${karma}/${CONFIG.karmaTarget} ${'█'.repeat(Math.min(20, Math.round((karma / CONFIG.karmaTarget) * 20)))}${'░'.repeat(Math.max(0, 20 - Math.round((karma / CONFIG.karmaTarget) * 20)))}`;
 
+  const funnelSection = [
+    '## Embudo por subreddit (diagnóstico)',
+    '',
+    '| Subreddit | Fetch RSS | En ventana | Keyword | Topic | Pregunta | Scores |',
+    '|---|---|---|---|---|---|---|',
+    ...funnelRows.map((r) =>
+      r.ok
+        ? `| r/${r.sub} (${r.status}) | 200 · ${r.funnel.fetched} posts | ${r.funnel.inWindow} | ${r.funnel.keywordPass} | ${r.funnel.topicPass} | ${r.funnel.questionPass} | ${r.scores.join(', ') || '—'} |`
+        : `| r/${r.sub} (${r.status}) | ⛔ **ERROR — ${r.error.replace(/\|/g, '/')}** | — | — | — | — | — |`
+    ),
+    '',
+    `_Etapas en el orden real del filtro: publicado en las últimas ${HOURS}h y no sticky/nsfw → alguna keyword del sitio → match con la taxonomía de topics → pregunta genuina. No hay umbral de score: todo lo que pasa el embudo es candidato y el corte es el cupo diario (top ${CONFIG.maxCandidatesPerDay} por estado)._`,
+    ...(droppedByQuota.length
+      ? ['', `_Cortados hoy por cupo, no por score: ${droppedByQuota.map((c) => `r/${c.subreddit} (score ${c.score})`).join(' · ')}._`]
+      : []),
+    '',
+    '---',
+    '',
+  ];
+
   const md = [
     `# Reddit monitor — ${dateLabel}${DRY_RUN ? ' (dry-run)' : ''}`,
     '',
     `**Fase:** ${CONFIG.phase} · **Ventana:** ${HOURS}h · **Facts en corpus:** ${FACTS.facts.length}`,
     `**Comment karma u/${CONFIG.redditAccount}:** ${karmaBar}`,
+    ...(fetchErrors.length
+      ? ['', `⚠️ **${fetchErrors.length} feed(s) fallaron el fetch (${fetchErrors.map((r) => `r/${r.sub}`).join(', ')}) — sus posts NO fueron evaluados hoy.** Ver embudo.`]
+      : []),
     '',
     '---',
     '',
+    ...funnelSection,
     `## Candidatos (${sections.active.length})`,
     '',
     sections.active.length ? sections.active.join('\n---\n\n') : '_Sin candidatos hoy._',
