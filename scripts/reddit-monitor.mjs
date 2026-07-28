@@ -23,6 +23,9 @@ const USER_AGENT = `web:reddit-travel-monitor:v0.1 (by /u/${CONFIG.redditAccount
 const args = process.argv.slice(2);
 const HOURS = args.includes('--hours') ? Number(args[args.indexOf('--hours') + 1]) : CONFIG.windowHours;
 const DRY_RUN = args.includes('--dry-run');
+// --label X agrega -X al nombre del archivo. Lo usa el modo local (run-monitor.bat)
+// para no pisar ni ser pisado por el daily que commitea el bot de Actions.
+const LABEL = args.includes('--label') ? args[args.indexOf('--label') + 1] : null;
 const PHASE_OVERRIDE = args.includes('--phase') ? args[args.indexOf('--phase') + 1] : null;
 if (PHASE_OVERRIDE) CONFIG.phase = PHASE_OVERRIDE;
 
@@ -111,9 +114,12 @@ async function fetchWithBackoff(url, tries = 4) {
   for (let attempt = 1; ; attempt++) {
     const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
     if (res.ok) return res;
-    if (res.status === 429 && attempt < tries) {
-      const wait = Number(res.headers.get('retry-after')) || 30 * attempt;
-      console.log(`    429, reintento en ${wait}s...`);
+    // Reddit usa 429 y 403 alternados como soft-block por IP (verificado 28 jul:
+    // la misma IP pasa de 200 a 403 tras varias requests seguidas y se recupera
+    // con espera). Ambos se reintentan, con esperas largas de verdad.
+    if ((res.status === 429 || res.status === 403) && attempt < tries) {
+      const wait = Number(res.headers.get('retry-after')) || 45 * attempt;
+      console.log(`    ${res.status}, reintento en ${wait}s...`);
       await new Promise((r) => setTimeout(r, wait * 1000));
       continue;
     }
@@ -336,7 +342,7 @@ async function main() {
       funnelRows.push({ sub: sub.name, status: sub.status, ok: false, error: err.message });
       console.error(`  r/${sub.name}: FETCH ERROR — ${err.message}`);
     }
-    await new Promise((r) => setTimeout(r, 10000)); // cortesia con la via publica sin autenticar
+    await new Promise((r) => setTimeout(r, 20000)); // cortesia con la via publica sin autenticar (10s tripeaba el soft-block)
   }
   const fetchErrors = funnelRows.filter((r) => !r.ok);
 
@@ -433,7 +439,7 @@ async function main() {
   fs.mkdirSync(outDir, { recursive: true });
   const outPath = path.join(
     outDir,
-    `${DRY_RUN ? 'dry-run' : 'daily'}-${dateLabel}${PHASE_OVERRIDE ? `-${PHASE_OVERRIDE}` : ''}.md`
+    `${DRY_RUN ? 'dry-run' : 'daily'}-${dateLabel}${PHASE_OVERRIDE ? `-${PHASE_OVERRIDE}` : ''}${LABEL ? `-${LABEL}` : ''}.md`
   );
   fs.writeFileSync(outPath, md, 'utf8');
   console.log(`Output -> ${path.relative(ROOT, outPath)}`);
