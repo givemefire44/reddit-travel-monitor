@@ -12,15 +12,34 @@
     { "name": "ItalyTravel", "status": "watch-only", "minCommentKarma": 150 },
     { "name": "rome", "status": "watch-only", "minCommentKarma": null }
   ],
-  "keywords": [
-    "colosseum",
-    "colosseo",
-    "underground tour",
-    "arena floor",
-    "skip the line",
-    "rome tickets",
-    "rome tours",
-    "roman forum",
-    "palatine"
+  "sites": [
+    {
+      "key": "vatican",
+      "factsFile": "data/citable-facts-vatican.json",
+      "keywords": [
+        "vatican",
+        "sistine",
+        "st peter",
+        "st. peter",
+        "saint peter",
+        "papal audience",
+        "musei vaticani"
+      ]
+    },
+    {
+      "key": "colosseum",
+      "factsFile": "data/citable-facts.json",
+      "keywords": [
+        "colosseum",
+        "colosseo",
+        "underground tour",
+        "arena floor",
+        "skip the line",
+        "rome tickets",
+        "rome tours",
+        "roman forum",
+        "palatine"
+      ]
+    }
   ]
 }

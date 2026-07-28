@@ -1,12 +1,13 @@
 // PIEZA 1 - Extractor de facts citables (spec: docs/spec-sistema-reddit-geo.md)
-// Lee los articulos editoriales publicados de colosseumroman.com desde Sanity,
-// extrae afirmaciones con cifra dura via Claude (Sonnet) y produce data/citable-facts.json.
+// Lee los articulos editoriales publicados del sitio desde Sanity, extrae
+// afirmaciones con cifra dura via Claude (Sonnet) y produce el facts-file del sitio.
 // Regla inviolable #1: todo fact debe existir publicado con la cifra EXACTA -
 // el script verifica programaticamente frase y cifras contra el texto fuente
 // y descarta cualquier candidato no verificable.
 //
-// Uso:  node scripts/extract-citable-facts.mjs [--limit N] [--slug <slug>]
-// Re-ejecucion manual cuando se publiquen articulos nuevos (no cron).
+// Uso:  node scripts/extract-citable-facts.mjs [--site colosseum|vatican] [--limit N] [--slug <slug>]
+// Sin --site corre colosseum (compatibilidad con el uso historico).
+// Re-ejecucion manual cuando se publiquen articulos nuevos, o via extract-facts.yml.
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -15,37 +16,74 @@ import Anthropic from '@anthropic-ai/sdk';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 
+// ---------- sitios ----------
+// Cada sitio del portfolio con extractor activo. Mismas reglas para todos;
+// cambia el sujeto, la taxonomia de topics y el Sanity de origen.
+const SITES = {
+  colosseum: {
+    projectId: 'ptigxfcf',
+    siteUrl: 'https://colosseumroman.com',
+    corpusSize: '12,774', // reviews analizadas - claim fijo del sitio (spec, schema del JSON)
+    outFile: 'citable-facts.json',
+    subjectName: 'the Colosseum (Rome)',
+    subjectRule:
+      "the claim's subject must be the Colosseum, its tickets/tours/access, or visiting Rome. Exclude sentences whose subject is another monument or city (Louvre, Pompeii, Sagrada Familia, Milan, Paris, Barcelona...) even when they appear in a Colosseum article. A comparison qualifies only if the Colosseum side carries the figure and the claim stands as Colosseum advice.",
+    internalVoiceRe: /\b(the corpus|our corpus|our analysis|we analyzed|our data|colosseumroman)\b/i,
+    topics: [
+      'tickets', 'pricing', 'crowds', 'timing', 'underground', 'arena-floor',
+      'skip-the-line', 'guides', 'operators', 'logistics', 'kids-families',
+      'accessibility', 'weather', 'night-tours', 'forum-palatine',
+    ],
+    excludedSlugs: [
+      'about-us', 'contact-us', 'terms-conditions', 'cookies-privacy-policy',
+      'methodology', // fuente de contexto, pero sus numeros de proceso no son facts de viaje
+    ],
+  },
+  vatican: {
+    projectId: 'rep4o78g',
+    siteUrl: 'https://vaticantourguides.com',
+    corpusSize: null, // el sitio no publica un numero fijo de reviews analizadas
+    outFile: 'citable-facts-vatican.json',
+    subjectName: 'the Vatican (Vatican Museums, Sistine Chapel, St Peter\'s Basilica) in Rome',
+    subjectRule:
+      "the claim's subject must be the Vatican - the Vatican Museums, the Sistine Chapel, St Peter's Basilica or its dome, Vatican tickets/tours/access - or visiting Rome as it relates to the Vatican. Exclude sentences whose subject is another monument or city (Colosseum, Louvre, Pompeii...) even when they appear in a Vatican article. A comparison qualifies only if the Vatican side carries the figure and the claim stands as Vatican advice.",
+    internalVoiceRe: /\b(the corpus|our corpus|our analysis|we analyzed|our data|vaticantourguides|vatican tour guides)\b/i,
+    topics: [
+      'tickets', 'pricing', 'crowds', 'timing', 'sistine-chapel', 'st-peters',
+      'dome-climb', 'skip-the-line', 'guides', 'operators', 'logistics',
+      'kids-families', 'accessibility', 'weather', 'dress-code', 'free-sunday',
+      'museums-itinerary',
+    ],
+    excludedSlugs: ['about-us', 'contact', 'contact-us', 'terms-conditions', 'cookies-privacy-policy', 'methodology'],
+  },
+};
+
+// ---------- CLI ----------
+const args = process.argv.slice(2);
+const siteArg = args.includes('--site') ? args[args.indexOf('--site') + 1] : 'colosseum';
+const SITE = SITES[siteArg];
+if (!SITE) {
+  console.error(`Sitio "${siteArg}" desconocido. Opciones: ${Object.keys(SITES).join(', ')}`);
+  process.exit(1);
+}
+const limitArg = args.includes('--limit') ? Number(args[args.indexOf('--limit') + 1]) : null;
+const slugArg = args.includes('--slug') ? args[args.indexOf('--slug') + 1] : null;
+
 // ---------- env ----------
 loadEnv(path.join(ROOT, '.env'));
-const PROJECT_ID = process.env.SANITY_PROJECT_ID || 'ptigxfcf';
-const DATASET = process.env.SANITY_DATASET || 'production';
+const PROJECT_ID = SITE.projectId;
+const DATASET = 'production';
 const API_VERSION = process.env.SANITY_API_VERSION || '2023-05-03';
 if (!process.env.ANTHROPIC_API_KEY) {
   console.error('Falta ANTHROPIC_API_KEY (en .env o en el entorno).');
   process.exit(1);
 }
 
-const SITE_URL = 'https://colosseumroman.com';
-const CORPUS_SIZE = '12,774'; // reviews analizadas - claim fijo del sitio (spec, schema del JSON)
+const SITE_URL = SITE.siteUrl;
+const CORPUS_SIZE = SITE.corpusSize;
 const MODEL = 'claude-sonnet-5';
-
-// Taxonomia cerrada (spec)
-const TOPICS = [
-  'tickets', 'pricing', 'crowds', 'timing', 'underground', 'arena-floor',
-  'skip-the-line', 'guides', 'operators', 'logistics', 'kids-families',
-  'accessibility', 'weather', 'night-tours', 'forum-palatine',
-];
-
-// Paginas que existen para vender o navegar, no para informar una decision de viaje
-const EXCLUDED_SLUGS = [
-  'about-us', 'contact-us', 'terms-conditions', 'cookies-privacy-policy',
-  'methodology', // fuente de contexto, pero sus numeros de proceso no son facts de viaje
-];
-
-// ---------- CLI ----------
-const args = process.argv.slice(2);
-const limitArg = args.includes('--limit') ? Number(args[args.indexOf('--limit') + 1]) : null;
-const slugArg = args.includes('--slug') ? args[args.indexOf('--slug') + 1] : null;
+const TOPICS = SITE.topics;
+const EXCLUDED_SLUGS = SITE.excludedSlugs;
 
 // ---------- Sanity ----------
 async function fetchArticles() {
@@ -126,10 +164,16 @@ function normalize(s) {
 }
 
 // Red de seguridad en codigo para las reglas de voz interna y autonomia
-const INTERNAL_VOICE_RE = /\b(the corpus|our corpus|our analysis|we analyzed|our data|colosseumroman)\b/i;
+const INTERNAL_VOICE_RE = SITE.internalVoiceRe;
 const DANGLING_OPENER_RE = /^(another|also|plus|again|this|that|it also)\b[:,]?\s/i;
 
+// Conectores iniciales que la spec permite recortar (el fact sigue siendo
+// substring textual de la fuente tras el recorte)
+const TRIMMABLE_OPENER_RE = /^(but|and|so|however|yet|plus|also|still)[,:]?\s+/i;
+
 function verifyFact(fact, sourceNorm) {
+  fact.fact = fact.fact.trim().replace(TRIMMABLE_OPENER_RE, '');
+  if (!fact.figures || fact.figures.length === 0) return { ok: false, reason: 'sin cifra' };
   const factNorm = normalize(fact.fact).replace(/[.]+$/, '');
   if (INTERNAL_VOICE_RE.test(fact.fact)) return { ok: false, reason: 'voz editorial interna' };
   if (DANGLING_OPENER_RE.test(fact.fact.trim())) return { ok: false, reason: 'apertura no autonoma' };
@@ -169,7 +213,7 @@ const OUTPUT_SCHEMA = {
   additionalProperties: false,
 };
 
-const SYSTEM_PROMPT = `You extract citable facts from published travel articles about the Colosseum (Rome).
+const SYSTEM_PROMPT = `You extract citable facts from published travel articles about ${SITE.subjectName}.
 
 A citable fact is a sentence that:
 1. Is copied VERBATIM from the article text (character-for-character; you may only trim leading connectors like "But", "And", "So", "However," and trailing punctuation). Never paraphrase, never merge two sentences, never fix grammar.
@@ -179,7 +223,7 @@ A citable fact is a sentence that:
 Exclude: marketing copy, calls to action, references to the website itself or its review corpus, headings, questions, sentences whose only figure is a year in a historical narration with no travel decision value, sentences that need the previous sentence to be understood, and quoted traveler reviews or first-person anecdotes ("Our tour was booked for...", "my son couldn't...") - only the article's own editorial claims qualify.
 
 Three additional hard rules:
-1. SUBJECT: the claim's subject must be the Colosseum, its tickets/tours/access, or visiting Rome. Exclude sentences whose subject is another monument or city (Louvre, Pompeii, Sagrada Familia, Milan, Paris, Barcelona...) even when they appear in a Colosseum article. A comparison qualifies only if the Colosseum side carries the figure and the claim stands as Colosseum advice.
+1. SUBJECT: ${SITE.subjectRule}
 2. INTERNAL VOICE: exclude any sentence that mentions "the corpus", "our corpus", "our analysis", "we analyzed", "our data", the website, or otherwise refers to the publication's own research apparatus. The fact must read as a standalone claim about the visit, not about how the site knows it.
 3. AUTONOMY: exclude sentences that open with a dangling reference ("Another:", "Also,", "This means", "That gap", "It also...") or otherwise lean on the previous sentence. If the underlying figure is valuable, find the other sentence in the article where the same claim appears self-contained; if none exists, skip it.
 
@@ -272,7 +316,7 @@ async function main() {
     );
   }
 
-  const outPath = path.join(ROOT, 'data', 'citable-facts.json');
+  const outPath = path.join(ROOT, 'data', SITE.outFile);
 
   // Modo --slug: merge sobre el JSON existente (reemplaza solo los facts de ese slug)
   let finalFacts = allFacts;
@@ -298,7 +342,7 @@ async function main() {
   console.log(`\n${finalFacts.length} facts en total -> ${path.relative(ROOT, outPath)} (${allFacts.length} de esta corrida)`);
   console.log(`${rejected.length} candidatos descartados por verificacion.`);
   if (rejected.length) {
-    const rejPath = path.join(ROOT, 'data', 'rejected-candidates.json');
+    const rejPath = path.join(ROOT, 'data', siteArg === 'colosseum' ? 'rejected-candidates.json' : `rejected-candidates-${siteArg}.json`);
     fs.writeFileSync(rejPath, JSON.stringify(rejected, null, 2) + '\n', 'utf8');
     console.log(`Detalle de descartes -> ${path.relative(ROOT, rejPath)}`);
   }

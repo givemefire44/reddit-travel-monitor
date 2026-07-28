@@ -1,0 +1,55 @@
+name: Re-extract citable facts
+
+# Linea de higiene: los facts deben seguir siendo TEXTUALES contra el articulo
+# publicado. Los crons de precios de los sitios (lunes/jueves a la manana UTC)
+# son el momento en que el contenido puede moverse, asi que esta corrida va
+# encadenada detras: lunes/jueves 12:00 UTC, cuando aquellos ya terminaron.
+# Si un articulo cambio, el fact que ya no verifica textualmente se cae solo
+# (la verificacion programatica del extractor lo descarta) y el commit del bot
+# deja el corpus limpio para el monitor del dia siguiente (10:00 UTC).
+#
+# Sanity se consulta por la API publica (sin token); el unico secret es la
+# API key de Anthropic, la misma que ya usa el monitor.
+
+on:
+  schedule:
+    - cron: '0 12 * * 1,4'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Extract colosseum
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/extract-citable-facts.mjs --site colosseum
+
+      - name: Extract vatican
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/extract-citable-facts.mjs --site vatican
+
+      - name: Commit updated facts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "Corpus sin cambios."
+          else
+            git commit -m "Facts: re-extraccion post-cron de precios $(date -u +%F)"
+            git push
+          fi

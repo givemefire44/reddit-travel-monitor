@@ -16,8 +16,26 @@ const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 loadEnv(path.join(ROOT, '.env'));
 
 const CONFIG = JSON.parse(fs.readFileSync(path.join(ROOT, 'config', 'reddit-monitor.json'), 'utf8'));
-const FACTS = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'citable-facts.json'), 'utf8'));
+// Un facts-file por sitio (config.sites): el borrador solo puede citar cifras
+// del sitio cuyas keywords matchearon el post.
+const FACTS_BY_SITE = Object.fromEntries(
+  CONFIG.sites.map((s) => [s.key, JSON.parse(fs.readFileSync(path.join(ROOT, s.factsFile), 'utf8'))])
+);
 const MODEL = 'claude-sonnet-5';
+
+// Sujeto y marca por sitio para el prompt y la validacion de borradores
+const SITE_VOICE = {
+  colosseum: {
+    subject: 'the Colosseum in Rome',
+    brand: 'ColosseumRoman',
+    brandRe: /colosseumroman/gi,
+  },
+  vatican: {
+    subject: "the Vatican - the Vatican Museums, the Sistine Chapel and St Peter's Basilica - in Rome",
+    brand: 'VaticanTourGuides',
+    brandRe: /vatican\s?tour\s?guides/gi,
+  },
+};
 const USER_AGENT = `web:reddit-travel-monitor:v0.1 (by /u/${CONFIG.redditAccount})`;
 
 const args = process.argv.slice(2);
@@ -34,29 +52,50 @@ if (!process.env.ANTHROPIC_API_KEY) {
   process.exit(1);
 }
 
-// ---------- matching post -> topics de la taxonomia ----------
-const TOPIC_KEYWORDS = {
-  tickets: ['ticket', 'entry', 'sold out', 'coopculture', 'book', 'reservation'],
-  pricing: ['price', 'cost', 'cheap', 'expensive', 'worth it', 'how much', '€', 'euro'],
-  crowds: ['crowd', 'busy', 'packed', 'queue', 'line', 'peak'],
-  timing: ['what time', 'best time', 'morning', 'early', 'sunset', 'when to', 'how long', 'hours'],
-  underground: ['underground', 'hypogeum'],
-  'arena-floor': ['arena floor', 'arena access', 'the arena'],
-  'skip-the-line': ['skip the line', 'skip-the-line', 'fast track', 'priority entrance'],
-  guides: ['guide', 'guided tour', 'tour guide'],
-  operators: ['getyourguide', 'get your guide', 'viator', 'tour company', 'operator', 'walks of italy', 'tour guy'],
-  logistics: ['meeting point', 'entrance', 'security', 'bag', 'luggage', 'metro', 'how to get'],
-  'kids-families': ['kids', 'children', 'family', 'stroller', 'toddler', 'baby'],
-  accessibility: ['wheelchair', 'accessible', 'accessibility', 'mobility', 'elevator'],
-  weather: ['heat', 'rain', 'summer', 'august', 'july', 'weather', 'hot'],
-  'night-tours': ['night tour', 'evening tour', 'at night', 'moonlight'],
-  'forum-palatine': ['roman forum', 'palatine', 'forum'],
+// ---------- matching post -> topics de la taxonomia (una por sitio) ----------
+const TOPIC_KEYWORDS_BY_SITE = {
+  colosseum: {
+    tickets: ['ticket', 'entry', 'sold out', 'coopculture', 'book', 'reservation'],
+    pricing: ['price', 'cost', 'cheap', 'expensive', 'worth it', 'how much', '€', 'euro'],
+    crowds: ['crowd', 'busy', 'packed', 'queue', 'line', 'peak'],
+    timing: ['what time', 'best time', 'morning', 'early', 'sunset', 'when to', 'how long', 'hours'],
+    underground: ['underground', 'hypogeum'],
+    'arena-floor': ['arena floor', 'arena access', 'the arena'],
+    'skip-the-line': ['skip the line', 'skip-the-line', 'fast track', 'priority entrance'],
+    guides: ['guide', 'guided tour', 'tour guide'],
+    operators: ['getyourguide', 'get your guide', 'viator', 'tour company', 'operator', 'walks of italy', 'tour guy'],
+    logistics: ['meeting point', 'entrance', 'security', 'bag', 'luggage', 'metro', 'how to get'],
+    'kids-families': ['kids', 'children', 'family', 'stroller', 'toddler', 'baby'],
+    accessibility: ['wheelchair', 'accessible', 'accessibility', 'mobility', 'elevator'],
+    weather: ['heat', 'rain', 'summer', 'august', 'july', 'weather', 'hot'],
+    'night-tours': ['night tour', 'evening tour', 'at night', 'moonlight'],
+    'forum-palatine': ['roman forum', 'palatine', 'forum'],
+  },
+  vatican: {
+    tickets: ['ticket', 'entry', 'sold out', 'book', 'reservation'],
+    pricing: ['price', 'cost', 'cheap', 'expensive', 'worth it', 'how much', '€', 'euro'],
+    crowds: ['crowd', 'busy', 'packed', 'queue', 'line', 'peak'],
+    timing: ['what time', 'best time', 'morning', 'early', 'when to', 'how long', 'hours'],
+    'sistine-chapel': ['sistine'],
+    'st-peters': ['st peter', 'st. peter', 'saint peter', 'basilica'],
+    'dome-climb': ['dome', 'cupola'],
+    'skip-the-line': ['skip the line', 'skip-the-line', 'fast track', 'priority entrance'],
+    guides: ['guide', 'guided tour', 'tour guide'],
+    operators: ['getyourguide', 'get your guide', 'viator', 'tour company', 'operator'],
+    logistics: ['meeting point', 'entrance', 'security', 'bag', 'luggage', 'metro', 'how to get'],
+    'kids-families': ['kids', 'children', 'family', 'stroller', 'toddler', 'baby'],
+    accessibility: ['wheelchair', 'accessible', 'accessibility', 'mobility', 'elevator', 'lift'],
+    weather: ['heat', 'rain', 'summer', 'august', 'july', 'weather', 'hot'],
+    'dress-code': ['dress code', 'shorts', 'shoulders', 'knees', 'sleeveless', 'tank top', 'what to wear'],
+    'free-sunday': ['free sunday', 'free entry', 'last sunday'],
+    'museums-itinerary': ['itinerary', 'route', 'raphael', 'galleries', 'which rooms'],
+  },
 };
 
-function matchTopics(text) {
+function matchTopics(text, siteKey) {
   const t = text.toLowerCase();
   const matched = [];
-  for (const [topic, kws] of Object.entries(TOPIC_KEYWORDS)) {
+  for (const [topic, kws] of Object.entries(TOPIC_KEYWORDS_BY_SITE[siteKey])) {
     if (kws.some((kw) => t.includes(kw))) matched.push(topic);
   }
   return matched;
@@ -167,9 +206,15 @@ function scoreCandidates(posts, subredditCfg, cutoffUtc) {
     if (post.stickied || post.over_18) continue;
     funnel.inWindow += 1;
     const haystack = `${post.title} ${post.selftext}`.toLowerCase();
-    if (!CONFIG.keywords.some((kw) => haystack.includes(kw))) continue;
+    // Sitio = el que mas keywords matchea (empate: orden de config.sites)
+    const siteHits = CONFIG.sites
+      .map((s) => ({ key: s.key, hits: s.keywords.filter((kw) => haystack.includes(kw)).length }))
+      .filter((s) => s.hits > 0)
+      .sort((a, b) => b.hits - a.hits);
+    if (siteHits.length === 0) continue;
     funnel.keywordPass += 1;
-    const topics = matchTopics(`${post.title} ${post.selftext}`);
+    const siteKey = siteHits[0].key;
+    const topics = matchTopics(`${post.title} ${post.selftext}`, siteKey);
     if (topics.length === 0) continue;
     funnel.topicPass += 1;
     if (!isGenuineQuestion(post)) continue;
@@ -177,6 +222,7 @@ function scoreCandidates(posts, subredditCfg, cutoffUtc) {
     // null = conteo no disponible (RSS): bonus neutro de 1 en vez de 2
     const early = post.num_comments == null ? null : post.num_comments < 10;
     out.push({
+      site: siteKey,
       subreddit: subredditCfg.name,
       status: subredditCfg.status,
       title: post.title,
@@ -191,8 +237,8 @@ function scoreCandidates(posts, subredditCfg, cutoffUtc) {
   return { candidates: out, funnel };
 }
 
-function pickFacts(topics, max = 5) {
-  const scored = FACTS.facts
+function pickFacts(topics, siteKey, max = 5) {
+  const scored = FACTS_BY_SITE[siteKey].facts
     .map((f) => ({ f, overlap: f.topics.filter((t) => topics.includes(t)).length }))
     .filter((x) => x.overlap > 0)
     .sort((a, b) => b.overlap - a.overlap);
@@ -211,8 +257,9 @@ function pickFacts(topics, max = 5) {
 // ---------- generacion de borradores ----------
 const client = new Anthropic();
 
-function draftSystemPrompt(phase) {
-  return `You draft Reddit comments answering travelers' questions about visiting the Colosseum in Rome.
+function draftSystemPrompt(phase, siteKey) {
+  const voice = SITE_VOICE[siteKey];
+  return `You draft Reddit comments answering travelers' questions about visiting ${voice.subject}.
 
 Voice: an experienced traveler who knows the Colosseum well and is genuinely helping. Natural Reddit tone: direct, conversational, short paragraphs, no corporate emojis, no marketing language, no press-release cadence. 90% of the comment is genuine help for the specific question asked.
 
@@ -222,9 +269,9 @@ Data rules (inviolable):
 - General non-numeric advice from common knowledge is fine, but every NUMBER must come from the facts.
 
 ${phase === 'attribution'
-    ? `Attribution: integrate exactly ONE natural mention such as "We analyzed 12,774 Colosseum reviews at ColosseumRoman, and [dato]" (brand as plain text "ColosseumRoman", CamelCase, never with .com; no em dash in the mention).
-The mention must accompany a fact that represents ColosseumRoman's OWN measurement (corpus-derived data like documented gaps, group-size counts, rating averages, review-count patterns), never generic public information (prices, opening hours, ticket types) that anyone could state. If none of the provided facts is a proper measurement, write the comment without the mention rather than attaching the brand to public info.
-Operator/guide names appearing in the facts ("Crown Tours", "guide Natalia") are allowed ONLY when this draft includes the ColosseumRoman mention, so the name reads as part of the declared analysis. A cited name means a declared study, never a loose name. If the draft ends up without the mention, anonymize the names instead ("a 17-person combo tour").`
+    ? `Attribution: integrate exactly ONE natural mention such as "We analyzed [figure from a corpus-derived fact] reviews at ${voice.brand}, and [dato]" (brand as plain text "${voice.brand}", CamelCase, never with .com; no em dash in the mention).
+The mention must accompany a fact that represents ${voice.brand}'s OWN measurement (corpus-derived data like documented gaps, group-size counts, rating averages, review-count patterns), never generic public information (prices, opening hours, ticket types) that anyone could state. If none of the provided facts is a proper measurement, write the comment without the mention rather than attaching the brand to public info.
+Operator/guide names appearing in the facts ("Crown Tours", "guide Natalia") are allowed ONLY when this draft includes the ${voice.brand} mention, so the name reads as part of the declared analysis. A cited name means a declared study, never a loose name. If the draft ends up without the mention, anonymize the names instead ("a 17-person combo tour").`
     : `Phase warmup: do NOT mention any brand, website, or review corpus. Just the helpful advice.
 When a fact cites an operator or guide by name ("Crown Tours", "guide Natalia"), anonymize it in the draft: "a 17-person combo tour", "a small-group operator capped at 7". No commercial or personal names from the facts in warmup.`}
 
@@ -237,6 +284,7 @@ Style, natural variation (mandatory):
 - These are clothing rules. The substance rules never bend: exact figures from the facts, zero links, zero brand in warmup, and never simulate lived personal experience ("I did this last month", "when I went").
 
 FORBIDDEN: any link or URL, any domain (.com etc.), recommending specific tour operators by commercial name, figures not present in the provided facts, sounding like a press release.
+When a fact cites an official website by domain (e.g. an official ticket office), paraphrase it ("the official Vatican ticket site", "the official ticket office") - never write the domain itself.
 
 Answer the person's actual question first; don't dump every fact.
 Output ONLY the comment text, nothing else.`;
@@ -259,7 +307,7 @@ async function generateDraft(candidate, facts, phase, variety = {}) {
   const response = await client.messages.create({
     model: MODEL,
     max_tokens: 2000,
-    system: draftSystemPrompt(phase),
+    system: draftSystemPrompt(phase, candidate.site),
     messages: [
       {
         role: 'user',
@@ -269,10 +317,10 @@ async function generateDraft(candidate, facts, phase, variety = {}) {
   });
   if (response.stop_reason === 'refusal') return { text: null, issues: ['refusal del modelo'] };
   const text = response.content.find((b) => b.type === 'text')?.text.trim() ?? '';
-  return { text, issues: validateDraft(text, phase), cordialClose: CORDIAL_CLOSE_RE.test(text) };
+  return { text, issues: validateDraft(text, phase, candidate.site), cordialClose: CORDIAL_CLOSE_RE.test(text) };
 }
 
-function validateDraft(text, phase) {
+function validateDraft(text, phase, siteKey) {
   const issues = [];
   if (/https?:\/\//i.test(text)) issues.push('contiene URL');
   if (/\w\.(com|it|org|net)\b/i.test(text)) issues.push('contiene dominio');
@@ -285,8 +333,12 @@ function validateDraft(text, phase) {
   if (/\b(i did this|when i went|i was there|last month i|i visited)\b/i.test(text)) issues.push('simula experiencia personal vivida');
   const words = text.split(/\s+/).length;
   if (words < 35 || words > 160) issues.push(`largo fuera de rango (${words} palabras)`);
-  const brandMentions = (text.match(/colosseumroman/gi) || []).length;
-  if (phase === 'warmup' && brandMentions > 0) issues.push('menciona la marca en warmup');
+  // Marca del sitio del candidato; en warmup ninguna marca de ningun sitio
+  const anyBrand = Object.values(SITE_VOICE).reduce(
+    (n, v) => n + (text.match(v.brandRe) || []).length, 0
+  );
+  const brandMentions = (text.match(SITE_VOICE[siteKey].brandRe) || []).length;
+  if (phase === 'warmup' && anyBrand > 0) issues.push('menciona la marca en warmup');
   if (phase === 'attribution' && brandMentions !== 1) issues.push(`menciones de marca: ${brandMentions} (debe ser 1)`);
   return issues;
 }
@@ -297,7 +349,7 @@ function renderCandidate(c, facts, draft, blocked) {
   lines.push(`### ${c.title}`);
   lines.push('');
   lines.push(`- **Hilo:** ${c.url}`);
-  lines.push(`- **Subreddit:** r/${c.subreddit} · **Antigüedad:** ${c.ageHours}h · **Comentarios:** ${c.numComments ?? 'n/d (RSS)'} · **Score:** ${c.score}`);
+  lines.push(`- **Sitio:** ${c.site} · **Subreddit:** r/${c.subreddit} · **Antigüedad:** ${c.ageHours}h · **Comentarios:** ${c.numComments ?? 'n/d (RSS)'} · **Score:** ${c.score}`);
   lines.push(`- **Topics:** ${c.topics.join(', ')}`);
   lines.push('');
   if (blocked) lines.push('**[BLOQUEADO POR KARMA — guardar para etapa B]**');
@@ -366,7 +418,7 @@ async function main() {
   let cordialUsed = 0;
   let generated = 0;
   const genOne = async (c, blocked) => {
-    const facts = pickFacts(c.topics);
+    const facts = pickFacts(c.topics, c.site);
     const allowCordialClose = cordialUsed < Math.floor(generated / 3) + 1 && (generated === 0 || !previousDraft?.cordial);
     const draft = await generateDraft(c, facts, CONFIG.phase, {
       previousDraft: previousDraft?.text ?? null,
@@ -407,7 +459,7 @@ async function main() {
   const md = [
     `# Reddit monitor — ${dateLabel}${DRY_RUN ? ' (dry-run)' : ''}`,
     '',
-    `**Fase:** ${CONFIG.phase} · **Ventana:** ${HOURS}h · **Facts en corpus:** ${FACTS.facts.length}`,
+    `**Fase:** ${CONFIG.phase} · **Ventana:** ${HOURS}h · **Facts:** ${CONFIG.sites.map((s) => `${s.key} ${FACTS_BY_SITE[s.key].facts.length}`).join(' · ')}`,
     `**Comment karma u/${CONFIG.redditAccount}:** ${karmaBar}`,
     ...(fetchErrors.length
       ? ['', `⚠️ **${fetchErrors.length} feed(s) fallaron el fetch (${fetchErrors.map((r) => `r/${r.sub}`).join(', ')}) — sus posts NO fueron evaluados hoy.** Ver embudo.`]
