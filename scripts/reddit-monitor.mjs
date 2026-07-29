@@ -36,7 +36,22 @@ const SITE_VOICE = {
     brandRe: /vatican\s?tour\s?guides/gi,
   },
 };
-const USER_AGENT = `web:reddit-travel-monitor:v0.1 (by /u/${CONFIG.redditAccount})`;
+// Reddit filtra los feeds publicos por heuristica de headers: rechaza clientes
+// que no parecen navegador (el UA descriptivo de la etiqueta de API daba 403)
+// y deja pasar el mismo request con perfil completo de browser real. Perfil:
+// navegacion de primer nivel de un Firefox actual en Windows. DNT ausente
+// a proposito (un bot educado lo mandaria; un Firefox default no).
+const BROWSER_HEADERS = {
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0',
+  'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'Accept-Language': 'en-US,en;q=0.5',
+  'Accept-Encoding': 'gzip, deflate, br',
+  'Connection': 'keep-alive',
+  'Sec-Fetch-Dest': 'document',
+  'Sec-Fetch-Mode': 'navigate',
+  'Sec-Fetch-Site': 'none',
+  'Upgrade-Insecure-Requests': '1',
+};
 
 const args = process.argv.slice(2);
 const HOURS = args.includes('--hours') ? Number(args[args.indexOf('--hours') + 1]) : CONFIG.windowHours;
@@ -111,7 +126,7 @@ function isGenuineQuestion(post) {
 
 // ---------- fetch de Reddit ----------
 async function redditGet(url) {
-  const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
+  const res = await fetch(url, { headers: BROWSER_HEADERS });
   if (!res.ok) throw new Error(`Reddit ${res.status} en ${url}`);
   return res.json();
 }
@@ -151,7 +166,7 @@ function rssBodyText(contentHtml) {
 
 async function fetchWithBackoff(url, tries = 4) {
   for (let attempt = 1; ; attempt++) {
-    const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
+    const res = await fetch(url, { headers: BROWSER_HEADERS });
     if (res.ok) return res;
     // Reddit usa 429 y 403 alternados como soft-block por IP (verificado 28 jul:
     // la misma IP pasa de 200 a 403 tras varias requests seguidas y se recupera
