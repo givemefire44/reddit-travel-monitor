@@ -1,0 +1,39 @@
+# Reddit monitor — 2026-07-29
+
+**Fase:** warmup · **Ventana:** 24h · **Facts:** vatican 77 · colosseum 946
+**Comment karma u/RomanColosseumExpert:** (no disponible)
+
+⚠️ **5 feed(s) fallaron el fetch (r/travel, r/solotravel, r/Eurotrip, r/ItalyTravel, r/rome) — sus posts NO fueron evaluados hoy.** Ver embudo.
+
+---
+
+## Embudo por subreddit (diagnóstico)
+
+| Subreddit | Fetch RSS | En ventana | Keyword | Topic | Pregunta | Scores |
+|---|---|---|---|---|---|---|
+| r/travel (active) | ⛔ **ERROR — Reddit 403 en https://www.reddit.com/r/travel/new.rss?limit=100** | — | — | — | — | — |
+| r/solotravel (active) | ⛔ **ERROR — Reddit 403 en https://www.reddit.com/r/solotravel/new.rss?limit=100** | — | — | — | — | — |
+| r/Eurotrip (active) | ⛔ **ERROR — Reddit 403 en https://www.reddit.com/r/Eurotrip/new.rss?limit=100** | — | — | — | — | — |
+| r/ItalyTravel (watch-only) | ⛔ **ERROR — Reddit 403 en https://www.reddit.com/r/ItalyTravel/new.rss?limit=100** | — | — | — | — | — |
+| r/rome (watch-only) | ⛔ **ERROR — Reddit 403 en https://www.reddit.com/r/rome/new.rss?limit=100** | — | — | — | — | — |
+
+_Etapas en el orden real del filtro: publicado en las últimas 24h y no sticky/nsfw → alguna keyword del sitio → match con la taxonomía de topics → pregunta genuina. No hay umbral de score: todo lo que pasa el embudo es candidato y el corte es el cupo diario (top 3 por estado)._
+
+---
+
+## Candidatos (0)
+
+_Sin candidatos hoy._
+
+## Watch-only — registro de oportunidades futuras (0)
+
+_Sin candidatos watch-only hoy._
+
+---
+
+## Rutina (recordatorio)
+
+1. Elegir 0-2 borradores — no hay obligación diaria; calidad sobre cadencia.
+2. Leer el borrador contra la pregunta real del hilo. Ajustar libremente — la voz final es tuya.
+3. Pegar como comentario con u/RomanColosseumExpert. Jamás postear los 3 el mismo día en el mismo subreddit.
+4. Cadencia objetivo: 2-3 comentarios/semana. Warmup: mínimo 3 semanas y ~50 karma antes de pasar a attribution.
