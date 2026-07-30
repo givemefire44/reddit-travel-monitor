@@ -1,28 +1,53 @@
 [
   {
-    "slug": "bathroom-breaks-colosseum-underground-combo-tours",
-    "fact": "That 15–20 minute walk is your pre-tour buffer.",
-    "reason": "apertura no autonoma"
+    "slug": "7-mistakes-people-make-when-booking-colosseum-tickets",
+    "fact": "The name on each ticket must exactly match the holder's passport or national ID, and staff check at the entrance.",
+    "reason": "sin cifra"
   },
   {
-    "slug": "bathroom-breaks-colosseum-underground-combo-tours",
-    "fact": "That 1h45m gap is unplanned dead time for the visitor — but it is also a usable bathroom-and-water window if you know it exists.",
-    "reason": "apertura no autonoma"
+    "slug": "7-mistakes-people-make-when-booking-colosseum-tickets",
+    "fact": "Tickets booked with wrong names, nicknames, or abbreviations cannot be corrected on the day and entry will be refused.",
+    "reason": "sin cifra"
   },
   {
-    "slug": "best-colosseum-tour-under-eur50",
-    "fact": "A guide turns piles of stone into stories — how 50,000 spectators were seated by social class, how the hypogeup's 80 elevators launched animals through trapdoors, why the Forum was the beating heart of an empire.",
-    "reason": "frase no textual"
+    "slug": "colosseum-opening-hours-and-best-time-to-visit-in-2026",
+    "fact": "The Roman Forum and Palatine Hill together usually take between 1.5 and 2.5 hours, depending on how deeply you explore the ruins and viewpoints.",
+    "reason": "cifra \"1.5 to 2.5 hours\" no encontrada"
   },
   {
-    "slug": "colosseum-day-of-logistics-guide",
-    "fact": "This scenario is most likely in 20+ person groups, especially when crossing the security/metal-detector checkpoint where the group naturally fragments.",
-    "reason": "apertura no autonoma"
+    "slug": "colosseum-ticket-vs-tour-pricing-breakdown",
+    "fact": "The €150–€180 guided combo adds skip-the-line, 2.5 hours of expert narration, headsets, and security assistance.",
+    "reason": "cifra \"150–180\" no encontrada"
   },
   {
-    "slug": "colosseum-official-website-sells-out-before-listed",
-    "fact": "That is the same base access operators wrap into €60–€90 group tours.",
-    "reason": "apertura no autonoma"
+    "slug": "colosseum-ticket-vs-tour-pricing-breakdown",
+    "fact": "The savings versus a reputable GYG-listed operator are typically €20–€40 per person.",
+    "reason": "cifra \"20–40\" no encontrada"
+  },
+  {
+    "slug": "colosseum-ticket-vs-tour-pricing-breakdown",
+    "fact": "The €20–€40 savings versus a GYG-listed operator comes with documented risks: groups of 20+ with no microphones, unsigned meeting points, and £180 lost for arriving 10 minutes late.",
+    "reason": "cifra \"20–40\" no encontrada"
+  },
+  {
+    "slug": "colosseum-ticket-vs-tour-pricing-breakdown",
+    "fact": "The top tier — small-group tours capped at 7 people with arena floor and/or underground — runs €30–€50 above the standard guided combo.",
+    "reason": "cifra \"30–50\" no encontrada"
+  },
+  {
+    "slug": "colosseum-ticket-vs-tour-pricing-breakdown",
+    "fact": "The GYG-listed guided combo (€55–€130, avg rating 4.94) is the sweet spot: skip-the-line, 2.5h narration, headsets, security assistance.",
+    "reason": "cifra \"55–130\" no encontrada"
+  },
+  {
+    "slug": "colosseum-ticket-vs-tour-pricing-breakdown",
+    "fact": "Upgrade to small-group (max 7, €130–€180+) if traveling with kids or wanting underground access.",
+    "reason": "cifra \"130–180+\" no encontrada"
+  },
+  {
+    "slug": "colosseum-ticket-vs-tour-pricing-breakdown",
+    "fact": "Avoid discount aggregators (Trustpilot 1.63 avg) — the €20–€40 savings are not worth the risk.",
+    "reason": "cifra \"20–40\" no encontrada"
   },
   {
     "slug": "colosseum-tours-and-tickets-how-to-book-and-fix-common-problems",
@@ -31,7 +56,22 @@
   },
   {
     "slug": "commodus-passage-colosseum-secret-tunnel-2025",
-    "fact": "This was funded by the EU's NextGenerationEU program.",
-    "reason": "apertura no autonoma"
+    "fact": "Yes! The restoration included a retractable staircase and accessible pathways specifically to accommodate visitors with mobility challenges.",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "palatine-hill",
+    "fact": "Yes, most combined Colosseum tickets include entry to both the Roman Forum and Palatine Hill at no extra cost",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "how-to-get-to-the-colosseum-from-termini-vatican-and-trastevere",
+    "fact": "If you prefer a surface route, you can take bus 75 from the Termini area towards the Colosseum and get off at stops near Colosseo / Celio Vibenna",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "private-colosseum-tour",
+    "fact": "Most private tours include the main Colosseum levels plus skip-the-line entry, and many offer exclusive access to the arena floor, the underground hypogeum, Palatine Hill, and the Roman Forum as part of a single guided experience.",
+    "reason": "sin cifra"
   }
 ]
