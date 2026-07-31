@@ -56,6 +56,23 @@ const SITES = {
     ],
     excludedSlugs: ['about-us', 'contact', 'contact-us', 'terms-conditions', 'cookies-privacy-policy', 'methodology'],
   },
+  trastevere: {
+    projectId: '3xsreznf',
+    siteUrl: 'https://trasteverefoodtour.com',
+    corpusSize: null, // el sitio no publica un numero fijo de reviews analizadas
+    outFile: 'citable-facts-trastevere.json',
+    subjectName: 'Trastevere food tours and eating in Rome',
+    subjectRule:
+      "the claim's subject must be Trastevere, Rome food tours, or eating/food in Rome (dishes, markets, food neighborhoods, dietary options on tours). Exclude sentences whose subject is another monument or city (Colosseum, Vatican, Florence, Paris...) even when they appear in a Trastevere article. A comparison qualifies only if the Trastevere/food side carries the figure and the claim stands as Rome food advice.",
+    internalVoiceRe: /\b(the corpus|our corpus|our analysis|we analyzed|our data|trasteverefoodtour)\b/i,
+    topics: [
+      'pricing', 'value', 'timing', 'booking', 'guides', 'operators',
+      'language', 'dietary', 'dishes', 'street-food', 'markets',
+      'wine-drinks', 'neighborhoods', 'kids-families', 'group-size',
+      'format-duration', 'logistics',
+    ],
+    excludedSlugs: ['about', 'about-us', 'contact', 'contact-us', 'terms-conditions', 'cookies-privacy-policy', 'methodology'],
+  },
 };
 
 // ---------- CLI ----------

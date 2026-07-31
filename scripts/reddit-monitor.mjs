@@ -35,6 +35,13 @@ const SITE_VOICE = {
     brand: 'VaticanTourGuides',
     brandRe: /vatican\s?tour\s?guides/gi,
   },
+  trastevere: {
+    subject: 'Trastevere food tours and eating in Rome',
+    brand: 'TrastevereFoodTour',
+    // Sin variante con espacios: "a Trastevere food tour" es frase generica
+    // de cualquier borrador legitimo, no una mencion de marca
+    brandRe: /trasteverefoodtour/gi,
+  },
 };
 // Reddit filtra los feeds publicos por heuristica de headers: rechaza clientes
 // que no parecen navegador (el UA descriptivo de la etiqueta de API daba 403)
@@ -104,6 +111,25 @@ const TOPIC_KEYWORDS_BY_SITE = {
     'dress-code': ['dress code', 'shorts', 'shoulders', 'knees', 'sleeveless', 'tank top', 'what to wear'],
     'free-sunday': ['free sunday', 'free entry', 'last sunday'],
     'museums-itinerary': ['itinerary', 'route', 'raphael', 'galleries', 'which rooms'],
+  },
+  trastevere: {
+    pricing: ['price', 'cost', 'cheap', 'expensive', 'worth it', 'how much', '€', 'euro'],
+    value: ['worth it', 'overrated', 'tourist trap', 'authentic'],
+    timing: ['what time', 'best time', 'evening', 'night', 'sunset', 'twilight', 'lunch', 'dinner', 'when to'],
+    booking: ['book', 'booking', 'reserve', 'reservation', 'sold out', 'cancel'],
+    guides: ['guide', 'guided tour', 'tour guide'],
+    operators: ['getyourguide', 'get your guide', 'viator', 'airbnb experience', 'tour company', 'operator'],
+    language: ['english', 'in spanish', 'language'],
+    dietary: ['vegetarian', 'vegan', 'gluten', 'celiac', 'coeliac', 'allerg', 'kosher', 'dietary'],
+    dishes: ['suppli', 'supplì', 'trapizzino', 'carbonara', 'cacio e pepe', 'amatriciana', 'gricia', 'porchetta', 'pizza al taglio', 'gelato', 'maritozzo', 'artichoke', 'pasta'],
+    'street-food': ['street food', 'snack', 'al taglio', 'quick bite'],
+    markets: ['market', 'mercato', 'testaccio market'],
+    'wine-drinks': ['wine', 'aperitivo', 'drinks', 'cocktail'],
+    neighborhoods: ['trastevere', 'jewish ghetto', 'campo de', 'testaccio', 'monti', 'neighborhood', 'which area'],
+    'kids-families': ['kids', 'children', 'family', 'stroller', 'toddler', 'baby', 'picky eater'],
+    'group-size': ['group size', 'small group', 'private', 'how many people'],
+    'format-duration': ['how long', 'duration', 'hours', 'how many stops', 'walking'],
+    logistics: ['meeting point', 'where does it start', 'metro', 'how to get', 'accessib', 'wheelchair'],
   },
 };
 

@@ -6,13 +6,58 @@
   "karmaTarget": 150,
   "fetchMode": "public-rss",
   "subreddits": [
-    { "name": "travel", "status": "active", "minCommentKarma": 0 },
-    { "name": "solotravel", "status": "active", "minCommentKarma": 0 },
-    { "name": "Eurotrip", "status": "active", "minCommentKarma": 0 },
-    { "name": "ItalyTravel", "status": "watch-only", "minCommentKarma": 150 },
-    { "name": "rome", "status": "watch-only", "minCommentKarma": null }
+    {
+      "name": "travel",
+      "status": "active",
+      "minCommentKarma": 0
+    },
+    {
+      "name": "solotravel",
+      "status": "active",
+      "minCommentKarma": 0
+    },
+    {
+      "name": "Eurotrip",
+      "status": "active",
+      "minCommentKarma": 0
+    },
+    {
+      "name": "ItalyTravel",
+      "status": "watch-only",
+      "minCommentKarma": 150
+    },
+    {
+      "name": "rome",
+      "status": "watch-only",
+      "minCommentKarma": null
+    }
   ],
   "sites": [
+    {
+      "key": "trastevere",
+      "factsFile": "data/citable-facts-trastevere.json",
+      "keywords": [
+        "trastevere",
+        "rome food tour",
+        "food tour rome",
+        "food tour in rome",
+        "where to eat rome",
+        "where to eat in rome",
+        "eating in rome",
+        "restaurants in rome",
+        "rome restaurants",
+        "roman street food",
+        "suppli",
+        "supplì",
+        "trapizzino",
+        "cacio e pepe",
+        "amatriciana",
+        "gricia",
+        "testaccio",
+        "campo de fiori",
+        "campo de' fiori"
+      ]
+    },
     {
       "key": "vatican",
       "factsFile": "data/citable-facts-vatican.json",
