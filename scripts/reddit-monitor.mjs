@@ -68,6 +68,10 @@ const DRY_RUN = args.includes('--dry-run');
 const LABEL = args.includes('--label') ? args[args.indexOf('--label') + 1] : null;
 const PHASE_OVERRIDE = args.includes('--phase') ? args[args.indexOf('--phase') + 1] : null;
 if (PHASE_OVERRIDE) CONFIG.phase = PHASE_OVERRIDE;
+// Modo karma: en los subs 'active' acepta cualquier pregunta sobre Roma/Italia que
+// podamos responder con facts, en vez de exigir uno de los tres destinos. Sirve para
+// construir karma antes de poder comentar en los subs de destino. --no-karma lo apaga.
+const KARMA_MODE = args.includes('--no-karma') ? false : (CONFIG.karmaMode ?? true);
 
 if (!process.env.ANTHROPIC_API_KEY) {
   console.error('Falta ANTHROPIC_API_KEY.');
@@ -133,11 +137,38 @@ const TOPIC_KEYWORDS_BY_SITE = {
   },
 };
 
+// Matcheo de keyword con limite de palabra al inicio y tolerancia a sufijos cortos.
+//
+// includes() a secas producia falsos positivos que envenenaban la seleccion de
+// facts aguas abajo: "euro" matcheaba dentro de "Europe" y taggeaba de pricing una
+// pregunta sobre seguros; "line" dentro de "online" la taggeaba de crowds; "peak"
+// dentro de "speaking"; "hot" dentro de "hotel".
+//
+// Un \b...\b a secas tampoco sirve: rompe los plurales e inflexiones que SI queremos
+// ("st peter" en "st peters", "ticket" en "tickets", "book" en "booked").
+//
+// La regla que pasa los 12 casos de prueba es: la keyword tiene que arrancar en
+// limite de palabra, y solo se permiten sufijos cortos de inflexion despues.
+const KW_SUFFIX = '(?:s|es|ed|ing)?';
+const kwCache = new Map();
+function keywordRe(kw) {
+  let re = kwCache.get(kw);
+  if (!re) {
+    const esc = kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    re = new RegExp(`(^|[^a-z0-9])${esc}${KW_SUFFIX}([^a-z0-9]|$)`, 'i');
+    kwCache.set(kw, re);
+  }
+  return re;
+}
+function hasKeyword(text, kw) {
+  return keywordRe(kw).test(text);
+}
+
 function matchTopics(text, siteKey) {
   const t = text.toLowerCase();
   const matched = [];
   for (const [topic, kws] of Object.entries(TOPIC_KEYWORDS_BY_SITE[siteKey])) {
-    if (kws.some((kw) => t.includes(kw))) matched.push(topic);
+    if (kws.some((kw) => hasKeyword(t, kw))) matched.push(topic);
   }
   return matched;
 }
@@ -192,7 +223,22 @@ function rssBodyText(contentHtml) {
 
 async function fetchWithBackoff(url, tries = 4) {
   for (let attempt = 1; ; attempt++) {
-    const res = await fetch(url, { headers: BROWSER_HEADERS });
+    let res;
+    try {
+      res = await fetch(url, { headers: BROWSER_HEADERS });
+    } catch (err) {
+      // Fallo de red (socket/DNS/TLS): fetch() TIRA en vez de devolver un status,
+      // asi que escapaba del reintento de abajo y mataba el sub entero. Paso el
+      // 2026-08-05 con r/ItalyTravel ("fetch failed"), que perdimos ese dia
+      // mientras los 429 de los otros subs si se recuperaban solos.
+      if (attempt < tries) {
+        const wait = 20 * attempt;
+        console.log(`    red caida (${err.message}), reintento en ${wait}s...`);
+        await new Promise((r) => setTimeout(r, wait * 1000));
+        continue;
+      }
+      throw err;
+    }
     if (res.ok) return res;
     // Reddit usa 429 y 403 alternados como soft-block por IP (verificado 28 jul:
     // la misma IP pasa de 200 a 403 tras varias requests seguidas y se recupera
@@ -236,28 +282,77 @@ async function fetchCommentKarma() {
   }
 }
 
+// ---------- modo karma ----------
+// El pipeline normal es de CAPTACION: exige que el post hable de uno de nuestros
+// tres destinos. En los subs permisivos eso da cero (127 posts en ventana, 0
+// matches medidos el 2026-08-05), asi que nunca genera oportunidades de karma.
+//
+// Modo karma invierte el criterio en esos subs: acepta cualquier pregunta sobre
+// Roma o Italia, pero SOLO si tenemos facts que de verdad la respondan. Ese piso
+// es lo que evita repetir el borrador del post sobre seguros Schengen, que entro
+// por un falso positivo y se contesto con facts de dress code.
+const KARMA_KEYWORDS = [
+  'rome', 'roma', 'roman', 'italy', 'italian', 'lazio',
+  'colosseum', 'colosseo', 'vatican', 'trastevere', 'pantheon', 'trevi',
+  'forum', 'palatine', 'sistine', 'st peter', 'borghese', 'spanish steps',
+];
+const KARMA_MIN_FACTS = 3;   // sin al menos 3 facts con overlap real, no hay respuesta util
+const KARMA_MIN_TOPICS = 2;  // un solo topic suele ser un match accidental
+
+// Elige el sitio cuyos facts mejor cubren el post, no el que mas keywords matchea.
+function bestSiteByFacts(text) {
+  let best = null;
+  for (const s of CONFIG.sites) {
+    const topics = matchTopics(text, s.key);
+    if (topics.length < KARMA_MIN_TOPICS) continue;
+    const facts = pickFacts(topics, s.key);
+    if (facts.length < KARMA_MIN_FACTS) continue;
+    const strength = facts.length + topics.length;
+    if (!best || strength > best.strength) best = { key: s.key, topics, strength };
+  }
+  return best;
+}
+
 // ---------- scoring ----------
 // Devuelve tambien el embudo de filtrado (conteo por etapa) para diagnostico:
 // fetched -> en ventana (edad + no sticky/nsfw) -> keyword -> topic -> pregunta genuina.
 function scoreCandidates(posts, subredditCfg, cutoffUtc) {
   const funnel = { fetched: posts.length, inWindow: 0, keywordPass: 0, topicPass: 0, questionPass: 0 };
   const out = [];
+  const karmaMode = KARMA_MODE && subredditCfg.status === 'active';
   for (const post of posts) {
     if (post.created_utc < cutoffUtc) continue;
     if (post.stickied || post.over_18) continue;
     funnel.inWindow += 1;
     const haystack = `${post.title} ${post.selftext}`.toLowerCase();
-    // Sitio = el que mas keywords matchea (empate: orden de config.sites)
-    const siteHits = CONFIG.sites
-      .map((s) => ({ key: s.key, hits: s.keywords.filter((kw) => haystack.includes(kw)).length }))
-      .filter((s) => s.hits > 0)
-      .sort((a, b) => b.hits - a.hits);
-    if (siteHits.length === 0) continue;
-    funnel.keywordPass += 1;
-    const siteKey = siteHits[0].key;
-    const topics = matchTopics(`${post.title} ${post.selftext}`, siteKey);
-    if (topics.length === 0) continue;
-    funnel.topicPass += 1;
+    let siteKey, topics;
+    if (karmaMode) {
+      // La keyword tiene que estar en el TITULO, no en el cuerpo. Medido sobre la
+      // corrida del 2026-08-05: buscar en el cuerpo acepta itinerarios multi-pais
+      // donde Roma aparece de pasada (Sarajevo/Mostar/Dubrovnik entro por un "rome"
+      // en la ultima linea, Venecia/Bolonia por un "rome dec 2"). Quien pregunta
+      // sobre Roma lo dice en el titulo. Con titulo solo: 7/7 en los casos reales.
+      const titleHay = post.title.toLowerCase();
+      if (!KARMA_KEYWORDS.some((kw) => hasKeyword(titleHay, kw))) continue;
+      funnel.keywordPass += 1;
+      const best = bestSiteByFacts(`${post.title} ${post.selftext}`);
+      if (!best) continue;   // no tenemos con que responder: se descarta aca
+      siteKey = best.key;
+      topics = best.topics;
+      funnel.topicPass += 1;
+    } else {
+      // Sitio = el que mas keywords matchea (empate: orden de config.sites)
+      const siteHits = CONFIG.sites
+        .map((s) => ({ key: s.key, hits: s.keywords.filter((kw) => hasKeyword(haystack, kw)).length }))
+        .filter((s) => s.hits > 0)
+        .sort((a, b) => b.hits - a.hits);
+      if (siteHits.length === 0) continue;
+      funnel.keywordPass += 1;
+      siteKey = siteHits[0].key;
+      topics = matchTopics(`${post.title} ${post.selftext}`, siteKey);
+      if (topics.length === 0) continue;
+      funnel.topicPass += 1;
+    }
     if (!isGenuineQuestion(post)) continue;
     funnel.questionPass += 1;
     // null = conteo no disponible (RSS): bonus neutro de 1 en vez de 2
@@ -272,6 +367,7 @@ function scoreCandidates(posts, subredditCfg, cutoffUtc) {
       numComments: post.num_comments,
       ageHours: Math.round((Date.now() / 1000 - post.created_utc) / 3600),
       topics,
+      karma: karmaMode,
       score: (early === true ? 2 : early === null ? 1 : 0) + topics.length,
     });
   }
@@ -392,6 +488,7 @@ function renderCandidate(c, facts, draft, blocked) {
   lines.push(`- **Hilo:** ${c.url}`);
   lines.push(`- **Sitio:** ${c.site} · **Subreddit:** r/${c.subreddit} · **Antigüedad:** ${c.ageHours}h · **Comentarios:** ${c.numComments ?? 'n/d (RSS)'} · **Score:** ${c.score}`);
   lines.push(`- **Topics:** ${c.topics.join(', ')}`);
+  if (c.karma) lines.push(`- **Modo karma:** el post no menciona nuestros destinos; entro por relevancia Roma/Italia y porque hay ${facts.length} facts que lo cubren. Responder como viajero, sin marca.`);
   lines.push('');
   if (blocked) lines.push('**[BLOQUEADO POR KARMA — guardar para etapa B]**');
   lines.push('');
