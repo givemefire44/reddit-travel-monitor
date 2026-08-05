@@ -1,6 +1,6 @@
 # Reddit monitor — 2026-08-05
 
-**Fase:** warmup · **Ventana:** 24h · **Facts:** trastevere 74 · vatican 77 · colosseum 916
+**Fase:** warmup · **Ventana:** 72h · **Facts:** trastevere 74 · vatican 77 · colosseum 916
 **Comment karma u/RomanColosseumExpert:** (no disponible)
 
 ---
@@ -9,38 +9,142 @@
 
 | Subreddit | Fetch RSS | En ventana | Keyword | Topic | Pregunta | Scores |
 |---|---|---|---|---|---|---|
-| r/travel (active) | 200 · 100 posts | 91 | 1 | 1 | 0 | — |
-| r/solotravel (active) | 200 · 100 posts | 13 | 0 | 0 | 0 | — |
+| r/travel (active) | 200 · 100 posts | 100 | 2 | 1 | 1 | 3 |
+| r/solotravel (active) | 200 · 100 posts | 25 | 1 | 1 | 1 | 3 |
 | r/Eurotrip (active) | 200 · 56 posts | 0 | 0 | 0 | 0 | — |
-| r/ItalyTravel (watch-only) | 200 · 100 posts | 13 | 1 | 1 | 1 | 7 |
-| r/rome (watch-only) | 200 · 100 posts | 18 | 4 | 3 | 2 | 3, 2 |
+| r/ItalyTravel (watch-only) | 200 · 100 posts | 36 | 5 | 5 | 4 | 8, 7, 6, 3 |
+| r/rome (watch-only) | 200 · 100 posts | 46 | 8 | 6 | 3 | 4, 3, 2 |
 
-_Etapas en el orden real del filtro: publicado en las últimas 24h y no sticky/nsfw → alguna keyword del sitio → match con la taxonomía de topics → pregunta genuina. No hay umbral de score: todo lo que pasa el embudo es candidato y el corte es el cupo diario (top 3 por estado)._
+_Etapas en el orden real del filtro: publicado en las últimas 72h y no sticky/nsfw → alguna keyword del sitio → match con la taxonomía de topics → pregunta genuina. No hay umbral de score: todo lo que pasa el embudo es candidato y el corte es el cupo diario (top 3 por estado)._
+
+_Cortados hoy por cupo, no por score: r/rome (score 4) · r/ItalyTravel (score 3) · r/rome (score 3) · r/rome (score 2)._
 
 ---
 
-## Candidatos (0)
+## Candidatos (2)
 
-_Sin candidatos hoy._
+### Can I still get the "Eurosummer" vibe in Croatia, Greece, & Italy during Sept/Oct?
+
+- **Hilo:** https://www.reddit.com/r/travel/comments/1vg8xkz/can_i_still_get_the_eurosummer_vibe_in_croatia/
+- **Sitio:** vatican · **Subreddit:** r/travel · **Antigüedad:** 7h · **Comentarios:** n/d (RSS) · **Score:** 3
+- **Topics:** weather, dress-code
+- **Modo karma:** el post no menciona nuestros destinos; entro por relevancia Roma/Italia y porque hay 4 facts que lo cubren. Responder como viajero, sin marca.
+
+
+**Borrador:**
+
+```
+September/October in Rome should treat you well. You're basically hitting the tail end of the sweet spot, October runs mild, around 12-20°C, which is way better than the 35°C-plus you'd get in peak summer. You'll dodge the worst crowds too since mid-June through August sees daily volume run 30-40% higher than the shoulder months.
+
+For your Vatican visit specifically, since you'll want to see St Peter's and the Museums, just keep a cover-up in your bag for the dress code. Skip the overpriced ones from vendors near the square, they run €10-15 and you can just grab something free from your hotel instead.
+```
+
+**Facts usados (verificar en un click):**
+- `dress-code-001` "Rome's summers routinely hit 30–35°C, and that's precisely when most dress-code refusals happen — people dress for the heat, not for a religious site." — https://vaticantourguides.com/vatican-dress-code
+- `dress-code-002` "Avoid buying an overpriced €10–15 cover-up from square vendors; bring your own from the hotel for free." — https://vaticantourguides.com/vatican-dress-code
+- `weather-001` "Late March and October are the sweet-spot shoulder windows: mild weather around 12–20°C, lighter crowds than peak, and none of the line-melting summer heat." — https://vaticantourguides.com/best-time-to-visit-vatican
+- `weather-002` "The months to dodge are mid-June through August, when daily volume runs 30–40% higher, the outdoor security queue bakes in 35°C-plus heat, and the poorly ventilated Sistine Chapel becomes notoriously stifling." — https://vaticantourguides.com/best-time-to-visit-vatican
+
+---
+
+### Is Italy + Greece + Croatia too many countries for one trip?
+
+- **Hilo:** https://www.reddit.com/r/solotravel/comments/1veb2ru/is_italy_greece_croatia_too_many_countries_for/
+- **Sitio:** vatican · **Subreddit:** r/solotravel · **Antigüedad:** 58h · **Comentarios:** n/d (RSS) · **Score:** 3
+- **Topics:** timing, museums-itinerary
+- **Modo karma:** el post no menciona nuestros destinos; entro por relevancia Roma/Italia y porque hay 5 facts que lo cubren. Responder como viajero, sin marca.
+
+
+**Borrador:**
+
+```
+Honestly your setup isn't as chaotic as it sounds since two of the three legs are pre-structured. The cruise and Contiki handle logistics for you, so the real risk of burnout is packing too much unstructured stuff into the Italy weeks. Three countries in 4-5 weeks with two of them on rails is very doable.
+
+If Rome's part of your Italy time and you're doing the Vatican, plan that day carefully. The Museums need three to four hours realistically, and if you show up after about 4:00-5:00 PM you're only getting an hour and a half to two hours before close, which isn't enough. Either go right at the 8:00 AM opening (you'll hit the Sistine Chapel around 10:30, before the worst crush) or look into a Friday evening opening in season.
+```
+
+**Facts usados (verificar en un click):**
+- `timing-014` "Because the collection genuinely needs three to four hours and the halls start clearing before the 8:00 PM close, entering after about 4:00–5:00 PM leaves you rushing — you'll get maybe an hour and a half to two hours, not enough to do the museum justice." — https://vaticantourguides.com/best-time-to-visit-vatican
+- `museums-itinerary-001` "The Vatican Museums follow one mandatory route — about 7 km through 54 galleries — ending at the Sistine Chapel, so you can't go straight to it." — https://vaticantourguides.com/vatican-museums-itinerary
+- `museums-itinerary-003` "It's physically impossible to see it all in one visit; at one minute per artwork, it would take nearly 49 days." — https://vaticantourguides.com/vatican-museums-itinerary
+- `skip-the-line-001` "These tours, run by authorized operators, get you inside 30 minutes to as much as 90 minutes ahead of the public, so you walk the Gallery of Maps and reach the Sistine Chapel while it's close to empty" — https://vaticantourguides.com/how-to-avoid-vatican-crowds
+- `timing-001` "The next-best options are the very first 8:00 AM public slot (you'll reach the Chapel around 10:30, before the worst crush) or a Friday evening opening in season, when crowds are a fraction of daytime levels" — https://vaticantourguides.com/how-to-avoid-vatican-crowds
+
 
 ## Watch-only — registro de oportunidades futuras (3)
 
-### Assorted last minute activity questions.
+### Colosseum underground or colosseum/forum/palatine hill tour?
 
-- **Hilo:** https://www.reddit.com/r/ItalyTravel/comments/1vfncz4/assorted_last_minute_activity_questions/
-- **Sitio:** colosseum · **Subreddit:** r/ItalyTravel · **Antigüedad:** 19h · **Comentarios:** n/d (RSS) · **Score:** 7
-- **Topics:** tickets, pricing, timing, underground, guides, weather
+- **Hilo:** https://www.reddit.com/r/ItalyTravel/comments/1vfdbm3/colosseum_underground_or_colosseumforumpalatine/
+- **Sitio:** colosseum · **Subreddit:** r/ItalyTravel · **Antigüedad:** 30h · **Comentarios:** n/d (RSS) · **Score:** 8
+- **Topics:** tickets, timing, underground, arena-floor, guides, operators, forum-palatine
 
 **[BLOQUEADO POR KARMA — guardar para etapa B]**
 
 **Borrador:**
 
 ```
-On the Colosseum question specifically: the standard ticket (€18) covers Colosseum, Forum, and Palatine Hill but skips the Underground entirely. If you want the hypogeum you need the Full Experience ticket (€24), which adds the Arena floor and hypogeum access.
+Skip the 30-day window stress entirely, that's actually correct that it's brutal. The Arena/Underground tickets only release 7 days out, not 30, so your instinct there is right.
 
-Underground slots sell out within seconds of release and need booking weeks ahead, so with 6 weeks out you're cutting it close but not impossible. You're in the hypogeum itself for 20-30 minutes, which is short given the effort to book it.
+Here's the thing though: doing underground doesn't mean giving up Forum and Palatine Hill context. The standard 24-hour ticket (€18) covers Colosseum, Forum, and Palatine Hill, just not underground/arena. The Full Experience ticket (€24) adds the restricted areas on top.
 
-If you can't snag Underground access, don't stress. The regular ticket still gets you the Colosseum, Forum, and Palatine Hill, which is most of the experience anyway.
+If you want the guided experience without the 2 AM alarm, a small-group operator (max 7) booked 4-6 weeks out, earliest morning slot, arriving 30 minutes early, solves the availability problem. Those underground/arena tours run 3.5-4 hours, so budget the whole morning.
+
+For your dates, book something now that guarantees the arena floor rather than gambling on official release timing while you're mid-trip.
+```
+
+**Facts usados (verificar en un click):**
+- `tickets-089` "Book 4–6 weeks ahead through a small-group operator (max 7), take the earliest morning slot, and arrive 30 minutes before your meeting time." — https://colosseumroman.com/colosseum-underground-spring-student-groups
+- `tickets-114` "Arena, Underground, Attic, and Night tickets release only 7 days in advance — not 30 days like standard tickets." — https://colosseumroman.com/how-colosseum-tickets-actually-work-official-site
+- `tickets-001` "The standard 24-hour ticket (€18) covers the Colosseum, Roman Forum, and Palatine Hill but does not include the Underground or Arena floor." — https://colosseumroman.com/7-mistakes-people-make-when-booking-colosseum-tickets
+- `tickets-002` "The Full Experience ticket (€24) adds access to restricted areas like the Arena floor and hypogeum." — https://colosseumroman.com/7-mistakes-people-make-when-booking-colosseum-tickets
+- `underground-002` "With arena floor or underground, tours extend to 3.5–4 hours" — https://colosseumroman.com/bathroom-breaks-colosseum-underground-combo-tours
+
+---
+
+### Rome colosseum ticket buying advice
+
+- **Hilo:** https://www.reddit.com/r/ItalyTravel/comments/1vedeiq/rome_colosseum_ticket_buying_advice/
+- **Sitio:** colosseum · **Subreddit:** r/ItalyTravel · **Antigüedad:** 56h · **Comentarios:** n/d (RSS) · **Score:** 7
+- **Topics:** tickets, underground, arena-floor, logistics, weather, forum-palatine
+
+**[BLOQUEADO POR KARMA — guardar para etapa B]**
+
+**Borrador:**
+
+```
+Between your two options, the Arena one gets you onto the Arena floor itself for those 20 minutes plus Forum-Palatine access, the Forum Pass Super skips the Colosseum arena floor entirely. If seeing the actual arena floor matters to you, that's the one to grab.
+
+That said, since Full Experience with Arena isn't available yet for your date, keep refreshing. The Full Experience Arena + Underground (€24) covers both the hypogeum and the Arena floor, so it's the closest thing to what you originally wanted with the Attic tour. Worth checking back closer to your date since these do open up.
+
+If neither Full Experience option opens up in time, the Arena ticket you already have access to still gets you the actual Colosseum floor experience, which is the main draw anyway.
+```
+
+**Facts usados (verificar en un click):**
+- `tickets-001` "The standard 24-hour ticket (€18) covers the Colosseum, Roman Forum, and Palatine Hill but does not include the Underground or Arena floor." — https://colosseumroman.com/7-mistakes-people-make-when-booking-colosseum-tickets
+- `tickets-002` "The Full Experience ticket (€24) adds access to restricted areas like the Arena floor and hypogeum." — https://colosseumroman.com/7-mistakes-people-make-when-booking-colosseum-tickets
+- `tickets-013` "Full Experience Arena + Underground (€24): Adds both the hypogeum and Arena—highly recommended if you want the full picture." — https://colosseumroman.com/colosseum-arena-tour
+- `tickets-019` "The Full Experience Attic ticket includes the Colosseum's standard tiers plus the 4th and 5th levels (the Attic) via panoramic lift, along with the Roman Forum, Palatine Hill, and Imperial Fora — but it does not include the Arena Floor or the Underground (Hypogeum)." — https://colosseumroman.com/colosseum-attic-belvedere-worth-it
+- `forum-palatine-001` "What is included: The standard route — Colosseum levels 1–2, Roman Forum, and Palatine Hill." — https://colosseumroman.com/colosseum-free-entry-days-2026-who-qualifies
+
+---
+
+### Assorted last minute activity questions.
+
+- **Hilo:** https://www.reddit.com/r/ItalyTravel/comments/1vfncz4/assorted_last_minute_activity_questions/
+- **Sitio:** colosseum · **Subreddit:** r/ItalyTravel · **Antigüedad:** 24h · **Comentarios:** n/d (RSS) · **Score:** 6
+- **Topics:** tickets, pricing, timing, underground, guides
+
+**[BLOQUEADO POR KARMA — guardar para etapa B]**
+
+**Borrador:**
+
+```
+Underground access is genuinely brutal to get. It requires booking weeks ahead and sells out within seconds, so at 6 weeks out you need to be checking constantly, not just once.
+
+If you strike out, the regular Full Experience ticket at €24 still gets you onto the Arena floor and hypogeum area, versus the standard 24-hour ticket at €18 which only covers Colosseum, Forum, and Palatine Hill without those restricted areas. So even without the private underground tour, the Full Experience is worth the upgrade over the base ticket.
+
+Given how random Underground availability is, I'd book the Full Experience the normal way and treat any underground slot as a bonus if it appears.
 ```
 
 **Facts usados (verificar en un click):**
@@ -49,60 +153,6 @@ If you can't snag Underground access, don't stress. The regular ticket still get
 - `tickets-004` "First-timers: Guided Tour + Forum at $39 (4.8★)." — https://colosseumroman.com/best-colosseum-tour-for-every-type-of-traveler
 - `pricing-002` "History lovers: Private Underground at $450." — https://colosseumroman.com/best-colosseum-tour-for-every-type-of-traveler
 - `underground-005` "Underground gives you the rarest access in the monument — 20–30 minutes in the hypogeum tunnels — but requires booking weeks ahead and sells out "within seconds."" — https://colosseumroman.com/arena-floor-vs-underground-colosseum-upgrade
-
----
-
-### Vatican in Ferragosto
-
-- **Hilo:** https://www.reddit.com/r/rome/comments/1vfzikb/vatican_in_ferragosto/
-- **Sitio:** vatican · **Subreddit:** r/rome · **Antigüedad:** 10h · **Comentarios:** n/d (RSS) · **Score:** 3
-- **Topics:** tickets, st-peters
-
-**[BLOQUEADO POR KARMA — guardar para etapa B]**
-
-**Borrador:**
-
-```
-None of the facts I've got actually cover shop hours on Ferragosto specifically, so take this with a grain of salt.
-
-St. Peter's Basilica itself stays open on Ferragosto, that part's right. As for the shops right around it, religious souvenir stores in that area tend to stay open even on holidays since they live off pilgrim and tourist traffic, Ferragosto or not. Worst case if something's shuttered, there are multiple shops lining Via della Conciliazione, so your mom will have options for holy water and the like even if one particular place is closed.
-
-Just don't count on the Vatican Museums bookshop being open since the museums themselves are closed those two days.
-```
-
-**Facts usados (verificar en un click):**
-- `accessibility-002` "The exact qualifying threshold is stated differently across sources (commonly cited as a certified invalidity of roughly 67% or more, with some sources citing 74%), so the essential step is to bring official documentation of your disability and present it on the day." — https://vaticantourguides.com/vatican-accessibility-guide
-- `crowds-001` "a timed-entry ticket doesn't reduce the crowds inside the Vatican — everyone now has a slot, so it only staggers the entrance, not the crush along the single 7 km route where everyone converges on the Sistine Chapel" — https://vaticantourguides.com/how-to-avoid-vatican-crowds
-- `timing-003` "while the Pope holds the audience in St. Peter's Square on Wednesday mornings, a large share of visitors are there rather than in the museums, briefly taking some of the squeeze off the Sistine Chapel — though once the audience ends around 11:30, that crowd pours in, so this only works early" — https://vaticantourguides.com/how-to-avoid-vatican-crowds
-- `timing-010` "The Papal Audience takes place in St. Peter's Square on Wednesday mornings and ends around 11:30, sending a wave of people straight toward the museum entrance — so the 9:00 AM to noon window on Wednesdays is the worst of the week." — https://vaticantourguides.com/best-time-to-visit-vatican
-- `timing-013` "The Vatican Museums open Monday to Saturday, 8:00 AM to 8:00 PM, with last entry at 6:00 PM — and crucially, visitors must begin leaving the halls 30 minutes before closing, so you don't get that final half hour inside." — https://vaticantourguides.com/best-time-to-visit-vatican
-
----
-
-### Vatican city isn't schengen, does my schengen travel insurance still cover me there ?
-
-- **Hilo:** https://www.reddit.com/r/rome/comments/1vg1epl/vatican_city_isnt_schengen_does_my_schengen/
-- **Sitio:** vatican · **Subreddit:** r/rome · **Antigüedad:** 8h · **Comentarios:** n/d (RSS) · **Score:** 2
-- **Topics:** pricing
-
-**[BLOQUEADO POR KARMA — guardar para etapa B]**
-
-**Borrador:**
-
-```
-This is really a question for an insurance provider, not travel forums, since policy wording varies a lot between insurers.
-
-That said, none of the facts I've got actually address insurance jurisdiction or how Schengen policies treat Vatican City specifically, so I can't give you numbers on that front.
-
-Practically speaking, most travelers just call their insurer and ask directly, it's a five minute question and you get a real answer instead of guessing. Some policies define coverage by "Europe" or "worldwide" rather than strictly by Schengen membership, so you might already be fine, but that's policy specific wording you need to check yourself.
-```
-
-**Facts usados (verificar en un click):**
-- `dress-code-002` "Avoid buying an overpriced €10–15 cover-up from square vendors; bring your own from the hotel for free." — https://vaticantourguides.com/vatican-dress-code
-- `accessibility-002` "The exact qualifying threshold is stated differently across sources (commonly cited as a certified invalidity of roughly 67% or more, with some sources citing 74%), so the essential step is to bring official documentation of your disability and present it on the day." — https://vaticantourguides.com/vatican-accessibility-guide
-- `timing-018` "A standard early-access tour enters at or around the 8:00 AM public opening — you're ahead of the daytime crowds but not alone, and it's moderately priced" — https://vaticantourguides.com/vatican-early-morning-tour-review
-- `timing-019` "some tours advertised as VIP or early access simply enter around 8:00 AM with everyone else, and travelers have paid premium prices expecting solitude only to be merged into a later group" — https://vaticantourguides.com/vatican-early-morning-tour-review
-- `operators-003` "A couple or pair prioritizing the experience should look at a genuine small-group tour (verifying the 12–15 cap), which balances cost against a much better pace and access to the guide." — https://vaticantourguides.com/vatican-group-tour-vs-private-tour
 
 
 ---
