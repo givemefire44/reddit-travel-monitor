@@ -87,6 +87,11 @@ const TOPIC_KEYWORDS_BY_SITE = {
     timing: ['what time', 'best time', 'morning', 'early', 'sunset', 'when to', 'how long', 'hours'],
     underground: ['underground', 'hypogeum'],
     'arena-floor': ['arena floor', 'arena access', 'the arena'],
+    // Faltaba, y su ausencia produjo un borrador que afirmaba que el atico "no es
+    // una categoria de ticket" (2026-08-06). Hay 13 facts sobre el atico en el
+    // corpus, etiquetados bajo logistics/tickets/pricing, asi que un post sobre el
+    // tema matcheaba [tickets, underground] y pickFacts nunca los alcanzaba.
+    attic: ['attic', 'belvedere', 'upper tier', 'upper level', 'top level', 'fourth level', 'fifth level', 'panoramic lift'],
     'skip-the-line': ['skip the line', 'skip-the-line', 'fast track', 'priority entrance'],
     guides: ['guide', 'guided tour', 'tour guide'],
     operators: ['getyourguide', 'get your guide', 'viator', 'tour company', 'operator', 'walks of italy', 'tour guy'],
@@ -374,9 +379,25 @@ function scoreCandidates(posts, subredditCfg, cutoffUtc) {
   return { candidates: out, funnel };
 }
 
-function pickFacts(topics, siteKey, max = 5) {
+function pickFacts(topics, siteKey, max = 5, postText = '') {
+  // El overlap por topics no alcanza cuando el corpus tiene el dato pero etiquetado
+  // bajo otro topic: los facts del atico viven en logistics/tickets/pricing, asi que
+  // un post sobre el atico no los alcanzaba y el modelo termino inventando que el
+  // atico no existe como ticket. Se suma un match por TEXTO: si el fact menciona
+  // literalmente algo que el post pregunta, cuenta aunque no comparta topic.
+  const postTerms = postText
+    ? [...new Set(postText.toLowerCase().match(/[a-z][a-z'-]{4,}/g) || [])]
+    : [];
+  const RARE = new Set(['attic', 'belvedere', 'hypogeum', 'scavi', 'necropolis', 'gardens',
+    'carriage', 'pinacoteca', 'etruscan', 'grottoes', 'dome', 'cupola', 'ferragosto', 'jubilee']);
+  const rareInPost = postTerms.filter((t) => RARE.has(t));
+
   const scored = FACTS_BY_SITE[siteKey].facts
-    .map((f) => ({ f, overlap: f.topics.filter((t) => topics.includes(t)).length }))
+    .map((f) => {
+      const overlap = f.topics.filter((t) => topics.includes(t)).length;
+      const textHit = rareInPost.some((t) => f.fact.toLowerCase().includes(t)) ? 2 : 0;
+      return { f, overlap: overlap + textHit };
+    })
     .filter((x) => x.overlap > 0)
     .sort((a, b) => b.overlap - a.overlap);
   // diversidad de fuente: no mas de 2 facts del mismo articulo
@@ -404,6 +425,7 @@ Data rules (inviolable):
 - You may ONLY use figures that appear in the facts provided. Copy each figure EXACTLY as written. Never invent, round differently, or extrapolate a number.
 - Use 1-3 of the provided facts, only the ones that actually answer the question.
 - General non-numeric advice from common knowledge is fine, but every NUMBER must come from the facts.
+- NEVER assert that something does not exist, is not offered, or is not a real option just because it is absent from the facts you were given. The facts are a partial extract, not a catalogue. A draft once claimed the Colosseum Attic "isn't a ticket category" simply because no Attic fact had been selected — it is one, and the claim was wrong and checkable in seconds. If the post asks about something your facts do not cover, say you are not sure about that part and answer what you can. Absence of a fact is not evidence of absence.
 
 ${phase === 'attribution'
     ? `Attribution: integrate exactly ONE natural mention such as "We analyzed [figure from a corpus-derived fact] reviews at ${voice.brand}, and [dato]" (brand as plain text "${voice.brand}", CamelCase, never with .com; no em dash in the mention).
@@ -578,7 +600,7 @@ async function main() {
   let cordialUsed = 0;
   let generated = 0;
   const genOne = async (c, blocked) => {
-    const facts = pickFacts(c.topics, c.site);
+    const facts = pickFacts(c.topics, c.site, 5, `${c.title} ${c.selftext}`);
     const allowCordialClose = cordialUsed < Math.floor(generated / 3) + 1 && (generated === 0 || !previousDraft?.cordial);
     const draft = await generateDraft(c, facts, CONFIG.phase, {
       previousDraft: previousDraft?.text ?? null,
