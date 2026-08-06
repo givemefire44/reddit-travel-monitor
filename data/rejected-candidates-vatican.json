@@ -1,7 +1,52 @@
 [
   {
-    "slug": "vatican-skip-the-line-explained",
-    "fact": "Tickets release 60 days ahead, in 15-minute entry windows from 8 a.m. to 4 p.m.",
-    "reason": "cifra \"4 p.m.\" no esta en la frase"
+    "slug": "how-to-avoid-vatican-crowds",
+    "fact": "That is consistent with the wider finding that the median Museums visit runs three hours before anyone goes looking for the quiet rooms.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "vatican-crowd-handling-staff",
+    "fact": "Reviews describing staff as helpful or kind average 4.27, above the corpus average — on only fifteen reviews, so treat the figure lightly, but the direction matters: a good interaction lifts a review rather than merely failing to sink it.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "vatican-crowd-handling-staff",
+    "fact": "Reviews mentioning staff average 1.23 stars below the corpus average, and those describing shouting by site staff 1.77 below — yet reviews describing staff as helpful or kind average above the corpus average.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "vatican-early-access-really-means",
+    "fact": "'Early access' at the Vatican means entering at 8:00 AM — when the Museums open — not before the public.",
+    "reason": "frase no textual"
+  },
+  {
+    "slug": "vatican-mobility-access",
+    "fact": "Reviews mentioning a wheelchair average 4.25 stars, above the corpus average of 4.08 — ramps, lifts, priority entry and attentive stewards come up repeatedly",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "vatican-history-context-effect",
+    "fact": "The Raphael Rooms sit 0.34 above the corpus average despite being just as crowded as everything around them, and they are the part of the collection least legible without context.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "vatican-museums-tickets-guide",
+    "fact": "Official tickets are non-refundable; third-party bookings often allow free cancellation",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "vatican-museums-tickets-guide",
+    "fact": "After-hours / evening tours (typically Fridays and Saturdays) visit after the general public leaves",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "vatican-value-perception",
+    "fact": "Removing every review that also carries a tag for queues, scams, cancellations, skip-the-line or booking leaves 303 reviews that mention price with no service failure attached, and they still average 3.38 — 0.70 below the corpus average",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "vatican-value-perception",
+    "fact": "It is the only paid element at the Vatican where price mentions score above the corpus average, at 4.27 across 157 reviews",
+    "reason": "voz editorial interna"
   }
 ]
