@@ -536,10 +536,32 @@ async function main() {
   }
   const fetchErrors = funnelRows.filter((r) => !r.ok);
 
-  const activeSorted = allCandidates
+  // Dedup de crossposts. La misma pregunta publicada en varios subs son hilos
+  // distintos con IDs distintos, asi que entraban como candidatos separados:
+  // "Can I still get the Eurosummer vibe..." aparecio a la vez en r/travel y
+  // r/EuropeTravel el 2026-08-05, comiendo dos cupos con el mismo trabajo.
+  // Peor: contestar lo mismo en dos lados con minutos de diferencia desde una
+  // cuenta nueva es justo el patron que Reddit marca como spam.
+  // Se conserva el de mayor score (mas topics / hilo mas fresco) y el resto se
+  // lista en el reporte para que la eleccion de sub sea deliberada.
+  const normTitle = (t) => t.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+  const seenTitle = new Map();
+  const crossposts = [];
+  for (const c of [...allCandidates].sort((a, b) => b.score - a.score)) {
+    const key = normTitle(c.title);
+    const prev = seenTitle.get(key);
+    if (prev) { crossposts.push({ kept: prev, dropped: c }); continue; }
+    seenTitle.set(key, c);
+  }
+  const deduped = [...seenTitle.values()];
+  if (crossposts.length) {
+    console.log(`  crossposts descartados: ${crossposts.length}`);
+  }
+
+  const activeSorted = deduped
     .filter((c) => c.status === 'active')
     .sort((a, b) => b.score - a.score);
-  const watchSorted = allCandidates
+  const watchSorted = deduped
     .filter((c) => c.status === 'watch-only')
     .sort((a, b) => b.score - a.score);
   const active = activeSorted.slice(0, CONFIG.maxCandidatesPerDay);
@@ -588,6 +610,9 @@ async function main() {
     `_Etapas en el orden real del filtro: publicado en las últimas ${HOURS}h y no sticky/nsfw → alguna keyword del sitio → match con la taxonomía de topics → pregunta genuina. No hay umbral de score: todo lo que pasa el embudo es candidato y el corte es el cupo diario (top ${CONFIG.maxCandidatesPerDay} por estado)._`,
     ...(droppedByQuota.length
       ? ['', `_Cortados hoy por cupo, no por score: ${droppedByQuota.map((c) => `r/${c.subreddit} (score ${c.score})`).join(' · ')}._`]
+      : []),
+    ...(crossposts.length
+      ? ['', `_Crossposts: la misma pregunta aparecio en varios subs. Se conservo la de mayor score y se descarto ${crossposts.map((x) => `r/${x.dropped.subreddit} (se quedo r/${x.kept.subreddit})`).join(' · ')}. Si el sub descartado te conviene mas, usa ese hilo, pero **no contestes en los dos**._`]
       : []),
     '',
     '---',

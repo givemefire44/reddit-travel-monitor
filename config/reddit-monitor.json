@@ -1,6 +1,6 @@
 {
   "phase": "warmup",
-  "maxCandidatesPerDay": 3,
+  "maxCandidatesPerDay": 6,
   "windowHours": 72,
   "redditAccount": "RomanColosseumExpert",
   "karmaTarget": 150,
@@ -18,6 +18,26 @@
     },
     {
       "name": "Eurotrip",
+      "status": "active",
+      "minCommentKarma": 0
+    },
+    {
+      "name": "EuropeTravel",
+      "status": "active",
+      "minCommentKarma": 0
+    },
+    {
+      "name": "TravelNoPics",
+      "status": "active",
+      "minCommentKarma": 0
+    },
+    {
+      "name": "Italy",
+      "status": "active",
+      "minCommentKarma": 0
+    },
+    {
+      "name": "askitaly",
       "status": "active",
       "minCommentKarma": 0
     },
