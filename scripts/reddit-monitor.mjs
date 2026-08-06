@@ -169,6 +169,13 @@ function hasKeyword(text, kw) {
   return keywordRe(kw).test(text);
 }
 
+// Normalizacion compartida por el dedup de crossposts y el guard de ya-respondidos:
+// los dos comparan titulos que vienen de fuentes distintas (RSS de subreddit vs RSS
+// de usuario), con escapes y puntuacion que no coinciden literalmente.
+function normalizeTitle(t) {
+  return t.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+}
+
 function matchTopics(text, siteKey) {
   const t = text.toLowerCase();
   const matched = [];
@@ -276,6 +283,40 @@ async function fetchNewPostsRss(subreddit) {
       over_18: false,
     };
   });
+}
+
+// Hilos en los que la cuenta ya comento. Sin OAuth no hay forma directa, pero el
+// RSS publico del historial si responde (about.json da 403 desde esta IP, por eso
+// el karma sale "no disponible"). De cada permalink de comentario se extrae el ID
+// del post: /r/sub/comments/<postId>/slug/<commentId>/
+//
+// Limitacion: el RSS devuelve solo los comentarios recientes. Para una cuenta en
+// warmup alcanza de sobra; cuando el historial crezca habra que persistir los IDs
+// o migrar a OAuth.
+async function fetchAnsweredPostIds() {
+  try {
+    const res = await fetchWithBackoff(
+      `https://www.reddit.com/user/${CONFIG.redditAccount}/comments.rss?limit=100`
+    );
+    const xml = await res.text();
+    const ids = new Set();
+    for (const m of xml.matchAll(/<link href="[^"]*\/comments\/([a-z0-9]+)\//g)) ids.add(m[1]);
+    // Tambien por TITULO, porque el ID solo no tapa los crossposts: la misma
+    // pregunta publicada en dos subs son posts distintos con IDs distintos. Paso
+    // el 2026-08-06: se contesto el "Eurosummer" en r/travel y el monitor seguia
+    // ofreciendo el gemelo de r/EuropeTravel, que es escribir lo mismo dos veces.
+    // El RSS de usuario titula "/u/cuenta on <titulo del hilo>".
+    const titles = new Set();
+    for (const m of xml.matchAll(/<title>([\s\S]*?)<\/title>/g)) {
+      const t = m[1].replace(/^\/u\/[^\s]+ on /i, '');
+      if (t && !/^\/u\//.test(t)) titles.add(normalizeTitle(unescapeXml(t)));
+    }
+    return { ids, titles, ok: true };
+  } catch (err) {
+    // Que falle no puede tumbar el run: sin el guard se muestran todos los
+    // candidatos, que es el comportamiento anterior.
+    return { ids: new Set(), titles: new Set(), ok: false, error: err.message };
+  }
 }
 
 async function fetchCommentKarma() {
@@ -566,11 +607,27 @@ async function main() {
   // cuenta nueva es justo el patron que Reddit marca como spam.
   // Se conserva el de mayor score (mas topics / hilo mas fresco) y el resto se
   // lista en el reporte para que la eleccion de sub sea deliberada.
-  const normTitle = (t) => t.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+  // Guard: fuera los hilos donde la cuenta ya comento. Evita mostrar trabajo ya
+  // hecho y, sobre todo, evita comentar dos veces en el mismo hilo.
+  const answered = await fetchAnsweredPostIds();
+  const alreadyAnswered = [];
+  const notAnswered = allCandidates.filter((c) => {
+    const id = (c.url.match(/\/comments\/([a-z0-9]+)\//) || [])[1];
+    if (id && answered.ids.has(id)) { alreadyAnswered.push(c); return false; }
+    // Mismo titulo = crosspost del hilo que ya contestamos, aunque el ID difiera
+    if (answered.titles.has(normalizeTitle(c.title))) { alreadyAnswered.push(c); return false; }
+    return true;
+  });
+  if (!answered.ok) {
+    console.log(`  historial de comentarios no disponible (${answered.error}): sin guard de ya-respondidos`);
+  } else if (alreadyAnswered.length) {
+    console.log(`  ya respondidos, descartados: ${alreadyAnswered.length}`);
+  }
+
   const seenTitle = new Map();
   const crossposts = [];
-  for (const c of [...allCandidates].sort((a, b) => b.score - a.score)) {
-    const key = normTitle(c.title);
+  for (const c of [...notAnswered].sort((a, b) => b.score - a.score)) {
+    const key = normalizeTitle(c.title);
     const prev = seenTitle.get(key);
     if (prev) { crossposts.push({ kept: prev, dropped: c }); continue; }
     seenTitle.set(key, c);
@@ -635,6 +692,12 @@ async function main() {
       : []),
     ...(crossposts.length
       ? ['', `_Crossposts: la misma pregunta aparecio en varios subs. Se conservo la de mayor score y se descarto ${crossposts.map((x) => `r/${x.dropped.subreddit} (se quedo r/${x.kept.subreddit})`).join(' · ')}. Si el sub descartado te conviene mas, usa ese hilo, pero **no contestes en los dos**._`]
+      : []),
+    ...(alreadyAnswered.length
+      ? ['', `_Ya respondidos por u/${CONFIG.redditAccount}, descartados: ${alreadyAnswered.map((c) => `"${c.title.slice(0, 48)}" (r/${c.subreddit})`).join(' · ')}._`]
+      : []),
+    ...(!answered.ok
+      ? ['', `_⚠️ No se pudo leer el historial de comentarios (${answered.error}), asi que hoy **no** hay guard de hilos ya respondidos: revisa que no estes contestando algo dos veces._`]
       : []),
     '',
     '---',
