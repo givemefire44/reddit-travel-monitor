@@ -1,8 +1,15 @@
 name: Reddit monitor
 
+# Sin schedule a proposito. El cron diario corria a las 07:00 de Argentina, pero
+# el karma depende de llegar temprano al hilo y para el mediodia ese reporte ya
+# tiene horas: un post que figuraba con 2h de antiguedad tiene 10 cuando Mario se
+# sienta a comentar. La corrida local (run-monitor.bat) se dispara en el momento
+# de actuar, asi que los datos son del momento. Ademas corrian los dos y se
+# duplicaba el gasto de API y los archivos de salida.
+#
+# Queda solo workflow_dispatch: el boton "Run workflow" sigue disponible para
+# dispararlo a mano desde GitHub cuando no haya acceso a la maquina local.
 on:
-  schedule:
-    - cron: '0 10 * * *' # 07:00 Argentina
   workflow_dispatch:
 
 permissions:
