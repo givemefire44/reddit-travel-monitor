@@ -42,6 +42,14 @@ const SITE_VOICE = {
     // de cualquier borrador legitimo, no una mencion de marca
     brandRe: /trasteverefoodtour/gi,
   },
+  // Candidatos sin material del corpus: no hay sitio ni marca porque se contesta
+  // como viajero comun. Nunca llevan mencion, ni siquiera en fase attribution:
+  // la marca solo acompana medicion propia, y aca no hay ninguna.
+  generic: {
+    subject: 'Rome and Italy',
+    brand: null,
+    brandRe: /(?!)/g, // no matchea nunca
+  },
 };
 // Reddit filtra los feeds publicos por heuristica de headers: rechaza clientes
 // que no parecen navegador (el UA descriptivo de la etiqueta de API daba 403)
@@ -392,6 +400,7 @@ function scoreCandidates(posts, subredditCfg, cutoffUtc) {
     funnel.inWindow += 1;
     const haystack = `${post.title} ${post.selftext}`.toLowerCase();
     let siteKey, topics;
+    let noFacts = false;
     if (karmaMode) {
       // La keyword tiene que estar en el TITULO, no en el cuerpo. Medido sobre la
       // corrida del 2026-08-05: buscar en el cuerpo acepta itinerarios multi-pais
@@ -402,9 +411,24 @@ function scoreCandidates(posts, subredditCfg, cutoffUtc) {
       if (!KARMA_KEYWORDS.some((kw) => hasKeyword(titleHay, kw))) continue;
       funnel.keywordPass += 1;
       const best = bestSiteByFacts(`${post.title} ${post.selftext}`);
-      if (!best) continue;   // no tenemos con que responder: se descarta aca
-      siteKey = best.key;
-      topics = best.topics;
+      if (best) {
+        siteKey = best.key;
+        topics = best.topics;
+      } else {
+        // Sin material propio, pero sigue siendo una pregunta de Roma/Italia que
+        // un viajero puede contestar. El cron existe para juntar karma, asi que
+        // tirar estos hilos es tirar justo lo que vinimos a buscar: el 2026-08-08
+        // "Italy/milan travel tips, is a car necessary?" era contestable de sobra
+        // sin una sola cifra nuestra.
+        //
+        // Lo que cambia no es si el hilo entra, es como se escribe el borrador:
+        // sin facts, sin cifras, y sin fingir que tenemos datos. Antes el pipeline
+        // le encajaba 5 facts del Museo Vaticano y el modelo, correctamente, salia
+        // a decir que no tenia con que responder.
+        siteKey = 'generic';
+        topics = [];
+        noFacts = true;
+      }
       funnel.topicPass += 1;
     } else {
       // Sitio = el que mas keywords matchea (empate: orden de config.sites)
@@ -434,6 +458,9 @@ function scoreCandidates(posts, subredditCfg, cutoffUtc) {
       ageHours: Math.round((Date.now() / 1000 - post.created_utc) / 3600),
       topics,
       karma: karmaMode,
+      noFacts,
+      // Los sin-material puntuan 0 por topics, asi que caen naturalmente por
+      // debajo de los que si tienen corpus. Compiten por el cupo sobrante.
       score: (early === true ? 2 : early === null ? 1 : 0) + topics.length,
     });
   }
@@ -510,6 +537,33 @@ Answer the person's actual question first; don't dump every fact.
 Output ONLY the comment text, nothing else.`;
 }
 
+// Prompt para los candidatos sin material del corpus. No recibe facts, asi que la
+// regla "toda cifra sale de un fact" se vuelve, simplemente, cero cifras.
+//
+// Antes estos hilos se descartaban o -- peor -- se les encajaban 5 facts que no
+// venian al caso y el modelo salia a aclarar que no tenia con que responder. El
+// sistema existe para juntar karma: una respuesta util de viajero comun vale
+// exactamente lo mismo en karma que una con datos propios.
+function noFactsSystemPrompt() {
+  return `You draft Reddit comments answering travelers' questions about Rome and Italy.
+
+You have NO researched data for this particular question. That is normal and fine: answer as a well-travelled person would, from ordinary general knowledge, and keep it genuinely useful.
+
+Hard rules:
+- NO numbers of any kind. No prices, durations, distances, frequencies, times, temperatures, percentages, capacities. If the natural answer wants a number, say it qualitatively instead: "runs often", "a short ride", "thins out in winter". The only digits allowed are ones the poster themselves wrote, quoted back.
+- Never mention data, facts, sources, research, or that you were given anything to work with. Phrases like "my facts", "my info", "the data I have" are absolutely forbidden - they reveal there is a system behind the comment.
+- Never say the question is not your area, not your wheelhouse, off-topic, or outside what you know. Either answer it or output SKIP (see below).
+- Say only what you are actually confident about. Vague-but-true beats specific-but-guessed.
+- Never simulate lived personal experience ("when I went", "I did this last month").
+
+If you have nothing genuinely useful to offer, output exactly: SKIP
+(and nothing else). A dropped draft costs nothing. A wrong or empty comment costs credibility.
+
+Style: natural Reddit tone, direct, contractions always, short paragraphs. No semicolons. No em dashes, use a comma or a simple hyphen. No bullet lists. No emojis. No links, no domains, no brand or website names. No sign-off unless it genuinely fits. Length 40-150 words.
+
+Output ONLY the comment text, nothing else.`;
+}
+
 const CORDIAL_CLOSE_RE = /\b(enjoy( it| rome|!)?|have (a great|an amazing|a good) (trip|time)|happy travels|safe travels|have fun)\W*$/i;
 
 // Borradores que se descartan enteros en vez de mostrarse como candidato del dia.
@@ -556,6 +610,14 @@ function declineReason(text) {
   return null;
 }
 
+// Cifras permitidas en un borrador sin corpus: solo las que el propio posteo
+// escribio (fechas de viaje, numero de personas). Cualquier otra es un numero
+// inventado, que es exactamente lo que el sistema no puede permitirse.
+function inventedFigures(text, postText) {
+  const inPost = new Set(postText.match(/\d+/g) || []);
+  return [...new Set(text.match(/\d+/g) || [])].filter((n) => !inPost.has(n));
+}
+
 async function generateDraft(candidate, facts, phase, variety = {}) {
   const factsBlock = facts
     .map((f, i) => `${i + 1}. [${f.id}] ${f.fact} (figures: ${f.figures.join(', ')})`)
@@ -568,20 +630,33 @@ async function generateDraft(candidate, facts, phase, variety = {}) {
       ? ''
       : '\n\nFor this draft a friendly sign-off ("enjoy it", "have a great trip") is NOT allowed: end on the last fact or piece of advice.',
   ].join('');
+  const postBlock = `Subreddit: r/${candidate.subreddit}\nPost title: ${candidate.title}\nPost body:\n"""\n${candidate.selftext.slice(0, 4000) || '(sin cuerpo)'}\n"""`;
   const response = await client.messages.create({
     model: MODEL,
     max_tokens: 2000,
-    system: draftSystemPrompt(phase, candidate.site),
+    system: candidate.noFacts ? noFactsSystemPrompt() : draftSystemPrompt(phase, candidate.site),
     messages: [
       {
         role: 'user',
-        content: `Subreddit: r/${candidate.subreddit}\nPost title: ${candidate.title}\nPost body:\n"""\n${candidate.selftext.slice(0, 4000) || '(sin cuerpo)'}\n"""\n\nAvailable facts:\n${factsBlock}${varietyBlock}`,
+        content: candidate.noFacts
+          ? `${postBlock}${varietyBlock}`
+          : `${postBlock}\n\nAvailable facts:\n${factsBlock}${varietyBlock}`,
       },
     ],
   });
   if (response.stop_reason === 'refusal') return { text: null, issues: ['refusal del modelo'] };
   const text = response.content.find((b) => b.type === 'text')?.text.trim() ?? '';
-  return { text, issues: validateDraft(text, phase, candidate.site), cordialClose: CORDIAL_CLOSE_RE.test(text) };
+  // El prompt sin corpus ofrece SKIP como salida honesta cuando no hay nada util
+  // que decir. Se trata igual que una negativa: el candidato no llega al reporte.
+  if (candidate.noFacts && /^skip\b/i.test(text)) return { text: null, issues: [], skipped: true };
+  const issues = candidate.noFacts
+    ? validateDraft(text, 'warmup', 'generic')
+    : validateDraft(text, phase, candidate.site);
+  if (candidate.noFacts) {
+    const invented = inventedFigures(text, `${candidate.title} ${candidate.selftext}`);
+    if (invented.length) issues.push(`cifras sin respaldo (${invented.join(', ')}) en un borrador sin corpus`);
+  }
+  return { text, issues, cordialClose: CORDIAL_CLOSE_RE.test(text) };
 }
 
 function validateDraft(text, phase, siteKey) {
@@ -613,9 +688,13 @@ function renderCandidate(c, facts, draft, blocked) {
   lines.push(`### ${c.title}`);
   lines.push('');
   lines.push(`- **Hilo:** ${c.url}`);
-  lines.push(`- **Sitio:** ${c.site} · **Subreddit:** r/${c.subreddit} · **Antigüedad:** ${c.ageHours}h · **Comentarios:** ${c.numComments ?? 'n/d (RSS)'} · **Score:** ${c.score}`);
-  lines.push(`- **Topics:** ${c.topics.join(', ')}`);
-  if (c.karma) lines.push(`- **Modo karma:** el post no menciona nuestros destinos; entro por relevancia Roma/Italia y porque hay ${facts.length} facts que lo cubren. Responder como viajero, sin marca.`);
+  lines.push(`- **Sitio:** ${c.noFacts ? '— (sin corpus)' : c.site} · **Subreddit:** r/${c.subreddit} · **Antigüedad:** ${c.ageHours}h · **Comentarios:** ${c.numComments ?? 'n/d (RSS)'} · **Score:** ${c.score}`);
+  lines.push(`- **Topics:** ${c.topics.join(', ') || '—'}`);
+  if (c.noFacts) {
+    lines.push('- **Solo karma:** no tenemos material propio sobre esto. El borrador se escribió como viajero común, sin una sola cifra nuestra. Suma karma igual, que es para lo que existe esta etapa.');
+  } else if (c.karma) {
+    lines.push(`- **Modo karma:** el post no menciona nuestros destinos; entro por relevancia Roma/Italia y porque hay ${facts.length} facts que lo cubren. Responder como viajero, sin marca.`);
+  }
   lines.push('');
   if (blocked) lines.push('**[BLOQUEADO POR KARMA — guardar para etapa B]**');
   lines.push('');
@@ -626,8 +705,12 @@ function renderCandidate(c, facts, draft, blocked) {
   lines.push('```');
   if (draft.issues.length) lines.push(`\n> ⚠️ Validación: ${draft.issues.join('; ')}`);
   lines.push('');
-  lines.push('**Facts usados (verificar en un click):**');
-  for (const f of facts) lines.push(`- \`${f.id}\` "${f.fact}" — ${f.sourceUrl}`);
+  if (c.noFacts) {
+    lines.push('**Facts usados:** ninguno — nada que verificar, y nada que citar como dato nuestro.');
+  } else {
+    lines.push('**Facts usados (verificar en un click):**');
+    for (const f of facts) lines.push(`- \`${f.id}\` "${f.fact}" — ${f.sourceUrl}`);
+  }
   lines.push('');
   return lines.join('\n');
 }
@@ -722,7 +805,7 @@ async function main() {
   let cordialUsed = 0;
   let generated = 0;
   const genOne = async (c, blocked) => {
-    const facts = pickFacts(c.topics, c.site, 5, `${c.title} ${c.selftext}`);
+    const facts = c.noFacts ? [] : pickFacts(c.topics, c.site, 5, `${c.title} ${c.selftext}`);
     const allowCordialClose = cordialUsed < Math.floor(generated / 3) + 1 && (generated === 0 || !previousDraft?.cordial);
     const draft = await generateDraft(c, facts, CONFIG.phase, {
       previousDraft: previousDraft?.text ?? null,
@@ -732,7 +815,9 @@ async function main() {
     // Un borrador que no contesta no es un candidato: se descarta antes de llegar
     // al reporte. La regla de lectura pasa a ser "lo que aparece, se postea".
     // Se registra abajo, nunca se oculta en silencio.
-    const reason = declineReason(draft.text);
+    const reason = draft.skipped
+      ? 'sin corpus y sin nada util que aportar (el modelo devolvio SKIP)'
+      : declineReason(draft.text);
     if (reason) {
       declined.push({ c, reason });
       return null;
