@@ -447,6 +447,7 @@ function scoreCandidates(posts, subredditCfg, cutoffUtc) {
     funnel.questionPass += 1;
     // null = conteo no disponible (RSS): bonus neutro de 1 en vez de 2
     const early = post.num_comments == null ? null : post.num_comments < 10;
+    const ageHours = Math.round((Date.now() / 1000 - post.created_utc) / 3600);
     out.push({
       site: siteKey,
       subreddit: subredditCfg.name,
@@ -455,16 +456,37 @@ function scoreCandidates(posts, subredditCfg, cutoffUtc) {
       url: `https://www.reddit.com${post.permalink}`,
       selftext: post.selftext,
       numComments: post.num_comments,
-      ageHours: Math.round((Date.now() / 1000 - post.created_utc) / 3600),
+      ageHours,
       topics,
       karma: karmaMode,
       noFacts,
-      // Los sin-material puntuan 0 por topics, asi que caen naturalmente por
-      // debajo de los que si tienen corpus. Compiten por el cupo sobrante.
-      score: (early === true ? 2 : early === null ? 1 : 0) + topics.length,
+      // Los sin-material puntuan 0 por topics, asi que caen por debajo de los que
+      // si tienen corpus con la misma frescura. Compiten por el cupo sobrante.
+      score: (early === true ? 2 : early === null ? 1 : 0) + topics.length + freshnessBonus(ageHours),
     });
   }
   return { candidates: out, funnel };
+}
+
+// La frescura del hilo no entraba en el puntaje: uno de 63h rankeaba igual que
+// uno de 2h si matcheaba los mismos topics. Con la ventana vieja de 72h eso
+// significaba comentar sistematicamente en hilos de uno a tres dias, cuando ya
+// se cayeron de la portada del sub y el que pregunto tiene sus respuestas.
+//
+// Los 4 comentarios ya publicados que se pudieron medir el 2026-08-08 estan en
+// 1 punto (el voto automatico) salvo uno con 3. No fueron removidos ni votados
+// en contra: sencillamente no los abrio nadie.
+//
+// La ventana queda en 24h y no en 12h porque el monitor se dispara a mano una
+// vez por dia: una ventana mas corta que el intervalo de corrida deja un agujero
+// ciego con los hilos de las horas no cubiertas. Si algun dia se corre dos veces
+// por dia, ahi si conviene bajarla.
+function freshnessBonus(ageHours) {
+  if (ageHours <= 3) return 5;
+  if (ageHours <= 6) return 4;
+  if (ageHours <= 12) return 2;
+  if (ageHours <= 18) return 1;
+  return 0;
 }
 
 function pickFacts(topics, siteKey, max = 5, postText = '') {
@@ -852,6 +874,8 @@ async function main() {
     ),
     '',
     `_Etapas en el orden real del filtro: publicado en las últimas ${HOURS}h y no sticky/nsfw → alguna keyword del sitio → match con la taxonomía de topics → pregunta genuina. No hay umbral de score: todo lo que pasa el embudo es candidato y el corte es el cupo diario (top ${CONFIG.maxCandidatesPerDay} por estado)._`,
+    '',
+    '_El score suma topics + frescura del hilo (≤3h vale 5, ≤6h vale 4, ≤12h vale 2, ≤18h vale 1, más viejo no suma). Un comentario en un hilo de un día no lo lee nadie por bueno que sea: a esa altura ya se cayó de la portada del sub y quien preguntó tiene sus respuestas. Por eso lo fresco gana._',
     ...(droppedByQuota.length
       ? ['', `_Cortados hoy por cupo, no por score: ${droppedByQuota.map((c) => `r/${c.subreddit} (score ${c.score})`).join(' · ')}._`]
       : []),

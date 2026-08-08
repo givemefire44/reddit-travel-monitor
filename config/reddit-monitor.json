@@ -1,7 +1,7 @@
 {
   "phase": "warmup",
   "maxCandidatesPerDay": 6,
-  "windowHours": 72,
+  "windowHours": 24,
   "redditAccount": "RomanColosseumExpert",
   "karmaTarget": 150,
   "fetchMode": "public-rss",
