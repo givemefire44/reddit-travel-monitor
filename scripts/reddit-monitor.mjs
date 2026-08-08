@@ -345,12 +345,32 @@ const KARMA_KEYWORDS = [
 const KARMA_MIN_FACTS = 3;   // sin al menos 3 facts con overlap real, no hay respuesta util
 const KARMA_MIN_TOPICS = 2;  // un solo topic suele ser un match accidental
 
+// Topics que matchean con casi cualquier post de viajes ("book", "how much",
+// "how long", "hot", "metro") y por lo tanto no dicen NADA sobre si el post es
+// nuestro. El piso de KARMA_MIN_FACTS parecia un filtro de calidad y no filtraba:
+// el corpus vatican tiene 39 facts etiquetados `tickets` contra 3 de `weather`,
+// asi que cualquier post que mencione "book" limpia el piso de 3 facts sin que
+// ninguno de esos facts responda la pregunta.
+//
+// Paso el 2026-08-07 y otra vez el 2026-08-08 con la misma pregunta ("Italy/milan
+// travel tips, is a car necessary?"): matcheo [tickets, weather], entro como
+// candidato del Vaticano, y se le sirvieron 5 facts de entradas al Museo -- entre
+// ellos el umbral de invalidez del 67% -- para una consulta sobre si hace falta
+// auto en el lago de Como.
+//
+// Regla: en modo karma el post tiene que tocar al menos UN topic especifico.
+const GENERIC_TOPICS = new Set([
+  'tickets', 'pricing', 'timing', 'crowds', 'weather', 'logistics', 'booking',
+]);
+const hasSpecificTopic = (topics) => topics.some((t) => !GENERIC_TOPICS.has(t));
+
 // Elige el sitio cuyos facts mejor cubren el post, no el que mas keywords matchea.
 function bestSiteByFacts(text) {
   let best = null;
   for (const s of CONFIG.sites) {
     const topics = matchTopics(text, s.key);
     if (topics.length < KARMA_MIN_TOPICS) continue;
+    if (!hasSpecificTopic(topics)) continue;
     const facts = pickFacts(topics, s.key);
     if (facts.length < KARMA_MIN_FACTS) continue;
     const strength = facts.length + topics.length;
@@ -491,6 +511,50 @@ Output ONLY the comment text, nothing else.`;
 }
 
 const CORDIAL_CLOSE_RE = /\b(enjoy( it| rome|!)?|have (a great|an amazing|a good) (trip|time)|happy travels|safe travels|have fun)\W*$/i;
+
+// Borradores que se descartan enteros en vez de mostrarse como candidato del dia.
+//
+// El modelo hace lo correcto cuando no tiene material: la regla anti-absencia del
+// prompt le prohibe inventar, asi que escribe "no tengo datos de esto". El error
+// es del pipeline, que despues presenta esa negativa como el borrador del dia.
+// El 2026-08-07 fueron 3 de 4 candidatos y el 2026-08-08 fueron 2 de 3.
+//
+// 1) Fuga del corpus: el borrador habla de "mis facts". Ninguna persona real dice
+//    eso -- la palabra viene del sistema, que le pasa 5 facts al modelo. Pegado en
+//    Reddit delata que hay un script atras. Es fatal aparezca donde aparezca.
+//    Real, 2026-08-08: "this question has nothing to do with the Vatican facts
+//    I've got on hand".
+const CORPUS_LEAK_RE = /\b(my|our)\s+facts\b|\bfacts\s+(I|we)\b|\bfacts\s+I['’]/i;
+// 2) Negativa de apertura: si las primeras lineas dicen que el tema no es suyo, no
+//    hay comentario. Se mira SOLO el arranque a proposito: un borrador que contesta
+//    bien y de paso admite no saber un detalle lateral ("can't speak to the
+//    souvenir shop hours") es legitimo y no se descarta.
+// Las contracciones se escriben `is\s?n['’]?t` y no `isn'?t` porque el modelo
+// alterna apostrofo ASCII y tipografico, y porque la primera version buscaba `not`
+// -- que NO matchea "n't". Dos borradores reales se colaron por eso: "this isn't
+// really the sub for it" y "this isn't quite my wheelhouse".
+const OPENING_DECLINE_RE = new RegExp(
+  [
+    /(is\s?n['’]?t|is not|not)\s+(really\s+|quite\s+|exactly\s+|entirely\s+)?(my|our)\s+(wheelhouse|area|thing|expertise|strong suit)/,
+    /(outside|beyond|not)\s+(really\s+)?(my|our)\s+(wheelhouse|area|expertise|knowledge)/,
+    /(is\s?n['’]?t|is not|not)\s+(really\s+|quite\s+)?the\s+(sub|place)\s+for\s+(it|this)/,
+    /(this|that)\s+(one\s+)?(is|['’]s)\s+(really\s+)?off.?topic/,
+    /off.?topic\s+for\s+the\s+facts/,
+    /(none|nothing)\s+of\s+(my|the)\s+(facts|info)/,
+    /I\s+(do\s?n['’]?t|do not)\s+have\s+(solid|good|any|much|reliable|real)\s+(info|information|data|numbers)/,
+    /I\s+ca\s?n['’]?t\s+(really\s+)?(speak|help)\s+(to|with)\s+(that|this|your)/,
+    /most\s+of\s+what\s+I\s+know\s+cold/,
+  ].map((r) => r.source).join('|'),
+  'i'
+);
+const OPENING_CHARS = 220;
+
+function declineReason(text) {
+  if (!text) return null;
+  if (CORPUS_LEAK_RE.test(text)) return 'el borrador habla de "sus facts" (delata el sistema)';
+  if (OPENING_DECLINE_RE.test(text.slice(0, OPENING_CHARS))) return 'el borrador abre diciendo que no tiene con que responder';
+  return null;
+}
 
 async function generateDraft(candidate, facts, phase, variety = {}) {
   const factsBlock = facts
@@ -653,6 +717,7 @@ async function main() {
   // Variedad de registro entre borradores del batch: cada generacion ve el borrador
   // anterior como contraste (test de plantilla) y el cierre cordial se raciona a 1 de 3.
   const sections = { active: [], watchOnly: [] };
+  const declined = [];
   let previousDraft = null;
   let cordialUsed = 0;
   let generated = 0;
@@ -664,12 +729,27 @@ async function main() {
       allowCordialClose,
     });
     generated += 1;
+    // Un borrador que no contesta no es un candidato: se descarta antes de llegar
+    // al reporte. La regla de lectura pasa a ser "lo que aparece, se postea".
+    // Se registra abajo, nunca se oculta en silencio.
+    const reason = declineReason(draft.text);
+    if (reason) {
+      declined.push({ c, reason });
+      return null;
+    }
     if (draft.cordialClose) cordialUsed += 1;
     if (draft.text) previousDraft = { text: draft.text, cordial: draft.cordialClose };
     return renderCandidate(c, facts, draft, blocked);
   };
-  for (const c of active) sections.active.push(await genOne(c, false));
-  for (const c of watchOnly) sections.watchOnly.push(await genOne(c, true));
+  for (const c of active) {
+    const md = await genOne(c, false);
+    if (md) sections.active.push(md);
+  }
+  for (const c of watchOnly) {
+    const md = await genOne(c, true);
+    if (md) sections.watchOnly.push(md);
+  }
+  if (declined.length) console.log(`  borradores descartados por no contestar: ${declined.length}`);
 
   const karmaBar = karma == null
     ? '(no disponible)'
@@ -695,6 +775,9 @@ async function main() {
       : []),
     ...(alreadyAnswered.length
       ? ['', `_Ya respondidos por u/${CONFIG.redditAccount}, descartados: ${alreadyAnswered.map((c) => `"${c.title.slice(0, 48)}" (r/${c.subreddit})`).join(' · ')}._`]
+      : []),
+    ...(declined.length
+      ? ['', `_Borradores descartados por no contestar la pregunta (el hilo paso el embudo pero el texto generado no sirve para pegar): ${declined.map((d) => `"${d.c.title.slice(0, 48)}" (r/${d.c.subreddit}) — ${d.reason}`).join(' · ')}._`]
       : []),
     ...(!answered.ok
       ? ['', `_⚠️ No se pudo leer el historial de comentarios (${answered.error}), asi que hoy **no** hay guard de hilos ya respondidos: revisa que no estes contestando algo dos veces._`]
