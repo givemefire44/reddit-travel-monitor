@@ -353,32 +353,34 @@ const KARMA_KEYWORDS = [
 const KARMA_MIN_FACTS = 3;   // sin al menos 3 facts con overlap real, no hay respuesta util
 const KARMA_MIN_TOPICS = 2;  // un solo topic suele ser un match accidental
 
-// Topics que matchean con casi cualquier post de viajes ("book", "how much",
-// "how long", "hot", "metro") y por lo tanto no dicen NADA sobre si el post es
-// nuestro. El piso de KARMA_MIN_FACTS parecia un filtro de calidad y no filtraba:
-// el corpus vatican tiene 39 facts etiquetados `tickets` contra 3 de `weather`,
-// asi que cualquier post que mencione "book" limpia el piso de 3 facts sin que
-// ninguno de esos facts responda la pregunta.
-//
-// Paso el 2026-08-07 y otra vez el 2026-08-08 con la misma pregunta ("Italy/milan
-// travel tips, is a car necessary?"): matcheo [tickets, weather], entro como
-// candidato del Vaticano, y se le sirvieron 5 facts de entradas al Museo -- entre
-// ellos el umbral de invalidez del 67% -- para una consulta sobre si hace falta
-// auto en el lago de Como.
-//
-// Regla: en modo karma el post tiene que tocar al menos UN topic especifico.
-const GENERIC_TOPICS = new Set([
-  'tickets', 'pricing', 'timing', 'crowds', 'weather', 'logistics', 'booking',
-]);
-const hasSpecificTopic = (topics) => topics.some((t) => !GENERIC_TOPICS.has(t));
-
 // Elige el sitio cuyos facts mejor cubren el post, no el que mas keywords matchea.
+//
+// EL GUARD QUE IMPORTA: el corpus de un sitio solo se usa si el post habla de ESE
+// destino. La taxonomia de topics esta hecha de palabras corrientes de viaje
+// (markets, wine, neighborhoods, basilica, family, tickets), asi que por si sola
+// mete posts ajenos en el sitio equivocado y despues el modelo tiene que salir a
+// aclarar que los facts no venian al caso. Casos reales del 2026-08-09:
+//
+//   "Florence as my basehub for a 7 day trip"  -> [markets, wine-drinks,
+//      neighborhoods, value, format-duration] -> corpus de Trastevere
+//   "What do Italians think of Saint Francis?" -> [st-peters, kids-families]
+//      porque el post dice "basilica"... la de Asis -> corpus del Vaticano
+//
+// Ninguno de los dos nombra Roma, el Vaticano, el Coliseo ni Trastevere. Exigir
+// una keyword del propio sitio los manda a la via sin corpus, que es donde
+// pertenecen: se contestan como viajero y suman el mismo karma.
+//
+// Esto reemplaza al filtro de topics genericos del commit 042cff1, que era el
+// parche equivocado: con este guard puesto, aquel encima estorbaba -- "Vatican
+// tickets, what time is best?" toca solo topics genericos y es exactamente el
+// tipo de post para el que SI tenemos material.
 function bestSiteByFacts(text) {
+  const hay = text.toLowerCase();
   let best = null;
   for (const s of CONFIG.sites) {
+    if (!s.keywords.some((kw) => hasKeyword(hay, kw))) continue;
     const topics = matchTopics(text, s.key);
     if (topics.length < KARMA_MIN_TOPICS) continue;
-    if (!hasSpecificTopic(topics)) continue;
     const facts = pickFacts(topics, s.key);
     if (facts.length < KARMA_MIN_FACTS) continue;
     const strength = facts.length + topics.length;
@@ -535,6 +537,7 @@ Data rules (inviolable):
 - You may ONLY use figures that appear in the facts provided. Copy each figure EXACTLY as written. Never invent, round differently, or extrapolate a number.
 - Use 1-3 of the provided facts, only the ones that actually answer the question.
 - General non-numeric advice from common knowledge is fine, but every NUMBER must come from the facts.
+- NEVER refer to the facts as something you possess or were handed, in any wording: "my facts", "the fact set", "what I can answer with facts", "not sourced", "my info covers". The reader must never learn that material was supplied to you. Just answer, or plainly say you are not sure about that part.
 - NEVER assert that something does not exist, is not offered, or is not a real option just because it is absent from the facts you were given. The facts are a partial extract, not a catalogue. A draft once claimed the Colosseum Attic "isn't a ticket category" simply because no Attic fact had been selected — it is one, and the claim was wrong and checkable in seconds. If the post asks about something your facts do not cover, say you are not sure about that part and answer what you can. Absence of a fact is not evidence of absence.
 
 ${phase === 'attribution'
@@ -600,7 +603,25 @@ const CORDIAL_CLOSE_RE = /\b(enjoy( it| rome|!)?|have (a great|an amazing|a good
 //    Reddit delata que hay un script atras. Es fatal aparezca donde aparezca.
 //    Real, 2026-08-08: "this question has nothing to do with the Vatican facts
 //    I've got on hand".
-const CORPUS_LEAK_RE = /\b(my|our)\s+facts\b|\bfacts\s+(I|we)\b|\bfacts\s+I['’]/i;
+//    Whack-a-mole confirmado: la primera version cazaba las frases del 08-08 y
+//    dejo pasar las del 08-09, que dijeron lo mismo con otras palabras ("a Rome
+//    food tour subreddit's fact set", "something I can answer with facts", "not
+//    sourced"). Por eso ahora la red es ancha: cualquier referencia al material
+//    recibido, en cualquier redaccion, mata el borrador. El guard de keyword del
+//    sitio (ver bestSiteByFacts) ataca la causa; esto es la red de seguridad.
+const CORPUS_LEAK_RE = new RegExp(
+  [
+    /\b(my|our)\s+facts?\b/,
+    /\bfacts?\s+(set|list)\b/,
+    /\bfacts?\s+(I|we)['’ ]/,
+    /\b(answer|respond|speak|help)\w*\s+(this\s+|that\s+|it\s+)?with\s+facts?\b/,
+    /\bnot\s+sourced\b/,
+    /\bthe\s+(facts?|data|info|information)\s+(I|we)\s+(have|got|was|were)\b/,
+    /\b(my|our)\s+(info|information|data)\s+(is|are|covers?)\b/,
+    /\bcorpus\b/,
+  ].map((r) => r.source).join('|'),
+  'i'
+);
 // 2) Negativa de apertura: si las primeras lineas dicen que el tema no es suyo, no
 //    hay comentario. Se mira SOLO el arranque a proposito: un borrador que contesta
 //    bien y de paso admite no saber un detalle lateral ("can't speak to the
