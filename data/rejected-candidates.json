@@ -5,48 +5,53 @@
     "reason": "sin cifra"
   },
   {
+    "slug": "bathroom-breaks-colosseum-underground-combo-tours",
+    "fact": "That 15–20 minute walk is your pre-tour buffer.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "bathroom-breaks-colosseum-underground-combo-tours",
+    "fact": "That 1h45m gap is unplanned dead time for the visitor — but it is also a usable bathroom-and-water window if you know it exists.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "colosseum-arena-tour",
+    "fact": "Yes, visitors can walk on a partially reconstructed section of the Arena floor through the Porta Triumphalis, the original gladiator's gate.",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "colosseum-arena-tour",
+    "fact": "These tickets are limited and often sell out weeks in advance during peak season.",
+    "reason": "sin cifra"
+  },
+  {
     "slug": "colosseum-arena-tour",
     "fact": "The reconstructed Arena platform is accessible via elevator.",
     "reason": "sin cifra"
   },
   {
-    "slug": "colosseum-accessibility-wheelchair-guide",
-    "fact": "That said, honesty matters: the Colosseum is a 2,000-year-old ruin, not a purpose-built museum, so the surfaces are mixed and not every area is reachable.",
-    "reason": "apertura no autonoma"
-  },
-  {
-    "slug": "colosseum-official-website-sells-out-before-listed",
-    "fact": "That is the same base access operators wrap into €60–€90 group tours.",
-    "reason": "apertura no autonoma"
-  },
-  {
-    "slug": "colosseum-tours-and-tickets-how-to-book-and-fix-common-problems",
-    "fact": "This can range from the standard 24-hour ticket to Full Experience options, Arena or Underground access, guided tours, or combined tickets that include the Roman Forum and Palatine Hill.",
-    "reason": "apertura no autonoma"
-  },
-  {
-    "slug": "colosseum-underground-tour-honest-guide",
-    "fact": "Standard-ticket visitors can look down into the underground from above.",
+    "slug": "commodus-passage-colosseum-secret-tunnel-2025",
+    "fact": "Yes! The restoration included a retractable staircase and accessible pathways specifically to accommodate visitors with mobility challenges.",
     "reason": "sin cifra"
   },
   {
-    "slug": "colosseum-underground-tour-honest-guide",
-    "fact": "The Colosseum allocates most underground inventory to licensed operators, not the public site.",
-    "reason": "sin cifra"
+    "slug": "complete-guide-to-visiting-the-roman-colosseum-step-by-step",
+    "fact": "Morning (8:30 – 10:30 AM) → Cooler and fewer crowds, best for photos.",
+    "reason": "cifra \"8:30 AM\" no esta en la frase"
   },
   {
     "slug": "how-long-colosseum-tour-duration-compared",
-    "fact": "This cap holds whether your overall tour is 2.5 hours or 4 hours.",
+    "fact": "That is 1 hour 45 minutes of dead time the buyer did not budget.",
     "reason": "apertura no autonoma"
   },
   {
-    "slug": "palatine-hill",
-    "fact": "Yes, most combined Colosseum tickets include entry to both the Roman Forum and Palatine Hill at no extra cost",
+    "slug": "skip-the-colosseum-roman-tour-line",
+    "fact": "Purchased at colosseo.it. Includes Colosseum levels 1–2 plus Roman Forum and Palatine Hill.",
     "reason": "sin cifra"
   },
   {
-    "slug": "private-colosseum-tour",
-    "fact": "Most private tours include the main Colosseum levels plus skip-the-line entry, and many offer exclusive access to the arena floor, the underground hypogeum, Palatine Hill, and the Roman Forum as part of a single guided experience.",
-    "reason": "sin cifra"
+    "slug": "skip-the-colosseum-roman-tour-line",
+    "fact": "This is a once-in-a-lifetime trip and budget is not the constraint → VIP small-group at €135–€160+.",
+    "reason": "apertura no autonoma"
   }
 ]

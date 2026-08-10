@@ -1,8 +1,8 @@
 [
   {
-    "slug": "how-to-avoid-vatican-crowds",
-    "fact": "That is consistent with the wider finding that the median Museums visit runs three hours before anyone goes looking for the quiet rooms.",
-    "reason": "apertura no autonoma"
+    "slug": "vatican-crowd-handling-staff",
+    "fact": "It is 1.89 stars, the average of reviews describing being herded or treated like cattle, more than two stars below the corpus average of 4.08.",
+    "reason": "voz editorial interna"
   },
   {
     "slug": "vatican-crowd-handling-staff",
@@ -12,21 +12,6 @@
   {
     "slug": "vatican-crowd-handling-staff",
     "fact": "Reviews mentioning staff average 1.23 stars below the corpus average, and those describing shouting by site staff 1.77 below — yet reviews describing staff as helpful or kind average above the corpus average.",
-    "reason": "voz editorial interna"
-  },
-  {
-    "slug": "vatican-early-access-really-means",
-    "fact": "'Early access' at the Vatican means entering at 8:00 AM — when the Museums open — not before the public.",
-    "reason": "frase no textual"
-  },
-  {
-    "slug": "vatican-mobility-access",
-    "fact": "Reviews mentioning a wheelchair average 4.25 stars, above the corpus average of 4.08 — ramps, lifts, priority entry and attentive stewards come up repeatedly",
-    "reason": "voz editorial interna"
-  },
-  {
-    "slug": "vatican-history-context-effect",
-    "fact": "The Raphael Rooms sit 0.34 above the corpus average despite being just as crowded as everything around them, and they are the part of the collection least legible without context.",
     "reason": "voz editorial interna"
   },
   {
@@ -40,13 +25,18 @@
     "reason": "sin cifra"
   },
   {
-    "slug": "vatican-value-perception",
-    "fact": "Removing every review that also carries a tag for queues, scams, cancellations, skip-the-line or booking leaves 303 reviews that mention price with no service failure attached, and they still average 3.38 — 0.70 below the corpus average",
-    "reason": "voz editorial interna"
+    "slug": "vatican-museums-tickets-guide",
+    "fact": "Official tickets are non-refundable, non-transferable, and single-entry — you can't change the date, the names must match photo ID, and once you exit you can't re-enter",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "vatican-pinecone-courtyard-briefing",
+    "fact": "Visitors report close to 20 minutes spent outdoors looking at posters of the Sistine Chapel instead of real art, and reports of standard 8:00 AM itineraries spending their opening time in the courtyard instead of heading straight for the chapel.",
+    "reason": "frase no textual"
   },
   {
     "slug": "vatican-value-perception",
-    "fact": "It is the only paid element at the Vatican where price mentions score above the corpus average, at 4.27 across 157 reviews",
+    "fact": "Removing every review that also carries a tag for queues, scams, cancellations, skip-the-line or booking leaves 303 reviews that mention price with no service failure attached, and they still average 3.38 — 0.70 below the corpus average.",
     "reason": "voz editorial interna"
   }
 ]
