@@ -6,7 +6,7 @@
   "karmaTarget": 150,
   "fetchMode": "public-rss",
   "traction": {
-    "subreddits": ["travel", "solotravel", "EuropeTravel", "Eurotrip", "askitaly"],
+    "subreddits": ["travel", "solotravel", "EuropeTravel"],
     "maxThreads": 10,
     "maxComments": 40,
     "maxAgeHours": 18
