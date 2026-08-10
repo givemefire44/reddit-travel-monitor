@@ -293,6 +293,122 @@ async function fetchNewPostsRss(subreddit) {
   });
 }
 
+// ---------- modo traccion ----------
+// Segundo modo, independiente del de arriba. El monitor de negocio mira /new, que
+// por definicion trae hilos que todavia no vio nadie -- incluidos los que no va a
+// ver nunca. Para juntar karma hace falta lo contrario: hilos que la gente YA esta
+// leyendo. Eso es /rising y /hot.
+//
+// Este modo no matchea keywords, no elige sitio, no toca el corpus y no escribe
+// borradores. Solo encuentra hilos con lectores; el comentario lo escribe Mario.
+//
+// Va por HTML de old.reddit y no por RSS porque el RSS no expone el score, asi que
+// un umbral de traccion es imposible de calcular con el fetch existente. El HTML
+// ademas destapa el NUMERO DE COMENTARIOS, que el sistema nunca tuvo (ver el
+// comentario de num_comments en fetchNewPostsRss), y esa es la metrica que decide
+// si vale la pena entrar: un hilo pasado de maxComments ya esta saturado y tu
+// comentario nace abajo de todo.
+//
+// SOLO /rising, no /hot. Medido dos veces el 2026-08-10 sobre 3 subs: hot no
+// aporto un solo hilo unico, esta contenido en rising. Traerlo duplicaba las
+// requests y sumaba ~3,5 min a cada corrida. A revisar con una semana de datos.
+//
+// El orden es por VELOCIDAD (puntos por hora), no por edad. La primera version
+// ordenaba por "mas joven primero" y el resultado fueron 10 hilos de 0 a 10
+// puntos: los posts recien publicados copan la lista y los que de verdad tienen
+// lectores quedan del puesto 11 en adelante. Medido sobre los mismos 74 hilos,
+// ordenar por velocidad sube el de Madagascar (1220 pts en 11h = 110/h) y el
+// "Hotel changed on arrival" (29 pts en 6h), que es justo el tipo de pregunta
+// donde una respuesta util se vota. El divisor va con piso de 1 hora para que un
+// post de 10 minutos no salga disparado por dividir por un numero chico.
+const TRACTION_CFG = {
+  subreddits: [], maxThreads: 10, maxComments: 40, maxAgeHours: 18,
+  ...(CONFIG.traction || {}),
+};
+
+const velocity = (p) => p.score / Math.max(p.ageHours, 1);
+
+// Marca informativa. Los hilos de mas velocidad suelen ser relatos con fotos:
+// muchisima lectura, pero lo unico que se puede comentar es "que lindo" y eso
+// rinde poco. Una pregunta tiene menos lectores y mucho mas rendimiento por
+// comentario, porque una respuesta util se vota. Se muestran los dos tipos y la
+// marca deja elegir.
+const QUESTION_RE = /\?|^(help|advice|any|anyone|how|what|where|which|should|is |are |do |does |need|looking for|recommend)/i;
+
+// old.reddit marca cada post con data-* en el div contenedor: score, cantidad de
+// comentarios, timestamp, nsfw y promoted vienen listos. Se leen esos atributos en
+// vez de regexear el HTML renderizado, que cambia con cada retoque de estilos.
+function parseListingHtml(html, listing) {
+  const out = [];
+  for (const chunk of html.split('<div class=" thing id-t3_').slice(1)) {
+    const head = chunk.slice(0, 1200);
+    const attr = (name) => (head.match(new RegExp(`data-${name}="([^"]*)"`)) || [, ''])[1];
+    if (attr('promoted') === 'true' || attr('nsfw') === 'true') continue;
+    if (/\bstickied\b/.test(head.slice(0, 300))) continue;
+    const permalink = attr('permalink');
+    const ts = Number(attr('timestamp'));
+    if (!permalink || !ts) continue;
+    const titleM = chunk.match(/<a[^>]*class="[^"]*\btitle\b[^"]*"[^>]*>([\s\S]*?)<\/a>/);
+    const title = titleM ? unescapeXml(titleM[1].replace(/<[^>]+>/g, '').trim()) : '(sin titulo)';
+    out.push({
+      id: (permalink.match(/\/comments\/([a-z0-9]+)\//) || [, ''])[1],
+      title,
+      url: `https://www.reddit.com${permalink}`,
+      subreddit: attr('subreddit'),
+      score: Number(attr('score')) || 0,
+      numComments: Number(attr('comments-count')) || 0,
+      ageHours: Math.round((Date.now() - ts) / 3600000),
+      listing,
+    });
+  }
+  return out;
+}
+
+async function fetchListing(subreddit, listing) {
+  const res = await fetchWithBackoff(`https://old.reddit.com/r/${subreddit}/${listing}/`);
+  return parseListingHtml(await res.text(), listing);
+}
+
+// Marca informativa, no filtro: este modo trae de todo a proposito, pero sin una
+// senal visual los 10 lugares se llenan de hilos sobre Tailandia y hay que leerlos
+// uno por uno para descartarlos.
+function italyRelated(text) {
+  const t = text.toLowerCase();
+  return KARMA_KEYWORDS.some((kw) => hasKeyword(t, kw));
+}
+
+async function collectTraction(excludeIds, excludeTitles) {
+  const rows = [];
+  const found = [];
+  const seen = new Set();
+  for (const sub of TRACTION_CFG.subreddits) {
+    const row = { sub, ok: true, fetched: 0, kept: 0, saturated: 0, old: 0, error: null };
+    try {
+      const posts = await fetchListing(sub, 'rising');
+      row.fetched = posts.length;
+      for (const p of posts) {
+        if (seen.has(p.id)) continue;
+        seen.add(p.id);
+        if (p.ageHours > TRACTION_CFG.maxAgeHours) { row.old += 1; continue; }
+        if (p.numComments > TRACTION_CFG.maxComments) { row.saturated += 1; continue; }
+        if (excludeIds.has(p.id) || excludeTitles.has(normalizeTitle(p.title))) continue;
+        found.push(p);
+        row.kept += 1;
+      }
+    } catch (err) {
+      row.ok = false;
+      row.error = err.message;
+    }
+    rows.push(row);
+    console.log(row.ok
+      ? `  r/${row.sub}: ${row.fetched} en rising -> ${row.kept} con lectores (${row.saturated} saturados, ${row.old} viejos)`
+      : `  r/${row.sub}: FETCH ERROR — ${row.error}`);
+    await new Promise((r) => setTimeout(r, 20000));
+  }
+  const ordered = found.sort((a, b) => velocity(b) - velocity(a));
+  return { threads: ordered.slice(0, TRACTION_CFG.maxThreads), rows, total: found.length };
+}
+
 // Hilos en los que la cuenta ya comento. Sin OAuth no hay forma directa, pero el
 // RSS publico del historial si responde (about.json da 403 desde esta IP, por eso
 // el karma sale "no disponible"). De cada permalink de comentario se extrae el ID
@@ -879,6 +995,19 @@ async function main() {
   }
   if (declined.length) console.log(`  borradores descartados por no contestar: ${declined.length}`);
 
+  // Modo traccion. Excluye lo que ya salio por el modo negocio y lo ya respondido:
+  // el mismo hilo en las dos secciones es trabajo duplicado y riesgo de contestar
+  // dos veces.
+  const businessIds = new Set(answered.ids);
+  const businessTitles = new Set(answered.titles);
+  for (const c of [...deduped, ...alreadyAnswered]) {
+    const id = (c.url.match(/\/comments\/([a-z0-9]+)\//) || [])[1];
+    if (id) businessIds.add(id);
+    businessTitles.add(normalizeTitle(c.title));
+  }
+  console.log('Modo tracción: buscando hilos con lectores...');
+  const traction = await collectTraction(businessIds, businessTitles);
+
   const karmaBar = karma == null
     ? '(no disponible)'
     : `${karma}/${CONFIG.karmaTarget} ${'█'.repeat(Math.min(20, Math.round((karma / CONFIG.karmaTarget) * 20)))}${'░'.repeat(Math.max(0, 20 - Math.round((karma / CONFIG.karmaTarget) * 20)))}`;
@@ -917,6 +1046,42 @@ async function main() {
     '',
   ];
 
+  const tractionSection = [
+    `## Modo tracción — hilos con lectores (${traction.threads.length})`,
+    '',
+    '_Este modo no mira keywords, ni corpus, ni escribe borradores. Solo busca hilos que la gente **ya está leyendo** — el comentario lo escribís vos, con tus palabras._',
+    '',
+    '_Ordenado por **velocidad**: puntos por hora, o sea qué tan rápido está siendo leído ahora mismo. Un hilo de 11h con 1200 puntos tiene mucha más gente encima que uno de 1h con 3._',
+    '',
+    '_La marca ❓ es lo que conviene mirar segundo. Los hilos de más velocidad suelen ser relatos con fotos: los lee muchísima gente, pero lo único que podés comentar es "qué lindo" y eso rinde poco. Una pregunta tiene menos lectores y mucho más rendimiento por comentario, porque una respuesta útil se vota._',
+    '',
+  ];
+  if (traction.threads.length) {
+    tractionSection.push(
+      '| Hilo | Sub | Puntos | Coment. | Pts/h | Edad | ❓ | 🇮🇹 |',
+      '|---|---|---|---|---|---|---|---|',
+      ...traction.threads.map((p) => {
+        const title = p.title.slice(0, 66).replace(/\|/g, '/');
+        return `| [${title}](${p.url}) | r/${p.subreddit} | ${p.score} | ${p.numComments} | ${Math.round(velocity(p))} | ${p.ageHours}h | ${QUESTION_RE.test(p.title) ? '❓' : ''} | ${italyRelated(p.title) ? '🇮🇹' : ''} |`;
+      }),
+      ''
+    );
+  } else {
+    tractionSection.push('_Sin hilos con tracción hoy._', '');
+  }
+  tractionSection.push(
+    '| Sub | en rising | con lectores | saturados | viejos |',
+    '|---|---|---|---|---|',
+    ...traction.rows.map((r) => (r.ok
+      ? `| r/${r.sub} | ${r.fetched} | ${r.kept} | ${r.saturated} | ${r.old} |`
+      : `| r/${r.sub} | ⛔ **ERROR — ${String(r.error).replace(/\|/g, '/')}** | — | — | — |`)),
+    '',
+    `_Solo /rising: medido el 10 ago, /hot no aportaba un solo hilo único y duplicaba el tiempo de corrida. Se descarta lo que pase de ${TRACTION_CFG.maxComments} comentarios (ya estás abajo de todo) o de ${TRACTION_CFG.maxAgeHours}h (ya murió). Total con lectores hoy: ${traction.total}, se muestran los ${TRACTION_CFG.maxThreads} de más velocidad._`,
+    '',
+    '---',
+    '',
+  );
+
   const md = [
     `# Reddit monitor — ${dateLabel}${DRY_RUN ? ' (dry-run)' : ''}`,
     '',
@@ -939,6 +1104,7 @@ async function main() {
     '',
     '---',
     '',
+    ...tractionSection,
     '## Rutina (recordatorio)',
     '',
     '1. Elegir 0-2 borradores — no hay obligación diaria; calidad sobre cadencia.',

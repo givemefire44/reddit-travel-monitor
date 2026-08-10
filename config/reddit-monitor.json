@@ -5,6 +5,12 @@
   "redditAccount": "RomanColosseumExpert",
   "karmaTarget": 150,
   "fetchMode": "public-rss",
+  "traction": {
+    "subreddits": ["travel", "solotravel", "EuropeTravel", "Eurotrip", "askitaly"],
+    "maxThreads": 10,
+    "maxComments": 40,
+    "maxAgeHours": 18
+  },
   "subreddits": [
     {
       "name": "travel",
