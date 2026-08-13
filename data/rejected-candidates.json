@@ -1,18 +1,8 @@
 [
   {
     "slug": "7-mistakes-people-make-when-booking-colosseum-tickets",
-    "fact": "The name on each ticket must exactly match the holder's passport or national ID, and staff check at the entrance.",
+    "fact": "Tickets booked with wrong names, nicknames, or abbreviations cannot be corrected on the day and entry will be refused.",
     "reason": "sin cifra"
-  },
-  {
-    "slug": "bathroom-breaks-colosseum-underground-combo-tours",
-    "fact": "That 15–20 minute walk is your pre-tour buffer.",
-    "reason": "apertura no autonoma"
-  },
-  {
-    "slug": "bathroom-breaks-colosseum-underground-combo-tours",
-    "fact": "That 1h45m gap is unplanned dead time for the visitor — but it is also a usable bathroom-and-water window if you know it exists.",
-    "reason": "apertura no autonoma"
   },
   {
     "slug": "colosseum-arena-tour",
@@ -25,8 +15,28 @@
     "reason": "sin cifra"
   },
   {
-    "slug": "colosseum-arena-tour",
-    "fact": "The reconstructed Arena platform is accessible via elevator.",
+    "slug": "colosseum-accessibility-wheelchair-guide",
+    "fact": "That said, honesty matters: the Colosseum is a 2,000-year-old ruin, not a purpose-built museum, so the surfaces are mixed and not every area is reachable.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "colosseum-night-tour-is-the-evening-visit-worth-it",
+    "fact": "Underground access is not standard and depends on the specific tour and season, so always verify inclusions before booking.",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "colosseum-tours-and-tickets-how-to-book-and-fix-common-problems",
+    "fact": "This can range from the standard 24-hour ticket to Full Experience options, Arena or Underground access, guided tours, or combined tickets that include the Roman Forum and Palatine Hill.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "commodus-passage-colosseum-secret-tunnel-2025",
+    "fact": "Opening Days: Mondays & Wednesdays only",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "commodus-passage-colosseum-secret-tunnel-2025",
+    "fact": "Currently, the Commodus Passage requires a separate ticket and cannot be added to standard Colosseum tours.",
     "reason": "sin cifra"
   },
   {
@@ -35,9 +45,24 @@
     "reason": "sin cifra"
   },
   {
-    "slug": "complete-guide-to-visiting-the-roman-colosseum-step-by-step",
-    "fact": "Morning (8:30 – 10:30 AM) → Cooler and fewer crowds, best for photos.",
-    "reason": "cifra \"8:30 AM\" no esta en la frase"
+    "slug": "commodus-passage-colosseum-secret-tunnel-2025",
+    "fact": "This was funded by the EU's NextGenerationEU program.",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "commodus-passage-colosseum-secret-tunnel-2025",
+    "fact": "No. Due to preservation concerns and the passage's restricted nature, all visits are guided.",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "colosseum-with-kids-age-guide-rules-stroller",
+    "fact": "Companies like Kids Raphael Tours, LivTours, and Joy of Rome offer private family tours specifically designed for ages 6 to 14.",
+    "reason": "cifra \"150\" no esta en la frase"
+  },
+  {
+    "slug": "how-long-colosseum-tour-duration-compared",
+    "fact": "This cap holds whether your overall tour is 2.5 hours or 4 hours.",
+    "reason": "apertura no autonoma"
   },
   {
     "slug": "how-long-colosseum-tour-duration-compared",
@@ -51,7 +76,7 @@
   },
   {
     "slug": "skip-the-colosseum-roman-tour-line",
-    "fact": "This is a once-in-a-lifetime trip and budget is not the constraint → VIP small-group at €135–€160+.",
-    "reason": "apertura no autonoma"
+    "fact": "You cannot upgrade to underground or arena floor access once you are inside.",
+    "reason": "sin cifra"
   }
 ]
