@@ -461,10 +461,37 @@ async function fetchCommentKarma() {
 // Roma o Italia, pero SOLO si tenemos facts que de verdad la respondan. Ese piso
 // es lo que evita repetir el borrador del post sobre seguros Schengen, que entro
 // por un falso positivo y se contesto con facts de dress code.
+// La lista era solo de Roma, y eso dejaba fuera al resto de Italia. Medido dos
+// dias seguidos en el modo traccion, donde la misma lista alimenta la bandera:
+// el 13 de agosto no marco "Overland from Faro to RAVENNA with my dog" y el 14
+// dejo pasar "Avoid OK Mobility at MILAN MALPENSA Airport". Las dos son consultas
+// de viaje a Italia perfectamente contestables.
+//
+// Ensancharla toca las dos puntas a proposito: la bandera del modo traccion y el
+// porton del modo karma, que exige una de estas palabras en el TITULO. Un hilo
+// sobre Florencia o Napoles es tan contestable como uno sobre Roma y suma el
+// mismo karma. No hay riesgo de servir corpus equivocado: bestSiteByFacts sigue
+// exigiendo una keyword del sitio, asi que todo esto entra por la via sin corpus
+// salvo que el post nombre uno de los tres destinos.
+//
+// Quedan afuera a proposito: "como" suelto (es palabra corriente en espanol) y
+// "tivoli" (los jardines de Copenhague son mas citados en subs de viaje que la
+// Villa d'Este).
 const KARMA_KEYWORDS = [
   'rome', 'roma', 'roman', 'italy', 'italian', 'lazio',
   'colosseum', 'colosseo', 'vatican', 'trastevere', 'pantheon', 'trevi',
   'forum', 'palatine', 'sistine', 'st peter', 'borghese', 'spanish steps',
+  // resto del pais
+  'florence', 'firenze', 'venice', 'venezia', 'naples', 'napoli',
+  'milan', 'milano', 'turin', 'torino', 'bologna', 'verona', 'genoa', 'genova',
+  'pisa', 'siena', 'ravenna', 'assisi', 'perugia', 'bari', 'palermo', 'catania',
+  'tuscany', 'toscana', 'umbria', 'puglia', 'apulia', 'sicily', 'sicilia',
+  'sardinia', 'sardegna', 'piedmont', 'piemonte', 'liguria', 'veneto',
+  'amalfi', 'positano', 'sorrento', 'capri', 'ischia', 'ravello',
+  'pompeii', 'herculaneum', 'ercolano', 'ostia', 'cinque terre',
+  'lake como', 'lake garda', 'bellagio', 'varenna', 'dolomites', 'dolomiti',
+  // aeropuertos, que aparecen en titulos de logistica
+  'fiumicino', 'fco', 'ciampino', 'malpensa', 'mxp', 'linate',
 ];
 const KARMA_MIN_FACTS = 3;   // sin al menos 3 facts con overlap real, no hay respuesta util
 const KARMA_MIN_TOPICS = 2;  // un solo topic suele ser un match accidental
@@ -742,20 +769,28 @@ const CORPUS_LEAK_RE = new RegExp(
 //    hay comentario. Se mira SOLO el arranque a proposito: un borrador que contesta
 //    bien y de paso admite no saber un detalle lateral ("can't speak to the
 //    souvenir shop hours") es legitimo y no se descarta.
-// Las contracciones se escriben `is\s?n['’]?t` y no `isn'?t` porque el modelo
-// alterna apostrofo ASCII y tipografico, y porque la primera version buscaba `not`
-// -- que NO matchea "n't". Dos borradores reales se colaron por eso: "this isn't
-// really the sub for it" y "this isn't quite my wheelhouse".
+// Las contracciones se escriben `(is|are)\s?n['’]?t` y no `isn'?t` porque el modelo
+// alterna apostrofo ASCII y tipografico, y porque buscar `not` NO matchea "n't".
+//
+// Tres rondas de fugas, cada una con una redaccion nueva de lo mismo:
+//   08-08  "None of my facts actually cover..."
+//   08-09  "this isn't quite my wheelhouse" / "isn't really the sub for it"
+//   08-14  "Not really something I can speak to, clubs aren't my area"
+// La ultima paso por dos agujeros a la vez: `aren't` (solo estaba `isn't`) y la
+// forma afirmativa "something I can speak to" (solo estaba "can't speak to").
+// De ahi que ahora las alternativas cubran is/are y las dos polaridades.
 const OPENING_DECLINE_RE = new RegExp(
   [
-    /(is\s?n['’]?t|is not|not)\s+(really\s+|quite\s+|exactly\s+|entirely\s+)?(my|our)\s+(wheelhouse|area|thing|expertise|strong suit)/,
+    /(is|are)\s?n['’]?t\s+(really\s+|quite\s+|exactly\s+|entirely\s+)?(my|our)\s+(wheelhouse|area|thing|expertise|strong suit)/,
     /(outside|beyond|not)\s+(really\s+)?(my|our)\s+(wheelhouse|area|expertise|knowledge)/,
-    /(is\s?n['’]?t|is not|not)\s+(really\s+|quite\s+)?the\s+(sub|place)\s+for\s+(it|this)/,
+    /not\s+(really\s+)?something\s+I\s+can\s+(speak|help|answer|comment)/,
+    /(outside|beyond)\s+what\s+I\s+can\s+(speak|say|answer|help|comment)/,
+    /(is|are)\s?n['’]?t\s+(really\s+|quite\s+)?the\s+(sub|place)\s+for\s+(it|this)/,
     /(this|that)\s+(one\s+)?(is|['’]s)\s+(really\s+)?off.?topic/,
     /off.?topic\s+for\s+the\s+facts/,
     /(none|nothing)\s+of\s+(my|the)\s+(facts|info)/,
     /I\s+(do\s?n['’]?t|do not)\s+have\s+(solid|good|any|much|reliable|real)\s+(info|information|data|numbers)/,
-    /I\s+ca\s?n['’]?t\s+(really\s+)?(speak|help)\s+(to|with)\s+(that|this|your)/,
+    /I\s+ca\s?n['’]?t\s+(really\s+)?(speak|help)\s+(to|with)\s+(that|this|your|the)/,
     /most\s+of\s+what\s+I\s+know\s+cold/,
   ].map((r) => r.source).join('|'),
   'i'

@@ -50,12 +50,15 @@
     {
       "name": "ItalyTravel",
       "status": "watch-only",
-      "minCommentKarma": 150
+      "minCommentKarma": 150,
+      "minAccountAgeDays": 60,
+      "nota": "Regla publicada por el sub, verificada 8 ago 2026: son TRES condiciones a la vez, no solo el karma. 150 de comment karma + cuenta activa 60 dias + CQS no bajo. La cuenta cumple la antiguedad; falta el karma (2) y el CQS, que en una cuenta casi sin actividad va a estar bajo."
     },
     {
       "name": "rome",
-      "status": "watch-only",
-      "minCommentKarma": null
+      "status": "active",
+      "minCommentKarma": 0,
+      "nota": "Verificado 8 ago 2026: r/rome no publica ningun requisito de karma ni de antiguedad (cero menciones en reglas y sidebar, contra 5 en r/ItalyTravel con la misma busqueda). Confirmado en la practica el 10 de agosto: la cuenta comento y el comentario quedo publicado. Estuvo en watch-only por precaucion, no por una regla real, y eso mandaba los mejores hilos del dia a la seccion de bloqueados."
     }
   ],
   "sites": [
