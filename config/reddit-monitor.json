@@ -4,6 +4,7 @@
   "windowHours": 24,
   "redditAccount": "RomanColosseumExpert",
   "karmaTarget": 150,
+  "warmupExitKarma": 50,
   "fetchMode": "public-rss",
   "traction": {
     "subreddits": ["travel", "solotravel", "EuropeTravel"],

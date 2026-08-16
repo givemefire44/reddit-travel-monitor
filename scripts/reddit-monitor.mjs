@@ -443,10 +443,22 @@ async function fetchAnsweredPostIds() {
   }
 }
 
+// about.json devuelve 403 de forma consistente a esta via sin autenticar, asi que
+// el header del reporte dijo "(no disponible)" todos los dias desde el arranque.
+// El perfil HTML de old.reddit si responde 200 y trae el numero en el sidebar:
+//   <span class="karma comment-karma">41</span>&#32; comment karma
+// Verificado el 16 ago 2026, el mismo dia que el reporte mostraba "(no
+// disponible)": 41 de comment karma, contra 2 el 8 de agosto.
+//
+// Deja de ser cosmetico ahora que el umbral de salida de warmup (~50) esta cerca:
+// sin el numero en el reporte no hay forma de saber cuando corresponde el cambio
+// de fase sin ir a mirar el perfil a mano.
 async function fetchCommentKarma() {
   try {
-    const data = await redditGet(`https://www.reddit.com/user/${CONFIG.redditAccount}/about.json`);
-    return data.data.comment_karma;
+    const res = await fetchWithBackoff(`https://old.reddit.com/user/${CONFIG.redditAccount}/`);
+    const html = await res.text();
+    const m = html.match(/<span[^>]*class="karma comment-karma"[^>]*>([\d,]+)<\/span>/i);
+    return m ? Number(m[1].replace(/,/g, '')) : null;
   } catch {
     return null; // el karma es informativo; su falla no bloquea el run
   }
@@ -1043,9 +1055,20 @@ async function main() {
   console.log('Modo tracción: buscando hilos con lectores...');
   const traction = await collectTraction(businessIds, businessTitles);
 
+  // La barra va a 150 (el umbral de r/ItalyTravel), pero el hito que importa
+  // mientras dure el warmup es el de salida de fase, mucho mas cerca.
+  const warmupExit = CONFIG.warmupExitKarma ?? 50;
+  const filled = karma == null ? 0 : Math.min(20, Math.round((karma / CONFIG.karmaTarget) * 20));
   const karmaBar = karma == null
     ? '(no disponible)'
-    : `${karma}/${CONFIG.karmaTarget} ${'█'.repeat(Math.min(20, Math.round((karma / CONFIG.karmaTarget) * 20)))}${'░'.repeat(Math.max(0, 20 - Math.round((karma / CONFIG.karmaTarget) * 20)))}`;
+    : [
+      `${karma}/${CONFIG.karmaTarget} ${'█'.repeat(filled)}${'░'.repeat(Math.max(0, 20 - filled))}`,
+      CONFIG.phase === 'warmup'
+        ? (karma >= warmupExit
+          ? `✅ umbral de attribution (~${warmupExit}) alcanzado — falta confirmar 3 semanas de warmup y cambiar \`"phase"\` en la config`
+          : `faltan ${warmupExit - karma} para el umbral de attribution (~${warmupExit})`)
+        : `faltan ${Math.max(0, CONFIG.karmaTarget - karma)} para r/ItalyTravel (que además pide 60 días de cuenta y CQS no bajo)`,
+    ].join(' · ');
 
   const funnelSection = [
     '## Embudo por subreddit (diagnóstico)',
