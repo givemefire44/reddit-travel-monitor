@@ -1,28 +1,33 @@
 [
   {
-    "slug": "7-mistakes-people-make-when-booking-colosseum-tickets",
-    "fact": "Tickets booked with wrong names, nicknames, or abbreviations cannot be corrected on the day and entry will be refused.",
-    "reason": "sin cifra"
-  },
-  {
-    "slug": "colosseum-arena-tour",
-    "fact": "Yes, visitors can walk on a partially reconstructed section of the Arena floor through the Porta Triumphalis, the original gladiator's gate.",
-    "reason": "sin cifra"
-  },
-  {
-    "slug": "colosseum-arena-tour",
-    "fact": "These tickets are limited and often sell out weeks in advance during peak season.",
-    "reason": "sin cifra"
-  },
-  {
     "slug": "colosseum-accessibility-wheelchair-guide",
-    "fact": "That said, honesty matters: the Colosseum is a 2,000-year-old ruin, not a purpose-built museum, so the surfaces are mixed and not every area is reachable.",
+    "fact": "This percentage is not stated in the official Parco Colosseo information, which simply refers to disabled visitors and one companion without specifying a figure.",
     "reason": "apertura no autonoma"
   },
   {
-    "slug": "colosseum-night-tour-is-the-evening-visit-worth-it",
-    "fact": "Underground access is not standard and depends on the specific tour and season, so always verify inclusions before booking.",
-    "reason": "sin cifra"
+    "slug": "colosseum-accessibility-wheelchair-guide",
+    "fact": "To minimize waiting, aim for an early slot (around 8:30–10:00 a.m.), when elevator queues and crowds are smallest.",
+    "reason": "cifra \"8:30\\u201310:00 a.m.\" no encontrada"
+  },
+  {
+    "slug": "colosseum-accessibility-wheelchair-guide",
+    "fact": "The park offers free loaner wheelchairs on a first-come, first-served basis — a few at the Colosseum's first-floor reception near the Sperone Valadier entrance, and more at the Roman Forum and Palatine Hill entrances — but availability isn't guaranteed, so bring your own if you can, especially in peak season (June–August).",
+    "reason": "cifra \"June\\u2013August\" no encontrada"
+  },
+  {
+    "slug": "colosseum-combo-tickets-inclusion-matrix",
+    "fact": "The official ticket costs €18, children free.",
+    "reason": "frase no textual"
+  },
+  {
+    "slug": "colosseum-full-experience-vs-standard-ticket",
+    "fact": "Free entry for everyone — but demand is enormous and tickets must be collected at the on-site ticket office on a first-come, first-served basis.",
+    "reason": "cifra \"First Sunday\" no esta en la frase"
+  },
+  {
+    "slug": "colosseum-full-experience-vs-standard-ticket",
+    "fact": "You do not step onto the arena, enter the tunnels, or reach the upper viewing levels.",
+    "reason": "cifra \"95%+\" no esta en la frase"
   },
   {
     "slug": "colosseum-tours-and-tickets-how-to-book-and-fix-common-problems",
@@ -30,9 +35,9 @@
     "reason": "apertura no autonoma"
   },
   {
-    "slug": "commodus-passage-colosseum-secret-tunnel-2025",
-    "fact": "Opening Days: Mondays & Wednesdays only",
-    "reason": "sin cifra"
+    "slug": "colosseum-vs-vatican-which-to-visit-first",
+    "fact": "This accounts for the visit itself running slightly over, the transfer (20–40 minutes depending on transport), lunch, security at the second site, and a 15-minute buffer for the unexpected.",
+    "reason": "apertura no autonoma"
   },
   {
     "slug": "commodus-passage-colosseum-secret-tunnel-2025",
@@ -45,21 +50,6 @@
     "reason": "sin cifra"
   },
   {
-    "slug": "commodus-passage-colosseum-secret-tunnel-2025",
-    "fact": "This was funded by the EU's NextGenerationEU program.",
-    "reason": "sin cifra"
-  },
-  {
-    "slug": "commodus-passage-colosseum-secret-tunnel-2025",
-    "fact": "No. Due to preservation concerns and the passage's restricted nature, all visits are guided.",
-    "reason": "sin cifra"
-  },
-  {
-    "slug": "colosseum-with-kids-age-guide-rules-stroller",
-    "fact": "Companies like Kids Raphael Tours, LivTours, and Joy of Rome offer private family tours specifically designed for ages 6 to 14.",
-    "reason": "cifra \"150\" no esta en la frase"
-  },
-  {
     "slug": "how-long-colosseum-tour-duration-compared",
     "fact": "This cap holds whether your overall tour is 2.5 hours or 4 hours.",
     "reason": "apertura no autonoma"
@@ -70,13 +60,13 @@
     "reason": "apertura no autonoma"
   },
   {
-    "slug": "skip-the-colosseum-roman-tour-line",
-    "fact": "Purchased at colosseo.it. Includes Colosseum levels 1–2 plus Roman Forum and Palatine Hill.",
+    "slug": "private-colosseum-tour",
+    "fact": "Most private tours include the main Colosseum levels plus skip-the-line entry, and many offer exclusive access to the arena floor, the underground hypogeum, Palatine Hill, and the Roman Forum as part of a single guided experience.",
     "reason": "sin cifra"
   },
   {
-    "slug": "skip-the-colosseum-roman-tour-line",
-    "fact": "You cannot upgrade to underground or arena floor access once you are inside.",
+    "slug": "roman-forum",
+    "fact": "Almost all Colosseum tickets include the Forum and Palatine Hill — don't miss them!",
     "reason": "sin cifra"
   }
 ]
