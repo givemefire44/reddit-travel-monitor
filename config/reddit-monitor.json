@@ -7,10 +7,16 @@
   "warmupExitKarma": 50,
   "fetchMode": "public-rss",
   "traction": {
-    "subreddits": ["travel", "solotravel", "EuropeTravel"],
+    "subreddits": [
+      "travel",
+      "solotravel",
+      "EuropeTravel"
+    ],
     "maxThreads": 10,
     "maxComments": 40,
-    "maxAgeHours": 18
+    "maxAgeHours": 18,
+    "enabled": false,
+    "_motivo": "Apagado el 20 ago 2026. old.reddit.com pasó a exigir login: GET /r/<sub>/rising/ devuelve 302 -> /login/?reason=lor2. El codigo seguia el redirect, recibia 200 de la pagina de login, parseaba 0 posts y reportaba 0 como si no hubiera habido hilos. El puntaje y el nro de comentarios que este modo necesita solo estaban ahi; el RSS de www.reddit.com que sigue abierto no los trae. En 10 dias no produjo ningun hilo de Italia ni un solo comentario posteado. Si Reddit reabre old.reddit, poner enabled en true."
   },
   "subreddits": [
     {

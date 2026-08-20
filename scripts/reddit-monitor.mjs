@@ -1052,8 +1052,16 @@ async function main() {
     if (id) businessIds.add(id);
     businessTitles.add(normalizeTitle(c.title));
   }
-  console.log('Modo tracción: buscando hilos con lectores...');
-  const traction = await collectTraction(businessIds, businessTitles);
+  // Apagado el 20 ago 2026: old.reddit pasó a exigir login (302 -> /login/?reason=lor2)
+  // y era la unica fuente de puntaje y nro de comentarios. Ver config.traction._motivo.
+  const tractionOn = CONFIG.traction?.enabled !== false;
+  let traction = { threads: [], rows: [], total: 0 };
+  if (tractionOn) {
+    console.log('Modo tracción: buscando hilos con lectores...');
+    traction = await collectTraction(businessIds, businessTitles);
+  } else {
+    console.log('Modo tracción: apagado (old.reddit exige login desde el 20 ago 2026).');
+  }
 
   // La barra va a 150 (el umbral de r/ItalyTravel), pero el hito que importa
   // mientras dure el warmup es el de salida de fase, mucho mas cerca.
@@ -1104,7 +1112,7 @@ async function main() {
     '',
   ];
 
-  const tractionSection = [
+  const tractionSection = !tractionOn ? [] : [
     `## Modo tracción — hilos con lectores (${traction.threads.length})`,
     '',
     '_Este modo no mira keywords, ni corpus, ni escribe borradores. Solo busca hilos que la gente **ya está leyendo** — el comentario lo escribís vos, con tus palabras._',
