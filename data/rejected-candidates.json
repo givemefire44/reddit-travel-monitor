@@ -1,53 +1,28 @@
 [
   {
-    "slug": "colosseum-accessibility-wheelchair-guide",
-    "fact": "This percentage is not stated in the official Parco Colosseo information, which simply refers to disabled visitors and one companion without specifying a figure.",
+    "slug": "bathroom-breaks-colosseum-underground-combo-tours",
+    "fact": "That 15–20 minute walk is your pre-tour buffer.",
     "reason": "apertura no autonoma"
   },
   {
-    "slug": "colosseum-accessibility-wheelchair-guide",
-    "fact": "To minimize waiting, aim for an early slot (around 8:30–10:00 a.m.), when elevator queues and crowds are smallest.",
-    "reason": "cifra \"8:30\\u201310:00 a.m.\" no encontrada"
-  },
-  {
-    "slug": "colosseum-accessibility-wheelchair-guide",
-    "fact": "The park offers free loaner wheelchairs on a first-come, first-served basis — a few at the Colosseum's first-floor reception near the Sperone Valadier entrance, and more at the Roman Forum and Palatine Hill entrances — but availability isn't guaranteed, so bring your own if you can, especially in peak season (June–August).",
-    "reason": "cifra \"June\\u2013August\" no encontrada"
-  },
-  {
-    "slug": "colosseum-combo-tickets-inclusion-matrix",
-    "fact": "The official ticket costs €18, children free.",
-    "reason": "frase no textual"
-  },
-  {
-    "slug": "colosseum-full-experience-vs-standard-ticket",
-    "fact": "Free entry for everyone — but demand is enormous and tickets must be collected at the on-site ticket office on a first-come, first-served basis.",
-    "reason": "cifra \"First Sunday\" no esta en la frase"
-  },
-  {
-    "slug": "colosseum-full-experience-vs-standard-ticket",
-    "fact": "You do not step onto the arena, enter the tunnels, or reach the upper viewing levels.",
-    "reason": "cifra \"95%+\" no esta en la frase"
-  },
-  {
-    "slug": "colosseum-tours-and-tickets-how-to-book-and-fix-common-problems",
-    "fact": "This can range from the standard 24-hour ticket to Full Experience options, Arena or Underground access, guided tours, or combined tickets that include the Roman Forum and Palatine Hill.",
+    "slug": "bathroom-breaks-colosseum-underground-combo-tours",
+    "fact": "That 1h45m gap is unplanned dead time for the visitor — but it is also a usable bathroom-and-water window if you know it exists.",
     "reason": "apertura no autonoma"
   },
   {
-    "slug": "colosseum-vs-vatican-which-to-visit-first",
-    "fact": "This accounts for the visit itself running slightly over, the transfer (20–40 minutes depending on transport), lunch, security at the second site, and a 15-minute buffer for the unexpected.",
+    "slug": "colosseum-official-website-sells-out-before-listed",
+    "fact": "That is the same base access operators wrap into €60–€90 group tours.",
     "reason": "apertura no autonoma"
   },
   {
-    "slug": "commodus-passage-colosseum-secret-tunnel-2025",
-    "fact": "Currently, the Commodus Passage requires a separate ticket and cannot be added to standard Colosseum tours.",
-    "reason": "sin cifra"
+    "slug": "colosseum-underground-accredited-operators",
+    "fact": "That traveler paid €629.40 for a party of six, lost the underground portion, spent two hours walking the Forum in 34°C heat, queued thirty minutes for a skip-the-line ticket, got twenty minutes on the arena floor, and left early.",
+    "reason": "apertura no autonoma"
   },
   {
-    "slug": "commodus-passage-colosseum-secret-tunnel-2025",
-    "fact": "Yes! The restoration included a retractable staircase and accessible pathways specifically to accommodate visitors with mobility challenges.",
-    "reason": "sin cifra"
+    "slug": "complete-guide-to-visiting-the-roman-colosseum-step-by-step",
+    "fact": "Morning (8:30 – 10:30 AM) → Cooler and fewer crowds, best for photos",
+    "reason": "cifra \"8:30 AM\" no esta en la frase"
   },
   {
     "slug": "how-long-colosseum-tour-duration-compared",
@@ -55,18 +30,18 @@
     "reason": "apertura no autonoma"
   },
   {
-    "slug": "how-long-colosseum-tour-duration-compared",
-    "fact": "That is 1 hour 45 minutes of dead time the buyer did not budget.",
-    "reason": "apertura no autonoma"
+    "slug": "how-to-get-to-the-colosseum-from-termini-vatican-and-trastevere",
+    "fact": "When you get off at Colosseo, follow the station exits to street level; from there it is only a 2–5‑minute walk to the Colosseum entrances and security checks.",
+    "reason": "cifra \"2–5-minute\" no encontrada"
   },
   {
     "slug": "private-colosseum-tour",
-    "fact": "Most private tours include the main Colosseum levels plus skip-the-line entry, and many offer exclusive access to the arena floor, the underground hypogeum, Palatine Hill, and the Roman Forum as part of a single guided experience.",
+    "fact": "Most private tours include the main Colosseum levels plus skip-the-line entry, and many offer exclusive access to the arena floor, the underground hypogeum, Palatine Hill, and the Roman Forum as part of a single guided experience",
     "reason": "sin cifra"
   },
   {
-    "slug": "roman-forum",
-    "fact": "Almost all Colosseum tickets include the Forum and Palatine Hill — don't miss them!",
-    "reason": "sin cifra"
+    "slug": "skip-the-colosseum-roman-tour-line",
+    "fact": "This is the sweet spot for value: a significant experience upgrade for roughly €25–€50 more than the official ticket.",
+    "reason": "apertura no autonoma"
   }
 ]

@@ -1,5 +1,10 @@
 [
   {
+    "slug": "how-to-avoid-vatican-crowds",
+    "fact": "That is consistent with the wider finding that the median Museums visit runs three hours before anyone goes looking for the quiet rooms.",
+    "reason": "apertura no autonoma"
+  },
+  {
     "slug": "vatican-crowd-handling-staff",
     "fact": "It is 1.89 stars, the average of reviews describing being herded or treated like cattle, more than two stars below the corpus average of 4.08.",
     "reason": "voz editorial interna"
@@ -15,13 +20,13 @@
     "reason": "voz editorial interna"
   },
   {
-    "slug": "vatican-history-context-effect",
-    "fact": "The Raphael Rooms sit 0.34 above the corpus average despite being just as crowded as everything around them, and they are the part of the collection least legible without context.",
-    "reason": "voz editorial interna"
+    "slug": "vatican-museums-itinerary",
+    "fact": "St. Peter's Basilica is separate: only guided tours use the internal passage from the Sistine Chapel, while independent visitors exit and walk to a separate queue.",
+    "reason": "sin cifra"
   },
   {
-    "slug": "vatican-value-perception",
-    "fact": "Removing every review that also carries a tag for queues, scams, cancellations, skip-the-line or booking leaves 303 reviews that mention price with no service failure attached, and they still average 3.38 — 0.70 below the corpus average.",
+    "slug": "vatican-history-context-effect",
+    "fact": "The Raphael Rooms sit 0.34 above the corpus average despite being just as crowded as everything around them, and they are the part of the collection least legible without context.",
     "reason": "voz editorial interna"
   }
 ]
