@@ -1122,7 +1122,12 @@ async function main() {
     '_La marca ❓ es lo que conviene mirar segundo. Los hilos de más velocidad suelen ser relatos con fotos: los lee muchísima gente, pero lo único que podés comentar es "qué lindo" y eso rinde poco. Una pregunta tiene menos lectores y mucho más rendimiento por comentario, porque una respuesta útil se vota._',
     '',
   ];
-  if (traction.threads.length) {
+  // Los push de abajo tienen que quedar dentro del guard igual que el literal.
+  // Sin esto la seccion se rendereaba a medias con el modo apagado: sin titulo
+  // pero con "Sin hilos con traccion hoy", la tabla vacia y la nota al pie.
+  if (!tractionOn) {
+    // apagado: seccion vacia, nada que renderear
+  } else if (traction.threads.length) {
     tractionSection.push(
       '| Hilo | Sub | Puntos | Coment. | Pts/h | Edad | ❓ | 🇮🇹 |',
       '|---|---|---|---|---|---|---|---|',
@@ -1135,7 +1140,7 @@ async function main() {
   } else {
     tractionSection.push('_Sin hilos con tracción hoy._', '');
   }
-  tractionSection.push(
+  if (tractionOn) tractionSection.push(
     '| Sub | en rising | con lectores | saturados | viejos |',
     '|---|---|---|---|---|',
     ...traction.rows.map((r) => (r.ok
