@@ -1,18 +1,18 @@
 {
-  "extractedAt": "2026-08-20T13:20:03.598Z",
+  "extractedAt": "2026-08-22T15:54:24.368Z",
   "corpusSize": null,
   "facts": [
     {
       "id": "accessibility-001",
-      "fact": "The Sistine Chapel lift accommodates a wheelchair up to approximately 76 cm wide by 104 cm long, with a maximum weight of 230 kg (chair plus occupant).",
+      "fact": "The Vatican Museums are largely wheelchair accessible: step-free entry via ramp, elevators and lifts, smooth floors, and an accessible route to the Sistine Chapel via a dedicated lift (size limit around 76 x 104 cm, 230 kg; larger chairs can swap to a free museum wheelchair).",
       "figures": [
-        "76 cm",
-        "104 cm",
+        "76 x 104 cm",
         "230 kg"
       ],
       "topics": [
         "accessibility",
-        "sistine-chapel"
+        "sistine-chapel",
+        "logistics"
       ],
       "sourceSlug": "vatican-accessibility-guide",
       "sourceUrl": "https://vaticantourguides.com/vatican-accessibility-guide"
@@ -33,83 +33,22 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-accessibility-guide"
     },
     {
-      "id": "sistine-chapel-001",
-      "fact": "One detailed account of an evening visit describes 45 minutes inside the Sistine Chapel, against the 15 to 20 minutes a standard guided group is allotted before the guide moves it along.",
+      "id": "accessibility-003",
+      "fact": "The Sistine Chapel lift accommodates a wheelchair up to approximately 76 cm wide by 104 cm long, with a maximum weight of 230 kg (chair plus occupant).",
       "figures": [
-        "45",
-        "15",
-        "20"
+        "76 cm",
+        "104 cm",
+        "230 kg"
       ],
       "topics": [
-        "sistine-chapel",
-        "timing",
-        "guides"
+        "accessibility",
+        "sistine-chapel"
       ],
-      "sourceSlug": "vatican-after-hours-tour-worth-it",
-      "sourceUrl": "https://vaticantourguides.com/vatican-after-hours-tour-worth-it"
+      "sourceSlug": "vatican-accessibility-guide",
+      "sourceUrl": "https://vaticantourguides.com/vatican-accessibility-guide"
     },
     {
       "id": "timing-001",
-      "fact": "The reported shape of an after-hours visit is specific enough to plan around: entry at 6:30pm once the Museums have closed to the public, a group of roughly twenty guests accompanied by one guide and one museum security guard, and an exit around 8:45pm.",
-      "figures": [
-        "6:30pm",
-        "8:45pm"
-      ],
-      "topics": [
-        "timing",
-        "logistics",
-        "sistine-chapel"
-      ],
-      "sourceSlug": "vatican-after-hours-tour-worth-it",
-      "sourceUrl": "https://vaticantourguides.com/vatican-after-hours-tour-worth-it"
-    },
-    {
-      "id": "logistics-001",
-      "fact": "One detailed account describes a group of 20 guests with one guide and one security guard — a small group inside a closed museum, which is not the same as a private visit.",
-      "figures": [
-        "20"
-      ],
-      "topics": [
-        "logistics",
-        "guides",
-        "crowds"
-      ],
-      "sourceSlug": "vatican-after-hours-tour-worth-it",
-      "sourceUrl": "https://vaticantourguides.com/vatican-after-hours-tour-worth-it"
-    },
-    {
-      "id": "crowds-001",
-      "fact": "The Carriage Pavilion averages 4.74 stars, higher than any headline element of the Vatican except nothing at all — it sits above the dome at 4.50 and comfortably above the Sistine Chapel at 3.81.",
-      "figures": [
-        "4.74",
-        "4.50",
-        "3.81"
-      ],
-      "topics": [
-        "crowds",
-        "dome-climb",
-        "sistine-chapel"
-      ],
-      "sourceSlug": "how-to-avoid-vatican-crowds",
-      "sourceUrl": "https://vaticantourguides.com/how-to-avoid-vatican-crowds"
-    },
-    {
-      "id": "timing-002",
-      "fact": "A visitor who added the Gardens and the Carriage Pavilion after a two-hour guided tour reports three and a half to four hours in total, and still says there was more to see.",
-      "figures": [
-        "two-hour",
-        "three and a half to four hours"
-      ],
-      "topics": [
-        "timing",
-        "museums-itinerary",
-        "guides"
-      ],
-      "sourceSlug": "how-to-avoid-vatican-crowds",
-      "sourceUrl": "https://vaticantourguides.com/how-to-avoid-vatican-crowds"
-    },
-    {
-      "id": "timing-003",
       "fact": "The best time to visit the Vatican is a weekday morning at the 8:00 AM opening — you reach the Sistine Chapel before the tour-group wave lands around 10:30.",
       "figures": [
         "8:00 AM",
@@ -124,7 +63,7 @@
       "sourceUrl": "https://vaticantourguides.com/best-time-to-visit-vatican"
     },
     {
-      "id": "timing-004",
+      "id": "timing-002",
       "fact": "Wednesday is mixed, because the papal audience ends near 11:30 and sends a wave into the museums.",
       "figures": [
         "11:30"
@@ -137,7 +76,7 @@
       "sourceUrl": "https://vaticantourguides.com/best-time-to-visit-vatican"
     },
     {
-      "id": "timing-005",
+      "id": "timing-003",
       "fact": "Most group tours and school trips arrive after 9:30, so that first ninety minutes is the calmest the museum gets all day.",
       "figures": [
         "9:30"
@@ -150,7 +89,7 @@
       "sourceUrl": "https://vaticantourguides.com/best-time-to-visit-vatican"
     },
     {
-      "id": "timing-006",
+      "id": "timing-004",
       "fact": "The hours to avoid are the midday crush from roughly 10:00 AM to 3:00 PM, when the museums hit maximum capacity and the Sistine Chapel becomes shoulder-to-shoulder.",
       "figures": [
         "10:00 AM",
@@ -165,7 +104,7 @@
       "sourceUrl": "https://vaticantourguides.com/best-time-to-visit-vatican"
     },
     {
-      "id": "timing-007",
+      "id": "timing-005",
       "fact": "If mornings are impossible, the second-best window is after 2:00–3:00 PM, when many tour groups have exited through St. Peter's and the galleries thin out.",
       "figures": [
         "2:00",
@@ -180,11 +119,11 @@
       "sourceUrl": "https://vaticantourguides.com/best-time-to-visit-vatican"
     },
     {
-      "id": "timing-008",
+      "id": "timing-006",
       "fact": "The trade-off with a late slot: last entry is 6:00 PM and the halls start clearing 30 minutes before the 8:00 PM close, so an afternoon arrival gives you less time than the collection — which really wants three to four hours — deserves.",
       "figures": [
         "6:00 PM",
-        "30",
+        "30 minutes",
         "8:00 PM"
       ],
       "topics": [
@@ -195,7 +134,7 @@
       "sourceUrl": "https://vaticantourguides.com/best-time-to-visit-vatican"
     },
     {
-      "id": "timing-009",
+      "id": "timing-007",
       "fact": "The Papal Audience takes place in St. Peter's Square on Wednesday mornings and ends around 11:30, sending a wave of people straight toward the museum entrance — so the 9:00 AM to noon window on Wednesdays is the worst of the week.",
       "figures": [
         "11:30",
@@ -210,13 +149,27 @@
       "sourceUrl": "https://vaticantourguides.com/best-time-to-visit-vatican"
     },
     {
-      "id": "timing-010",
+      "id": "crowds-001",
+      "fact": "2025–2026 is a Jubilee Year, which raises crowd levels around major religious dates.",
+      "figures": [
+        "2025",
+        "2026"
+      ],
+      "topics": [
+        "crowds",
+        "timing"
+      ],
+      "sourceSlug": "best-time-to-visit-vatican",
+      "sourceUrl": "https://vaticantourguides.com/best-time-to-visit-vatican"
+    },
+    {
+      "id": "timing-008",
       "fact": "The Vatican Museums open Monday to Saturday, 8:00 AM to 8:00 PM, with last entry at 6:00 PM — and crucially, visitors must begin leaving the halls 30 minutes before closing, so you don't get that final half hour inside.",
       "figures": [
         "8:00 AM",
         "8:00 PM",
         "6:00 PM",
-        "30"
+        "30 minutes"
       ],
       "topics": [
         "timing",
@@ -226,7 +179,7 @@
       "sourceUrl": "https://vaticantourguides.com/best-time-to-visit-vatican"
     },
     {
-      "id": "timing-011",
+      "id": "timing-009",
       "fact": "The museums are closed on ordinary Sundays, opening only on the last Sunday of the month (9:00 AM–2:00 PM, free, last entry 12:30 PM), plus a list of feast-day closures scattered through the year (January 1 and 6, and various others — always check the official calendar for your date).",
       "figures": [
         "9:00 AM",
@@ -238,13 +191,13 @@
       "topics": [
         "timing",
         "free-sunday",
-        "pricing"
+        "tickets"
       ],
       "sourceSlug": "best-time-to-visit-vatican",
       "sourceUrl": "https://vaticantourguides.com/best-time-to-visit-vatican"
     },
     {
-      "id": "timing-012",
+      "id": "timing-010",
       "fact": "Because the collection genuinely needs three to four hours and the halls start clearing before the 8:00 PM close, entering after about 4:00–5:00 PM leaves you rushing — you'll get maybe an hour and a half to two hours, not enough to do the museum justice.",
       "figures": [
         "8:00 PM",
@@ -253,28 +206,27 @@
       ],
       "topics": [
         "timing",
-        "logistics",
-        "museums-itinerary"
+        "museums-itinerary",
+        "logistics"
       ],
       "sourceSlug": "best-time-to-visit-vatican",
       "sourceUrl": "https://vaticantourguides.com/best-time-to-visit-vatican"
     },
     {
-      "id": "timing-013",
+      "id": "logistics-001",
       "fact": "whatever your slot, arrive 15–30 minutes early to clear security without eating into your time.",
       "figures": [
-        "15-30"
+        "15-30 minutes"
       ],
       "topics": [
-        "timing",
         "logistics",
-        "skip-the-line"
+        "timing"
       ],
       "sourceSlug": "best-time-to-visit-vatican",
       "sourceUrl": "https://vaticantourguides.com/best-time-to-visit-vatican"
     },
     {
-      "id": "timing-014",
+      "id": "timing-011",
       "fact": "From mid-April through late October, the Vatican opens on Friday evenings — roughly 7:00 PM to 11:00 PM, with last entry around 9:30 PM — and it's one of the best experiences the museum offers.",
       "figures": [
         "7:00 PM",
@@ -283,21 +235,20 @@
       ],
       "topics": [
         "timing",
-        "crowds",
         "logistics"
       ],
       "sourceSlug": "best-time-to-visit-vatican",
       "sourceUrl": "https://vaticantourguides.com/best-time-to-visit-vatican"
     },
     {
-      "id": "timing-015",
-      "fact": "Crowds are a fraction of daytime levels, the marble glows under dim warm light, and standing in the Sistine Chapel at 9:00 PM is about as close as you'll get to having it to yourself.",
+      "id": "sistine-chapel-001",
+      "fact": "standing in the Sistine Chapel at 9:00 PM is about as close as you'll get to having it to yourself.",
       "figures": [
         "9:00 PM"
       ],
       "topics": [
-        "timing",
         "sistine-chapel",
+        "timing",
         "crowds"
       ],
       "sourceSlug": "best-time-to-visit-vatican",
@@ -305,20 +256,180 @@
     },
     {
       "id": "tickets-001",
+      "fact": "The catches: these evening slots must be pre-booked on the official site and the popular dates sell out two to three weeks ahead, and the Friday-evening calendar shifts by season and can be suspended around Easter and major feast days — so confirm the 2026 dates before you build a plan around them.",
+      "figures": [
+        "2026"
+      ],
+      "topics": [
+        "tickets",
+        "timing"
+      ],
+      "sourceSlug": "best-time-to-visit-vatican",
+      "sourceUrl": "https://vaticantourguides.com/best-time-to-visit-vatican"
+    },
+    {
+      "id": "sistine-chapel-002",
+      "fact": "One detailed account of an evening visit describes 45 minutes inside the Sistine Chapel, against the 15 to 20 minutes a standard guided group is allotted before the guide moves it along.",
+      "figures": [
+        "45",
+        "15 to 20"
+      ],
+      "topics": [
+        "sistine-chapel",
+        "timing",
+        "guides"
+      ],
+      "sourceSlug": "vatican-after-hours-tour-worth-it",
+      "sourceUrl": "https://vaticantourguides.com/vatican-after-hours-tour-worth-it"
+    },
+    {
+      "id": "timing-012",
+      "fact": "The reported shape of an after-hours visit is specific enough to plan around: entry at 6:30pm once the Museums have closed to the public, a group of roughly twenty guests accompanied by one guide and one museum security guard, and an exit around 8:45pm.",
+      "figures": [
+        "6:30pm",
+        "twenty",
+        "one",
+        "8:45pm"
+      ],
+      "topics": [
+        "timing",
+        "tickets",
+        "operators"
+      ],
+      "sourceSlug": "vatican-after-hours-tour-worth-it",
+      "sourceUrl": "https://vaticantourguides.com/vatican-after-hours-tour-worth-it"
+    },
+    {
+      "id": "tickets-002",
+      "fact": "One detailed account describes a group of 20 guests with one guide and one security guard — a small group inside a closed museum, which is not the same as a private visit.",
+      "figures": [
+        "20",
+        "one"
+      ],
+      "topics": [
+        "tickets",
+        "operators",
+        "crowds"
+      ],
+      "sourceSlug": "vatican-after-hours-tour-worth-it",
+      "sourceUrl": "https://vaticantourguides.com/vatican-after-hours-tour-worth-it"
+    },
+    {
+      "id": "crowds-002",
+      "fact": "The Carriage Pavilion rates 4.74 across 27 reviews, close to the dome and barely visited.",
+      "figures": [
+        "4.74",
+        "27"
+      ],
+      "topics": [
+        "crowds",
+        "dome-climb"
+      ],
+      "sourceSlug": "how-to-avoid-vatican-crowds",
+      "sourceUrl": "https://vaticantourguides.com/how-to-avoid-vatican-crowds"
+    },
+    {
+      "id": "crowds-003",
+      "fact": "The Carriage Pavilion averages 4.74 stars, higher than any headline element of the Vatican except nothing at all — it sits above the dome at 4.50 and comfortably above the Sistine Chapel at 3.81.",
+      "figures": [
+        "4.74",
+        "4.50",
+        "3.81"
+      ],
+      "topics": [
+        "crowds",
+        "sistine-chapel",
+        "dome-climb"
+      ],
+      "sourceSlug": "how-to-avoid-vatican-crowds",
+      "sourceUrl": "https://vaticantourguides.com/how-to-avoid-vatican-crowds"
+    },
+    {
+      "id": "timing-013",
+      "fact": "A visitor who added the Gardens and the Carriage Pavilion after a two-hour guided tour reports three and a half to four hours in total, and still says there was more to see.",
+      "figures": [
+        "two-hour",
+        "three and a half to four hours"
+      ],
+      "topics": [
+        "timing",
+        "museums-itinerary"
+      ],
+      "sourceSlug": "how-to-avoid-vatican-crowds",
+      "sourceUrl": "https://vaticantourguides.com/how-to-avoid-vatican-crowds"
+    },
+    {
+      "id": "timing-014",
+      "fact": "The trade is time: adding them pushes a three-hour visit towards four, which matters if you are also planning St Peter’s the same day.",
+      "figures": [
+        "three-hour",
+        "four"
+      ],
+      "topics": [
+        "timing",
+        "museums-itinerary",
+        "st-peters"
+      ],
+      "sourceSlug": "how-to-avoid-vatican-crowds",
+      "sourceUrl": "https://vaticantourguides.com/how-to-avoid-vatican-crowds"
+    },
+    {
+      "id": "tickets-003",
       "fact": "Buy from the official Vatican site if you are comfortable going unguided: at €25 it is the cheapest and the only seller that cannot fail to secure your entry.",
       "figures": [
         "€25"
       ],
       "topics": [
         "tickets",
-        "pricing",
-        "operators"
+        "pricing"
       ],
       "sourceSlug": "vatican-booking-trust-safety",
       "sourceUrl": "https://vaticantourguides.com/vatican-booking-trust-safety"
     },
     {
-      "id": "crowds-002",
+      "id": "guides-001",
+      "fact": "Reviews mentioning a human guide average 4.22 stars against 3.94 for audio guides — but the popular theory that a guide is a gamble and the audio guide the safe bet does not survive testing.",
+      "figures": [
+        "4.22",
+        "3.94"
+      ],
+      "topics": [
+        "guides",
+        "operators"
+      ],
+      "sourceSlug": "vatican-audio-guide-vs-guide",
+      "sourceUrl": "https://vaticantourguides.com/vatican-audio-guide-vs-guide"
+    },
+    {
+      "id": "guides-002",
+      "fact": "The spread of ratings is effectively identical between the two groups — a standard deviation of 1.29 for human-guided reviews against 1.28 for audio-guide reviews — so the audio guide does not narrow the range of outcomes.",
+      "figures": [
+        "1.29",
+        "1.28"
+      ],
+      "topics": [
+        "guides",
+        "operators"
+      ],
+      "sourceSlug": "vatican-audio-guide-vs-guide",
+      "sourceUrl": "https://vaticantourguides.com/vatican-audio-guide-vs-guide"
+    },
+    {
+      "id": "guides-003",
+      "fact": "Reviews describing a visit with no guide and no audio commentary average 3.41 stars, well below both alternatives — though on only 27 rated reviews, which is thin enough that we treat the direction as suggestive rather than settled.",
+      "figures": [
+        "3.41",
+        "27"
+      ],
+      "topics": [
+        "guides",
+        "museums-itinerary"
+      ],
+      "sourceSlug": "vatican-audio-guide-vs-guide",
+      "sourceUrl": "https://vaticantourguides.com/vatican-audio-guide-vs-guide"
+    },
+    {
+      "id": "crowds-004",
       "fact": "Across 5,657 dated visits, crowd complaints peak in June (25.2%) and stay high through May and October, while December, January and February run at roughly half that rate and carry the highest ratings of the year.",
       "figures": [
         "5,657",
@@ -332,7 +443,7 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-best-time-to-visit"
     },
     {
-      "id": "crowds-003",
+      "id": "crowds-005",
       "fact": "December, January and February generate crowd complaints at roughly half June’s rate, and they carry the highest satisfaction scores of the year: 4.28, 4.25 and 4.16 against 3.76 in June and 3.73 in August.",
       "figures": [
         "4.28",
@@ -349,7 +460,7 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-best-time-to-visit"
     },
     {
-      "id": "crowds-004",
+      "id": "crowds-006",
       "fact": "The single most counterintuitive number here is that June produces more crowd complaints than August — 25.2% against 18.0% — despite August being the hotter month and the one most travellers plan around.",
       "figures": [
         "25.2%",
@@ -364,7 +475,7 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-best-time-to-visit"
     },
     {
-      "id": "crowds-005",
+      "id": "crowds-007",
       "fact": "Across 5,657 dated visits, December reviews mention crowding 12.1% of the time against 25.2% in June, and December also records the highest average rating of any month at 4.28.",
       "figures": [
         "5,657",
@@ -380,7 +491,7 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-best-time-to-visit"
     },
     {
-      "id": "crowds-006",
+      "id": "crowds-008",
       "fact": "October generates 21.9% crowd complaints and May 22.6%, both higher than August at 18.0%.",
       "figures": [
         "21.9%",
@@ -410,60 +521,7 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-best-time-to-visit"
     },
     {
-      "id": "guides-001",
-      "fact": "Reviews mentioning a human guide average 4.22 stars against 3.94 for audio guides — but the popular theory that a guide is a gamble and the audio guide the safe bet does not survive testing.",
-      "figures": [
-        "4.22",
-        "3.94"
-      ],
-      "topics": [
-        "guides"
-      ],
-      "sourceSlug": "vatican-audio-guide-vs-guide",
-      "sourceUrl": "https://vaticantourguides.com/vatican-audio-guide-vs-guide"
-    },
-    {
-      "id": "guides-002",
-      "fact": "The spread of ratings is effectively identical between the two groups — a standard deviation of 1.29 for human-guided reviews against 1.28 for audio-guide reviews — so the audio guide does not narrow the range of outcomes.",
-      "figures": [
-        "1.29",
-        "1.28"
-      ],
-      "topics": [
-        "guides"
-      ],
-      "sourceSlug": "vatican-audio-guide-vs-guide",
-      "sourceUrl": "https://vaticantourguides.com/vatican-audio-guide-vs-guide"
-    },
-    {
-      "id": "guides-003",
-      "fact": "It lowers the ceiling instead: 48% of audio-guide reviews are five stars against 66% of human-guided ones.",
-      "figures": [
-        "48%",
-        "66%"
-      ],
-      "topics": [
-        "guides"
-      ],
-      "sourceSlug": "vatican-audio-guide-vs-guide",
-      "sourceUrl": "https://vaticantourguides.com/vatican-audio-guide-vs-guide"
-    },
-    {
-      "id": "guides-004",
-      "fact": "Reviews describing a visit with no guide and no audio commentary average 3.41 stars, well below both alternatives — though on only 27 rated reviews, which is thin enough that we treat the direction as suggestive rather than settled.",
-      "figures": [
-        "3.41",
-        "27"
-      ],
-      "topics": [
-        "guides",
-        "museums-itinerary"
-      ],
-      "sourceSlug": "vatican-audio-guide-vs-guide",
-      "sourceUrl": "https://vaticantourguides.com/vatican-audio-guide-vs-guide"
-    },
-    {
-      "id": "dome-climb-001",
+      "id": "museums-itinerary-001",
       "fact": "The Gardens sit at 4.76, the Carriage Pavilion 4.74, the Scavi 4.68, the dome 4.50.",
       "figures": [
         "4.76",
@@ -472,26 +530,27 @@
         "4.50"
       ],
       "topics": [
-        "dome-climb",
-        "museums-itinerary"
+        "museums-itinerary",
+        "dome-climb"
       ],
       "sourceSlug": "vatican-best-rated-extras",
       "sourceUrl": "https://vaticantourguides.com/vatican-best-rated-extras"
     },
     {
-      "id": "sistine-chapel-002",
+      "id": "sistine-chapel-003",
       "fact": "The Sistine Chapel, which every visitor reaches, sits at 3.81.",
       "figures": [
         "3.81"
       ],
       "topics": [
-        "sistine-chapel"
+        "sistine-chapel",
+        "crowds"
       ],
       "sourceSlug": "vatican-best-rated-extras",
       "sourceUrl": "https://vaticantourguides.com/vatican-best-rated-extras"
     },
     {
-      "id": "dome-climb-002",
+      "id": "dome-climb-001",
       "fact": "The dome carries 375 ratings, which is not a niche enthusiast sample — plenty of visitors climb it simply because they are already at St Peter’s — and it still sits 0.42 above average and 0.69 above the Sistine Chapel.",
       "figures": [
         "375",
@@ -507,10 +566,63 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-best-rated-extras"
     },
     {
-      "id": "dress-code-001",
-      "fact": "Rome's summers routinely hit 30–35°C, and that's precisely when most dress-code refusals happen — people dress for the heat, not for a religious site",
+      "id": "free-sunday-001",
+      "fact": "The reviews that mention it are positive, averaging 4.69, but there are only thirteen of them and the same day is described elsewhere as the most crowded of the month.",
       "figures": [
-        "30-35°C"
+        "4.69",
+        "thirteen"
+      ],
+      "topics": [
+        "free-sunday",
+        "crowds"
+      ],
+      "sourceSlug": "vatican-best-rated-extras",
+      "sourceUrl": "https://vaticantourguides.com/vatican-best-rated-extras"
+    },
+    {
+      "id": "free-sunday-002",
+      "fact": "Entry is free, the Museums open at 9:00 and queues form well before.",
+      "figures": [
+        "9:00"
+      ],
+      "topics": [
+        "free-sunday",
+        "timing"
+      ],
+      "sourceSlug": "vatican-best-rated-extras",
+      "sourceUrl": "https://vaticantourguides.com/vatican-best-rated-extras"
+    },
+    {
+      "id": "dress-code-001",
+      "fact": "Your options at that point are to buy a cover-up from a nearby vendor (€10–15) or leave and lose the visit.",
+      "figures": [
+        "€10–15"
+      ],
+      "topics": [
+        "dress-code",
+        "pricing"
+      ],
+      "sourceSlug": "vatican-dress-code",
+      "sourceUrl": "https://vaticantourguides.com/vatican-dress-code"
+    },
+    {
+      "id": "dress-code-002",
+      "fact": "One thing to avoid: the vendors near St. Peter's Square selling scarves and ponchos for €10–15.",
+      "figures": [
+        "€10–15"
+      ],
+      "topics": [
+        "dress-code",
+        "pricing"
+      ],
+      "sourceSlug": "vatican-dress-code",
+      "sourceUrl": "https://vaticantourguides.com/vatican-dress-code"
+    },
+    {
+      "id": "dress-code-003",
+      "fact": "Rome's summers routinely hit 30–35°C, and that's precisely when most dress-code refusals happen — people dress for the heat, not for a religious site.",
+      "figures": [
+        "30–35°C"
       ],
       "topics": [
         "dress-code",
@@ -520,35 +632,34 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-dress-code"
     },
     {
-      "id": "dress-code-002",
-      "fact": "One thing to avoid: the vendors near St. Peter's Square selling scarves and ponchos for €10–15",
+      "id": "dress-code-004",
+      "fact": "Avoid buying an overpriced €10–15 cover-up from square vendors; bring your own from the hotel for free.",
       "figures": [
         "€10–15"
       ],
       "topics": [
         "dress-code",
-        "pricing",
-        "st-peters"
+        "pricing"
       ],
       "sourceSlug": "vatican-dress-code",
       "sourceUrl": "https://vaticantourguides.com/vatican-dress-code"
     },
     {
-      "id": "crowds-007",
+      "id": "crowds-009",
       "fact": "Shouting attributed to site staff sits at 2.31.",
       "figures": [
         "2.31"
       ],
       "topics": [
         "crowds",
-        "museums-itinerary"
+        "logistics"
       ],
       "sourceSlug": "vatican-crowd-handling-staff",
       "sourceUrl": "https://vaticantourguides.com/vatican-crowd-handling-staff"
     },
     {
-      "id": "sistine-chapel-003",
-      "fact": "the ritual everyone is warned about — the \"silenzio\" in the Sistine Chapel — is far milder at 3.51, and reviews describing helpful staff sit above average",
+      "id": "sistine-chapel-004",
+      "fact": "the ritual everyone is warned about — the “silenzio” in the Sistine Chapel — is far milder at 3.51, and reviews describing helpful staff sit above average.",
       "figures": [
         "3.51"
       ],
@@ -560,30 +671,12 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-crowd-handling-staff"
     },
     {
-      "id": "tickets-002",
-      "fact": "The documented failure at the Vatican is the reverse: of 112 accounts describing a cancellation or a refund that failed, 72 involve an actual cancellation — and 70 of those are the operator or the site cancelling on the traveller, against 2 the other way.",
-      "figures": [
-        "112",
-        "72",
-        "70",
-        "2"
-      ],
-      "topics": [
-        "tickets",
-        "logistics",
-        "operators"
-      ],
-      "sourceSlug": "vatican-cancellation-refunds",
-      "sourceUrl": "https://vaticantourguides.com/vatican-cancellation-refunds"
-    },
-    {
       "id": "logistics-002",
-      "fact": "Vatican reviews fall from 4.68 stars in the shortest tenth to 3.39 in the longest; Colosseum reviews fall from 4.70 to 3.41.",
+      "fact": "We had already published that longer Vatican reviews rate lower — 4.68 stars in the shortest tenth against 3.39 in the longest, a drop of 1.29.",
       "figures": [
         "4.68",
         "3.39",
-        "4.70",
-        "3.41"
+        "1.29"
       ],
       "topics": [
         "logistics"
@@ -592,7 +685,7 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-cross-monument-replication"
     },
     {
-      "id": "sistine-chapel-004",
+      "id": "sistine-chapel-005",
       "fact": "Photography sits at −0.05 at the Vatican and +0.31 at the Colosseum, because one bans it and the other is built for it.",
       "figures": [
         "−0.05",
@@ -600,42 +693,113 @@
       ],
       "topics": [
         "sistine-chapel",
-        "dress-code"
+        "logistics"
       ],
       "sourceSlug": "vatican-cross-monument-replication",
       "sourceUrl": "https://vaticantourguides.com/vatican-cross-monument-replication"
     },
     {
-      "id": "sistine-chapel-005",
-      "fact": "Photography is banned inside the Sistine Chapel, so Vatican reviews mention it in the context of being stopped, giving −0.05.",
+      "id": "tickets-004",
+      "fact": "Of 112 accounts describing a cancellation or a failed refund, 72 involve a cancellation that actually happened.",
       "figures": [
-        "−0.05"
+        "112",
+        "72"
       ],
       "topics": [
-        "sistine-chapel",
-        "dress-code"
+        "tickets",
+        "operators",
+        "logistics"
       ],
-      "sourceSlug": "vatican-cross-monument-replication",
-      "sourceUrl": "https://vaticantourguides.com/vatican-cross-monument-replication"
+      "sourceSlug": "vatican-cancellation-refunds",
+      "sourceUrl": "https://vaticantourguides.com/vatican-cancellation-refunds"
     },
     {
-      "id": "timing-016",
-      "fact": "The first is the standard early-access (or \"early morning\") tour: you enter at or right around the 8:00 AM public opening, in a small group (often capped around 12), with a guide, and head for the Sistine Chapel before the daytime crowds swell.",
+      "id": "operators-001",
+      "fact": "Above roughly 20 people, it becomes hard to hear and engage with your guide even with a whisper device, and the group is unwieldy in the museum's narrow corridors.",
+      "figures": [
+        "20"
+      ],
+      "topics": [
+        "operators",
+        "crowds",
+        "guides"
+      ],
+      "sourceSlug": "vatican-group-tour-vs-private-tour",
+      "sourceUrl": "https://vaticantourguides.com/vatican-group-tour-vs-private-tour"
+    },
+    {
+      "id": "operators-002",
+      "fact": "The best small-group operators cap at 12–15, and some premium ones at just 6.",
+      "figures": [
+        "12-15",
+        "6"
+      ],
+      "topics": [
+        "operators",
+        "guides",
+        "crowds"
+      ],
+      "sourceSlug": "vatican-group-tour-vs-private-tour",
+      "sourceUrl": "https://vaticantourguides.com/vatican-group-tour-vs-private-tour"
+    },
+    {
+      "id": "operators-003",
+      "fact": "A standard group tour typically runs up to 20–30 people.",
+      "figures": [
+        "20-30"
+      ],
+      "topics": [
+        "operators",
+        "crowds"
+      ],
+      "sourceSlug": "vatican-group-tour-vs-private-tour",
+      "sourceUrl": "https://vaticantourguides.com/vatican-group-tour-vs-private-tour"
+    },
+    {
+      "id": "operators-004",
+      "fact": "A genuine \"small group\" tour usually caps at 12–15, and some premium operators limit it to just 6 — but the term \"small group\" isn't regulated, so some listings labeled that way still pack in 25–30.",
+      "figures": [
+        "12-15",
+        "6",
+        "25-30"
+      ],
+      "topics": [
+        "operators",
+        "crowds"
+      ],
+      "sourceSlug": "vatican-group-tour-vs-private-tour",
+      "sourceUrl": "https://vaticantourguides.com/vatican-group-tour-vs-private-tour"
+    },
+    {
+      "id": "sistine-chapel-006",
+      "fact": "Worth noting: the restoration of Michelangelo's Last Judgment was completed in March 2026, so the fresco is once again fully visible in its restored colors.",
+      "figures": [
+        "March 2026"
+      ],
+      "topics": [
+        "sistine-chapel"
+      ],
+      "sourceSlug": "vatican-group-tour-vs-private-tour",
+      "sourceUrl": "https://vaticantourguides.com/vatican-group-tour-vs-private-tour"
+    },
+    {
+      "id": "timing-015",
+      "fact": "The first is the standard early-access (or \"early morning\") tour: you enter at or right around the 8:00 AM public opening, in a small group (often capped around 12), with a guide, and head for the Sistine Chapel before the daytime crowds swell",
       "figures": [
         "8:00 AM",
         "12"
       ],
       "topics": [
         "timing",
-        "sistine-chapel",
-        "guides"
+        "crowds",
+        "skip-the-line"
       ],
       "sourceSlug": "vatican-early-morning-tour-review",
       "sourceUrl": "https://vaticantourguides.com/vatican-early-morning-tour-review"
     },
     {
-      "id": "sistine-chapel-006",
-      "fact": "A timely bonus: the restoration of Michelangelo's Last Judgment was completed in March 2026, so the fresco is once again fully visible in its restored colors.",
+      "id": "sistine-chapel-007",
+      "fact": "A timely bonus: the restoration of Michelangelo's Last Judgment was completed in March 2026, so the fresco is once again fully visible in its restored colors",
       "figures": [
         "March 2026"
       ],
@@ -647,143 +811,21 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-early-morning-tour-review"
     },
     {
-      "id": "skip-the-line-001",
-      "fact": "\"Early access\" at the Vatican means entering at 8:00 AM — when the Museums open — not before the public.",
+      "id": "timing-016",
+      "fact": "some tours advertised as VIP or early access simply enter around 8:00 AM with everyone else, and travelers have paid premium prices expecting solitude only to be merged into a later group",
       "figures": [
         "8:00 AM"
       ],
       "topics": [
-        "skip-the-line",
         "timing",
-        "tickets"
-      ],
-      "sourceSlug": "vatican-early-access-really-means",
-      "sourceUrl": "https://vaticantourguides.com/vatican-early-access-really-means"
-    },
-    {
-      "id": "skip-the-line-002",
-      "fact": "Multiple tour groups enter at 8:00 simultaneously, so the term buys you the first wave, not an empty building.",
-      "figures": [
-        "8:00"
-      ],
-      "topics": [
-        "skip-the-line",
-        "timing",
-        "crowds"
-      ],
-      "sourceSlug": "vatican-early-access-really-means",
-      "sourceUrl": "https://vaticantourguides.com/vatican-early-access-really-means"
-    },
-    {
-      "id": "sistine-chapel-007",
-      "fact": "The real prize is a window of roughly 20–30 quiet minutes in the Sistine Chapel before it starts filling around 8:30–8:45.",
-      "figures": [
-        "20–30",
-        "8:30–8:45"
-      ],
-      "topics": [
-        "sistine-chapel",
-        "crowds",
-        "timing"
-      ],
-      "sourceSlug": "vatican-early-access-really-means",
-      "sourceUrl": "https://vaticantourguides.com/vatican-early-access-really-means"
-    },
-    {
-      "id": "sistine-chapel-008",
-      "fact": "One early-morning tour participant, recapping the visit on YouTube, counted about 20 minutes in an uncrowded chapel; another visitor report describes sharing the room with a group of exactly 20 people.",
-      "figures": [
-        "20",
-        "20"
-      ],
-      "topics": [
-        "sistine-chapel",
-        "crowds",
-        "timing"
-      ],
-      "sourceSlug": "vatican-early-access-really-means",
-      "sourceUrl": "https://vaticantourguides.com/vatican-early-access-really-means"
-    },
-    {
-      "id": "sistine-chapel-009",
-      "fact": "The Key Master-style tours bring a small group in before opening: one YouTube recap shows a group of about 17 people watching staff unlock the doors and switch on the Sistine Chapel lights.",
-      "figures": [
-        "17"
-      ],
-      "topics": [
-        "sistine-chapel",
-        "tickets",
-        "operators",
-        "skip-the-line"
-      ],
-      "sourceSlug": "vatican-early-access-really-means",
-      "sourceUrl": "https://vaticantourguides.com/vatican-early-access-really-means"
-    },
-    {
-      "id": "pricing-001",
-      "fact": "The trade-off is price and scarcity: reviewers flag the cost as high, with one YouTube commenter citing an early-entry guided tour at $150 — roughly six times the official €25 online ticket at typical exchange rates — and availability runs thin, with dates booking out weeks ahead and some months showing nothing at all.",
-      "figures": [
-        "$150",
-        "€25",
-        "six"
-      ],
-      "topics": [
-        "pricing",
         "tickets",
         "skip-the-line"
       ],
-      "sourceSlug": "vatican-early-access-really-means",
-      "sourceUrl": "https://vaticantourguides.com/vatican-early-access-really-means"
+      "sourceSlug": "vatican-early-morning-tour-review",
+      "sourceUrl": "https://vaticantourguides.com/vatican-early-morning-tour-review"
     },
     {
-      "id": "st-peters-001",
-      "fact": "Security screening applies to every ticket type, and reports from early arrivals include a 30-minute queue at St Peter’s Basilica at 8:00 AM on a March 2026 morning, and, on bad days at the Museums, longer.",
-      "figures": [
-        "30-minute",
-        "8:00 AM",
-        "March 2026"
-      ],
-      "topics": [
-        "st-peters",
-        "timing",
-        "crowds",
-        "skip-the-line"
-      ],
-      "sourceSlug": "vatican-early-access-really-means",
-      "sourceUrl": "https://vaticantourguides.com/vatican-early-access-really-means"
-    },
-    {
-      "id": "timing-017",
-      "fact": "The practical numbers from visitor accounts: arriving 15 minutes before opening is enough for a good queue position, and 30 minutes early puts you near the front.",
-      "figures": [
-        "15",
-        "30"
-      ],
-      "topics": [
-        "timing",
-        "skip-the-line",
-        "crowds"
-      ],
-      "sourceSlug": "vatican-early-access-really-means",
-      "sourceUrl": "https://vaticantourguides.com/vatican-early-access-really-means"
-    },
-    {
-      "id": "sistine-chapel-010",
-      "fact": "The Sistine-to-St Peter’s shortcut adds one more wrinkle, because visitors report it operating from about 9:30 AM, which means the earliest groups can find it closed and face the walk around.",
-      "figures": [
-        "9:30 AM"
-      ],
-      "topics": [
-        "sistine-chapel",
-        "st-peters",
-        "timing",
-        "logistics"
-      ],
-      "sourceSlug": "vatican-early-access-really-means",
-      "sourceUrl": "https://vaticantourguides.com/vatican-early-access-really-means"
-    },
-    {
-      "id": "free-sunday-001",
+      "id": "free-sunday-003",
       "fact": "on the last Sunday of every month, the Vatican Museums open free of charge from 9:00 AM to 2:00 PM, with the last entry at 12:30 PM and the galleries clearing from about 1:30 PM",
       "figures": [
         "9:00 AM",
@@ -793,34 +835,32 @@
       ],
       "topics": [
         "free-sunday",
-        "timing",
-        "tickets"
+        "tickets",
+        "timing"
       ],
       "sourceSlug": "vatican-free-sunday-worth-it",
       "sourceUrl": "https://vaticantourguides.com/vatican-free-sunday-worth-it"
     },
     {
-      "id": "free-sunday-002",
-      "fact": "The free last Sunday of the month saves you the ticket price, but it's the most crowded day of the month, with no skip-the-line and a 2–3 hour queue from as early as 7 AM, plus a shoulder-to-shoulder Sistine Chapel",
+      "id": "free-sunday-004",
+      "fact": "Because there's no way to skip the line, the entrance queue on a free Sunday routinely runs two to three hours, and dedicated visitors start lining up as early as 7:00 AM — two hours before the doors even open",
       "figures": [
-        "2–3",
-        "7 AM"
+        "7:00 AM"
       ],
       "topics": [
         "free-sunday",
         "crowds",
-        "skip-the-line",
-        "sistine-chapel"
+        "skip-the-line"
       ],
       "sourceSlug": "vatican-free-sunday-worth-it",
       "sourceUrl": "https://vaticantourguides.com/vatican-free-sunday-worth-it"
     },
     {
-      "id": "free-sunday-003",
-      "fact": "Since the last entry is 12:30 PM, arriving much after 10:00 AM is a genuine risk: you may not reach the front before they stop letting people in",
+      "id": "free-sunday-005",
+      "fact": "It's also worth noting the free Sunday is suspended when it falls on a major holiday (such as Easter Sunday, June 29, or December 25), so always confirm the date is actually a free one before planning around it",
       "figures": [
-        "12:30 PM",
-        "10:00 AM"
+        "June 29",
+        "December 25"
       ],
       "topics": [
         "free-sunday",
@@ -830,7 +870,22 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-free-sunday-worth-it"
     },
     {
-      "id": "free-sunday-004",
+      "id": "free-sunday-006",
+      "fact": "Since the last entry is 12:30 PM, arriving much after 10:00 AM is a genuine risk: you may not reach the front before they stop letting people in",
+      "figures": [
+        "12:30 PM",
+        "10:00 AM"
+      ],
+      "topics": [
+        "free-sunday",
+        "timing",
+        "logistics"
+      ],
+      "sourceSlug": "vatican-free-sunday-worth-it",
+      "sourceUrl": "https://vaticantourguides.com/vatican-free-sunday-worth-it"
+    },
+    {
+      "id": "free-sunday-007",
       "fact": "Arrive early — at minimum 30–45 minutes before the 9:00 AM opening, and earlier still in busier months, since the queue forms well before dawn in peak season",
       "figures": [
         "30–45",
@@ -839,26 +894,27 @@
       "topics": [
         "free-sunday",
         "timing",
-        "crowds"
+        "logistics"
       ],
       "sourceSlug": "vatican-free-sunday-worth-it",
       "sourceUrl": "https://vaticantourguides.com/vatican-free-sunday-worth-it"
     },
     {
-      "id": "sistine-chapel-011",
+      "id": "sistine-chapel-008",
       "fact": "Set realistic expectations for the Sistine Chapel, which will be at capacity for most of the day; the frescoes are still magnificent (and Michelangelo's newly restored Last Judgment, completed in March 2026, is now fully visible), but the atmosphere is that of a crowded public space, not quiet contemplation",
       "figures": [
         "March 2026"
       ],
       "topics": [
         "sistine-chapel",
+        "free-sunday",
         "crowds"
       ],
       "sourceSlug": "vatican-free-sunday-worth-it",
       "sourceUrl": "https://vaticantourguides.com/vatican-free-sunday-worth-it"
     },
     {
-      "id": "free-sunday-005",
+      "id": "free-sunday-008",
       "fact": "Free-entry days, hours, and suspended dates reflect the 2026 schedule and can change — the free Sunday is suspended when it falls on major holidays (such as Easter Sunday, June 29, and December 25), and 2025–2026 is a Jubilee Year with higher overall crowds",
       "figures": [
         "2026",
@@ -875,67 +931,210 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-free-sunday-worth-it"
     },
     {
-      "id": "crowds-008",
-      "fact": "A group tour is the budget-friendly choice — but \"group\" can mean anywhere from 12 to 30 people, and above 20 you'll struggle to hear the guide even with headsets.",
+      "id": "timing-017",
+      "fact": "\"Early access\" at the Vatican means entering at 8:00 AM — when the Museums open — not before the public.",
       "figures": [
-        "12",
-        "30",
-        "20"
+        "8:00 AM"
       ],
       "topics": [
-        "crowds",
-        "guides",
-        "operators"
+        "timing",
+        "tickets",
+        "skip-the-line"
       ],
-      "sourceSlug": "vatican-group-tour-vs-private-tour",
-      "sourceUrl": "https://vaticantourguides.com/vatican-group-tour-vs-private-tour"
+      "sourceSlug": "vatican-early-access-really-means",
+      "sourceUrl": "https://vaticantourguides.com/vatican-early-access-really-means"
     },
     {
-      "id": "crowds-009",
-      "fact": "A standard group tour typically runs up to 20–30 people.",
+      "id": "timing-018",
+      "fact": "Multiple tour groups enter at 8:00 simultaneously, so the term buys you the first wave, not an empty building.",
       "figures": [
-        "20-30"
+        "8:00"
       ],
       "topics": [
+        "timing",
         "crowds",
-        "operators"
+        "tickets"
       ],
-      "sourceSlug": "vatican-group-tour-vs-private-tour",
-      "sourceUrl": "https://vaticantourguides.com/vatican-group-tour-vs-private-tour"
+      "sourceSlug": "vatican-early-access-really-means",
+      "sourceUrl": "https://vaticantourguides.com/vatican-early-access-really-means"
     },
     {
       "id": "crowds-010",
-      "fact": "A genuine \"small group\" tour usually caps at 12–15, and some premium operators limit it to just 6 — but the term \"small group\" isn't regulated, so some listings labeled that way still pack in 25–30.",
+      "fact": "The building at 8:05 is emptier than it will be at any other point in the day, and that difference is real and visible in visitor accounts.",
       "figures": [
-        "12-15",
-        "6",
-        "25-30"
+        "8:05"
       ],
       "topics": [
         "crowds",
-        "operators"
+        "timing"
       ],
-      "sourceSlug": "vatican-group-tour-vs-private-tour",
-      "sourceUrl": "https://vaticantourguides.com/vatican-group-tour-vs-private-tour"
+      "sourceSlug": "vatican-early-access-really-means",
+      "sourceUrl": "https://vaticantourguides.com/vatican-early-access-really-means"
     },
     {
-      "id": "sistine-chapel-012",
-      "fact": "the restoration of Michelangelo's Last Judgment was completed in March 2026, so the fresco is once again fully visible in its restored colors",
+      "id": "sistine-chapel-009",
+      "fact": "The measurable advantage of an 8:00 AM entry is a window of roughly 20–30 quiet minutes in the Sistine Chapel before the room starts filling, which visitors consistently place around 8:30–8:45.",
       "figures": [
-        "March 2026"
+        "8:00 AM",
+        "20–30",
+        "8:30–8:45"
       ],
       "topics": [
         "sistine-chapel",
+        "crowds",
         "timing"
       ],
-      "sourceSlug": "vatican-group-tour-vs-private-tour",
-      "sourceUrl": "https://vaticantourguides.com/vatican-group-tour-vs-private-tour"
+      "sourceSlug": "vatican-early-access-really-means",
+      "sourceUrl": "https://vaticantourguides.com/vatican-early-access-really-means"
     },
     {
-      "id": "museums-itinerary-001",
+      "id": "sistine-chapel-010",
+      "fact": "The Key Master-style tours bring a small group in before opening: one YouTube recap shows a group of about 17 people watching staff unlock the doors and switch on the Sistine Chapel lights.",
+      "figures": [
+        "17"
+      ],
+      "topics": [
+        "sistine-chapel",
+        "operators",
+        "skip-the-line"
+      ],
+      "sourceSlug": "vatican-early-access-really-means",
+      "sourceUrl": "https://vaticantourguides.com/vatican-early-access-really-means"
+    },
+    {
+      "id": "pricing-001",
+      "fact": "The trade-off is price and scarcity: reviewers flag the cost as high, with one YouTube commenter citing an early-entry guided tour at $150 — roughly six times the official €25 online ticket at typical exchange rates — and availability runs thin, with dates booking out weeks ahead and some months showing nothing at all.",
+      "figures": [
+        "$150",
+        "€25"
+      ],
+      "topics": [
+        "pricing",
+        "tickets"
+      ],
+      "sourceSlug": "vatican-early-access-really-means",
+      "sourceUrl": "https://vaticantourguides.com/vatican-early-access-really-means"
+    },
+    {
+      "id": "st-peters-001",
+      "fact": "Security screening applies to every ticket type, and reports from early arrivals include a 30-minute queue at St Peter’s Basilica at 8:00 AM on a March 2026 morning, and, on bad days at the Museums, longer.",
+      "figures": [
+        "30-minute",
+        "8:00 AM",
+        "March 2026"
+      ],
+      "topics": [
+        "st-peters",
+        "timing",
+        "tickets"
+      ],
+      "sourceSlug": "vatican-early-access-really-means",
+      "sourceUrl": "https://vaticantourguides.com/vatican-early-access-really-means"
+    },
+    {
+      "id": "timing-019",
+      "fact": "The practical numbers from visitor accounts: arriving 15 minutes before opening is enough for a good queue position, and 30 minutes early puts you near the front.",
+      "figures": [
+        "15",
+        "30"
+      ],
+      "topics": [
+        "timing",
+        "skip-the-line"
+      ],
+      "sourceSlug": "vatican-early-access-really-means",
+      "sourceUrl": "https://vaticantourguides.com/vatican-early-access-really-means"
+    },
+    {
+      "id": "logistics-003",
+      "fact": "The Sistine-to-St Peter’s shortcut adds one more wrinkle, because visitors report it operating from about 9:30 AM, which means the earliest groups can find it closed and face the walk around.",
+      "figures": [
+        "9:30 AM"
+      ],
+      "topics": [
+        "logistics",
+        "sistine-chapel",
+        "st-peters"
+      ],
+      "sourceSlug": "vatican-early-access-really-means",
+      "sourceUrl": "https://vaticantourguides.com/vatican-early-access-really-means"
+    },
+    {
+      "id": "tickets-005",
+      "fact": "The zero-cost version of early access is an official 8:00 AM ticket and a fast walk.",
+      "figures": [
+        "8:00 AM"
+      ],
+      "topics": [
+        "tickets",
+        "timing",
+        "logistics"
+      ],
+      "sourceSlug": "vatican-early-access-really-means",
+      "sourceUrl": "https://vaticantourguides.com/vatican-early-access-really-means"
+    },
+    {
+      "id": "pricing-002",
+      "fact": "Pay the much larger before-hours premium only if genuine exclusivity matters enough to book weeks ahead and swallow a price several times the official €25 ticket.",
+      "figures": [
+        "€25"
+      ],
+      "topics": [
+        "pricing",
+        "tickets"
+      ],
+      "sourceSlug": "vatican-early-access-really-means",
+      "sourceUrl": "https://vaticantourguides.com/vatican-early-access-really-means"
+    },
+    {
+      "id": "guides-004",
+      "fact": "Guided Vatican visits fail more often than the marketing suggests: of 2,178 rated visitor reports that mention a guide, 417 — about one in five — came in at 3 stars or lower.",
+      "figures": [
+        "2,178",
+        "417",
+        "one in five"
+      ],
+      "topics": [
+        "guides",
+        "operators"
+      ],
+      "sourceSlug": "vatican-guide-quality-lottery",
+      "sourceUrl": "https://vaticantourguides.com/vatican-guide-quality-lottery"
+    },
+    {
+      "id": "guides-005",
+      "fact": "Nearly 17% of 5-star reports name their guide, against under 2% of reports rating 3 stars or lower — a gap of roughly nine to one.",
+      "figures": [
+        "17%",
+        "2%",
+        "nine to one"
+      ],
+      "topics": [
+        "guides",
+        "operators"
+      ],
+      "sourceSlug": "vatican-guide-quality-lottery",
+      "sourceUrl": "https://vaticantourguides.com/vatican-guide-quality-lottery"
+    },
+    {
+      "id": "sistine-chapel-011",
+      "fact": "All commentary on the ceiling happens before you walk in, usually in a courtyard or corridor, and inside you get silence, guards asking for quiet, and typically 15 to 20 minutes of looking.",
+      "figures": [
+        "15 to 20 minutes"
+      ],
+      "topics": [
+        "sistine-chapel",
+        "guides",
+        "timing"
+      ],
+      "sourceSlug": "vatican-guide-quality-lottery",
+      "sourceUrl": "https://vaticantourguides.com/vatican-guide-quality-lottery"
+    },
+    {
+      "id": "museums-itinerary-002",
       "fact": "The Vatican Museums follow one mandatory route — about 7 km through 54 galleries — ending at the Sistine Chapel, so you can't go straight to it.",
       "figures": [
-        "7 km",
+        "7",
         "54"
       ],
       "topics": [
@@ -947,30 +1146,16 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-museums-itinerary"
     },
     {
-      "id": "museums-itinerary-002",
-      "fact": "A focused highlights visit (Pio-Clementine, Gallery of Maps, Raphael Rooms, Sistine Chapel) takes about 2–3 hours; a comfortable visit 3–4; adding the Pinacoteca, 4+ or a full day.",
-      "figures": [
-        "2–3",
-        "3–4",
-        "4+"
-      ],
-      "topics": [
-        "museums-itinerary",
-        "timing"
-      ],
-      "sourceSlug": "vatican-museums-itinerary",
-      "sourceUrl": "https://vaticantourguides.com/vatican-museums-itinerary"
-    },
-    {
       "id": "museums-itinerary-003",
-      "fact": "not a single museum but a sprawling complex of interconnected wings, galleries, and courtyards built up over centuries — 54 galleries, roughly 7 kilometers of corridors, and more than 70,000 works of art",
+      "fact": "Before you plan anything, understand what the Vatican Museums actually are: not a single museum but a sprawling complex of interconnected wings, galleries, and courtyards built up over centuries — 54 galleries, roughly 7 kilometers of corridors, and more than 70,000 works of art.",
       "figures": [
         "54",
         "7",
         "70,000"
       ],
       "topics": [
-        "museums-itinerary"
+        "museums-itinerary",
+        "logistics"
       ],
       "sourceSlug": "vatican-museums-itinerary",
       "sourceUrl": "https://vaticantourguides.com/vatican-museums-itinerary"
@@ -982,19 +1167,19 @@
         "49"
       ],
       "topics": [
-        "museums-itinerary"
+        "museums-itinerary",
+        "timing"
       ],
       "sourceSlug": "vatican-museums-itinerary",
       "sourceUrl": "https://vaticantourguides.com/vatican-museums-itinerary"
     },
     {
-      "id": "sistine-chapel-013",
-      "fact": "The walk takes a minimum of about two hours at a steady highlights pace.",
+      "id": "timing-020",
+      "fact": "A focused highlights visit — the Pio-Clementine Museum, Gallery of Maps, Raphael Rooms, and Sistine Chapel — takes a minimum of about 2 to 3 hours at a steady pace along the core route.",
       "figures": [
-        "two"
+        "2 to 3"
       ],
       "topics": [
-        "sistine-chapel",
         "timing",
         "museums-itinerary"
       ],
@@ -1002,21 +1187,47 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-museums-itinerary"
     },
     {
-      "id": "st-peters-002",
+      "id": "timing-021",
+      "fact": "A comfortable visit that lets you actually linger in each major room runs 3 to 4 hours.",
+      "figures": [
+        "3 to 4"
+      ],
+      "topics": [
+        "timing",
+        "museums-itinerary"
+      ],
+      "sourceSlug": "vatican-museums-itinerary",
+      "sourceUrl": "https://vaticantourguides.com/vatican-museums-itinerary"
+    },
+    {
+      "id": "timing-022",
+      "fact": "an in-depth visit that adds the Pinacoteca and other side galleries needs 4 hours or more, easily a full day for a genuine art lover.",
+      "figures": [
+        "4"
+      ],
+      "topics": [
+        "timing",
+        "museums-itinerary"
+      ],
+      "sourceSlug": "vatican-museums-itinerary",
+      "sourceUrl": "https://vaticantourguides.com/vatican-museums-itinerary"
+    },
+    {
+      "id": "timing-023",
       "fact": "If you plan to add St. Peter's Basilica or the Vatican Gardens, budget 5 to 6 hours total for the day.",
       "figures": [
         "5 to 6"
       ],
       "topics": [
-        "st-peters",
         "timing",
+        "st-peters",
         "museums-itinerary"
       ],
       "sourceSlug": "vatican-museums-itinerary",
       "sourceUrl": "https://vaticantourguides.com/vatican-museums-itinerary"
     },
     {
-      "id": "guides-005",
+      "id": "guides-006",
       "fact": "A guided highlights tour (typically 2.5–3.5 hours) is the most efficient way to hit the essentials if you're short on time, and you can stay to explore on your own afterward.",
       "figures": [
         "2.5–3.5"
@@ -1031,6 +1242,21 @@
     },
     {
       "id": "museums-itinerary-005",
+      "fact": "With 54 galleries and 7 km of corridors, it's wise not to pair the Vatican with other major sights the same day.",
+      "figures": [
+        "54",
+        "7"
+      ],
+      "topics": [
+        "museums-itinerary",
+        "timing",
+        "logistics"
+      ],
+      "sourceSlug": "vatican-museums-itinerary",
+      "sourceUrl": "https://vaticantourguides.com/vatican-museums-itinerary"
+    },
+    {
+      "id": "museums-itinerary-006",
       "fact": "You'll begin near the Pinecone Courtyard, with its giant ancient bronze pinecone, then move through the Pio-Clementine Museum, home to celebrated ancient sculptures like the Laocoön and the Apollo Belvedere (allow 15–20 minutes).",
       "figures": [
         "15–20"
@@ -1043,10 +1269,10 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-museums-itinerary"
     },
     {
-      "id": "museums-itinerary-006",
+      "id": "museums-itinerary-007",
       "fact": "Next comes the Gallery of Maps — a breathtaking 120-meter corridor lined with 40 painted topographical maps of Italy from the 1580s, a room that stops people in their tracks (about 15 minutes).",
       "figures": [
-        "120-meter",
+        "120",
         "40",
         "1580s",
         "15"
@@ -1059,10 +1285,9 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-museums-itinerary"
     },
     {
-      "id": "museums-itinerary-007",
+      "id": "museums-itinerary-008",
       "fact": "Then you reach the Raphael Rooms, four chambers frescoed by Raphael and his workshop, including the sublime School of Athens — often overshadowed by what follows but extraordinary in their own right (30–45 minutes).",
       "figures": [
-        "four",
         "30–45"
       ],
       "topics": [
@@ -1073,23 +1298,24 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-museums-itinerary"
     },
     {
-      "id": "sistine-chapel-014",
+      "id": "sistine-chapel-012",
       "fact": "finally the Sistine Chapel, the climax: Michelangelo's ceiling (1508–1512) and his Last Judgment on the altar wall, whose restoration was completed in March 2026, so the frescoes are now visible in their revived colors.",
       "figures": [
         "1508–1512",
-        "March 2026"
+        "2026"
       ],
       "topics": [
-        "sistine-chapel"
+        "sistine-chapel",
+        "museums-itinerary"
       ],
       "sourceSlug": "vatican-museums-itinerary",
       "sourceUrl": "https://vaticantourguides.com/vatican-museums-itinerary"
     },
     {
-      "id": "sistine-chapel-015",
+      "id": "sistine-chapel-013",
       "fact": "The Chapel is about the size of a tennis court with the ceiling 20 meters overhead — plan 20–30 minutes to take it in, in silence, with no photography allowed.",
       "figures": [
-        "20 meters",
+        "20",
         "20–30"
       ],
       "topics": [
@@ -1100,124 +1326,52 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-museums-itinerary"
     },
     {
-      "id": "museums-itinerary-008",
-      "fact": "Add 45–60 minutes and you'll see why most visitors' loss is your gain — it's often nearly empty.",
+      "id": "st-peters-002",
+      "fact": "Independent ticket holders can't use this passage: you must exit the Vatican Museums and walk about 25 minutes around to St. Peter's Square, then join the Basilica's own security queue (often an hour or more in peak season).",
       "figures": [
-        "45–60"
-      ],
-      "topics": [
-        "museums-itinerary",
-        "timing",
-        "crowds"
-      ],
-      "sourceSlug": "vatican-museums-itinerary",
-      "sourceUrl": "https://vaticantourguides.com/vatican-museums-itinerary"
-    },
-    {
-      "id": "st-peters-003",
-      "fact": "There's an internal passage (the Scala Regia shortcut) that leads directly from the Sistine Chapel into the Basilica, bypassing the long way around and the Basilica's own security line, which can run over an hour.",
-      "figures": [
-        "over an hour"
+        "25"
       ],
       "topics": [
         "st-peters",
-        "sistine-chapel",
+        "logistics",
         "skip-the-line"
       ],
       "sourceSlug": "vatican-museums-itinerary",
       "sourceUrl": "https://vaticantourguides.com/vatican-museums-itinerary"
     },
     {
-      "id": "st-peters-004",
-      "fact": "Independent ticket holders can't use this passage: you must exit the Vatican Museums and walk about 25 minutes around to St. Peter's Square, then join the Basilica's own security queue (often an hour or more in peak season).",
+      "id": "accessibility-004",
+      "fact": "Reviews mentioning stairs sit essentially at the average, while reviews mentioning how far you have to walk sit 0.43 below and reviews about nowhere to sit 0.63 below.",
       "figures": [
-        "25 minutes",
-        "an hour or more"
+        "0.43",
+        "0.63"
       ],
       "topics": [
-        "st-peters",
-        "logistics",
-        "tickets"
+        "accessibility",
+        "museums-itinerary"
       ],
-      "sourceSlug": "vatican-museums-itinerary",
-      "sourceUrl": "https://vaticantourguides.com/vatican-museums-itinerary"
+      "sourceSlug": "vatican-mobility-access",
+      "sourceUrl": "https://vaticantourguides.com/vatican-mobility-access"
     },
     {
-      "id": "st-peters-005",
-      "fact": "The passage is also closed on Wednesdays for the Papal Audience.",
+      "id": "dome-climb-002",
+      "fact": "The lift reaches only the roof terrace, leaving 320 steps to the top, and the final section is narrow and steep as it follows the curve of the dome.",
       "figures": [
-        "Wednesdays"
+        "320"
       ],
       "topics": [
-        "st-peters",
-        "logistics",
-        "timing"
+        "dome-climb",
+        "accessibility"
       ],
-      "sourceSlug": "vatican-museums-itinerary",
-      "sourceUrl": "https://vaticantourguides.com/vatican-museums-itinerary"
-    },
-    {
-      "id": "sistine-chapel-016",
-      "fact": "wear genuinely comfortable shoes: seven kilometers of marble galleries are seven real kilometers, and aiming to reach the Sistine Chapel before about 10:30 a.m. means a calmer experience",
-      "figures": [
-        "seven kilometers",
-        "10:30 a.m."
-      ],
-      "topics": [
-        "sistine-chapel",
-        "timing",
-        "crowds"
-      ],
-      "sourceSlug": "vatican-museums-itinerary",
-      "sourceUrl": "https://vaticantourguides.com/vatican-museums-itinerary"
-    },
-    {
-      "id": "guides-006",
-      "fact": "Guided Vatican visits fail more often than the marketing suggests: of 2,178 rated visitor reports that mention a guide, 417 — about one in five — came in at 3 stars or lower.",
-      "figures": [
-        "2,178",
-        "417"
-      ],
-      "topics": [
-        "guides",
-        "operators"
-      ],
-      "sourceSlug": "vatican-guide-quality-lottery",
-      "sourceUrl": "https://vaticantourguides.com/vatican-guide-quality-lottery"
+      "sourceSlug": "vatican-mobility-access",
+      "sourceUrl": "https://vaticantourguides.com/vatican-mobility-access"
     },
     {
       "id": "guides-007",
-      "fact": "Nearly 17% of 5-star reports name their guide, against under 2% of reports rating 3 stars or lower — a gap of roughly nine to one.",
+      "fact": "Controlling for length the effect is +0.74, rising to +1.39 among the longest reviews.",
       "figures": [
-        "17%",
-        "2%"
-      ],
-      "topics": [
-        "guides"
-      ],
-      "sourceSlug": "vatican-guide-quality-lottery",
-      "sourceUrl": "https://vaticantourguides.com/vatican-guide-quality-lottery"
-    },
-    {
-      "id": "sistine-chapel-017",
-      "fact": "All commentary on the ceiling happens before you walk in, usually in a courtyard or corridor, and inside you get silence, guards asking for quiet, and typically 15 to 20 minutes of looking.",
-      "figures": [
-        "15 to 20"
-      ],
-      "topics": [
-        "sistine-chapel",
-        "guides",
-        "timing"
-      ],
-      "sourceSlug": "vatican-guide-quality-lottery",
-      "sourceUrl": "https://vaticantourguides.com/vatican-guide-quality-lottery"
-    },
-    {
-      "id": "guides-008",
-      "fact": "Reviews that engage with the history average 4.70 against a corpus average of 4.08 — and that understates it, because longer reviews rate lower across the board.",
-      "figures": [
-        "4.70",
-        "4.08"
+        "+0.74",
+        "+1.39"
       ],
       "topics": [
         "guides",
@@ -1242,36 +1396,193 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-history-context-effect"
     },
     {
-      "id": "accessibility-003",
-      "fact": "Reviews mentioning stairs sit essentially at the average, while reviews mentioning how far you have to walk sit 0.43 below and reviews about nowhere to sit 0.63 below",
+      "id": "tickets-006",
+      "fact": "The cheapest Vatican ticket is the official one at tickets.museivaticani.va — €20 door, €25 online — including the Sistine Chapel but not St. Peter's Basilica or an audio guide.",
       "figures": [
-        "0.43",
-        "0.63"
+        "€20",
+        "€25"
       ],
       "topics": [
-        "accessibility",
-        "logistics",
-        "museums-itinerary"
+        "tickets",
+        "pricing",
+        "sistine-chapel"
       ],
-      "sourceSlug": "vatican-mobility-access",
-      "sourceUrl": "https://vaticantourguides.com/vatican-mobility-access"
+      "sourceSlug": "vatican-museums-tickets-guide",
+      "sourceUrl": "https://vaticantourguides.com/vatican-museums-tickets-guide"
     },
     {
-      "id": "dome-climb-003",
-      "fact": "The lift reaches only the roof terrace, leaving 320 steps to the top, and the final section is narrow and steep as it follows the curve of the dome",
+      "id": "tickets-007",
+      "fact": "Book it 60 days ahead, since peak morning slots sell out weeks early.",
       "figures": [
-        "320"
+        "60"
       ],
       "topics": [
-        "dome-climb",
-        "accessibility"
+        "tickets",
+        "timing"
       ],
-      "sourceSlug": "vatican-mobility-access",
-      "sourceUrl": "https://vaticantourguides.com/vatican-mobility-access"
+      "sourceSlug": "vatican-museums-tickets-guide",
+      "sourceUrl": "https://vaticantourguides.com/vatican-museums-tickets-guide"
     },
     {
-      "id": "pricing-002",
-      "fact": "official adult admission is €25 online, €20 at the door",
+      "id": "tickets-008",
+      "fact": "The official site (tickets.museivaticani.va) is always the cheapest: €20 at the door, or €25 online once you add the €5 fee that locks in your timed entry.",
+      "figures": [
+        "€20",
+        "€25",
+        "€5"
+      ],
+      "topics": [
+        "tickets",
+        "pricing"
+      ],
+      "sourceSlug": "vatican-museums-tickets-guide",
+      "sourceUrl": "https://vaticantourguides.com/vatican-museums-tickets-guide"
+    },
+    {
+      "id": "tickets-009",
+      "fact": "It includes the Sistine Chapel, and tickets release 60 days in advance in 15-minute slots.",
+      "figures": [
+        "60",
+        "15-minute"
+      ],
+      "topics": [
+        "tickets",
+        "timing",
+        "sistine-chapel"
+      ],
+      "sourceSlug": "vatican-museums-tickets-guide",
+      "sourceUrl": "https://vaticantourguides.com/vatican-museums-tickets-guide"
+    },
+    {
+      "id": "operators-005",
+      "fact": "Third-party platforms (GetYourGuide, Viator) cost more but solve real problems: a reliable checkout, inventory when the official site is sold out, frequently free cancellation up to 24–72 hours, and the option of a live guide or special access.",
+      "figures": [
+        "24–72"
+      ],
+      "topics": [
+        "operators",
+        "tickets"
+      ],
+      "sourceSlug": "vatican-museums-tickets-guide",
+      "sourceUrl": "https://vaticantourguides.com/vatican-museums-tickets-guide"
+    },
+    {
+      "id": "guides-008",
+      "fact": "A standard group tour adds a guide and headsets for a larger group; a small-group tour caps the size (often 12–15, sometimes as few as 6) for a much better experience; and a private tour is your group alone, at the highest price but with total flexibility.",
+      "figures": [
+        "12–15",
+        "6"
+      ],
+      "topics": [
+        "guides",
+        "operators"
+      ],
+      "sourceSlug": "vatican-museums-tickets-guide",
+      "sourceUrl": "https://vaticantourguides.com/vatican-museums-tickets-guide"
+    },
+    {
+      "id": "st-peters-003",
+      "fact": "St. Peter's is free to enter on its own, but the security line there often runs an hour or more.",
+      "figures": [
+        "an hour"
+      ],
+      "topics": [
+        "st-peters",
+        "timing",
+        "logistics"
+      ],
+      "sourceSlug": "vatican-museums-tickets-guide",
+      "sourceUrl": "https://vaticantourguides.com/vatican-museums-tickets-guide"
+    },
+    {
+      "id": "st-peters-004",
+      "fact": "Many guided tours include the Basilica by using an internal passage directly from the Sistine Chapel, which skips both the long walk back through the museums and the separate security queue — saving roughly two hours.",
+      "figures": [
+        "two"
+      ],
+      "topics": [
+        "st-peters",
+        "sistine-chapel",
+        "skip-the-line"
+      ],
+      "sourceSlug": "vatican-museums-tickets-guide",
+      "sourceUrl": "https://vaticantourguides.com/vatican-museums-tickets-guide"
+    },
+    {
+      "id": "tickets-010",
+      "fact": "Second, audio guides are not included in the basic ticket; they're an added cost (€8) rented on arrival or pre-booked, and many people don't realize this until they're inside.",
+      "figures": [
+        "€8"
+      ],
+      "topics": [
+        "tickets",
+        "pricing"
+      ],
+      "sourceSlug": "vatican-museums-tickets-guide",
+      "sourceUrl": "https://vaticantourguides.com/vatican-museums-tickets-guide"
+    },
+    {
+      "id": "timing-024",
+      "fact": "Official tickets release 60 days in advance, and in peak season (roughly April through October) the popular morning slots sell out two to three weeks ahead.",
+      "figures": [
+        "60",
+        "two to three"
+      ],
+      "topics": [
+        "timing",
+        "tickets",
+        "crowds"
+      ],
+      "sourceSlug": "vatican-museums-tickets-guide",
+      "sourceUrl": "https://vaticantourguides.com/vatican-museums-tickets-guide"
+    },
+    {
+      "id": "timing-025",
+      "fact": "Around Easter and other high-demand periods, they can go six to eight weeks early.",
+      "figures": [
+        "six to eight"
+      ],
+      "topics": [
+        "timing",
+        "tickets"
+      ],
+      "sourceSlug": "vatican-museums-tickets-guide",
+      "sourceUrl": "https://vaticantourguides.com/vatican-museums-tickets-guide"
+    },
+    {
+      "id": "timing-026",
+      "fact": "In peak season (April–October), popular morning slots sell out two to three weeks in advance, and around Easter or other high-demand dates they can sell out six to eight weeks early.",
+      "figures": [
+        "two to three",
+        "six to eight"
+      ],
+      "topics": [
+        "timing",
+        "tickets",
+        "crowds"
+      ],
+      "sourceSlug": "vatican-museums-tickets-guide",
+      "sourceUrl": "https://vaticantourguides.com/vatican-museums-tickets-guide"
+    },
+    {
+      "id": "tickets-011",
+      "fact": "One visitor reported paying €35 through a booking site for an entry sold at €17 at the gate, then queuing 40 minutes anyway.",
+      "figures": [
+        "€35",
+        "€17",
+        "40 minutes"
+      ],
+      "topics": [
+        "tickets",
+        "pricing",
+        "skip-the-line"
+      ],
+      "sourceSlug": "vatican-official-site-check",
+      "sourceUrl": "https://vaticantourguides.com/vatican-official-site-check"
+    },
+    {
+      "id": "pricing-003",
+      "fact": "Adult admission is a published number — €25 online, €20 at the gate — which makes any large gap answerable in seconds.",
       "figures": [
         "€25",
         "€20"
@@ -1284,30 +1595,12 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-official-site-check"
     },
     {
-      "id": "pricing-003",
-      "fact": "One visitor reported paying €35 through a booking site for an entry sold at €17 at the gate, then queuing 40 minutes anyway.",
-      "figures": [
-        "€35",
-        "€17",
-        "40"
-      ],
-      "topics": [
-        "pricing",
-        "tickets",
-        "skip-the-line",
-        "crowds"
-      ],
-      "sourceSlug": "vatican-official-site-check",
-      "sourceUrl": "https://vaticantourguides.com/vatican-official-site-check"
-    },
-    {
-      "id": "timing-018",
-      "fact": "a visitor with an 8:30 guided tour booked directly on the museum website was routed through a separate, uncrowded line compared with those who had bought from third-party sites",
+      "id": "skip-the-line-001",
+      "fact": "Beyond price, one report describes a concrete operational difference: a visitor with an 8:30 guided tour booked directly on the museum website was routed through a separate, uncrowded line compared with those who had bought from third-party sites.",
       "figures": [
         "8:30"
       ],
       "topics": [
-        "timing",
         "skip-the-line",
         "guides",
         "tickets"
@@ -1316,21 +1609,21 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-official-site-check"
     },
     {
-      "id": "pricing-004",
-      "fact": "The Vatican Museums standard adult admission is €20 at the door and €25 online, the difference being the booking fee for a timed slot.",
+      "id": "tickets-012",
+      "fact": "The official Vatican Museums ticket costs €25 online, including the booking fee, or €20 at the door — that is the whole price of entry.",
       "figures": [
-        "€20",
-        "€25"
+        "€25",
+        "€20"
       ],
       "topics": [
-        "pricing",
-        "tickets"
+        "tickets",
+        "pricing"
       ],
       "sourceSlug": "vatican-official-vs-platform-price",
       "sourceUrl": "https://vaticantourguides.com/vatican-official-vs-platform-price"
     },
     {
-      "id": "pricing-005",
+      "id": "pricing-004",
       "fact": "Third-party platforms sell the same entry inside packages that cost more, and the markup is invisible until you compare with the operator directly: in one documented booking a traveller paid €220 for a guided tour that the operator sold for €163.24.",
       "figures": [
         "€220",
@@ -1338,14 +1631,55 @@
       ],
       "topics": [
         "pricing",
-        "tickets",
-        "operators"
+        "operators",
+        "tickets"
       ],
       "sourceSlug": "vatican-official-vs-platform-price",
       "sourceUrl": "https://vaticantourguides.com/vatican-official-vs-platform-price"
     },
     {
-      "id": "st-peters-006",
+      "id": "pricing-005",
+      "fact": "The trap is narrow and easy to name: a plain timed-entry ticket, no guide, no basilica, no early slot, priced well above €25.",
+      "figures": [
+        "€25"
+      ],
+      "topics": [
+        "pricing",
+        "tickets",
+        "skip-the-line"
+      ],
+      "sourceSlug": "vatican-official-vs-platform-price",
+      "sourceUrl": "https://vaticantourguides.com/vatican-official-vs-platform-price"
+    },
+    {
+      "id": "pricing-006",
+      "fact": "If it has your slot and you do not need a guide, €25 is the whole story and nothing else you buy will get you in faster.",
+      "figures": [
+        "€25"
+      ],
+      "topics": [
+        "pricing",
+        "tickets",
+        "skip-the-line"
+      ],
+      "sourceSlug": "vatican-official-vs-platform-price",
+      "sourceUrl": "https://vaticantourguides.com/vatican-official-vs-platform-price"
+    },
+    {
+      "id": "guides-009",
+      "fact": "The official audio guide is a separate €8 sold on site.",
+      "figures": [
+        "€8"
+      ],
+      "topics": [
+        "guides",
+        "pricing"
+      ],
+      "sourceSlug": "vatican-official-vs-platform-price",
+      "sourceUrl": "https://vaticantourguides.com/vatican-official-vs-platform-price"
+    },
+    {
+      "id": "st-peters-005",
       "fact": "Entry to St Peter's itself is free, so you can queue for it separately, or buy its own €7 timed-entry ticket.",
       "figures": [
         "€7"
@@ -1359,134 +1693,7 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-official-vs-platform-price"
     },
     {
-      "id": "tickets-003",
-      "fact": "The official audio guide is a separate €5 sold on site.",
-      "figures": [
-        "€5"
-      ],
-      "topics": [
-        "tickets",
-        "pricing",
-        "guides"
-      ],
-      "sourceSlug": "vatican-official-vs-platform-price",
-      "sourceUrl": "https://vaticantourguides.com/vatican-official-vs-platform-price"
-    },
-    {
-      "id": "pricing-006",
-      "fact": "The trap is narrow and easy to name: a plain timed-entry ticket, no guide, no basilica, no early slot, priced well above €25.",
-      "figures": [
-        "€25"
-      ],
-      "topics": [
-        "pricing",
-        "tickets"
-      ],
-      "sourceSlug": "vatican-official-vs-platform-price",
-      "sourceUrl": "https://vaticantourguides.com/vatican-official-vs-platform-price"
-    },
-    {
-      "id": "pricing-007",
-      "fact": "If it has your slot and you do not need a guide, €25 is the whole story and nothing else you buy will get you in faster.",
-      "figures": [
-        "€25"
-      ],
-      "topics": [
-        "pricing",
-        "tickets"
-      ],
-      "sourceSlug": "vatican-official-vs-platform-price",
-      "sourceUrl": "https://vaticantourguides.com/vatican-official-vs-platform-price"
-    },
-    {
-      "id": "tickets-004",
-      "fact": "The cheapest way is the official site, tickets.museivaticani.va, where a standard ticket is €20 at the door or €25 online (with the €5 timed-slot fee), including the Sistine Chapel.",
-      "figures": [
-        "€20",
-        "€25",
-        "€5"
-      ],
-      "topics": [
-        "tickets",
-        "pricing",
-        "sistine-chapel"
-      ],
-      "sourceSlug": "vatican-museums-tickets-guide",
-      "sourceUrl": "https://vaticantourguides.com/vatican-museums-tickets-guide"
-    },
-    {
-      "id": "tickets-005",
-      "fact": "Tickets release 60 days ahead in 15-minute entry windows.",
-      "figures": [
-        "60",
-        "15-minute"
-      ],
-      "topics": [
-        "tickets",
-        "timing"
-      ],
-      "sourceSlug": "vatican-museums-tickets-guide",
-      "sourceUrl": "https://vaticantourguides.com/vatican-museums-tickets-guide"
-    },
-    {
-      "id": "tickets-006",
-      "fact": "Third-party platforms (GetYourGuide, Viator) cost more but solve real problems: a reliable checkout, inventory when the official site is sold out, frequently free cancellation up to 24–72 hours, and the option of a live guide or special access.",
-      "figures": [
-        "24–72"
-      ],
-      "topics": [
-        "tickets",
-        "operators",
-        "logistics"
-      ],
-      "sourceSlug": "vatican-museums-tickets-guide",
-      "sourceUrl": "https://vaticantourguides.com/vatican-museums-tickets-guide"
-    },
-    {
-      "id": "tickets-007",
-      "fact": "A standard group tour adds a guide and headsets for a larger group; a small-group tour caps the size (often 12–15, sometimes as few as 6) for a much better experience; and a private tour is your group alone, at the highest price but with total flexibility.",
-      "figures": [
-        "12–15",
-        "6"
-      ],
-      "topics": [
-        "tickets",
-        "guides",
-        "crowds"
-      ],
-      "sourceSlug": "vatican-museums-tickets-guide",
-      "sourceUrl": "https://vaticantourguides.com/vatican-museums-tickets-guide"
-    },
-    {
-      "id": "tickets-008",
-      "fact": "Second, audio guides are not included in the basic ticket; they're an added cost (around €7–8) rented on arrival or pre-booked, and many people don't realize this until they're inside.",
-      "figures": [
-        "€7–8"
-      ],
-      "topics": [
-        "tickets",
-        "pricing",
-        "logistics"
-      ],
-      "sourceSlug": "vatican-museums-tickets-guide",
-      "sourceUrl": "https://vaticantourguides.com/vatican-museums-tickets-guide"
-    },
-    {
-      "id": "tickets-009",
-      "fact": "Official tickets release 60 days in advance, and in peak season (roughly April through October) the popular morning slots sell out two to three weeks ahead.",
-      "figures": [
-        "60"
-      ],
-      "topics": [
-        "tickets",
-        "timing",
-        "crowds"
-      ],
-      "sourceSlug": "vatican-museums-tickets-guide",
-      "sourceUrl": "https://vaticantourguides.com/vatican-museums-tickets-guide"
-    },
-    {
-      "id": "timing-019",
+      "id": "timing-027",
       "fact": "Adding measured medians: an hour queueing for the Museums, three hours inside, 45 minutes queueing at St Peter’s, two hours in the Basilica, 45 minutes for the dome.",
       "figures": [
         "an hour",
@@ -1497,45 +1704,78 @@
       ],
       "topics": [
         "timing",
-        "dome-climb",
+        "museums-itinerary",
         "st-peters"
       ],
       "sourceSlug": "vatican-one-day-time-budget",
       "sourceUrl": "https://vaticantourguides.com/vatican-one-day-time-budget"
     },
     {
-      "id": "skip-the-line-003",
-      "fact": "If the day has to hold both, the internal passage from the Sistine Chapel to St Peter’s is the single biggest saving available, because it removes the Basilica security queue from the budget entirely — 45 minutes at the median, two hours on a busy day.",
+      "id": "timing-028",
+      "fact": "Among 243 items discussing whether the Vatican Museums and St Peter’s Basilica fit into a single day, 68 say it does not work and 64 say it does — a split so even that it tells you the question is underspecified.",
       "figures": [
-        "45 minutes",
-        "two hours"
+        "243",
+        "68",
+        "64"
       ],
       "topics": [
-        "skip-the-line",
-        "st-peters",
-        "sistine-chapel"
+        "timing",
+        "museums-itinerary",
+        "st-peters"
       ],
       "sourceSlug": "vatican-one-day-time-budget",
       "sourceUrl": "https://vaticantourguides.com/vatican-one-day-time-budget"
     },
     {
-      "id": "sistine-chapel-018",
+      "id": "dome-climb-003",
+      "fact": "The dome averages 4.50 stars across 375 rated reviews, the highest of any element in the dataset, and takes a median of 45 minutes.",
+      "figures": [
+        "4.50",
+        "375",
+        "45 minutes"
+      ],
+      "topics": [
+        "dome-climb",
+        "timing",
+        "st-peters"
+      ],
+      "sourceSlug": "vatican-one-day-time-budget",
+      "sourceUrl": "https://vaticantourguides.com/vatican-one-day-time-budget"
+    },
+    {
+      "id": "sistine-chapel-014",
       "fact": "The Sistine Chapel, by contrast, carries the lowest rating of the four at 3.81 — not because the ceiling disappoints, but because it is where the crowding concentrates.",
       "figures": [
         "3.81"
       ],
       "topics": [
         "sistine-chapel",
-        "crowds"
+        "crowds",
+        "timing"
       ],
       "sourceSlug": "vatican-one-day-time-budget",
       "sourceUrl": "https://vaticantourguides.com/vatican-one-day-time-budget"
     },
     {
-      "id": "sistine-chapel-019",
+      "id": "skip-the-line-002",
+      "fact": "Some tours use the internal passage from the Sistine Chapel directly into the Basilica, which removes the Basilica security queue from your day — worth around 45 minutes at the median and up to two hours on a busy day.",
+      "figures": [
+        "45 minutes",
+        "two hours"
+      ],
+      "topics": [
+        "skip-the-line",
+        "sistine-chapel",
+        "st-peters"
+      ],
+      "sourceSlug": "vatican-one-day-time-budget",
+      "sourceUrl": "https://vaticantourguides.com/vatican-one-day-time-budget"
+    },
+    {
+      "id": "sistine-chapel-015",
       "fact": "Visitors report close to 20 minutes spent outdoors looking at posters of the Sistine Chapel rather than at real art, and reports of standard 8:00 AM itineraries spending their opening time in the courtyard instead of heading straight for the chapel.",
       "figures": [
-        "20",
+        "20 minutes",
         "8:00 AM"
       ],
       "topics": [
@@ -1547,29 +1787,15 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-pinecone-courtyard-briefing"
     },
     {
-      "id": "timing-020",
+      "id": "sistine-chapel-016",
       "fact": "The chapel begins filling around 8:30.",
       "figures": [
         "8:30"
       ],
       "topics": [
-        "timing",
         "sistine-chapel",
+        "timing",
         "crowds"
-      ],
-      "sourceSlug": "vatican-pinecone-courtyard-briefing",
-      "sourceUrl": "https://vaticantourguides.com/vatican-pinecone-courtyard-briefing"
-    },
-    {
-      "id": "timing-021",
-      "fact": "A briefing that runs to 8:20 plus the walk through the galleries delivers you into the room right as everyone else arrives — having paid a premium for the opposite.",
-      "figures": [
-        "8:20"
-      ],
-      "topics": [
-        "timing",
-        "sistine-chapel",
-        "guides"
       ],
       "sourceSlug": "vatican-pinecone-courtyard-briefing",
       "sourceUrl": "https://vaticantourguides.com/vatican-pinecone-courtyard-briefing"
@@ -1579,7 +1805,7 @@
       "fact": "In a complex that visitors describe as 54 museums and roughly 17 km of corridors across some 1,200 halls and passageways, on a visit that typically runs three to four hours, a place to sit is not a detail.",
       "figures": [
         "54",
-        "17",
+        "17 km",
         "1,200"
       ],
       "topics": [
@@ -1591,35 +1817,21 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-pinecone-courtyard-briefing"
     },
     {
-      "id": "museums-itinerary-011",
-      "fact": "On a visit that typically runs three to four hours through roughly 17 km of corridors, plan the courtyard as your one guaranteed rest stop — ideally on the way out, when stopping there costs you nothing.",
-      "figures": [
-        "17"
-      ],
-      "topics": [
-        "museums-itinerary",
-        "logistics",
-        "accessibility"
-      ],
-      "sourceSlug": "vatican-pinecone-courtyard-briefing",
-      "sourceUrl": "https://vaticantourguides.com/vatican-pinecone-courtyard-briefing"
-    },
-    {
-      "id": "tickets-010",
+      "id": "sistine-chapel-017",
       "fact": "If reaching the chapel at opening without a briefing stop is your priority, the honest answer is to visit independently with an official 8:00 AM ticket and walk directly there.",
       "figures": [
         "8:00 AM"
       ],
       "topics": [
+        "sistine-chapel",
         "tickets",
-        "timing",
-        "sistine-chapel"
+        "timing"
       ],
       "sourceSlug": "vatican-pinecone-courtyard-briefing",
       "sourceUrl": "https://vaticantourguides.com/vatican-pinecone-courtyard-briefing"
     },
     {
-      "id": "crowds-011",
+      "id": "st-peters-006",
       "fact": "St Peter’s Basilica produces 23.8% queue complaints against the Museums’ 12.1% — twice the rate — even though its median reported wait is shorter, 45 minutes against 60.",
       "figures": [
         "23.8%",
@@ -1628,15 +1840,15 @@
         "60"
       ],
       "topics": [
+        "st-peters",
         "crowds",
-        "timing",
-        "st-peters"
+        "timing"
       ],
       "sourceSlug": "vatican-queue-times",
       "sourceUrl": "https://vaticantourguides.com/vatican-queue-times"
     },
     {
-      "id": "crowds-012",
+      "id": "crowds-011",
       "fact": "The Basilica is complained about more; the Museums are where the genuinely long waits happen — a median of 60 minutes against 45, and a mean of 91 against 69.",
       "figures": [
         "60",
@@ -1653,7 +1865,7 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-queue-times"
     },
     {
-      "id": "tickets-011",
+      "id": "tickets-013",
       "fact": "The median stated wait among reviews mentioning advance booking is 50 minutes; among those describing buying on the day it is 45.",
       "figures": [
         "50",
@@ -1662,13 +1874,13 @@
       "topics": [
         "tickets",
         "timing",
-        "skip-the-line"
+        "crowds"
       ],
       "sourceSlug": "vatican-queue-times",
       "sourceUrl": "https://vaticantourguides.com/vatican-queue-times"
     },
     {
-      "id": "crowds-013",
+      "id": "crowds-012",
       "fact": "Among reviews that state a number, the median is 60 minutes and the mean 94, which tells you most visitors clear it in about an hour while a minority wait far longer.",
       "figures": [
         "60",
@@ -1682,7 +1894,35 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-queue-times"
     },
     {
-      "id": "logistics-003",
+      "id": "dress-code-005",
+      "fact": "The dress code sits 0.09 below average and security screening 0.07 below — statistically indistinguishable from neutral.",
+      "figures": [
+        "0.09",
+        "0.07"
+      ],
+      "topics": [
+        "dress-code",
+        "logistics"
+      ],
+      "sourceSlug": "vatican-practical-experience",
+      "sourceUrl": "https://vaticantourguides.com/vatican-practical-experience"
+    },
+    {
+      "id": "accessibility-005",
+      "fact": "Pushchairs sit 0.89 below average and accessibility 0.53 below, and behind those numbers are visitors who could not complete the route they had paid for.",
+      "figures": [
+        "0.89",
+        "0.53"
+      ],
+      "topics": [
+        "accessibility",
+        "kids-families"
+      ],
+      "sourceSlug": "vatican-practical-experience",
+      "sourceUrl": "https://vaticantourguides.com/vatican-practical-experience"
+    },
+    {
+      "id": "logistics-004",
       "fact": "Getting lost costs 1.20 stars and poor signage 1.08 — but carrying a map barely helps, at 0.26 below.",
       "figures": [
         "1.20",
@@ -1697,7 +1937,7 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-one-way-route"
     },
     {
-      "id": "logistics-004",
+      "id": "logistics-005",
       "fact": "Reviews mentioning a map sit only 0.26 below average, while reviews mentioning the one-way system sit 1.35 below.",
       "figures": [
         "0.26",
@@ -1711,73 +1951,20 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-one-way-route"
     },
     {
-      "id": "dress-code-003",
-      "fact": "The dress code sits 0.09 below average and security screening 0.07 below — statistically indistinguishable from neutral.",
-      "figures": [
-        "0.09",
-        "0.07"
-      ],
-      "topics": [
-        "dress-code",
-        "logistics"
-      ],
-      "sourceSlug": "vatican-practical-experience",
-      "sourceUrl": "https://vaticantourguides.com/vatican-practical-experience"
-    },
-    {
-      "id": "logistics-005",
-      "fact": "A single interaction at the door was still the detail worth recording, which is what a 1.23-star penalty looks like from the inside.",
-      "figures": [
-        "1.23"
-      ],
-      "topics": [
-        "logistics"
-      ],
-      "sourceSlug": "vatican-practical-experience",
-      "sourceUrl": "https://vaticantourguides.com/vatican-practical-experience"
-    },
-    {
-      "id": "logistics-006",
-      "fact": "Wayfinding is second at 1.01 below, and the two are connected: a building that is hard to navigate turns every staff interaction into a request for directions, and a request that goes badly becomes the thing the visitor writes about.",
-      "figures": [
-        "1.01"
-      ],
-      "topics": [
-        "logistics"
-      ],
-      "sourceSlug": "vatican-practical-experience",
-      "sourceUrl": "https://vaticantourguides.com/vatican-practical-experience"
-    },
-    {
-      "id": "kids-families-001",
-      "fact": "Pushchairs sit 0.89 below average and accessibility 0.53 below, and behind those numbers are visitors who could not complete the route they had paid for.",
-      "figures": [
-        "0.89",
-        "0.53"
-      ],
-      "topics": [
-        "kids-families",
-        "accessibility"
-      ],
-      "sourceSlug": "vatican-practical-experience",
-      "sourceUrl": "https://vaticantourguides.com/vatican-practical-experience"
-    },
-    {
-      "id": "st-peters-007",
+      "id": "timing-029",
       "fact": "Reviews also put the opening at around 10am, later than the Basilica itself, which catches out anyone arriving at opening for the quiet hour.",
       "figures": [
         "10am"
       ],
       "topics": [
-        "st-peters",
         "timing",
-        "crowds"
+        "st-peters"
       ],
       "sourceSlug": "vatican-scavi-grottoes",
       "sourceUrl": "https://vaticantourguides.com/vatican-scavi-grottoes"
     },
     {
-      "id": "st-peters-008",
+      "id": "st-peters-007",
       "fact": "The Scavi averages 4.68 and the Grottoes 4.54, but on only 31 and 24 ratings respectively, against 375 for the dome.",
       "figures": [
         "4.68",
@@ -1788,29 +1975,29 @@
       ],
       "topics": [
         "st-peters",
-        "dome-climb"
+        "dome-climb",
+        "logistics"
       ],
       "sourceSlug": "vatican-scavi-grottoes",
       "sourceUrl": "https://vaticantourguides.com/vatican-scavi-grottoes"
     },
     {
-      "id": "skip-the-line-004",
-      "fact": "Visitors report the passage operating roughly from 9:30am until around 5:00 to 5:30pm, which leaves the first ninety minutes of the museum day outside the window.",
+      "id": "skip-the-line-003",
+      "fact": "It is not always available: visitors report it operating roughly 9:30am to 5:00–5:30pm, closed on Wednesday mornings during the papal audience, and absent from afternoon tour versions.",
       "figures": [
         "9:30am",
-        "5:00",
-        "5:30pm"
+        "5:00–5:30pm"
       ],
       "topics": [
         "skip-the-line",
         "timing",
-        "sistine-chapel"
+        "st-peters"
       ],
       "sourceSlug": "vatican-sistine-to-st-peters-shortcut",
       "sourceUrl": "https://vaticantourguides.com/vatican-sistine-to-st-peters-shortcut"
     },
     {
-      "id": "timing-022",
+      "id": "timing-030",
       "fact": "A tour leaving at 7:15 or entering at the 8:00 opening is built to reach the Sistine Chapel while it is quiet — and finishes there before 9:30, which is when the passage opens.",
       "figures": [
         "7:15",
@@ -1826,7 +2013,37 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-sistine-to-st-peters-shortcut"
     },
     {
-      "id": "skip-the-line-005",
+      "id": "operators-006",
+      "fact": "one operator discloses that its “max 10” tour is really a 20-person cohort split between two guides",
+      "figures": [
+        "10",
+        "20"
+      ],
+      "topics": [
+        "operators",
+        "guides",
+        "crowds"
+      ],
+      "sourceSlug": "vatican-small-group-size",
+      "sourceUrl": "https://vaticantourguides.com/vatican-small-group-size"
+    },
+    {
+      "id": "operators-007",
+      "fact": "Ask for both the per-guide cap and the total cohort in writing before paying, because a reviewer promised 10 and given 20 was refused any refund of the difference",
+      "figures": [
+        "10",
+        "20"
+      ],
+      "topics": [
+        "operators",
+        "pricing",
+        "tickets"
+      ],
+      "sourceSlug": "vatican-small-group-size",
+      "sourceUrl": "https://vaticantourguides.com/vatican-small-group-size"
+    },
+    {
+      "id": "skip-the-line-004",
       "fact": "Reported waits range from 5 minutes with a timed entry to 3–5 hours without one, and one 2026 visitor holding a skip-the-line booking still queued 3 hours.",
       "figures": [
         "5 minutes",
@@ -1843,7 +2060,7 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-skip-the-line-explained"
     },
     {
-      "id": "st-peters-009",
+      "id": "st-peters-008",
       "fact": "St Peter's Basilica is free to enter, but it now sells a timed-entry ticket at €7 that visitors report grants access to a separate, shorter security line, with an audio guide included.",
       "figures": [
         "€7"
@@ -1851,159 +2068,40 @@
       "topics": [
         "st-peters",
         "tickets",
-        "skip-the-line",
         "pricing"
       ],
       "sourceSlug": "vatican-skip-the-line-explained",
       "sourceUrl": "https://vaticantourguides.com/vatican-skip-the-line-explained"
     },
     {
-      "id": "st-peters-010",
-      "fact": "One report describes the regular security line as enormous while the €7 fast line stood empty on a Tuesday.",
-      "figures": [
-        "€7"
-      ],
-      "topics": [
-        "st-peters",
-        "skip-the-line",
-        "crowds"
-      ],
-      "sourceSlug": "vatican-skip-the-line-explained",
-      "sourceUrl": "https://vaticantourguides.com/vatican-skip-the-line-explained"
-    },
-    {
-      "id": "skip-the-line-006",
-      "fact": "One 2026 visitor reports standing three hours in the heat despite holding one, with the observation that every online booking was treated the same at the door.",
-      "figures": [
-        "2026",
-        "three hours"
-      ],
-      "topics": [
-        "skip-the-line",
-        "timing",
-        "tickets"
-      ],
-      "sourceSlug": "vatican-skip-the-line-explained",
-      "sourceUrl": "https://vaticantourguides.com/vatican-skip-the-line-explained"
-    },
-    {
-      "id": "timing-023",
+      "id": "timing-031",
       "fact": "Visitors are also instructed to arrive 15 to 20 minutes before their slot, and reports of people missing entry over a late arrival are common enough to take seriously.",
       "figures": [
         "15 to 20 minutes"
       ],
       "topics": [
         "timing",
-        "tickets",
-        "logistics"
+        "tickets"
       ],
       "sourceSlug": "vatican-skip-the-line-explained",
       "sourceUrl": "https://vaticantourguides.com/vatican-skip-the-line-explained"
     },
     {
-      "id": "st-peters-011",
-      "fact": "Add the €7 St Peter’s timed entry — the odds of a shorter security line are good and the downside is seven euros.",
+      "id": "st-peters-009",
+      "fact": "One report describes the regular security line as enormous while the €7 fast line stood empty on a Tuesday.",
       "figures": [
-        "€7",
-        "seven euros"
+        "€7"
       ],
       "topics": [
         "st-peters",
-        "pricing",
+        "crowds",
         "skip-the-line"
       ],
       "sourceSlug": "vatican-skip-the-line-explained",
       "sourceUrl": "https://vaticantourguides.com/vatican-skip-the-line-explained"
     },
     {
-      "id": "operators-001",
-      "fact": "one operator discloses that its “max 10” tour is really a 20-person cohort split between two guides.",
-      "figures": [
-        "10",
-        "20"
-      ],
-      "topics": [
-        "operators",
-        "guides",
-        "logistics"
-      ],
-      "sourceSlug": "vatican-small-group-size",
-      "sourceUrl": "https://vaticantourguides.com/vatican-small-group-size"
-    },
-    {
-      "id": "tickets-012",
-      "fact": "Ask for both the per-guide cap and the total cohort in writing before paying, because a reviewer promised 10 and given 20 was refused any refund of the difference.",
-      "figures": [
-        "10",
-        "20"
-      ],
-      "topics": [
-        "tickets",
-        "operators",
-        "logistics"
-      ],
-      "sourceSlug": "vatican-small-group-size",
-      "sourceUrl": "https://vaticantourguides.com/vatican-small-group-size"
-    },
-    {
-      "id": "guides-009",
-      "fact": "Above roughly ten people, hearing stops being a function of the guide’s voice and becomes a function of the headsets.",
-      "figures": [
-        "ten"
-      ],
-      "topics": [
-        "guides",
-        "crowds",
-        "logistics"
-      ],
-      "sourceSlug": "vatican-small-group-size",
-      "sourceUrl": "https://vaticantourguides.com/vatican-small-group-size"
-    },
-    {
-      "id": "operators-002",
-      "fact": "In practice reviewers describe genuinely small tours at six to eight people, a common semi-private band around ten to thirteen, and tours still marketed as small at thirty or more.",
-      "figures": [
-        "six to eight",
-        "ten to thirteen",
-        "thirty"
-      ],
-      "topics": [
-        "operators",
-        "crowds",
-        "tickets"
-      ],
-      "sourceSlug": "vatican-small-group-size",
-      "sourceUrl": "https://vaticantourguides.com/vatican-small-group-size"
-    },
-    {
-      "id": "crowds-014",
-      "fact": "Two guides sharing one slot means twenty people entering together and moving through the same galleries on the same timing, so the room you are standing in holds twice the advertised number.",
-      "figures": [
-        "twenty"
-      ],
-      "topics": [
-        "crowds",
-        "tickets",
-        "operators"
-      ],
-      "sourceSlug": "vatican-small-group-size",
-      "sourceUrl": "https://vaticantourguides.com/vatican-small-group-size"
-    },
-    {
-      "id": "guides-010",
-      "fact": "Your guide-to-guest ratio is genuinely ten to one; your crowding is not.",
-      "figures": [
-        "ten to one"
-      ],
-      "topics": [
-        "guides",
-        "crowds"
-      ],
-      "sourceSlug": "vatican-small-group-size",
-      "sourceUrl": "https://vaticantourguides.com/vatican-small-group-size"
-    },
-    {
-      "id": "tickets-013",
+      "id": "tickets-014",
       "fact": "Four real tiers exist: the official 8:00 AM ticket, standard \"early access\" that enters at 8:00 alongside every other early group, before-hours tours where staff unlock the doors for your group, and semi-private products capped as low as 6 people.",
       "figures": [
         "8:00 AM",
@@ -2020,7 +2118,7 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-tour-product-decoder"
     },
     {
-      "id": "pricing-008",
+      "id": "pricing-007",
       "fact": "Reported prices run from €25 to around $2,000 for the same building.",
       "figures": [
         "€25",
@@ -2033,7 +2131,7 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-tour-product-decoder"
     },
     {
-      "id": "crowds-015",
+      "id": "crowds-013",
       "fact": "Reported sizes range from a cap of 6 on semi-private products up to about 20 in the Sistine Chapel on premium early tours, with one Key Master group counted at roughly 17.",
       "figures": [
         "6",
@@ -2043,13 +2141,13 @@
       "topics": [
         "crowds",
         "sistine-chapel",
-        "guides"
+        "tickets"
       ],
       "sourceSlug": "vatican-tour-product-decoder",
       "sourceUrl": "https://vaticantourguides.com/vatican-tour-product-decoder"
     },
     {
-      "id": "pricing-009",
+      "id": "pricing-008",
       "fact": "One semi-private early access product is reported at €450 per person with the St Peter’s portion sold separately at €300, which turns a premium morning into a €750 one.",
       "figures": [
         "€450",
@@ -2064,7 +2162,7 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-tour-product-decoder"
     },
     {
-      "id": "pricing-010",
+      "id": "pricing-009",
       "fact": "At the very top, a visitor reports paying roughly $1,000 for two travelers on a Key Master tour in 2024, and a 2026 account puts a booking near $2,000 total after the reported price rise.",
       "figures": [
         "$1,000",
@@ -2079,7 +2177,7 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-tour-product-decoder"
     },
     {
-      "id": "tickets-014",
+      "id": "tickets-015",
       "fact": "Take the official €25 ticket if you are comfortable navigating alone and arriving at opening.",
       "figures": [
         "€25"
@@ -2092,7 +2190,7 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-tour-product-decoder"
     },
     {
-      "id": "pricing-011",
+      "id": "pricing-010",
       "fact": "At that tier you are paying roughly thirty times the €25 official ticket, breakfast is typically not included, and St Peter’s can be a separate €300 add-on that brings the morning to €750.",
       "figures": [
         "€25",
@@ -2107,7 +2205,7 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-tour-product-decoder"
     },
     {
-      "id": "tickets-015",
+      "id": "tickets-016",
       "fact": "The official ticket at tickets.museivaticani.va costs €25 online or €20 at the door and includes the Sistine Chapel.",
       "figures": [
         "€25",
@@ -2122,8 +2220,8 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-tour-product-decoder"
     },
     {
-      "id": "tickets-016",
-      "fact": "What it does not buy is entry the public cannot get: the 8:00 AM opening slot is available to anyone who books it directly.",
+      "id": "tickets-017",
+      "fact": "the 8:00 AM opening slot is available to anyone who books it directly.",
       "figures": [
         "8:00 AM"
       ],
@@ -2135,77 +2233,19 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-tour-product-decoder"
     },
     {
-      "id": "crowds-016",
-      "fact": "Of 141 reviews complaining about pace, 61% attribute it to crowds and only 7% blame the guide; more than half concern the Sistine Chapel, where some visitors report five to ten minutes.",
-      "figures": [
-        "141",
-        "61%",
-        "7%",
-        "five to ten minutes"
-      ],
-      "topics": [
-        "crowds",
-        "sistine-chapel",
-        "guides"
-      ],
-      "sourceSlug": "vatican-tours-feel-rushed",
-      "sourceUrl": "https://vaticantourguides.com/vatican-tours-feel-rushed"
-    },
-    {
-      "id": "sistine-chapel-020",
-      "fact": "52% of rushed-pace complaints mention the Sistine Chapel, which is both the destination and the bottleneck.",
-      "figures": [
-        "52%"
-      ],
-      "topics": [
-        "sistine-chapel",
-        "crowds",
-        "timing"
-      ],
-      "sourceSlug": "vatican-tours-feel-rushed",
-      "sourceUrl": "https://vaticantourguides.com/vatican-tours-feel-rushed"
-    },
-    {
-      "id": "crowds-017",
-      "fact": "Of the rushed-pace reviews that carry a star rating, 42% still awarded four or five stars, and the group averages 3.08.",
-      "figures": [
-        "42%",
-        "3.08"
-      ],
-      "topics": [
-        "crowds",
-        "timing"
-      ],
-      "sourceSlug": "vatican-tours-feel-rushed",
-      "sourceUrl": "https://vaticantourguides.com/vatican-tours-feel-rushed"
-    },
-    {
-      "id": "crowds-018",
-      "fact": "After-hours and before-opening tours reduce crowding, which is the reported cause in six of ten complaints.",
-      "figures": [
-        "six of ten"
-      ],
-      "topics": [
-        "crowds",
-        "timing",
-        "skip-the-line"
-      ],
-      "sourceSlug": "vatican-tours-feel-rushed",
-      "sourceUrl": "https://vaticantourguides.com/vatican-tours-feel-rushed"
-    },
-    {
       "id": "dome-climb-004",
-      "fact": "The dome is the highest-rated thing at the Vatican: 4.50 stars across 375 rated reviews, against 4.09 for the Museums and 3.81 for the Sistine Chapel.",
+      "fact": "By rating, more than anything else at the Vatican: 4.50 stars across 375 rated reviews against 4.09 for the Museums and 3.81 for the Sistine Chapel, at a median cost of 45 minutes.",
       "figures": [
         "4.50",
         "375",
         "4.09",
-        "3.81"
+        "3.81",
+        "45"
       ],
       "topics": [
         "dome-climb",
         "sistine-chapel",
-        "museums-itinerary"
+        "timing"
       ],
       "sourceSlug": "vatican-st-peters-dome",
       "sourceUrl": "https://vaticantourguides.com/vatican-st-peters-dome"
@@ -2218,7 +2258,8 @@
         "320"
       ],
       "topics": [
-        "dome-climb"
+        "dome-climb",
+        "accessibility"
       ],
       "sourceSlug": "vatican-st-peters-dome",
       "sourceUrl": "https://vaticantourguides.com/vatican-st-peters-dome"
@@ -2253,51 +2294,67 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-st-peters-dome"
     },
     {
-      "id": "operators-003",
+      "id": "operators-008",
       "fact": "Reviews describing clear directions average a perfect 5.00, while those describing a point that could not be found or a guide who never arrived cluster at one and two stars.",
       "figures": [
         "5.00"
       ],
       "topics": [
         "operators",
-        "logistics"
-      ],
-      "sourceSlug": "vatican-tour-meeting-point",
-      "sourceUrl": "https://vaticantourguides.com/vatican-tour-meeting-point"
-    },
-    {
-      "id": "operators-004",
-      "fact": "Clear directions rests on 15 reviews, could not find the point on 3, nobody waiting on 2, and missed the tour on 5.",
-      "figures": [
-        "15",
-        "3",
-        "2",
-        "5"
-      ],
-      "topics": [
-        "operators",
-        "logistics"
-      ],
-      "sourceSlug": "vatican-tour-meeting-point",
-      "sourceUrl": "https://vaticantourguides.com/vatican-tour-meeting-point"
-    },
-    {
-      "id": "logistics-007",
-      "fact": "They're two separate sites with separate entrances, about a 15–20 minute walk apart.",
-      "figures": [
-        "15–20"
-      ],
-      "topics": [
         "logistics",
-        "timing",
-        "st-peters"
+        "guides"
       ],
-      "sourceSlug": "vatican-vs-st-peters-vs-sistine-chapel",
-      "sourceUrl": "https://vaticantourguides.com/vatican-vs-st-peters-vs-sistine-chapel"
+      "sourceSlug": "vatican-tour-meeting-point",
+      "sourceUrl": "https://vaticantourguides.com/vatican-tour-meeting-point"
     },
     {
-      "id": "tickets-017",
-      "fact": "if the Sistine Chapel is your goal, what you're actually booking is a Vatican Museums ticket (around €20 at the door or €25 online, prices subject to change).",
+      "id": "crowds-014",
+      "fact": "Of 141 reviews complaining about pace, 61% attribute it to crowds and only 7% blame the guide; more than half concern the Sistine Chapel, where some visitors report five to ten minutes.",
+      "figures": [
+        "141",
+        "61%",
+        "7%",
+        "five to ten minutes"
+      ],
+      "topics": [
+        "crowds",
+        "sistine-chapel",
+        "timing"
+      ],
+      "sourceSlug": "vatican-tours-feel-rushed",
+      "sourceUrl": "https://vaticantourguides.com/vatican-tours-feel-rushed"
+    },
+    {
+      "id": "sistine-chapel-018",
+      "fact": "52% of rushed-pace complaints mention the Sistine Chapel, which is both the destination and the bottleneck.",
+      "figures": [
+        "52%"
+      ],
+      "topics": [
+        "sistine-chapel",
+        "crowds",
+        "timing"
+      ],
+      "sourceSlug": "vatican-tours-feel-rushed",
+      "sourceUrl": "https://vaticantourguides.com/vatican-tours-feel-rushed"
+    },
+    {
+      "id": "crowds-015",
+      "fact": "Of the rushed-pace reviews that carry a star rating, 42% still awarded four or five stars, and the group averages 3.08.",
+      "figures": [
+        "42%",
+        "3.08"
+      ],
+      "topics": [
+        "crowds",
+        "timing"
+      ],
+      "sourceSlug": "vatican-tours-feel-rushed",
+      "sourceUrl": "https://vaticantourguides.com/vatican-tours-feel-rushed"
+    },
+    {
+      "id": "tickets-018",
+      "fact": "if the Sistine Chapel is your goal, what you're actually booking is a Vatican Museums ticket (around €20 at the door or €25 online, prices subject to change)",
       "figures": [
         "€20",
         "€25"
@@ -2312,7 +2369,7 @@
     },
     {
       "id": "dome-climb-008",
-      "fact": "Climbing the Dome (cupola) requires its own ticket (roughly €8 to take the stairs the whole way, or €10 to take an elevator partway and then climb the remaining steps — prices subject to change).",
+      "fact": "Climbing the Dome (cupola) requires its own ticket (roughly €8 to take the stairs the whole way, or €10 to take an elevator partway and then climb the remaining steps — prices subject to change)",
       "figures": [
         "€8",
         "€10"
@@ -2326,62 +2383,52 @@
       "sourceUrl": "https://vaticantourguides.com/vatican-vs-st-peters-vs-sistine-chapel"
     },
     {
-      "id": "logistics-008",
-      "fact": "The Vatican Museums entrance and St. Peter's Basilica are not next to each other — the Museums entrance sits on the north side of the Vatican walls, roughly a 15–20 minute walk (about half a mile) around to St. Peter's Square, where you queue for the Basilica.",
+      "id": "logistics-006",
+      "fact": "The Vatican Museums entrance and St. Peter's Basilica are not next to each other — the Museums entrance sits on the north side of the Vatican walls, roughly a 15–20 minute walk (about half a mile) around to St. Peter's Square, where you queue for the Basilica",
       "figures": [
-        "15–20",
-        "half a mile"
+        "15–20"
       ],
       "topics": [
         "logistics",
-        "timing",
-        "st-peters"
+        "st-peters",
+        "timing"
       ],
       "sourceSlug": "vatican-vs-st-peters-vs-sistine-chapel",
       "sourceUrl": "https://vaticantourguides.com/vatican-vs-st-peters-vs-sistine-chapel"
     },
     {
-      "id": "pricing-012",
+      "id": "tickets-019",
       "fact": "Admission is €25 online and €20 at the door for one of the world’s major collections.",
       "figures": [
         "€25",
         "€20"
       ],
       "topics": [
-        "pricing",
-        "tickets"
+        "tickets",
+        "pricing"
       ],
       "sourceSlug": "vatican-value-perception",
       "sourceUrl": "https://vaticantourguides.com/vatican-value-perception"
     },
     {
-      "id": "pricing-013",
-      "fact": "Price discussed alongside the dome climb averages 4.27.",
+      "id": "pricing-011",
+      "fact": "Reviews tagged for price average 3.26 against a corpus average of 4.08, but split them by what else they discuss and the number moves violently: price alongside crowds sits at 2.77, price alongside the dome climb at 4.27.",
       "figures": [
+        "3.26",
+        "4.08",
+        "2.77",
         "4.27"
       ],
       "topics": [
         "pricing",
+        "crowds",
         "dome-climb"
       ],
       "sourceSlug": "vatican-value-perception",
       "sourceUrl": "https://vaticantourguides.com/vatican-value-perception"
     },
     {
-      "id": "pricing-014",
-      "fact": "Price discussed alongside crowds averages 2.77.",
-      "figures": [
-        "2.77"
-      ],
-      "topics": [
-        "pricing",
-        "crowds"
-      ],
-      "sourceSlug": "vatican-value-perception",
-      "sourceUrl": "https://vaticantourguides.com/vatican-value-perception"
-    },
-    {
-      "id": "pricing-015",
+      "id": "pricing-012",
       "fact": "Price discussed alongside skip-the-line averages 3.31 and alongside the booking process 2.71, and reviewers describe unbooked queues moving faster than booked ones.",
       "figures": [
         "3.31",
@@ -2390,19 +2437,7 @@
       "topics": [
         "pricing",
         "skip-the-line",
-        "tickets"
-      ],
-      "sourceSlug": "vatican-value-perception",
-      "sourceUrl": "https://vaticantourguides.com/vatican-value-perception"
-    },
-    {
-      "id": "pricing-016",
-      "fact": "The €25 is not the problem and never was.",
-      "figures": [
-        "€25"
-      ],
-      "topics": [
-        "pricing"
+        "logistics"
       ],
       "sourceSlug": "vatican-value-perception",
       "sourceUrl": "https://vaticantourguides.com/vatican-value-perception"

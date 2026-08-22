@@ -1,2 +1,18 @@
 node_modules/
+
+# Secretos. `.env` ya estaba; `.env.txt` aparecio despues y NO lo cubria: Windows
+# lo crea asi cuando se edita el .env con el Bloc de notas. Adentro vive la key de
+# Brave, y estaba sin trackear pero sin ignorar, o sea a un `git add -A` distraido
+# de terminar publicada en un repo de GitHub.
 .env
+.env.*
+
+# Copias de seguridad de los corpus, que se hacen a mano antes de una extraccion
+# grande. Son de la maquina de quien la corre, no del repo.
+*.bak
+*.bak-*
+
+# Archivos de trabajo de una corrida suelta (recortes de candidatos, listas de
+# preguntas pegadas a mano). El corpus y el ledger SI se versionan; esto no.
+data/quora-candidates-slice.json
+data/quora-preguntas.txt

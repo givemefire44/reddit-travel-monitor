@@ -1,0 +1,109 @@
+{
+  "_doc": "Monitor de Quora. Hermano del de Reddit, con la logica de frescura INVERTIDA: alla se buscan hilos de horas, aca preguntas viejas que ya demostraron que juntan vistas. Quora ordena las respuestas por votos y no por fecha, asi que se puede ser la respuesta top de una pregunta de 2022.",
+  "phase": "no-links",
+  "_phase": "no-links | links. Arranca en no-links y NO por capricho: linkear en 1 de cada 4 respuestas desde una cuenta sin historial es el patron que Quora marca como spam. La firma y la marca si van desde el primer borrador (el dominio aparece como texto en la firma, nunca como link). Mismo criterio que el warmup de Reddit, que fueron 3 semanas y ~50 karma antes de habilitar la mencion.",
+  "maxCandidatesPerDay": 5,
+  "quoraProfile": "Mario Dalo",
+  "quoraAccount": "hello@colosseumroman.com",
+  "draft": {
+    "minWords": 350,
+    "maxWords": 550,
+    "maxFacts": 5,
+    "_maxFacts": "3 a 5 facts BIEN DESARROLLADOS, no 8 apretados. Con 8 la respuesta enumera en vez de explicar, y el lector lo nota. El dedup por contenido de pickFacts ademas evita que entren tres facts distintos diciendo el mismo dato.",
+    "_words": "350-550. Menos de 300 se lee flaco, mas de 600 pierde lectores."
+  },
+  "selection": {
+    "minTopics": 1,
+    "minFacts": 5,
+    "_minTopics": "Reddit exige 2 porque su haystack es titulo + cuerpo del post. Una pregunta de Quora suele ser solo el titulo, asi que 2 topics deja fuera preguntas legitimas. El guard que de verdad protege sigue siendo el de keyword del propio sitio (bestSiteByFacts), que no se toca.",
+    "_minFacts": "Sube de 3 a 5: una respuesta larga sin material suficiente sale rellenada, y rellenar es exactamente lo que el formato de Quora castiga."
+  },
+  "links": {
+    "enabled": false,
+    "oneEvery": 4,
+    "neverRepeatArticle": true,
+    "_": "Se habilita cuando la cuenta tenga historial y votos, no por fecha. Hasta entonces, cero links."
+  },
+  "search": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "count": 10,
+    "_": "Brave Search es la fuente por defecto. NO se entra a Quora: se le pregunta al indice de Brave, que ya tiene esas paginas indexadas. Quora bloquea a todos los bots en su robots.txt, asi que cualquier acceso automatico a quora.com esta descartado por diseño; el .txt manual (--file) queda como fuente alternativa.",
+    "__": "UNA consulta por GRUPO de keywords, nunca una por keyword. El plan gratuito son ~1.000 consultas al mes: estos 8 grupos, corridos a diario, dan ~240."
+  },
+  "sites": [
+    {
+      "key": "colosseum",
+      "factsFile": "data/citable-facts.json",
+      "brand": "ColosseumRoman",
+      "domain": "colosseumroman.com",
+      "subject": "the Colosseum in Rome",
+      "keywords": [
+        "colosseum",
+        "colosseo",
+        "underground tour",
+        "arena floor",
+        "skip the line",
+        "rome tickets",
+        "rome tours",
+        "roman forum",
+        "palatine"
+      ],
+      "searchQueries": [
+        "site:quora.com colosseum tickets skip the line",
+        "site:quora.com colosseum underground arena floor tour worth it",
+        "site:quora.com colosseum best time to visit crowds queue"
+      ]
+    },
+    {
+      "key": "vatican",
+      "factsFile": "data/citable-facts-vatican.json",
+      "brand": "VaticanTourGuides",
+      "domain": "vaticantourguides.com",
+      "subject": "the Vatican - the Vatican Museums, the Sistine Chapel and St Peter's Basilica - in Rome",
+      "keywords": [
+        "vatican",
+        "sistine",
+        "st peter",
+        "st. peter",
+        "saint peter",
+        "papal audience",
+        "musei vaticani"
+      ],
+      "searchQueries": [
+        "site:quora.com vatican museums tickets skip the line",
+        "site:quora.com sistine chapel st peters basilica dome visit",
+        "site:quora.com vatican best time crowds dress code"
+      ]
+    },
+    {
+      "key": "trastevere",
+      "factsFile": "data/citable-facts-trastevere.json",
+      "brand": "TrastevereFoodTour",
+      "domain": "trasteverefoodtour.com",
+      "subject": "Trastevere food tours and eating in Rome",
+      "keywords": [
+        "trastevere",
+        "rome food tour",
+        "food tour rome",
+        "food tour in rome",
+        "where to eat rome",
+        "where to eat in rome",
+        "eating in rome",
+        "restaurants in rome",
+        "rome restaurants",
+        "roman street food",
+        "suppli",
+        "trapizzino",
+        "cacio e pepe",
+        "amatriciana",
+        "gricia",
+        "testaccio",
+        "campo de fiori"
+      ],
+      "searchQueries": [
+        "site:quora.com rome food tour trastevere worth it",
+        "site:quora.com where to eat in rome carbonara cacio e pepe"
+      ]
+    }
+  ]
+}
