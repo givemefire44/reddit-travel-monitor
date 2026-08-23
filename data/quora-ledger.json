@@ -44,7 +44,7 @@
       ],
       "shingles": [],
       "generatedAt": "2026-08-22",
-      "estado": "publicada"
+      "estado": "entregado"
     },
     {
       "questionUrl": "https://www.quora.com/What-is-the-best-time-of-day-to-visit-the-Colosseum-to-avoid-large-crowds",
@@ -70,6 +70,80 @@
         "vatican-after-hours-tour-worth-it",
         "vatican-booking-trust-safety",
         "vatican-audio-guide-vs-guide"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-08-22",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-some-recommendations-for-visiting-St-Peters-Cathedral-The-Vatican-without-waiting-in-long-lines-for-tickets-tours-elderly-couple",
+      "questionTitle": "What are some recommendations for visiting St. Peters Cathedral & The Vatican without waiting in long lines for tickets & tours (elderly couple)?",
+      "titleNormalized": "what are some recommendations for visiting st peters cathedral the vatican without waiting in long lines for tickets tours elderly couple",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-after-hours-tour-worth-it",
+        "vatican-early-access-really-means",
+        "vatican-official-vs-platform-price",
+        "vatican-queue-times",
+        "vatican-skip-the-line-explained"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-08-22",
+      "estado": "publicada"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-is-the-best-order-to-visit-Rome-s-Colosseum-Forum-and-Vatican",
+      "questionTitle": "What is the best order to visit Rome’s Colosseum, Forum and Vatican?",
+      "titleNormalized": "what is the best order to visit rome s colosseum forum and vatican",
+      "site": "colosseum",
+      "sourceSlugs": [
+        "colosseum-ticket-release-calendar-timing",
+        "colosseum-tour-group-size-17-vs-20-vs-25",
+        "colosseum-tour-headset-problems",
+        "colosseum-vs-vatican-which-to-visit-first"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-08-22",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-is-the-Colosseum-What-is-under-the-ruins-of-the-Colosseum-Are-there-any-underground-passageways-that-are-still-intact",
+      "questionTitle": "What is the Colosseum? What is under the ruins of the Colosseum? Are there any underground passageways that are still intact?",
+      "titleNormalized": "what is the colosseum what is under the ruins of the colosseum are there any underground passageways that are still intact",
+      "site": "colosseum",
+      "sourceSlugs": [
+        "bathroom-breaks-colosseum-underground-combo-tours",
+        "arena-floor-vs-underground-colosseum-upgrade",
+        "best-colosseum-tour-under-eur50"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-08-22",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/I-tried-many-many-times-in-vain-to-purchase-a-ticket-to-Colosseum-Foro-Romano-and-Palatino-online-through-coopculture-it-What-is-wrong-with-the-site",
+      "questionTitle": "I tried many many times in vain to purchase a ticket to Colosseum, Foro Romano and Palatino online through coopculture.it. What is wrong with the site?",
+      "titleNormalized": "i tried many many times in vain to purchase a ticket to colosseum foro romano and palatino online through coopculture it what is wrong with the site",
+      "site": "colosseum",
+      "sourceSlugs": [
+        "7-mistakes-people-make-when-booking-colosseum-tickets",
+        "best-colosseum-tour-under-eur50",
+        "book-your-colosseum-roman-tour-tickets-in-advance",
+        "colosseum-accessibility-lifts-step-free-stroller"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-08-22",
+      "estado": "publicada"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Can-you-visit-St-Peters-Basilica-without-going-through-Vatican-City-or-paying-for-a-tour-guide",
+      "questionTitle": "Can you visit St. Peter's Basilica without going through Vatican City or paying for a tour guide?",
+      "titleNormalized": "can you visit st peter s basilica without going through vatican city or paying for a tour guide",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-audio-guide-vs-guide",
+        "vatican-early-access-really-means",
+        "vatican-guide-quality-lottery"
       ],
       "shingles": [],
       "generatedAt": "2026-08-22",
