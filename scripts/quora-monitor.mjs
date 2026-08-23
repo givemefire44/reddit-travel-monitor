@@ -489,7 +489,7 @@ function alreadyAnswered(url, title, ledger) {
 
 // Marca una pregunta como publicada de verdad: bloqueo permanente.
 //   node scripts/quora-monitor.mjs --publicada https://www.quora.com/...
-function marcarPublicada(url) {
+async function marcarPublicada(url) {
   const ledger = loadLedger();
 
   // Quora da DOS URLs para lo mismo, y la que uno copia naturalmente es la
@@ -516,6 +516,21 @@ function marcarPublicada(url) {
   for (const e of hit) e.estado = 'publicada';
   fs.writeFileSync(LEDGER_PATH, JSON.stringify(ledger, null, 2) + '\n', 'utf8');
   console.log(`Marcada como publicada (bloqueo permanente): "${hit[0].questionTitle}"`);
+
+  // Y se guarda la huella del texto, si vino. Va JUNTO con marcar la publicacion
+  // y no en un comando aparte, porque el eslabon debil de todo esto es que
+  // alguien se olvide de guardar: el detector de muletillas solo sirve si el
+  // almacen tiene contra que comparar, y si se llena a medias no falla ruidoso,
+  // falla en silencio y deja creer que hay cobertura.
+  const archivoTexto = argVal('--texto');
+  if (archivoTexto) {
+    const { registrar } = await import('./publicado.mjs');
+    const texto = fs.readFileSync(archivoTexto, 'utf8');
+    const e = registrar({ texto, url, red: 'quora', titulo: hit[0].questionTitle });
+    console.log(`  huella guardada: ${e.shingles.length} tramos · ${e.aperturas.length} aperturas`);
+  } else {
+    console.log('  SIN --texto: no se guardo la huella, y la proxima respuesta no se va a poder comparar contra esta.');
+  }
 }
 
 // ============================================================================
@@ -1610,7 +1625,7 @@ function loadEnv(file) {
 // --publicada no corre el monitor: solo toca el ledger y sale. Va antes de main()
 // para no gastar consultas de Brave ni tokens en marcar una linea.
 if (PUBLICADA) {
-  marcarPublicada(PUBLICADA);
+  await marcarPublicada(PUBLICADA);
 } else {
   main().catch((err) => { console.error(err); process.exit(1); });
 }
