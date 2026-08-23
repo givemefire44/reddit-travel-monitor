@@ -86,6 +86,17 @@ const ventaHit = VENTA.filter((r) => r.test(cuerpo));
 if (ventaHit.length) avisos.push(`suena a recomendacion de compra directa: ${ventaHit.map((r) => cuerpo.match(r)[0]).join(', ')}`);
 else ok.push('registro de trade-offs, sin venta directa');
 
+// -------------------------------------------------------------------------- OTAs
+// Ninguna plataforma de reserva se nombra en un texto firmado por Mario, ni
+// siquiera cuando el fact del corpus la nombra (operators-005 lo hace). Es
+// afiliado, y su credencial entera es que analiza y no que vende. Se dice la
+// categoria: "third-party platforms", "the resale platforms".
+const OTAS = ['getyourguide', 'get your guide', 'viator', 'tiqets', 'headout', 'klook',
+  'civitatis', 'musement', 'tripadvisor experiences', 'expedia'];
+const otaHit = OTAS.filter((o) => new RegExp(`\\b${o.replace(/\s/g, '\\s')}\\b`, 'i').test(cuerpo));
+if (otaHit.length) fallas.push(`nombra plataformas de reserva: ${otaHit.join(', ')} (usar "third-party platforms")`);
+else ok.push('no nombra ninguna OTA');
+
 // ------------------------------------------------------------------------ firma
 if (!firma) {
   fallas.push('falta la firma');
