@@ -1550,6 +1550,11 @@ async function main() {
       }
       const ordenadas = Object.entries(porRegla).sort((a, b) => b[1] - a[1]);
       const quedan = reviewStats.reduce((n, r) => n + r.remaining.length, 0);
+      // En modo entrega no hay borradores, asi que esta seccion entera miente:
+      // el 23 ago 2026 el reporte anunciaba "0 de 5 borradores necesitaron
+      // regeneracion" sobre cero borradores, y Mario leyo el reporte como roto.
+      // Un reporte que informa sobre algo que no existe es peor que uno incompleto.
+      if (SIN_BORRADOR) return [];
       return [
         '## Autorevisión',
         '',
@@ -1576,7 +1581,7 @@ async function main() {
     '',
     ...(duplicates.length ? ['---', '', `_Duplicados descartados (misma pregunta alcanzada por dos keywords de búsqueda): ${duplicates.length} — ${duplicates.map((d) => `"${d.title.slice(0, 45)}"`).join(' · ')}._`, ''] : []),
     ...(porDiversidad.length
-      ? ['---', '', `_**Guardados para otro día por diversidad** (ya había un candidato de ese tema entre los elegidos; publicar dos preguntas del mismo asunto el mismo día es patrón de plantilla aunque los textos sean distintos): ${porDiversidad.map((d) => `"${d.c.title.slice(0, 45)}" (${d.dom})`).join(' · ')}. No se descartan: vuelven mañana, porque el ledger solo registra lo que se generó._`, '']
+      ? ['---', '', `_**Guardados para otro día por diversidad** (ya había un candidato de ese tema entre los elegidos; dos preguntas del mismo asunto el mismo día es patrón de plantilla aunque los textos sean distintos): ${porDiversidad.map((d) => `"${d.c.title.slice(0, 45)}" (${d.dom})`).join(' · ')}. No se descartan: vuelven en la próxima corrida, porque estas no entran al ledger._`, '']
       : []),
     ...(rejected.length ? ['---', '', `_Descartados en el filtro: ${rejected.map((r) => `"${r.c.title.slice(0, 50)}" — ${r.why}`).join(' · ')}._`, ''] : []),
     ...(declined.length ? ['', `_Borradores descartados por no contestar: ${declined.map((d) => `"${d.c.title.slice(0, 50)}" — ${d.reason}`).join(' · ')}._`, ''] : []),
@@ -1584,11 +1589,24 @@ async function main() {
     '',
     '## Rutina',
     '',
-    '1. Elegir 0-2 borradores. No hay obligación diaria.',
-    '2. Leer el borrador contra la pregunta real. Ajustar libremente — la voz final es tuya.',
-    `3. Publicar con ${CONFIG.quoraProfile} (${CONFIG.quoraAccount}). Solo respuestas, nunca preguntas.`,
-    '',
-    `_No hay nada que anotar después. El ledger se escribe solo al final de cada corrida, con los ${nuevasEntradas.length} borradores de hoy: ninguna de estas preguntas va a volver a aparecer, y ningún borrador futuro va a repetir párrafos de estos._`,
+    ...(SIN_BORRADOR
+      ? [
+        '**Este reporte no trae respuestas escritas, y no es un error.** El script busca',
+        'las preguntas y elige los facts; la redacción la hacés vos con Claude.',
+        '',
+        '1. Pegar este reporte en el chat.',
+        '2. Claude tría cuáles valen la pena y escribe las que sirven, con la URL de cada una.',
+        '3. Pegar en Quora y avisar, para que quede marcado en el ledger.',
+        '',
+        `_Las ${nuevasEntradas.length} preguntas de hoy quedaron registradas como entregadas: no vuelven a aparecer durante 21 días. Las que publiques de verdad se marcan a mano y quedan bloqueadas para siempre._`,
+      ]
+      : [
+        '1. Elegir 0-2 borradores. No hay obligación diaria.',
+        '2. Leer el borrador contra la pregunta real. Ajustar libremente — la voz final es tuya.',
+        `3. Publicar con ${CONFIG.quoraProfile} (${CONFIG.quoraAccount}). Solo respuestas, nunca preguntas.`,
+        '',
+        `_El ledger se escribe solo al final de cada corrida, con los ${nuevasEntradas.length} borradores de hoy._`,
+      ]),
     '',
   ].join('\n');
 
