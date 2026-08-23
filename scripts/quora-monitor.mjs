@@ -491,7 +491,22 @@ function alreadyAnswered(url, title, ledger) {
 //   node scripts/quora-monitor.mjs --publicada https://www.quora.com/...
 function marcarPublicada(url) {
   const ledger = loadLedger();
-  const hit = ledger.answered.filter((e) => e.questionUrl === url);
+
+  // Quora da DOS URLs para lo mismo, y la que uno copia naturalmente es la
+  // equivocada. El boton de compartir de tu propia respuesta devuelve la de la
+  // respuesta, que es la de la pregunta mas un sufijo:
+  //   .../Do-you-need-a-reservation-to-visit-the-Colosseum
+  //   .../Do-you-need-a-reservation-to-visit-the-Colosseum/answer/Mario-Dalo
+  // El ledger guarda la primera. Exigir coincidencia exacta hacia fallar el
+  // comando justo en el caso normal, asi que se acepta que la URL pegada
+  // EMPIECE con la del ledger. Tambien se limpian querystrings (?ch=... viene
+  // pegado en los links de compartir) y la barra final.
+  const limpia = (u) => u.split(/[?#]/)[0].replace(/\/+$/, '');
+  const objetivo = limpia(url);
+  const hit = ledger.answered.filter((e) => {
+    const q = limpia(e.questionUrl);
+    return objetivo === q || objetivo.startsWith(q + '/');
+  });
   if (!hit.length) {
     console.error(`No hay ninguna entrada en el ledger con esa URL:\n  ${url}`);
     console.error('\nURLs entregadas recientemente:');
