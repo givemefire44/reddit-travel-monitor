@@ -139,12 +139,21 @@ else ok.push(`${palabras} palabras`);
 // credencial entera, asi que si no se puede comprobar hay que decirlo, no
 // callarlo.
 if (SITE) {
-  const f = path.join(ROOT, 'data', SITE === 'colosseum' ? 'citable-facts.json' : `citable-facts-${SITE}.json`);
-  if (!fs.existsSync(f)) {
-    avisos.push(`no encontre el corpus de "${SITE}" — cifras SIN verificar`);
+  // Acepta varios corpus separados por coma. Hace falta de verdad: un comentario
+  // de Reddit sobre accesibilidad en Roma cita el ascensor del Coliseo y el de la
+  // Capilla Sixtina en el mismo parrafo, y con un solo corpus la mitad de las
+  // cifras sale como inventada cuando esta perfectamente respaldada en el otro.
+  const sitios = SITE.split(',').map((s) => s.trim()).filter(Boolean);
+  const archivos = sitios.map((s) => ({
+    s, f: path.join(ROOT, 'data', s === 'colosseum' ? 'citable-facts.json' : `citable-facts-${s}.json`),
+  }));
+  const faltan = archivos.filter((a) => !fs.existsSync(a.f));
+  if (faltan.length) {
+    avisos.push(`no encontre el corpus de "${faltan.map((a) => a.s).join(', ')}" — cifras SIN verificar`);
   } else {
-    const corpus = JSON.parse(fs.readFileSync(f, 'utf8'));
-    const facts = (corpus.facts || corpus).map((x) => x.fact || '').join(' ');
+    const facts = archivos
+      .map((a) => (JSON.parse(fs.readFileSync(a.f, 'utf8')).facts || []).map((x) => x.fact || '').join(' '))
+      .join(' ');
     // Se ignoran numeros de 1 a 3 que casi siempre son conteos de prosa
     // ("two people", "3 hours") y generan ruido sin senal.
     const cifras = [...new Set(cuerpo.match(/€\s?\d+(?:[.,]\d+)?|\b\d+(?:[.,]\d+)?%|\b\d{2,}(?:[.,]\d+)?\b/g) || [])];
@@ -155,7 +164,7 @@ if (SITE) {
       const n = c.replace(/[€\s%]/g, '').replace('.', '[.,]');
       return !new RegExp(`(?<![\\d.,])${n}(?![\\d.,])`).test(facts);
     });
-    if (sinRespaldo.length) fallas.push(`cifras que no encontre en el corpus de ${SITE}: ${sinRespaldo.join(', ')}`);
+    if (sinRespaldo.length) fallas.push(`cifras que no encontre en el corpus de ${SITE}: ${sinRespaldo.join(", ")}`);
     else ok.push(`las ${cifras.length} cifras estan en el corpus de ${SITE}`);
   }
 } else {
