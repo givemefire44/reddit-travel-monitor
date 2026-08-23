@@ -25,6 +25,13 @@ const args = process.argv.slice(2);
 const archivo = args.find((a) => !a.startsWith('--'));
 const SITE = args.includes('--site') ? args[args.indexOf('--site') + 1] : null;
 
+// La red cambia dos reglas y solo dos: en Reddit NO va firma (te delata, y ahi
+// sos un desconocido en la comunidad de otro) y el largo es 40-150 palabras en
+// vez de 400-700. Todo lo demas — muletillas, presencia, superlativos, OTAs,
+// cifras del corpus — es identico, porque es la persona y no el formato.
+const RED = args.includes('--red') ? args[args.indexOf('--red') + 1] : 'quora';
+const ES_REDDIT = RED === 'reddit';
+
 if (!archivo) {
   console.error('Uso: node scripts/check-answer.mjs <archivo.txt> [--site vatican|colosseum|trastevere]');
   process.exit(1);
@@ -100,7 +107,13 @@ if (otaHit.length) fallas.push(`nombra plataformas de reserva: ${otaHit.join(', 
 else ok.push('no nombra ninguna OTA');
 
 // ------------------------------------------------------------------------ firma
-if (!firma) {
+if (ES_REDDIT) {
+  // Al reves que en Quora: aca la firma es el error. Un comentario firmado con
+  // "founder of Intercoper" en un sub de viajes se lee como promocion y es lo
+  // que hace que te bajen el comentario.
+  if (firma) fallas.push(`en Reddit NO va firma, y hay una: "${firma}"`);
+  else ok.push('sin firma, como corresponde en Reddit');
+} else if (!firma) {
   fallas.push('falta la firma');
 } else if (/\.com\b/i.test(firma)) {
   fallas.push(`la firma tiene .com — Quora lo auto-enlaza con el meta title del sitio: "${firma}"`);
@@ -116,8 +129,9 @@ if (primera.endsWith('?')) avisos.push('la primera linea es una pregunta — rev
 
 // ------------------------------------------------------------------------ largo
 const palabras = cuerpo.trim().split(/\s+/).filter(Boolean).length;
-if (palabras < 150) avisos.push(`${palabras} palabras: corto para Quora`);
-else if (palabras > 900) avisos.push(`${palabras} palabras: largo, revisar si hay relleno`);
+const [min, max] = ES_REDDIT ? [40, 150] : [150, 900];
+if (palabras < min) avisos.push(`${palabras} palabras: corto para ${RED}`);
+else if (palabras > max) avisos.push(`${palabras} palabras: largo para ${RED}, revisar si hay relleno`);
 else ok.push(`${palabras} palabras`);
 
 // ------------------------------------------------------------------------ cifras
