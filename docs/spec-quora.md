@@ -119,6 +119,59 @@ reembolsos igual.
    decía "Vatican Tours, Reviewed & Selected | VaticanTourGuides". Sin punto com
    no hay auto-link.
 
+### La voz
+
+Las reglas de abajo son prohibiciones, y cumplirlas todas da un texto **sin
+defectos**, que no es lo mismo que un texto bueno. Esto es el lado positivo:
+qué hace una respuesta que funciona.
+
+**1. Veredicto en la primera línea.** Sin preámbulo, sin contexto, sin repetir la
+pregunta. Las dos publicadas abren así:
+
+> *"Nothing is wrong with the site. You are almost certainly trying to buy the
+> one ticket that is engineered to be impossible."*
+
+> *"For an elderly couple the most useful thing I can tell you is that the two
+> sites work completely differently, and most of the advice online treats them
+> as one visit."*
+
+**2. Nombrar la idea equivocada que trae el que pregunta.** El valor de la
+respuesta casi nunca es la lista de datos: es corregir el marco. El de
+coopculture cree que el sitio está roto; en realidad eligió el producto
+equivocado. La pareja mayor cree que San Pedro no se planifica porque es gratis.
+Si no encontrás la idea equivocada, probablemente la pregunta no valía la pena.
+
+**3. Cada cifra viene seguida de qué significa.** Un número solo es folleto. Un
+número más su consecuencia es consejo:
+
+> *"St Peter's generates queue complaints at 23.8% against the Museums' 12.1%,
+> roughly twice the rate, even though its median reported wait is actually
+> shorter, 45 minutes against 60. People are not angrier because they wait
+> longer. They are angrier because nobody told them there would be a wait at
+> all."*
+
+**4. Un párrafo, una decisión.** No un párrafo un tema. Cada bloque tiene que
+dejar al lector con algo que hacer o que descartar.
+
+**5. Frases cortas sueltas para romper el ritmo.** *"There is."* *"Not minutes.
+Seconds."* Esto es lo que hace que el ritmo varíe de verdad, en vez de variarlo
+a propósito porque una regla lo pide.
+
+**6. Cerrar con una recomendación concreta y en primera persona.** No un resumen.
+Lo que harías vos:
+
+> *"If it were my parents, I would book the Museums for a mid-morning slot, buy
+> the €7 Basilica ticket for the same day or the next, and treat the two as
+> separate outings rather than one long march."*
+
+Es primera persona de **criterio**, no de experiencia: "yo haría" está permitido,
+"cuando yo fui" no.
+
+**7. Se puede decir que algo no vale la pena.** Es lo que separa a alguien que
+analiza de alguien que vende, y es lo que hace creíble el resto. Ejemplo real:
+desaconsejar madrugar, con el dato de que a las 8:00 AM igual había 30 minutos de
+cola.
+
 ### Tells de IA a evitar
 
 Los tres se detectaron leyendo respuestas ya publicadas:
