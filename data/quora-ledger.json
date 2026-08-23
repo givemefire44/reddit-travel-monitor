@@ -104,7 +104,7 @@
       ],
       "shingles": [],
       "generatedAt": "2026-08-22",
-      "estado": "entregado"
+      "estado": "publicada"
     },
     {
       "questionUrl": "https://www.quora.com/What-is-the-Colosseum-What-is-under-the-ruins-of-the-Colosseum-Are-there-any-underground-passageways-that-are-still-intact",
@@ -118,7 +118,7 @@
       ],
       "shingles": [],
       "generatedAt": "2026-08-22",
-      "estado": "entregado"
+      "estado": "publicada"
     },
     {
       "questionUrl": "https://www.quora.com/I-tried-many-many-times-in-vain-to-purchase-a-ticket-to-Colosseum-Foro-Romano-and-Palatino-online-through-coopculture-it-What-is-wrong-with-the-site",
@@ -147,6 +147,84 @@
       ],
       "shingles": [],
       "generatedAt": "2026-08-22",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-should-I-plan-a-Colosseum-trip-to-avoid-long-lines-and-get-the-best-experience",
+      "questionTitle": "How should I plan a Colosseum trip to avoid long lines and get the best experience?",
+      "titleNormalized": "how should i plan a colosseum trip to avoid long lines and get the best experience",
+      "site": "colosseum",
+      "sourceSlugs": [
+        "best-footwear-colosseum-forum-palatine",
+        "best-colosseum-tour-photography",
+        "best-colosseum-tour-under-eur50",
+        "best-months-colosseum-heat-crowds-underground-season"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-08-23",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-do-you-purchase-tickets-to-enter-the-Vatican",
+      "questionTitle": "How to purchase tickets to enter the Vatican",
+      "titleNormalized": "how to purchase tickets to enter the vatican",
+      "site": "vatican",
+      "sourceSlugs": [
+        "best-time-to-visit-vatican",
+        "vatican-after-hours-tour-worth-it",
+        "vatican-booking-trust-safety",
+        "vatican-cancellation-refunds",
+        "vatican-early-access-really-means"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-08-23",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-is-the-experience-of-seeing-the-dome-of-St-Peter-s-Basilica-from-inside",
+      "questionTitle": "What is the experience of seeing the dome of St. Peter’s Basilica from inside?",
+      "titleNormalized": "what is the experience of seeing the dome of st peter s basilica from inside",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-best-rated-extras",
+        "vatican-one-day-time-budget",
+        "vatican-scavi-grottoes",
+        "vatican-early-access-really-means",
+        "vatican-museums-itinerary"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-08-23",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-might-be-the-ideal-order-of-visiting-the-Vatican-Museums-the-Sistine-Chapel-and-St-Peters-Basilica-in-Vatican-City",
+      "questionTitle": "What might be the ideal order of visiting the Vatican Museums, the Sistine Chapel, and St. Peter's Basilica in Vatican City?",
+      "titleNormalized": "what might be the ideal order of visiting the vatican museums the sistine chapel and st peter s basilica in vatican city",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-museums-tickets-guide",
+        "best-time-to-visit-vatican",
+        "vatican-after-hours-tour-worth-it",
+        "vatican-best-rated-extras",
+        "vatican-crowd-handling-staff"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-08-23",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Can-you-describe-the-interior-of-St-Peters-Basilica-in-Rome-Italy-Would-you-recommend-visiting-it",
+      "questionTitle": "Can you describe the interior of St. Peter's Basilica in Rome, Italy? Would you recommend visiting it?",
+      "titleNormalized": "can you describe the interior of st peter s basilica in rome italy would you recommend visiting it",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-early-access-really-means",
+        "vatican-museums-itinerary",
+        "vatican-museums-tickets-guide",
+        "vatican-official-vs-platform-price"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-08-23",
       "estado": "entregado"
     }
   ]
