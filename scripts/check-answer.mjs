@@ -17,6 +17,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { contraPublicados } from './lib/fingerprint.mjs';
+import { cargar as cargarPublicados } from './publicado.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const args = process.argv.slice(2);
@@ -144,6 +146,61 @@ if (SITE) {
   }
 } else {
   avisos.push('sin --site: las cifras NO se verificaron contra el corpus');
+}
+
+// -------------------------------------------------------------------- simetria
+// Un texto humano es irregular: un parrafo se estira, otro queda corto, alguna
+// idea queda a medio desarrollar. Un texto generado tiende a la regularidad —
+// todos los parrafos parecidos, todas las oraciones del mismo largo. Es de los
+// primeros patrones que mira un detector, y no requiere entender el contenido.
+const parrafos = cuerpo.split(/\n\s*\n/).map((p) => p.trim().split(/\s+/).filter(Boolean).length).filter((n) => n > 0);
+if (parrafos.length >= 4) {
+  const media = parrafos.reduce((a, b) => a + b, 0) / parrafos.length;
+  const sd = Math.sqrt(parrafos.reduce((a, b) => a + (b - media) ** 2, 0) / parrafos.length);
+  const cv = sd / media;
+  // Umbral por observacion: las respuestas publicadas el 22 ago rondaban 0.35-0.45
+  // y ya se leian parejas. Un texto escrito de corrido pasa comodo de 0.5.
+  if (cv < 0.40) {
+    avisos.push(`parrafos demasiado parejos (${parrafos.join('/')} palabras, variacion ${cv.toFixed(2)}): alargar uno y cortar otro`);
+  } else {
+    ok.push(`largo de parrafos irregular (variacion ${cv.toFixed(2)})`);
+  }
+}
+
+const oraciones = cuerpo.split(/(?<=[.!?])\s+/).map((s) => s.trim().split(/\s+/).length).filter((n) => n > 2);
+if (oraciones.length >= 6) {
+  const m = oraciones.reduce((a, b) => a + b, 0) / oraciones.length;
+  const s = Math.sqrt(oraciones.reduce((a, b) => a + (b - m) ** 2, 0) / oraciones.length);
+  if (s / m < 0.45) avisos.push(`oraciones de largo muy uniforme (variacion ${(s / m).toFixed(2)})`);
+}
+
+// ------------------------------------------------------------------- muletillas
+// Contra TODO lo ya publicado, de Quora y de Reddit juntos. Es el chequeo que
+// habria cazado la bisagra repetida cuatro veces el 22 ago 2026.
+const publicados = cargarPublicados();
+if (!publicados.length) {
+  avisos.push('el almacen de publicados esta vacio — no se comparo contra textos anteriores');
+} else {
+  const { verbatim, muletillas } = contraPublicados(cuerpo, publicados);
+  for (const v of verbatim) fallas.push(`repite texto casi literal de "${v.titulo}" (${v.comunes} tramos)`);
+
+  // Los umbrales van bajos A PROPOSITO. Una vez filtradas las parejas de
+  // palabras funcionales, lo que queda son construcciones con carga: si
+  // "worth knowing" ya esta en un texto publicado, volver a usarla es
+  // exactamente la huella que un detector pesa por historial de autor. La
+  // primera version exigia mas de seis coincidencias para avisar y daba
+  // "limpio" sobre un borrador que repetia tres muletillas obvias.
+  const fuertes = muletillas.filter((m) => m.veces >= 2);
+  const flojas = muletillas.filter((m) => m.veces === 1);
+  if (fuertes.length) {
+    fallas.push(`MULETILLA en ${fuertes[0].veces}+ textos ya publicados: ${fuertes.slice(0, 6).map((m) => `"${m.frase}"`).join(', ')} — reescribir esos arranques`);
+  }
+  if (flojas.length >= 3) {
+    fallas.push(`${flojas.length} arranques de frase repetidos de textos publicados: ${flojas.slice(0, 6).map((m) => `"${m.frase}"`).join(', ')} — reescribir`);
+  } else if (flojas.length) {
+    avisos.push(`arranque(s) ya usado(s): ${flojas.map((m) => `"${m.frase}" (${m.donde[0]})`).join(', ')}`);
+  }
+  if (!fuertes.length && !flojas.length) ok.push(`sin muletillas contra ${publicados.length} texto(s) publicado(s)`);
 }
 
 // ----------------------------------------------------------------------- salida
