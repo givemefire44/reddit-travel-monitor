@@ -156,7 +156,12 @@ if (SITE) {
       .join(' ');
     // Se ignoran numeros de 1 a 3 que casi siempre son conteos de prosa
     // ("two people", "3 hours") y generan ruido sin senal.
-    const cifras = [...new Set(cuerpo.match(/€\s?\d+(?:[.,]\d+)?|\b\d+(?:[.,]\d+)?%|\b\d{2,}(?:[.,]\d+)?\b/g) || [])];
+    // El lookbehind es imprescindible. Sin el, "3.81" se parte y "81" sale como
+    // cifra suelta: el punto es un caracter no-palabra, asi que \b matchea justo
+    // antes del 8. Verificado el 24 ago con un borrador que citaba ratings —
+    // reportaba 81, 51, 09 y 07 como inventadas estando las cuatro respaldadas.
+    // Un falso positivo acá es caro: empuja a desconfiar del verificador entero.
+    const cifras = [...new Set(cuerpo.match(/€\s?\d+(?:[.,]\d+)?|(?<![\d.,])\d+(?:[.,]\d+)?%|(?<![\d.,])\d{2,}(?:[.,]\d+)?(?![\d.,])/g) || [])];
     // Los limites de palabra son imprescindibles. Sin ellos "93" matchea dentro
     // de "1.935" y una cifra inventada pasa como respaldada: verificado el
     // 22 ago con un borrador de prueba donde "93 minutes" salio limpio.

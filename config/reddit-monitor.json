@@ -121,6 +121,38 @@
         "roman forum",
         "palatine"
       ]
+    },
+    {
+      "key": "pompeii",
+      "factsFile": "data/citable-facts-pompeii.json",
+      "keywords": [
+        "pompeii",
+        "pompei",
+        "herculaneum",
+        "ercolano",
+        "vesuvius",
+        "mount vesuvius",
+        "villa of the mysteries",
+        "naples day trip",
+        "sorrento to pompeii",
+        "circumvesuviana"
+      ]
+    },
+    {
+      "key": "milan",
+      "factsFile": "data/citable-facts-milan.json",
+      "keywords": [
+        "last supper",
+        "cenacolo",
+        "cenacolo vinciano",
+        "santa maria delle grazie",
+        "milan duomo",
+        "duomo di milano",
+        "sforza castle",
+        "castello sforzesco",
+        "milan tickets",
+        "milan tours"
+      ]
     }
   ]
 }

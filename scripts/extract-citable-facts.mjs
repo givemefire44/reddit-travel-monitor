@@ -73,6 +73,43 @@ const SITES = {
     ],
     excludedSlugs: ['about', 'about-us', 'contact', 'contact-us', 'terms-conditions', 'cookies-privacy-policy', 'methodology'],
   },
+  // Pompeya y Milan, agregados el 24 ago 2026. El motivo: el monitor cubria 3
+  // sitios de un portfolio de once, y el embudo de Reddit venia devolviendo dias
+  // enteros sin un solo candidato con corpus — no porque las keywords fueran
+  // estrechas sino porque nadie pregunta por el Coliseo todos los dias. Los dos
+  // son Italia, asi que entran por los subs que ya estan configurados.
+  pompeii: {
+    projectId: '34ibxssl',
+    siteUrl: 'https://pompeiiguidetours.com',
+    corpusSize: null,
+    outFile: 'citable-facts-pompeii.json',
+    subjectName: 'Pompeii and Herculaneum (the archaeological sites near Naples)',
+    subjectRule:
+      "the claim's subject must be Pompeii, Herculaneum, their tickets/tours/access, or getting there from Naples, Sorrento or Rome. Exclude sentences whose subject is another monument or city (Colosseum, Vatican, Louvre, Sagrada Familia...) even when they appear in a Pompeii article. A comparison qualifies only if the Pompeii side carries the figure and the claim stands as Pompeii advice.",
+    internalVoiceRe: /\b(the corpus|our corpus|our analysis|we analyzed|our data|pompeiiguidetours)\b/i,
+    topics: [
+      'tickets', 'pricing', 'crowds', 'timing', 'guides', 'operators', 'logistics',
+      'kids-families', 'accessibility', 'weather', 'herculaneum', 'highlights',
+      'getting-there', 'skip-the-line', 'format-duration',
+    ],
+    excludedSlugs: ['about', 'about-us', 'contact', 'contact-us', 'terms-conditions', 'cookies-privacy-policy', 'methodology'],
+  },
+  milan: {
+    projectId: '5c9x29ea',
+    siteUrl: 'https://milanlastsupper.com',
+    corpusSize: null,
+    outFile: 'citable-facts-milan.json',
+    subjectName: "Leonardo's Last Supper and visiting Milan (Duomo, Sforza Castle, city centre)",
+    subjectRule:
+      "the claim's subject must be the Last Supper (Cenacolo Vinciano), its booking/tickets/access, or visiting Milan's centre - the Duomo, Sforza Castle, Galleria. Exclude sentences whose subject is another monument or city (Colosseum, Vatican, Louvre, Pompeii...) even when they appear in a Milan article. A comparison qualifies only if the Milan side carries the figure and the claim stands as Milan advice.",
+    internalVoiceRe: /\b(the corpus|our corpus|our analysis|we analyzed|our data|milanlastsupper)\b/i,
+    topics: [
+      'tickets', 'pricing', 'booking', 'timing', 'crowds', 'guides', 'operators',
+      'logistics', 'accessibility', 'last-supper', 'duomo', 'group-size',
+      'cancellation', 'format-duration',
+    ],
+    excludedSlugs: ['about', 'about-us', 'contact', 'contact-us', 'terms-conditions', 'cookies-privacy-policy', 'methodology'],
+  },
 };
 
 // ---------- CLI ----------
