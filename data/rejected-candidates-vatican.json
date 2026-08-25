@@ -1,17 +1,7 @@
 [
   {
-    "slug": "vatican-dress-code",
-    "fact": "It's enforced by security at the Museums, Sistine Chapel, St. Peter's Basilica, and Gardens, with no exceptions — and if you're turned away, your ticket isn't refunded.",
-    "reason": "sin cifra"
-  },
-  {
-    "slug": "vatican-dress-code",
-    "fact": "If security turns you away for improper dress, your ticket is forfeited — Vatican tickets are non-refundable and no exceptions are made, regardless of how much you paid or how far you traveled.",
-    "reason": "sin cifra"
-  },
-  {
-    "slug": "vatican-crowd-handling-staff",
-    "fact": "It is 1.89 stars, the average of reviews describing being herded or treated like cattle, more than two stars below the corpus average of 4.08.",
+    "slug": "vatican-best-rated-extras",
+    "fact": "By average rating, the Gardens at 4.76 and the Carriage Pavilion at 4.74, followed by the Scavi at 4.68 and the dome at 4.50 — all above the corpus average of 4.08, and all above the Sistine Chapel at 3.81.",
     "reason": "voz editorial interna"
   },
   {
@@ -25,18 +15,8 @@
     "reason": "voz editorial interna"
   },
   {
-    "slug": "vatican-mobility-access",
-    "fact": "Reviews mentioning the walking distance average 0.43 stars below the corpus average and those mentioning nowhere to sit 0.63 below, while reviews mentioning stairs are essentially at average.",
-    "reason": "voz editorial interna"
-  },
-  {
-    "slug": "vatican-value-perception",
-    "fact": "Removing every review that also carries a tag for queues, scams, cancellations, skip-the-line or booking leaves 303 reviews that mention price with no service failure attached, and they still average 3.38 — 0.70 below the corpus average.",
-    "reason": "voz editorial interna"
-  },
-  {
-    "slug": "vatican-value-perception",
-    "fact": "It is the only paid element at the Vatican where price mentions score above the corpus average, at 4.27 across 157 reviews.",
-    "reason": "voz editorial interna"
+    "slug": "vatican-practical-experience",
+    "fact": "Staff at 1.23 below average is the lowest figure in this research, lower than crowding, lower than anything about price.",
+    "reason": "frase no textual"
   }
 ]

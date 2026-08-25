@@ -240,6 +240,35 @@ function verifyFact(fact, sourceNorm) {
       return { ok: false, reason: `cifra "${fig}" no esta en la frase` };
     }
   }
+
+  // La escala pasa por el MISMO filtro que el fact: texto literal del articulo.
+  // Sin esto seria la puerta por donde entra lo inventado — el modelo podria
+  // "explicar" que 3.51 es un puntaje de sentimiento sobre 5 porque le suena
+  // razonable, y quedaria publicado bajo la firma de Mario como si fuera dato.
+  if (fact.scale != null && String(fact.scale).trim()) {
+    const scaleNorm = normalize(String(fact.scale)).replace(/[.]+$/, '');
+    if (!sourceNorm.includes(scaleNorm)) return { ok: false, reason: 'escala no textual' };
+  } else {
+    // Sin escala declarada, un decimal pelado solo pasa si la ORACION dice en
+    // algun lado que mide. La primera version de esto exigia que la unidad
+    // estuviera pegada al numero, contra una lista blanca de cuatro palabras
+    // (%, stars, points, out of), y fue un desastre: descarto 230 facts del
+    // Coliseo, entre ellos "A standard combo runs 2.5 hours" y "the average
+    // rating across 581 items is 4.94". Los dos dicen exactamente que miden.
+    //
+    // La unidad puede ir despues ("2.5 hours"), antes ("average rating ... is
+    // 4.94") o a media oracion. Asi que se busca en la frase entera, con una
+    // lista amplia. El caso que hay que cazar es el otro: "the silenzio is far
+    // milder at 3.51", un decimal en una oracion sin una sola palabra de unidad.
+    const UNIDAD_RE = /\b(hours?|minutes?|mins?|days?|weeks?|months?|years?|km|kilometers?|miles?|metres?|meters?|steps?|stars?|rating|rated|score[sd]?|average|avg|points?|percent|people|guests?|items?|reviews?|reports?|ratings?|euros?|dollars?|price[sd]?|costs?|out of)\b|[%€$]|\/\s*\d/i;
+    const pelada = (fact.figures || []).find((f) => {
+      const s = String(f).trim();
+      if (!/^\d+[.,]\d+$/.test(s)) return false;   // solo decimales sueltos
+      return !UNIDAD_RE.test(fact.fact);           // y la oracion entera muda
+    });
+    if (pelada) return { ok: false, reason: `cifra "${pelada}" sin unidad ni escala` };
+  }
+
   return { ok: true };
 }
 
@@ -257,8 +286,11 @@ const OUTPUT_SCHEMA = {
           fact: { type: 'string' },
           figures: { type: 'array', items: { type: 'string' } },
           topics: { type: 'array', items: { type: 'string', enum: TOPICS } },
+          // Qué mide la cifra, cuando la frase del fact no lo dice. Tambien
+          // VERBATIM del articulo, de otra oracion. Ver el bloque ESCALA abajo.
+          scale: { type: ['string', 'null'] },
         },
-        required: ['fact', 'figures', 'topics'],
+        required: ['fact', 'figures', 'topics', 'scale'],
         additionalProperties: false,
       },
     },
@@ -286,6 +318,15 @@ If the same claim appears in several sections (quick answer, body, table), retur
 For each fact:
 - "figures": every meaningful figure EXACTLY as written in the sentence (e.g. "17", "1:45 PM", "20-30", "€18"). Do not include figures that do not appear literally in the sentence.
 - "topics": 1-3 topics from the closed taxonomy that a traveler question about this fact would fall under.
+- "scale": see below.
+
+SCALE - what the figure measures.
+
+These facts get quoted on their own, far from the article, to readers who have never seen this site. A figure that carries its own unit is fine: "€18", "45 minutes", "7 days ahead", "61%". A bare decimal is not. "The silenzio is far milder at 3.51" is a real sentence from a real article, and out of context nobody - including the writer quoting it - can tell whether 3.51 is a star rating, a sentiment score, or something else. Publishing it under a byline is worse than losing it.
+
+So: if every figure in the sentence already carries its unit, set "scale" to null. If any figure does NOT, find another sentence in the SAME article that states what that figure measures, and put that sentence in "scale", VERBATIM, subject to the same copying rules as "fact". Typically it is the sentence that introduces the metric ("Every review was scored from 1 to 5 for sentiment", "ratings are averaged per element").
+
+If the article never says what the figure measures anywhere, skip the fact entirely. A number nobody can interpret is not a citable fact.
 
 Quality over quantity: 3-12 strong facts per article is typical. If an article has no qualifying sentences, return an empty array.`;
 
@@ -360,6 +401,10 @@ async function main() {
             fact: cand.fact,
             figures: cand.figures,
             topics: cand.topics,
+            // Solo si aporta. La mayoria de los facts traen la unidad pegada
+            // ("€18", "45 minutes") y no necesitan nada; guardar null en todos
+            // ensuciaria el archivo sin decir nada.
+            ...(cand.scale && String(cand.scale).trim() ? { scale: cand.scale } : {}),
             sourceSlug: article.slug,
             sourceUrl: `${SITE_URL}/${article.slug}`,
           });

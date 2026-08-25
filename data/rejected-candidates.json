@@ -1,22 +1,102 @@
 [
   {
-    "slug": "colosseum-free-audio-guide-rick-steves",
-    "fact": "That reviewer scored the visit two stars — the complaint was elsewhere — while describing three hours of self-guided visit for €18 against a £217 tour they found rushed",
-    "reason": "apertura no autonoma"
+    "slug": "best-colosseum-tour-under-eur50",
+    "fact": "A guide turns piles of stone into stories — how 50,000 spectators were seated by social class, how the hypogeum's 80 elevators launched animals through trapdoors, why the Forum was the beating heart of an empire.",
+    "reason": "cifra \"50,000\" sin unidad ni escala"
   },
   {
-    "slug": "colosseum-night-tour-is-the-evening-visit-worth-it",
-    "fact": "Underground access is not standard and depends on the specific tour and season, so always verify inclusions before booking",
+    "slug": "colosseum-attic-belvedere-worth-it",
+    "fact": "It covers the Colosseum's standard tiers plus the Attic via the panoramic lift, and also includes the Roman Forum, Palatine Hill, and Imperial Fora.",
     "reason": "sin cifra"
   },
   {
-    "slug": "colosseum-tours-and-tickets-how-to-book-and-fix-common-problems",
-    "fact": "This can range from the standard 24-hour ticket to Full Experience options, Arena or Underground access, guided tours, or combined tickets that include the Roman Forum and Palatine Hill.",
+    "slug": "colosseum-day-of-logistics-guide",
+    "fact": "This scenario is most likely in 20+ person groups, especially when crossing the security/metal-detector checkpoint where the group naturally fragments.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "colosseum-in-rain-what-changes-what-closes",
+    "fact": "The underground and arena floor may be temporarily closed in heavy rain or thunderstorms, with partial refunds for Full Experience ticket holders.",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "colosseum-in-rain-what-changes-what-closes",
+    "fact": "When this happens, visitors with Full Experience tickets receive a partial refund covering the difference between the premium ticket and the standard entry price.",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "colosseum-in-rain-what-changes-what-closes",
+    "fact": "If you have a Full Experience or multi-day ticket, visit the Colosseum on the rainy day (partially covered, sheltered levels) and save the Forum and Palatine for the next day when conditions improve.",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "colosseum-skip-the-line-timed-entry-explained",
+    "fact": "That said, the ticket-purchase queue on busy days can run an hour or more.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "colosseum-timed-entry-window-late-arrival",
+    "fact": "This is why arriving 30 minutes early is non-negotiable on premium tiers.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "colosseum-underground-accredited-operators",
+    "fact": "That traveler paid €629.40 for a party of six, lost the underground portion, spent two hours walking the Forum in 34°C heat, queued thirty minutes for a skip-the-line ticket, got twenty minutes on the arena floor, and left early.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "colosseum-underground-tour-ticket",
+    "fact": "you won’t just see ruins—you’ll feel the echoes of an ancient machine that once amazed 50,000 spectators.",
+    "reason": "cifra \"50,000\" sin unidad ni escala"
+  },
+  {
+    "slug": "colosseum-underground-vs-arena-floor",
+    "fact": "You are standing at the center of an ellipse that once held 50,000 spectators, looking up at the terraces from below instead of looking down from above.",
+    "reason": "cifra \"50,000\" sin unidad ni escala"
+  },
+  {
+    "slug": "commodus-passage-colosseum-secret-tunnel-2025",
+    "fact": "Currently, the Commodus Passage requires a separate ticket and cannot be added to standard Colosseum tours.",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "complete-guide-to-visiting-the-roman-colosseum-step-by-step",
+    "fact": "Yes, the Colosseum uses timed entry with a maximum of 3,000 visitors inside at once.",
+    "reason": "cifra \"3,000\" sin unidad ni escala"
+  },
+  {
+    "slug": "complete-guide-to-visiting-the-roman-colosseum-step-by-step",
+    "fact": "Morning (8:30 – 10:30 AM) → Cooler and fewer crowds, best for photos.",
+    "reason": "cifra \"8:30 AM\" no esta en la frase"
+  },
+  {
+    "slug": "gladiators-beasts-and-executions-what-really-happened-in-the-colosseum-arena",
+    "fact": "With up to 50,000 spectators seated in strict order—from emperor to senators, soldiers to common citizens, women, and even slaves—the amphitheater mirrored Rome’s rigid social pyramid",
+    "reason": "cifra \"50,000\" sin unidad ni escala"
+  },
+  {
+    "slug": "how-colosseum-tickets-actually-work-official-site",
+    "fact": "That is why third-party operators charge €80–€170 for tours that include those slots.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "how-long-colosseum-tour-duration-compared",
+    "fact": "This cap holds whether your overall tour is 2.5 hours or 4 hours.",
     "reason": "apertura no autonoma"
   },
   {
     "slug": "private-colosseum-tour",
-    "fact": "Most private tours include the main Colosseum levels plus skip-the-line entry, and many offer exclusive access to the arena floor, the underground hypogeum, Palatine Hill, and the Roman Forum as part of a single guided experience.",
-    "reason": "sin cifra"
+    "fact": "Standing on the arena, you’ll see the Colosseum from their perspective, surrounded by the tiers of stone where up to 50,000 spectators once cheered.",
+    "reason": "cifra \"50,000\" sin unidad ni escala"
+  },
+  {
+    "slug": "request-specific-colosseum-guide-booking",
+    "fact": "If booked through GetYourGuide, your fallback is the platform's 4.94 average baseline — meaning a non-response on the named-guide request still leaves you with statistically high odds of a strong tour.",
+    "reason": "frase no textual"
+  },
+  {
+    "slug": "why-was-the-colosseum-built-the-story-guides-don-t-tell-you",
+    "fact": "What had been Nero’s private playground became a public arena for 50,000 Romans",
+    "reason": "cifra \"50,000\" sin unidad ni escala"
   }
 ]
