@@ -1,6 +1,6 @@
 # Reddit monitor — 2026-08-25
 
-**Fase:** warmup · **Ventana:** 24h · **Facts:** trastevere 66 · vatican 140 · colosseum 784 · pompeii 113 · milan 62
+**Fase:** warmup · **Ventana:** 24h · **Facts:** trastevere 70 · vatican 149 · colosseum 873 · pompeii 118 · milan 84
 **Comment karma u/RomanColosseumExpert:** (no disponible)
 
 ---
@@ -9,32 +9,28 @@
 
 | Subreddit | Fetch RSS | En ventana | Keyword | Topic | Pregunta | Scores |
 |---|---|---|---|---|---|---|
-| r/travel (active) | 200 · 100 posts | 63 | 1 | 1 | 1 | 1 |
-| r/solotravel (active) | 200 · 100 posts | 7 | 0 | 0 | 0 | — |
+| r/travel (active) | 200 · 100 posts | 63 | 1 | 1 | 0 | — |
+| r/solotravel (active) | 200 · 100 posts | 9 | 1 | 1 | 0 | — |
 | r/Eurotrip (active) | 200 · 58 posts | 0 | 0 | 0 | 0 | — |
-| r/EuropeTravel (active) | 200 · 100 posts | 17 | 1 | 1 | 0 | — |
+| r/EuropeTravel (active) | 200 · 100 posts | 10 | 0 | 0 | 0 | — |
 | r/TravelNoPics (active) | 200 · 100 posts | 0 | 0 | 0 | 0 | — |
-| r/Italy (active) | 200 · 100 posts | 15 | 1 | 1 | 0 | — |
+| r/Italy (active) | 200 · 100 posts | 17 | 1 | 1 | 0 | — |
 | r/askitaly (active) | 200 · 100 posts | 1 | 0 | 0 | 0 | — |
-| r/ItalyTravel (watch-only) | 200 · 100 posts | 9 | 0 | 0 | 0 | — |
-| r/rome (active) | 200 · 100 posts | 16 | 10 | 10 | 7 | 3, 3, 3, 2, 1, 1, 1 |
+| r/ItalyTravel (watch-only) | 200 · 100 posts | 10 | 0 | 0 | 0 | — |
+| r/rome (active) | 200 · 100 posts | 14 | 7 | 7 | 5 | 5, 5, 2, 2, 1 |
 
 _Etapas en el orden real del filtro: publicado en las últimas 24h y no sticky/nsfw → alguna keyword del sitio → match con la taxonomía de topics → pregunta genuina. No hay umbral de score: todo lo que pasa el embudo es candidato y el corte es el cupo diario (top 6 por estado)._
 
 _El score suma topics + frescura del hilo (≤3h vale 5, ≤6h vale 4, ≤12h vale 2, ≤18h vale 1, más viejo no suma). Un comentario en un hilo de un día no lo lee nadie por bueno que sea: a esa altura ya se cayó de la portada del sub y quien preguntó tiene sus respuestas. Por eso lo fresco gana._
 
-_Cortados hoy por cupo, no por score: r/rome (score 1) · r/rome (score 1)._
-
-_Borradores descartados por no contestar la pregunta (el hilo paso el embudo pero el texto generado no sirve para pegar): "How easy is street parking for Free2move near Tr" (r/rome) — el borrador abre diciendo que no tiene con que responder._
-
 ---
 
 ## Candidatos (5)
 
-### Rome visit recommandations
+### From Rome to Fiumicino airport
 
-- **Hilo:** https://www.reddit.com/r/rome/comments/1vxtzs7/rome_visit_recommandations/
-- **Sitio:** — (sin corpus) · **Subreddit:** r/rome · **Antigüedad:** 8h · **Comentarios:** n/d (RSS) · **Score:** 3
+- **Hilo:** https://www.reddit.com/r/rome/comments/1vy5iip/from_rome_to_fiumicino_airport/
+- **Sitio:** — (sin corpus) · **Subreddit:** r/rome · **Antigüedad:** 5h · **Comentarios:** n/d (RSS) · **Score:** 5
 - **Topics:** —
 - **Solo karma:** no tenemos material propio sobre esto. El borrador se escribió como viajero común, sin una sola cifra nuestra. Suma karma igual, que es para lo que existe esta etapa.
 
@@ -42,14 +38,56 @@ _Borradores descartados por no contestar la pregunta (el hilo paso el embudo per
 **Borrador:**
 
 ```
-October in Rome is a great time to visit, weather is usually mild and the crowds thin out compared to summer. With a week and a little kid, I'd stay based in Rome the whole time rather than hopping to other cities, you'll want to avoid packing and unpacking with a toddler in tow. Rome itself has enough to fill your week without rushing.
+At that hour public transport won't be running yet, so the train option is off the table. Your realistic choices are a taxi or a pre-booked private transfer.
 
-Since you're near the Vatican, do that early in the morning before it gets busy. Then spread out the rest, Centro Storico for Pantheon and Piazza Navona, Trastevere for wandering and eating, and the Colosseum area on another day. Trastevere is honestly your best bet for the kind of small local trattorias you're after, skip anywhere with a tout outside or laminated multilingual menus. Testaccio is another good food neighborhood that's less touristy and has real Roman classics like carbonara and cacio e pepe done well.
+Taxis from Termini to Fiumicino operate on a fixed flat rate for the airport route, so there's no need to worry about the meter running wild, just confirm with the driver before you leave that it's the flat fare to the airport. Grab one from an official taxi stand (white cars, city taxi logo) rather than anyone who approaches you offering a ride.
 
-If you want a day outside the city, Ostia Antica is manageable with a kid and much closer than a full day trip elsewhere.
+If you want to lock in a price ahead of time and skip any hassle, a private transfer booked in advance is also a solid, fair option and often works out similar in cost to a taxi.
+
+Whichever you choose, book or plan the night before since finding a taxi at that hour can take a little longer than usual.
 ```
 
-> ⚠️ Validación: largo fuera de rango (174 palabras)
+**Facts usados:** ninguno — nada que verificar, y nada que citar como dato nuestro.
+
+---
+
+### Vinyl shops in Rome
+
+- **Hilo:** https://www.reddit.com/r/rome/comments/1vy5f1x/vinyl_shops_in_rome/
+- **Sitio:** — (sin corpus) · **Subreddit:** r/rome · **Antigüedad:** 5h · **Comentarios:** n/d (RSS) · **Score:** 5
+- **Topics:** —
+- **Solo karma:** no tenemos material propio sobre esto. El borrador se escribió como viajero común, sin una sola cifra nuestra. Suma karma igual, que es para lo que existe esta etapa.
+
+
+**Borrador:**
+
+```
+The Monti area and around Campo de' Fiori are worth wandering for crate digging, there are a few small shops tucked into side streets that deal in secondhand vinyl and always have a box of Italian pop and vintage stuff mixed in with the usual rock and jazz. Testaccio also has some good spots, it's a bit more local and less touristy so prices tend to be friendlier.
+
+Honestly the best approach is just to walk and duck into anything that looks promising, Rome isn't really a city with famous record store strips, it's more about stumbling onto a tiny shop run by someone who's been collecting for decades. Ask the owners directly for Mina or Celentano, most will dig something out from under the counter even if it's not on display. Sunday markets can also turn up surprises if you're patient.
+```
+
+**Facts usados:** ninguno — nada que verificar, y nada que citar como dato nuestro.
+
+---
+
+### Rome visit recommandations
+
+- **Hilo:** https://www.reddit.com/r/rome/comments/1vxtzs7/rome_visit_recommandations/
+- **Sitio:** — (sin corpus) · **Subreddit:** r/rome · **Antigüedad:** 14h · **Comentarios:** n/d (RSS) · **Score:** 2
+- **Topics:** —
+- **Solo karma:** no tenemos material propio sobre esto. El borrador se escribió como viajero común, sin una sola cifra nuestra. Suma karma igual, que es para lo que existe esta etapa.
+
+
+**Borrador:**
+
+```
+October is a great time to go, staying near the Vatican works fine as a base since the metro and buses connect you to the rest easily. Honestly a week in Rome itself is plenty, you won't run out of things to do, and with a little kid you'll want slower days anyway rather than rushing to other cities.
+
+For food, skip the streets right around the Vatican and touristy centro spots, walk into Trastevere or Testaccio instead. Testaccio especially has trattorias that feel like neighborhood canteens, cheap, plastic tablecloths, but the pasta is better than half the fancy places near the sights. Look for spots with a handwritten menu and no photos of the food, that's usually a good sign.
+
+With a kid, plan for long lunches and siesta downtime, Romans do it too and it makes the heat and crowds much easier to handle.
+```
 
 **Facts usados:** ninguno — nada que verificar, y nada que citar como dato nuestro.
 
@@ -58,7 +96,7 @@ If you want a day outside the city, Ostia Antica is manageable with a kid and mu
 ### Early morning trip to FCO
 
 - **Hilo:** https://www.reddit.com/r/rome/comments/1vxp8si/early_morning_trip_to_fco/
-- **Sitio:** — (sin corpus) · **Subreddit:** r/rome · **Antigüedad:** 12h · **Comentarios:** n/d (RSS) · **Score:** 3
+- **Sitio:** — (sin corpus) · **Subreddit:** r/rome · **Antigüedad:** 18h · **Comentarios:** n/d (RSS) · **Score:** 2
 - **Topics:** —
 - **Solo karma:** no tenemos material propio sobre esto. El borrador se escribió como viajero común, sin una sola cifra nuestra. Suma karma igual, que es para lo que existe esta etapa.
 
@@ -66,7 +104,7 @@ If you want a day outside the city, Ostia Antica is manageable with a kid and mu
 **Borrador:**
 
 ```
-Palocco is out past Ostia, so public transport that early isn't really going to work for you, buses won't be running yet and you'd be relying on stuff that hasn't started for the day. Honestly for a pre-dawn flight your best bet is booking a private transfer or a taxi in advance. Ask your accommodation if they can call a local taxi service for you the night before and confirm a pickup time, a lot of places out that way are used to arranging this for guests with early flights. A private transfer booked online works too and gives you a fixed price so no surprises. Don't rely on hailing something on the street at that hour, it's a coastal area and cabs won't be cruising around like they do in the centro.
+Palocco is a bit out from the city so public transport that early is going to be dicey, buses won't be running yet at that hour. Honestly your best bet is a taxi or pre-booking a private transfer the night before, that way you've got a fixed pickup time and don't have to worry about anything showing up. Ask your accommodation if they have a trusted driver they use, a lot of B&Bs and rentals in that area have a go-to guy for airport runs. Just make sure whoever you book confirms pickup time in writing and give yourself a bit of buffer since that road out to the airport can be unpredictable even with no traffic.
 ```
 
 **Facts usados:** ninguno — nada que verificar, y nada que citar como dato nuestro.
@@ -76,52 +114,6 @@ Palocco is out past Ostia, so public transport that early isn't really going to 
 ### 7-8 weeks pregnant in Rome and from Australia - private scan?
 
 - **Hilo:** https://www.reddit.com/r/rome/comments/1vxm98k/78_weeks_pregnant_in_rome_and_from_australia/
-- **Sitio:** — (sin corpus) · **Subreddit:** r/rome · **Antigüedad:** 15h · **Comentarios:** n/d (RSS) · **Score:** 2
-- **Topics:** —
-- **Solo karma:** no tenemos material propio sobre esto. El borrador se escribió como viajero común, sin una sola cifra nuestra. Suma karma igual, que es para lo que existe esta etapa.
-
-
-**Borrador:**
-
-```
-Congrats, and don't stress too much about the timing, plenty of people travel early on without issue.
-
-Rome has private diagnostic clinics that do obstetric ultrasounds for anyone, you don't need to be a resident or have an Italian doctor's referral for a paid private scan, it's a normal thing locals do too when they want a faster or more convenient appointment outside the public system. Look for a "centro diagnostico" or "poliambulatorio" with a gynaecology/ostetricia ultrasound service, the bigger ones near the centre tend to have English-speaking staff since they deal with tourists and expats regularly.
-
-Ring ahead once you land or even now to ask about availability and confirm they do dating scans, bring your pregnancy details/dates and any Medicare travel insurance info. Cost will be out of pocket but generally reasonable compared to what you'd expect. Your hotel concierge can also help translate or book if needed.
-```
-
-**Facts usados:** ninguno — nada que verificar, y nada que citar como dato nuestro.
-
----
-
-### Amalfi coast recommandations
-
-- **Hilo:** https://www.reddit.com/r/travel/comments/1vxbbu9/amalfi_coast_recommandations/
-- **Sitio:** — (sin corpus) · **Subreddit:** r/travel · **Antigüedad:** 22h · **Comentarios:** n/d (RSS) · **Score:** 1
-- **Topics:** —
-- **Solo karma:** no tenemos material propio sobre esto. El borrador se escribió como viajero común, sin una sola cifra nuestra. Suma karma igual, que es para lo que existe esta etapa.
-
-
-**Borrador:**
-
-```
-Since you already have the big names covered, look at Procida instead of piling more time onto Capri, it's got that same colorful fishing village look without the crowds and makes for a nice slow day or overnight. On the Amalfi side, Cetara is a small anchovy-fishing town most people skip driving through on the way to Amalfi or Ravello, worth stopping for lunch and a wander. For hiking beyond Path of the Gods, the trails around Agerola or up toward the ridges above Positano get way less foot traffic and have great views.
-
-For sandy beaches specifically, most of Amalfi is pebbly or rocky, so if that matters look toward Maiori or the coast near Paestum, which also has some genuinely underrated Greek temple ruins that get a fraction of Pompeii's visitors.
-
-Ischia's thermal gardens are worth a full lazy day, and the castle in Ischia Ponte is a nice quiet wander too. With two weeks you've got room to slow down rather than add more stops.
-```
-
-> ⚠️ Validación: largo fuera de rango (168 palabras)
-
-**Facts usados:** ninguno — nada que verificar, y nada que citar como dato nuestro.
-
----
-
-### Best place in Rome for spaghetti? 🍝
-
-- **Hilo:** https://www.reddit.com/r/rome/comments/1vxe1hc/best_place_in_rome_for_spaghetti/
 - **Sitio:** — (sin corpus) · **Subreddit:** r/rome · **Antigüedad:** 20h · **Comentarios:** n/d (RSS) · **Score:** 1
 - **Topics:** —
 - **Solo karma:** no tenemos material propio sobre esto. El borrador se escribió como viajero común, sin una sola cifra nuestra. Suma karma igual, que es para lo que existe esta etapa.
@@ -130,9 +122,9 @@ Ischia's thermal gardens are worth a full lazy day, and the castle in Ischia Pon
 **Borrador:**
 
 ```
-No need to apologize, honestly the pasta naming thing confuses everyone at first. For classic Roman dishes, go for cacio e pepe, carbonara, amatriciana, and gricia rather than asking specifically for spaghetti, since some of those are traditionally made with rigatoni or tonnarelli instead.
+Congrats on the pregnancy, and don't stress too much, plenty of people travel in early pregnancy without issue.
 
-Near Navona you're in good shape since that whole area is packed with solid trattorias. Skip anywhere with a guy outside trying to wave you in with a laminated photo menu, that's usually a sign it's aimed at tourists and cutting corners. Look for places with a short handwritten menu that changes daily, that's usually the real deal. Also don't be afraid to wander a few minutes past the piazza itself, prices drop and quality often goes up once you're off the main square.
+To answer your actual question, yes this is very doable in Rome. Private ultrasound clinics are common there and used to seeing all sorts of patients, including tourists. Look for a "centro diagnostico" or private radiology/gynecology clinic rather than trying to go through the public hospital system, which is really set up for residents and emergencies. Places near the centre that cater to a broader clientele are used to English speakers and walk-in bookings, so ringing a few ahead and asking specifically for a "ecografia ostetrica" (obstetric ultrasound) with an English-speaking doctor should get you sorted. Bring your passport and any pregnancy confirmation you already have. Your hotel concierge can also help translate and book, that's honestly one of the easiest ways to sort it once you land.
 ```
 
 **Facts usados:** ninguno — nada que verificar, y nada que citar como dato nuestro.
