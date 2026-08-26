@@ -123,6 +123,38 @@ if (ES_REDDIT) {
   ok.push(`firma correcta: "${firma}"`);
 }
 
+// ------------------------------------------------------- negacion + correccion
+// "No es X, es Y". Es la construccion que mas delata un texto generado, y era mi
+// motor principal de redaccion sin darme cuenta: el 26 ago 2026 Mario encontro la
+// misma figura en TODAS las respuestas del dia — "that is not a verdict on the
+// ceiling", "treat it as two sites, not three", "settled by temperature, not by
+// preference", "neither the Sistine nor the dome", "plan around that room, not
+// around the museums". Seis veces en cuatro textos, bajo la misma firma.
+//
+// Es peor que un tic de estilo: repetida en toda una cuenta es huella de autor, y
+// es exactamente lo que un clasificador pesa.
+//
+// OJO con los falsos positivos: una COMPARACION no es esto. "3.81 against 4.09"
+// y "45 minutes against the 15 to 20" son legitimos y son el corazon de la voz.
+// Lo que se caza es la negacion seguida de correccion.
+const NEGACION_RE = [
+  /\bis not (?:a|an|the|about|really)\b/gi,
+  /\bit is not\b/gi,
+  /\bnone of (?:which|that|this) is\b/gi,
+  /\bneither\b[^.]{0,60}\bnor\b/gi,
+  /,\s*not\s+(?:a|an|the|by|around|because|from|to)\b/gi,
+  /\brather than\b/gi,
+  /\bnot\s+\w+,\s+(?:but|it is|it's)\b/gi,
+];
+const negaciones = NEGACION_RE.reduce((n, re) => n + ((cuerpo.match(re) || []).length), 0);
+if (negaciones >= 3) {
+  fallas.push(`${negaciones} construcciones "no es X, es Y" — es la huella de autor mas facil de detectar, reescribir dejando que el dato hable solo`);
+} else if (negaciones === 2) {
+  avisos.push('2 construcciones "no es X, es Y" en el mismo texto: sacar una');
+} else {
+  ok.push('sin abuso de "no es X, es Y"');
+}
+
 // -------------------------------------------------------------- mencion de marca
 // Regla de la fase attribution, desde el 26 ago 2026: como MUCHO una mencion por
 // comentario, y solo pegada a una medicion propia — un promedio de rating, un
