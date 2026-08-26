@@ -19,8 +19,15 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { contraPublicados } from './lib/fingerprint.mjs';
 import { cargar as cargarPublicados } from './publicado.mjs';
+import { leerEnFrio } from './lib/lectura-ciega.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+// El .env hace falta desde que existe la lectura ciega, que llama al modelo.
+for (const l of fs.readFileSync(path.join(ROOT, '.env'), 'utf8').split(/\r?\n/)) {
+  const m = l.match(/^([A-Z0-9_]+)=(.*)$/);
+  if (m && !(m[1] in process.env)) process.env[m[1]] = m[2].trim().replace(/^"(.*)"$/, '$1');
+}
+
 const args = process.argv.slice(2);
 const archivo = args.find((a) => !a.startsWith('--'));
 const SITE = args.includes('--site') ? args[args.indexOf('--site') + 1] : null;
@@ -30,6 +37,9 @@ const SITE = args.includes('--site') ? args[args.indexOf('--site') + 1] : null;
 // vez de 400-700. Todo lo demas — muletillas, presencia, superlativos, OTAs,
 // cifras del corpus — es identico, porque es la persona y no el formato.
 const RED = args.includes('--red') ? args[args.indexOf('--red') + 1] : 'quora';
+// --pregunta dispara la lectura ciega: un pase que lee el borrador sin saber lo
+// que quiso decir quien lo escribio. Es lo unico que caza las fallas de juicio.
+const PREGUNTA = args.includes('--pregunta') ? args[args.indexOf('--pregunta') + 1] : null;
 const ES_REDDIT = RED === 'reddit';
 
 if (!archivo) {
@@ -299,5 +309,34 @@ if (fallas.length) {
   console.log('Limpio en todo lo que se puede verificar contando.');
 }
 console.log('');
-console.log('Lo que esto NO puede juzgar y hay que leer: si la apertura se sostiene');
-console.log('sola, si nombra la idea equivocada de quien pregunta, y si el ritmo respira.');
+if (!PREGUNTA) {
+  console.log('Falta lo que no se cuenta: si contesta lo que preguntaron y si las cifras');
+  console.log('se entienden. Para eso, agregar --pregunta "<la pregunta del post>".');
+}
+
+// ======================================================================
+// LECTURA CIEGA
+//
+// Todo lo de arriba se comprueba contando. Esto no: si el texto contesta lo que
+// preguntaron, si las cifras se entienden sin conocer al autor, y si el hilo va
+// derecho. Son las tres fallas del 26 ago 2026, las tres entregadas para
+// publicar, las tres encontradas por Mario y no por el verificador.
+//
+// Va al final y solo con --pregunta, porque cuesta una llamada al modelo.
+// ======================================================================
+if (PREGUNTA) {
+  console.log('Leyendo en frio, sin contexto del autor...\n');
+  try {
+    const r = await leerEnFrio({ pregunta: PREGUNTA, texto: cuerpo });
+    if (!r.contesta) console.log(`  FALLA no contesta lo que preguntaron: ${r.que_falta}`);
+    else console.log('  OK    contesta lo que preguntaron');
+    if (r.cifras_sin_contexto.length) console.log(`  FALLA cifras que el lector no puede interpretar: ${r.cifras_sin_contexto.join(' · ')}`);
+    else console.log('  OK    las cifras se entienden sin conocer al autor');
+    if (r.hilo_roto) console.log(`  ojo   el hilo se corta: ${r.hilo_roto}`);
+    else console.log('  OK    el argumento va derecho');
+    console.log('');
+    console.log(r.veredicto === 'publicable' ? 'Un lector sin contexto lo sigue: PUBLICABLE.' : 'Un lector sin contexto se pierde: CORREGIR.');
+  } catch (e) {
+    console.log(`  (la lectura ciega fallo: ${e.message.slice(0, 90)})`);
+  }
+}
