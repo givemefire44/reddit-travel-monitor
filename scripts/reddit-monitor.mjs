@@ -674,6 +674,7 @@ function scoreCandidates(posts, subredditCfg, cutoffUtc, veredictos = new Map())
       title: post.title,
       url: `https://www.reddit.com${post.permalink}`,
       selftext: post.selftext,
+      porque: post._porque || null,
       numComments: post.num_comments,
       ageHours,
       topics,
@@ -973,7 +974,31 @@ function renderCandidate(c, facts, draft, blocked) {
   } else if (c.karma) {
     lines.push(`- **Modo karma:** el post no menciona nuestros destinos; entro por relevancia Roma/Italia y porque hay ${facts.length} facts que lo cubren. Responder como viajero, sin marca.`);
   }
+  if (c.porque) lines.push(`- **Por qué sirve:** ${c.porque}`);
   lines.push('');
+
+  // EL CUERPO DEL POST, COMPLETO.
+  //
+  // Faltaba, y fue la causa raiz del peor dia del sistema. El 26 ago 2026 el
+  // reporte traia solo el titulo — "sanity check my 14 night france + italy
+  // itinerary" — y con eso se escribio un comentario. El post real listaba CINCO
+  // preocupaciones numeradas, decia que todo estaba reservado y pagado, y pedia
+  // ademas restaurantes. El comentario contesto media pregunta, recomendo mover
+  // algo que no se podia mover, e ignoro lo que mas le preocupaba al que
+  // pregunto. Seis correcciones despues salio uno usable.
+  //
+  // No se puede contestar lo que no se leyo, y nadie va a abrir el hilo en el
+  // navegador para leerlo. Si el reporte no lo trae, no se lee.
+  if (c.selftext && c.selftext.trim()) {
+    lines.push('**Lo que preguntó, textual:**');
+    lines.push('');
+    lines.push('> ' + c.selftext.trim().slice(0, 2000).replace(/\n+/g, '\n> '));
+    lines.push('');
+  } else {
+    lines.push('_El post no tiene cuerpo: solo el título._');
+    lines.push('');
+  }
+
   if (blocked) lines.push('**[BLOQUEADO POR KARMA — guardar para etapa B]**');
   lines.push('');
   lines.push('**Borrador:**');
