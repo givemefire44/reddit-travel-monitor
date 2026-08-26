@@ -42,7 +42,10 @@ const CASOS = [
   ['Pompeii on All Saints Day?', 'Will it be open on Nov 1 and how crowded', true],
   ['How to purchase advance Pantheon tickets?', 'Pantheon now charges, how to book', false],
   ['Aggravated robbery in Trastevere', 'Warning about a mugging last night', false],
-  ['Best coffee Trastevere', 'Where to get good espresso in Trastevere', true],
+  // Corregido el 26 ago: no tenemos data de cafeterias, mi 'esperado' estaba mal.
+  ['Best coffee Trastevere', 'Where to get good espresso in Trastevere', false],
+  // El caso que motivo el campo 'pregunta'.
+  ['Whats the typical price of an all you can eat buffet for pizza and pasta in a non-touristic area?', 'Looking for all you can eat buffet prices away from the tourist areas', false],
 ];
 
 const posts = CASOS.map(([t, b]) => ({ titulo: t, cuerpo: b }));
@@ -57,7 +60,8 @@ for (let i = 0; i < CASOS.length; i++) {
   const bien = r.contestable === esperado;
   if (bien) ok += 1; else fallos.push({ titulo, esperado, dio: r });
   console.log(`${bien ? ' OK ' : 'MAL '} ${r.contestable ? 'SI ' : 'no '} ${(r.sitio || '-').padEnd(11)} ${titulo.slice(0, 62)}`);
-  console.log(`        ${r.porque}`);
+  console.log(`        preguntan: ${r.pregunta}`);
+  console.log(`        cubrimos:  ${r.porque}`);
 }
 console.log('');
 console.log(`${ok}/${CASOS.length} correctos`);

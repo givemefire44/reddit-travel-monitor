@@ -41,12 +41,15 @@ const MODEL = process.env.RELEVANCIA_MODEL || 'claude-haiku-4-5-20251001';
 const SCHEMA = {
   type: 'object',
   properties: {
+    // Que preguntan, ANTES de decidir si lo cubrimos. Van separados a proposito:
+    // ver el bloque "pregunta" en el prompt.
+    pregunta: { type: 'string' },
     sitio: { type: ['string', 'null'] },
     contestable: { type: 'boolean' },
     porque: { type: 'string' },
     temas: { type: 'array', items: { type: 'string' } },
   },
-  required: ['sitio', 'contestable', 'porque', 'temas'],
+  required: ['pregunta', 'sitio', 'contestable', 'porque', 'temas'],
   additionalProperties: false,
 };
 
@@ -63,7 +66,13 @@ Say false for: transport to and from airports, trains between cities, accommodat
 
 Be strict. A wrong "true" costs more than a missed "false": it produces an answer written from nothing, published under a real person's name.
 
-"porque": one short sentence, in Spanish, saying what the post asks and whether the material covers it. This line is read by a human deciding what to answer, so make it concrete — name the thing being asked about, not a category.
+"pregunta": what the person is ACTUALLY asking, in one short line, in Spanish. Write this first, before deciding anything. State the specific thing they want to know, in their terms, not the general subject area. "Cuanto sale un buffet libre de pizza y pasta" — not "precios de comida en Roma".
+
+This field exists because of a real failure on 2026-08-26. Someone asked what an all-you-can-eat pizza and pasta buffet typically costs. The material covers à la carte trattoria pricing and has nothing on buffets, but the post was accepted because it looked like a Rome food-pricing question, and the answer written for it talked about pasta plates and deli counters. It did not answer what was asked.
+
+So: the material has to cover the specific ask in "pregunta", not the topic it belongs to. If someone asks about a format, a place, or a product we have no data on, say false even when the general subject is squarely ours.
+
+"porque": one short sentence, in Spanish, saying whether the material covers that specific ask, and which part of it does. Concrete — name the thing, not a category. This is the line a human reads to decide what to answer.
 
 "temas": 1-4 short tags for what the post is about, free-form, lowercase.`;
 }
@@ -79,7 +88,7 @@ export async function evaluarPost({ titulo, cuerpo }, sitios) {
     messages: [{ role: 'user', content: texto }],
   });
   const use = res.content.find((c) => c.type === 'tool_use');
-  if (!use) return { sitio: null, contestable: false, porque: 'sin respuesta del modelo', temas: [] };
+  if (!use) return { pregunta: '', sitio: null, contestable: false, porque: 'sin respuesta del modelo', temas: [] };
   const out = use.input;
   // El modelo puede decir contestable con un sitio que no existe. Se valida.
   if (out.sitio && !sitios.some((s) => s.key === out.sitio)) {
@@ -101,7 +110,7 @@ export async function evaluarLote(posts, sitios, concurrencia = 6) {
       } catch (e) {
         // Un fallo de red no puede tumbar la corrida entera: ese post queda
         // fuera con el motivo a la vista, y los demas siguen.
-        out[idx] = { sitio: null, contestable: false, porque: `error: ${e.message.slice(0, 80)}`, temas: [] };
+        out[idx] = { pregunta: '', sitio: null, contestable: false, porque: `error: ${e.message.slice(0, 80)}`, temas: [] };
       }
     }
   }
