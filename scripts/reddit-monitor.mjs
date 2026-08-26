@@ -44,6 +44,21 @@ const SITE_VOICE = {
     // de cualquier borrador legitimo, no una mencion de marca
     brandRe: /trasteverefoodtour/gi,
   },
+  // Pompeya y Milan entraron como sitios el 25 ago 2026 y su voz quedo sin
+  // cargar. En warmup no se notaba, porque la marca no se menciona nunca; al
+  // pasar a attribution, SITE_VOICE['pompeii'] undefined rompe el prompt en la
+  // primera pregunta de Pompeya que aparezca — y aparecen, el juez encontro
+  // cuatro en r/ItalyTravel en diez dias.
+  pompeii: {
+    subject: 'Pompeii and Herculaneum, near Naples',
+    brand: 'PompeiiGuideTours',
+    brandRe: /pompeii\s?guide\s?tours/gi,
+  },
+  milan: {
+    subject: "Leonardo's Last Supper and visiting Milan",
+    brand: 'MilanLastSupper',
+    brandRe: /milan\s?last\s?supper/gi,
+  },
   // Candidatos sin material del corpus: no hay sitio ni marca porque se contesta
   // como viajero comun. Nunca llevan mencion, ni siquiera en fase attribution:
   // la marca solo acompana medicion propia, y aca no hay ninguna.

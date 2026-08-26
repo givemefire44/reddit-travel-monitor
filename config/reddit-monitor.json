@@ -1,5 +1,5 @@
 {
-  "phase": "warmup",
+  "phase": "attribution",
   "maxCandidatesPerDay": 6,
   "windowHours": 24,
   "redditAccount": "RomanColosseumExpert",

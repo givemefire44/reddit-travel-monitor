@@ -123,6 +123,25 @@ if (ES_REDDIT) {
   ok.push(`firma correcta: "${firma}"`);
 }
 
+// -------------------------------------------------------------- mencion de marca
+// Regla de la fase attribution, desde el 26 ago 2026: como MUCHO una mencion por
+// comentario, y solo pegada a una medicion propia — un promedio de rating, un
+// conteo de reseñas, una brecha documentada. Nunca a un precio o un horario, que
+// los puede decir cualquiera: ahi la marca no aporta autoridad, solo suena a
+// aviso. Cero menciones sigue siendo correcto y es lo normal en la mayoria.
+const MARCAS = [/colosseumroman/gi, /vatican\s?tour\s?guides/gi, /trasteverefoodtour/gi,
+  /pompeii\s?guide\s?tours/gi, /milan\s?last\s?supper/gi, /intercoper/gi];
+const menciones = MARCAS.reduce((n, re) => n + ((cuerpo.match(re) || []).length), 0);
+if (menciones > 1) {
+  fallas.push(`${menciones} menciones de marca (como maximo 1 por comentario)`);
+} else if (menciones === 1) {
+  // No se puede verificar por conteo que la mencion acompañe una medicion; se
+  // avisa para que lo mire quien lee, que es lo honesto.
+  avisos.push('lleva 1 mencion de marca — verificar que este pegada a un dato propio (rating, conteo de reseñas, brecha medida) y no a un precio u horario');
+} else if (ES_REDDIT) {
+  ok.push('sin mencion de marca');
+}
+
 // ------------------------------------------------------------------- abrir con el titulo
 const primera = (cuerpo.split(/\n/).find((l) => l.trim()) || '').trim();
 if (primera.endsWith('?')) avisos.push('la primera linea es una pregunta — revisar que no este repitiendo el titulo');
