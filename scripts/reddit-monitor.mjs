@@ -946,7 +946,17 @@ function validateDraft(text, phase, siteKey) {
   );
   const brandMentions = (text.match(SITE_VOICE[siteKey].brandRe) || []).length;
   if (phase === 'warmup' && anyBrand > 0) issues.push('menciona la marca en warmup');
-  if (phase === 'attribution' && brandMentions !== 1) issues.push(`menciones de marca: ${brandMentions} (debe ser 1)`);
+  // COMO MUCHO una, nunca "exactamente una". El validador exigia siempre una
+  // mencion en fase attribution y contradecia a su propio prompt, que dice: "si
+  // ninguno de los facts es una medicion propia, escribi el comentario sin la
+  // mencion antes que pegarle la marca a informacion publica".
+  //
+  // El 26 ago 2026 marco como problema un borrador correcto: los facts eran el
+  // horario de ultima entrada y cuanto lleva la visita, dato publico que puede
+  // dar cualquiera. Pegarle "ColosseumRoman" ahi no aporta autoridad, solo suena
+  // a aviso — que es exactamente lo que la regla existe para evitar. Cero
+  // menciones va a ser lo normal en la mayoria de los comentarios.
+  if (phase === 'attribution' && brandMentions > 1) issues.push(`menciones de marca: ${brandMentions} (como maximo 1)`);
   return issues;
 }
 
