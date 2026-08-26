@@ -1,0 +1,22 @@
+[
+  {
+    "key": "colosseum",
+    "descripcion": "Visiting the Colosseum, Roman Forum and Palatine Hill: which ticket to buy, prices, release windows, queues, the Arena Floor and the Underground (hypogeum), the Attic, guided tours, best time of day and year, accessibility, and how the sites fit together in a day."
+  },
+  {
+    "key": "vatican",
+    "descripcion": "Visiting the Vatican Museums, the Sistine Chapel and St Peter's Basilica: tickets and prices, booking, queues and security, dress code, the dome climb, guided versus audio guide, after-hours and early-entry tours, accessibility, and how to sequence the three."
+  },
+  {
+    "key": "trastevere",
+    "descripcion": "Eating in Rome and Rome food tours: where to eat and what things cost, tourist-trap versus neighbourhood pricing, Roman dishes, coffee, Trastevere, Testaccio, the Jewish Ghetto, food tour formats and value."
+  },
+  {
+    "key": "pompeii",
+    "descripcion": "Visiting Pompeii and Herculaneum: tickets, opening times, guided tours, how long it takes, what to see, getting there from Naples or Sorrento, heat and shade, accessibility."
+  },
+  {
+    "key": "milan",
+    "descripcion": "Seeing Leonardo's Last Supper in Milan: booking windows and how far ahead tickets release, prices, the timed slots, and visiting Milan's centre (Duomo, Sforza Castle)."
+  }
+]

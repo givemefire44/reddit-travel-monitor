@@ -11,11 +11,13 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Anthropic from '@anthropic-ai/sdk';
+import { evaluarLote } from './lib/relevancia.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 loadEnv(path.join(ROOT, '.env'));
 
 const CONFIG = JSON.parse(fs.readFileSync(path.join(ROOT, 'config', 'reddit-monitor.json'), 'utf8'));
+const SITIOS_RELEVANCIA = JSON.parse(fs.readFileSync(path.join(ROOT, 'config', 'sitios-relevancia.json'), 'utf8'));
 // Un facts-file por sitio (config.sites): el borrador solo puede citar cifras
 // del sitio cuyas keywords matchearon el post.
 const FACTS_BY_SITE = Object.fromEntries(
@@ -547,7 +549,39 @@ function bestSiteByFacts(text) {
 // ---------- scoring ----------
 // Devuelve tambien el embudo de filtrado (conteo por etapa) para diagnostico:
 // fetched -> en ventana (edad + no sticky/nsfw) -> keyword -> topic -> pregunta genuina.
-function scoreCandidates(posts, subredditCfg, cutoffUtc) {
+// ============================================================================
+// JUEZ DE RELEVANCIA
+//
+// Reemplaza al filtro de listas de palabras. El filtro viejo decidia si un post
+// nos servia buscando frases escritas a mano — 31 keywords para Trastevere, 9
+// para el Coliseo — y eso obliga a adivinar de antemano como escribe la gente.
+//
+// Medido el 25 ago 2026 sobre los 100 posts reales de r/rome: el juez encuentra
+// 24 preguntas contestables (20 de comida, 3 del Coliseo, 1 de Pompeya) donde
+// las listas venian devolviendo casi cero tres dias seguidos. No era que no
+// hubiera preguntas: el filtro no las encontraba. Un post que pedia "food
+// recommendations" no matcheaba "where to eat in rome", y el arreglo de ese dia
+// fue agregar doce frases mas a la lista — el mismo parche por decima vez.
+//
+// Se le pasa el post entero y una descripcion en prosa de que cubre cada sitio.
+// Devuelve si se puede contestar, con cual, y una linea explicando por que, que
+// es lo que Mario lee para decidir. Las listas nunca pudieron explicar nada.
+// ============================================================================
+async function juzgarPosts(posts, cutoffUtc) {
+  const enVentana = posts.filter((p) => p.created_utc >= cutoffUtc && !p.stickied && !p.over_18);
+  const mapa = new Map();
+  if (!enVentana.length) return mapa;
+  const juicios = await evaluarLote(
+    enVentana.map((p) => ({ titulo: p.title, cuerpo: p.selftext })),
+    SITIOS_RELEVANCIA,
+  );
+  enVentana.forEach((p, i) => mapa.set(p.id ?? p.url ?? p.title, juicios[i]));
+  return mapa;
+}
+
+const claveDe = (post) => post.id ?? post.url ?? post.title;
+
+function scoreCandidates(posts, subredditCfg, cutoffUtc, veredictos = new Map()) {
   const funnel = { fetched: posts.length, inWindow: 0, keywordPass: 0, topicPass: 0, questionPass: 0 };
   const out = [];
   const karmaMode = KARMA_MODE && subredditCfg.status === 'active';
@@ -564,13 +598,26 @@ function scoreCandidates(posts, subredditCfg, cutoffUtc) {
       // donde Roma aparece de pasada (Sarajevo/Mostar/Dubrovnik entro por un "rome"
       // en la ultima linea, Venecia/Bolonia por un "rome dec 2"). Quien pregunta
       // sobre Roma lo dice en el titulo. Con titulo solo: 7/7 en los casos reales.
-      const titleHay = post.title.toLowerCase();
-      if (!KARMA_KEYWORDS.some((kw) => hasKeyword(titleHay, kw))) continue;
+      // El juez decide, no la lista. Un post sin veredicto contestable no entra:
+      // antes caia igual al modo karma y producia borradores sobre taxis al
+      // aeropuerto, disquerias y una ecografia privada, todos firmados por una
+      // cuenta que se llama RomanColosseumExpert. Eso gasta la credencial sin
+      // devolver nada.
+      const v = veredictos.get(claveDe(post));
+      if (!v || !v.contestable) continue;
       funnel.keywordPass += 1;
-      const best = bestSiteByFacts(`${post.title} ${post.selftext}`);
-      if (best) {
+      post._porque = v.porque;
+      const best = bestSiteByFacts(`${post.title} ${post.selftext}`) || (v.sitio ? { key: v.sitio, topics: matchTopics(`${post.title} ${post.selftext}`, v.sitio) } : null);
+      if (best && best.topics && best.topics.length) {
         siteKey = best.key;
         topics = best.topics;
+      } else if (v.sitio) {
+        // El juez ve material y la taxonomia de topics no lo mapea. Pasa con
+        // preguntas de comida, donde el corpus responde de sobra pero los topics
+        // no matchean la redaccion. Entra con el sitio del juez y sin topics:
+        // pickFacts se arregla con el texto del post.
+        siteKey = v.sitio;
+        topics = [];
       } else {
         // Sin material propio, pero sigue siendo una pregunta de Roma/Italia que
         // un viajero puede contestar. El cron existe para juntar karma, asi que
@@ -935,7 +982,11 @@ async function main() {
   for (const sub of CONFIG.subreddits) {
     try {
       const posts = await fetchNewPosts(sub.name);
-      const { candidates: cands, funnel } = scoreCandidates(posts, sub, cutoffUtc);
+      // El juez de relevancia corre ANTES de puntuar, sobre los posts de la
+      // ventana. Una llamada por post con un modelo chico. Ver lib/relevancia.mjs
+      // para por que reemplaza a las listas de keywords.
+      const veredictos = await juzgarPosts(posts, cutoffUtc);
+      const { candidates: cands, funnel } = scoreCandidates(posts, sub, cutoffUtc, veredictos);
       funnelRows.push({
         sub: sub.name, status: sub.status, ok: true, funnel,
         scores: cands.map((c) => c.score).sort((a, b) => b - a),
