@@ -260,7 +260,10 @@ const publicados = cargarPublicados();
 if (!publicados.length) {
   avisos.push('el almacen de publicados esta vacio — no se comparo contra textos anteriores');
 } else {
-  const { verbatim, muletillas } = contraPublicados(cuerpo, publicados);
+  const { verbatim, muletillas, formas } = contraPublicados(cuerpo, publicados);
+  if (formas.length) {
+    avisos.push(`misma arquitectura que ${formas.length} publicada(s) (${formas[0]}): cambiar la forma, no solo las palabras`);
+  }
   for (const v of verbatim) fallas.push(`repite texto casi literal de "${v.titulo}" (${v.comunes} tramos)`);
 
   // Los umbrales van bajos A PROPOSITO. Una vez filtradas las parejas de

@@ -81,8 +81,37 @@ export function aperturas(texto) {
   return [...out];
 }
 
+// La SILUETA: cuantos parrafos y de que largo. Existe porque sacar las muletillas
+// no alcanza — el 26 ago 2026 Mario señalo que todas las respuestas tenian la
+// misma arquitectura (apertura, evidencia, reformulacion, consejo, nota final:
+// cinco parrafos parejos), y esa forma repetida en toda una cuenta es huella
+// igual que una frase repetida. Una pregunta de si/no se contesta en dos
+// parrafos; una de planificacion pide ocho. La forma la decide la pregunta.
+export function silueta(texto) {
+  return texto.split(/\n\s*\n/)
+    .map((p) => p.trim())
+    // La firma queda afuera: es un bloque fijo de 7 palabras al final de toda
+    // respuesta de Quora, asi que si entra, todas comparten el mismo ultimo
+    // tramo y la comparacion de formas se vuelve ciega justo ahi.
+    .filter((p) => p && !/^Mario Dalo\b/.test(p))
+    .map((p) => p.split(/\s+/).filter(Boolean).length);
+}
+
+// Dos siluetas son "la misma forma" si tienen igual cantidad de parrafos y los
+// largos siguen el mismo patron. No se comparan las palabras exactas: 52/65/24/45
+// y 55/61/27/49 son la misma arquitectura escrita con otras palabras, que es
+// justo lo que hay que detectar.
+export function mismaForma(a, b) {
+  if (!a || !b || a.length !== b.length || a.length < 3) return false;
+  const perfil = (s) => {
+    const media = s.reduce((x, y) => x + y, 0) / s.length;
+    return s.map((n) => (n < media * 0.7 ? "C" : n > media * 1.3 ? "L" : "M")).join("");
+  };
+  return perfil(a) === perfil(b);
+}
+
 export function huella(texto) {
-  return { shingles: shingles(texto), aperturas: aperturas(texto) };
+  return { shingles: shingles(texto), aperturas: aperturas(texto), silueta: silueta(texto) };
 }
 
 // Compara un borrador contra los textos ya publicados.
@@ -109,5 +138,12 @@ export function contraPublicados(texto, publicados) {
     .map(([frase, donde]) => ({ frase, veces: donde.length, donde }))
     .sort((a, b) => b.veces - a.veces);
 
-  return { verbatim, muletillas };
+  // Misma arquitectura que algo ya publicado. Se mira contra TODO el historial y
+  // no solo contra el ultimo: el problema no es repetir la forma de ayer, es que
+  // toda la cuenta tenga una sola forma.
+  const formas = publicados
+    .filter((p) => mismaForma(mio.silueta, p.silueta))
+    .map((p) => p.titulo || p.url);
+
+  return { verbatim, muletillas, formas };
 }
