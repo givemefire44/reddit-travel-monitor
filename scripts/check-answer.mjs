@@ -208,13 +208,26 @@ if (palabras < min) avisos.push(`${palabras} palabras: corto para ${RED}`);
 else if (palabras > max) avisos.push(`${palabras} palabras: ${RED === 'reddit' ? `arriba del p75 real (58) — la mediana humana es 30` : 'largo, revisar si hay relleno'}`);
 else ok.push(`${palabras} palabras`);
 
-// UN SOLO PARRAFO. De los 80 comentarios de la muestra, los 80 son de un parrafo.
-// No es una tendencia, es el 100%. Un comentario en bloques se lee como articulo
-// publicado, no como alguien contestando desde el telefono.
+// El formato lo decide la PREGUNTA, no una regla fija.
+//
+// Aca hubo dos errores seguidos, y el segundo fue mio corrigiendo el primero. La
+// regla vieja empujaba a tres o cuatro parrafos siempre. La cambie por "un solo
+// parrafo obligatorio" el 27 ago 2026, apoyandome en una medicion que ademas
+// estaba rota: al limpiar el HTML de los comentarios convertia los </p><p> en
+// espacios, o sea que destrui los saltos de parrafo y despues medi lo que quedo.
+//
+// Mario: "hay preguntas que necesitan varios parrafos para ser respondidas con
+// claridad, pero para eso tenes que leer toda la pregunta y entenderla, para
+// luego evaluar que formato es el mejor para cada caso".
+//
+// Cambiar una uniformidad por otra no arregla nada: lo que delata es que todas
+// las respuestas tengan la misma forma, no cual sea esa forma. Por eso aca no hay
+// numero obligatorio — el control de que no se repita la arquitectura lo hace la
+// silueta, contra el historial de lo publicado.
 if (ES_REDDIT) {
   const bloques = cuerpo.split(/\n\s*\n/).filter((p) => p.trim()).length;
-  if (bloques > 1) fallas.push(`${bloques} parrafos: en la muestra real de Reddit el 100% es de UNO solo`);
-  else ok.push('un solo parrafo, como el 100% de la muestra real');
+  if (bloques > 3) avisos.push(`${bloques} parrafos: mucho para un comentario, revisar si la pregunta los pide`);
+  else ok.push(`${bloques} parrafo(s)`);
 }
 
 // ------------------------------------------------------------------------ cifras
