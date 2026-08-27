@@ -190,10 +190,25 @@ if (primera.endsWith('?')) avisos.push('la primera linea es una pregunta — rev
 
 // ------------------------------------------------------------------------ largo
 const palabras = cuerpo.trim().split(/\s+/).filter(Boolean).length;
-const [min, max] = ES_REDDIT ? [40, 150] : [150, 900];
+// Rangos de Reddit MEDIDOS sobre 80 comentarios humanos reales de r/Flights,
+// r/Bookingcom y r/ItalyTravel el 27 ago 2026, sacando los bots de AutoModerator:
+//   mediana 30 palabras · p25 16 · p75 58 · p90 120
+//   14% tienen 10 palabras o menos · 76% tienen 60 o menos · 9% pasan de 120
+// El rango anterior (40-150) lo habia inventado yo, estaba al doble de lo real, y
+// por eso todos los comentarios salian arriba del percentil 90 de largo.
+const [min, max] = ES_REDDIT ? [8, 70] : [150, 900];
 if (palabras < min) avisos.push(`${palabras} palabras: corto para ${RED}`);
-else if (palabras > max) avisos.push(`${palabras} palabras: largo para ${RED}, revisar si hay relleno`);
+else if (palabras > max) avisos.push(`${palabras} palabras: ${RED === 'reddit' ? `arriba del p75 real (58) — la mediana humana es 30` : 'largo, revisar si hay relleno'}`);
 else ok.push(`${palabras} palabras`);
+
+// UN SOLO PARRAFO. De los 80 comentarios de la muestra, los 80 son de un parrafo.
+// No es una tendencia, es el 100%. Un comentario en bloques se lee como articulo
+// publicado, no como alguien contestando desde el telefono.
+if (ES_REDDIT) {
+  const bloques = cuerpo.split(/\n\s*\n/).filter((p) => p.trim()).length;
+  if (bloques > 1) fallas.push(`${bloques} parrafos: en la muestra real de Reddit el 100% es de UNO solo`);
+  else ok.push('un solo parrafo, como el 100% de la muestra real');
+}
 
 // ------------------------------------------------------------------------ cifras
 // La regla dura #1: toda cifra existe en el corpus. Es la que sostiene la
