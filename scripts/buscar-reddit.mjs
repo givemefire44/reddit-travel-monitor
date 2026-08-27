@@ -85,12 +85,20 @@ async function buscar(q) {
   return [];
 }
 
-const soloDominio = process.argv[2];
+// Se filtran las banderas: sin esto, 'node buscar-reddit.mjs --rehacer' tomaba
+// '--rehacer' como nombre de dominio y no corria ninguna consulta.
+const soloDominio = process.argv.slice(2).find((a) => !a.startsWith('--'));
 const dominios = soloDominio ? [soloDominio] : Object.keys(CONSULTAS);
 
 // El ledger de Reddit, para no volver a ofrecer lo ya entregado.
 const LEDGER = path.join(ROOT, 'data', 'reddit-buscados.json');
-const yaVistos = new Set(fs.existsSync(LEDGER) ? JSON.parse(fs.readFileSync(LEDGER, 'utf8')) : []);
+// --rehacer ignora el ledger para esta corrida, sin borrarlo. Hace falta cuando
+// cambian los dominios o las consultas: lo que ayer no servia puede servir hoy,
+// y sin esto un hilo ya evaluado queda enterrado para siempre.
+const REHACER = process.argv.includes('--rehacer');
+const guardados = fs.existsSync(LEDGER) ? JSON.parse(fs.readFileSync(LEDGER, 'utf8')) : [];
+const yaVistos = new Set(REHACER ? [] : guardados);
+const historico = new Set(guardados);
 
 console.log(`Buscando en Reddit via Brave · dominios: ${dominios.join(', ')}\n`);
 
@@ -122,20 +130,116 @@ for (let i = 0; i < candidatos.length; i++) {
   if (juicios[i].contestable) sirven.push({ ...candidatos[i], ...juicios[i] });
 }
 
+// ---------------------------------------------------------------- FRESCURA
+//
+// La busqueda trae hilos de cualquier fecha, y la fecha cambia PARA QUE SIRVE el
+// comentario. No es un detalle de orden: son dos objetivos distintos.
+//
+//   - Un hilo fresco todavia lo lee gente. Ahi el comentario junta votos, y el
+//     karma es lo que abre los subs cerrados.
+//   - Un hilo viejo ya no lo lee nadie, pero sigue indexado y sigue apareciendo
+//     en Google y en las respuestas de los motores de IA. Ahi el comentario no
+//     da karma pero si citabilidad, que es el objetivo GEO.
+//
+// OJO con los viejos: comentar un hilo de hace dos años es necroposting, y varios
+// subs lo prohiben o lo mal miran. Antes de contestar uno de esos hay que mirar
+// las reglas de ese sub. Por eso van separados y con la advertencia, en vez de
+// mezclados en una sola lista.
+const dias = (iso) => {
+  if (!iso) return null;
+  const t = Date.parse(iso);
+  return Number.isNaN(t) ? null : Math.floor((Date.now() - t) / 86400000);
+};
+for (const c of sirven) c.dias = dias(c.edad);
+
+const frescos = sirven.filter((c) => c.dias != null && c.dias <= 7);
+const recientes = sirven.filter((c) => c.dias != null && c.dias > 7 && c.dias <= 90);
+const viejos = sirven.filter((c) => c.dias == null || c.dias > 90);
+
 const porSub = {};
 for (const c of sirven) porSub[c.sub] = (porSub[c.sub] || 0) + 1;
 
+const linea = (c) => [
+  `  [${c.sitio}] r/${c.sub}${c.dias != null ? ` · hace ${c.dias} dias` : ' · sin fecha'}`,
+  `     ${c.titulo.slice(0, 92)}`,
+  `     preguntan: ${c.pregunta}`,
+  `     ${c.url}`,
+  '',
+].join('\n');
+
 console.log(`CONTESTABLES: ${sirven.length} de ${candidatos.length}\n`);
-for (const c of sirven) {
-  console.log(`  [${c.sitio}] r/${c.sub}${c.edad ? ` · ${c.edad}` : ''}`);
-  console.log(`     ${c.titulo.slice(0, 92)}`);
-  console.log(`     preguntan: ${c.pregunta}`);
-  console.log(`     ${c.url}`);
-  console.log('');
-}
+console.log(`FRESCOS (7 dias o menos) — para karma: ${frescos.length}\n`);
+for (const c of frescos) console.log(linea(c));
+console.log(`RECIENTES (8 a 90 dias) — algo de traccion todavia: ${recientes.length}\n`);
+for (const c of recientes.slice(0, 15)) console.log(linea(c));
+if (recientes.length > 15) console.log(`  ... y ${recientes.length - 15} mas\n`);
+console.log(`VIEJOS (mas de 90 dias) — solo indexacion, y ojo con el necroposting: ${viejos.length}`);
+console.log('');
 console.log(`por subreddit: ${Object.entries(porSub).sort((a, b) => b[1] - a[1]).map(([k, v]) => `r/${k} ${v}`).join(' · ') || '(ninguno)'}`);
+
+// ------------------------------------------------------------------ REPORTE
+const hoy = new Date().toISOString().slice(0, 10);
+const OUT = path.join(ROOT, 'output', 'reddit', `busqueda-${hoy}.md`);
+const bloque = (c) => [
+  `### ${c.titulo}`,
+  '',
+  `- **Hilo:** ${c.url}`,
+  `- **Sub:** r/${c.sub} · **Dominio:** ${c.sitio} · **Antigüedad:** ${c.dias != null ? `${c.dias} días` : 'sin fecha'}`,
+  `- **Preguntan:** ${c.pregunta}`,
+  `- **Por qué sirve:** ${c.porque}`,
+  c.cuerpo ? `- **Extracto:** _${c.cuerpo.slice(0, 400)}_` : '',
+  '',
+].filter(Boolean).join('\n');
+
+const md = [
+  `# Búsqueda en Reddit — ${hoy}`,
+  '',
+  `**${sirven.length} contestables** de ${candidatos.length} hilos evaluados · ${Object.keys(porSub).length} subreddits`,
+  '',
+  '_Esto busca, no espera. Las consultas van a Brave con `site:reddit.com`, así que trae_',
+  '_preguntas de cualquier fecha y de cualquier sub, no solo de los que estén configurados._',
+  '',
+  '---',
+  '',
+  `## Frescos — 7 días o menos (${frescos.length})`,
+  '',
+  '_Son los que dan karma: todavía los lee gente._',
+  '',
+  frescos.length ? frescos.map(bloque).join('\n---\n\n') : '_Ninguno hoy._',
+  '',
+  '---',
+  '',
+  `## Recientes — 8 a 90 días (${recientes.length})`,
+  '',
+  '_Algo de tracción todavía. Menos votos, pero siguen apareciendo en búsquedas._',
+  '',
+  recientes.length ? recientes.map(bloque).join('\n---\n\n') : '_Ninguno._',
+  '',
+  '---',
+  '',
+  `## Viejos — más de 90 días (${viejos.length})`,
+  '',
+  '_No dan karma: nadie los lee ya. Sirven para que el comentario quede indexado y',
+  'los motores de IA lo citen. **Antes de contestar uno, mirar las reglas del sub:**',
+  'varios prohíben o mal miran comentar hilos viejos._',
+  '',
+  viejos.length ? viejos.map(bloque).join('\n---\n\n') : '_Ninguno._',
+  '',
+  '---',
+  '',
+  '## Rutina',
+  '',
+  '1. Pegar este reporte en el chat.',
+  '2. Claude tría cuáles valen y escribe las que sirven.',
+  '3. Pegar en Reddit y avisar.',
+  '',
+].join('\n');
+
+fs.mkdirSync(path.dirname(OUT), { recursive: true });
+fs.writeFileSync(OUT, md, 'utf8');
+console.log(`\nReporte -> ${path.relative(ROOT, OUT)}`);
 
 // Se registra lo BUSCADO, no lo contestado: si ya se evaluo y se descarto, no
 // tiene sentido volver a pagar la evaluacion mañana.
-fs.writeFileSync(LEDGER, JSON.stringify([...yaVistos, ...vistosAhora], null, 0));
-console.log(`\nledger: ${yaVistos.size + vistosAhora.size} hilos ya evaluados`);
+fs.writeFileSync(LEDGER, JSON.stringify([...historico, ...vistosAhora], null, 0));
+console.log(`ledger: ${new Set([...historico, ...vistosAhora]).size} hilos ya evaluados`);
