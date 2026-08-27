@@ -3,7 +3,7 @@
 **Fase:** attribution · **Ventana:** 24h · **Facts:** trastevere 70 · vatican 149 · colosseum 873 · pompeii 118 · milan 84
 **Comment karma u/RomanColosseumExpert:** (no disponible)
 
-⚠️ **1 feed(s) fallaron el fetch (r/ItalyTravelAdvice) — sus posts NO fueron evaluados hoy.** Ver embudo.
+⚠️ **1 feed(s) fallaron el fetch (r/ItalyTravel) — sus posts NO fueron evaluados hoy.** Ver embudo.
 
 ---
 
@@ -11,83 +11,118 @@
 
 | Subreddit | Fetch RSS | En ventana | Keyword | Topic | Pregunta | Scores |
 |---|---|---|---|---|---|---|
-| r/travel (active) | 200 · 100 posts | 47 | 1 | 1 | 1 | 1 |
-| r/solotravel (active) | 200 · 100 posts | 8 | 0 | 0 | 0 | — |
+| r/travel (active) | 200 · 100 posts | 61 | 3 | 3 | 1 | 6 |
+| r/solotravel (active) | 200 · 100 posts | 10 | 0 | 0 | 0 | — |
 | r/Eurotrip (active) | 200 · 58 posts | 0 | 0 | 0 | 0 | — |
 | r/EuropeTravel (active) | 200 · 100 posts | 15 | 0 | 0 | 0 | — |
-| r/TravelNoPics (active) | 200 · 100 posts | 1 | 0 | 0 | 0 | — |
-| r/Italy (active) | 200 · 100 posts | 14 | 0 | 0 | 0 | — |
+| r/TravelNoPics (active) | 200 · 100 posts | 2 | 0 | 0 | 0 | — |
+| r/Italy (active) | 200 · 100 posts | 13 | 0 | 0 | 0 | — |
 | r/askitaly (active) | 200 · 100 posts | 2 | 0 | 0 | 0 | — |
-| r/ItalyTravel (active) | 200 · 100 posts | 8 | 0 | 0 | 0 | — |
+| r/ItalyTravel (active) | ⛔ **ERROR — Cannot convert undefined or null to object** | — | — | — | — | — |
 | r/rome (active) | 200 · 100 posts | 10 | 0 | 0 | 0 | — |
-| r/ItalyTravelAdvice (active) | ⛔ **ERROR — Cannot convert undefined or null to object** | — | — | — | — | — |
-| r/RomeTravel (active) | 200 · 100 posts | 3 | 0 | 0 | 0 | — |
-| r/loveholidays (active) | 200 · 100 posts | 2 | 2 | 2 | 0 | — |
-| r/Bookingcom (active) | 200 · 100 posts | 8 | 6 | 6 | 4 | 6, 5, 3, 2 |
-| r/askhotels (active) | 200 · 100 posts | 4 | 0 | 0 | 0 | — |
+| r/ItalyTravelAdvice (active) | 200 · 100 posts | 7 | 0 | 0 | 0 | — |
+| r/RomeTravel (active) | 200 · 100 posts | 2 | 0 | 0 | 0 | — |
+| r/loveholidays (active) | 200 · 100 posts | 3 | 2 | 2 | 0 | — |
+| r/Bookingcom (active) | 200 · 100 posts | 14 | 9 | 9 | 7 | 6, 6, 5, 3, 3, 2, 1 |
+| r/askhotels (active) | 200 · 100 posts | 5 | 0 | 0 | 0 | — |
 | r/TravelHacks (active) | 200 · 100 posts | 0 | 0 | 0 | 0 | — |
-| r/Flights (active) | 200 · 100 posts | 20 | 4 | 4 | 3 | 6, 3, 1 |
-| r/hotels (active) | 200 · 100 posts | 11 | 2 | 2 | 1 | 2 |
+| r/Flights (active) | 200 · 100 posts | 20 | 4 | 4 | 2 | 3, 2 |
+| r/hotels (active) | 200 · 100 posts | 13 | 2 | 2 | 2 | 1, 1 |
 
 _Etapas en el orden real del filtro: publicado en las últimas 24h y no sticky/nsfw → alguna keyword del sitio → match con la taxonomía de topics → pregunta genuina. No hay umbral de score: todo lo que pasa el embudo es candidato y el corte es el cupo diario (top 6 por estado)._
 
 _El score suma topics + frescura del hilo (≤3h vale 5, ≤6h vale 4, ≤12h vale 2, ≤18h vale 1, más viejo no suma). Un comentario en un hilo de un día no lo lee nadie por bueno que sea: a esa altura ya se cayó de la portada del sub y quien preguntó tiene sus respuestas. Por eso lo fresco gana._
 
-_Cortados hoy por cupo, no por score: r/hotels (score 2) · r/travel (score 1) · r/Flights (score 1)._
+_Cortados hoy por cupo, no por score: r/Bookingcom (score 1) · r/hotels (score 1) · r/hotels (score 1)._
+
+_Crossposts: la misma pregunta aparecio en varios subs. Se conservo la de mayor score y se descarto r/Bookingcom (se quedo r/Bookingcom). Si el sub descartado te conviene mas, usa ese hilo, pero **no contestes en los dos**._
+
+_Ya respondidos por u/RomanColosseumExpert, descartados: "Booking.com cancelled my confirmed reservation b" (r/Bookingcom) · "eDreams price breakdown doesn't match their app'" (r/Flights)._
 
 ---
 
 ## Candidatos (6)
 
-### Booking.com cancelled my confirmed reservation because the host wanted a higher price — what can I do?
+### Condor denied name correction after outbound departure — any chance to save the return flight?
 
-- **Hilo:** https://www.reddit.com/r/Bookingcom/comments/1vzw3cz/bookingcom_cancelled_my_confirmed_reservation/
-- **Sitio:** — (sin corpus) · **Subreddit:** r/Bookingcom · **Antigüedad:** 0h · **Comentarios:** n/d (RSS) · **Score:** 6
+- **Hilo:** https://www.reddit.com/r/travel/comments/1w03dry/condor_denied_name_correction_after_outbound/
+- **Sitio:** — (sin corpus) · **Subreddit:** r/travel · **Antigüedad:** 3h · **Comentarios:** n/d (RSS) · **Score:** 6
 - **Topics:** —
 - **Solo karma:** no tenemos material propio sobre esto. El borrador se escribió como viajero común, sin una sola cifra nuestra. Suma karma igual, que es para lo que existe esta etapa.
-- **Por qué sirve:** Este es un problema concreto de cancelación por parte del operador después de confirmación: cómo funcionan realmente las ventanas de cancelación y reembolso, quién asume la pérdida, qué protección al consumidor cubre esto, y cuándo un operador está obligado a compensar. Es conocimiento comercial directo sobre derechos del comprador frente a plataformas de booking.
+- **Por qué sirve:** Este es un problema operativo concreto sobre políticas de corrección de nombres, vuelos conectados, reembolsos de tramos no utilizados, y escalada con aerolíneas. El material cubre cómo funcionan realmente los reembolsos, las ventanas de cambio, quién absorbe la pérdida, y las tácticas de escalada que un operador de viajes conocería, aunque no hay una respuesta garantizada dada la rigidez de Condor.
 
 **Lo que preguntó, textual:**
 
-> Hi everyone, I had a confirmed Booking.com reservation in Rio de Janeiro for New Year’s (29 December – 4 January). At first, everything was completely normal. I even spoke directly with the host about the apartment and the details of the stay. After that, the host apparently decided they wanted to charge a higher price for those dates. Booking.com then called me from the Netherlands and told me that the host wanted to cancel the reservation because of the price. The reservation has now been cancelled, even though I did not cancel it myself . The problem is that this is New Year’s in Rio, so prices are now much higher and availability is obviously more limited than when I originally booked. I find it pretty frustrating that a confirmed reservation can be cancelled simply because the host later decided they wanted to charge more. Has anyone experienced something similar with Booking.com? What can I do now? Were you able to get Booking to provide equivalent accommodation or cover the difference in price? Any advice or experience with this kind of situation would be really appreciated. Thanks! submitted by /u/AppropriateChoice908
+> Hi everyone, I’m hoping someone with experience with Condor can help. My mother is Mexican and had a round-trip booking from LAX to Frankfurt with a connection in San Francisco. At the airport, she was unable to check in because the surname on the reservation did not exactly match the surname on her passport due to her married surname. We tried to fix it the same day, but the correction could not be completed before departure. She ended up having to buy a completely new ticket to Frankfurt. Now Condor says that because the outbound flight already departed, they cannot make any name correction anymore, even for the return flight, because corrections must be made at least 24 hours before the outbound flight. The issue is not that this is a different passenger. It is the same person, but the married surname in her Mexican passport does not match the surname entered on the booking. My questions are: Is there any realistic way to have the unused return portion reinstated or reissued as an exception? Has anyone successfully escalated a similar case to Condor Customer Relations, ticketing, or a supervisor? If the return flight is completely unusable, can I at least request a refund of the unused taxes and airport fees? Is there any other type of refund, voucher, or travel credit that Condor might provide? My mother did physically show up at the airport and tried to travel; this was not an intentional no-show. Any advice from someone who has dealt with Condor in a similar situation would be greatly appreciated. submitted by /u/Fluffy_Watch9452
 
 
 **Borrador:**
 
 ```
-This happens more than it should, especially around big holiday dates where hosts realize they underpriced. Since you didn't cancel and the host initiated it, push back hard through support and specifically ask them to invoke their "found alternative accommodation" policy, most OTAs have some version of this where if a host cancels on you, they're supposed to help you find a comparable replacement, sometimes covering a price difference if the new place costs more.
+This is a rough one because most airlines (Condor included) treat a missed outbound as a "no-show" and automatically cancel the whole return, name issue or not. Once it's flagged that way, front-line agents genuinely can't override it, so pushing harder with the same channel usually just gets the same answer.
 
-Get everything in writing, don't just rely on phone calls. Reply to any cancellation email and lay out the timeline, then ask explicitly for compensation or rebooking assistance under their guest refund/relocation policy. If the phone agent won't commit to anything concrete, ask to escalate to a supervisor or their customer resolution team.
+Your best shot is writing a formal complaint to Condor's Customer Relations department, not the call center, laying out exactly what you told us: same person, documented married name mismatch, she physically showed up and tried to resolve it before departure. Attach the passport, marriage certificate showing the name change, and any airport correspondence or reference numbers from that day. Ask specifically for the return to be reissued or for a refund of unused taxes and carrier-imposed fees, since those are usually recoverable even when the fare itself isn't.
 
-Also flag the host's profile, this kind of price-motivated cancellation is exactly what reviews and host ratings are for.
+Realistically, a full reinstatement is unlikely, but a refund of taxes/fees or a goodwill voucher is possible if you're persistent and polite in writing. Keep escalating if the first reply is a form rejection, sometimes a second or third message reaches someone with actual discretion.
 ```
+
+> ⚠️ Validación: largo fuera de rango (185 palabras)
 
 **Facts usados:** ninguno — nada que verificar, y nada que citar como dato nuestro.
 
 ---
 
-### eDreams price breakdown doesn't match their app's tax figures after full no-show — airport fees?
+### "Could you just cancel it from your side?" — how a host's overbooking became a month-long fight with Booking.com
 
-- **Hilo:** https://www.reddit.com/r/Flights/comments/1vzvtby/edreams_price_breakdown_doesnt_match_their_apps/
-- **Sitio:** — (sin corpus) · **Subreddit:** r/Flights · **Antigüedad:** 1h · **Comentarios:** n/d (RSS) · **Score:** 6
+- **Hilo:** https://www.reddit.com/r/Bookingcom/comments/1w04mva/could_you_just_cancel_it_from_your_side_how_a/
+- **Sitio:** — (sin corpus) · **Subreddit:** r/Bookingcom · **Antigüedad:** 2h · **Comentarios:** n/d (RSS) · **Score:** 6
 - **Topics:** —
 - **Solo karma:** no tenemos material propio sobre esto. El borrador se escribió como viajero común, sin una sola cifra nuestra. Suma karma igual, que es para lo que existe esta etapa.
-- **Por qué sirve:** El material cubre cómo funcionan realmente las ventanas de reembolso en plataformas, qué cobertura de protección del comprador existe, la diferencia entre reserva directa y comisión de plataforma, y cómo identificar listados reempaquetados o falsos — todo conocimiento comercial que alguien que opera agencias de viajes durante veinte años sabría aplicar a un desglose confuso de eDreams y a qué cantidades de impuestos reembolsables son realistas.
+- **Por qué sirve:** El material cubre cómo funcionan realmente las ventanas de cancelación y reembolso, quién asume las pérdidas, qué protecciones del comprador cubre la plataforma y cuáles no, y cómo invocarlas — exactamente lo que este post cuenta desde la experiencia vivida.
 
 **Lo que preguntó, textual:**
 
-> Hi all, We had a round-trip booking — Düsseldorf → Doha → Bali with Qatar Airways, and Bali → Dubai → Düsseldorf on the way back with Emirates. Shortly before departure, the Dutch Ministry of Foreign Affairs raised their travel advisory for the region, and we decided not to fly at all. So this was a full no-show on all 4 flights (2 passengers). We asked the booking agency (eDreams) for a refund and requested a full price breakdown to see what we&#39;d get back. What we received is a document listing several &quot;BSP flights&quot; line items per ticket, with amounts like: - €33.59 / €30.15 / €11.47 (each appearing twice — presumably once per passenger) - €794.08 / €532.40 (each also appearing twice) Adding up just the smaller amounts (which I&#39;d expect to represent airport taxes/fees, since we never flew) gives roughly €150 total for both passengers combined. Here&#39;s what&#39;s confusing: in the eDreams app itself, under the booking summary, it explicitly states we paid €989.95 in &quot;external taxes and surcharges&quot; — and that figure excludes seat selection fees entirely. That&#39;s more than 6x higher than what I can identify as tax-only line items in the actual breakdown document they sent us. My guess is that the larger amounts (€794 / €532) aren&#39;t pure taxes but represent the full fare (base fare + tax combined) per flight per person, and the &quot;BSP flights&quot; label in the document is mixing fare totals and tax-only entries without clearly separating them. What I&#39;m trying to figure out: - Has anyone gotten a properly itemized fare vs. tax breakdown from eDreams (or similar OTAs) for a Qatar/Emirates booking like this? - Is a ~€150 total in actual refundable taxes realistic for 4 long-haul legs across 2 passengers, or does that sound too low? - Should I push back and explicitly ask them to separate base fare from tax/surcharge per ticket, given the app shows a very different number? Any insight from people who&#39;ve dealt with OTA no-sh
+> submitted by /u/South-Cause-2383
 
 
 **Borrador:**
 
 ```
-Your read on this is basically right. Those "BSP flights" line items are how OTAs dump the raw GDS ticket breakdown, and it almost always mixes base fare with carrier-imposed surcharges and government taxes without labeling which is which. The small recurring amounts you spotted are the classic airport/government tax codes, the big ones are fare plus fuel/carrier surcharge bundled together.
+Yeah this is a classic move and it's infuriating because the host has every incentive to push it onto you instead of just eating the cancellation themselves. Booking.com's support agents will often tell you they "can't cancel from their side" because contractually the property controls that, but if the host straight up admits in chat or email that they overbooked, that's your leverage. Screenshot everything and send it to support explicitly asking them to enforce their own overbooking policy, not just asking for help in general terms.
 
-Airlines only refund the actual government and airport taxes on a no-show, not carrier surcharges, so €150 for four long-haul legs across two people isn't crazy, that stuff is usually a modest fixed amount per sector rather than a percentage of the ticket.
-
-Definitely push back and ask for a fare construction breakdown per ticket showing base fare, YQ/carrier surcharge, and tax codes separately. Reference the airline's own conditions of carriage for no-show refund rules, since eDreams is just relaying what the airline authorizes, they can't invent a bigger refund than the airline approves.
+Also worth checking if you got moved to a comparable or better property already, since that's usually the actual obligation on the host, not just a refund. If support keeps looping you back to the host, ask for a case escalation or a supervisor by name in writing, phone support tends to just repeat the same script.
 ```
+
+> ⚠️ Validación: contiene dominio
+
+**Facts usados:** ninguno — nada que verificar, y nada que citar como dato nuestro.
+
+---
+
+### How do I get a refund from booking?
+
+- **Hilo:** https://www.reddit.com/r/Bookingcom/comments/1vzxalg/how_do_i_get_a_refund_from_booking/
+- **Sitio:** — (sin corpus) · **Subreddit:** r/Bookingcom · **Antigüedad:** 6h · **Comentarios:** n/d (RSS) · **Score:** 5
+- **Topics:** —
+- **Solo karma:** no tenemos material propio sobre esto. El borrador se escribió como viajero común, sin una sola cifra nuestra. Suma karma igual, que es para lo que existe esta etapa.
+- **Por qué sirve:** El material cubre cómo funcionan realmente las ventanas de cancelación y reembolso, quién asume la pérdida, qué protección ofrece la plataforma, reclamaciones directas versus mediación, y cómo resolver problemas concretos con operadores que no cumplen.
+
+**Lo que preguntó, textual:**
+
+> Received DEATH wishes from the hotel listed on booking Went to Europe and by mistake booked a very unreliable hotel that refused to check us in because nobody was there EVER, then basically wished me to die as I asked them what to do if we are left stranded at the streets. Number they have on the website is fake and I cannot reach the property directly. Booking promised a refund, and now saying they cannot refund as it is a partner offer, and they cannot reach the partner itself despite being a PARTNER department. What do I do and how do I get my money back? Also booking promised to revoke the property from the website but it’s been a month and it is still there. submitted by /u/PenRepresentative334
+
+
+**Borrador:**
+
+```
+This is worse than the usual overbooking mess since you're dealing with actual threats, so push it that direction hard. Booking.com has trust and safety obligations that go beyond the normal refund runaround, so when you contact support again, explicitly say the property made threatening statements and that you were denied check in with no way to reach them. That framing tends to get escalated faster than "I want a refund."
+
+Keep every message and if you have screenshots of the threats, attach them every single time you follow up. Ask directly for a case number and a supervisor, phone reps often can't do much but the case notes matter for escalation.
+
+For getting your money moving, if Booking keeps stalling, file a chargeback with your card issuer using the screenshots as proof of denied service and the threats as backup. That usually forces resolution faster than waiting on Booking's partner team.
+```
+
+> ⚠️ Validación: contiene dominio
 
 **Facts usados:** ninguno — nada que verificar, y nada que citar como dato nuestro.
 
@@ -96,10 +131,10 @@ Definitely push back and ask for a fare construction breakdown per ticket showin
 ### Refunded to a closed Bank Account / Cancelled Debit Card - where are the funds?
 
 - **Hilo:** https://www.reddit.com/r/Bookingcom/comments/1vzpfxn/refunded_to_a_closed_bank_account_cancelled_debit/
-- **Sitio:** — (sin corpus) · **Subreddit:** r/Bookingcom · **Antigüedad:** 5h · **Comentarios:** n/d (RSS) · **Score:** 5
+- **Sitio:** — (sin corpus) · **Subreddit:** r/Bookingcom · **Antigüedad:** 12h · **Comentarios:** n/d (RSS) · **Score:** 3
 - **Topics:** —
 - **Solo karma:** no tenemos material propio sobre esto. El borrador se escribió como viajero común, sin una sola cifra nuestra. Suma karma igual, que es para lo que existe esta etapa.
-- **Por qué sirve:** El material cubre cómo funcionan realmente los reembolsos y devoluciones, quién asume la pérdida, protección del comprador en plataformas, y qué hacer cuando un operador no resuelve: esto es conocimiento del sector sobre disputas de reembolsos fallidos.
+- **Por qué sirve:** El material cubre cómo funcionan realmente las ventanas de reembolso y cancelación, quién absorbe la pérdida, y cómo invocar los derechos del consumidor cuando una plataforma se niega a ayudar — exactamente lo que este usuario necesita saber para resolver una disputa de fondos perdidos.
 
 **Lo que preguntó, textual:**
 
@@ -109,12 +144,14 @@ Definitely push back and ask for a fare construction breakdown per ticket showin
 **Borrador:**
 
 ```
-When a refund bounces back because the receiving account is closed, the money doesn't just vanish, it has to land somewhere. It either gets returned to booking.com's payment processor automatically, or it sits in limbo with the acquiring bank for a bit before being kicked back. The fact your bank confirms nothing pending under your name is a good sign it did bounce.
+This actually happens more than people think, when a refund gets pushed to a dead card the money doesn't vanish, it sits with the payment processor until someone claims it back. The bank telling you it "bounced back automatically" isn't quite how it works in practice, usually a failed refund just sits unclaimed on the processor's end until the merchant (booking.com) formally requests it returned to reissue elsewhere.
 
-The real fix here is that booking.com needs to raise a trace/recall request with their payment provider using the original transaction reference, not just tell you to call your bank. Frontline support often doesn't have access to do this, so keep pushing for it to be escalated to their finance or payments team specifically, ask for it in writing that they refuse to escalate, and if you hit a wall, file a complaint with your bank's dispute team and separately with your country's financial ombudsman or consumer body, since booking.com does have obligations once they claim a refund was "successful" but can't account for where it went.
+Booking.com's front line support genuinely can't do this, you need their payments/finance team specifically, which the phone or chat agents often don't even know exists. Try pushing through Twitter/X support or a formal written complaint reference the failed transaction date and ask specifically for a "refund recall" or "return request" to the card issuer, that's the actual technical term you want them to action.
+
+If they keep stonewalling, look into a section 75 or chargeback style claim through whatever payment method originally funded the booking, and separately file a complaint with a financial ombudsman type body, having an external complaint open tends to shake something loose internally.
 ```
 
-> ⚠️ Validación: contiene dominio; largo fuera de rango (170 palabras)
+> ⚠️ Validación: contiene dominio; largo fuera de rango (175 palabras); cifras sin respaldo (75) en un borrador sin corpus
 
 **Facts usados:** ninguno — nada que verificar, y nada que citar como dato nuestro.
 
@@ -123,10 +160,10 @@ The real fix here is that booking.com needs to raise a trace/recall request with
 ### Booking became a total scam!
 
 - **Hilo:** https://www.reddit.com/r/Bookingcom/comments/1vzitez/booking_became_a_total_scam/
-- **Sitio:** — (sin corpus) · **Subreddit:** r/Bookingcom · **Antigüedad:** 12h · **Comentarios:** n/d (RSS) · **Score:** 3
+- **Sitio:** — (sin corpus) · **Subreddit:** r/Bookingcom · **Antigüedad:** 18h · **Comentarios:** n/d (RSS) · **Score:** 2
 - **Topics:** —
 - **Solo karma:** no tenemos material propio sobre esto. El borrador se escribió como viajero común, sin una sola cifra nuestra. Suma karma igual, que es para lo que existe esta etapa.
-- **Por qué sirve:** El material cubre derechos del consumidor en plataformas de reserva, protecciones del comprador, y qué hacer cuando un operador se niega a resolver un problema legítimo — esto es exactamente una situación donde los derechos del consumidor y las opciones de escalada (chargebacks, protecciones de plataforma) son el punto central.
+- **Por qué sirve:** El material cubre cómo funcionan realmente los sistemas de protección del comprador en plataformas como Booking.com, qué está cubierto y qué no, y cómo invocar derechos de protección del consumidor cuando hay fraude en un listado.
 
 **Lo que preguntó, textual:**
 
@@ -136,11 +173,13 @@ The real fix here is that booking.com needs to raise a trace/recall request with
 **Borrador:**
 
 ```
-That's genuinely rough, and I get why you're angry. The frustrating part is that Booking.com is technically just the middleman, so if a listing turns out to be fake or misrepresented before you've actually booked, they often treat it as "not their problem" since no transaction happened through them yet.
+Sorry you're dealing with this, it's a genuinely frustrating situation and support scripts make it worse.
 
-If you haven't already, report the specific listing directly through their "report this property" option rather than just customer service chat, that sometimes gets it pulled faster than a support ticket does. Screenshots with timestamps help a lot if you push back.
+A few things worth knowing. If a listing is fake or the host never confirms, and money already left your account, that's not really a "no rights" situation, that's a dispute you push through your bank or card provider as a chargeback since the service was never delivered. Keep every screenshot, the listing as it appeared, and any messages, and send that packet to your bank rather than relying on booking.com alone to sort it out.
 
-Also worth leaving a public review or complaint mentioning the listing name so other travelers get warned, since customer service teams move slow but public pressure sometimes gets suspicious listings reviewed quicker.
+Also report the specific listing through their fraud reporting channel, not general support, phrasing it as "fraudulent listing" tends to route to a different team than "customer service complaint."
+
+And yeah, always cross check the address and photos against maps or other sites before paying, especially for places with few or oddly generic reviews.
 ```
 
 > ⚠️ Validación: contiene dominio
@@ -152,10 +191,10 @@ Also worth leaving a public review or complaint mentioning the listing name so o
 ### Booking advice on Expedia
 
 - **Hilo:** https://www.reddit.com/r/Flights/comments/1vzmpd2/booking_advice_on_expedia/
-- **Sitio:** — (sin corpus) · **Subreddit:** r/Flights · **Antigüedad:** 8h · **Comentarios:** n/d (RSS) · **Score:** 3
+- **Sitio:** — (sin corpus) · **Subreddit:** r/Flights · **Antigüedad:** 15h · **Comentarios:** n/d (RSS) · **Score:** 2
 - **Topics:** —
 - **Solo karma:** no tenemos material propio sobre esto. El borrador se escribió como viajero común, sin una sola cifra nuestra. Suma karma igual, que es para lo que existe esta etapa.
-- **Por qué sirve:** El material cubre cómo funcionan realmente las reservas de plataformas versus reservas directas, protección de comprador, bundels versus vuelos separados, y cuándo el operador es responsable de conexiones fallidas.
+- **Por qué sirve:** La base de conocimiento "booking" cubre protección de plataformas, diferencia entre reserva directa y a través de OTA, responsabilidades de aerolíneas en bundled bookings, y cómo identificar términos de reserva — exactamente lo que pregunta.
 
 **Lo que preguntó, textual:**
 
@@ -165,39 +204,14 @@ Also worth leaving a public review or complaint mentioning the listing name so o
 **Borrador:**
 
 ```
-On the seat selection/bag question, when you book flight+hotel as a package it usually pulls a more basic fare bucket behind the scenes, so seat maps and bag add-ons often only unlock once you're on the airline's own site with your booking reference. Give SAS's manage booking page a try a few days after booking, it usually shows up there.
+On the bundle, yes, once the booking goes through you'll get a confirmation number from SAS directly and you can log into their site to pick seats and manage bags separately, the bundle checkout just doesn't show that step. It'll show up under manage booking with the airline itself, not through Expedia.
 
-For the connection, look at whether the whole itinerary is issued under one ticket number. If both legs show together with one confirmation code and the layover is coded as a connection rather than two separate reservations, SAS is on the hook for rebooking you if you misconnect, regardless of who sold it. Expedia's own confirmation email typically shows this as a single record locator for the whole journey, if you see two separate ones for each flight that's a red flag for self transfer. Star Alliance routing through their own hub airport is usually a good sign it's a proper through fare.
+On the connection, if it's issued as one PNR with one ticket number covering both legs, SAS is on the hook for rebooking you if you miss it, doesn't matter that Expedia sold it. The way to check is looking at your e-ticket receipt once issued, if both flights sit under a single ticket number it's a through fare. If you see two separate ticket numbers or it says "separate tickets" anywhere, treat it as self transfer and be way more nervous about that connection.
+
+Bundles booked as flight+hotel packages are almost always through tickets in this kind of setup, but confirm once you have the actual ticket numbers rather than trusting the booking page wording.
 ```
 
-> ⚠️ Validación: largo fuera de rango (163 palabras)
-
-**Facts usados:** ninguno — nada que verificar, y nada que citar como dato nuestro.
-
----
-
-### Frustrated Host
-
-- **Hilo:** https://www.reddit.com/r/Bookingcom/comments/1vzg5mf/frustrated_host/
-- **Sitio:** — (sin corpus) · **Subreddit:** r/Bookingcom · **Antigüedad:** 14h · **Comentarios:** n/d (RSS) · **Score:** 2
-- **Topics:** —
-- **Solo karma:** no tenemos material propio sobre esto. El borrador se escribió como viajero común, sin una sola cifra nuestra. Suma karma igual, que es para lo que existe esta etapa.
-- **Por qué sirve:** El material cubre cómo funcionan realmente los sistemas de pagos directo versus comisión de plataforma, qué cubre la protección del comprador, y la diferencia entre reserva directa y plataforma; un gestor de propiedades con experiencia en negocios turísticos de 20 años sabría qué requisitos de cuenta y verificación típicamente activan estos servicios, aunque Booking.com no lo explique claramente.
-
-**Lo que preguntó, textual:**
-
-> Greetings, I have had a property listed on Booking.com for about 6 months now which I manage remotely. Things have been going ok with a couple of reservations each month. However my account does not have payments processed on my behalf by the platform which means I have to message guests in advance and ask for payment via transfer. Frankly, this just comes across as sketchy and it has cost me bookings. Similarly my listing does not have the ability to take prepayments and as I am managing the property remotely I cannot implement the cash damage deposit option either which means my property is exposed. When I contact support they come back with a load of word salad about not being eligible for this functionality but they never say what I need to do to actually become eligible. I am now at the point of pulling the property off and focusing solely on other short term rental platforms. Has anyone been through this? Any insights on the eligibility requirements for prepayments at least? Thanks! submitted by /u/dogboygowoof
-
-
-**Borrador:**
-
-```
-This is a known pain point and it's usually tied to the property's payment setup rather than anything you're doing wrong on the listing itself. Booking.com typically ties prepayment and virtual card functionality to having a working payment method on file that's been verified, plus a track record of stays completed without issues. If you're brand new and remote managed, some markets also get flagged for manual review before that gets switched on.
-
-Worth pushing back on support and specifically asking for the "payments" or "online payments" team rather than general support, they handle eligibility separately from the front line agents who just paste generic replies. Also check your extranet under the finance or payment settings tab, sometimes there's a pending verification step sitting unfinished that nobody flagged to you. If none of that moves the needle, plenty of hosts do end up leaning on other platforms for the payment protection alone.
-```
-
-> ⚠️ Validación: contiene dominio
+> ⚠️ Validación: largo fuera de rango (168 palabras)
 
 **Facts usados:** ninguno — nada que verificar, y nada que citar como dato nuestro.
 
