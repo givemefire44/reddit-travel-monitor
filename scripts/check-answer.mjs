@@ -110,11 +110,18 @@ else ok.push('registro de trade-offs, sin venta directa');
 // siquiera cuando el fact del corpus la nombra (operators-005 lo hace). Es
 // afiliado, y su credencial entera es que analiza y no que vende. Se dice la
 // categoria: "third-party platforms", "the resale platforms".
-const OTAS = ['getyourguide', 'get your guide', 'viator', 'tiqets', 'headout', 'klook',
-  'civitatis', 'musement', 'tripadvisor experiences', 'expedia'];
-const otaHit = OTAS.filter((o) => new RegExp(`\\b${o.replace(/\s/g, '\\s')}\\b`, 'i').test(cuerpo));
-if (otaHit.length) fallas.push(`nombra plataformas de reserva: ${otaHit.join(', ')} (usar "third-party platforms")`);
-else ok.push('no nombra ninguna OTA');
+// SOLO los socios comerciales. La regla existe porque Mario es afiliado de estas
+// y nombrarlas en un texto firmado se lee como promocion encubierta.
+//
+// La primera version metia en la misma bolsa a Expedia, Booking, trip.com y
+// cualquier plataforma, y eso estaba mal: el 27 ago 2026 rechazo un comentario
+// sobre un paquete de Expedia, en un hilo sobre Expedia, donde no nombrarla
+// habria sido absurdo. No hay conflicto de interes con una plataforma de la que
+// no cobra nada, y menos cuando es el tema de la pregunta.
+const SOCIOS = ['getyourguide', 'get your guide', 'viator'];
+const otaHit = SOCIOS.filter((o) => new RegExp(`\\b${o.replace(/\s/g, '\\s')}\\b`, 'i').test(cuerpo));
+if (otaHit.length) fallas.push(`nombra un socio comercial: ${otaHit.join(', ')} — usar "third-party platforms"`);
+else ok.push('no nombra socios comerciales');
 
 // ------------------------------------------------------------------------ firma
 if (ES_REDDIT) {
