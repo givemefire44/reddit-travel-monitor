@@ -49,7 +49,11 @@ const SYSTEM = `You are reading an answer the way a stranger reads it: you arriv
 
 Report only what a reader in that position would actually stumble on. Answer in Spanish.
 
+What you receive as the question is the ORIGINAL POST, verbatim, exactly as the person wrote it. Read it before the answer, and read all of it. Details buried at the end are usually the ones the writer of the answer skipped.
+
 "contesta": does this text answer the question that was asked? Not "is it about the same subject" — does it answer what the person actually wanted to know. If someone asks the price of an all-you-can-eat buffet and the text gives à la carte prices, that is false even though both are about food prices.
+
+Say false too when the answer CONTRADICTS something the post states. This is the failure that matters most and it is easy to miss, because a contradiction reads fluently. A real case: someone wrote that his mother physically showed up at the airport and was refused at the counter, and closed with "this was not an intentional no-show". The answer opened by saying she missed the outbound. Everything after that was well argued and useless, because it was arguing with the one fact the person had gone out of his way to establish. Name the contradicted line in "que_falta".
 
 "que_falta": if contesta is false, what the person asked that the text leaves unanswered. One line. Empty string if it does answer.
 
