@@ -329,6 +329,36 @@
       "shingles": [],
       "generatedAt": "2026-08-26",
       "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Are-architectural-students-from-any-country-free-for-entry-into-Rome-Colosseum",
+      "questionTitle": "Are architectural students from any country free for entry into Rome Colosseum?",
+      "titleNormalized": "are architectural students from any country free for entry into rome colosseum",
+      "site": "colosseum",
+      "sourceSlugs": [
+        "7-mistakes-people-make-when-booking-colosseum-tickets",
+        "best-colosseum-tour-under-eur50",
+        "colosseum-accessibility-lifts-step-free-stroller"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-08-27",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-is-the-difference-between-the-Vatican-and-the-Sistine-Chapel",
+      "questionTitle": "What is the difference between the Vatican and the Sistine Chapel?",
+      "titleNormalized": "what is the difference between the vatican and the sistine chapel",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-after-hours-tour-worth-it",
+        "best-time-to-visit-vatican",
+        "vatican-cross-monument-replication",
+        "vatican-crowd-handling-staff",
+        "vatican-free-sunday-worth-it"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-08-27",
+      "estado": "entregado"
     }
   ]
 }
