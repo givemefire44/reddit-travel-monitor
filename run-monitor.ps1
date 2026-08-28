@@ -15,7 +15,7 @@ Write-Host "=== Reddit monitor - corrida local ===" -ForegroundColor Cyan
 Write-Host "`n[1/4] Trayendo commits del bot (git pull --rebase --autostash)..."
 git pull --rebase --autostash
 
-Write-Host "`n[2/4] Corriendo el monitor (5 subreddits, pausas anti rate-limit: 2-5 min)..."
+Write-Host "`n[2/4] Corriendo el monitor (pausas anti rate-limit: 5-8 min)..."
 node scripts/reddit-monitor.mjs --label local
 if ($LASTEXITCODE -ne 0) {
     Write-Host "`nEl monitor termino con error (codigo $LASTEXITCODE). Revisar arriba." -ForegroundColor Red
@@ -50,3 +50,4 @@ Write-Host "`n[4/4] Abriendo el reporte..."
 try { Invoke-Item $daily.FullName } catch { notepad $daily.FullName }
 
 Write-Host "`nListo: $($daily.Name)" -ForegroundColor Green
+Write-Host "El reporte trae la pregunta, el material y la forma. La respuesta la escribis vos con Claude: pegale el reporte." -ForegroundColor Yellow

@@ -1,17 +1,45 @@
 // PIEZA 2 - Monitor de Reddit (spec: docs/spec-sistema-reddit-geo.md)
 // Encuentra hilos nuevos relevantes en los subreddits configurados, los puntua,
-// y genera borradores de respuesta usando EXCLUSIVAMENTE facts de data/citable-facts.json.
-// NUNCA postea nada: el output es un .md de borradores para revision humana.
+// y ENTREGA el material para contestarlos: la pregunta real, el post completo,
+// los facts que contestan esa pregunta y que forma pide la respuesta.
+// NUNCA postea nada, y desde el 27 ago 2026 tampoco redacta (ver ENTREGA).
 //
-// Uso:  node scripts/reddit-monitor.mjs [--hours N] [--dry-run]
+// Uso:  node scripts/reddit-monitor.mjs [--hours N] [--dry-run] [--con-borrador]
 // Fetch: via JSON publico de Reddit (fetchMode "public-json"). Cuando Reddit apruebe
 // la app OAuth, cambiar fetchMode a "oauth" en config - las credenciales van por env.
+//
+// ============================================================================
+// ENTREGA, NO REDACCION (27 ago 2026)
+//
+// Este script dejo de escribir los comentarios, por la misma razon por la que
+// dejo de escribirlos el de Quora (docs/spec-quora.md): no porque la generacion
+// este rota, sino porque el texto se lee escrito por una maquina. Mario, sobre
+// los borradores del 27: "son muy prolijas perfectas, los humanos no respondemos
+// asi". Los 76 comentarios humanos medidos ese dia le dan la razon con numeros:
+// mediana 28 palabras, p75 50, el 100% de un solo parrafo. El generador venia
+// produciendo 150 a 190 palabras en tres o cuatro parrafos, y ademas con el
+// MISMO molde todos los dias.
+//
+// Y eso no se arregla con otra regla de prompt. Cada regla tapa un tell y el
+// modelo encuentra el siguiente; tres rondas de eso costaron una semana. A dos o
+// tres comentarios por semana, automatizar justo la parte cara es el peor canje
+// posible.
+//
+// Lo que el script si hace, y una persona no puede hacer a mano sobre 1.400
+// posts por dia: encontrar el hilo, entender que preguntan, y buscar en el
+// corpus lo que contesta ESA pregunta. Eso es lo que entrega.
+//
+// La capa de generacion sigue en el codigo y se reactiva con --con-borrador. No
+// se borro a proposito, para que quede la evidencia de que se probo y por que se
+// dejo de lado.
+// ============================================================================
 
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Anthropic from '@anthropic-ai/sdk';
 import { evaluarLote } from './lib/relevancia.mjs';
+import { elegirLote, FORMAS } from './lib/elegir-facts.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 loadEnv(path.join(ROOT, '.env'));
@@ -97,6 +125,18 @@ if (PHASE_OVERRIDE) CONFIG.phase = PHASE_OVERRIDE;
 // podamos responder con facts, en vez de exigir uno de los tres destinos. Sirve para
 // construir karma antes de poder comentar en los subs de destino. --no-karma lo apaga.
 const KARMA_MODE = args.includes('--no-karma') ? false : (CONFIG.karmaMode ?? true);
+// El modo por defecto es ENTREGA (ver el bloque de arriba). --con-borrador
+// reactiva la generacion. --sin-borrador se acepta y no hace nada: existe para
+// que el comando se escriba igual que el de Quora, que arrastra el flag desde
+// cuando la generacion era el default.
+const CON_BORRADOR = args.includes('--con-borrador');
+// --solo-subs travel,rome limita la corrida a esos subs. Es para probar un
+// cambio sin esperar los 17 fetch con 20s de cortesia entre uno y otro (casi
+// seis minutos) ni gastar el juez sobre 1.400 posts. No usar en la corrida real:
+// el reporte diario sale de todos los subs configurados.
+const SOLO_SUBS = args.includes('--solo-subs')
+  ? new Set(args[args.indexOf('--solo-subs') + 1].split(',').map((s) => s.trim().toLowerCase()))
+  : null;
 
 if (!process.env.ANTHROPIC_API_KEY) {
   console.error('Falta ANTHROPIC_API_KEY.');
@@ -165,6 +205,52 @@ const TOPIC_KEYWORDS_BY_SITE = {
     'format-duration': ['how long', 'duration', 'hours', 'how many stops', 'walking'],
     logistics: ['meeting point', 'where does it start', 'metro', 'how to get', 'accessib', 'wheelchair'],
   },
+  // Pompeya y Milan entraron como sitios el 25 ago 2026 (config.sites) y su
+  // taxonomia quedo sin cargar. No fue un match de menos: bestSiteByFacts
+  // recorre TODOS los sitios de la config llamando a matchTopics, asi que un
+  // solo post que mencionara Pompeya o Milan hacia Object.entries(undefined) y
+  // se llevaba puesto el subreddit ENTERO, con todos sus posts.
+  //
+  // Por eso r/ItalyTravel y r/ItalyTravelAdvice figuraban dias como "FETCH
+  // ERROR" con el fetch devolviendo 200: son justo los subs donde mas se habla
+  // de Pompeya. Los dos mejores subs del sistema, apagados por una taxonomia
+  // faltante, y el reporte lo mostraba como un problema de red.
+  //
+  // Los topics salen de los que el extractor ya le puso al corpus de cada sitio
+  // (los 5 mas frecuentes de cada uno cubren mas del 70% de los facts), no de
+  // una lista inventada aparte.
+  pompeii: {
+    tickets: ['ticket', 'entry', 'sold out', 'book', 'reservation'],
+    pricing: ['price', 'cost', 'cheap', 'expensive', 'worth it', 'how much', '€', 'euro'],
+    timing: ['what time', 'best time', 'morning', 'early', 'when to', 'how long', 'hours', 'open'],
+    crowds: ['crowd', 'busy', 'packed', 'queue', 'line', 'peak'],
+    'getting-there': ['circumvesuviana', 'from naples', 'from sorrento', 'from rome', 'train', 'day trip', 'how to get', 'transfer'],
+    highlights: ['villa of the mysteries', 'amphitheatre', 'amphitheater', 'forum', 'what to see', 'must see', 'brothel', 'casts'],
+    herculaneum: ['herculaneum', 'ercolano'],
+    guides: ['guide', 'guided tour', 'tour guide', 'audio guide'],
+    operators: ['getyourguide', 'get your guide', 'viator', 'tour company', 'operator'],
+    'format-duration': ['how long', 'duration', 'hours', 'half day', 'full day', 'walking'],
+    logistics: ['meeting point', 'entrance', 'gate', 'bag', 'luggage', 'water', 'shoes'],
+    weather: ['heat', 'rain', 'summer', 'august', 'july', 'weather', 'hot', 'shade'],
+    accessibility: ['wheelchair', 'accessible', 'accessibility', 'mobility', 'stroller'],
+    'skip-the-line': ['skip the line', 'skip-the-line', 'fast track', 'priority entrance'],
+    vesuvius: ['vesuvius', 'vesuvio', 'crater', 'volcano'],
+  },
+  milan: {
+    'last-supper': ['last supper', 'cenacolo', 'santa maria delle grazie', 'leonardo'],
+    tickets: ['ticket', 'entry', 'sold out', 'reservation', 'release'],
+    booking: ['book', 'booking', 'reserve', 'sold out', 'how far in advance', 'cancel'],
+    pricing: ['price', 'cost', 'cheap', 'expensive', 'worth it', 'how much', '€', 'euro'],
+    timing: ['what time', 'best time', 'morning', 'early', 'when to', 'how long', 'slot', 'hours'],
+    duomo: ['duomo', 'cathedral', 'rooftop', 'terraces'],
+    crowds: ['crowd', 'busy', 'packed', 'queue', 'line', 'peak'],
+    guides: ['guide', 'guided tour', 'tour guide'],
+    operators: ['getyourguide', 'get your guide', 'viator', 'tour company', 'operator'],
+    'group-size': ['group size', 'small group', 'private', 'how many people'],
+    'format-duration': ['how long', 'duration', 'minutes', 'how many stops'],
+    logistics: ['meeting point', 'entrance', 'metro', 'how to get', 'sforza', 'galleria'],
+    accessibility: ['wheelchair', 'accessible', 'accessibility', 'mobility'],
+  },
 };
 
 // Matcheo de keyword con limite de palabra al inicio y tolerancia a sufijos cortos.
@@ -204,7 +290,12 @@ function normalizeTitle(t) {
 function matchTopics(text, siteKey) {
   const t = text.toLowerCase();
   const matched = [];
-  for (const [topic, kws] of Object.entries(TOPIC_KEYWORDS_BY_SITE[siteKey])) {
+  // El `|| {}` es el cinturon. Un sitio nuevo en la config sin su taxonomia acá
+  // ya se llevo puestos dos subreddits enteros durante dias (ver el bloque de
+  // pompeii/milan arriba). Sin taxonomia el sitio matchea cero topics, que es
+  // degradarse; con Object.entries(undefined) se cae toda la corrida del sub,
+  // que es romperse. Y el reporte lo mostraba como un error de red.
+  for (const [topic, kws] of Object.entries(TOPIC_KEYWORDS_BY_SITE[siteKey] || {})) {
     if (kws.some((kw) => hasKeyword(t, kw))) matched.push(topic);
   }
   return matched;
@@ -254,6 +345,16 @@ function rssBodyText(contentHtml) {
     .replace(/<br\s*\/?>/gi, '\n')
     .replace(/<[^>]+>/g, ' ')
     .replace(/&#32;/g, ' ')
+    // La firma del feed sobrevivia al replace de arriba y quedaba COMO SI FUERA
+    // el cuerpo del post. Verificado contra el RSS crudo el 27 ago 2026: entre
+    // "submitted by" y el <a> del autor viene un &#32;, asi que el patron
+    // "submitted by<a" no matchea; despues se caen los tags y queda el texto
+    // pelado "submitted by /u/Fulano".
+    //
+    // Importa mas de lo que parece: un post sin cuerpo se veia en el reporte
+    // como un post CON cuerpo de tres palabras, y ahi no hay nada que avise que
+    // la pregunta salio del titulo solo.
+    .replace(/submitted by\s*\/u\/[\w-]+/gi, '')
     .replace(/[ \t]+/g, ' ')
     .trim();
 }
@@ -622,11 +723,26 @@ function scoreCandidates(posts, subredditCfg, cutoffUtc, veredictos = new Map())
       if (!v || !v.contestable) continue;
       funnel.keywordPass += 1;
       post._porque = v.porque;
-      const best = bestSiteByFacts(`${post.title} ${post.selftext}`) || (v.sitio ? { key: v.sitio, topics: matchTopics(`${post.title} ${post.selftext}`, v.sitio) } : null);
+      // La pregunta que el juez ya escribio ("que estan preguntando de verdad,
+      // en una linea"). Se venia tirando: el candidato guardaba el porque y no
+      // la pregunta, asi que abajo los facts se elegian por topic contra el
+      // TEMA del post. Es la causa de que a "¿los estudiantes de arquitectura
+      // entran gratis?" se le adjunten los cinco facts de precios de entrada.
+      post._pregunta = v.pregunta;
+      // Un dominio del juez NO es necesariamente un sitio con corpus. 'booking'
+      // es conocimiento de oficio: no tiene facts, ni topics, ni marca. Sin este
+      // guard, matchTopics('booking') hace Object.entries(undefined) y tumba el
+      // subreddit entero — paso el 26 ago 2026 con 6 de 17 subs caidos, dos
+      // horas despues de agregar el dominio sin revisar que lo usaba abajo.
+      const esSitioConCorpus = CONFIG.sites.some((s) => s.key === v.sitio);
+      const best = esSitioConCorpus
+        ? (bestSiteByFacts(`${post.title} ${post.selftext}`)
+          || { key: v.sitio, topics: matchTopics(`${post.title} ${post.selftext}`, v.sitio) })
+        : null;
       if (best && best.topics && best.topics.length) {
         siteKey = best.key;
         topics = best.topics;
-      } else if (v.sitio) {
+      } else if (esSitioConCorpus) {
         // El juez ve material y la taxonomia de topics no lo mapea. Pasa con
         // preguntas de comida, donde el corpus responde de sobra pero los topics
         // no matchean la redaccion. Entra con el sitio del juez y sin topics:
@@ -671,10 +787,12 @@ function scoreCandidates(posts, subredditCfg, cutoffUtc, veredictos = new Map())
       site: siteKey,
       subreddit: subredditCfg.name,
       status: subredditCfg.status,
+      minKarma: subredditCfg.minCommentKarma || 0,
       title: post.title,
       url: `https://www.reddit.com${post.permalink}`,
       selftext: post.selftext,
       porque: post._porque || null,
+      pregunta: post._pregunta || null,
       numComments: post.num_comments,
       ageHours,
       topics,
@@ -962,6 +1080,120 @@ function validateDraft(text, phase, siteKey) {
 }
 
 // ---------- output ----------
+// Los tres carriles, y por que estan separados.
+//
+// El objetivo del sistema no es juntar karma: es que un dato nuestro quede
+// publicado junto al nombre del sitio que lo midio, para que los motores de IA
+// lo citen con la atribucion puesta. El karma es el medio - una cuenta sin
+// karma no puede comentar donde estan las preguntas buenas.
+//
+// Hasta hoy los dos iban mezclados en una sola lista ordenada por frescura, y
+// el medio se estaba comiendo al fin: el 27 ago los 6 candidatos del dia eran
+// de r/Bookingcom, r/Flights y r/hotels, ninguno con una cifra nuestra. Seis de
+// seis de puro karma, y el reporte no lo decia en ningun lado.
+//
+//   GEO      contesta con un fact que es MEDICION NUESTRA -> lleva la marca.
+//            Es lo unico que cumple el objetivo. Va primero siempre, aunque
+//            puntue mas bajo que un hilo mas fresco.
+//   material contesta con datos, pero publicos (precio oficial, horario). Util
+//            para el que pregunta, sin marca: pegarle la marca a un dato que
+//            cualquiera puede dar no es una cita, es un aviso.
+//   karma    no tenemos material para ESA pregunta. Se contesta como viajero,
+//            sin una sola cifra. Suma karma, que es para lo que existe.
+const CARRILES = {
+  geo: { etiqueta: '🎯 GEO', desc: 'hay una cifra medida por nosotros: la respuesta puede llevar la marca' },
+  material: { etiqueta: '📌 material', desc: 'contesta con datos, pero publicos: va sin marca' },
+  karma: { etiqueta: '🔁 karma', desc: 'sin material propio para esta pregunta: se contesta como viajero, sin cifras' },
+};
+
+function carrilDe(sel) {
+  if (!sel.contesta) return 'karma';
+  return sel.citable ? 'geo' : 'material';
+}
+
+// La referencia humana del sub, medida y no intuida (scripts/analizar-humanos.mjs).
+// Va en cada candidato y no una vez al pie porque es contra esto que se decide
+// el largo, y al pie no se lee.
+const REFERENCIA_HUMANA = '_Referencia medida en estos subs: mediana **28 palabras**, p75 50, **100% de un solo párrafo**, 33% una sola oración (n=76)._';
+
+function renderEntrega(c, sel, blocked) {
+  const carril = carrilDe(sel);
+  const marca = SITE_VOICE[c.site]?.brand || null;
+  const lines = [];
+  lines.push(`### ${c.title}`);
+  lines.push('');
+  lines.push(`- **Hilo:** ${c.url}`);
+  lines.push(`- **Subreddit:** r/${c.subreddit} · **Antigüedad:** ${c.ageHours}h · **Comentarios:** ${c.numComments ?? 'n/d (RSS)'} · **Score:** ${c.score}`);
+  lines.push(`- **Carril:** ${CARRILES[carril].etiqueta} — ${CARRILES[carril].desc}`);
+  lines.push(`- **Sitio:** ${c.noFacts ? '— (sin corpus)' : c.site}${marca && carril === 'geo' ? ` · **Marca:** ${marca}` : ''}`);
+  if (c.pregunta) lines.push(`- **Preguntan:** ${c.pregunta}`);
+  if (c.porque) lines.push(`- **Por qué sirve:** ${c.porque}`);
+  lines.push('');
+
+  // EL CUERPO DEL POST, COMPLETO.
+  //
+  // Faltaba, y fue la causa raiz del peor dia del sistema. El 26 ago 2026 el
+  // reporte traia solo el titulo - "sanity check my 14 night france + italy
+  // itinerary" - y con eso se escribio un comentario. El post real listaba CINCO
+  // preocupaciones numeradas, decia que todo estaba reservado y pagado, y pedia
+  // ademas restaurantes. El comentario contesto media pregunta, recomendo mover
+  // algo que no se podia mover, e ignoro lo que mas le preocupaba al que
+  // pregunto. Seis correcciones despues salio uno usable.
+  //
+  // No se puede contestar lo que no se leyo, y nadie va a abrir el hilo en el
+  // navegador para leerlo. Si el reporte no lo trae, no se lee.
+  if (c.selftext && c.selftext.trim()) {
+    lines.push('**Lo que preguntó, textual:**');
+    lines.push('');
+    lines.push('> ' + c.selftext.trim().slice(0, 2000).replace(/\n+/g, '\n> '));
+  } else {
+    // El feed de Reddit no siempre trae el selftext, y cuando no lo trae todo lo
+    // de arriba - la pregunta, el por que, los facts elegidos - salio del titulo
+    // y nada mas. Eso no se puede presentar igual que un candidato leido entero.
+    lines.push('> ⚠️ **El feed no trajo el cuerpo del post.** La pregunta y el material de arriba salieron del **título solo**. Abrí el hilo antes de contestar: puede pedir algo que el título no dice.');
+  }
+  lines.push('');
+
+  // LA FORMA. Decidida por pregunta, no por regla de la casa.
+  lines.push(`**Forma que pide esta pregunta:** ${FORMAS[sel.forma] || sel.forma} — ${sel.porque_forma}`);
+  lines.push('');
+  lines.push(REFERENCIA_HUMANA);
+  lines.push('');
+
+  if (sel.facts.length) {
+    lines.push(`**Material que contesta ESTA pregunta (${sel.facts.length}, elegidos entre ${sel.shortlist ?? '?'}):**`);
+    lines.push('');
+    for (const f of sel.facts) {
+      const esCitable = f.id === sel.citable;
+      lines.push(`- ${esCitable ? '⭐ ' : ''}\`${f.id}\` "${f.fact}" — ${f.sourceUrl}`);
+    }
+    lines.push('');
+  } else {
+    lines.push('**Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.');
+    lines.push('');
+  }
+  if (sel.falta && sel.falta !== 'nada') {
+    lines.push(`**Lo que el corpus no cubre:** ${sel.falta}`);
+    lines.push('');
+  }
+
+  // LA ATRIBUCION, que es el objetivo del sistema y hasta hoy vivia solo dentro
+  // del prompt del generador. Sin generador, tiene que estar escrita aca.
+  if (carril === 'geo') {
+    lines.push(`**Atribución:** ⭐ \`${sel.citable}\` es medición nuestra, así que la respuesta puede llevar **una** mención de **${marca}** como fuente de ese dato — marca en texto plano, CamelCase, sin \`.com\` y sin link. Es la única frase que persigue el objetivo: el dato queda publicado con quién lo midió, y eso es lo que un motor de IA puede citar.`);
+  } else if (carril === 'material') {
+    lines.push('**Atribución:** ninguno de los facts es medición nuestra (son datos públicos que puede dar cualquiera). Va **sin marca**: pegarla acá no aporta autoridad, suena a aviso.');
+  } else {
+    lines.push('**Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.');
+  }
+  lines.push('');
+  if (blocked) {
+    lines.push(`**[NO SE PUEDE PEGAR HOY — ${blocked}]**`);
+    lines.push('');
+  }
+  return lines.join('\n');
+}
+
 function renderCandidate(c, facts, draft, blocked) {
   const lines = [];
   lines.push(`### ${c.title}`);
@@ -1029,7 +1261,10 @@ async function main() {
   // Embudo por subreddit. Un feed que falla el fetch (403/429 agotado, 5xx) se
   // registra como ERROR en el reporte: jamas debe confundirse con "0 posts".
   const funnelRows = [];
-  for (const sub of CONFIG.subreddits) {
+  const subsDeHoy = SOLO_SUBS
+    ? CONFIG.subreddits.filter((s) => SOLO_SUBS.has(s.name.toLowerCase()))
+    : CONFIG.subreddits;
+  for (const sub of subsDeHoy) {
     try {
       const posts = await fetchNewPosts(sub.name);
       // El juez de relevancia corre ANTES de puntuar, sobre los posts de la
@@ -1046,8 +1281,13 @@ async function main() {
       );
       allCandidates.push(...cands);
     } catch (err) {
-      funnelRows.push({ sub: sub.name, status: sub.status, ok: false, error: err.message });
-      console.error(`  r/${sub.name}: FETCH ERROR — ${err.message}`);
+      // El try envuelve fetch + juez + scoring, asi que la etiqueta "FETCH
+      // ERROR" mentia sobre donde paso la cosa: r/ItalyTravel figuro dias en el
+      // reporte como un fallo de red. Se guarda el primer frame del stack, que
+      // es lo unico que distingue un 429 de Reddit de un bug nuestro.
+      const frame = ((err.stack || '').split('\n')[1] || '').trim().replace(/^at\s+/, '');
+      funnelRows.push({ sub: sub.name, status: sub.status, ok: false, error: err.message, frame });
+      console.error(`  r/${sub.name}: ERROR — ${err.message}${frame ? `\n      en ${frame}` : ''}`);
     }
     await new Promise((r) => setTimeout(r, 20000)); // cortesia con la via publica sin autenticar (10s tripeaba el soft-block)
   }
@@ -1091,18 +1331,70 @@ async function main() {
     console.log(`  crossposts descartados: ${crossposts.length}`);
   }
 
+  // El corte por karma, que la config declaraba y el codigo no aplicaba.
+  //
+  // r/ItalyTravel figura como "active" con minCommentKarma 150, y esos dos
+  // campos se contradecian sin que nadie los cruzara: sus hilos entraban a la
+  // lista normal, como si se pudieran contestar. La cuenta tiene 2 de karma.
+  // O sea que el mejor hilo del dia podia comerse un cupo para mandarte a un
+  // sub que te va a rebotar el comentario.
+  //
+  // Con el karma desconocido (el perfil no siempre se puede leer) tambien se
+  // bloquea: el error barato es guardarlo para etapa B, el caro es escribir un
+  // comentario que no se puede pegar.
+  const bloqueadoPorKarma = (c) => c.minKarma > 0 && (karma == null || karma < c.minKarma);
+  const disponible = (c) => c.status === 'active' && !bloqueadoPorKarma(c);
   const activeSorted = deduped
-    .filter((c) => c.status === 'active')
+    .filter(disponible)
     .sort((a, b) => b.score - a.score);
   const watchSorted = deduped
-    .filter((c) => c.status === 'watch-only')
+    .filter((c) => !disponible(c))
     .sort((a, b) => b.score - a.score);
-  const active = activeSorted.slice(0, CONFIG.maxCandidatesPerDay);
-  const watchOnly = watchSorted.slice(0, CONFIG.maxCandidatesPerDay);
-  // No hay umbral minimo de score: el unico corte es el cupo diario (top N).
-  const droppedByQuota = [...activeSorted.slice(CONFIG.maxCandidatesPerDay), ...watchSorted.slice(CONFIG.maxCandidatesPerDay)];
+  const QUOTA = CONFIG.maxCandidatesPerDay;
+  // Se lee el DOBLE del cupo contra el corpus, y el cupo se corta despues, con
+  // el carril ya sabido. Antes el corte era por score puro - o sea por frescura -
+  // y se decidia antes de tener el unico dato que importa: si el hilo tiene una
+  // cifra nuestra para citar. Un hilo GEO de 8h perdia contra uno de karma de 2h.
+  // El medio comiendose al fin, por el orden de las operaciones.
+  const activePool = activeSorted.slice(0, QUOTA * 2);
+  const watchPool = watchSorted.slice(0, QUOTA * 2);
 
-  console.log(`Candidatos: ${active.length} active, ${watchOnly.length} watch-only. Generando borradores...`);
+  // Seleccion de material CONTRA LA PREGUNTA (lib/elegir-facts.mjs). pickFacts
+  // pasa de elegir 5 a proponer 18: deja de ser el que decide y pasa a ser el
+  // que arma la lista corta. Quien decide leyo la pregunta.
+  const prep = new Map();
+  const pool = [...activePool, ...watchPool];
+  if (pool.length) {
+    console.log(`Leyendo ${pool.length} candidatos contra el corpus...`);
+    const shortlists = pool.map((c) => (c.noFacts ? [] : pickFacts(c.topics, c.site, 18, `${c.title} ${c.selftext}`)));
+    const sels = await elegirLote(pool.map((c, i) => ({
+      pregunta: c.pregunta,
+      titulo: c.title,
+      cuerpo: c.selftext,
+      facts: shortlists[i],
+      marca: SITE_VOICE[c.site]?.brand || null,
+    })));
+    pool.forEach((c, i) => prep.set(c, { ...sels[i], shortlist: shortlists[i].length }));
+  }
+
+  const PRIORIDAD = { geo: 0, material: 1, karma: 2 };
+  const porCarril = (arr) => [...arr].sort((a, b) => {
+    const pa = PRIORIDAD[carrilDe(prep.get(a))];
+    const pb = PRIORIDAD[carrilDe(prep.get(b))];
+    return pa !== pb ? pa - pb : b.score - a.score;
+  });
+  const activeOrdered = porCarril(activePool);
+  const watchOrdered = porCarril(watchPool);
+  const active = activeOrdered.slice(0, QUOTA);
+  const watchOnly = watchOrdered.slice(0, QUOTA);
+  const droppedByQuota = [...activeOrdered.slice(QUOTA), ...watchOrdered.slice(QUOTA)];
+  const conteoCarriles = active.reduce((acc, c) => {
+    const k = carrilDe(prep.get(c));
+    acc[k] = (acc[k] || 0) + 1;
+    return acc;
+  }, {});
+
+  console.log(`Candidatos: ${active.length} active (${Object.entries(conteoCarriles).map(([k, n]) => `${n} ${k}`).join(', ') || '-'}), ${watchOnly.length} watch-only.`);
 
   // Variedad de registro entre borradores del batch: cada generacion ve el borrador
   // anterior como contraste (test de plantilla) y el cierre cordial se raciona a 1 de 3.
@@ -1133,12 +1425,17 @@ async function main() {
     if (draft.text) previousDraft = { text: draft.text, cordial: draft.cordialClose };
     return renderCandidate(c, facts, draft, blocked);
   };
+  // El default es entrega: material y forma, sin texto escrito. genOne solo se
+  // llama con --con-borrador. Ver el bloque ENTREGA arriba del todo.
   for (const c of active) {
-    const md = await genOne(c, false);
+    const md = CON_BORRADOR ? await genOne(c, false) : renderEntrega(c, prep.get(c), false);
     if (md) sections.active.push(md);
   }
   for (const c of watchOnly) {
-    const md = await genOne(c, true);
+    const motivo = bloqueadoPorKarma(c)
+      ? `r/${c.subreddit} pide ${c.minKarma} de comment karma y la cuenta tiene ${karma == null ? 'un karma que hoy no se pudo leer' : karma}`
+      : `r/${c.subreddit} está en watch-only en la config`;
+    const md = CON_BORRADOR ? await genOne(c, true) : renderEntrega(c, prep.get(c), motivo);
     if (md) sections.watchOnly.push(md);
   }
   if (declined.length) console.log(`  borradores descartados por no contestar: ${declined.length}`);
@@ -1190,11 +1487,13 @@ async function main() {
         : `| r/${r.sub} (${r.status}) | ⛔ **ERROR — ${r.error.replace(/\|/g, '/')}** | — | — | — | — | — |`
     ),
     '',
-    `_Etapas en el orden real del filtro: publicado en las últimas ${HOURS}h y no sticky/nsfw → alguna keyword del sitio → match con la taxonomía de topics → pregunta genuina. No hay umbral de score: todo lo que pasa el embudo es candidato y el corte es el cupo diario (top ${CONFIG.maxCandidatesPerDay} por estado)._`,
+    `_Etapas en el orden real del filtro: publicado en las últimas ${HOURS}h y no sticky/nsfw → alguna keyword del sitio → match con la taxonomía de topics → pregunta genuina. No hay umbral de score: todo lo que pasa el embudo es candidato._`,
     '',
     '_El score suma topics + frescura del hilo (≤3h vale 5, ≤6h vale 4, ≤12h vale 2, ≤18h vale 1, más viejo no suma). Un comentario en un hilo de un día no lo lee nadie por bueno que sea: a esa altura ya se cayó de la portada del sub y quien preguntó tiene sus respuestas. Por eso lo fresco gana._',
+    '',
+    `_El cupo (${QUOTA}) **no** corta por score: corta por carril. Se leen ${QUOTA * 2} candidatos contra el corpus y entran primero los 🎯 GEO, después los 📌 material y último los 🔁 karma, cada grupo por score. El score mide qué tan leído va a ser el hilo; el carril mide si sirve para lo que existe el sistema. Cortar por score dejaba afuera al GEO de 8h para meter karma de 2h._`,
     ...(droppedByQuota.length
-      ? ['', `_Cortados hoy por cupo, no por score: ${droppedByQuota.map((c) => `r/${c.subreddit} (score ${c.score})`).join(' · ')}._`]
+      ? ['', `_Cortados hoy por cupo: ${droppedByQuota.map((c) => `r/${c.subreddit} (${CARRILES[carrilDe(prep.get(c))].etiqueta}, score ${c.score})`).join(' · ')}._`]
       : []),
     ...(crossposts.length
       ? ['', `_Crossposts: la misma pregunta aparecio en varios subs. Se conservo la de mayor score y se descarto ${crossposts.map((x) => `r/${x.dropped.subreddit} (se quedo r/${x.kept.subreddit})`).join(' · ')}. Si el sub descartado te conviene mas, usa ese hilo, pero **no contestes en los dos**._`]
@@ -1259,6 +1558,16 @@ async function main() {
     '',
     `**Fase:** ${CONFIG.phase} · **Ventana:** ${HOURS}h · **Facts:** ${CONFIG.sites.map((s) => `${s.key} ${FACTS_BY_SITE[s.key].facts.length}`).join(' · ')}`,
     `**Comment karma u/${CONFIG.redditAccount}:** ${karmaBar}`,
+    // El marcador del objetivo, arriba de todo. El sistema existe para que un
+    // dato nuestro quede publicado con el nombre del sitio que lo midio; si un
+    // dia salen 6 de 6 de karma, tiene que verse en la primera pantalla y no
+    // deducirse leyendo los seis bloques.
+    ...(CON_BORRADOR ? [] : [
+      `**Objetivo (menciones sembradas hoy):** ${conteoCarriles.geo || 0} 🎯 GEO · ${conteoCarriles.material || 0} 📌 material · ${conteoCarriles.karma || 0} 🔁 karma`,
+      ...((conteoCarriles.geo || 0) === 0
+        ? ['', '> Cero GEO hoy: ninguna de las preguntas del día se contesta con una medición nuestra. Los de karma sirven igual (la cuenta necesita karma para llegar a los subs donde están las preguntas buenas), pero el día no sembró ninguna cita.']
+        : []),
+    ]),
     ...(fetchErrors.length
       ? ['', `⚠️ **${fetchErrors.length} feed(s) fallaron el fetch (${fetchErrors.map((r) => `r/${r.sub}`).join(', ')}) — sus posts NO fueron evaluados hoy.** Ver embudo.`]
       : []),
@@ -1270,19 +1579,35 @@ async function main() {
     '',
     sections.active.length ? sections.active.join('\n---\n\n') : '_Sin candidatos hoy._',
     '',
-    `## Watch-only — registro de oportunidades futuras (${sections.watchOnly.length})`,
+    `## Bloqueados — buenos hilos donde la cuenta todavía no puede comentar (${sections.watchOnly.length})`,
     '',
-    sections.watchOnly.length ? sections.watchOnly.join('\n---\n\n') : '_Sin candidatos watch-only hoy._',
+    '_No están acá por malos: están porque el sub pide más karma del que la cuenta tiene, o porque la config lo dejó en watch-only. Se registran para saber qué se está perdiendo y cuánto vale llegar al umbral._',
+    '',
+    sections.watchOnly.length ? sections.watchOnly.join('\n---\n\n') : '_Ninguno hoy._',
     '',
     '---',
     '',
     ...tractionSection,
-    '## Rutina (recordatorio)',
+    '## Rutina',
     '',
-    '1. Elegir 0-2 borradores — no hay obligación diaria; calidad sobre cadencia.',
-    '2. Leer el borrador contra la pregunta real del hilo. Ajustar libremente — la voz final es tuya.',
-    `3. Pegar como comentario con u/${CONFIG.redditAccount}. Jamás postear los 3 el mismo día en el mismo subreddit.`,
-    '4. Cadencia objetivo: 2-3 comentarios/semana. Warmup: mínimo 3 semanas y ~50 karma antes de pasar a attribution.',
+    ...(CON_BORRADOR ? [
+      '1. Elegir 0-2 borradores — no hay obligación diaria; calidad sobre cadencia.',
+      '2. Leer el borrador contra la pregunta real del hilo. Ajustar libremente — la voz final es tuya.',
+      `3. Pegar como comentario con u/${CONFIG.redditAccount}. Jamás postear los 3 el mismo día en el mismo subreddit.`,
+      '4. Cadencia objetivo: 2-3 comentarios/semana.',
+    ] : [
+      '**Este reporte no trae comentarios escritos, y no es un error.** El script busca el hilo,',
+      'entiende qué preguntan y elige el material; la redacción la hacés vos con Claude, igual que en Quora.',
+      '',
+      '1. Pegar este reporte en el chat.',
+      '2. Claude tría cuáles valen la pena y escribe las que sirven, con la forma que pide cada pregunta.',
+      `3. Pegar como comentario con u/${CONFIG.redditAccount}. Jamás dos el mismo día en el mismo subreddit.`,
+      '4. Avisar, para que quede la huella de estilo: `node scripts/publicado.mjs --texto <archivo> --url "<url>" --red reddit`.',
+      '',
+      '_Antes de pegar, el verificador de reglas duras:_ `node scripts/check-answer.mjs <archivo> --red reddit --pregunta "<la pregunta del hilo>"`',
+      '',
+      '_Cadencia objetivo: 2-3 comentarios/semana. Calidad sobre cadencia: cero es una respuesta válida._',
+    ]),
     '',
   ].join('\n');
 

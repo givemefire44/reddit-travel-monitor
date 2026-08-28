@@ -57,7 +57,16 @@ const CUANTOS = Number(process.argv[2] || 6);
 
 console.log('Bajando hilos y comentarios reales...\n');
 
+// AutoModerator y los bots de reglas. El filtro faltaba: la primera medicion se
+// publico diciendo "sacando los bots de AutoModerator" y no habia ni una linea
+// que los sacara. Eran 11 de 87, todos de r/Flights y r/ItalyTravel, y son
+// justo el peor contaminante posible para lo que se esta midiendo: largos,
+// prolijos, de varios parrafos y con el mismo molde siempre. O sea, corrian la
+// medida hacia el estilo que la medicion existe para desmentir.
+const ES_BOT = /I am a bot|action was performed automatically|please contact the moderators|^Notice:|has been removed|^Your (post|comment)\b/i;
+
 const comentarios = [];
+let bots = 0;
 for (const sub of SUBS) {
   const xml = await traer(`https://www.reddit.com/r/${sub}/new.rss?limit=${CUANTOS}`);
   if (!xml) { console.log(`  r/${sub}: no se pudo`); continue; }
@@ -71,6 +80,7 @@ for (const sub of SUBS) {
     for (const e of en) {
       const txt = limpiar((e.match(/<content[^>]*>([\s\S]*?)<\/content>/) || [])[1] || '');
       if (!txt || txt.length < 3) continue;
+      if (ES_BOT.test(txt)) { bots += 1; continue; }
       comentarios.push({ sub, texto: txt });
       n += 1;
     }
@@ -78,7 +88,7 @@ for (const sub of SUBS) {
   console.log(`  r/${sub}: ${urls.length} hilos, ${n} comentarios`);
 }
 
-console.log(`\n${comentarios.length} comentarios reales\n`);
+console.log(`\n${comentarios.length} comentarios humanos (${bots} de bots descartados)\n`);
 if (!comentarios.length) process.exit(1);
 
 // ------------------------------------------------------------------ medidas
