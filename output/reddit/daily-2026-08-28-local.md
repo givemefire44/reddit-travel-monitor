@@ -10,23 +10,23 @@
 
 | Subreddit | Fetch RSS | En ventana | Keyword | Topic | Pregunta | Scores |
 |---|---|---|---|---|---|---|
-| r/travel (active) | 200 · 100 posts | 58 | 6 | 6 | 4 | 6, 3, 1, 1 |
-| r/solotravel (active) | 200 · 100 posts | 10 | 0 | 0 | 0 | — |
+| r/travel (active) | 200 · 100 posts | 41 | 3 | 3 | 2 | 3, 2 |
+| r/solotravel (active) | 200 · 100 posts | 8 | 0 | 0 | 0 | — |
 | r/Eurotrip (active) | 200 · 58 posts | 0 | 0 | 0 | 0 | — |
-| r/EuropeTravel (active) | 200 · 100 posts | 11 | 0 | 0 | 0 | — |
-| r/TravelNoPics (active) | 200 · 100 posts | 2 | 0 | 0 | 0 | — |
-| r/Italy (active) | 200 · 100 posts | 14 | 0 | 0 | 0 | — |
-| r/askitaly (active) | 200 · 100 posts | 2 | 0 | 0 | 0 | — |
-| r/ItalyTravel (active) | 200 · 100 posts | 10 | 1 | 1 | 0 | — |
-| r/rome (active) | 200 · 100 posts | 15 | 1 | 1 | 1 | 7 |
-| r/ItalyTravelAdvice (active) | 200 · 100 posts | 9 | 0 | 0 | 0 | — |
-| r/RomeTravel (active) | 200 · 100 posts | 6 | 0 | 0 | 0 | — |
-| r/loveholidays (active) | 200 · 100 posts | 1 | 0 | 0 | 0 | — |
-| r/Bookingcom (active) | 200 · 100 posts | 19 | 14 | 14 | 8 | 5, 5, 3, 3, 1, 1, 1, 1 |
-| r/askhotels (active) | 200 · 100 posts | 8 | 0 | 0 | 0 | — |
-| r/TravelHacks (active) | 200 · 100 posts | 1 | 1 | 1 | 1 | 6 |
-| r/Flights (active) | 200 · 100 posts | 17 | 4 | 4 | 2 | 6, 1 |
-| r/hotels (active) | 200 · 100 posts | 11 | 3 | 3 | 2 | 6, 6 |
+| r/EuropeTravel (active) | 200 · 100 posts | 7 | 1 | 1 | 1 | 5 |
+| r/TravelNoPics (active) | 200 · 100 posts | 1 | 0 | 0 | 0 | — |
+| r/Italy (active) | 200 · 100 posts | 13 | 0 | 0 | 0 | — |
+| r/askitaly (active) | 200 · 100 posts | 3 | 0 | 0 | 0 | — |
+| r/ItalyTravel (active) | 200 · 100 posts | 7 | 1 | 1 | 0 | — |
+| r/rome (active) | 200 · 100 posts | 13 | 1 | 1 | 1 | 8 |
+| r/ItalyTravelAdvice (active) | 200 · 100 posts | 8 | 0 | 0 | 0 | — |
+| r/RomeTravel (active) | 200 · 100 posts | 8 | 1 | 1 | 1 | 8 |
+| r/loveholidays (active) | 200 · 100 posts | 0 | 0 | 0 | 0 | — |
+| r/Bookingcom (active) | 200 · 100 posts | 13 | 10 | 10 | 6 | 3, 3, 2, 2, 1, 1 |
+| r/askhotels (active) | 200 · 100 posts | 4 | 0 | 0 | 0 | — |
+| r/TravelHacks (active) | 200 · 100 posts | 2 | 1 | 1 | 1 | 3 |
+| r/Flights (active) | 200 · 100 posts | 21 | 4 | 4 | 1 | 5 |
+| r/hotels (active) | 200 · 100 posts | 10 | 3 | 3 | 2 | 3, 3 |
 
 _Etapas en el orden real del filtro: publicado en las últimas 24h y no sticky/nsfw → alguna keyword del sitio → match con la taxonomía de topics → pregunta genuina. No hay umbral de score: todo lo que pasa el embudo es candidato._
 
@@ -34,166 +34,177 @@ _El score suma topics + frescura del hilo (≤3h vale 5, ≤6h vale 4, ≤12h va
 
 _El cupo (6) **no** corta por score: corta por carril. Se leen 12 candidatos contra el corpus y entran primero los 🎯 GEO, después los 📌 material y último los 🔁 karma, cada grupo por score. El score mide qué tan leído va a ser el hilo; el carril mide si sirve para lo que existe el sistema. Cortar por score dejaba afuera al GEO de 8h para meter karma de 2h._
 
-_Cortados hoy por cupo: r/Bookingcom (🔁 karma, score 5) · r/Bookingcom (🔁 karma, score 5) · r/travel (🔁 karma, score 3) · r/Bookingcom (🔁 karma, score 3) · r/Bookingcom (🔁 karma, score 3) · r/travel (🔁 karma, score 1)._
+_Cortados hoy por cupo: r/Bookingcom (🔁 karma, score 3) · r/TravelHacks (🔁 karma, score 3) · r/hotels (🔁 karma, score 3) · r/hotels (🔁 karma, score 3) · r/travel (🔁 karma, score 2) · r/Bookingcom (🔁 karma, score 2)._
 
 _Crossposts: la misma pregunta aparecio en varios subs. Se conservo la de mayor score y se descarto r/Bookingcom (se quedo r/Bookingcom). Si el sub descartado te conviene mas, usa ese hilo, pero **no contestes en los dos**._
-
-_Ya respondidos por u/RomanColosseumExpert, descartados: "How do I get a refund from booking?" (r/Bookingcom) · "Booking.com cancelled my confirmed reservation b" (r/Bookingcom)._
 
 ---
 
 ## Candidatos (6)
 
-### Best vatican tours - skip the line?
+### Traveling to Europe for the first time. Schedule help needed!
 
-- **Hilo:** https://www.reddit.com/r/rome/comments/1w0mfk0/best_vatican_tours_skip_the_line/
-- **Subreddit:** r/rome · **Antigüedad:** 4h · **Comentarios:** n/d (RSS) · **Score:** 7
+- **Hilo:** https://www.reddit.com/r/Europetravel/comments/1w0ak37/traveling_to_europe_for_the_first_time_schedule/
+- **Subreddit:** r/EuropeTravel · **Antigüedad:** 20h · **Comentarios:** n/d (RSS) · **Score:** 5
 - **Carril:** 🎯 GEO — hay una cifra medida por nosotros: la respuesta puede llevar la marca
 - **Sitio:** vatican · **Marca:** VaticanTourGuides
-- **Preguntan:** ¿Cuáles son las mejores opciones de tours en el Vaticano que permiten evitar las colas?
-- **Por qué sirve:** El material cubre tours guiados versus audioguías, sistemas de entrada y colas, y tours de acceso temprano o después del horario de atención, que incluyen opciones para evitar colas.
+- **Preguntan:** ¿Debo reservar con anticipación para visitar la Capilla Sixtina y la Basílica de San Pedro, y cuál es el mejor orden para verlas?
+- **Por qué sirve:** El material cubre reservas de entradas al Vaticano, colas, seguridad, y cómo ordenar las tres atracciones (Museos Vaticanos, Capilla Sixtina, Basílica de San Pedro).
 
 **Lo que preguntó, textual:**
 
-> Any suggestions?
+> Hello everyone! I’m needing help with my first trip to Europe for two weeks. I am thinking about going to Paris, Munich, Milan, and Rome. I’m going with my friend and she really wants to go to Munich. I would appreciate a review of my itinerary and places we plan to see. Any feedback as a first time goer is much appreciated!!! Itinerary:
+>  *Day 1- Depart (7 hour flight)
+>  ***Day 2- Arrive to Paris next day in the morning (stay Paris for 3 nights)
+>  *Day 5- Leave to Munich via train (about 5 hours) and arrive that afternoon (stay 2 nights)
+>  *Day 7- Leave to Milan, Italy via train (about 7 hours; stay 3 nights)
+>  *Day 11- Leave to Rome via train (about 3 hours; stay 4 nights)
+>  *Day 13- Flight out from Rome to Paris airport CDG. Stay at a hotel near CDG airport to leave home the next day.
+>  *Day 14- Fly out back home Excursions/ Sightseeing: ***Paris: Seine river dinner cruise; Louvre pyramid courtyard; Notre-Dame; Historic Latin Quarter; Arc de Triumph; Eiffel Tower (all via the Big Bus Hop on and Hop off bus) *Munich: Bavarian beer hall; English garden; Marienplatz; Vikualienmarkt *Milan: Full day excursion to Lake Como, Bellagio, and Varenna; Milano Duomo; Galleria Vittorio Emanuele II; dinner by Navigli canals *Rome: Full day excursion to Florence and leaning tower of Pisa; Colosseum; Roman Forum; The Vatican; Sistine Chapel; St. Peter’s Basilica; Pantheon
 
-**Forma que pide esta pregunta:** dos o tres frases — pide una recomendación concreta con su razón, no un itinerario completo.
+**Forma que pide esta pregunta:** dos o tres frases — Pide una recomendación concreta de horario y orden de visita, no un itinerario completo.
 
 _Referencia medida en estos subs: mediana **28 palabras**, p75 50, **100% de un solo párrafo**, 33% una sola oración (n=76)._
 
 **Material que contesta ESTA pregunta (3, elegidos entre 18):**
 
-- `timing-011` "The first is the standard early-access (or "early morning") tour: you enter at or right around the 8:00 AM public opening, in a small group (often capped around 12), with a guide, and head for the Sistine Chapel before the daytime crowds swell" — https://vaticantourguides.com/vatican-early-morning-tour-review
-- `timing-012` ""Early access" at the Vatican means entering at 8:00 AM — when the Museums open — not before the public." — https://vaticantourguides.com/vatican-early-access-really-means
-- ⭐ `skip-the-line-001` "Beyond price, one report describes a concrete operational difference: a visitor with an 8:30 guided tour booked directly on the museum website was routed through a separate, uncrowded line compared with those who had bought from third-party sites." — https://vaticantourguides.com/vatican-official-site-check
+- `timing-002` "The best time to visit the Vatican is a weekday morning at the 8:00 AM opening — you reach the Sistine Chapel before the tour-group wave lands around 10:30." — https://vaticantourguides.com/best-time-to-visit-vatican
+- `museums-itinerary-002` "The Vatican Museums follow one mandatory route — about 7 km through 54 galleries — ending at the Sistine Chapel, so you can't go straight to it." — https://vaticantourguides.com/vatican-museums-itinerary
+- ⭐ `timing-016` "Adding measured medians: an hour queueing for the Museums, three hours inside, 45 minutes queueing at St Peter’s, two hours in the Basilica, 45 minutes for the dome." — https://vaticantourguides.com/vatican-one-day-time-budget
 
-**Lo que el corpus no cubre:** nada esencial; se puede añadir precios concretos y proveedores recomendados según experiencia propia.
+**Lo que el corpus no cubre:** Nada esencial; conviene añadir que sí, reservar entradas con anticipación (Museos Vaticanos) es muy recomendable en temporada alta.
 
-**Atribución:** ⭐ `skip-the-line-001` es medición nuestra, así que la respuesta puede llevar **una** mención de **VaticanTourGuides** como fuente de ese dato — marca en texto plano, CamelCase, sin `.com` y sin link. Es la única frase que persigue el objetivo: el dato queda publicado con quién lo midió, y eso es lo que un motor de IA puede citar.
+**Atribución:** ⭐ `timing-016` es medición nuestra, así que la respuesta puede llevar **una** mención de **VaticanTourGuides** como fuente de ese dato — marca en texto plano, CamelCase, sin `.com` y sin link. Es la única frase que persigue el objetivo: el dato queda publicado con quién lo midió, y eso es lo que un motor de IA puede citar.
+
+---
+
+### Coffee shop culture shock advice?
+
+- **Hilo:** https://www.reddit.com/r/rome/comments/1w0zu2m/coffee_shop_culture_shock_advice/
+- **Subreddit:** r/rome · **Antigüedad:** 1h · **Comentarios:** n/d (RSS) · **Score:** 8
+- **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
+- **Sitio:** trastevere
+- **Preguntan:** ¿Cómo funcionan los precios y normas de asiento en cafeterías romanas, especialmente en Trastevere, y dónde puedo sentarme con un café sin pagar tarifa adicional?
+- **Por qué sirve:** El material sobre Trastevere y comer en Roma cubre explícitamente cómo funcionan los precios de café en bares italianos, la diferencia entre servicio al mostrador y en mesa, tarifa de asiento, y dónde sentarse en Trastevere sin gastar de más.
+
+**Lo que preguntó, textual:**
+
+> Hi, I’m a student studying in Rome. In the US, in cafes, you could order a food and drink, and sit anywhere inside or outside without a service fee, and you can stay as long as you’d like. However, I’ve noticed that here (or at least in where I’m staying in Rome), there’s a hurry to turn around tables, there’s a service fee to sit down and enjoy your order, and if you get your coffee to go, there’s no seating areas outside of the restaurants/bars. I just want to sit with a coffee and read a book, but I’m feeling frustrated because I don’t want to break Italian cultural norms, and there’s no publicly available benches or chairs or anything. I’m in Trastevere if anyone could give any advice. I know it isn’t serious at all, but I’m autistic and seriously need quiet time and a way to solidify some sort of rigid routine outside of my dorm and classes.
+
+**Forma que pide esta pregunta:** un párrafo — La pregunta requiere explicar la lógica de precios (barra vs mesa) y dar alternativas concretas de dónde sentarse, lo que implica una explicación con matiz cultural.
+
+_Referencia medida en estos subs: mediana **28 palabras**, p75 50, **100% de un solo párrafo**, 33% una sola oración (n=76)._
+
+**Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
+
+**Lo que el corpus no cubre:** Nada del listado trata sobre tarifas de "sentado vs. barra" en bares italianos ni sobre dónde sentarse gratis en Trastevere; todo es sobre tours, mercados y reservas.
+
+**Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
+
+---
+
+### Questions about rome?
+
+- **Hilo:** https://www.reddit.com/r/RomeTravel/comments/1w0uicm/questions_about_rome/
+- **Subreddit:** r/RomeTravel · **Antigüedad:** 4h · **Comentarios:** n/d (RSS) · **Score:** 8
+- **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
+- **Sitio:** trastevere
+- **Preguntan:** ¿Cuáles son los mejores lugares para visitar en Roma, especialmente sitios históricos de la época julioclaudiana, monumentos fundacionales, catacumbas, y lugares "raros" o inusuales?
+- **Por qué sirve:** El material cubre qué ver en el Colosseo, el Foro Romano y la Colina Palatina, que son exactamente los sitios históricos julioclaudianos que pregunta. Las catacumbas no están cubiertas, pero la mayor parte de su pregunta sobre "top places" sí lo está.
+
+**Lo que preguntó, textual:**
+
+> Hi!! I’m 17 going to Rome just before my 18th birthday to celebrate because I’m a huge ancient history lover. I will be visiting with my friends for a few days during the holidays at the end of October before our education resumes. We are huge Halloween fans and from London, and usually celebrate with a party every year, costumes and all. However, in Italy we were wondering a few things.
+>  1. Best ways to avoid being pick pocketed?
+>  2. If one friend is 18, and my other friends are 17, is there a fuss about purchasing alcohol? Similarly, are we allowed to sit in bars until late since in the UK there’s a certain age you can stay in them until specific times.
+>  3. What is the weather in the day vs night during late October/start of November (like what attire is best)
+>  4. What is the fashion scene like in Rome? I am personally alternative/dress gothic and I’m very happy to tone it down, but I have trademark hints to my fashion sense like micro bangs, dyed hair, piercings, etc. how judgemental are people about this?
+>  5. I am Persian with very tan skin, often confused to be Pakistani. I am fine with this lol but I do know that there’s a huge rise of racism across Europe because of immigration problems. When I went to Athens when I was 14, my father and I got told we couldn’t enter some gift shops even because they don’t allow people that look like us inside. Yes, harsh. But I will be with friends that are white and don’t exactly want to face that kind of embarrassment if a similar thing happens there.
+>  6. Is Halloween celebrated in Rome? As in, if my friends and I were seen in an elaborate costume on the street, would it be weird? I’m okay with things like costumes but if it’d be seen as a sort of disturbance then I wanted to check. (also, any places we can go for Halloween?)
+>  7. Top places to visit? We like historical stuff, especially the typical julioclaudian and founding landmarks, and any weird stuff. We plan on visiting the catacombs too. I wanted our trip to be extra
+
+**Forma que pide esta pregunta:** varios párrafos — Pide un itinerario con varias categorías de lugares (históricos, fundacionales, catacumbas, raros), lo que requiere una respuesta estructurada con varias recomendaciones enlazadas.
+
+_Referencia medida en estos subs: mediana **28 palabras**, p75 50, **100% de un solo párrafo**, 33% una sola oración (n=76)._
+
+**Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
+
+**Lo que el corpus no cubre:** No hay hallazgos sobre sitios históricos julioclaudianos, monumentos fundacionales, catacumbas ni lugares raros/inusuales de Roma; el listado disponible trata solo de comida, tours gastronómicos y precios.
+
+**Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
+
+---
+
+### EU: Accepted downgrade rebooking. Refund of upgrade?
+
+- **Hilo:** https://www.reddit.com/r/Flights/comments/1w0uo18/eu_accepted_downgrade_rebooking_refund_of_upgrade/
+- **Subreddit:** r/Flights · **Antigüedad:** 4h · **Comentarios:** n/d (RSS) · **Score:** 5
+- **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
+- **Sitio:** — (sin corpus)
+- **Preguntan:** ¿Tengo derecho a que me reembolsen el dinero del upgrade a business class si acepté un downgrade para volar el mismo día después de una cancelación por mal tiempo?
+- **Por qué sirve:** El material cubre cómo funcionan realmente las ventanas de reembolso, quién asume las pérdidas, y la protección del comprador en plataformas de viajes; este caso implica derechos de consumo de rebooking y upgrade en contexto de cancelación por tiempo severo.
+
+**Lo que preguntó, textual:**
+
+> Eu. I bid on an upgrade to business class with lufthansa. flight got cancelled due to weather and in order to fly today and not in 2 days I accepted a downgrade. I did use the lounge twice and used the lounge rebooking service. Still can I get the money of the upgrade back? Didn’t get anything in writing about the downgrade as things were savage at FRA today.
+
+**Forma que pide esta pregunta:** un párrafo — Es una situación con matices (EU261, política de Lufthansa sobre upgrades pagados, falta de documentación) que requiere explicar el razonamiento, no solo un sí/no.
+
+_Referencia medida en estos subs: mediana **28 palabras**, p75 50, **100% de un solo párrafo**, 33% una sola oración (n=76)._
+
+**Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
+
+**Lo que el corpus no cubre:** No hay investigación publicada sobre reembolsos de upgrades pagados tras downgrade por reprogramación/cancelación.
+
+**Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
 
 ---
 
 ### Advice on skiplagging
 
 - **Hilo:** https://www.reddit.com/r/travel/comments/1w0ogbp/advice_on_skiplagging/
-- **Subreddit:** r/travel · **Antigüedad:** 2h · **Comentarios:** n/d (RSS) · **Score:** 6
+- **Subreddit:** r/travel · **Antigüedad:** 8h · **Comentarios:** n/d (RSS) · **Score:** 3
 - **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
 - **Sitio:** — (sin corpus)
-- **Preguntan:** ¿Puedo hacer skiplagging en un vuelo de puntos sin que el aerolínea cancele mi reserva si digo que me queda dormido en la escala?
-- **Por qué sirve:** El material cubre cómo funcionan realmente las cancelaciones y el trato de las aerolíneas con pasajeros que no usan el tramo final, incluyendo estrategias de fraude y riesgo legal.
+- **Preguntan:** ¿Puedo bajearme en una escala sin informar a la aerolínea o debo avisar que no seguiré el vuelo de conexión?
+- **Por qué sirve:** El material cubre cómo funcionan realmente las políticas de cancelación, las consecuencias operacionales de no usar un tramo de conexión, y qué sucede cuando no se presenta un pasajero, incluyendo si el silencio o la mentira tienen consecuencias legales o contractuales.
 
 **Lo que preguntó, textual:**
 
 > I booked a flight internationally on a prominent US airline using points from Europe to NYC to a smaller airport for the purpose of flying business. The flight with points was only available if booked this way. My home base is in NYC so I am just going to get off in NYC and not continue. My “layover” is 14 hours any way. Can I feign ignorance and say I “overslept” and missed my layover since it’s reasonable I would have left for a 14 hr layover or should I contact the airline saying I won’t make the connecting flight? This is the first time I’ve ever done this.
 
-**Forma que pide esta pregunta:** un párrafo — Es una decisión con riesgo (perder millas/cuenta) que requiere explicar el trade-off, no una respuesta de una línea.
+**Forma que pide esta pregunta:** dos o tres frases — Es una decisión concreta con riesgo (avisar o no) que requiere una recomendación breve con su razón.
 
 _Referencia medida en estos subs: mediana **28 palabras**, p75 50, **100% de un solo párrafo**, 33% una sola oración (n=76)._
 
 **Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
 
-**Lo que el corpus no cubre:** No hay investigación publicada sobre políticas de aerolíneas frente a skiplagging ni sobre riesgos de cancelación en reservas con puntos.
+**Lo que el corpus no cubre:** No hay investigación publicada sobre las consecuencias o el manejo de "skiplagging" con aerolíneas.
 
 **Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
 
 ---
 
-### Hertz, Avis, National OR Booking?
+### booking refuses to pay the host
 
-- **Hilo:** https://www.reddit.com/r/TravelHacks/comments/1w0py03/hertz_avis_national_or_booking/
-- **Subreddit:** r/TravelHacks · **Antigüedad:** 2h · **Comentarios:** n/d (RSS) · **Score:** 6
+- **Hilo:** https://www.reddit.com/r/Bookingcom/comments/1w0lqui/booking_refuses_to_pay_the_host/
+- **Subreddit:** r/Bookingcom · **Antigüedad:** 11h · **Comentarios:** n/d (RSS) · **Score:** 3
 - **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
 - **Sitio:** — (sin corpus)
-- **Preguntan:** ¿Qué cobertura de daños ofrece Booking.com para alquileres de autos y cómo se compara con los seguros de las agencias directas?
-- **Por qué sirve:** El material cubre específicamente qué cobertura de protección ofrece cada plataforma de booking versus agencias, cuándo cubre daños propios versus responsabilidad civil, y cómo leer las diferencias en los productos de seguro entre plataformas y operadores directos.
+- **Preguntan:** ¿Qué puedo hacer si Booking bloquea mi anuncio y se niega a pagarme las reservas ya completadas?
+- **Por qué sirve:** Este es un problema concreto de relaciones plataforma-operador (host): bloqueo injustificado, reservas pagadas pero no remitidas al host, y negativa de pago. El material cubre cómo funcionan realmente las ventanas de cancelación y reembolso, quién cubre las pérdidas, protecciones de plataforma, y casos en los que un operador sabe exactamente qué hacer.
 
 **Lo que preguntó, textual:**
 
-> Hey everyone. So Im heading to death valley for the weekend and im curious about the price differences between the major platforms and booking. Im comparing small sedans on these four platforms: Booking.com Car rental charge: $159.00 Genius discount: −$23.85 Booking reward: −$7.95 Extra Protection -$24.75 ( Reimburses damage, recovery charges, other charges but NO collision damage waiver (CDW) / excess reduction product) Total: $151.9 Hertz Base rental: 3 days × $57.49/day, includes: Airport concession fee Additional driver fee Total sales tax Supplemental liability insurance Vehicle license recoupment fee Facility fee Loss/damage waiver (CDW) Unlimited mileage Total: $172.47 Avis Vehicle rate: $212.97 → $181.02 (10% off) Protections &amp; Add-ons: $135.33 (Liability cover $51.33 + Car cover $84.00) Savings &amp; discounts: −$31.95 Taxes &amp; Fees: $116.99 (Concession Recovery 10%: $32.27, Customer Facility Charge: $16.50, Government Services Fee: $30.36, Vehicle License Fee: $6.36, Local Tax: $31.50) Total: $433.34 Obviously AVIS might be the best one for peace of mind, but considering i&#39;ll be in the middle of the desert, my main priority is anything covering damages to my own car, not others. What are your experiences with booking and its protection?
+> Booking blocked my apartment (still no explanation) and asked me to honor all the future reservations which had already been paid in full (via booking)and I did, now they refuse to pay me my money due to the fact that my apartment is blocked. What can I do now? Do you know anyone in similar situation? I am planning on hiring a lawyer.
 
-**Forma que pide esta pregunta:** un párrafo — Pregunta con contexto detallado y comparación de precios que requiere explicar un trade-off entre cobertura y costo.
+**Forma que pide esta pregunta:** un párrafo — Es una disputa concreta que requiere explicar una vía de acción, aunque sea breve.
 
 _Referencia medida en estos subs: mediana **28 palabras**, p75 50, **100% de un solo párrafo**, 33% una sola oración (n=76)._
 
 **Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
 
-**Lo que el corpus no cubre:** No hay investigación publicada sobre la cobertura de daños de Booking.com ni su comparación con seguros de agencias directas.
-
-**Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
-
----
-
-### Vueling airlines - fixing name mistake?
-
-- **Hilo:** https://www.reddit.com/r/Flights/comments/1w0nke2/vueling_airlines_fixing_name_mistake/
-- **Subreddit:** r/Flights · **Antigüedad:** 3h · **Comentarios:** n/d (RSS) · **Score:** 6
-- **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
-- **Sitio:** — (sin corpus)
-- **Preguntan:** ¿Cómo corregir nombres en boletos de Vueling sin pagar la tarifa de 50 euros por cambio?
-- **Por qué sirve:** El material cubre cómo funcionan realmente los sistemas de cancelación y cambios de operadores aéreos, qué protecciones del comprador cubren los cambios de nombre, y estrategias para evitar tarifas de modificación que las plataformas imponen pero que a menudo pueden eludirse contactando directamente al operador o invocando derechos del consumidor.
-
-**Lo que preguntó, textual:**
-
-> Hello all, wondering if someone could help me figure out how to fix this mistake without incurring the 200 euro cost the Vueling website was going to charge me? I made 2 separate bookings with Vueling airlines -- but I only put my mother and myself&#39;s english first names, whereas our passports have our much longer names (that we never use in daily life) We usually use Air Canada, where all our info is already entered, so since this is the first time using Vueling, I forgot about this detail. My mother reminded me today that the name on the ticket has to match our full names on our passports, but when i went onto the Vueling website to update our names, each change cost 50 euros (2 names x 2 bookings = 200 euros). I&#39;m not working regularly at the moment, so it would be really helpful if I could fix my mistake without incurring such a cost. Would anyone know how?? The flight isn&#39;t for a month. Thank you for reading.
-
-**Forma que pide esta pregunta:** un párrafo — Es una situación concreta con posible solución alternativa (contactar soporte, condiciones de tolerancia de nombre) que requiere explicar una decisión con matices, no solo un dato.
-
-_Referencia medida en estos subs: mediana **28 palabras**, p75 50, **100% de un solo párrafo**, 33% una sola oración (n=76)._
-
-**Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
-
-**Lo que el corpus no cubre:** No hay investigación publicada sobre políticas de corrección de nombres o tarifas de Vueling.
-
-**Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
-
----
-
-### Hotel cancellation dispute in Malaysia – cancellation terms only communicated after I confirmed
-
-- **Hilo:** https://www.reddit.com/r/hotels/comments/1w0pdc9/hotel_cancellation_dispute_in_malaysia/
-- **Subreddit:** r/hotels · **Antigüedad:** 2h · **Comentarios:** n/d (RSS) · **Score:** 6
-- **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
-- **Sitio:** — (sin corpus)
-- **Preguntan:** ¿Puedo recuperar el dinero de una reserva hotelera cancelada dos días antes de la llegada si los términos de cancelación no fueron comunicados antes de confirmar?
-- **Por qué sirve:** El material cubre cómo funcionan realmente las ventanas de cancelación y reembolso, quién asume la pérdida, y cómo invocar derechos del consumidor en reservas de viajes, incluida la diferencia entre lo que las plataformas comunican y lo que en realidad cubren.
-
-**Lo que preguntó, textual:**
-
-> Hi everyone, I’m currently traveling in Malaysia and would appreciate some advice from people familiar with hotel bookings and disputes in Malaysia or Southeast Asia. I currently have a hotel booked for the end of my stay on Tioman Island. Before having to go there, I contacted that hotel to ask if I could check in one night earlier , because I wanted to avoid having to leave my current hotel without having somewhere to stay that one night. The hotel I contacted for the end of my stay didn’t have availability for that extra night, but they offered to arrange a room for me at a nearby accommodation for that one transition night between my two hotels. They found a room available for August 30–31 , for RM240 . At that point, I was still going to ask my current hotel whether they could extend my stay by one night. So the nearby room was simply a backup option : if my current hotel couldn’t extend my stay, I would use the nearby room; if they could, I would no longer need it. I confirmed the nearby room via WhatsApp on August 22 . Only afterwards, I received the booking confirmation by email, which contained the cancellation terms. The terms stated that cancellations within two weeks of arrival would be charged in full. Since the booking was already being made less than two weeks before arrival, it was effectively non-refundable from the moment I confirmed it. My issue is not that they have a cancellation policy. I understand that accommodation providers can have non-refundable bookings. My issue is that this was not clearly communicated to me before I confirmed . I was not told something as simple as: “This booking is non-refundable. Would you still like to confirm?” Had I known this before confirming, I would have waited for my current hotel’s answer instead.
->  My current hotel eventually agreed to extend my stay by one night, meaning I no longer needed the nearby room. I therefore asked to cancel it. The person who arranged the booking refused and replied that I had co
-
-**Forma que pide esta pregunta:** un párrafo — Es una disputa con matices legales y de comunicación que requiere explicar el trade-off entre lo que exige la ley/plataforma y lo que realmente puede reclamar.
-
-_Referencia medida en estos subs: mediana **28 palabras**, p75 50, **100% de un solo párrafo**, 33% una sola oración (n=76)._
-
-**Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
-
-**Lo que el corpus no cubre:** No hay investigación publicada sobre disputas de cancelación hotelera en Malasia ni sobre cuándo deben comunicarse los términos.
-
-**Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
-
----
-
-### Looking for advice on refund
-
-- **Hilo:** https://www.reddit.com/r/hotels/comments/1w0p9dd/looking_for_advice_on_refund/
-- **Subreddit:** r/hotels · **Antigüedad:** 2h · **Comentarios:** n/d (RSS) · **Score:** 6
-- **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
-- **Sitio:** — (sin corpus)
-- **Preguntan:** ¿Qué derechos tengo para reclamar un reembolso a Booking cuando el hotel original se declaró en quiebra y el soporte me ofreció opciones inadecuadas?
-- **Por qué sirve:** El material cubre derechos del consumidor en plataformas de reserva, cómo funcionan las ventanas de reembolso, quién asume las pérdidas, cuándo el soporte de la plataforma tiene obligaciones legales versus comerciales, y cómo activar derechos del consumidor contra operadores. Este es un caso concreto de un problema que un operador experimentado sabría cómo resolver.
-
-**Lo que preguntó, textual:**
-
-> Hi, I&#39;m looking for an advice on pressing my claim on refund. My brief experience with Booking. I&#39;ve bought a 2 nights at Warsaw hotel 1 year prior Upon arrival at 23:30 I&#39;ve discovered, the hotel went bancrupt. In the app the reservation was not cancelled and everything looked right I&#39;ve called the Booking support in english about the relocation. They sent me only one proposition of hotel 40 km from the city (due to high occupancy because of the big concert). I&#39;ve declined and asked for other options. The support proposed I find the hotel by myself and keep the receipt and after my stay it will be discussed. They also asked me if I would like to have my money back in the booking wallet or on the account I payed with for the original stay. I chose the second option. I&#39;ve called over 20 hotels and only 1 had free room, the bad news is, it was expensive. I&#39;ve bought one night to discuss the second one with the support next day in the morning. It was 2:00 Next day I had to work (remotely), so I&#39;ve contacted the support around 12:00 (at 14:00 our night at the hotel was about to end). During the 2 hours I&#39;ve managed to connect with polish support who informed me that the difference between my original 2 nights stay(around 650pln) and that 1 night stay(around 1250pln) will be refunded to my booking wallet(because of some legal restrictions). I&#39;ve asked about the second night and got only one proposition. I refused, because it was already 14:00 and I still had to do my work. After the stay I tried multiple times to contact the support(with one call ending in 3 hours on standby). They said that they did their duty of informing me about the hotel bancrupcy by email. That is true, but I did not feel the need to check the mail when the app was telling me that everything is alright. After that I feel like support keeps avoiding me probably believing that I have no claim. I did not get any money back, apart from the 600pln that is on my bo
-
-**Forma que pide esta pregunta:** varios párrafos — Involucra varias decisiones encadenadas: precedencia legal email vs app, cómo escalar el reclamo, y qué hacer para recuperar el dinero perdido.
-
-_Referencia medida en estos subs: mediana **28 palabras**, p75 50, **100% de un solo párrafo**, 33% una sola oración (n=76)._
-
-**Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
-
-**Lo que el corpus no cubre:** No hay investigación publicada sobre derechos de reembolso ante quiebra de hotel y gestión de soporte de Booking.
+**Lo que el corpus no cubre:** No hay datos publicados sobre bloqueos de anuncios ni disputas de pago con Booking.
 
 **Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
 
