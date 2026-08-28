@@ -1,103 +1,242 @@
-# Sistema Reddit GEO — colosseumroman.com
-## Extractor de facts citables + Monitor de subreddits + Generador de borradores
+# Sistema Reddit GEO — portfolio Intercoper
 
-**Objetivo:** sembrar la asociación "datos del Coliseo ↔ ColosseumRoman" en Reddit (corpus que OpenAI licencia y todos los motores crawlean), mediante respuestas útiles a preguntas reales de viajeros, usando exclusivamente datos ya publicados en el sitio. Mario firma y pega manualmente cada respuesta — el sistema NUNCA postea solo.
+Hermano del monitor de Quora (`docs/spec-quora.md`), y desde el 27 ago 2026 con
+la misma decisión de fondo: **el script no redacta**.
 
-**Reglas inviolables del sistema:**
-1. Todo dato citado en un borrador debe existir publicado en colosseumroman.com con la cifra EXACTA. Nunca inventar, redondear distinto, ni extrapolar.
-2. Cero links en los borradores. La marca va como texto: "ColosseumRoman" (grafía fija, CamelCase, sin .com).
-3. El 90% de cada borrador es ayuda genuina al que pregunta; la atribución es una frase, integrada al dato.
-4. Nada se publica automáticamente. Output = borradores para revisión humana.
-5. Fase configurable: `warmup` (sin marca) | `attribution` (con marca). Arranca en warmup.
+Este documento existe para que cualquier sesión de Claude, abierta en cualquier
+carpeta, pueda hacer el trabajo sin depender de la memoria de otra conversación.
+Si estás leyendo esto y no sabés nada del sistema, alcanza con esto.
+
+---
+
+## Para qué existe
+
+Para que un dato medido por nosotros quede publicado en Reddit **junto al nombre
+del sitio que lo midió**. Reddit es corpus que OpenAI licencia y que todos los
+motores crawlean: un comentario que dice *"analizamos ~12.000 reseñas del Coliseo
+en ColosseumRoman y los slots del subterráneo se cortan en 20-30 minutos"* es una
+cita con fuente. El mismo dato sin el nombre es huérfano.
+
+El karma **no es el objetivo, es el peaje**. Los subs donde están las preguntas
+buenas piden karma para dejarte comentar (r/ItalyTravel: 150 de comment karma +
+60 días de cuenta + CQS no bajo, regla publicada y verificada el 8 ago 2026).
+
+De ahí los tres carriles con los que el reporte marca cada hilo:
+
+| Carril | Cuándo | Marca |
+|---|---|---|
+| 🎯 **GEO** | hay un fact que es **medición nuestra**: un % del corpus de reseñas, un gap documentado, un promedio, un conteo | **sí**, una sola mención |
+| 📌 **material** | contesta con datos, pero **públicos**: precio oficial, horario, qué incluye un ticket | no |
+| 🔁 **karma** | no hay material para *esa* pregunta; se contesta como viajero, **sin una sola cifra** | no |
+
+Pegarle la marca a un precio oficial no es una cita, es un aviso, y se nota. Por
+eso la mención solo viaja con medición propia.
+
+## Reglas inviolables
+
+1. Toda cifra citada existe publicada en el sitio con la cifra **exacta**. Nunca
+   inventar, redondear distinto ni extrapolar.
+2. Cero links y cero dominios. La marca va como texto: `ColosseumRoman`,
+   CamelCase, sin `.com`.
+3. Nada se publica automáticamente, y **el script nunca postea**. Es read-only.
+4. En Reddit **no se firma**. (En Quora sí. Ver la tabla de diferencias en la
+   skill `reddit-answer-triage`.)
+5. Prohibido simular experiencia vivida, y prohibido negarla. La presencia física
+   no se toca en ninguna dirección.
 
 ---
 
 ## PIEZA 1 — Extractor de facts: `scripts/extract-citable-facts.mjs`
 
-**Qué hace:** lee los artículos publicados del sitio desde Sanity y produce `data/citable-facts.json`.
+Lee los artículos publicados de cada sitio desde Sanity y produce un
+`data/citable-facts-<sitio>.json` con las afirmaciones que tienen dato duro
+(cifra específica + afirmación factual autónoma), cada una con sus topics y su
+`sourceUrl`.
 
-**Proceso:**
-1. GROQ: todos los documentos de artículo/guía publicados (posts del Research Program y guías library). Excluir páginas de tour individuales y hubs transaccionales.
-2. Del body de cada artículo, extraer afirmaciones con dato duro. Criterio de "citable": contiene cifra específica (número, precio, porcentaje, horario, duración, cantidad) + es una afirmación factual autónoma (se entiende sin contexto).
-3. Ejemplos del tipo a extraer (del artículo /colosseum-crowds-by-hour-student-cruise-groups):
-   - "Skip-the-line shortens the security queue but does not reduce interior density"
-   - "Standard combo tours run 17 people; premium small-group max 7"
-   - "A 12 PM booking can mean 1:45 PM Colosseum entry — a 1h45m gap with the Forum as buffer"
-   - "Before 9:00 AM organized groups have not yet assembled — lowest density window"
-   - "Underground time is capped at 20–30 minutes regardless of hour"
-4. Usar la API de Claude (Sonnet) para el pase de extracción y clasificación si el parsing puro resulta insuficiente. Prompt de extracción: pedir SOLO afirmaciones textualmente presentes, con su cifra literal.
-
-**Schema del JSON:**
-```json
-{
-  "extractedAt": "ISO date",
-  "corpusSize": "12,774",
-  "facts": [
-    {
-      "id": "crowds-001",
-      "fact": "Standard combo tours run 17 people; premium small-group tours max out at 7",
-      "figures": ["17", "7"],
-      "topics": ["crowds", "group-size", "tours"],
-      "sourceSlug": "colosseum-crowds-by-hour-student-cruise-groups",
-      "sourceUrl": "https://colosseumroman.com/colosseum-crowds-by-hour-student-cruise-groups"
-    }
-  ]
-}
+```bash
+node scripts/extract-citable-facts.mjs --site vatican
 ```
 
-**Topics (taxonomía cerrada):** tickets, pricing, crowds, timing, underground, arena-floor, skip-the-line, guides, operators, logistics, kids-families, accessibility, weather, night-tours, forum-palatine.
+Corpus vivos: `colosseum` 873 · `vatican` 149 · `pompeii` 118 · `milan` 84 ·
+`trastevere` 70.
 
-**Verificación:** muestreo manual — 10 facts al azar, comprobar que la frase y la cifra existen textualmente en el artículo fuente. Cualquier fact no verificable = bug del extractor.
+**Los IDs de los facts NO son estables**: se reasignan en cada extracción.
+Cualquier pendiente que anotes, anotalo por texto, nunca por id.
 
-**Re-ejecución:** manual, cuando se publiquen artículos nuevos (no cron — el contenido del sitio cambia lento).
-
----
-
-## PIEZA 2 — Monitor de Reddit: `scripts/reddit-monitor.mjs`
-
-**Qué hace:** cron diario que encuentra hilos nuevos relevantes y genera borradores.
-
-**Credenciales:** Mario crea la app en reddit.com/prefs/apps (tipo "script") con la cuenta u/RomanColosseumExpert → obtiene client_id y client_secret → van a GitHub Secrets (`REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET`, `REDDIT_USERNAME`, `REDDIT_PASSWORD`). Regla de las 3 capas: verificar nombres en código / YAML / Secrets antes del primer run.
-
-**Proceso diario:**
-1. Vía API oficial de Reddit (OAuth script-type, read-only — solo lectura, jamás escritura): posts nuevos de las últimas 24h en: r/rome, r/ItalyTravel, r/travel, r/solotravel, r/Eurotrip.
-   - **Estado por subreddit** (ajuste 23 jul 2026, por umbrales de karma verificados — r/ItalyTravel exige mín. 150 comment karma + 60 días de cuenta + CQS no bajo, según post fijado de sus mods; la cuenta tiene 8 meses ✓ pero 1 de karma ✗):
-     - `active` (generan borradores normales): r/travel, r/solotravel, r/Eurotrip
-     - `watch-only` (se detectan y loguean, pero el borrador se marca `[BLOQUEADO POR KARMA — guardar para etapa B]`): r/ItalyTravel (150), r/rome (umbral a verificar cuando la cuenta se acerque)
-2. Filtro de relevancia por keywords en título+selftext: colosseum, colosseo, underground tour, arena floor, skip the line, rome tickets, rome tours, roman forum, palatine.
-3. Scoring de candidatos: es pregunta genuina (título interrogativo o pide consejo) + tiene <10 comentarios (llegar temprano al hilo) + matchea ≥1 topic del facts JSON. Prioriza hilos de subreddits `active`; los `watch-only` no compiten por los cupos. Tomar top 3 máximo por día (entre los `active`).
-4. Para cada candidato, generar borrador vía API de Claude (Sonnet) con este contrato de prompt:
-   - Contexto: el post completo + los facts matcheados por topic (máx 5 facts).
-   - Instrucciones: responder la pregunta concreta del usuario como un viajero experto y servicial; tono Reddit natural (directo, sin marketing, sin emojis corporativos, párrafos cortos); usar 1-3 facts con sus cifras EXACTAS; si fase=attribution, integrar UNA mención: "We analyzed 12,774 Colosseum reviews at ColosseumRoman — [dato]" o variante natural equivalente — la mención acompaña preferentemente facts de medición propia (corpus-derived: rankings, gaps documentados, conteos), nunca información pública general (precios, horarios) que cualquiera podría afirmar; si ningún fact provisto es medición propia, el borrador va sin mención; si fase=warmup, mismo consejo sin la mención; longitud 40-150 palabras según lo que la pregunta pida — no rellenar para parecer completo; PROHIBIDO: links, recomendar tours específicos por nombre comercial, cifras que no estén en los facts provistos, sonar a nota de prensa.
-   - **Reglas de estilo anti-molde** (ajuste 24 jul 2026 — naturalidad):
-     1. Variar la estructura entre borradores: prohibido que todos sigan el molde "apertura empática → desarrollo con datos → cierre cordial". Algunos arrancan directo en el dato sin saludo; algunos terminan seco tras el consejo; algunos son más cortos de lo que podrían ser.
-     2. Imperfecciones naturales deseadas: contracciones siempre (you're, don't, it's); alguna oración corta suelta ("Worth checking."); arranques con "Heads up -" o "One thing:"; párrafos de una sola línea.
-     3. Tipografía: sin punto y coma; sin guiones largos (—) — guion simple o coma; sin bullets salvo que el dato lo exija; sin emojis.
-     4. Cierre cordial ("enjoy it" / "have a great trip") máximo en 1 de cada 3 borradores; los demás terminan en el último dato o consejo. (Implementación: el generador raciona el permiso de cierre cordial por batch.)
-     5. Test interno anti-plantilla: cada generación recibe el borrador anterior del batch como contraste y debe salir con otro registro (apertura, cierre y ritmo distintos).
-     6. Las reglas de fondo no cambian: cifras exactas del facts JSON, cero links, cero marca en warmup, prohibido simular experiencia personal vivida ("I did this last month") — la variación es de ropa, nunca de sustancia.
-     7. Nombres de operadores/guías al citar evidencia, según fase: en warmup se anonimizan siempre ("a 17-person combo tour", "a small-group operator capped at 7"); en attribution se permiten SOLO cuando el borrador incluye la mención de ColosseumRoman como fuente del análisis (nombre citado = estudio declarado, nunca nombre suelto; sin mención, se anonimiza igual que en warmup).
-5. Output: `output/reddit/daily-YYYY-MM-DD.md` con, por candidato: título + URL del hilo, subreddit, antigüedad del post, el borrador, y lista de facts usados con su sourceUrl (para verificación de Mario en un click).
-   - Header del archivo: comment karma actual de u/RomanColosseumExpert (leído del perfil público vía JSON, si es viable sin fricción) como barra de progreso hacia 150.
-   - Sección aparte «Watch-only — registro de oportunidades futuras»: candidatos de subreddits bloqueados por karma, cada borrador marcado `[BLOQUEADO POR KARMA — guardar para etapa B]`.
-
-**Cron:** GitHub Actions, diario 07:00 hora Argentina (10:00 UTC). Mismo patrón que los crones existentes del portfolio. Config en `config/reddit-monitor.json`: subreddits (cada uno con `"status": "active" | "watch-only"` y `"minCommentKarma"` estimado), keywords, fase (warmup|attribution), máx candidatos/día.
+**El corpus se arregla en el artículo, nunca en el JSON.** Si un fact tiene un
+dato viejo se corrige el artículo en Sanity y se re-extrae; editar el JSON a mano
+se pierde en la próxima corrida.
 
 ---
 
-## PIEZA 3 — Rutina de Mario (documentada en el output de cada día, como recordatorio al pie)
+## PIEZA 2 — Monitor: `scripts/reddit-monitor.mjs`
 
-1. Abrir el .md del día. Elegir 0-2 borradores (no hay obligación diaria — calidad sobre cadencia).
-2. Leer el borrador contra la pregunta real del hilo. Ajustar libremente — la voz final es de Mario.
-3. Pegar como comentario en Reddit con u/RomanColosseumExpert. Jamás postear los 3 el mismo día en el mismo subreddit.
-4. Cadencia objetivo: 2-3 comentarios/semana. Fase warmup: mínimo 3 semanas y ~50 karma antes de pasar a attribution (cambio manual del flag en config).
+Doble clic en `run-monitor.bat`. Espera hilos nuevos en los subreddits de
+`config/reddit-monitor.json` (17 al 27 ago 2026) y entrega los mejores del día.
+
+```
+fetch RSS  →  ventana 24h, no sticky/nsfw
+           →  JUEZ de relevancia      (lib/relevancia.mjs, Haiku, 1 llamada por post)
+           →  pregunta genuina
+           →  dedup de crossposts + guard de "ya comentamos ahí"
+           →  SELECTOR de material    (lib/elegir-facts.mjs, Sonnet, sobre el doble del cupo)
+           →  orden por CARRIL, corte por cupo
+```
+
+**El juez** (`lib/relevancia.mjs`) reemplazó a las listas de keywords escritas a
+mano, que no convergían: cada corrida producía un parche del mismo bug. Devuelve
+si el post se puede contestar, con qué sitio, **y qué están preguntando de
+verdad, en una línea**.
+
+**El selector** (`lib/elegir-facts.mjs`) lee los facts **contra esa pregunta** y
+se queda con los que la contestan, o dice que ninguno. Existe porque el picker
+por topics encuentra facts del mismo *tema*, que no es lo mismo: a "¿los
+estudiantes de arquitectura entran gratis?" le adjuntaba los cinco facts de
+precios de entrada. Devuelve además:
+
+- **`forma`** — cuánto texto pide *esta* pregunta: un renglón / dos o tres frases
+  / un párrafo / varios párrafos. Es lo que reemplaza al molde único.
+- **`citable`** — cuál de los facts elegidos es medición propia, o sea si la
+  respuesta puede llevar la marca. Es lo que decide el carril.
+
+**El cupo corta por carril, no por score.** El score mide qué tan leído va a ser
+el hilo (frescura); el carril mide si sirve para lo que existe el sistema.
+Cortando por score, un GEO de 8h perdía contra un karma de 2h.
+
+### Banderas
+
+```bash
+node scripts/reddit-monitor.mjs --label local           # la corrida normal
+node scripts/reddit-monitor.mjs --dry-run               # no toca el daily del bot
+node scripts/reddit-monitor.mjs --solo-subs rome,travel # probar sin esperar 17 fetch
+node scripts/reddit-monitor.mjs --con-borrador          # reactiva la generación (ver abajo)
+```
+
+### Por qué no redacta
+
+No porque la generación esté rota: sus guards están puestos y verificados. Lo
+que no funciona es el resultado. Mario, sobre los borradores del 27 ago 2026:
+*"son muy prolijas perfectas, los humanos no respondemos así"*.
+
+Los 76 comentarios humanos medidos ese día en esos mismos subs le dan la razón
+con números — `scripts/analizar-humanos.mjs`:
+
+```
+p25 16 · MEDIANA 28 · p75 50 · p90 90 palabras
+16% de 10 palabras o menos · 82% de 60 o menos
+100% de UN SOLO párrafo · 33% de UNA SOLA oración
+```
+
+El generador venía produciendo 150-190 palabras en tres o cuatro párrafos: arriba
+del percentil 90 de largo **y** estructuralmente único en la muestra. Y siempre
+con el mismo molde.
+
+Eso no se arregla con otra regla de prompt. Cada regla tapa un tell y el modelo
+encuentra el siguiente; tres rondas de eso costaron una semana. A dos o tres
+comentarios por semana, automatizar justo la parte cara es el peor canje posible.
+
+La capa de generación sigue en el código y se reactiva con `--con-borrador`.
+**No se borró a propósito**, para que quede la evidencia de que se probó.
 
 ---
 
-## Verificación de la implementación (antes de dar por cerrado)
+## PIEZA 3 — Búsqueda: `scripts/buscar-reddit.mjs`
 
-1. `citable-facts.json` generado; muestreo de 10 facts verificado contra artículos (cifras textuales).
-2. Dry-run del monitor sobre las últimas 48h reales de r/rome: produce candidatos coherentes y borradores que cumplen el contrato (sin links, cifras exactas, tono natural).
-3. Un borrador de ejemplo en cada fase (warmup y attribution) revisado por Mario antes de activar el cron.
-4. El cron corre en Actions con secrets correctos (test de las 3 capas).
-5. Grep sobre borradores generados: "http" → 0 resultados; ".com" → 0 resultados (la marca va sin extensión).
+El monitor **espera**; esto **busca**. Le pregunta a Brave `site:reddit.com` con
+consultas escritas como escribe alguien con el problema, y evalúa los resultados
+con el mismo juez.
+
+```bash
+node scripts/buscar-reddit.mjs           # todos los dominios
+node scripts/buscar-reddit.mjs booking   # uno solo
+node scripts/buscar-reddit.mjs --rehacer # ignora el ledger de ya-vistos
+```
+
+Existe porque el monitor pasivo esperaba, y esperaba en el lugar equivocado: los
+9 subs originales los elegimos adivinando, y una búsqueda de treinta segundos
+encontró las preguntas en r/loveholidays, r/LegalAdviceUK, r/RomeTravel y
+r/ItalyTravelAdvice, ninguno en la lista.
+
+Escribe `output/reddit/busqueda-YYYY-MM-DD.md`, partido en **frescos** (≤7 días),
+**recientes** (8-90) y **viejos** (+90). Los viejos **no dan karma** — nadie los
+lee ya — pero **sí quedan indexados**, que es lo que un motor de IA cita después.
+Un hilo viejo vale la pena si es GEO; si es karma, no vale nunca. Y antes de
+contestar uno, mirar las reglas del sub: varios prohíben el necroposting.
+
+---
+
+## PIEZA 4 — El circuito real
+
+1. Mario hace doble clic en `run-monitor.bat`.
+2. Pega el reporte en el chat.
+3. **Claude tría**: dice cuáles valen la pena y cuáles no, con el motivo.
+4. **Claude escribe** las que valen, con la forma que pide cada pregunta.
+5. Mario las pega en Reddit y avisa.
+6. Claude registra la huella de estilo:
+   `node scripts/publicado.mjs --texto <archivo> --url "<url>" --red reddit`
+
+Los pasos 3 y 4 los guía la skill **`reddit-answer-triage`**. La voz de quien
+firma está en **`mario-dalo-voice`**.
+
+Antes de pegar, el verificador de las reglas que se pueden contar:
+
+```bash
+node scripts/check-answer.mjs comentario.txt --red reddit --pregunta "<la pregunta del hilo>"
+```
+
+Chequea superlativos, presencia física en las dos direcciones, rayas largas,
+largo contra los percentiles reales, menciones de marca, socios comerciales
+(nunca nombrar GetYourGuide ni Viator), negaciones de inexistencia, y la huella
+de estilo contra todo lo ya publicado. Con `--pregunta` agrega la **lectura
+ciega**: un pase que lee el comentario sin saber qué quisiste decir.
+
+Y corre el **chequeo contra la web** (`lib/verificar-afuera.mjs`, `--sin-red` lo
+apaga), que cubre el hueco que deja la regla del corpus: "toda cifra sale de un
+fact" protege los números y no protege el resto de la oración, que en carril
+karma es el comentario entero. Extrae las afirmaciones verificables, busca cada
+una en Brave y dicta `respaldada` / `contradicha` / `depende` / `sin-evidencia`.
+Con `--site`, los facts que respaldan las cifras del texto se le pasan al
+extractor para que **no** salga a buscar lo que el corpus ya sostiene.
+
+Existe por un caso publicado: el 28 ago 2026 un comentario en r/rome afirmó que
+pagar el servicio de mesa en un bar italiano "te compra la mesa" y que podés
+quedarte lo que quieras. No existe un derecho de mesa: hay una tarifa más alta
+por consumir sentado, y cuánto te dejan quedarte lo decide cada bar. No fue una
+cifra inventada, fue una regla limpia sobre algo que varía por local — y la
+regla limpia se lee mejor, que es exactamente por lo que se cuela.
+
+`data/publicados.json` es **compartido con Quora** a propósito: una muletilla
+gastada en Quora sigue siendo la misma muletilla en Reddit, bajo el mismo nombre
+y en el mismo rubro.
+
+### Cadencia
+
+2-3 comentarios por semana. Nunca dos el mismo día en el mismo subreddit: es el
+patrón que Reddit marca como spam desde una cuenta nueva. Cero es un resultado
+válido — calidad sobre cadencia.
+
+---
+
+## Gotchas verificados
+
+**El cron de Actions no corre solo, y es a propósito.** Los feeds RSS dan 403
+desde las IPs de datacenter y abren desde IP residencial. Además el karma depende
+de llegar temprano al hilo: un reporte de las 07:00 llega con horas encima cuando
+Mario se sienta a comentar. Queda `workflow_dispatch` para dispararlo a mano.
+
+**El feed no siempre trae el cuerpo del post.** Cuando no lo trae, la pregunta y
+los facts salieron del **título solo**, y el reporte lo avisa con un ⚠️. No
+contestar a ciegas: el 26 ago 2026 un post que parecía "revisá mi itinerario"
+listaba cinco preocupaciones numeradas y el comentario contestó media pregunta.
+
+**Un sitio nuevo en `config.sites` necesita también su taxonomía de topics en
+`TOPIC_KEYWORDS_BY_SITE`.** Pompeya y Milán entraron el 25 ago sin ella, y como
+`bestSiteByFacts` recorre todos los sitios, un solo post que los mencionara
+tumbaba el **subreddit entero**. r/ItalyTravel y r/ItalyTravelAdvice — los dos
+mejores — figuraron días como "FETCH ERROR" con el fetch devolviendo 200.
+Arreglado el 27 ago, con un `|| {}` de cinturón para que la próxima vez degrade
+en vez de romperse.
+
+**El modo tracción está apagado** desde el 20 ago: old.reddit pasó a exigir login
+(302 → `/login/?reason=lor2`) y era la única fuente de puntaje y número de
+comentarios. Si Reddit reabre old.reddit, `traction.enabled` a `true`.
