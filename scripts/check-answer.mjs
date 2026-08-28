@@ -20,6 +20,7 @@ import { fileURLToPath } from 'node:url';
 import { contraPublicados } from './lib/fingerprint.mjs';
 import { cargar as cargarPublicados } from './publicado.mjs';
 import { leerEnFrio } from './lib/lectura-ciega.mjs';
+import { verificarAfuera } from './lib/verificar-afuera.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 // El .env hace falta desde que existe la lectura ciega, que llama al modelo.
@@ -41,6 +42,14 @@ const RED = args.includes('--red') ? args[args.indexOf('--red') + 1] : 'quora';
 // que quiso decir quien lo escribio. Es lo unico que caza las fallas de juicio.
 const PREGUNTA = args.includes('--pregunta') ? args[args.indexOf('--pregunta') + 1] : null;
 const ES_REDDIT = RED === 'reddit';
+// El chequeo contra la web corre SOLO, y --sin-red lo apaga. Va asi y no como
+// un flag que haya que acordarse porque el caso que lo origino es justamente
+// uno donde nadie sospecho que hiciera falta: el borrador se veia bien, no tenia
+// una sola cifra, y afirmaba una regla sobre los bares italianos que no existe.
+// Un verificador que hay que invocar a proposito no corre el dia que importa.
+const SIN_RED = args.includes('--sin-red');
+// Se llena en el chequeo del corpus y lo consume el chequeo contra la web.
+let FACTS_RESPALDO = [];
 
 if (!archivo) {
   console.error('Uso: node scripts/check-answer.mjs <archivo.txt> [--site vatican|colosseum|trastevere]');
@@ -197,15 +206,22 @@ if (primera.endsWith('?')) avisos.push('la primera linea es una pregunta — rev
 
 // ------------------------------------------------------------------------ largo
 const palabras = cuerpo.trim().split(/\s+/).filter(Boolean).length;
-// Rangos de Reddit MEDIDOS sobre 80 comentarios humanos reales de r/Flights,
-// r/Bookingcom y r/ItalyTravel el 27 ago 2026, sacando los bots de AutoModerator:
-//   mediana 30 palabras · p25 16 · p75 58 · p90 120
-//   14% tienen 10 palabras o menos · 76% tienen 60 o menos · 9% pasan de 120
+// Rangos de Reddit MEDIDOS sobre comentarios humanos reales de r/Flights,
+// r/Bookingcom, r/ItalyTravel y r/hotels el 27 ago 2026:
+//   n=76 · mediana 28 palabras · p25 16 · p75 50 · p90 90 · maximo 270
+//   16% tienen 10 palabras o menos · 82% tienen 60 o menos
+//   100% son de UN SOLO parrafo · 33% de una sola oracion
 // El rango anterior (40-150) lo habia inventado yo, estaba al doble de lo real, y
 // por eso todos los comentarios salian arriba del percentil 90 de largo.
+//
+// Las cifras de la primera medicion (mediana 30, p75 58) salieron de la muestra
+// SIN filtrar. El commit decia "sacando los bots de AutoModerator" y el script no
+// tenia filtro ninguno: 11 de los 87 comentarios eran del bot, y los del bot son
+// largos y prolijos, o sea que corrian la medida justo para el lado equivocado.
+// Se le puso el filtro a analizar-humanos.mjs y se recalculo sobre los 76 humanos.
 const [min, max] = ES_REDDIT ? [8, 70] : [150, 900];
 if (palabras < min) avisos.push(`${palabras} palabras: corto para ${RED}`);
-else if (palabras > max) avisos.push(`${palabras} palabras: ${RED === 'reddit' ? `arriba del p75 real (58) — la mediana humana es 30` : 'largo, revisar si hay relleno'}`);
+else if (palabras > max) avisos.push(`${palabras} palabras: ${RED === 'reddit' ? `arriba del p75 real (50) — la mediana humana es 28` : 'largo, revisar si hay relleno'}`);
 else ok.push(`${palabras} palabras`);
 
 // El formato lo decide la PREGUNTA, no una regla fija.
@@ -247,9 +263,8 @@ if (SITE) {
   if (faltan.length) {
     avisos.push(`no encontre el corpus de "${faltan.map((a) => a.s).join(', ')}" — cifras SIN verificar`);
   } else {
-    const facts = archivos
-      .map((a) => (JSON.parse(fs.readFileSync(a.f, 'utf8')).facts || []).map((x) => x.fact || '').join(' '))
-      .join(' ');
+    const listaFacts = archivos.flatMap((a) => JSON.parse(fs.readFileSync(a.f, 'utf8')).facts || []);
+    const facts = listaFacts.map((x) => x.fact || '').join(' ');
     // Se ignoran numeros de 1 a 3 que casi siempre son conteos de prosa
     // ("two people", "3 hours") y generan ruido sin senal.
     // El lookbehind es imprescindible. Sin el, "3.81" se parte y "81" sale como
@@ -267,6 +282,15 @@ if (SITE) {
     });
     if (sinRespaldo.length) fallas.push(`cifras que no encontre en el corpus de ${SITE}: ${sinRespaldo.join(", ")}`);
     else ok.push(`las ${cifras.length} cifras estan en el corpus de ${SITE}`);
+    // Los facts que de verdad sostienen este borrador: los que contienen alguna
+    // de las cifras que el texto cita. Van al chequeo contra la web para que NO
+    // salga a buscar lo que el corpus ya respalda — que es todo el sentido de
+    // "chequear lo que el corpus no cubre" y no "chequear todo".
+    const enElTexto = (f) => cifras.some((c) => {
+      const n = c.replace(/[€\s%]/g, '').replace('.', '[.,]');
+      return new RegExp(`(?<![\\d.,])${n}(?![\\d.,])`).test(f.fact || '');
+    });
+    FACTS_RESPALDO = listaFacts.filter(enElTexto).map((f) => f.fact).slice(0, 12);
   }
 } else {
   avisos.push('sin --site: las cifras NO se verificaron contra el corpus');
@@ -347,6 +371,55 @@ console.log('');
 if (!PREGUNTA) {
   console.log('Falta lo que no se cuenta: si contesta lo que preguntaron y si las cifras');
   console.log('se entienden. Para eso, agregar --pregunta "<la pregunta del post>".');
+}
+
+// ======================================================================
+// CONTRA LA WEB
+//
+// Cubre el hueco que deja la regla del corpus. "Toda cifra sale de un fact"
+// protege los numeros; no protege el resto de la oracion, y en carril karma el
+// comentario entero es el resto de la oracion.
+//
+// Ver lib/verificar-afuera.mjs para el caso que lo origino (el derecho de mesa
+// que no existe, publicado el 28 ago 2026). Lo importante: no era una cifra
+// inventada. Era una regla limpia sobre algo que en realidad depende del local.
+// ======================================================================
+if (!SIN_RED) {
+  console.log('Chequeando contra la web lo que no respalda el corpus...\n');
+  try {
+    const { ok, error, items } = await verificarAfuera(cuerpo, FACTS_RESPALDO);
+    if (!ok) {
+      console.log(`  (no se pudo: ${error})`);
+    } else if (!items.length) {
+      console.log('  OK    el texto no hace ninguna afirmacion chequeable');
+    } else {
+      for (const it of items) {
+        // Defensivo a proposito: un tool_use que vuelve incompleto dejaba un
+        // item sin `texto` y el reporte entero moria en el .slice, tapando los
+        // dos hallazgos que si habian salido bien. Un verificador no puede
+        // perder sus propios resultados por como los imprime.
+        const afirmacion = String(it.texto || it.consulta || '(afirmacion sin texto)');
+        const fuentes = it.fuentes || [];
+        const etiqueta = {
+          respaldada: '  OK   ',
+          depende: '  FALLA',
+          contradicha: '  FALLA',
+          'sin-evidencia': it.absoluta ? '  FALLA' : '  ojo  ',
+        }[it.veredicto] || '  ojo  ';
+        const cola = it.veredicto === 'respaldada'
+          ? (fuentes[0] ? ` (${fuentes[0]})` : '')
+          : ` -> ${it.motivo || 'sin motivo'}${fuentes.length ? ` [${fuentes.join(', ')}]` : ''}`;
+        console.log(`${etiqueta} ${it.veredicto}${it.absoluta ? ' · ABSOLUTA' : ''}: "${afirmacion.slice(0, 90)}"${cola}`);
+      }
+      // "Depende" es falla y no aviso, y esa es la decision de diseño de todo
+      // esto: la frase que se equivoco no era falsa por poco, era cierta a
+      // medias escrita como regla. Una absoluta sin nada abajo es lo mismo.
+      console.log('\n  _"depende" y "contradicha" se arreglan antes de pegar. Una ABSOLUTA sin evidencia, tambien._');
+    }
+  } catch (e) {
+    console.log(`  (el chequeo web fallo: ${e.message.slice(0, 90)})`);
+  }
+  console.log('');
 }
 
 // ======================================================================
