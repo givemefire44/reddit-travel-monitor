@@ -122,9 +122,10 @@ Los 76 comentarios humanos medidos ese día en esos mismos subs le dan la razón
 con números — `scripts/analizar-humanos.mjs`:
 
 ```
-p25 16 · MEDIANA 28 · p75 50 · p90 90 palabras
-16% de 10 palabras o menos · 82% de 60 o menos
-100% de UN SOLO párrafo · 33% de UNA SOLA oración
+n=126 · p25 12 · MEDIANA 24 · p75 48 · p90 100 palabras
+24% de 10 palabras o menos · 83% de 60 o menos
+71% de un solo párrafo · 35% de UNA SOLA oración
+pero de los 21 que pasan de 60 palabras, 17 (el 81%) usan MAS de uno
 ```
 
 El generador venía produciendo 150-190 palabras en tres o cuatro párrafos: arriba

@@ -33,12 +33,27 @@ const esperar = (ms) => new Promise((r) => setTimeout(r, ms));
 // despues se sacan los tags. Al reves, '&lt;div&gt;' sobrevive al strip y
 // reaparece como '<div>' cuando se desescapa, asi que la muestra salia con HTML
 // crudo adentro y las medidas de largo contaban etiquetas como palabras.
+// Y los limites de parrafo se convierten en saltos ANTES de barrer los tags.
+//
+// Sin esto la medicion de parrafos era una farsa completa. El barrido generico
+// de tags los reemplaza por espacios, asi que los </p> y los <br> desaparecian
+// y NINGUNO de los 76 comentarios quedaba con un solo salto de linea guardado.
+// El script contaba parrafos partiendo por \n\n sobre un texto que no tenia
+// ninguno, y reportaba, invariablemente, "100% de un solo parrafo".
+//
+// Ese numero se publico como hallazgo, viajo al prompt del selector, al pie de
+// cada candidato del reporte y a la skill como regla de redaccion. Mario lo
+// frenó el 28 ago con el argumento correcto y sin ver el codigo: si te guias por
+// los signos de puntuacion, la respuesta del bar necesita dos punto y aparte.
+// Tenia razon. La medicion no decia lo contrario: no decia nada.
 const limpiar = (s) => s
   .replace(/&lt;/g, '<').replace(/&gt;/g, '>')
   .replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&amp;/g, '&')
+  .replace(/<\/p>|<br\s*\/?>/gi, '\n\n')
   .replace(/<[^>]+>/g, ' ')
   .replace(/&[a-z#0-9]+;/g, ' ')
   .replace(/[ \t]+/g, ' ')
+  .replace(/ *\n[ \n]*\n */g, '\n\n')
   .trim();
 
 async function traer(url) {
@@ -114,6 +129,17 @@ const unParrafo = comentarios.filter((c) => parrafos(c.texto) === 1).length;
 const unaOracion = comentarios.filter((c) => oraciones(c.texto) <= 1).length;
 console.log(`  de un solo parrafo:  ${Math.round((unParrafo / comentarios.length) * 100)}%`);
 console.log(`  de una sola oracion: ${Math.round((unaOracion / comentarios.length) * 100)}%`);
+// El porcentaje global de "un solo parrafo" no dice lo que parece: la mediana
+// son 28 palabras, y un comentario de 28 palabras no tiene por que partirse.
+// La pregunta util es que hace la gente CUANDO el texto da para partirlo.
+const conCuerpo = comentarios.filter((c) => palabras(c.texto) > 60);
+if (conCuerpo.length) {
+  const partidos = conCuerpo.filter((c) => parrafos(c.texto) > 1).length;
+  console.log(`\n  de los ${conCuerpo.length} de mas de 60 palabras, ${partidos} usan mas de un parrafo (${Math.round((partidos / conCuerpo.length) * 100)}%)`);
+  const reparto = {};
+  for (const c of conCuerpo) { const n = Math.min(parrafos(c.texto), 4); reparto[n] = (reparto[n] || 0) + 1; }
+  console.log('  reparto de parrafos entre los largos: ' + Object.entries(reparto).map(([n, k]) => `${n}${n === '4' ? '+' : ''}: ${k}`).join(' · '));
+}
 
 console.log('\nCOMO ABREN (primeras 2 palabras, las mas repetidas)');
 const aperturas = {};

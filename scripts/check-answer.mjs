@@ -207,21 +207,31 @@ if (primera.endsWith('?')) avisos.push('la primera linea es una pregunta — rev
 // ------------------------------------------------------------------------ largo
 const palabras = cuerpo.trim().split(/\s+/).filter(Boolean).length;
 // Rangos de Reddit MEDIDOS sobre comentarios humanos reales de r/Flights,
-// r/Bookingcom, r/ItalyTravel y r/hotels el 27 ago 2026:
-//   n=76 · mediana 28 palabras · p25 16 · p75 50 · p90 90 · maximo 270
-//   16% tienen 10 palabras o menos · 82% tienen 60 o menos
-//   100% son de UN SOLO parrafo · 33% de una sola oracion
-// El rango anterior (40-150) lo habia inventado yo, estaba al doble de lo real, y
-// por eso todos los comentarios salian arriba del percentil 90 de largo.
+// r/Bookingcom, r/travel, r/ItalyTravel, r/rome y r/hotels, 28 ago 2026:
+//   n=126 · p25 12 · MEDIANA 24 palabras · p75 48 · p90 100 · maximo 183
+//   24% tienen 10 palabras o menos · 83% tienen 60 o menos
+//   71% son de un solo parrafo · 35% de una sola oracion
+//   pero de los 21 que pasan de 60 palabras, 17 (el 81%) usan MAS de uno
 //
-// Las cifras de la primera medicion (mediana 30, p75 58) salieron de la muestra
-// SIN filtrar. El commit decia "sacando los bots de AutoModerator" y el script no
-// tenia filtro ninguno: 11 de los 87 comentarios eran del bot, y los del bot son
-// largos y prolijos, o sea que corrian la medida justo para el lado equivocado.
-// Se le puso el filtro a analizar-humanos.mjs y se recalculo sobre los 76 humanos.
+// El rango original (40-150) lo habia inventado yo y estaba al doble de lo real.
+// Las dos correcciones que siguieron tampoco eran de fiar:
+//
+//   - "mediana 30, p75 58" salio de una muestra sin filtrar. El commit decia
+//     "sacando los bots de AutoModerator" y el script no tenia filtro ninguno.
+//   - "100% de un solo parrafo" nunca midio nada. El limpiador de HTML barria
+//     los tags reemplazandolos por espacios, asi que los </p> desaparecian y
+//     ninguno de los comentarios guardados tenia un solo salto de linea: contaba
+//     parrafos sobre un texto sin parrafos. Lo peor es que el diagnostico ya
+//     estaba escrito treinta lineas mas abajo en este mismo archivo, y aun asi
+//     el numero siguio viajando a la skill y al prompt del selector.
+//
+// Las dos veces el error empujo en la misma direccion — hacia el texto mas
+// corto y mas prolijo — y las dos veces el numero se dio por bueno porque venia
+// de una herramienta propia. Con los saltos de parrafo ya preservados, el dato
+// dice lo contrario de lo que se venia usando como regla.
 const [min, max] = ES_REDDIT ? [8, 70] : [150, 900];
 if (palabras < min) avisos.push(`${palabras} palabras: corto para ${RED}`);
-else if (palabras > max) avisos.push(`${palabras} palabras: ${RED === 'reddit' ? `arriba del p75 real (50) — la mediana humana es 28` : 'largo, revisar si hay relleno'}`);
+else if (palabras > max) avisos.push(`${palabras} palabras: ${RED === 'reddit' ? `arriba del p75 real (48) — la mediana humana es 24` : 'largo, revisar si hay relleno'}`);
 else ok.push(`${palabras} palabras`);
 
 // El formato lo decide la PREGUNTA, no una regla fija.
@@ -240,10 +250,22 @@ else ok.push(`${palabras} palabras`);
 // las respuestas tengan la misma forma, no cual sea esa forma. Por eso aca no hay
 // numero obligatorio — el control de que no se repita la arquitectura lo hace la
 // silueta, contra el historial de lo publicado.
+// Con los saltos ya medidos de verdad, el aviso mira las DOS direcciones y las
+// dos contra el largo, que es lo unico que hace comparable un comentario con
+// otro. Un bloque de 100 palabras es raro entre humanos (81% de los largos
+// parten); cuatro bloques para 30 palabras es picado de mas. El molde delator es
+// que todas las respuestas tengan la misma forma, no cual sea esa forma.
 if (ES_REDDIT) {
   const bloques = cuerpo.split(/\n\s*\n/).filter((p) => p.trim()).length;
-  if (bloques > 3) avisos.push(`${bloques} parrafos: mucho para un comentario, revisar si la pregunta los pide`);
-  else ok.push(`${bloques} parrafo(s)`);
+  if (palabras > 60 && bloques === 1) {
+    avisos.push(`${palabras} palabras en un solo bloque: de los comentarios humanos que pasan de 60 palabras, el 81% usa mas de un parrafo`);
+  } else if (palabras <= 60 && bloques > 2) {
+    avisos.push(`${bloques} parrafos para ${palabras} palabras: partido de mas`);
+  } else if (bloques > 4) {
+    avisos.push(`${bloques} parrafos: revisar si la pregunta los pide`);
+  } else {
+    ok.push(`${bloques} parrafo(s) para ${palabras} palabras`);
+  }
 }
 
 // ------------------------------------------------------------------------ cifras

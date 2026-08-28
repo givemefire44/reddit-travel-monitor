@@ -16,7 +16,7 @@
 // este rota, sino porque el texto se lee escrito por una maquina. Mario, sobre
 // los borradores del 27: "son muy prolijas perfectas, los humanos no respondemos
 // asi". Los 76 comentarios humanos medidos ese dia le dan la razon con numeros:
-// mediana 28 palabras, p75 50, el 100% de un solo parrafo. El generador venia
+// mediana 24 palabras, p75 48, p90 100. El generador venia
 // produciendo 150 a 190 palabras en tres o cuatro parrafos, y ademas con el
 // MISMO molde todos los dias.
 //
@@ -1114,7 +1114,7 @@ function carrilDe(sel) {
 // La referencia humana del sub, medida y no intuida (scripts/analizar-humanos.mjs).
 // Va en cada candidato y no una vez al pie porque es contra esto que se decide
 // el largo, y al pie no se lee.
-const REFERENCIA_HUMANA = '_Referencia medida en estos subs: mediana **28 palabras**, p75 50, **100% de un solo párrafo**, 33% una sola oración (n=76)._';
+const REFERENCIA_HUMANA = '_Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._';
 
 function renderEntrega(c, sel, blocked) {
   const carril = carrilDe(sel);

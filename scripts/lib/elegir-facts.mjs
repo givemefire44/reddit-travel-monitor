@@ -28,7 +28,7 @@
 //   necesita parrafos. El molde unico de 150 palabras y tres parrafos es
 //   exactamente lo que Mario marco como "prolijas perfectas, los humanos no
 //   respondemos asi", y lo confirma la medicion de comentarios reales: mediana
-//   28 palabras, p75 50, el 100% de un solo parrafo.
+//   24 palabras, p75 48, p90 100.
 //
 // citable - cual de los facts elegidos es MEDICION PROPIA (del corpus de
 //   reseñas) y no informacion publica que cualquiera puede dar. Es el que decide
@@ -88,7 +88,9 @@ The shortlist can be empty. That is a normal case: it means we have no published
 - "frases": one specific thing to do, plus why. Two or three sentences.
 - "parrafo": one decision with a trade-off behind it.
 - "parrafos": several linked decisions - an order of visits, an itinerary, a dispute with steps.
-Measured from 76 real human comments in these subreddits: median 28 words, p75 50, 100% of them a single paragraph, 33% a single sentence, 16% ten words or fewer. Long is the exception and has to be earned by the question. When in doubt, go one step shorter.
+Measured from 126 real human comments in these subreddits: median 24 words, p75 48, p90 100, 35% a single sentence, 24% ten words or fewer. Long is the exception and has to be earned by the question. When in doubt, go one step shorter.
+
+"forma" is about how much is said, not about how it is laid out. Paragraph breaks follow the punctuation: if the answer explains how something works and then says what to do, that is two paragraphs whatever the length.
 
 "porque_forma": one short line in Spanish saying what in the question sets that length.
 
