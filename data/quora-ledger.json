@@ -359,6 +359,22 @@
       "shingles": [],
       "generatedAt": "2026-08-27",
       "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Is-the-Sistine-Chapel-in-Rome-equally-crowded-all-year-round",
+      "questionTitle": "Is the Sistine Chapel in Rome equally crowded all year round?",
+      "titleNormalized": "is the sistine chapel in rome equally crowded all year round",
+      "site": "vatican",
+      "sourceSlugs": [
+        "how-to-avoid-vatican-crowds",
+        "best-time-to-visit-vatican",
+        "vatican-crowd-handling-staff",
+        "vatican-early-access-really-means",
+        "vatican-tour-product-decoder"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-08-28",
+      "estado": "entregado"
     }
   ]
 }
