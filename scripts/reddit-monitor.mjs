@@ -827,24 +827,63 @@ function freshnessBonus(ageHours) {
   return 0;
 }
 
+// Terminos de contenido de un texto, para comparar pregunta contra fact.
+const terminos = (s) => (s.toLowerCase().match(/[a-z][a-z'-]{3,}/g) || []);
+
+// Cuanto pesa cada palabra dentro del corpus de un sitio. "ticket" aparece en
+// 277 de los 873 facts del Coliseo y no distingue nada; "released" aparece en un
+// puñado y distingue todo. Es un IDF comun y corriente, calculado una vez por
+// sitio.
+const IDF = {};
+function idfDe(siteKey) {
+  if (IDF[siteKey]) return IDF[siteKey];
+  const facts = FACTS_BY_SITE[siteKey].facts;
+  const df = new Map();
+  for (const f of facts) for (const t of new Set(terminos(f.fact))) df.set(t, (df.get(t) || 0) + 1);
+  const idf = new Map();
+  for (const [t, n] of df) idf.set(t, Math.log(facts.length / n));
+  IDF[siteKey] = idf;
+  return idf;
+}
+
 function pickFacts(topics, siteKey, max = 5, postText = '') {
   // El overlap por topics no alcanza cuando el corpus tiene el dato pero etiquetado
   // bajo otro topic: los facts del atico viven en logistics/tickets/pricing, asi que
   // un post sobre el atico no los alcanzaba y el modelo termino inventando que el
   // atico no existe como ticket. Se suma un match por TEXTO: si el fact menciona
   // literalmente algo que el post pregunta, cuenta aunque no comparta topic.
-  const postTerms = postText
-    ? [...new Set(postText.toLowerCase().match(/[a-z][a-z'-]{4,}/g) || [])]
-    : [];
+  //
+  // Y sobre todo se suma el SOLAPE LEXICO con la pregunta, que es lo que convierte
+  // esto en un ranking de verdad.
+  //
+  // Sin eso, ordenar por topics no ordena nada. Medido sobre el hilo "Help with
+  // Colosseum Tickets" del 29 ago 2026: 277 facts del corpus llevan el topic
+  // "tickets", los 277 empatan en overlap 1, y como el sort es estable la lista
+  // corta terminaba siendo "los primeros 18 del archivo". El tipo preguntaba si
+  // las entradas estaban agotadas o todavia sin liberar, el corpus lo contesta en
+  // siete facts distintos (30 dias la estandar, 7 dias la Full Experience), y no
+  // le llego ninguno: le llegaron precios y duraciones de tour.
+  //
+  // El selector no fallo ahi. Reporto correctamente que con ese material no se
+  // contestaba la pregunta, y tenia razon: el material estaba mal elegido antes
+  // de llegarle. Un buen lector no arregla una biblioteca mal indexada.
+  const postTerms = new Set(terminos(postText));
   const RARE = new Set(['attic', 'belvedere', 'hypogeum', 'scavi', 'necropolis', 'gardens',
     'carriage', 'pinacoteca', 'etruscan', 'grottoes', 'dome', 'cupola', 'ferragosto', 'jubilee']);
-  const rareInPost = postTerms.filter((t) => RARE.has(t));
+  const rareInPost = [...postTerms].filter((t) => RARE.has(t));
+  const idf = idfDe(siteKey);
 
   const scored = FACTS_BY_SITE[siteKey].facts
     .map((f) => {
       const overlap = f.topics.filter((t) => topics.includes(t)).length;
       const textHit = rareInPost.some((t) => f.fact.toLowerCase().includes(t)) ? 2 : 0;
-      return { f, overlap: overlap + textHit };
+      // Suma del peso de las palabras que el fact comparte con la pregunta. Un
+      // fact que no comparte ninguna suma 0 y queda donde estaba: esto solo
+      // puede mejorar el orden, nunca empeorarlo.
+      const lexico = [...new Set(terminos(f.fact))]
+        .filter((t) => postTerms.has(t))
+        .reduce((a, t) => a + (idf.get(t) || 0), 0);
+      return { f, overlap: overlap + textHit + lexico };
     })
     .filter((x) => x.overlap > 0)
     .sort((a, b) => b.overlap - a.overlap);
