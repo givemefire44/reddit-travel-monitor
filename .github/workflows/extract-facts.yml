@@ -42,6 +42,29 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/extract-citable-facts.mjs --site vatican
 
+      # Los otros tres entraron a config/reddit-monitor.json el 25 ago 2026 y
+      # nunca se agregaron aca, asi que sus corpus quedaron congelados en esa
+      # fecha mientras los articulos seguian editandose. Van con continue-on-error
+      # para que un fallo en uno no se lleve puesta la higiene de los otros
+      # cuatro: el piso del extractor ya protege cada corpus por separado.
+      - name: Extract pompeii
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/extract-citable-facts.mjs --site pompeii
+
+      - name: Extract milan
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/extract-citable-facts.mjs --site milan
+
+      - name: Extract trastevere
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/extract-citable-facts.mjs --site trastevere
+
       - name: Commit updated facts
         run: |
           git config user.name "github-actions[bot]"
@@ -51,5 +74,11 @@ jobs:
             echo "Corpus sin cambios."
           else
             git commit -m "Facts: re-extraccion post-cron de precios $(date -u +%F)"
+            # El pull va DESPUES del commit y antes del push, y no es opcional.
+            # El 31 ago 2026 la corrida extrajo bien, tardo 1h07, y el push
+            # reboto con "fetch first" porque durante esa hora se habia pusheado
+            # al repo desde la maquina local. Una hora de trabajo y de tokens a
+            # la basura por no traer lo que cambio mientras tanto.
+            git pull --rebase --autostash
             git push
           fi

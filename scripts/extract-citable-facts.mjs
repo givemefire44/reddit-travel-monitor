@@ -430,6 +430,34 @@ async function main() {
     });
   }
 
+  // PISO: si la corrida nueva trae mucho menos que el corpus que ya existe, no
+  // se escribe nada y se sale con error.
+  //
+  // El fallo que importa aca no es el ruidoso. Los errores por articulo estan
+  // atrapados mas arriba: si la API se estrangula un rato, cada articulo falla,
+  // el error se loguea, ese articulo aporta cero facts y la corrida termina bien.
+  // Despues el bot commitea un corpus mutilado y nadie se entera hasta que un
+  // reporte dice "sin material" y uno culpa al filtro.
+  //
+  // El umbral sale de medir la variacion normal, no de intuicion. Dos
+  // extracciones del Vaticano sobre los mismos articulos, con seis dias de
+  // diferencia: 149 -> 155 facts. El TAMAÑO se mueve poco (mas o menos 4%),
+  // aunque el CONTENIDO se reescriba mucho (33 facts se fueron, 40 entraron).
+  // Por eso el piso es por tamaño y no por identidad de los facts: un guard que
+  // exigiera que persistan los mismos frenaria todas las corridas legitimas.
+  //
+  // 85% deja lugar de sobra para la variacion real y corta cualquier vaciado.
+  const PISO = 0.85;
+  if (fs.existsSync(outPath) && !slugArg && !limitArg) {
+    const previo = JSON.parse(fs.readFileSync(outPath, 'utf8')).facts?.length || 0;
+    if (previo && finalFacts.length < previo * PISO) {
+      console.error(`\nABORTADO: la extraccion trajo ${finalFacts.length} facts contra ${previo} que ya habia (${Math.round((finalFacts.length / previo) * 100)}%).`);
+      console.error(`El corpus NO se toco. Por debajo del ${PISO * 100}% se asume que fallaron articulos en silencio,`);
+      console.error('no que el sitio perdio contenido. Revisar arriba los "error de extraccion" por articulo.');
+      process.exit(1);
+    }
+  }
+
   const output = {
     extractedAt: new Date().toISOString(),
     corpusSize: CORPUS_SIZE,
