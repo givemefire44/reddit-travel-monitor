@@ -1,0 +1,113 @@
+{
+  "trastevere": {
+    "total": 70,
+    "mediciones": 6,
+    "porcentaje": 9,
+    "topics": {
+      "pricing": 3,
+      "booking": 2,
+      "timing": 2,
+      "logistics": 2,
+      "value": 2,
+      "group-size": 1,
+      "operators": 1
+    },
+    "ejemplos": [
+      "pricing-001: The most obvious is price: without a platform commission in the middle, direct bookings are commonly cited as running around 10–20",
+      "booking-003: Private food tours in Rome commonly require around a week's notice for a full refund rather than 24 hours — a policy that catches ",
+      "group-size-002: Trastevere caps run from about 7 to 14 depending on the operator, and the difference is qualitative: at seven you have a conversat"
+    ]
+  },
+  "vatican": {
+    "total": 149,
+    "mediciones": 62,
+    "porcentaje": 42,
+    "topics": {
+      "timing": 24,
+      "crowds": 22,
+      "sistine-chapel": 14,
+      "tickets": 12,
+      "logistics": 12,
+      "guides": 10,
+      "museums-itinerary": 10,
+      "pricing": 10,
+      "operators": 9,
+      "dome-climb": 8,
+      "st-peters": 8,
+      "skip-the-line": 7,
+      "accessibility": 3,
+      "weather": 2,
+      "dress-code": 1,
+      "kids-families": 1
+    },
+    "ejemplos": [
+      "sistine-chapel-001: One detailed account of an evening visit describes 45 minutes inside the Sistine Chapel, against the 15 to 20 minutes a standard g",
+      "crowds-001: The Carriage Pavilion averages 4.74 stars, higher than any headline element of the Vatican except nothing at all — it sits above t",
+      "crowds-003: Across 5,657 dated visits, crowd complaints peak in June (25.2%) and stay high through May and October, while December, January an"
+    ]
+  },
+  "colosseum": {
+    "total": 873,
+    "mediciones": 217,
+    "porcentaje": 25,
+    "topics": {
+      "timing": 81,
+      "operators": 69,
+      "crowds": 67,
+      "guides": 56,
+      "logistics": 44,
+      "pricing": 42,
+      "tickets": 40,
+      "underground": 24,
+      "skip-the-line": 18,
+      "forum-palatine": 14,
+      "arena-floor": 10,
+      "kids-families": 7,
+      "weather": 7,
+      "night-tours": 1,
+      "accessibility": 1
+    },
+    "ejemplos": [
+      "underground-004: Once a guide is moving 17 people through a Forum-Palatine-Colosseum sequence on a fixed underground slot, a single bathroom reques",
+      "underground-005: A separate pain point flags \"only 20 minutes allowed in the underground.\"",
+      "pricing-004: The trade-off: The €18 standard delivers roughly 70% of what premium holders see — including a view down into the hypogeum."
+    ]
+  },
+  "pompeii": {
+    "total": 118,
+    "mediciones": 21,
+    "porcentaje": 18,
+    "topics": {
+      "pricing": 13,
+      "operators": 6,
+      "format-duration": 4,
+      "timing": 3,
+      "crowds": 3,
+      "tickets": 2,
+      "herculaneum": 1
+    },
+    "ejemplos": [
+      "timing-002: Visitors who entered at opening time or after about 15:30–16:00 talk about cooler temperatures, easier movement through the site, ",
+      "crowds-001: The main drawback of Porta Marina is that it concentrates the highest volume of visitors, especially between 9:30 and 11:00 AM whe",
+      "crowds-002: Despite being just 2–3 minutes' walk from Porta Marina, it sees significantly less foot traffic because most visitors follow the s"
+    ]
+  },
+  "milan": {
+    "total": 84,
+    "mediciones": 16,
+    "porcentaje": 19,
+    "topics": {
+      "pricing": 13,
+      "tickets": 4,
+      "operators": 4,
+      "logistics": 2,
+      "crowds": 1,
+      "guides": 1
+    },
+    "ejemplos": [
+      "pricing-001: Leonardo's Last Supper charges 10.7x its official ticket price — the highest markup of any major monument in Europe.",
+      "pricing-002: The average tour costs $161.",
+      "operators-001: Wander Italy (5 tours) and Memento (5 tours) together hold 28% of all 35 available products."
+    ]
+  }
+}
