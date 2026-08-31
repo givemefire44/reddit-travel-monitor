@@ -507,11 +507,38 @@ async function marcarPublicada(url) {
     const q = limpia(e.questionUrl);
     return objetivo === q || objetivo.startsWith(q + '/');
   });
+  // Si la pregunta no esta en el ledger, se AGREGA como publicada en vez de
+  // abortar.
+  //
+  // Abortar tenia sentido cuando lo unico contestable era lo que el reporte
+  // ofrecia: una URL desconocida solo podia ser un error de tipeo. Dejo de
+  // tenerlo el 31 ago 2026, cuando el filtro de material devolvio cero
+  // candidatos dos corridas seguidas y cuatro de las preguntas que habia
+  // descartado resultaron perfectamente contestables. Esas se contestan a mano,
+  // fuera del circuito del script, y son justo las que el ledger NUNCA vio.
+  //
+  // El fallo era ademas silencioso en la practica: el mensaje de error se
+  // mezclaba con el listado de las ultimas entregadas y parecia una confirmacion.
+  // Dos respuestas quedaron publicadas y sin registrar, o sea que la pregunta
+  // volvia al pozo para siempre y nada avisaba que ya estaba contestada.
   if (!hit.length) {
-    console.error(`No hay ninguna entrada en el ledger con esa URL:\n  ${url}`);
-    console.error('\nURLs entregadas recientemente:');
-    for (const e of ledger.answered.slice(-8)) console.error(`  [${e.estado}] ${e.questionUrl}`);
-    process.exit(1);
+    const slug = limpia(url).split('/answer/')[0];
+    const titulo = decodeURIComponent(slug.split('/').pop() || '').replace(/-/g, ' ');
+    ledger.answered.push({
+      questionUrl: slug,
+      questionTitle: titulo,
+      titleNormalized: titulo.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim(),
+      site: null,
+      sourceSlugs: [],
+      shingles: [],
+      generatedAt: new Date().toISOString().slice(0, 10),
+      estado: 'publicada',
+      // Para distinguirlas despues: estas no salieron del reporte.
+      origen: 'manual',
+    });
+    fs.writeFileSync(LEDGER_PATH, JSON.stringify(ledger, null, 2) + '\n', 'utf8');
+    console.log(`No estaba en el ledger (contestada fuera del reporte). Agregada como publicada: "${titulo}"`);
+    return;
   }
   for (const e of hit) e.estado = 'publicada';
   fs.writeFileSync(LEDGER_PATH, JSON.stringify(ledger, null, 2) + '\n', 'utf8');
