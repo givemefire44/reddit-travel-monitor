@@ -397,6 +397,28 @@
       "generatedAt": "2026-08-31",
       "estado": "publicada",
       "origen": "manual"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-facts-should-I-know-before-visiting-Vatican-City",
+      "questionTitle": "What facts should I know before visiting Vatican City",
+      "titleNormalized": "what facts should i know before visiting vatican city",
+      "site": null,
+      "sourceSlugs": [],
+      "shingles": [],
+      "generatedAt": "2026-09-01",
+      "estado": "publicada",
+      "origen": "manual"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-the-best-local-foods-to-try-in-Rome",
+      "questionTitle": "What are the best local foods to try in Rome",
+      "titleNormalized": "what are the best local foods to try in rome",
+      "site": null,
+      "sourceSlugs": [],
+      "shingles": [],
+      "generatedAt": "2026-09-01",
+      "estado": "publicada",
+      "origen": "manual"
     }
   ]
 }
