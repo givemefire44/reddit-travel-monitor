@@ -205,9 +205,9 @@
       "label": "Museos Vaticanos, entrada estandar online",
       "symbol": "€",
       "expected": 25,
-      "estado": "consenso-interno",
-      "source": "corpus de vatican, varios articulos coinciden; sin verificar contra museivaticani.va",
-      "verifiedAt": null,
+      "estado": "verificado",
+      "source": "tickets.museivaticani.va y basilicasanpietro.va, relevado el 2 sep 2026. €25,00 = €20 de base + €5 de tasa de reserva. Reducida online €15,00.",
+      "verifiedAt": "2026-09-02",
       "excludeIf": "at the door|on the day|reseller|third[- ]party|guided|tour|basilica",
       "patterns": [
         "€\\s?(\\d{1,3})\\s+online",
@@ -222,9 +222,9 @@
       "label": "Museos Vaticanos, entrada estandar en la puerta",
       "symbol": "€",
       "expected": 20,
-      "estado": "consenso-interno",
-      "source": "corpus de vatican, varios articulos coinciden; sin verificar contra museivaticani.va",
-      "verifiedAt": null,
+      "estado": "verificado",
+      "source": "tickets.museivaticani.va y basilicasanpietro.va, relevado el 2 sep 2026. €20,00 en puerta, sin reserva. Reducida (7-18 y estudiantes hasta 25): €10,00. La tasa de reserva online de €5 es lo unico que separa el precio de puerta del online.",
+      "verifiedAt": "2026-09-02",
       "excludeIf": "online|reseller|third[- ]party|guided|tour|basilica",
       "patterns": [
         "€\\s?(\\d{1,3})\\s+at the door",
@@ -239,9 +239,9 @@
       "label": "San Pedro, ticket de entrada con horario (la basilica es gratis)",
       "symbol": "€",
       "expected": 7,
-      "estado": "consenso-interno",
-      "source": "corpus de vatican; sin verificar",
-      "verifiedAt": null,
+      "estado": "verificado",
+      "source": "tickets.museivaticani.va y basilicasanpietro.va, relevado el 2 sep 2026. €7,00 la visita cronometrada de ~1h con audioguia digital y salteo de fila. Tambien se entra GRATIS haciendo la fila en la plaza. Sistema de venta SEPARADO de los Museos (booking.basilicasanpietro.va).",
+      "verifiedAt": "2026-09-02",
       "excludeIf": "museums|sistine|dome|cupola",
       "patterns": [
         "€\\s?(\\d{1,3})\\s+(?:timed[- ]entry|fast)",
@@ -317,6 +317,154 @@
       "marcoOk": "we sampled|we looked|we analys|we analyz|we counted|we scored|we score|across the|of the listings|ranged|ran from|ran \\u20ac|sat at|came in at|at the time|when we|in the (?:reviews|listings|data)|median|average|typically|used to|were |was ",
       "motivo": "Enmarcarlo como medicion, no como precio: \"across the listings we sampled, underground tours ran €63 to €90 against the €32 official\" en vez de \"the underground tour costs €63\". Y citar el oficial al lado, que es el que si esta verificado y el que le da sentido a la comparacion.",
       "soloBorradores": true
+    },
+    {
+      "id": "vaticano-audioguia",
+      "label": "Audioguia oficial de los Museos Vaticanos",
+      "symbol": "€",
+      "expected": 8,
+      "estado": "verificado",
+      "verifiedAt": "2026-09-02",
+      "sitios": [
+        "vatican"
+      ],
+      "source": "tickets.museivaticani.va y basilicasanpietro.va, relevado el 2 sep 2026. €8,00 adultos (12 idiomas). La version para chicos de 7-12 (Family Tour) es €5,00.",
+      "excludeIf": "colosseum|pompeii|last supper|guided tour",
+      "patterns": [
+        "audio ?guide[^.]{0,20}?€\\s?(\\d{1,3})",
+        "€\\s?(\\d{1,3})[^.]{0,20}?audio ?guide"
+      ]
+    },
+    {
+      "id": "cupula-ascensor",
+      "label": "Cupula de San Pedro CON ascensor",
+      "symbol": "€",
+      "expected": 22,
+      "estado": "verificado",
+      "verifiedAt": "2026-09-02",
+      "sitios": [
+        "vatican"
+      ],
+      "source": "tickets.museivaticani.va y basilicasanpietro.va, relevado el 2 sep 2026. €22,00: ascensor hasta la terraza + 320 escalones hasta la cima + Basilica con audioguia. Tarifa unica, sin reducida por edad.",
+      "excludeIf": "without (?:the )?lift|no lift|stairs all the way|551",
+      "patterns": [
+        "(?:lift|elevator)[^.]{0,30}?€\\s?(\\d{1,3})",
+        "€\\s?(\\d{1,3})[^.]{0,25}?(?:with (?:the )?lift|by lift)"
+      ]
+    },
+    {
+      "id": "cupula-escaleras",
+      "label": "Cupula de San Pedro SIN ascensor (551 escalones)",
+      "symbol": "€",
+      "expected": 17,
+      "estado": "verificado",
+      "verifiedAt": "2026-09-02",
+      "sitios": [
+        "vatican"
+      ],
+      "source": "tickets.museivaticani.va y basilicasanpietro.va, relevado el 2 sep 2026. €17,00: 551 escalones en total (231 + 320) + Basilica con audioguia. Tarifa unica.",
+      "excludeIf": "with (?:the )?lift|elevator",
+      "patterns": [
+        "(?:551|all the way|on foot|stairs only)[^.]{0,30}?€\\s?(\\d{1,3})"
+      ]
+    },
+    {
+      "id": "canal-oficial-vaticano",
+      "label": "Quien vende las entradas oficiales del Vaticano",
+      "estado": "verificado",
+      "verifiedAt": "2026-09-02",
+      "sitios": [
+        "vatican"
+      ],
+      "source": "tickets.museivaticani.va y basilicasanpietro.va, relevado el 2 sep 2026. Museos: tickets.museivaticani.va. Basilica y cupula: booking.basilicasanpietro.va, sistema SEPARADO. GetYourGuide, Tiqets y Viator NO son canales oficiales; el propio sitio advierte contra webs parecidas que cobran mucho mas.",
+      "prohibidoExcludeIf": "not official|no oficial|are not|resellers|third[- ]party|no son",
+      "prohibido": [
+        "(?:official|officially)[^.]{0,25}?(?:getyourguide|tiqets|viator)",
+        "(?:getyourguide|tiqets|viator)[^.]{0,25}?(?:official site|official channel|officially)"
+      ],
+      "motivo": "Ninguna plataforma de terceros es canal oficial del Vaticano. Los oficiales son el de los Museos y, aparte, el de la Basilica."
+    },
+    {
+      "id": "cenacolo-estandar",
+      "label": "Cenacolo Vinciano (Ultima Cena), entrada estandar",
+      "symbol": "€",
+      "expected": 15,
+      "estado": "verificado",
+      "verifiedAt": "2026-09-02",
+      "sitios": [
+        "milan"
+      ],
+      "source": "cenacolovinciano.org / vivaticket, relevado el 2 sep 2026. €15,00 desde los 25 años, slot cronometrado de 15 minutos. Reducida €2,00 (UE 18-25). Menores de 18 UE, discapacidad + acompañante, guias, periodistas: gratis.",
+      "excludeIf": "reseller|getyourguide|viator|tiqets|third[- ]party|combo|brera|markup",
+      "patterns": [
+        "(?:last supper|cenacolo)[^.]{0,30}?€\\s?(\\d{1,3})",
+        "€\\s?(\\d{1,3})[^.]{0,25}?(?:last supper|cenacolo)"
+      ]
+    },
+    {
+      "id": "combo-brera",
+      "label": "No existe combo oficial Cenacolo + Pinacoteca di Brera",
+      "estado": "verificado",
+      "verifiedAt": "2026-09-02",
+      "sitios": [
+        "milan"
+      ],
+      "source": "cenacolovinciano.org / vivaticket, relevado el 2 sep 2026. El combo \"Cenacolo + Brera\" a €16 existe SOLO en italy-museum.com, que es un revendedor no oficial. El canal oficial no vende ese producto.",
+      "prohibidoExcludeIf": "no official|not official|does not exist|no existe|only exists|reseller",
+      "prohibido": [
+        "(?:official|combined)[^.]{0,30}?(?:brera)",
+        "brera[^.]{0,25}?(?:combo|combined ticket|official)"
+      ],
+      "motivo": "No hay combo oficial con Brera. El que circula es de un revendedor."
+    },
+    {
+      "id": "pompeii-express",
+      "label": "Pompeii Express (entrada estandar, solo Pompeya)",
+      "symbol": "€",
+      "expected": 20,
+      "estado": "verificado",
+      "verifiedAt": "2026-09-02",
+      "sitios": [
+        "pompeii"
+      ],
+      "source": "pompeiisites.org / pompeii.vivaticket.it, relevado el 2 sep 2026. €20,00 completo, €2,00 reducida UE 18-24, menores de 18 gratis. NO incluye las villas suburbanas. Sin tasa de reserva online (comision €0 confirmada).",
+      "excludeIf": "plus|altri siti|circuito|combined|herculaneum|ercolano|annual|card|reseller",
+      "patterns": [
+        "(?:pompeii express|standard (?:pompeii )?ticket)[^.]{0,25}?€\\s?(\\d{1,3})"
+      ]
+    },
+    {
+      "id": "pompeii-plus",
+      "label": "Pompeii Plus (Pompeya + villas suburbanas)",
+      "symbol": "€",
+      "expected": 25,
+      "estado": "verificado",
+      "verifiedAt": "2026-09-02",
+      "sitios": [
+        "pompeii"
+      ],
+      "source": "pompeiisites.org / pompeii.vivaticket.it, relevado el 2 sep 2026. €25,00: agrega Villa de los Misterios, Villa de Diomedes, Villa Regina en Boscoreale y bus lanzadera.",
+      "excludeIf": "express|altri siti|herculaneum|ercolano|reseller",
+      "patterns": [
+        "pompeii plus[^.]{0,25}?€\\s?(\\d{1,3})"
+      ]
+    },
+    {
+      "id": "combo-herculano",
+      "label": "No existe combo oficial Pompeya + Herculano",
+      "estado": "verificado",
+      "verifiedAt": "2026-09-02",
+      "sitios": [
+        "pompeii"
+      ],
+      "source": "pompeiisites.org / pompeii.vivaticket.it, relevado el 2 sep 2026. Herculano lo administra una institucion DISTINTA del Parque Arqueologico de Pompeya y no entra en ningun ticket combinado. El combo oficial \"Pompei e Altri Siti\" (€30) incluye Oplontis, Boscoreale y Stabiae, no Herculano. \"Porta Ercolano\" es el nombre de una puerta de Pompeya, no una entrada combinada.",
+      "prohibidoExcludeIf": "no official|not official|does not exist|no existe|separate|different institution|no hay|operator|operators|tour|tours|private|guided|third[- ]party|reseller|package|getyourguide|viator",
+      "prohibido": [
+        "(?:combined|combo|joint)[^.]{0,30}?(?:herculaneum|ercolano)",
+        "(?:herculaneum|ercolano)[^.]{0,25}?(?:combined ticket|combo|included in)",
+        "(?:ticket|pass)[^.]{0,25}?(?:covers|includes)[^.]{0,20}?(?:herculaneum|ercolano)"
+      ],
+      "motivo": "Pompeya y Herculano se venden por separado y los administra otra institucion. Un operador privado SI puede venderte los dos juntos; lo que no existe es el ticket oficial combinado. Decir \"entrada combinada\" a secas promete algo que el canal oficial no vende."
     }
   ]
 }
