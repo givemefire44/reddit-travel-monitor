@@ -21,6 +21,7 @@ import { contraPublicados } from './lib/fingerprint.mjs';
 import { cargar as cargarPublicados } from './publicado.mjs';
 import { leerEnFrio } from './lib/lectura-ciega.mjs';
 import { verificarAfuera } from './lib/verificar-afuera.mjs';
+import { contraCanonicos } from './lib/canonicos.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 // El .env hace falta desde que existe la lectura ciega, que llama al modelo.
@@ -316,6 +317,19 @@ if (SITE) {
   }
 } else {
   avisos.push('sin --site: las cifras NO se verificaron contra el corpus');
+}
+
+// ------------------------------------------------- datos declarados (canonicos)
+// El chequeo de arriba pregunta si la cifra esta publicada en algun articulo
+// nuestro. Este pregunta si es la cifra CORRECTA, que no es lo mismo: cuando dos
+// articulos se contradicen, las dos cifras estan en el corpus y las dos pasan el
+// primero. Ver lib/canonicos.mjs para el caso que lo origino.
+//
+// Corre siempre, con --site y sin el: un dato en disputa no deja de estarlo
+// porque no le hayas pasado el corpus.
+for (const h of contraCanonicos(cuerpo)) {
+  if (h.nivel === 'falla') fallas.push(h.texto);
+  else avisos.push(h.texto);
 }
 
 // -------------------------------------------------------------------- simetria

@@ -1,0 +1,213 @@
+{
+  "_comentario": [
+    "Los datos duros que una respuesta puede afirmar, y cual es el valor correcto.",
+    "",
+    "Existe por un error publicado. El 29 ago 2026 un comentario en r/rome dijo que",
+    "el Full Experience 'con arena floor y underground' sale 7 dias antes. El arena",
+    "floor si; el subterraneo sale 30 dias antes segun cuatro articulos del propio",
+    "sitio. Alguien estaba planificando su viaje con ese numero.",
+    "",
+    "El corpus NO sirve para esto y por eso hace falta este archivo. El corpus son",
+    "mediciones congeladas extraidas de los articulos: si dos articulos se",
+    "contradicen, el extractor guarda las dos afirmaciones, porque las dos estan",
+    "textualmente en su fuente. Un dato vigente necesita que alguien declare cual es",
+    "el bueno y cuando lo verifico.",
+    "",
+    "Copiado de colosseumroman-blog/data/canonical-facts.json, que es el modelo del",
+    "portfolio. De ahi viene tambien la leccion de por que NO se detectan",
+    "contradicciones solas: se probo tres veces el 19 ago 2026 y dio 12, 219 y 218",
+    "alertas, todas falsas. Se declara lo cierto y se verifica que se respete.",
+    "",
+    "ESTADO de cada regla, que es lo que este repo agrega al modelo:",
+    "  verificado       - alguien miro la fuente oficial. Afirmar otra cosa es FALLA.",
+    "  consenso-interno - es lo que dicen nuestros articulos, sin verificar contra la",
+    "                     fuente oficial. Afirmar otra cosa es aviso, no falla.",
+    "  en-disputa       - nuestros propios articulos se contradicen. Afirmar CUALQUIER",
+    "                     numero es FALLA hasta que alguien lo verifique y lo cierre.",
+    "",
+    "Los precios llegaron ya verificados desde colosseumroman-blog. Cuando cambien",
+    "alla, hay que cambiarlos aca: son una copia, no un espejo automatico.",
+    "",
+    "'patterns' define QUE cuenta como una afirmacion de ese dato. El grupo de",
+    "captura tiene que ser el numero, y conviene que sea estrecho: un patron amplio",
+    "agarra comparaciones donde tener cifras distintas es correcto."
+  ],
+  "reglas": [
+    {
+      "id": "ticket-estandar",
+      "label": "Ticket estandar 24h (Coliseo + Foro + Palatino)",
+      "symbol": "€",
+      "expected": 18,
+      "estado": "verificado",
+      "source": "Parco Archeologico del Colosseo (via colosseumroman-blog)",
+      "verifiedAt": "2026-08-19",
+      "excludeIf": "full experience|attic|belvedere|underground|hypogeum|arena|reseller|third[- ]party|markup|premium|guided|vatican",
+      "patterns": [
+        "(?:standard|official|basic|regular) (?:24[- ]?hour )?(?:ticket|combo|entry|admission)\\s*\\((?:from )?€\\s?(\\d{1,3})\\)",
+        "(?:standard|official|basic|regular) (?:24[- ]?hour )?(?:ticket|combo|entry|admission)[^.]{0,14}?(?:costs?|is|are|at|from)\\s+€\\s?(\\d{1,3})",
+        "the €\\s?(\\d{1,3}) (?:standard|official|basic)\\b"
+      ]
+    },
+    {
+      "id": "full-experience",
+      "label": "Full Experience (arena / subterraneo)",
+      "symbol": "€",
+      "expected": 24,
+      "estado": "verificado",
+      "source": "Parco Archeologico del Colosseo (via colosseumroman-blog)",
+      "verifiedAt": "2026-08-19",
+      "excludeIf": "attic|belvedere|reseller|third[- ]party|standard|markup|difference",
+      "patterns": [
+        "full experience(?: ticket)?\\s*\\((?:from )?€\\s?(\\d{1,3})\\)",
+        "full experience(?: ticket)?[^.]{0,14}?(?:costs?|is|are|at|from|starts at)\\s+€\\s?(\\d{1,3})"
+      ]
+    },
+    {
+      "id": "reducida-ue",
+      "label": "Tarifa reducida ciudadanos UE 18-24",
+      "symbol": "€",
+      "expected": 2,
+      "estado": "verificado",
+      "source": "Parco Archeologico del Colosseo (via colosseumroman-blog)",
+      "verifiedAt": "2026-08-19",
+      "excludeIf": "markup|fee|booking|tour",
+      "patterns": [
+        "€\\s?(\\d{1,3})\\s+(?:for\\s+)?(?:EU|European) citizens",
+        "(?:EU|European) citizens[^.€]{0,18}?\\(?€\\s?(\\d{1,3})"
+      ]
+    },
+    {
+      "id": "subterraneo-guiado",
+      "label": "Full Experience Underground + Arena, visita guiada",
+      "symbol": "€",
+      "expected": 32,
+      "estado": "verificado",
+      "source": "Parco Archeologico del Colosseo (via colosseumroman-blog)",
+      "verifiedAt": "2026-08-19",
+      "excludeIf": "reseller|third[- ]party|markup",
+      "patterns": [
+        "(?:guided )?underground (?:ticket|tour)[^.]{0,20}?€\\s?(\\d{1,3})",
+        "€\\s?(\\d{1,3})[^.]{0,20}?(?:guided )?underground (?:ticket|tour)"
+      ]
+    },
+
+    {
+      "id": "ventana-standard",
+      "label": "Ventana de liberacion del ticket estandar",
+      "symbol": "",
+      "unidad": "dias",
+      "expected": 30,
+      "estado": "consenso-interno",
+      "source": "6 articulos del sitio coinciden; sin verificar contra CoopCulture",
+      "verifiedAt": null,
+      "excludeIf": "arena floor|underground|hypogeum|night|attic",
+      "patterns": [
+        "standard[^.]{0,40}?(\\d{1,3})\\s*days?\\s*(?:ahead|in advance|before)",
+        "(\\d{1,3})\\s*days?\\s*(?:ahead|in advance|before)[^.]{0,30}?standard"
+      ]
+    },
+    {
+      "id": "ventana-arena-floor",
+      "label": "Ventana de liberacion del Arena Floor",
+      "symbol": "",
+      "unidad": "dias",
+      "expected": 7,
+      "estado": "consenso-interno",
+      "source": "8 articulos del sitio coinciden. OJO: el 2 sep 2026 se observo que el ticket combinado 'Full Experience - Underground Levels and Arena' tiene ventana de ~30 dias, asi que el 7 aplica como mucho al Arena Floor suelto, no al combinado. Verificar el producto arena-solo antes de darlo por bueno.",
+      "verifiedAt": null,
+      "excludeIf": "underground|hypogeum|standard combo",
+      "patterns": [
+        "arena floor[^.]{0,40}?(\\d{1,3})[- ]?days?\\s*(?:ahead|in advance|before|release)",
+        "(\\d{1,3})[- ]?days?\\s*(?:ahead|in advance|before)[^.]{0,30}?arena floor"
+      ]
+    },
+    {
+      "id": "ventana-underground",
+      "label": "Ventana de liberacion del subterraneo (hypogeum)",
+      "symbol": "",
+      "unidad": "dias",
+      "expected": 30,
+      "estado": "verificado",
+      "source": "Observado en el canal oficial (ticketing.colosseo.it) el 2 sep 2026: el ticket 'Full Experience - Underground Levels and Arena' expone calendario desde ese dia hasta el 1 oct y la flecha al mes siguiente esta deshabilitada, o sea una ventana visible de ~30 dias. Coincide con 4 articulos del sitio. Cierra la disputa contra colosseum-accessibility-lifts-step-free-stroller, que decia 7 y hay que corregir.",
+      "verifiedAt": "2026-09-02",
+      "excludeIf": "arena floor only",
+      "patterns": [
+        "underground[^.]{0,40}?(\\d{1,3})\\s*days?\\s*(?:ahead|in advance|before|release)",
+        "(\\d{1,3})\\s*days?\\s*(?:ahead|in advance|before)[^.]{0,30}?underground",
+        "hypogeum[^.]{0,40}?(\\d{1,3})\\s*days?\\s*(?:ahead|in advance|before)"
+      ]
+    },
+    {
+      "id": "canal-oficial",
+      "label": "Quien vende las entradas oficiales del Coliseo",
+      "estado": "verificado",
+      "source": "Verificado el 2 sep 2026: coopculture.it devuelve 404 en su seccion de tickets y su buscador no encuentra 'Colosseo'. Desde 2024 la venta oficial es ticketing.colosseo.it, que se presenta como revendedor exclusivo oficial del Parco Archeologico del Colosseo. El corpus sigue nombrando a CoopCulture como el sitio oficial en 6 facts de 5 articulos, uno de ellos con CoopCulture en el titulo.",
+      "verifiedAt": "2026-09-02",
+      "prohibido": [
+        "coopculture[^.]{0,30}?(?:official|officially)",
+        "(?:official|officially)[^.]{0,30}?coopculture",
+        "(?:buy|book|purchase|get)[^.]{0,25}?(?:from |on |at |through )?coopculture",
+        "coopculture[^.]{0,20}?(?:site|website|website's)"
+      ],
+      "motivo": "CoopCulture dejo de vender entradas del Coliseo. Nombrarla como el canal oficial manda al lector a un 404. Decir 'el sitio oficial del Parco' sin nombrar dominio."
+    },
+    {
+      "id": "ventana-night",
+      "label": "Ventana de liberacion de los tours nocturnos (solo jueves)",
+      "symbol": "",
+      "unidad": "dias",
+      "expected": 7,
+      "estado": "consenso-interno",
+      "source": "2 articulos dicen 7 dias; colosseum-tours-and-tickets los mete en la bolsa de 30. Conflicto menor, sin verificar.",
+      "verifiedAt": null,
+      "excludeIf": "arena floor|underground|standard",
+      "patterns": [
+        "night (?:tour|tours|visit)[^.]{0,40}?(\\d{1,3})\\s*days?\\s*(?:ahead|in advance|before)",
+        "(\\d{1,3})\\s*days?\\s*(?:ahead|in advance|before)[^.]{0,25}?night (?:tour|tours)"
+      ]
+    },
+
+    {
+      "id": "vaticano-online",
+      "label": "Museos Vaticanos, entrada estandar online",
+      "symbol": "€",
+      "expected": 25,
+      "estado": "consenso-interno",
+      "source": "corpus de vatican, varios articulos coinciden; sin verificar contra museivaticani.va",
+      "verifiedAt": null,
+      "excludeIf": "at the door|on the day|reseller|third[- ]party|guided|tour|basilica",
+      "patterns": [
+        "€\\s?(\\d{1,3})\\s+online",
+        "online[^.]{0,12}?€\\s?(\\d{1,3})"
+      ]
+    },
+    {
+      "id": "vaticano-puerta",
+      "label": "Museos Vaticanos, entrada estandar en la puerta",
+      "symbol": "€",
+      "expected": 20,
+      "estado": "consenso-interno",
+      "source": "corpus de vatican, varios articulos coinciden; sin verificar contra museivaticani.va",
+      "verifiedAt": null,
+      "excludeIf": "online|reseller|third[- ]party|guided|tour|basilica",
+      "patterns": [
+        "€\\s?(\\d{1,3})\\s+at the door",
+        "at the door[^.]{0,12}?€\\s?(\\d{1,3})"
+      ]
+    },
+    {
+      "id": "san-pedro-timed",
+      "label": "San Pedro, ticket de entrada con horario (la basilica es gratis)",
+      "symbol": "€",
+      "expected": 7,
+      "estado": "consenso-interno",
+      "source": "corpus de vatican; sin verificar",
+      "verifiedAt": null,
+      "excludeIf": "museums|sistine|dome|cupola",
+      "patterns": [
+        "€\\s?(\\d{1,3})\\s+(?:timed[- ]entry|fast)",
+        "(?:timed[- ]entry|fast)[^.]{0,14}?€\\s?(\\d{1,3})"
+      ]
+    }
+  ]
+}
