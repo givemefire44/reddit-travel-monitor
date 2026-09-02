@@ -330,7 +330,23 @@ If the article never says what the figure measures anywhere, skip the fact entir
 
 Quality over quantity: 3-12 strong facts per article is typical. If an article has no qualifying sentences, return an empty array.`;
 
-async function extractFromArticle(article, text) {
+// Si la salida se trunca, el articulo se PARTE EN DOS y se extrae cada mitad.
+//
+// El 2 sep 2026 dos articulos de Pompeya se pasaron de los 16.000 tokens de
+// salida y tiraron "output truncado". El error estaba atrapado, asi que cada uno
+// aporto CERO facts y la corrida termino bien: 96 contra 118, sin una sola señal
+// de que faltaban articulos enteros. Lo caza el piso del 85%, pero el piso solo
+// dice "algo salio mal"; esto lo evita.
+//
+// Se parte en vez de pedir mas techo porque arriba de 16k el SDK exige streaming
+// ("Streaming is required for operations that may take longer than 10 minutes"),
+// y dos llamadas cortas son mas baratas y mas robustas que una larga. El corte va
+// en un limite de parrafo para no cortar una frase al medio, que es justo lo que
+// invalidaria el fact en la verificacion textual.
+//
+// Un articulo denso tiene MAS facts citables, no menos: quedarse corto de techo
+// castiga justamente a los mejores.
+async function extractFromArticle(article, text, nivel = 0) {
   const response = await client.messages.create({
     model: MODEL,
     max_tokens: 16000,
@@ -348,7 +364,16 @@ async function extractFromArticle(article, text) {
     return [];
   }
   if (response.stop_reason === 'max_tokens') {
-    throw new Error('output truncado (max_tokens) - JSON incompleto');
+    if (nivel >= 2) throw new Error('output truncado incluso partiendo el articulo en cuatro');
+    // Corte en el limite de parrafo mas cercano a la mitad.
+    const mitad = text.indexOf('\n\n', Math.floor(text.length / 2));
+    const corte = mitad > 0 ? mitad : Math.floor(text.length / 2);
+    console.warn(`  [${article.slug}] output truncado, se parte el articulo en dos (nivel ${nivel + 1})`);
+    const [a, b] = await Promise.all([
+      extractFromArticle(article, text.slice(0, corte), nivel + 1),
+      extractFromArticle(article, text.slice(corte), nivel + 1),
+    ]);
+    return [...a, ...b];
   }
   const textBlock = response.content.find((b) => b.type === 'text');
   return JSON.parse(textBlock.text).facts;
