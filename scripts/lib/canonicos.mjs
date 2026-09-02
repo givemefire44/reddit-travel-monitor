@@ -43,6 +43,45 @@ import { fileURLToPath } from 'node:url';
 const ROOT = path.dirname(path.dirname(path.dirname(fileURLToPath(import.meta.url))));
 const RUTA = path.join(ROOT, 'data', 'canonical-facts.json');
 
+// Cuanto vale una verificacion antes de tener que repetirla. Por regla con
+// "caducaEnDias"; si no, esto.
+//
+// No es un detector, es un recordatorio, y la diferencia importa. Lo que paso
+// con CoopCulture no lo habria cazado ningun plazo: los precios se verificaron
+// el 19 ago 2026 contra un vendedor que ya no vendia desde 2024, y catorce dias
+// despues seguian "frescos". Eso lo caza ir a mirar, o el chequeo contra la web.
+// La caducidad sirve para lo otro, que es lo que pasa siempre: nadie vuelve a
+// mirar nunca, y un dato de hace ocho meses se sigue citando como verificado.
+const CADUCIDAD_DEFAULT = 90;
+
+const diasDesde = (iso) => (iso ? Math.floor((Date.now() - Date.parse(iso)) / 86400000) : null);
+
+function vencida(regla) {
+  const dias = diasDesde(regla.verifiedAt);
+  if (dias == null) return null;
+  const tope = regla.caducaEnDias ?? CADUCIDAD_DEFAULT;
+  return dias > tope ? { dias, tope } : null;
+}
+
+// Estado de todas las reglas, para mostrarlo donde Mario mira todos los dias:
+// el encabezado del reporte del monitor. Un recordatorio que hay que ir a buscar
+// no es un recordatorio.
+export function vencimientos() {
+  if (!fs.existsSync(RUTA)) return { vencidas: [], porVencer: [], sinVerificar: [], enDisputa: [] };
+  const { reglas } = JSON.parse(fs.readFileSync(RUTA, 'utf8'));
+  const out = { vencidas: [], porVencer: [], sinVerificar: [], enDisputa: [] };
+  for (const r of reglas) {
+    if (r.estado === 'en-disputa') { out.enDisputa.push(r.label); continue; }
+    if (r.estado !== 'verificado') { out.sinVerificar.push(r.label); continue; }
+    const dias = diasDesde(r.verifiedAt);
+    const tope = r.caducaEnDias ?? CADUCIDAD_DEFAULT;
+    if (dias == null) continue;
+    if (dias > tope) out.vencidas.push(`${r.label} (verificado hace ${dias} días)`);
+    else if (dias > tope - 15) out.porVencer.push(`${r.label} (vence en ${tope - dias} días)`);
+  }
+  return out;
+}
+
 export function contraCanonicos(texto) {
   if (!fs.existsSync(RUTA)) return [];
   const { reglas } = JSON.parse(fs.readFileSync(RUTA, 'utf8'));
@@ -77,16 +116,30 @@ export function contraCanonicos(texto) {
         const dicho = Number(m[1]);
         if (Number.isNaN(dicho)) continue;
 
+        const caduco = vencida(regla);
         if (regla.estado === 'en-disputa') {
           hallazgos.push({
             nivel: 'falla',
             texto: `"${regla.label}": el borrador afirma ${dicho}, y este dato esta EN DISPUTA entre nuestros propios articulos. No publicar hasta verificarlo. ${regla.source}`,
           });
         } else if (dicho !== regla.expected) {
+          // Una verificacion vencida deja de mandar: la cifra sigue siendo la
+          // declarada, pero contradecirla baja de falla a aviso, porque la
+          // realidad pudo haber cambiado y el que no miro fui yo.
+          const manda = regla.estado === 'verificado' && !caduco;
           hallazgos.push({
-            nivel: regla.estado === 'verificado' ? 'falla' : 'aviso',
+            nivel: manda ? 'falla' : 'aviso',
             texto: `"${regla.label}": el borrador dice ${regla.symbol || ''}${dicho} y el valor declarado es ${regla.symbol || ''}${regla.expected}`
-              + (regla.estado === 'verificado' ? ` (verificado ${regla.verifiedAt}, ${regla.source})` : ` (consenso interno, sin verificar)`),
+              + (manda ? ` (verificado ${regla.verifiedAt}, ${regla.source})`
+                : caduco ? ` — pero esa verificacion es del ${regla.verifiedAt}, hace ${caduco.dias} dias, asi que ninguno de los dos numeros es de fiar`
+                  : ` (consenso interno, sin verificar)`),
+          });
+        } else if (caduco) {
+          // Coincide con lo declarado, pero lo declarado vencio. Se avisa igual:
+          // repetir un dato viejo con confianza es como se publican los errores.
+          hallazgos.push({
+            nivel: 'aviso',
+            texto: `"${regla.label}": ${regla.symbol || ''}${dicho} coincide con lo declarado, pero se verifico hace ${caduco.dias} dias (tope ${caduco.tope}). Conviene reconfirmarlo antes de publicarlo otra vez.`,
           });
         }
         break; // un hallazgo por regla y por oracion alcanza

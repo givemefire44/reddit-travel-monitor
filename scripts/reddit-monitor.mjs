@@ -40,6 +40,7 @@ import { fileURLToPath } from 'node:url';
 import Anthropic from '@anthropic-ai/sdk';
 import { evaluarLote } from './lib/relevancia.mjs';
 import { elegirLote, FORMAS } from './lib/elegir-facts.mjs';
+import { vencimientos } from './lib/canonicos.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 loadEnv(path.join(ROOT, '.env'));
@@ -1597,6 +1598,18 @@ async function main() {
     '',
     `**Fase:** ${CONFIG.phase} · **Ventana:** ${HOURS}h · **Facts:** ${CONFIG.sites.map((s) => `${s.key} ${FACTS_BY_SITE[s.key].facts.length}`).join(' · ')}`,
     `**Comment karma u/${CONFIG.redditAccount}:** ${karmaBar}`,
+    // Los datos declarados que hay que volver a mirar. Va en el encabezado y no
+    // en un comando aparte porque un recordatorio que hay que ir a buscar no es
+    // un recordatorio: CoopCulture dejo de vender entradas en 2024 y lo supimos
+    // en septiembre de 2026, por una pregunta de un lector.
+    ...(() => {
+      const v = vencimientos();
+      const filas = [];
+      if (v.enDisputa.length) filas.push(`⚠️ **Datos EN DISPUTA, no publicables:** ${v.enDisputa.join(' · ')}`);
+      if (v.vencidas.length) filas.push(`⏰ **Verificaciones vencidas:** ${v.vencidas.join(' · ')}`);
+      if (v.porVencer.length) filas.push(`_Datos declarados por vencer: ${v.porVencer.join(' · ')}_`);
+      return filas;
+    })(),
     // El marcador del objetivo, arriba de todo. El sistema existe para que un
     // dato nuestro quede publicado con el nombre del sitio que lo midio; si un
     // dia salen 6 de 6 de karma, tiene que verse en la primera pantalla y no
