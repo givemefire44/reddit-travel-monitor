@@ -42,7 +42,11 @@ for (const sitio of CONFIG.sites.filter((s) => !soloSitio || s.key === soloSitio
   // no se edita: se edita la frase en el articulo del que salio.
   const porArticulo = {};
   for (const f of facts) {
-    for (const h of contraCanonicos(f.fact, sitio.key)) {
+    // Las reglas de forma no se auditan sobre el corpus. Ver soloBorradores en
+    // canonical-facts.json: el corpus guarda oraciones sueltas y el marco de
+    // medicion suele estar en la de al lado, asi que auditarlas aca produce
+    // ruido (de 9 hallazgos a 58) sin encontrar un solo error real.
+    for (const h of contraCanonicos(f.fact, sitio.key, { soloBorradores: false })) {
       if (h.nivel !== 'falla') continue;
       const slug = f.sourceUrl.split('/').pop();
       (porArticulo[slug] = porArticulo[slug] || []).push({ fact: f, hallazgo: h });

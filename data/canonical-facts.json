@@ -301,6 +301,22 @@
       "sitios": [
         "colosseum"
       ]
+    },
+    {
+      "id": "precio-terceros",
+      "label": "Precio de tour de tercero enunciado como precio actual",
+      "estado": "regla-de-forma",
+      "source": "No es un dato verificable ni estable: varia por operador, fecha, temporada y plataforma, y no hay fuente que consultar. Pero el numero NO se prohibe, porque es medicion nuestra y es lo mejor que tenemos para citar. Lo que se exige es el marco: enunciado como medicion sigue siendo cierto siempre; enunciado como precio actual es falso la semana que viene. Aplica solo a borradores, no a la auditoria del corpus: en el articulo la oracion tiene contexto alrededor, en un comentario no.",
+      "verifiedAt": null,
+      "requiereMarco": true,
+      "excludeIf": "official|parco|coopculture|ticketing\\.colosseo|museivaticani|museum\\u2019s own|at the door",
+      "patterns": [
+        "(?:tour|tours|operator|operators|package|packages|listing|listings)[^.]{0,30}?\\u20ac\\s?(\\d{2,3})",
+        "\\u20ac\\s?(\\d{2,3})[^.]{0,30}?(?:tour|tours|per person|operator)"
+      ],
+      "marcoOk": "we sampled|we looked|we analys|we analyz|we counted|we scored|we score|across the|of the listings|ranged|ran from|ran \\u20ac|sat at|came in at|at the time|when we|in the (?:reviews|listings|data)|median|average|typically|used to|were |was ",
+      "motivo": "Enmarcarlo como medicion, no como precio: \"across the listings we sampled, underground tours ran €63 to €90 against the €32 official\" en vez de \"the underground tour costs €63\". Y citar el oficial al lado, que es el que si esta verificado y el que le da sentido a la comparacion.",
+      "soloBorradores": true
     }
   ]
 }

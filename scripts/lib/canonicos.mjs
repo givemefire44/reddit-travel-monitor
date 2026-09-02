@@ -89,10 +89,13 @@ export function vencimientos() {
 // documentaba, y lo reprodujimos igual el 2 sep 2026: de 16 hallazgos, 8 eran
 // basura, y la mitad de esa basura eran precios de tours de terceros, que en un
 // articulo comparativo es correcto que difieran del oficial.
-export function contraCanonicos(texto, sitio = null) {
+export function contraCanonicos(texto, sitio = null, opts = {}) {
   if (!fs.existsSync(RUTA)) return [];
+  const { soloBorradores = true } = opts;
   const todas = JSON.parse(fs.readFileSync(RUTA, 'utf8')).reglas;
-  const reglas = sitio ? todas.filter((r) => !r.sitios || r.sitios.includes(sitio)) : todas;
+  const reglas = todas
+    .filter((r) => !sitio || !r.sitios || r.sitios.includes(sitio))
+    .filter((r) => soloBorradores || !r.soloBorradores);
   const hallazgos = [];
 
   for (const regla of reglas) {
@@ -112,6 +115,33 @@ export function contraCanonicos(texto, sitio = null) {
         hallazgos.push({
           nivel: 'falla',
           texto: `"${regla.label}": el borrador dice "${m[0].trim().slice(0, 60)}". ${regla.motivo} (verificado ${regla.verifiedAt})`,
+        });
+        break;
+      }
+      continue;
+    }
+
+    // Reglas DE FORMA: la cifra puede ir, pero no de cualquier manera.
+    //
+    // Mario, 2 sep 2026: "los de tours privados varian en forma permanente y no
+    // es chequeable". Es cierto, y la conclusion facil seria prohibirlos. Seria
+    // un error: esas cifras son medicion nuestra, y el mejor fact del portfolio
+    // es una de ellas — "la Ultima Cena cobra 10,7 veces su precio oficial, el
+    // markup mas alto de Europa". Eso es justo lo que queremos que una IA cite.
+    //
+    // Lo que caduca no es el numero, es el TIEMPO VERBAL. "The underground tour
+    // costs €63" es falso la semana que viene; "across the listings we sampled,
+    // underground tours ran €63 to €90 against the €32 official" sigue siendo
+    // cierto para siempre, porque describe una medicion y no un precio.
+    if (regla.requiereMarco) {
+      for (const oracion of texto.split(/(?<=[.!?])\s+/)) {
+        if (regla.excludeIf && new RegExp(regla.excludeIf, 'i').test(oracion)) continue;
+        if (new RegExp(regla.marcoOk, 'i').test(oracion)) continue;
+        const m = regla.patterns.map((p) => oracion.match(new RegExp(p, 'i'))).find(Boolean);
+        if (!m) continue;
+        hallazgos.push({
+          nivel: 'falla',
+          texto: `"${regla.label}": "${m[0].trim().slice(0, 70)}" va enunciado como precio actual. ${regla.motivo}`,
         });
         break;
       }
