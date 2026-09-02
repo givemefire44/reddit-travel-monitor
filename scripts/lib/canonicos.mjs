@@ -82,9 +82,17 @@ export function vencimientos() {
   return out;
 }
 
-export function contraCanonicos(texto) {
+// `sitio` limita las reglas al corpus que se esta mirando. Sin esto, las del
+// Coliseo se disparan contra los corpus de Vaticano, Milan y Pompeya: los €25 del
+// Vaticano y los €15 de la Ultima Cena salieron marcados como contradicciones de
+// los €18 del Coliseo. Es el falso positivo que el modelo del portfolio ya
+// documentaba, y lo reprodujimos igual el 2 sep 2026: de 16 hallazgos, 8 eran
+// basura, y la mitad de esa basura eran precios de tours de terceros, que en un
+// articulo comparativo es correcto que difieran del oficial.
+export function contraCanonicos(texto, sitio = null) {
   if (!fs.existsSync(RUTA)) return [];
-  const { reglas } = JSON.parse(fs.readFileSync(RUTA, 'utf8'));
+  const todas = JSON.parse(fs.readFileSync(RUTA, 'utf8')).reglas;
+  const reglas = sitio ? todas.filter((r) => !r.sitios || r.sitios.includes(sitio)) : todas;
   const hallazgos = [];
 
   for (const regla of reglas) {

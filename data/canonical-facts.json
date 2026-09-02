@@ -30,7 +30,13 @@
     "",
     "'patterns' define QUE cuenta como una afirmacion de ese dato. El grupo de",
     "captura tiene que ser el numero, y conviene que sea estrecho: un patron amplio",
-    "agarra comparaciones donde tener cifras distintas es correcto."
+    "agarra comparaciones donde tener cifras distintas es correcto.",
+    "",
+    "sitios: en que corpus aplica la regla. Sin esto, las reglas del Coliseo se",
+    "disparaban contra los corpus de Vaticano, Milan y Pompeya: los €25 del Vaticano",
+    "y los €15 de la Ultima Cena salian marcados como contradicciones de los €18 del",
+    "Coliseo. Es el mismo falso positivo que documenta el modelo del portfolio, y lo",
+    "reprodujimos igual el 2 sep 2026."
   ],
   "reglas": [
     {
@@ -39,15 +45,17 @@
       "symbol": "€",
       "expected": 18,
       "estado": "verificado",
-      "source": "Parco Archeologico del Colosseo — VERIFICADO CONTRA COOPCULTURE, QUE YA NO VENDE. Reconfirmar en ticketing.colosseo.it, operado por el Parco Archeologico del Colosseo, revendedor exclusivo oficial del area arqueologica (Coliseo, Foro Romano y Palatino) desde que CoopCulture dejo de vender en 2024",
-      "verifiedAt": "2026-08-19",
+      "source": "ticketing.colosseo.it (Parco Archeologico del Colosseo), tabla de precios consultada en vivo. Ticket 24H Coliseo + Foro-Palatino + SUPER: €18,00 completo, €2,00 reducida UE 18-25, menores de 18 gratis.",
+      "verifiedAt": "2026-09-02",
       "excludeIf": "full experience|attic|belvedere|underground|hypogeum|arena|reseller|third[- ]party|markup|premium|guided|vatican",
       "patterns": [
         "(?:standard|official|basic|regular) (?:24[- ]?hour )?(?:ticket|combo|entry|admission)\\s*\\((?:from )?€\\s?(\\d{1,3})\\)",
         "(?:standard|official|basic|regular) (?:24[- ]?hour )?(?:ticket|combo|entry|admission)[^.]{0,14}?(?:costs?|is|are|at|from)\\s+€\\s?(\\d{1,3})",
         "the €\\s?(\\d{1,3}) (?:standard|official|basic)\\b"
       ],
-      "caducaEnDias": 0
+      "sitios": [
+        "colosseum"
+      ]
     },
     {
       "id": "full-experience",
@@ -61,6 +69,9 @@
       "patterns": [
         "full experience(?: ticket)?\\s*\\((?:from )?€\\s?(\\d{1,3})\\)",
         "full experience(?: ticket)?[^.]{0,14}?(?:costs?|is|are|at|from|starts at)\\s+€\\s?(\\d{1,3})"
+      ],
+      "sitios": [
+        "colosseum"
       ]
     },
     {
@@ -69,29 +80,33 @@
       "symbol": "€",
       "expected": 2,
       "estado": "verificado",
-      "source": "Parco Archeologico del Colosseo — VERIFICADO CONTRA COOPCULTURE, QUE YA NO VENDE. Reconfirmar en ticketing.colosseo.it, operado por el Parco Archeologico del Colosseo, revendedor exclusivo oficial del area arqueologica (Coliseo, Foro Romano y Palatino) desde que CoopCulture dejo de vender en 2024",
-      "verifiedAt": "2026-08-19",
+      "source": "ticketing.colosseo.it (Parco Archeologico del Colosseo), tabla de precios consultada en vivo. Tarifa reducida UE 18-25: €2,00, tanto en el 24H como en el Full Experience Arena.",
+      "verifiedAt": "2026-09-02",
       "excludeIf": "markup|fee|booking|tour",
       "patterns": [
         "€\\s?(\\d{1,3})\\s+(?:for\\s+)?(?:EU|European) citizens",
         "(?:EU|European) citizens[^.€]{0,18}?\\(?€\\s?(\\d{1,3})"
       ],
-      "caducaEnDias": 0
+      "sitios": [
+        "colosseum"
+      ]
     },
     {
       "id": "subterraneo-guiado",
-      "label": "Full Experience Underground + Arena, visita guiada",
+      "label": "Full Experience Underground + Arena CON GUIA (educativo del Parco)",
       "symbol": "€",
       "expected": 32,
       "estado": "verificado",
-      "source": "Parco Archeologico del Colosseo — VERIFICADO CONTRA COOPCULTURE, QUE YA NO VENDE. Reconfirmar en ticketing.colosseo.it, operado por el Parco Archeologico del Colosseo, revendedor exclusivo oficial del area arqueologica (Coliseo, Foro Romano y Palatino) desde que CoopCulture dejo de vender en 2024",
-      "verifiedAt": "2026-08-19",
-      "excludeIf": "reseller|third[- ]party|markup",
+      "source": "ticketing.colosseo.it (Parco Archeologico del Colosseo), tabla de precios consultada en vivo. Full Experience Subterraneos y Arena CON GUIA (educativo): €24,00 de entrada + €8,00 de guia = €32,00 total.",
+      "verifiedAt": "2026-09-02",
+      "excludeIf": "reseller|third[- ]party|markup|operator|platform|getyourguide|viator|tour guy|small.group|premium|package|per person|from €",
       "patterns": [
-        "(?:guided )?underground (?:ticket|tour)[^.]{0,20}?€\\s?(\\d{1,3})",
-        "€\\s?(\\d{1,3})[^.]{0,20}?(?:guided )?underground (?:ticket|tour)"
+        "(?:guided|educational|with (?:a )?guide)[^.]{0,40}?underground[^.]{0,30}?€\\s?(\\d{1,3})",
+        "underground[^.]{0,30}?(?:guided|educational|with (?:a )?guide)[^.]{0,30}?€\\s?(\\d{1,3})"
       ],
-      "caducaEnDias": 0
+      "sitios": [
+        "colosseum"
+      ]
     },
     {
       "id": "ventana-standard",
@@ -106,6 +121,9 @@
       "patterns": [
         "standard[^.]{0,40}?(\\d{1,3})\\s*days?\\s*(?:ahead|in advance|before)",
         "(\\d{1,3})\\s*days?\\s*(?:ahead|in advance|before)[^.]{0,30}?standard"
+      ],
+      "sitios": [
+        "colosseum"
       ]
     },
     {
@@ -121,6 +139,9 @@
       "patterns": [
         "arena floor[^.]{0,40}?(\\d{1,3})[- ]?days?\\s*(?:ahead|in advance|before|release)",
         "(\\d{1,3})[- ]?days?\\s*(?:ahead|in advance|before)[^.]{0,30}?arena floor"
+      ],
+      "sitios": [
+        "colosseum"
       ]
     },
     {
@@ -137,6 +158,9 @@
         "underground[^.]{0,40}?(\\d{1,3})\\s*days?\\s*(?:ahead|in advance|before|release)",
         "(\\d{1,3})\\s*days?\\s*(?:ahead|in advance|before)[^.]{0,30}?underground",
         "hypogeum[^.]{0,40}?(\\d{1,3})\\s*days?\\s*(?:ahead|in advance|before)"
+      ],
+      "sitios": [
+        "colosseum"
       ]
     },
     {
@@ -153,7 +177,10 @@
         "(?:on|at|from|through) coopculture"
       ],
       "motivo": "CoopCulture dejo de vender entradas del Coliseo. Nombrarla como el canal oficial manda al lector a un 404. Decir 'el sitio oficial del Parco' sin nombrar dominio.",
-      "prohibidoExcludeIf": "no longer|stopped|used to|no more|any more|anymore|until 2024|dejo de|ya no"
+      "prohibidoExcludeIf": "no longer|stopped|used to|no more|any more|anymore|until 2024|dejo de|ya no",
+      "sitios": [
+        "colosseum"
+      ]
     },
     {
       "id": "ventana-night",
@@ -161,13 +188,16 @@
       "symbol": "",
       "unidad": "dias",
       "expected": 7,
-      "estado": "consenso-interno",
-      "source": "2 articulos dicen 7 dias; colosseum-tours-and-tickets los mete en la bolsa de 30. Conflicto menor, sin verificar.",
-      "verifiedAt": null,
+      "estado": "verificado",
+      "source": "ticketing.colosseo.it (Parco Archeologico del Colosseo), tabla de precios consultada en vivo. \"Una Noche en el Coliseo\": recorrido guiado de 60 min, martes y jueves 20-23h, la reserva abre 7 dias antes. Cierra el conflicto con colosseum-tours-and-tickets, que los metia en la bolsa de 30 dias.",
+      "verifiedAt": "2026-09-02",
       "excludeIf": "arena floor|underground|standard",
       "patterns": [
         "night (?:tour|tours|visit)[^.]{0,40}?(\\d{1,3})\\s*days?\\s*(?:ahead|in advance|before)",
         "(\\d{1,3})\\s*days?\\s*(?:ahead|in advance|before)[^.]{0,25}?night (?:tour|tours)"
+      ],
+      "sitios": [
+        "colosseum"
       ]
     },
     {
@@ -182,6 +212,9 @@
       "patterns": [
         "€\\s?(\\d{1,3})\\s+online",
         "online[^.]{0,12}?€\\s?(\\d{1,3})"
+      ],
+      "sitios": [
+        "vatican"
       ]
     },
     {
@@ -196,6 +229,9 @@
       "patterns": [
         "€\\s?(\\d{1,3})\\s+at the door",
         "at the door[^.]{0,12}?€\\s?(\\d{1,3})"
+      ],
+      "sitios": [
+        "vatican"
       ]
     },
     {
@@ -210,6 +246,60 @@
       "patterns": [
         "€\\s?(\\d{1,3})\\s+(?:timed[- ]entry|fast)",
         "(?:timed[- ]entry|fast)[^.]{0,14}?€\\s?(\\d{1,3})"
+      ],
+      "sitios": [
+        "vatican"
+      ]
+    },
+    {
+      "id": "noche-coliseo",
+      "label": "Una Noche en el Coliseo (recorrido nocturno guiado)",
+      "symbol": "€",
+      "expected": 50,
+      "estado": "verificado",
+      "source": "ticketing.colosseo.it (Parco Archeologico del Colosseo), tabla de precios consultada en vivo. €24,00 de entrada + €26,00 de guia = €50,00 total.",
+      "verifiedAt": "2026-09-02",
+      "excludeIf": "standard|full experience|arena floor|forum pass|membership",
+      "patterns": [
+        "night (?:tour|visit)[^.]{0,25}?€s?(d{1,3})",
+        "€s?(d{1,3})[^.]{0,20}?night (?:tour|visit)"
+      ],
+      "sitios": [
+        "colosseum"
+      ]
+    },
+    {
+      "id": "forum-pass-super",
+      "label": "Forum Pass SUPER (Foro-Palatino + Foros Imperiales, 30 dias)",
+      "symbol": "€",
+      "expected": 18,
+      "estado": "verificado",
+      "source": "ticketing.colosseo.it (Parco Archeologico del Colosseo), tabla de precios consultada en vivo. €18,00 completo, €2,00 reducida, €11,50 con Roma Pass. Valido 30 dias desde la compra.",
+      "verifiedAt": "2026-09-02",
+      "excludeIf": "colosseum|coliseo|arena|underground|24h",
+      "patterns": [
+        "forum pass[^.]{0,25}?€s?(d{1,3})",
+        "€s?(d{1,3})[^.]{0,20}?forum pass"
+      ],
+      "sitios": [
+        "colosseum"
+      ]
+    },
+    {
+      "id": "solo-coliseo",
+      "label": "No existe una entrada \"solo Coliseo\"",
+      "estado": "verificado",
+      "source": "ticketing.colosseo.it (Parco Archeologico del Colosseo), tabla de precios consultada en vivo. Todas las entradas del Coliseo incluyen el Foro Romano-Palatino; no hay producto de Coliseo suelto.",
+      "verifiedAt": "2026-09-02",
+      "prohibidoExcludeIf": "no such|does not exist|doesn't exist|no existe|there is no|always includes|no hay",
+      "prohibido": [
+        "colosseum[- ]only ticket",
+        "ticket (?:for |to )?(?:the )?colosseum only",
+        "just the colosseum[^.]{0,15}?ticket"
+      ],
+      "motivo": "Todas las entradas incluyen el Foro Romano y el Palatino. Prometer una entrada solo al Coliseo es vender algo que no se vende.",
+      "sitios": [
+        "colosseum"
       ]
     }
   ]

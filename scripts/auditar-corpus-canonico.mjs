@@ -42,7 +42,7 @@ for (const sitio of CONFIG.sites.filter((s) => !soloSitio || s.key === soloSitio
   // no se edita: se edita la frase en el articulo del que salio.
   const porArticulo = {};
   for (const f of facts) {
-    for (const h of contraCanonicos(f.fact)) {
+    for (const h of contraCanonicos(f.fact, sitio.key)) {
       if (h.nivel !== 'falla') continue;
       const slug = f.sourceUrl.split('/').pop();
       (porArticulo[slug] = porArticulo[slug] || []).push({ fact: f, hallazgo: h });
