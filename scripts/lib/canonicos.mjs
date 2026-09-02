@@ -93,6 +93,11 @@ export function contraCanonicos(texto) {
     // dejo de vender entradas del Coliseo: el corpus la sigue nombrando como el
     // sitio oficial en seis facts, y una regla numerica no caza eso.
     if (regla.prohibido) {
+      // La excepcion es imprescindible en una regla prohibida: la frase que hay
+      // que ESCRIBIR para corregir el error contiene el error. "CoopCulture no
+      // vende mas entradas del Coliseo" nombra a CoopCulture como canal, y sin
+      // esto la regla se bloquearia a si misma.
+      if (regla.prohibidoExcludeIf && new RegExp(regla.prohibidoExcludeIf, 'i').test(texto)) continue;
       for (const p of regla.prohibido) {
         const m = texto.match(new RegExp(p, 'i'));
         if (!m) continue;

@@ -148,10 +148,12 @@
       "prohibido": [
         "coopculture[^.]{0,30}?(?:official|officially)",
         "(?:official|officially)[^.]{0,30}?coopculture",
-        "(?:buy|book|purchase|get)[^.]{0,25}?(?:from |on |at |through )?coopculture",
-        "coopculture[^.]{0,20}?(?:site|website|website's)"
+        "(?:buy|book|purchase|get|available|exist|sold)[^.]{0,25}?(?:from |on |at |through )?coopculture",
+        "coopculture[^.]{0,20}?(?:site|website)",
+        "(?:on|at|from|through) coopculture"
       ],
-      "motivo": "CoopCulture dejo de vender entradas del Coliseo. Nombrarla como el canal oficial manda al lector a un 404. Decir 'el sitio oficial del Parco' sin nombrar dominio."
+      "motivo": "CoopCulture dejo de vender entradas del Coliseo. Nombrarla como el canal oficial manda al lector a un 404. Decir 'el sitio oficial del Parco' sin nombrar dominio.",
+      "prohibidoExcludeIf": "no longer|stopped|used to|no more|any more|anymore|until 2024|dejo de|ya no"
     },
     {
       "id": "ventana-night",
