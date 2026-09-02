@@ -21,11 +21,17 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import crypto from 'node:crypto';
 import Anthropic from '@anthropic-ai/sdk';
+// Los dos modulos que Reddit ya usa desde el 27 ago 2026. Ver el bloque EL JUEZ
+// Y EL SELECTOR mas abajo para por que reemplazan al filtro de keywords.
+import { evaluarLote } from './lib/relevancia.mjs';
+import { elegirLote } from './lib/elegir-facts.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 loadEnv(path.join(ROOT, '.env'));
 
 const CONFIG = JSON.parse(fs.readFileSync(path.join(ROOT, 'config', 'quora-monitor.json'), 'utf8'));
+// Las descripciones en prosa de que cubre cada sitio, que es lo que lee el juez.
+const SITIOS_RELEVANCIA = JSON.parse(fs.readFileSync(path.join(ROOT, 'config', 'sitios-relevancia.json'), 'utf8'));
 const FACTS_BY_SITE = Object.fromEntries(
   CONFIG.sites.map((s) => [s.key, JSON.parse(fs.readFileSync(path.join(ROOT, s.factsFile), 'utf8'))])
 );
@@ -180,6 +186,22 @@ function bestSiteByFacts(text) {
   return best;
 }
 
+// Terminos de contenido, para comparar pregunta contra fact.
+const terminos = (s) => (s.toLowerCase().match(/[a-z][a-z'-]{3,}/g) || []);
+
+// Cuanto pesa cada palabra dentro del corpus de un sitio. Se calcula una vez.
+const IDF = {};
+function idfDe(siteKey) {
+  if (IDF[siteKey]) return IDF[siteKey];
+  const facts = FACTS_BY_SITE[siteKey].facts;
+  const df = new Map();
+  for (const f of facts) for (const t of new Set(terminos(f.fact))) df.set(t, (df.get(t) || 0) + 1);
+  const idf = new Map();
+  for (const [t, n] of df) idf.set(t, Math.log(facts.length / n));
+  IDF[siteKey] = idf;
+  return idf;
+}
+
 // [REDDIT] Seleccion de facts: overlap por topic + match por texto para terminos
 // raros (los facts del atico viven bajo logistics/tickets/pricing y no los
 // alcanzaba el overlap), con tope de 2 facts por articulo fuente.
@@ -212,6 +234,20 @@ function pickFacts(topics, siteKey, max, postText = '') {
   // reabriria el bug del 2026-08-06 (un borrador afirmando que el atico no es una
   // categoria de ticket). Si el fact menciona literalmente un termino raro que la
   // pregunta usa, entra igual.
+  // SOLAPE LEXICO con la pregunta, pesado por IDF sobre el corpus del sitio.
+  //
+  // Sin esto, ordenar por topics no ordena nada. Medido en Reddit el 29 ago 2026:
+  // 277 de los 873 facts del Coliseo llevan el topic "tickets", los 277 empatan
+  // en overlap 1, y como el sort es estable la lista corta terminaba siendo "los
+  // primeros N del archivo". Aca el efecto es el mismo aunque el filtro por topic
+  // dominante lo disimule: dentro del topic dominante siguen empatando todos.
+  //
+  // "ticket" aparece en cientos de facts y no distingue nada; "released" aparece
+  // en un puñado y distingue todo. Un fact que no comparte ninguna palabra con la
+  // pregunta suma 0 y queda donde estaba: esto solo puede mejorar el orden.
+  const idf = idfDe(siteKey);
+  const terminosPregunta = new Set(terminos(postText));
+
   const scored = FACTS_BY_SITE[siteKey].facts
     .map((f) => {
       const dominante = topics.includes(f.topics[0]);
@@ -221,7 +257,10 @@ function pickFacts(topics, siteKey, max, postText = '') {
       // Y ademas comparte topics secundarios es mas pertinente que uno que solo
       // coincide en el principal.
       const overlap = f.topics.filter((t) => topics.includes(t)).length;
-      return { f, overlap: overlap + textHit };
+      const lexico = [...new Set(terminos(f.fact))]
+        .filter((t) => terminosPregunta.has(t))
+        .reduce((a, t) => a + (idf.get(t) || 0), 0);
+      return { f, overlap: overlap + textHit + lexico };
     })
     .filter((x) => x.overlap > 0)
     .sort((a, b) => b.overlap - a.overlap);
@@ -1271,10 +1310,27 @@ function renderCandidate(c, facts, siteKey, draft, checks) {
   if (!draft) {
     // Modo entrega: no hay borrador que mostrar. Los facts pasan a ser lo
     // principal del bloque, no el anexo de verificacion.
-    lines.push('**Material disponible para contestarla:**');
+    //
+    // "Preguntan" es lo que el juez entendio, y va ANTES del material: es contra
+    // esa linea que hay que leer los facts para decidir si de verdad contestan.
+    if (c.pregunta) lines.push(`- **Preguntan:** ${c.pregunta}`);
+    if (c.porque) lines.push(`- **Por qué sirve:** ${c.porque}`);
     lines.push('');
-    for (const f of facts) lines.push(`- \`${f.id}\` "${f.fact}" — ${f.sourceUrl}`);
+    lines.push('**Material que contesta ESTA pregunta:**');
     lines.push('');
+    for (const f of facts) {
+      const es = f.id === c.citable;
+      lines.push(`- ${es ? '⭐ ' : ''}\`${f.id}\` "${f.fact}" — ${f.sourceUrl}`);
+    }
+    lines.push('');
+    if (c.citable) {
+      lines.push(`_⭐ \`${c.citable}\` es medición nuestra: es la cifra que conviene que lleve la marca en el cuerpo, además de la firma._`);
+      lines.push('');
+    }
+    if (c.falta && c.falta !== 'nada') {
+      lines.push(`**Lo que el corpus no cubre:** ${c.falta}`);
+      lines.push('');
+    }
     lines.push(`**Firma:** ${signatureFor(siteKey, CONFIG.links.enabled)}`);
     if (checks.extra.length) {
       lines.push('');
@@ -1311,23 +1367,91 @@ async function main() {
   const { candidates: raw, rows: searchRows } = await loadCandidates();
   console.log(`Candidatos de entrada: ${raw.length}`);
 
-  const scored = [];
+  // ==========================================================================
+  // EL JUEZ Y EL SELECTOR (portados de Reddit, 2 sep 2026)
+  //
+  // Antes decidia bestSiteByFacts: keyword del sitio + N topics + N facts. Ese
+  // filtro devolvio CERO candidatos tres corridas seguidas (31 ago, 1 y 2 sep)
+  // con el material adentro. Se comprobo a mano: de cinco preguntas que habia
+  // descartado, CUATRO se contestaban perfectamente, y se contestaron. Las
+  // cuatro estan publicadas.
+  //
+  // El motivo es el mismo que en Reddit: contar topics y facts mide si la
+  // pregunta se PARECE a nuestro material, no si nuestro material la CONTESTA.
+  // "When are the quietest times to visit Rome?" no lleva la keyword de ningun
+  // sitio y se descartaba con 145 facts de crowds disponibles.
+  //
+  // Ahora deciden los dos modulos que Reddit ya usa:
+  //   lib/relevancia.mjs   dice si se puede contestar y con que sitio, y escribe
+  //                        que estan preguntando de verdad, en una linea.
+  //   lib/elegir-facts.mjs lee los facts CONTRA esa pregunta y se queda con los
+  //                        que la contestan, o dice que ninguno.
+  //
+  // A diferencia de Reddit, aca NO hay carril karma: una respuesta de Quora va
+  // firmada con nombre y apellido y se queda publicada durante años, asi que sin
+  // material propio no se contesta. contesta:false descarta.
+  // ==========================================================================
   const rejected = [];
+  const vivos = [];
   for (const c of raw) {
     const notQuestion = questionRejectReason(c);
     if (notQuestion) { rejected.push({ c, why: notQuestion }); continue; }
     if (alreadyAnswered(c.url, c.title, ledger)) { rejected.push({ c, why: 'ya respondida (ledger)' }); continue; }
-    const best = bestSiteByFacts(`${c.title} ${c.detail || ''}`);
-    if (!best) { rejected.push({ c, why: 'ningun sitio con keyword propia + material suficiente' }); continue; }
+    vivos.push(c);
+  }
+
+  console.log(`Juzgando ${vivos.length} preguntas contra los sitios...`);
+  const veredictos = await evaluarLote(
+    vivos.map((c) => ({ titulo: c.title, cuerpo: c.detail || '' })),
+    SITIOS_RELEVANCIA,
+    8,
+  );
+
+  const conSitio = [];
+  vivos.forEach((c, i) => {
+    const v = veredictos[i];
+    if (!v || !v.contestable) { rejected.push({ c, why: `el juez dice que no: ${v?.porque || 'sin veredicto'}` }); return; }
+    // Un dominio del juez no es necesariamente un sitio con corpus: 'booking' es
+    // conocimiento de oficio y en Quora no sirve, porque la respuesta va firmada
+    // y sin cifras propias no aporta autoridad.
+    if (!FACTS_BY_SITE[v.sitio]) { rejected.push({ c, why: `"${v.sitio}" no tiene corpus propio` }); return; }
+    conSitio.push({ c, v });
+  });
+
+  console.log(`Eligiendo material para ${conSitio.length} candidatas...`);
+  const shortlists = conSitio.map(({ c, v }) =>
+    pickFacts(matchTopics(`${c.title} ${c.detail || ''}`, v.sitio), v.sitio, 18, `${c.title} ${c.detail || ''}`));
+  const selecciones = await elegirLote(conSitio.map(({ c, v }, i) => ({
+    pregunta: v.pregunta,
+    titulo: c.title,
+    cuerpo: c.detail || '',
+    facts: shortlists[i],
+    marca: SITE_BY_KEY[v.sitio]?.brand || null,
+  })), 4);
+
+  const scored = [];
+  conSitio.forEach(({ c, v }, i) => {
+    const sel = selecciones[i];
+    if (!sel.contesta) { rejected.push({ c, why: `sin material para ESTA pregunta: ${sel.falta}` }); return; }
+    // Un solo fact no sostiene una respuesta firmada de 350-550 palabras. Ver
+    // selection._minFacts: el numero cuenta facts que CONTESTAN, no del tema.
+    if (sel.facts.length < CONFIG.selection.minFacts) {
+      rejected.push({ c, why: `solo ${sel.facts.length} fact(s) la contestan, hacen falta ${CONFIG.selection.minFacts}` });
+      return;
+    }
     scored.push({
       ...c,
-      site: best.key,
-      topics: best.topics,
-      facts: best.facts,
+      site: v.sitio,
+      pregunta: v.pregunta,
+      porque: v.porque,
+      falta: sel.falta,
+      citable: sel.citable,
+      topics: [...new Set(sel.facts.flatMap((f) => f.topics))],
+      facts: sel.facts,
       // ageBonus queda FUERA a proposito: no hay fuente con la fecha, ver su comentario.
-      score: best.facts.length + best.topics.length + competitionBonus(c.answers),
+      score: sel.facts.length + (sel.citable ? 2 : 0) + competitionBonus(c.answers),
     });
-  }
+  });
   scored.sort((a, b) => b.score - a.score);
 
   // [REDDIT] Dedup por titulo normalizado, quedandose con el de mayor score. En
@@ -1557,7 +1681,7 @@ async function main() {
     '|---|---|',
     `| Candidatos de entrada | ${raw.length} |`,
     `| Son una pregunta real (no Space, título de largo sano) | ${raw.length - rejected.filter((r) => /Space|título|titulo|pregunta|URL/.test(r.why)).length} |`,
-    `| Con keyword del propio sitio + material suficiente | ${scored.length} |`,
+    `| El juez dice que se puede contestar, y el selector encuentra material que contesta ESA pregunta | ${scored.length} |`,
     `| Tras dedup por título | ${deduped.length} |`,
     `| Generados (cupo ${CONFIG.maxCandidatesPerDay}/día, máx. 1 por topic dominante) | ${chosen.length}${porDiversidad.length ? ` — ${porDiversidad.length} salteado(s) por diversidad` : ''} |`,
     '',

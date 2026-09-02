@@ -14,9 +14,9 @@
   },
   "selection": {
     "minTopics": 1,
-    "minFacts": 5,
-    "_minTopics": "Reddit exige 2 porque su haystack es titulo + cuerpo del post. Una pregunta de Quora suele ser solo el titulo, asi que 2 topics deja fuera preguntas legitimas. El guard que de verdad protege sigue siendo el de keyword del propio sitio (bestSiteByFacts), que no se toca.",
-    "_minFacts": "Sube de 3 a 5: una respuesta larga sin material suficiente sale rellenada, y rellenar es exactamente lo que el formato de Quora castiga."
+    "minFacts": 2,
+    "_minTopics": "Ya no se usa: el juez reemplazo al conteo de topics.",
+    "_minFacts": "Cuenta facts que CONTESTAN la pregunta, no facts del mismo tema: el numero no es comparable con el de antes del port (era 5 contando por topic). Dos es el minimo real para una respuesta firmada de 350-550 palabras. Con uno solo paso una de dress code cuyo unico fact decia que no compres el pañuelo caro en la plaza, que no contesta si hay restricciones."
   },
   "links": {
     "enabled": false,
