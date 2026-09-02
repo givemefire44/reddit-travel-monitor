@@ -148,11 +148,22 @@ export function contraCanonicos(texto, sitio = null, opts = {}) {
       continue;
     }
 
-    // excludeIf mira la ORACION, no el texto entero: en un comentario corto
-    // casi siempre aparece alguna palabra de exclusion en algun lado, y con el
-    // texto entero la regla no se dispararia nunca.
-    for (const oracion of texto.split(/(?<=[.!?])\s+/)) {
-      if (regla.excludeIf && new RegExp(regla.excludeIf, 'i').test(oracion)) continue;
+    // excludeIf mira la oracion Y LA ANTERIOR, no el texto entero.
+    //
+    // Solo la oracion era demasiado corto. Caso real del 2 sep 2026, en un
+    // articulo del Coliseo que compara monumentos de Europa:
+    //   "Leonardo's Last Supper in Milan at 10.7x. The official ticket costs €15
+    //    but the average tour costs $161."
+    // El sujeto vive en la primera oracion y la cifra en la segunda, asi que la
+    // regla del ticket del Coliseo marcaba los €15 de Milan. El texto entero,
+    // en cambio, es demasiado largo: en un comentario cualquiera aparece alguna
+    // palabra de exclusion en algun lado y la regla no salta nunca. Una oracion
+    // de contexto es el punto donde las dos cosas se equilibran.
+    const oraciones = texto.split(/(?<=[.!?])\s+/);
+    for (let i = 0; i < oraciones.length; i++) {
+      const oracion = oraciones[i];
+      const contexto = (i > 0 ? oraciones[i - 1] + ' ' : '') + oracion;
+      if (regla.excludeIf && new RegExp(regla.excludeIf, 'i').test(contexto)) continue;
       for (const p of regla.patterns) {
         const m = oracion.match(new RegExp(p, 'i'));
         if (!m || !m[1]) continue;
