@@ -28,7 +28,9 @@
       ],
       "shingles": [],
       "generatedAt": "2026-08-22",
-      "estado": "entregado"
+      "estado": "publicada",
+      "publicadaAt": "2026-09-03",
+      "confirmadaPor": "perfil-exacto"
     },
     {
       "questionUrl": "https://www.quora.com/Do-you-need-a-reservation-to-visit-the-Colosseum-Roman-Forum-and-Palatine-Hill-in-Rome",
@@ -44,7 +46,9 @@
       ],
       "shingles": [],
       "generatedAt": "2026-08-22",
-      "estado": "entregado"
+      "estado": "publicada",
+      "publicadaAt": "2026-09-03",
+      "confirmadaPor": "perfil-exacto"
     },
     {
       "questionUrl": "https://www.quora.com/What-is-the-best-time-of-day-to-visit-the-Colosseum-to-avoid-large-crowds",
@@ -58,7 +62,9 @@
       ],
       "shingles": [],
       "generatedAt": "2026-08-22",
-      "estado": "entregado"
+      "estado": "publicada",
+      "publicadaAt": "2026-09-03",
+      "confirmadaPor": "perfil-exacto"
     },
     {
       "questionUrl": "https://www.quora.com/How-do-I-book-a-Vatican-Museum-guided-tour",
@@ -73,7 +79,9 @@
       ],
       "shingles": [],
       "generatedAt": "2026-08-22",
-      "estado": "entregado"
+      "estado": "publicada",
+      "publicadaAt": "2026-09-03",
+      "confirmadaPor": "perfil-exacto"
     },
     {
       "questionUrl": "https://www.quora.com/What-are-some-recommendations-for-visiting-St-Peters-Cathedral-The-Vatican-without-waiting-in-long-lines-for-tickets-tours-elderly-couple",
@@ -210,7 +218,9 @@
       ],
       "shingles": [],
       "generatedAt": "2026-08-23",
-      "estado": "entregado"
+      "estado": "publicada",
+      "publicadaAt": "2026-09-03",
+      "confirmadaPor": "perfil-exacto"
     },
     {
       "questionUrl": "https://www.quora.com/Can-you-describe-the-interior-of-St-Peters-Basilica-in-Rome-Italy-Would-you-recommend-visiting-it",
@@ -240,7 +250,9 @@
       ],
       "shingles": [],
       "generatedAt": "2026-08-24",
-      "estado": "entregado"
+      "estado": "publicada",
+      "publicadaAt": "2026-09-03",
+      "confirmadaPor": "perfil-exacto"
     },
     {
       "questionUrl": "https://www.quora.com/How-long-does-it-take-to-see-the-Vatican-and-Sistine-Chapel",
@@ -282,7 +294,9 @@
       ],
       "shingles": [],
       "generatedAt": "2026-08-24",
-      "estado": "entregado"
+      "estado": "publicada",
+      "publicadaAt": "2026-09-03",
+      "confirmadaPor": "perfil-exacto"
     },
     {
       "questionUrl": "https://www.quora.com/We-all-know-about-carbonara-cacio-e-pepe-and-aglio-e-olio-by-now-What-are-some-lesser-known-pasta-dishes-that-deserve-some-recognition",
@@ -328,7 +342,9 @@
       ],
       "shingles": [],
       "generatedAt": "2026-08-26",
-      "estado": "entregado"
+      "estado": "publicada",
+      "publicadaAt": "2026-09-03",
+      "confirmadaPor": "perfil-exacto"
     },
     {
       "questionUrl": "https://www.quora.com/Are-architectural-students-from-any-country-free-for-entry-into-Rome-Colosseum",
@@ -358,7 +374,9 @@
       ],
       "shingles": [],
       "generatedAt": "2026-08-27",
-      "estado": "entregado"
+      "estado": "publicada",
+      "publicadaAt": "2026-09-03",
+      "confirmadaPor": "perfil-exacto"
     },
     {
       "questionUrl": "https://www.quora.com/Is-the-Sistine-Chapel-in-Rome-equally-crowded-all-year-round",
@@ -374,7 +392,9 @@
       ],
       "shingles": [],
       "generatedAt": "2026-08-28",
-      "estado": "entregado"
+      "estado": "publicada",
+      "publicadaAt": "2026-09-03",
+      "confirmadaPor": "perfil-exacto"
     },
     {
       "questionUrl": "https://www.quora.com/Can-you-do-the-Colosseum-and-Vatican-in-one-day",
@@ -419,6 +439,33 @@
       "generatedAt": "2026-09-01",
       "estado": "publicada",
       "origen": "manual"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-the-procedures-for-visiting-the-Vatican-and-entering-exiting-St-Peters-Basilica",
+      "questionTitle": "What are the procedures for visiting the Vatican and entering/exiting St. Peter's Basilica?",
+      "titleNormalized": "what are the procedures for visiting the vatican and entering exiting st peter s basilica",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-official-vs-platform-price",
+        "vatican-skip-the-line-explained",
+        "vatican-early-access-really-means"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-02",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Help-I-want-to-visit-Palatine-Hill-only-and-without-a-tour-can-I-buy-tickets-on-the-day-on-site-If-so-where",
+      "questionTitle": "Help! I want to visit Palatine Hill only and without a tour, can I buy tickets on the day on site? If so where?",
+      "titleNormalized": "help i want to visit palatine hill only and without a tour can i buy tickets on the day on site if so where",
+      "site": "colosseum",
+      "sourceSlugs": [
+        "commodus-passage-colosseum-secret-tunnel-2025",
+        "colosseum-rome-faq-visitor-tips-or-colosseumroman-com"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-02",
+      "estado": "entregado"
     }
   ]
 }

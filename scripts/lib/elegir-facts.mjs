@@ -157,12 +157,33 @@ export async function elegirLote(items, concurrencia = 4) {
   async function worker() {
     while (i < items.length) {
       const idx = i++;
-      try {
-        out[idx] = await elegirFacts(items[idx]);
-      } catch (e) {
+      // REINTENTOS, y el error marcado como error.
+      //
+      // El 2 sep 2026 una corrida de Quora devolvio cero candidatos y el reporte
+      // dijo "sin material para ESTA pregunta" en 22 de 23. No era verdad:
+      // fallaron las llamadas con "Connection error". El catch las convertia en
+      // un veredicto negativo, o sea un fallo de red disfrazado de conclusion —
+      // el mismo patron que ya nos habia mordido con el corpus mutilado.
+      //
+      // Ahora se reintenta con espera creciente, y si igual falla el resultado
+      // lleva `error: true`: quien lo consuma tiene que poder distinguir "el
+      // corpus no la contesta" de "no pudimos preguntarselo".
+      let ultimo;
+      for (let intento = 0; intento < 3; intento++) {
+        try {
+          out[idx] = await elegirFacts(items[idx]);
+          ultimo = null;
+          break;
+        } catch (e) {
+          ultimo = e;
+          if (intento < 2) await new Promise((r) => setTimeout(r, 1500 * (intento + 1)));
+        }
+      }
+      if (ultimo) {
         out[idx] = {
-          contesta: false, elegidos: [], facts: [], citable: null,
-          falta: `error: ${e.message.slice(0, 80)}`, forma: 'frases', porque_forma: '-',
+          contesta: false, elegidos: [], facts: [], citable: null, error: true,
+          falta: `no se pudo consultar: ${ultimo.message.slice(0, 80)}`,
+          forma: 'frases', porque_forma: '-',
         };
       }
     }

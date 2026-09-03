@@ -1,0 +1,45 @@
+# RESPUESTAS YA PUBLICADAS EN QUORA
+#
+# Leido de https://www.quora.com/profile/Mario-Dalo/answers el 2 sep 2026,
+# logueado, desplegando el scroll infinito hasta el final. El perfil declaraba
+# "32 Answers" y aca hay 32 lineas: la lista esta completa, no truncada.
+#
+#   node scripts/conciliar-ledger.mjs data/quora-publicadas.txt
+#   node scripts/conciliar-ledger.mjs data/quora-publicadas.txt --execute
+#
+# Es una foto de un dia, no la fuente de verdad. La fuente es el ledger.
+#
+# ----------------------------- PEGAR DEBAJO -----------------------------
+
+What are the best local foods to try in Rome?
+What facts should I know before visiting Vatican City?
+What tips do you have for visiting the Colosseum in Rome for the first time?
+Can you do the Colosseum and Vatican in one day?
+Is the Sistine Chapel in Rome equally crowded all year round?
+What is the difference between the Vatican and the Sistine Chapel?
+Do you think that The Vatican City and The Sistine Chapel are worth visiting while in Rome (Italy)?
+What is the dress code for women when visiting St. Peter's Basilica and/or The Vatican?
+What are some tips for seeing the Vatican Museums and Sistine Chapel?
+What might be the ideal order of visiting the Vatican Museums, the Sistine Chapel, and St. Peter's Basilica in Vatican City?
+What is the Colosseum? What is under the ruins of the Colosseum? Are there any underground passageways that are still intact?
+What is the best order to visit Rome's Colosseum, Forum and Vatican?
+I tried many many times in vain to purchase a ticket to Colosseum, Foro Romano and Palatino online through coopculture.it. What is wrong with the site?
+What are some recommendations for visiting St. Peters Cathedral & The Vatican without waiting in long lines for tickets & tours (elderly couple)?
+How do I book a Vatican Museum guided tour?
+Do you need a reservation to visit the Colosseum, Roman Forum and Palatine Hill in Rome?
+Are there any dress code restrictions for women in Vatican City?
+What are the benefits of going on a guided tour of The Louvre Museum in Paris, France?
+What is the best way to get tickets to see the Colosseum of Rome, and when is the best time of day to go?
+How much does it cost to enter the Coliseum in Rome?
+What are the restrictions for entering The Last Supper Chapel in Milan, Italy?
+Is La Sagrada Familia worth it?
+What is the best strategy to see the Louvre in one day?
+What should I know about visiting Pompeii?
+What is the best time of day to visit the Colosseum to avoid large crowds?
+What is the cost of tickets to see "The Last Supper" painting in Milan? Do the tickets include any additional features such as an audio guide?
+Is it worth climbing the towers at Sagrada Familia in Barcelona?
+How long does it take to see the entire Louvre museum?
+Would you recommend visiting the ruins of Pompeii while visiting Naples, Italy?
+How should I plan a Colosseum trip to avoid long lines and get the best experience?
+If the Romans didn't want a king to rule why did they allow Emperors to rule, isn't that kind of the same thing, one ruler?
+What makes certain Roman names like Gaius, Titus, and Marcus so popular among aristocratic families?

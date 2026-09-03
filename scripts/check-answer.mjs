@@ -327,7 +327,10 @@ if (SITE) {
 //
 // Corre siempre, con --site y sin el: un dato en disputa no deja de estarlo
 // porque no le hayas pasado el corpus.
-for (const h of contraCanonicos(cuerpo)) {
+// El sitio SE PASA. Sin esto la regla del precio online del Vaticano se disparaba
+// contra los €18 del Coliseo en un borrador de colosseum: las reglas tienen campo
+//  justamente para eso y el verificador lo estaba ignorando.
+for (const h of contraCanonicos(cuerpo, SITE)) {
   if (h.nivel === 'falla') fallas.push(h.texto);
   else avisos.push(h.texto);
 }

@@ -28,7 +28,9 @@
     "endpoint": "https://api.search.brave.com/res/v1/web/search",
     "count": 10,
     "_": "Brave Search es la fuente por defecto. NO se entra a Quora: se le pregunta al indice de Brave, que ya tiene esas paginas indexadas. Quora bloquea a todos los bots en su robots.txt, asi que cualquier acceso automatico a quora.com esta descartado por diseño; el .txt manual (--file) queda como fuente alternativa.",
-    "__": "UNA consulta por GRUPO de keywords, nunca una por keyword. El plan gratuito son ~1.000 consultas al mes: estos 8 grupos, corridos a diario, dan ~240."
+    "__": "UNA consulta por GRUPO de keywords, nunca una por keyword. El plan gratuito son ~1.000 consultas al mes: estos 8 grupos, corridos a diario, dan ~240.",
+    "queriesPorDia": 3,
+    "___": "Las consultas ROTAN: de la lista de cada sitio salen queriesPorDia por corrida, corriendo la ventana un lugar por dia. Se rota en vez de ampliar el gasto diario porque el plan gratuito de Brave son ~1.000 consultas al mes y buscar-reddit.mjs ya usa unas 300. Con 3 por sitio por dia son 9 diarias, unas 270 al mes, y el pozo tarda 6 dias en repetirse en vez de repetirse todos los dias. El problema nunca fue cuantas consultas se hacen, sino que fueran siempre las mismas: ocho fijas devuelven las mismas 80 preguntas y el ledger las agota."
   },
   "sites": [
     {
@@ -51,7 +53,13 @@
       "searchQueries": [
         "site:quora.com colosseum tickets skip the line",
         "site:quora.com colosseum underground arena floor tour worth it",
-        "site:quora.com colosseum best time to visit crowds queue"
+        "site:quora.com colosseum best time to visit crowds queue",
+        "site:quora.com colosseum ticket price official site vs reseller",
+        "site:quora.com colosseum with kids stroller accessibility",
+        "site:quora.com how long does the colosseum and roman forum take",
+        "site:quora.com colosseum tickets sold out what to do",
+        "site:quora.com is the colosseum guided tour worth the money",
+        "site:quora.com colosseum roman forum palatine order to visit"
       ]
     },
     {
@@ -72,7 +80,13 @@
       "searchQueries": [
         "site:quora.com vatican museums tickets skip the line",
         "site:quora.com sistine chapel st peters basilica dome visit",
-        "site:quora.com vatican best time crowds dress code"
+        "site:quora.com vatican best time crowds dress code",
+        "site:quora.com vatican museums price official site vs reseller",
+        "site:quora.com how long to spend vatican museums sistine chapel",
+        "site:quora.com st peters dome climb worth it stairs lift",
+        "site:quora.com vatican with kids stroller wheelchair access",
+        "site:quora.com vatican tickets sold out same day entry",
+        "site:quora.com papal audience how to get tickets wednesday"
       ]
     },
     {
@@ -102,7 +116,11 @@
       ],
       "searchQueries": [
         "site:quora.com rome food tour trastevere worth it",
-        "site:quora.com where to eat in rome carbonara cacio e pepe"
+        "site:quora.com where to eat in rome carbonara cacio e pepe",
+        "site:quora.com rome tourist trap restaurant how to avoid",
+        "site:quora.com how much does dinner cost in rome",
+        "site:quora.com best neighbourhood to eat in rome trastevere testaccio",
+        "site:quora.com roman street food supplì trapizzino where"
       ]
     }
   ]

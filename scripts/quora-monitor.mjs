@@ -971,11 +971,33 @@ function answersFromSnippet(raw) {
   return null;
 }
 
+// Las consultas ROTAN: de la lista de cada sitio se usan `queriesPorDia` por
+// corrida, corriendo la ventana un lugar por dia.
+//
+// Por que rotar y no agregar. Brave regala ~1.000 consultas al mes y
+// buscar-reddit.mjs ya gasta unas 300. Con 8 fijas por dia Quora gasta 240 y
+// entra comodo, pero ampliar a 24 fijas darian 720 y el mes se termina antes de
+// fin de mes. Rotando, el gasto diario no se mueve y el pozo se renueva igual:
+// el problema nunca fue cuantas consultas se hacen por dia, sino que fueran
+// SIEMPRE LAS MISMAS. Ocho consultas fijas devuelven las mismas 80 preguntas
+// todos los dias, y por eso el ledger las agotaba y el reporte daba cero.
+//
+// El desplazamiento sale del dia del año, no de un contador guardado: no hace
+// falta estado en disco y dos corridas del mismo dia dan lo mismo, que es lo que
+// uno quiere cuando repite una corrida para probar algo.
+function rotarQueries(site) {
+  const todas = site.searchQueries || [];
+  const porDia = CONFIG.search.queriesPorDia ?? todas.length;
+  if (todas.length <= porDia) return todas;
+  const dia = Math.floor((Date.now() - Date.UTC(new Date().getUTCFullYear(), 0, 0)) / 86400000);
+  return Array.from({ length: porDia }, (_, i) => todas[(dia * porDia + i) % todas.length]);
+}
+
 async function fetchFromSearch() {
   const out = [];
   const rows = [];
   for (const site of CONFIG.sites) {
-    for (const q of site.searchQueries || []) {
+    for (const q of rotarQueries(site)) {
       try {
         const hits = await braveSearch(q);
         out.push(...hits);
@@ -1432,6 +1454,10 @@ async function main() {
   const scored = [];
   conSitio.forEach(({ c, v }, i) => {
     const sel = selecciones[i];
+    // Un error NO es un veredicto. Ver el bloque de reintentos en elegirLote:
+    // una corrida entera se reporto como "sin material" cuando lo que fallaba era
+    // la conexion, y el cero parecia legitimo.
+    if (sel.error) { rejected.push({ c, why: `⚠️ NO SE PUDO EVALUAR: ${sel.falta}`, esError: true }); return; }
     if (!sel.contesta) { rejected.push({ c, why: `sin material para ESTA pregunta: ${sel.falta}` }); return; }
     // Un solo fact no sostiene una respuesta firmada de 350-550 palabras. Ver
     // selection._minFacts: el numero cuenta facts que CONTESTAN, no del tema.

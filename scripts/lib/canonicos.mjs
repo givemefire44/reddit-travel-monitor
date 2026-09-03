@@ -93,8 +93,14 @@ export function contraCanonicos(texto, sitio = null, opts = {}) {
   if (!fs.existsSync(RUTA)) return [];
   const { soloBorradores = true } = opts;
   const todas = JSON.parse(fs.readFileSync(RUTA, 'utf8')).reglas;
+  // El sitio acepta una clave o varias separadas por coma: check-answer se
+  // invoca con --site colosseum,vatican cuando la respuesta cruza dos destinos.
+  // Y hay que PASARLO: el verificador lo ignoraba, asi que la regla del precio
+  // online del Vaticano se disparo contra los €18 del Coliseo en un borrador que
+  // no hablaba del Vaticano.
+  const claves = sitio ? String(sitio).split(",").map((x) => x.trim()).filter(Boolean) : null;
   const reglas = todas
-    .filter((r) => !sitio || !r.sitios || r.sitios.includes(sitio))
+    .filter((r) => !claves || !r.sitios || r.sitios.some((x) => claves.includes(x)))
     .filter((r) => soloBorradores || !r.soloBorradores);
   const hallazgos = [];
 
