@@ -1,10 +1,5 @@
 [
   {
-    "slug": "vatican-best-rated-extras",
-    "fact": "By average rating, the Gardens at 4.76 and the Carriage Pavilion at 4.74, followed by the Scavi at 4.68 and the dome at 4.50 — all above the corpus average of 4.08, and all above the Sistine Chapel at 3.81.",
-    "reason": "voz editorial interna"
-  },
-  {
     "slug": "vatican-crowd-handling-staff",
     "fact": "Reviews describing staff as helpful or kind average 4.27, above the corpus average — on only fifteen reviews, so treat the figure lightly, but the direction matters: a good interaction lifts a review rather than merely failing to sink it.",
     "reason": "voz editorial interna"
@@ -15,8 +10,33 @@
     "reason": "voz editorial interna"
   },
   {
-    "slug": "vatican-practical-experience",
-    "fact": "Staff at 1.23 below average is the lowest figure in this research, lower than crowding, lower than anything about price.",
+    "slug": "vatican-history-context-effect",
+    "fact": "Reviews that engage with the history average 4.70 against a corpus average of 4.08, on a sample of 1,755.",
     "reason": "frase no textual"
+  },
+  {
+    "slug": "vatican-history-context-effect",
+    "fact": "The Raphael Rooms sit 0.34 above the corpus average despite being just as crowded as everything around them, and they are the part of the collection least legible without context.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "vatican-mobility-access",
+    "fact": "Reviews mentioning a wheelchair average 4.25 stars, above the corpus average of 4.08 — ramps, lifts, priority entry and attentive stewards come up repeatedly.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "vatican-mobility-access",
+    "fact": "Reviews mentioning the walking distance average 0.43 stars below the corpus average and those mentioning nowhere to sit 0.63 below, while reviews mentioning stairs are essentially at average.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "vatican-one-way-route",
+    "fact": "Reviews mentioning a map sit only 0.26 stars below the corpus average, while reviews about the one-way system sit 1.35 below — knowing where you are does not help much when the route does not let you change course.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "vatican-one-way-route",
+    "fact": "Reviews mentioning poor or absent signage average 1.08 stars below the corpus average, and several describe staff giving contradictory directions in the absence of signs — which is how a wayfinding problem turns into a service complaint.",
+    "reason": "voz editorial interna"
   }
 ]

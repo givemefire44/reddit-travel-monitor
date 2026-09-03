@@ -1,126 +1,31 @@
 {
-  "extractedAt": "2026-08-25T21:39:23.893Z",
+  "extractedAt": "2026-09-03T16:44:21.744Z",
   "corpusSize": null,
   "facts": [
     {
-      "id": "booking-001",
-      "fact": "Viator and GetYourGuide both offer free cancellation up to 24 hours before on most tours, plus buyer protection; GetYourGuide refunds faster.",
-      "figures": [
-        "24 hours"
-      ],
-      "topics": [
-        "booking",
-        "timing"
-      ],
-      "sourceSlug": "how-to-book-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
-    },
-    {
-      "id": "booking-002",
-      "fact": "Both platforms offer free cancellation up to 24 hours before start on most listings, both give you a fallback if the operator lets you down, and both are secure.",
-      "figures": [
-        "24 hours"
-      ],
-      "topics": [
-        "booking",
-        "timing"
-      ],
-      "sourceSlug": "how-to-book-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
-    },
-    {
-      "id": "pricing-001",
-      "fact": "The most obvious is price: without a platform commission in the middle, direct bookings are commonly cited as running around 10–20% cheaper for the same product, though the exact gap varies by operator and isn't guaranteed.",
-      "figures": [
-        "10–20%"
-      ],
-      "topics": [
-        "pricing",
-        "booking"
-      ],
-      "sourceSlug": "how-to-book-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
-    },
-    {
-      "id": "pricing-002",
-      "fact": "A rough rule that holds up: for a €40 walking tour, direct is fine.",
-      "figures": [
-        "€40"
-      ],
-      "topics": [
-        "pricing",
-        "booking"
-      ],
-      "sourceSlug": "how-to-book-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
-    },
-    {
-      "id": "pricing-003",
-      "fact": "For a €150 private or premium experience, the platform's protection earns its markup.",
-      "figures": [
-        "€150"
-      ],
-      "topics": [
-        "pricing",
-        "booking"
-      ],
-      "sourceSlug": "how-to-book-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
-    },
-    {
-      "id": "booking-003",
-      "fact": "Private food tours in Rome commonly require around a week's notice for a full refund rather than 24 hours — a policy that catches people who assume the standard applies everywhere.",
-      "figures": [
-        "24 hours"
-      ],
-      "topics": [
-        "booking",
-        "timing"
-      ],
-      "sourceSlug": "how-to-book-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
-    },
-    {
       "id": "group-size-001",
-      "fact": "Check the group size cap (12–14 is typical) if intimacy matters.",
+      "fact": "You can't audit a guide from a listing, but you can check the structure: group size caps (typically 7–14), whether the operator says its guides are licensed, and how candid it is about what it can't do.",
       "figures": [
-        "12–14"
+        "7–14"
       ],
       "topics": [
         "group-size",
-        "booking"
+        "guides",
+        "operators"
       ],
-      "sourceSlug": "how-to-book-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
-    },
-    {
-      "id": "booking-004",
-      "fact": "the difference between a 24-hour window and a seven-day one is the whole cost of the tour if your plans shift — and it's stated on the page you're already looking at.",
-      "figures": [
-        "24-hour",
-        "seven-day"
-      ],
-      "topics": [
-        "booking",
-        "timing",
-        "pricing"
-      ],
-      "sourceSlug": "how-to-book-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
+      "sourceSlug": "how-to-pick-trastevere-food-tour-guide",
+      "sourceUrl": "https://trasteverefoodtour.com/how-to-pick-trastevere-food-tour-guide"
     },
     {
       "id": "group-size-002",
       "fact": "Trastevere caps run from about 7 to 14 depending on the operator, and the difference is qualitative: at seven you have a conversation, at fourteen you have an audience, and an unstated cap is itself an answer.",
       "figures": [
         "7",
-        "14",
-        "seven",
-        "fourteen"
+        "14"
       ],
       "topics": [
         "group-size",
-        "operators",
-        "logistics"
+        "guides"
       ],
       "sourceSlug": "how-to-pick-trastevere-food-tour-guide",
       "sourceUrl": "https://trasteverefoodtour.com/how-to-pick-trastevere-food-tour-guide"
@@ -130,7 +35,7 @@
       "fact": "The current framework comes from Law 190 of December 2023, subsequently amended, with its implementing regulation published in the official gazette in June 2024 and in force from July 2024.",
       "figures": [
         "190",
-        "December 2023",
+        "2023",
         "June 2024",
         "July 2024"
       ],
@@ -151,7 +56,7 @@
       ],
       "topics": [
         "guides",
-        "pricing",
+        "operators",
         "logistics"
       ],
       "sourceSlug": "how-to-pick-trastevere-food-tour-guide",
@@ -173,15 +78,27 @@
       "sourceUrl": "https://trasteverefoodtour.com/campo-de-fiori-jewish-ghetto-trastevere-food-tour"
     },
     {
-      "id": "pricing-004",
-      "fact": "Prices run above a Trastevere-only tour, at roughly $145 with one operator versus about €90 for a single neighborhood.",
+      "id": "pricing-001",
+      "fact": "one operator lists a combined departure at about $145 per adult, against roughly €90 for a single-neighborhood evening.",
       "figures": [
         "$145",
         "€90"
       ],
       "topics": [
-        "pricing",
-        "value"
+        "pricing"
+      ],
+      "sourceSlug": "campo-de-fiori-jewish-ghetto-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/campo-de-fiori-jewish-ghetto-trastevere-food-tour"
+    },
+    {
+      "id": "neighborhoods-001",
+      "fact": "The bakeries are essential too — one on Via del Portico d'Ottavia, the quarter's main street, has been operating since 1794.",
+      "figures": [
+        "1794"
+      ],
+      "topics": [
+        "neighborhoods",
+        "dishes"
       ],
       "sourceSlug": "campo-de-fiori-jewish-ghetto-trastevere-food-tour",
       "sourceUrl": "https://trasteverefoodtour.com/campo-de-fiori-jewish-ghetto-trastevere-food-tour"
@@ -200,36 +117,143 @@
       "sourceUrl": "https://trasteverefoodtour.com/campo-de-fiori-jewish-ghetto-trastevere-food-tour"
     },
     {
-      "id": "neighborhoods-001",
-      "fact": "The bakeries are essential too — one on Via del Portico d'Ottavia, the quarter's main street, has been operating since 1794.",
+      "id": "booking-001",
+      "fact": "Viator and GetYourGuide both offer free cancellation up to 24 hours before on most tours, plus buyer protection; GetYourGuide refunds faster.",
       "figures": [
-        "1794"
+        "24 hours"
       ],
       "topics": [
-        "neighborhoods"
+        "booking",
+        "timing"
       ],
-      "sourceSlug": "campo-de-fiori-jewish-ghetto-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/campo-de-fiori-jewish-ghetto-trastevere-food-tour"
+      "sourceSlug": "how-to-book-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
+    },
+    {
+      "id": "pricing-002",
+      "fact": "One quirk worth knowing: the same tour can be priced differently on each platform, so a two-minute cross-check is often worth the trouble.",
+      "figures": [
+        "two-minute"
+      ],
+      "topics": [
+        "pricing",
+        "booking"
+      ],
+      "sourceSlug": "how-to-book-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
+    },
+    {
+      "id": "pricing-003",
+      "fact": "The most obvious is price: without a platform commission in the middle, direct bookings are commonly cited as running around 10–20% cheaper for the same product, though the exact gap varies by operator and isn't guaranteed.",
+      "figures": [
+        "10–20%"
+      ],
+      "topics": [
+        "pricing",
+        "booking"
+      ],
+      "sourceSlug": "how-to-book-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
+    },
+    {
+      "id": "pricing-004",
+      "fact": "A rough rule that holds up: for a €40 walking tour, direct is fine.",
+      "figures": [
+        "€40"
+      ],
+      "topics": [
+        "pricing",
+        "booking"
+      ],
+      "sourceSlug": "how-to-book-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
     },
     {
       "id": "pricing-005",
-      "fact": "For a first visit, the classic evening food tour is the strongest all-round choice: six to seven stops, around ten tastings, roughly three to four hours, from about €90, covering the neighborhood's essentials from supplì to a sit-down pasta course and gelato.",
+      "fact": "For a €150 private or premium experience, the platform's protection earns its markup.",
       "figures": [
-        "six to seven",
-        "ten",
-        "three to four hours",
+        "€150"
+      ],
+      "topics": [
+        "pricing",
+        "booking"
+      ],
+      "sourceSlug": "how-to-book-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
+    },
+    {
+      "id": "booking-002",
+      "fact": "Private food tours in Rome commonly require around a week's notice for a full refund rather than 24 hours — a policy that catches people who assume the standard applies everywhere.",
+      "figures": [
+        "24 hours"
+      ],
+      "topics": [
+        "booking",
+        "timing"
+      ],
+      "sourceSlug": "how-to-book-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
+    },
+    {
+      "id": "logistics-001",
+      "fact": "There's also a smaller trap on the day itself: several operators require you to arrive about ten minutes before start time and state that late arrivals aren't eligible for a refund, which matters in a neighborhood where finding the meeting point takes longer than you'd think.",
+      "figures": [
+        "ten minutes"
+      ],
+      "topics": [
+        "logistics",
+        "timing",
+        "booking"
+      ],
+      "sourceSlug": "how-to-book-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
+    },
+    {
+      "id": "group-size-003",
+      "fact": "Check the group size cap (12–14 is typical) if intimacy matters.",
+      "figures": [
+        "12–14"
+      ],
+      "topics": [
+        "group-size",
+        "booking"
+      ],
+      "sourceSlug": "how-to-book-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
+    },
+    {
+      "id": "booking-003",
+      "fact": "the difference between a 24-hour window and a seven-day one is the whole cost of the tour if your plans shift — and it's stated on the page you're already looking at",
+      "figures": [
+        "24-hour",
+        "seven-day"
+      ],
+      "topics": [
+        "booking",
+        "timing",
+        "pricing"
+      ],
+      "sourceSlug": "how-to-book-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
+    },
+    {
+      "id": "pricing-006",
+      "fact": "For most first-timers, the classic evening tour is ideal: 6–7 stops, ~10 tastings, roughly 3–4 hours, from about €90.",
+      "figures": [
+        "6–7",
+        "~10",
+        "3–4",
         "€90"
       ],
       "topics": [
         "pricing",
-        "format-duration",
-        "dishes"
+        "format-duration"
       ],
       "sourceSlug": "best-trastevere-food-tours",
       "sourceUrl": "https://trasteverefoodtour.com/best-trastevere-food-tours"
     },
     {
-      "id": "pricing-006",
+      "id": "pricing-007",
       "fact": "Prices start from around €90 per person, and the small-group format (typically capped at 12 to 14) keeps it personal.",
       "figures": [
         "€90",
@@ -243,88 +267,301 @@
       "sourceUrl": "https://trasteverefoodtour.com/best-trastevere-food-tours"
     },
     {
-      "id": "wine-drinks-001",
-      "fact": "These tours run around four hours across roughly four venues, but with a much heavier tasting load — some advertise twenty-plus tastings — and, crucially, unlimited pours rather than the single glass per stop that most tours offer.",
+      "id": "pricing-008",
+      "fact": "It's the priciest format per hour — expect roughly €130–150 per person — which is worth knowing going in.",
       "figures": [
-        "four hours",
-        "four venues",
-        "twenty-plus"
+        "€130–150"
       ],
       "topics": [
-        "wine-drinks",
+        "pricing",
         "format-duration"
       ],
       "sourceSlug": "best-trastevere-food-tours",
       "sourceUrl": "https://trasteverefoodtour.com/best-trastevere-food-tours"
     },
     {
-      "id": "wine-drinks-002",
-      "fact": "Unlimited wine over four hours is a commitment — it's a slower evening, it's not for families, and it's easy to underestimate.",
-      "figures": [
-        "four hours"
-      ],
-      "topics": [
-        "wine-drinks",
-        "timing",
-        "kids-families"
-      ],
-      "sourceSlug": "best-trastevere-food-tours",
-      "sourceUrl": "https://trasteverefoodtour.com/best-trastevere-food-tours"
-    },
-    {
-      "id": "format-duration-002",
-      "fact": "For travelers who want to bring something home beyond photographs, the combo format pairs a walking tour of Trastevere with a hands-on pasta-making class, usually running around three hours in total.",
-      "figures": [
-        "three hours"
-      ],
-      "topics": [
-        "format-duration",
-        "dishes"
-      ],
-      "sourceSlug": "best-trastevere-food-tours",
-      "sourceUrl": "https://trasteverefoodtour.com/best-trastevere-food-tours"
-    },
-    {
-      "id": "pricing-007",
-      "fact": "It's the priciest format per hour — expect roughly €130–150 per person — which is worth knowing going in.",
-      "figures": [
-        "€130–150"
-      ],
-      "topics": [
-        "pricing"
-      ],
-      "sourceSlug": "best-trastevere-food-tours",
-      "sourceUrl": "https://trasteverefoodtour.com/best-trastevere-food-tours"
-    },
-    {
-      "id": "format-duration-003",
-      "fact": "Combined tours typically start at Campo de' Fiori, cross the Jewish Ghetto — one of Rome's most distinctive culinary quarters, and the home of carciofi alla giudia, the twice-fried artichoke — and finish in Trastevere, running around four hours.",
-      "figures": [
-        "four hours"
-      ],
-      "topics": [
-        "format-duration",
-        "neighborhoods",
-        "dishes"
-      ],
-      "sourceSlug": "best-trastevere-food-tours",
-      "sourceUrl": "https://trasteverefoodtour.com/best-trastevere-food-tours"
-    },
-    {
-      "id": "wine-drinks-003",
+      "id": "logistics-002",
       "fact": "Tours include alcohol; participants must be of legal drinking age in Italy (18).",
       "figures": [
         "18"
       ],
       "topics": [
-        "wine-drinks",
         "logistics"
       ],
       "sourceSlug": "best-trastevere-food-tours",
       "sourceUrl": "https://trasteverefoodtour.com/best-trastevere-food-tours"
     },
     {
-      "id": "pricing-008",
+      "id": "dishes-001",
+      "fact": "the trapizzino is the modern one: a pocket of pizza dough filled with a classic Roman stew, invented in 2008 in Testaccio by a former flight attendant turned pizza obsessive, who named it by fusing tramezzino (sandwich) and pizza.",
+      "figures": [
+        "2008"
+      ],
+      "topics": [
+        "dishes",
+        "street-food"
+      ],
+      "sourceSlug": "roman-street-food-glossary",
+      "sourceUrl": "https://trasteverefoodtour.com/roman-street-food-glossary"
+    },
+    {
+      "id": "dishes-002",
+      "fact": "Pizza al taglio is Roman pizza by the slab, sold by weight — you point at the tray, indicate how much you want, and they cut and weigh it, which is why the price is quoted per 100 grams rather than per slice.",
+      "figures": [
+        "100 grams"
+      ],
+      "topics": [
+        "dishes",
+        "pricing",
+        "street-food"
+      ],
+      "sourceSlug": "roman-street-food-glossary",
+      "sourceUrl": "https://trasteverefoodtour.com/roman-street-food-glossary"
+    },
+    {
+      "id": "wine-drinks-001",
+      "fact": "The house wine of Rome is Frascati, a white from the hills just southeast of the city, and the local unit is the quartino — a quarter-liter carafe, the right amount for one person with lunch, usually around €4.",
+      "figures": [
+        "€4"
+      ],
+      "topics": [
+        "wine-drinks",
+        "pricing"
+      ],
+      "sourceSlug": "roman-street-food-glossary",
+      "sourceUrl": "https://trasteverefoodtour.com/roman-street-food-glossary"
+    },
+    {
+      "id": "dishes-003",
+      "fact": "Un etto is 100 grams, the working unit at any deli or bakery counter — pizza al taglio and cured meats are sold this way, and it's why you can't buy a taste of five things without ending up with half a kilo.",
+      "figures": [
+        "100 grams"
+      ],
+      "topics": [
+        "dishes",
+        "markets",
+        "pricing"
+      ],
+      "sourceSlug": "roman-street-food-glossary",
+      "sourceUrl": "https://trasteverefoodtour.com/roman-street-food-glossary"
+    },
+    {
+      "id": "pricing-009",
+      "fact": "Most cost between €1.50 and €7.",
+      "figures": [
+        "€1.50",
+        "€7"
+      ],
+      "topics": [
+        "pricing",
+        "street-food"
+      ],
+      "sourceSlug": "roman-street-food-glossary",
+      "sourceUrl": "https://trasteverefoodtour.com/roman-street-food-glossary"
+    },
+    {
+      "id": "dishes-004",
+      "fact": "Carciofi alla giudia is seasonal, at its best roughly February to April.",
+      "figures": [
+        "February",
+        "April"
+      ],
+      "topics": [
+        "dishes",
+        "timing",
+        "markets"
+      ],
+      "sourceSlug": "roman-street-food-glossary",
+      "sourceUrl": "https://trasteverefoodtour.com/roman-street-food-glossary"
+    },
+    {
+      "id": "pricing-010",
+      "fact": "Trastevere food tours start from around €90 for the classic evening format — roughly 3–4 hours, 6–7 stops, about 10 tastings, amounting to a full dinner with wine.",
+      "figures": [
+        "€90",
+        "3–4",
+        "6–7",
+        "10"
+      ],
+      "topics": [
+        "pricing",
+        "format-duration"
+      ],
+      "sourceSlug": "trastevere-food-tour-cost",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
+    },
+    {
+      "id": "pricing-011",
+      "fact": "Pasta-class combos run about €130–150.",
+      "figures": [
+        "€130–150"
+      ],
+      "topics": [
+        "pricing",
+        "dishes"
+      ],
+      "sourceSlug": "trastevere-food-tour-cost",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
+    },
+    {
+      "id": "pricing-012",
+      "fact": "Eating the same food yourself is far cheaper: supplì cost €1.50–3.50, a trapizzino about €5, trattoria pasta €7–10, and a full DIY evening comes to roughly €20–30.",
+      "figures": [
+        "€1.50–3.50",
+        "€5",
+        "€7–10",
+        "€20–30"
+      ],
+      "topics": [
+        "pricing",
+        "value",
+        "dishes"
+      ],
+      "sourceSlug": "trastevere-food-tour-cost",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
+    },
+    {
+      "id": "logistics-003",
+      "fact": "Trastevere's best-loved trattorias run real waits, with some famous spots regularly turning over 35 to 40 minute queues at dinner, and tours hold reservations that walk you past them.",
+      "figures": [
+        "35",
+        "40"
+      ],
+      "topics": [
+        "logistics",
+        "timing"
+      ],
+      "sourceSlug": "trastevere-food-tour-cost",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
+    },
+    {
+      "id": "pricing-013",
+      "fact": "A supplì costs roughly €1.50–3.50.",
+      "figures": [
+        "€1.50–3.50"
+      ],
+      "topics": [
+        "pricing",
+        "street-food",
+        "dishes"
+      ],
+      "sourceSlug": "trastevere-food-tour-cost",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
+    },
+    {
+      "id": "pricing-014",
+      "fact": "A trapizzino is about €5.",
+      "figures": [
+        "€5"
+      ],
+      "topics": [
+        "pricing",
+        "street-food",
+        "dishes"
+      ],
+      "sourceSlug": "trastevere-food-tour-cost",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
+    },
+    {
+      "id": "pricing-015",
+      "fact": "Pizza al taglio is sold by weight at roughly €2.50 per 100g, so a decent slab runs a few euros.",
+      "figures": [
+        "€2.50",
+        "100g"
+      ],
+      "topics": [
+        "pricing",
+        "street-food",
+        "dishes"
+      ],
+      "sourceSlug": "trastevere-food-tour-cost",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
+    },
+    {
+      "id": "pricing-016",
+      "fact": "A porchetta panino from a deli is €5–7.",
+      "figures": [
+        "€5–7"
+      ],
+      "topics": [
+        "pricing",
+        "street-food",
+        "dishes"
+      ],
+      "sourceSlug": "trastevere-food-tour-cost",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
+    },
+    {
+      "id": "pricing-017",
+      "fact": "Pasta at a casual trattoria costs €7–10.",
+      "figures": [
+        "€7–10"
+      ],
+      "topics": [
+        "pricing",
+        "dishes"
+      ],
+      "sourceSlug": "trastevere-food-tour-cost",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
+    },
+    {
+      "id": "pricing-018",
+      "fact": "Gelato is around €2.50 a scoop, and a quartino of Frascati about €4.",
+      "figures": [
+        "€2.50",
+        "€4"
+      ],
+      "topics": [
+        "pricing",
+        "dishes",
+        "wine-drinks"
+      ],
+      "sourceSlug": "trastevere-food-tour-cost",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
+    },
+    {
+      "id": "pricing-019",
+      "fact": "Add it up and a full, generous DIY evening in Trastevere comes to roughly €20–30 per person — against €90+ for the guided version.",
+      "figures": [
+        "€20–30",
+        "€90+"
+      ],
+      "topics": [
+        "pricing",
+        "value"
+      ],
+      "sourceSlug": "trastevere-food-tour-cost",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
+    },
+    {
+      "id": "logistics-004",
+      "fact": "Tours include alcohol; participants must be of legal drinking age in Italy (18).",
+      "figures": [
+        "18"
+      ],
+      "topics": [
+        "logistics",
+        "wine-drinks"
+      ],
+      "sourceSlug": "trastevere-food-tour-cost",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
+    },
+    {
+      "id": "pricing-020",
+      "fact": "a tour delivering ten tastings and a sit-down course for €90 is better value than a shorter one at €70 that leaves you hungry.",
+      "figures": [
+        "€90",
+        "€70"
+      ],
+      "topics": [
+        "pricing",
+        "value"
+      ],
+      "sourceSlug": "trastevere-food-tour-cost",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
+    },
+    {
+      "id": "pricing-021",
       "fact": "Tours run €80–120 against €20–30 to eat the same food alone.",
       "figures": [
         "€80–120",
@@ -338,11 +575,10 @@
       "sourceUrl": "https://trasteverefoodtour.com/is-trastevere-food-tour-worth-it"
     },
     {
-      "id": "pricing-009",
-      "fact": "At €80–120 against €20–30 to eat alone, it's a real premium — worth it on a short trip, less so on a tight budget.",
+      "id": "pricing-022",
+      "fact": "You do not need to pay €100 to find out that the man waving a laminated menu at you is not your friend.",
       "figures": [
-        "€80–120",
-        "€20–30"
+        "€100"
       ],
       "topics": [
         "pricing",
@@ -352,7 +588,7 @@
       "sourceUrl": "https://trasteverefoodtour.com/is-trastevere-food-tour-worth-it"
     },
     {
-      "id": "pricing-010",
+      "id": "pricing-023",
       "fact": "Prices confirm it: authentic spots tend to charge around €10–12 for pasta and €15–20 for a secondo, while traps ask €15–18 for pasta and €25 or more for mains without anything to justify it.",
       "figures": [
         "€10–12",
@@ -368,33 +604,21 @@
       "sourceUrl": "https://trasteverefoodtour.com/is-trastevere-food-tour-worth-it"
     },
     {
-      "id": "street-food-001",
-      "fact": "At a Roman deli counter, the practical minimum purchase is around un etto, a hundred grams.",
-      "figures": [
-        "a hundred"
-      ],
-      "topics": [
-        "street-food",
-        "logistics"
-      ],
-      "sourceSlug": "is-trastevere-food-tour-worth-it",
-      "sourceUrl": "https://trasteverefoodtour.com/is-trastevere-food-tour-worth-it"
-    },
-    {
-      "id": "street-food-002",
+      "id": "pricing-024",
       "fact": "Deli counters also have practical minimum portions of around 100 grams, so tasting five cured meats alone means buying far more food than you can eat — a guide buys one portion and splits it across the group.",
       "figures": [
-        "100 grams"
+        "100"
       ],
       "topics": [
-        "street-food",
-        "logistics"
+        "pricing",
+        "dishes",
+        "group-size"
       ],
       "sourceSlug": "is-trastevere-food-tour-worth-it",
       "sourceUrl": "https://trasteverefoodtour.com/is-trastevere-food-tour-worth-it"
     },
     {
-      "id": "pricing-011",
+      "id": "pricing-025",
       "fact": "Smaller, though, is not small: the dinner you'd have eaten alone costs €20–30, not €90.",
       "figures": [
         "€20–30",
@@ -408,327 +632,7 @@
       "sourceUrl": "https://trasteverefoodtour.com/is-trastevere-food-tour-worth-it"
     },
     {
-      "id": "pricing-012",
-      "fact": "The most obvious is budget: €80–120 against roughly €20–30 to eat the same food yourself is a three-to-fourfold gap, and no framing makes it disappear.",
-      "figures": [
-        "€80–120",
-        "€20–30"
-      ],
-      "topics": [
-        "pricing",
-        "value"
-      ],
-      "sourceSlug": "is-trastevere-food-tour-worth-it",
-      "sourceUrl": "https://trasteverefoodtour.com/is-trastevere-food-tour-worth-it"
-    },
-    {
-      "id": "format-duration-004",
-      "fact": "Six or seven venues in a single evening is not something a couple can execute; you'd be full after two.",
-      "figures": [
-        "Six or seven",
-        "two"
-      ],
-      "topics": [
-        "format-duration",
-        "group-size"
-      ],
-      "sourceSlug": "is-trastevere-food-tour-worth-it",
-      "sourceUrl": "https://trasteverefoodtour.com/is-trastevere-food-tour-worth-it"
-    },
-    {
-      "id": "format-duration-005",
-      "fact": "eating at six venues in one evening isn't something a couple can do; you'd be full after two.",
-      "figures": [
-        "six",
-        "two"
-      ],
-      "topics": [
-        "format-duration",
-        "group-size"
-      ],
-      "sourceSlug": "is-trastevere-food-tour-worth-it",
-      "sourceUrl": "https://trasteverefoodtour.com/is-trastevere-food-tour-worth-it"
-    },
-    {
-      "id": "dishes-001",
-      "fact": "the trapizzino is the modern one: a pocket of pizza dough filled with a classic Roman stew, invented in 2008 in Testaccio by a former flight attendant turned pizza obsessive, who named it by fusing tramezzino (sandwich) and pizza",
-      "figures": [
-        "2008"
-      ],
-      "topics": [
-        "dishes",
-        "street-food"
-      ],
-      "sourceSlug": "roman-street-food-glossary",
-      "sourceUrl": "https://trasteverefoodtour.com/roman-street-food-glossary"
-    },
-    {
-      "id": "pricing-013",
-      "fact": "Most cost between €1.50 and €7.",
-      "figures": [
-        "€1.50",
-        "€7"
-      ],
-      "topics": [
-        "pricing",
-        "dishes",
-        "street-food"
-      ],
-      "sourceSlug": "roman-street-food-glossary",
-      "sourceUrl": "https://trasteverefoodtour.com/roman-street-food-glossary"
-    },
-    {
-      "id": "dishes-002",
-      "fact": "Carciofi alla giudia is seasonal, at its best roughly February to April.",
-      "figures": [
-        "February",
-        "April"
-      ],
-      "topics": [
-        "dishes",
-        "timing"
-      ],
-      "sourceSlug": "roman-street-food-glossary",
-      "sourceUrl": "https://trasteverefoodtour.com/roman-street-food-glossary"
-    },
-    {
-      "id": "wine-drinks-004",
-      "fact": "The house wine of Rome is Frascati, a white from the hills just southeast of the city, and the local unit is the quartino — a quarter-liter carafe, the right amount for one person with lunch, usually around €4.",
-      "figures": [
-        "€4"
-      ],
-      "topics": [
-        "wine-drinks",
-        "pricing"
-      ],
-      "sourceSlug": "roman-street-food-glossary",
-      "sourceUrl": "https://trasteverefoodtour.com/roman-street-food-glossary"
-    },
-    {
-      "id": "pricing-014",
-      "fact": "Un etto is 100 grams, the working unit at any deli or bakery counter — pizza al taglio and cured meats are sold this way, and it's why you can't buy a taste of five things without ending up with half a kilo.",
-      "figures": [
-        "100"
-      ],
-      "topics": [
-        "pricing",
-        "dishes",
-        "logistics"
-      ],
-      "sourceSlug": "roman-street-food-glossary",
-      "sourceUrl": "https://trasteverefoodtour.com/roman-street-food-glossary"
-    },
-    {
-      "id": "dishes-003",
-      "fact": "Pizza al taglio is Roman pizza by the slab, sold by weight — you point at the tray, indicate how much you want, and they cut and weigh it, which is why the price is quoted per 100 grams rather than per slice.",
-      "figures": [
-        "100"
-      ],
-      "topics": [
-        "dishes",
-        "pricing",
-        "street-food"
-      ],
-      "sourceSlug": "roman-street-food-glossary",
-      "sourceUrl": "https://trasteverefoodtour.com/roman-street-food-glossary"
-    },
-    {
-      "id": "pricing-015",
-      "fact": "Trastevere food tours start from around €90 for the classic evening format — roughly 3–4 hours, 6–7 stops, about 10 tastings, amounting to a full dinner with wine.",
-      "figures": [
-        "€90",
-        "3–4 hours",
-        "6–7 stops",
-        "10"
-      ],
-      "topics": [
-        "pricing",
-        "format-duration"
-      ],
-      "sourceSlug": "trastevere-food-tour-cost",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
-    },
-    {
-      "id": "pricing-016",
-      "fact": "Pasta-class combos run about €130–150.",
-      "figures": [
-        "€130–150"
-      ],
-      "topics": [
-        "pricing"
-      ],
-      "sourceSlug": "trastevere-food-tour-cost",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
-    },
-    {
-      "id": "pricing-017",
-      "fact": "Eating the same food yourself is far cheaper: supplì cost €1.50–3.50, a trapizzino about €5, trattoria pasta €7–10, and a full DIY evening comes to roughly €20–30.",
-      "figures": [
-        "€1.50–3.50",
-        "€5",
-        "€7–10",
-        "€20–30"
-      ],
-      "topics": [
-        "pricing",
-        "street-food",
-        "dishes"
-      ],
-      "sourceSlug": "trastevere-food-tour-cost",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
-    },
-    {
-      "id": "logistics-001",
-      "fact": "You're paying for queue-skipping and priority access: Trastevere's best-loved trattorias run real waits, with some famous spots regularly turning over 35 to 40 minute queues at dinner, and tours hold reservations that walk you past them.",
-      "figures": [
-        "35 to 40"
-      ],
-      "topics": [
-        "logistics",
-        "timing"
-      ],
-      "sourceSlug": "trastevere-food-tour-cost",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
-    },
-    {
-      "id": "pricing-018",
-      "fact": "Trastevere is one of the neighborhoods where locals still eat for around €10.",
-      "figures": [
-        "€10"
-      ],
-      "topics": [
-        "pricing",
-        "street-food"
-      ],
-      "sourceSlug": "trastevere-food-tour-cost",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
-    },
-    {
-      "id": "pricing-019",
-      "fact": "A supplì costs roughly €1.50–3.50.",
-      "figures": [
-        "€1.50–3.50"
-      ],
-      "topics": [
-        "pricing",
-        "street-food",
-        "dishes"
-      ],
-      "sourceSlug": "trastevere-food-tour-cost",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
-    },
-    {
-      "id": "pricing-020",
-      "fact": "A trapizzino is about €5.",
-      "figures": [
-        "€5"
-      ],
-      "topics": [
-        "pricing",
-        "dishes"
-      ],
-      "sourceSlug": "trastevere-food-tour-cost",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
-    },
-    {
-      "id": "pricing-021",
-      "fact": "Pizza al taglio is sold by weight at roughly €2.50 per 100g, so a decent slab runs a few euros.",
-      "figures": [
-        "€2.50 per 100g"
-      ],
-      "topics": [
-        "pricing",
-        "dishes",
-        "street-food"
-      ],
-      "sourceSlug": "trastevere-food-tour-cost",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
-    },
-    {
-      "id": "pricing-022",
-      "fact": "A porchetta panino from a deli is €5–7.",
-      "figures": [
-        "€5–7"
-      ],
-      "topics": [
-        "pricing",
-        "dishes",
-        "street-food"
-      ],
-      "sourceSlug": "trastevere-food-tour-cost",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
-    },
-    {
-      "id": "pricing-023",
-      "fact": "Pasta at a casual trattoria costs €7–10.",
-      "figures": [
-        "€7–10"
-      ],
-      "topics": [
-        "pricing",
-        "dishes"
-      ],
-      "sourceSlug": "trastevere-food-tour-cost",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
-    },
-    {
-      "id": "pricing-024",
-      "fact": "Gelato is around €2.50 a scoop, and a quartino of Frascati about €4.",
-      "figures": [
-        "€2.50",
-        "€4"
-      ],
-      "topics": [
-        "pricing",
-        "dishes",
-        "wine-drinks"
-      ],
-      "sourceSlug": "trastevere-food-tour-cost",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
-    },
-    {
-      "id": "pricing-025",
-      "fact": "Add it up and a full, generous DIY evening in Trastevere comes to roughly €20–30 per person — against €90+ for the guided version.",
-      "figures": [
-        "€20–30",
-        "€90+"
-      ],
-      "topics": [
-        "pricing",
-        "value"
-      ],
-      "sourceSlug": "trastevere-food-tour-cost",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
-    },
-    {
-      "id": "pricing-026",
-      "fact": "Start with the tastings-to-price ratio: a tour delivering ten tastings and a sit-down course for €90 is better value than a shorter one at €70 that leaves you hungry.",
-      "figures": [
-        "€90",
-        "€70"
-      ],
-      "topics": [
-        "pricing",
-        "value"
-      ],
-      "sourceSlug": "trastevere-food-tour-cost",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
-    },
-    {
-      "id": "logistics-002",
-      "fact": "Tours include alcohol; participants must be of legal drinking age in Italy (18).",
-      "figures": [
-        "18"
-      ],
-      "topics": [
-        "logistics",
-        "booking"
-      ],
-      "sourceSlug": "trastevere-food-tour-cost",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
-    },
-    {
-      "id": "format-duration-006",
+      "id": "format-duration-002",
       "fact": "A Trastevere twilight tour runs 3–4 hours across 6–7 stops, delivering around 10 tastings and several drinks — a full dinner, not a snack crawl.",
       "figures": [
         "3–4",
@@ -737,26 +641,39 @@
       ],
       "topics": [
         "format-duration",
-        "timing"
+        "dishes"
       ],
       "sourceSlug": "trastevere-twilight-food-tour-format",
       "sourceUrl": "https://trasteverefoodtour.com/trastevere-twilight-food-tour-format"
     },
     {
-      "id": "format-duration-007",
+      "id": "timing-001",
+      "fact": "Dinner in Rome rarely starts before 8 p.m., and the aperitivo ritual that precedes it — a drink and small bites at an enoteca — is a real institution, not a tourist invention.",
+      "figures": [
+        "8 p.m."
+      ],
+      "topics": [
+        "timing",
+        "wine-drinks"
+      ],
+      "sourceSlug": "trastevere-twilight-food-tour-format",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-twilight-food-tour-format"
+    },
+    {
+      "id": "timing-002",
       "fact": "Some operators run an earlier, express departure — typically around 6:15 p.m., lasting about two and a half hours — that trims the evening to its four essentials: a spritz, supplì, a sit-down dinner, and gelato.",
       "figures": [
         "6:15 p.m."
       ],
       "topics": [
-        "format-duration",
-        "timing"
+        "timing",
+        "format-duration"
       ],
       "sourceSlug": "trastevere-twilight-food-tour-format",
       "sourceUrl": "https://trasteverefoodtour.com/trastevere-twilight-food-tour-format"
     },
     {
-      "id": "logistics-003",
+      "id": "logistics-005",
       "fact": "Tours include alcohol; participants must be of legal drinking age in Italy (18).",
       "figures": [
         "18"
@@ -767,20 +684,6 @@
       ],
       "sourceSlug": "trastevere-twilight-food-tour-format",
       "sourceUrl": "https://trasteverefoodtour.com/trastevere-twilight-food-tour-format"
-    },
-    {
-      "id": "dishes-004",
-      "fact": "The neighborhood is also where the trapizzino was invented in 2008, and where Mercato di Testaccio sits in a glass-and-steel box built over a first-century Roman warehouse — a modern food hall mixing grocery stalls with genuinely good street food, and one of the best lunches in the city.",
-      "figures": [
-        "2008"
-      ],
-      "topics": [
-        "dishes",
-        "markets",
-        "neighborhoods"
-      ],
-      "sourceSlug": "trastevere-vs-rome-food-neighborhoods",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-vs-rome-food-neighborhoods"
     },
     {
       "id": "markets-001",
@@ -790,21 +693,8 @@
       ],
       "topics": [
         "markets",
-        "neighborhoods"
-      ],
-      "sourceSlug": "trastevere-vs-rome-food-neighborhoods",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-vs-rome-food-neighborhoods"
-    },
-    {
-      "id": "neighborhoods-002",
-      "fact": "The Jewish Ghetto, across the river from Trastevere, is the oldest layer — the quarter where a community confined from 1555 to 1870 built cucina giudaico-romanesca out of artichokes, courgettes and salt cod.",
-      "figures": [
-        "1555",
-        "1870"
-      ],
-      "topics": [
         "neighborhoods",
-        "dishes"
+        "logistics"
       ],
       "sourceSlug": "trastevere-vs-rome-food-neighborhoods",
       "sourceUrl": "https://trasteverefoodtour.com/trastevere-vs-rome-food-neighborhoods"
@@ -818,10 +708,68 @@
       ],
       "topics": [
         "markets",
-        "timing"
+        "timing",
+        "logistics"
       ],
       "sourceSlug": "trastevere-vs-rome-food-neighborhoods",
       "sourceUrl": "https://trasteverefoodtour.com/trastevere-vs-rome-food-neighborhoods"
+    },
+    {
+      "id": "dishes-005",
+      "fact": "The neighborhood is also where the trapizzino was invented in 2008, and where Mercato di Testaccio sits in a glass-and-steel box built over a first-century Roman warehouse — a modern food hall mixing grocery stalls with genuinely good street food, and one of the best lunches in the city.",
+      "figures": [
+        "2008",
+        "first-century"
+      ],
+      "topics": [
+        "dishes",
+        "markets",
+        "neighborhoods"
+      ],
+      "sourceSlug": "trastevere-vs-rome-food-neighborhoods",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-vs-rome-food-neighborhoods"
+    },
+    {
+      "id": "pricing-026",
+      "fact": "paying €90 for a sequence you can't eat is worse — and Rome's vegetable cooking is good enough that a self-directed vegan route is a real evening, not a consolation prize",
+      "figures": [
+        "€90"
+      ],
+      "topics": [
+        "pricing",
+        "dietary",
+        "value"
+      ],
+      "sourceSlug": "vegetarian-vegan-gluten-free-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/vegetarian-vegan-gluten-free-trastevere-food-tour"
+    },
+    {
+      "id": "pricing-027",
+      "fact": "Build your own route through AIC-certified restaurants, where the protections are real and enforced, and spend the €90 on a very good gluten-free dinner instead.",
+      "figures": [
+        "€90"
+      ],
+      "topics": [
+        "pricing",
+        "dietary",
+        "dishes"
+      ],
+      "sourceSlug": "vegetarian-vegan-gluten-free-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/vegetarian-vegan-gluten-free-trastevere-food-tour"
+    },
+    {
+      "id": "dishes-006",
+      "fact": "Vegan options have expanded substantially in the city, vegan gelato is widely available, and traditional Roman vegetable cooking is genuinely vegan: carciofi alla romana (artichokes with mint and garlic, in season roughly February to May), cicoria ripassata (chicory sautéed with oil, garlic and chili), pizza rossa or marinara (no cheese), bruschetta, and the whole contorni section.",
+      "figures": [
+        "February to May"
+      ],
+      "topics": [
+        "dishes",
+        "dietary",
+        "timing"
+      ],
+      "sourceSlug": "vegetarian-vegan-gluten-free-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/vegetarian-vegan-gluten-free-trastevere-food-tour"
     },
     {
       "id": "kids-families-002",
@@ -845,13 +793,27 @@
         "4"
       ],
       "topics": [
-        "kids-families"
+        "kids-families",
+        "operators"
       ],
       "sourceSlug": "which-trastevere-food-tour-fits-you",
       "sourceUrl": "https://trasteverefoodtour.com/which-trastevere-food-tour-fits-you"
     },
     {
-      "id": "group-size-003",
+      "id": "group-size-004",
+      "fact": "Couples choose between a sociable group tour and a private one, which takes 2–20 guests at a start time you pick.",
+      "figures": [
+        "2–20"
+      ],
+      "topics": [
+        "group-size",
+        "booking"
+      ],
+      "sourceSlug": "which-trastevere-food-tour-fits-you",
+      "sourceUrl": "https://trasteverefoodtour.com/which-trastevere-food-tour-fits-you"
+    },
+    {
+      "id": "group-size-005",
       "fact": "A group tour is the sociable option: caps run from about 7 to 14 depending on the operator, which is small enough that you'll genuinely talk to the other guests, and there's a real pleasure in a table of strangers three wines into a Roman evening.",
       "figures": [
         "7 to 14"
@@ -864,7 +826,7 @@
       "sourceUrl": "https://trasteverefoodtour.com/which-trastevere-food-tour-fits-you"
     },
     {
-      "id": "group-size-004",
+      "id": "group-size-006",
       "fact": "Private bookings typically run from 2 guests up to around 20, which makes them equally suited to a couple and to a milestone celebration.",
       "figures": [
         "2",
@@ -878,24 +840,25 @@
       "sourceUrl": "https://trasteverefoodtour.com/which-trastevere-food-tour-fits-you"
     },
     {
-      "id": "timing-001",
+      "id": "booking-004",
       "fact": "Operators openly market them for proposals, honeymoons and anniversaries, and if that's your plan, one piece of concrete advice: book at least two weeks ahead, and four or more for a celebration or during peak season (April to October).",
       "figures": [
+        "two weeks",
+        "four",
         "April to October"
       ],
       "topics": [
-        "timing",
-        "booking"
+        "booking",
+        "timing"
       ],
       "sourceSlug": "which-trastevere-food-tour-fits-you",
       "sourceUrl": "https://trasteverefoodtour.com/which-trastevere-food-tour-fits-you"
     },
     {
-      "id": "group-size-005",
-      "fact": "the small caps do the rest — 7 to 12 guests on the tighter tours means a group, not an audience, and the structure of the evening (a shared table, several wines, three hours) does the social work for you without anyone having to force it.",
+      "id": "group-size-007",
+      "fact": "The small caps do the rest — 7 to 12 guests on the tighter tours means a group, not an audience, and the structure of the evening (a shared table, several wines, three hours) does the social work for you without anyone having to force it.",
       "figures": [
-        "7 to 12",
-        "three hours"
+        "7 to 12"
       ],
       "topics": [
         "group-size",
@@ -905,20 +868,21 @@
       "sourceUrl": "https://trasteverefoodtour.com/which-trastevere-food-tour-fits-you"
     },
     {
-      "id": "pricing-027",
+      "id": "pricing-028",
       "fact": "A solo traveler wanting company and a couple wanting privacy want opposite things from the same €90.",
       "figures": [
         "€90"
       ],
       "topics": [
-        "pricing"
+        "pricing",
+        "value"
       ],
       "sourceSlug": "which-trastevere-food-tour-fits-you",
       "sourceUrl": "https://trasteverefoodtour.com/which-trastevere-food-tour-fits-you"
     },
     {
-      "id": "timing-002",
-      "fact": "Second, book ahead in peak season, which in Rome runs roughly April to October.",
+      "id": "timing-003",
+      "fact": "Peak season in Rome runs roughly April to October.",
       "figures": [
         "April to October"
       ],
@@ -930,7 +894,7 @@
       "sourceUrl": "https://trasteverefoodtour.com/which-trastevere-food-tour-fits-you"
     },
     {
-      "id": "wine-drinks-005",
+      "id": "wine-drinks-002",
       "fact": "Tours include alcohol; the legal drinking age in Italy is 18.",
       "figures": [
         "18"
@@ -940,33 +904,6 @@
       ],
       "sourceSlug": "which-trastevere-food-tour-fits-you",
       "sourceUrl": "https://trasteverefoodtour.com/which-trastevere-food-tour-fits-you"
-    },
-    {
-      "id": "pricing-028",
-      "fact": "paying €90 for a sequence you can't eat is worse — and Rome's vegetable cooking is good enough that a self-directed vegan route is a real evening, not a consolation prize.",
-      "figures": [
-        "€90"
-      ],
-      "topics": [
-        "pricing",
-        "dietary"
-      ],
-      "sourceSlug": "vegetarian-vegan-gluten-free-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/vegetarian-vegan-gluten-free-trastevere-food-tour"
-    },
-    {
-      "id": "dietary-001",
-      "fact": "Vegan options have expanded substantially in the city, vegan gelato is widely available, and traditional Roman vegetable cooking is genuinely vegan: carciofi alla romana (artichokes with mint and garlic, in season roughly February to May), cicoria ripassata (chicory sautéed with oil, garlic and chili), pizza rossa or marinara (no cheese), bruschetta, and the whole contorni section.",
-      "figures": [
-        "February to May"
-      ],
-      "topics": [
-        "dietary",
-        "dishes",
-        "timing"
-      ],
-      "sourceSlug": "vegetarian-vegan-gluten-free-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/vegetarian-vegan-gluten-free-trastevere-food-tour"
     }
   ]
 }

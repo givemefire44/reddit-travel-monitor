@@ -1,5 +1,10 @@
 [
   {
+    "slug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
+    "fact": "From 16 March the park also enforces time-slot capacity limits: a maximum of 15,000 visitors are admitted between 9:00 and 13:00, and a maximum of 5,000 visitors between 13:00 and 17:30, for a hard daily cap of 20,000 visitors.",
+    "reason": "cifra \"15,000\" sin unidad ni escala"
+  },
+  {
     "slug": "how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes",
     "fact": "This loop covers roughly 1.5 km of walking and gives you the Forum, one bath complex, one major house, and one of Pompeii's most famous streets without needing to reach the eastern side of the site.",
     "reason": "apertura no autonoma"
@@ -7,6 +12,11 @@
   {
     "slug": "what-to-see-in-pompeii-must-visit-sites-in-order",
     "fact": "This route follows a logical path from the civic center to daily life to the human tragedy, and can be adapted to a 2-hour highlights walk, a 4-hour half-day, or a full day of exploration.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "pompeii-tickets-explained-standard-plus-and-guided-options-compared",
+    "fact": "This ticket is ideal if you have 2–4 hours and want a simple, focused visit.",
     "reason": "apertura no autonoma"
   },
   {
