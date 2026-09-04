@@ -74,6 +74,8 @@ So: the material has to cover the specific ask in "pregunta", not the topic it b
 
 "porque": one short sentence, in Spanish, saying whether the material covers that specific ask, and which part of it does. Concrete — name the thing, not a category. This is the line a human reads to decide what to answer.
 
+Describe the MATERIAL, never the person. No experience, no years in the trade, no credential of any kind. That line is read as a brief for the writing, and on 2026-09-04 it came back as "la experiencia operativa de veinte años en viajes explica estas asimetrías de precios" and "conocimiento de operador de viajes y afiliado de reservas". The twenty years are real, but they are the SECONDARY credential and they never carry the argument: what does is the review corpus, because it can be checked. A porque that leans on seniority coaches an answer that leans on seniority, and that answer has nothing under it. Say what the research contains that bears on the ask, or say what it does not.
+
 "temas": 1-4 short tags for what the post is about, free-form, lowercase.`;
 }
 
