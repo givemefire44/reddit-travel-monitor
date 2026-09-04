@@ -332,7 +332,7 @@
         "vatican"
       ],
       "source": "tickets.museivaticani.va y basilicasanpietro.va, relevado el 2 sep 2026. €8,00 adultos (12 idiomas). La version para chicos de 7-12 (Family Tour) es €5,00.",
-      "excludeIf": "colosseum|pompeii|last supper|guided tour",
+      "excludeIf": "colosseum|pompeii|last supper|guided tour|basilica|st peter|timed[- ]entry",
       "patterns": [
         "audio ?guide[^.]{0,20}?€\\s?(\\d{1,3})",
         "€\\s?(\\d{1,3})[^.]{0,20}?audio ?guide"
