@@ -466,6 +466,32 @@
       "shingles": [],
       "generatedAt": "2026-09-02",
       "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-much-does-it-cost-to-visit-St-Peter-s-Cathedral-in-Rome-and-how-can-we-avoid-long-queues-at-the-entrance-of-St-Peter-s-Basilica-and-other-Roman-sites-during-our-stay-in-Italy",
+      "questionTitle": "How much does it cost to visit St. Peter’s Cathedral in Rome and how can we avoid long queues at the entrance of St. Peter’s Basilica and other Roman sites during our stay in Italy?",
+      "titleNormalized": "how much does it cost to visit st peter s cathedral in rome and how can we avoid long queues at the entrance of st peter s basilica and other roman sites during our stay in italy",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-skip-the-line-explained",
+        "vatican-official-vs-platform-price"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-04",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-long-does-it-take-to-tour-The-Vatican",
+      "questionTitle": "How long does it take to tour The Vatican?",
+      "titleNormalized": "how long does it take to tour the vatican",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-museums-itinerary",
+        "vatican-one-day-time-budget"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-04",
+      "estado": "entregado"
     }
   ]
 }
