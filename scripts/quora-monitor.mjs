@@ -1459,8 +1459,13 @@ async function main() {
     // la conexion, y el cero parecia legitimo.
     if (sel.error) { rejected.push({ c, why: `⚠️ NO SE PUDO EVALUAR: ${sel.falta}`, esError: true }); return; }
     if (!sel.contesta) { rejected.push({ c, why: `sin material para ESTA pregunta: ${sel.falta}` }); return; }
-    // Un solo fact no sostiene una respuesta firmada de 350-550 palabras. Ver
-    // selection._minFacts: el numero cuenta facts que CONTESTAN, no del tema.
+    // El numero cuenta facts que CONTESTAN, no del tema. Estuvo en 2 mientras
+    // el script redactaba respuestas de 350-550 palabras, donde un solo fact no
+    // sostenia el texto. Desde que la forma la decide la pregunta esa premisa
+    // se cayo: una regla bien apuntada contestada en dos frases es una
+    // respuesta legitima, y el 6 sep 2026 el piso de 2 rechazo tres preguntas
+    // del dia por tener "solo 1 fact". El gate que importa, que el fact
+    // conteste, ya lo aplico sel.contesta unas lineas mas arriba.
     if (sel.facts.length < CONFIG.selection.minFacts) {
       rejected.push({ c, why: `solo ${sel.facts.length} fact(s) la contestan, hacen falta ${CONFIG.selection.minFacts}` });
       return;

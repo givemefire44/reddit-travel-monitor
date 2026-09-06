@@ -14,9 +14,10 @@
   },
   "selection": {
     "minTopics": 1,
-    "minFacts": 2,
+    "minFacts": 1,
     "_minTopics": "Ya no se usa: el juez reemplazo al conteo de topics.",
-    "_minFacts": "Cuenta facts que CONTESTAN la pregunta, no facts del mismo tema: el numero no es comparable con el de antes del port (era 5 contando por topic). Dos es el minimo real para una respuesta firmada de 350-550 palabras. Con uno solo paso una de dress code cuyo unico fact decia que no compres el pañuelo caro en la plaza, que no contesta si hay restricciones."
+    "_minFacts": "Cuenta facts que CONTESTAN la pregunta, no facts del mismo tema: el numero no es comparable con el de antes del port (era 5 contando por topic). Dos es el minimo real para una respuesta firmada de 350-550 palabras. Con uno solo paso una de dress code cuyo unico fact decia que no compres el pañuelo caro en la plaza, que no contesta si hay restricciones.",
+    "__minFacts": "Era 2, pensado para respuestas largas que el script ya no escribe. Con la forma decidida por pregunta, un fact que contesta alcanza. El filtro real es sel.contesta."
   },
   "links": {
     "enabled": false,
@@ -29,7 +30,7 @@
     "count": 10,
     "_": "Brave Search es la fuente por defecto. NO se entra a Quora: se le pregunta al indice de Brave, que ya tiene esas paginas indexadas. Quora bloquea a todos los bots en su robots.txt, asi que cualquier acceso automatico a quora.com esta descartado por diseño; el .txt manual (--file) queda como fuente alternativa.",
     "__": "UNA consulta por GRUPO de keywords, nunca una por keyword. El plan gratuito son ~1.000 consultas al mes: estos 8 grupos, corridos a diario, dan ~240.",
-    "queriesPorDia": 3,
+    "queriesPorDia": 4,
     "___": "Las consultas ROTAN: de la lista de cada sitio salen queriesPorDia por corrida, corriendo la ventana un lugar por dia. Se rota en vez de ampliar el gasto diario porque el plan gratuito de Brave son ~1.000 consultas al mes y buscar-reddit.mjs ya usa unas 300. Con 3 por sitio por dia son 9 diarias, unas 270 al mes, y el pozo tarda 6 dias en repetirse en vez de repetirse todos los dias. El problema nunca fue cuantas consultas se hacen, sino que fueran siempre las mismas: ocho fijas devuelven las mismas 80 preguntas y el ledger las agota."
   },
   "sites": [
@@ -59,7 +60,13 @@
         "site:quora.com how long does the colosseum and roman forum take",
         "site:quora.com colosseum tickets sold out what to do",
         "site:quora.com is the colosseum guided tour worth the money",
-        "site:quora.com colosseum roman forum palatine order to visit"
+        "site:quora.com colosseum roman forum palatine order to visit",
+        "site:quora.com colosseum night tour full moon evening",
+        "site:quora.com colosseum attic belvedere fifth level ticket",
+        "site:quora.com colosseum forum pass separate ticket palatine",
+        "site:quora.com colosseum wheelchair lift accessibility step free",
+        "site:quora.com colosseum free first sunday of the month",
+        "site:quora.com colosseum tour operator cancelled my booking refund"
       ]
     },
     {
@@ -86,7 +93,13 @@
         "site:quora.com st peters dome climb worth it stairs lift",
         "site:quora.com vatican with kids stroller wheelchair access",
         "site:quora.com vatican tickets sold out same day entry",
-        "site:quora.com papal audience how to get tickets wednesday"
+        "site:quora.com papal audience how to get tickets wednesday",
+        "site:quora.com vatican museums security line how long wait",
+        "site:quora.com st peters basilica free entry queue square",
+        "site:quora.com vatican early access tour worth it 8am",
+        "site:quora.com vatican museums free last sunday worth it",
+        "site:quora.com vatican small group vs private tour group size",
+        "site:quora.com vatican museums one way route sistine chapel exit"
       ]
     },
     {
@@ -120,7 +133,11 @@
         "site:quora.com rome tourist trap restaurant how to avoid",
         "site:quora.com how much does dinner cost in rome",
         "site:quora.com best neighbourhood to eat in rome trastevere testaccio",
-        "site:quora.com roman street food supplì trapizzino where"
+        "site:quora.com roman street food supplì trapizzino where",
+        "site:quora.com rome food tour worth the money price",
+        "site:quora.com trastevere food tour how much walking how long",
+        "site:quora.com rome food tour vegetarian gluten free options",
+        "site:quora.com rome evening food tour vs lunch which"
       ]
     }
   ]
