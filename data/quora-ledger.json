@@ -492,6 +492,18 @@
       "shingles": [],
       "generatedAt": "2026-09-04",
       "estado": "publicada"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-some-tips-for-avoiding-tourist-prices-when-dining-out-in-Rome-Italy-How-is-tourist-pricing-typically-defined",
+      "questionTitle": "What are some tips for avoiding tourist prices when dining out in Rome, Italy? How is 'tourist pricing' typically defined?",
+      "titleNormalized": "what are some tips for avoiding tourist prices when dining out in rome italy how is tourist pricing typically defined",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "is-trastevere-food-tour-worth-it"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-06",
+      "estado": "entregado"
     }
   ]
 }
