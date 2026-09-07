@@ -1,53 +1,63 @@
 [
   {
-    "slug": "best-colosseum-tour-under-eur50",
-    "fact": "A guide turns piles of stone into stories — how 50,000 spectators were seated by social class, how the hypogeum's 80 elevators launched animals through trapdoors, why the Forum was the beating heart of an empire.",
-    "reason": "cifra \"50,000\" sin unidad ni escala"
-  },
-  {
-    "slug": "colosseum-day-of-logistics-guide",
-    "fact": "This scenario is most likely in 20+ person groups, especially when crossing the security/metal-detector checkpoint where the group naturally fragments.",
+    "slug": "bathroom-breaks-colosseum-underground-combo-tours",
+    "fact": "That 15–20 minute walk is your pre-tour buffer.",
     "reason": "apertura no autonoma"
   },
   {
-    "slug": "colosseum-free-audio-guide-rick-steves",
-    "fact": "That reviewer scored the visit two stars — the complaint was elsewhere — while describing three hours of self-guided visit for €18 against a £217 tour they found rushed",
+    "slug": "bathroom-breaks-colosseum-underground-combo-tours",
+    "fact": "That 1h45m gap is unplanned dead time for the visitor — but it is also a usable bathroom-and-water window if you know it exists.",
     "reason": "apertura no autonoma"
   },
   {
-    "slug": "colosseum-real-tour-vs-street-scalper",
-    "fact": "Everything sold on the sidewalk in the last 90 seconds exists in a market that averages 1.63 on Trustpilot.",
-    "reason": "cifra \"1.63\" sin unidad ni escala"
+    "slug": "colosseum-skip-the-line-timed-entry-explained",
+    "fact": "A visitor without timed entry faces those queues plus an additional hour at the ticket window.",
+    "reason": "cifra \"an hour\" no esta en la frase"
+  },
+  {
+    "slug": "colosseum-tours-and-tickets-how-to-book-and-fix-common-problems",
+    "fact": "This can range from the standard 24-hour ticket to Full Experience options, Arena or Underground access, guided tours, or combined tickets that include the Roman Forum and Palatine Hill.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "colosseum-underground-tickets-sold-out-supply-reality",
+    "fact": "That is the band — 20 to 30 minutes — enforced by the timed-slot system.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "colosseum-underground-tickets-sold-out-supply-reality",
+    "fact": "That is a 105-minute gap filled by the Forum and Palatine.",
+    "reason": "apertura no autonoma"
   },
   {
     "slug": "colosseum-underground-vs-arena-floor",
-    "fact": "You are standing at the center of an ellipse that once held 50,000 spectators, looking up at the terraces from below instead of looking down from above.",
+    "fact": "You are standing at the center of an ellipse that once held 50,000 spectators, looking up at the terraces from below instead of looking down from above",
     "reason": "cifra \"50,000\" sin unidad ni escala"
   },
   {
-    "slug": "colosseum-vs-vatican-which-to-visit-first",
-    "fact": "This accounts for the visit itself running slightly over, the transfer (20–40 minutes depending on transport), lunch, security at the second site, and a 15-minute buffer for the unexpected.",
+    "slug": "colosseum-underground-worth-it-what-ratings-miss",
+    "fact": "That makes the platform average — the number most travelers use to choose between the €32 official guided underground ticket and a package costing several times more — the wrong instrument for this particular decision.",
     "reason": "apertura no autonoma"
   },
   {
     "slug": "complete-guide-to-visiting-the-roman-colosseum-step-by-step",
-    "fact": "Yes, the Colosseum uses timed entry with a maximum of 3,000 visitors inside at once.",
+    "fact": "the Colosseum uses timed entry with a maximum of 3,000 visitors inside at once.",
     "reason": "cifra \"3,000\" sin unidad ni escala"
   },
   {
     "slug": "gladiators-beasts-and-executions-what-really-happened-in-the-colosseum-arena",
-    "fact": "With up to 50,000 spectators seated in strict order—from emperor to senators, soldiers to common citizens, women, and even slaves—the amphitheater mirrored Rome's rigid social pyramid.",
+    "fact": "With up to 50,000 spectators seated in strict order—from emperor to senators, soldiers to common citizens, women, and even slaves—the amphitheater mirrored Rome’s rigid social pyramid.",
     "reason": "cifra \"50,000\" sin unidad ni escala"
   },
   {
     "slug": "private-colosseum-tour",
-    "fact": "Standing on the arena, you’ll see the Colosseum from their perspective, surrounded by the tiers of stone where up to 50,000 spectators once cheered.",
+    "fact": "Standing on the arena, you'll see the Colosseum from their perspective, surrounded by the tiers of stone where up to 50,000 spectators once cheered.",
     "reason": "cifra \"50,000\" sin unidad ni escala"
   },
   {
-    "slug": "skip-the-colosseum-roman-tour-line",
-    "fact": "This is the sweet spot for value: a significant experience upgrade for roughly €25–€50 more than the official ticket.",
-    "reason": "apertura no autonoma"
+    "slug": "private-colosseum-tour-vs-group-tour-worth-it",
+    "fact": "GetYourGuide-listed tours average 4.94 across 581 items; Trustpilot reviews of operator websites average 1.63 across 424 items.",
+    "reason": "escala no textual"
   },
   {
     "slug": "why-was-the-colosseum-built-the-story-guides-don-t-tell-you",

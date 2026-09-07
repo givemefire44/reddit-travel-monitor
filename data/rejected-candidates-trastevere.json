@@ -1,13 +1,28 @@
 [
   {
     "slug": "best-trastevere-food-tours",
-    "fact": "After that, look at how many tastings you get (a good evening tour runs six to seven stops and around ten tastings), the format (street-food grazing versus a sit-down pasta course), the group size (caps typically run 12 to 14), and the timing — most tours are evening, which suits Rome, since Romans themselves rarely sit down to dinner before 8 p.m.",
-    "reason": "cifra \"8 p.m.\" no esta en la frase"
+    "fact": "Daytime tours are the other option: earlier hours, less alcohol, and a lighter format that suits families and anyone who'd rather not be eating at 10 p.m.",
+    "reason": "cifra \"10 p.m.\" no esta en la frase"
   },
   {
-    "slug": "trastevere-vs-rome-food-neighborhoods",
-    "fact": "Romans eat dinner between about 8 and 10:30 p.m.",
-    "reason": "cifra \"10:30 p.m.\" no esta en la frase"
+    "slug": "trastevere-food-tour-reviews-across-platforms",
+    "fact": "Three platforms rate Trastevere food tours almost identically: GetYourGuide 4.99, Google Maps 4.48, TripAdvisor 4.43.",
+    "reason": "cifra \"4.99\" sin unidad ni escala"
+  },
+  {
+    "slug": "trastevere-restaurant-recommendations-same-five",
+    "fact": "Of 1,061 forum, question and video discussions about eating in Trastevere, only 95 name a specific restaurant.",
+    "reason": "cifra \"1,061\" sin unidad ni escala"
+  },
+  {
+    "slug": "trastevere-seasoning-complaints-salt-bland",
+    "fact": "This article uses 5,020 rated reviews of three Trastevere restaurants verified by address and trading status in September 2026 — Tonnarello, Da Enzo al 29 and Nannarella.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "trastevere-twilight-food-tour-format",
+    "fact": "It's an evening format because Romans rarely eat dinner before 8 p.m.",
+    "reason": "cifra \"8 p.m.\" no esta en la frase"
   },
   {
     "slug": "which-trastevere-food-tour-fits-you",
