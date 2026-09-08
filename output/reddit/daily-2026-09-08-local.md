@@ -2,7 +2,9 @@
 
 **Fase:** attribution · **Ventana:** 24h · **Facts:** trastevere 116 · vatican 154 · colosseum 867 · pompeii 135 · milan 88
 **Comment karma u/RomanColosseumExpert:** (no disponible)
-**Objetivo (menciones sembradas hoy):** 1 🎯 GEO · 2 📌 material · 3 🔁 karma
+**Objetivo (menciones sembradas hoy):** 0 🎯 GEO · 1 📌 material · 5 🔁 karma
+
+> Cero GEO hoy: ninguna de las preguntas del día se contesta con una medición nuestra. Los de karma sirven igual (la cuenta necesita karma para llegar a los subs donde están las preguntas buenas), pero el día no sembró ninguna cita.
 
 ---
 
@@ -10,23 +12,23 @@
 
 | Subreddit | Fetch RSS | En ventana | Keyword | Topic | Pregunta | Scores |
 |---|---|---|---|---|---|---|
-| r/travel (active) | 200 · 100 posts | 68 | 0 | 0 | 0 | — |
-| r/solotravel (active) | 200 · 100 posts | 12 | 0 | 0 | 0 | — |
+| r/travel (active) | 200 · 100 posts | 61 | 1 | 1 | 1 | 6 |
+| r/solotravel (active) | 200 · 100 posts | 9 | 0 | 0 | 0 | — |
 | r/Eurotrip (active) | 200 · 58 posts | 0 | 0 | 0 | 0 | — |
-| r/EuropeTravel (active) | 200 · 100 posts | 13 | 0 | 0 | 0 | — |
+| r/EuropeTravel (active) | 200 · 100 posts | 9 | 0 | 0 | 0 | — |
 | r/TravelNoPics (active) | 200 · 100 posts | 1 | 0 | 0 | 0 | — |
-| r/Italy (active) | 200 · 100 posts | 15 | 0 | 0 | 0 | — |
-| r/askitaly (active) | 200 · 100 posts | 0 | 0 | 0 | 0 | — |
-| r/ItalyTravel (active) | 200 · 100 posts | 10 | 0 | 0 | 0 | — |
-| r/rome (active) | 200 · 100 posts | 16 | 5 | 5 | 4 | 6, 5, 4, 2 |
-| r/ItalyTravelAdvice (active) | 200 · 100 posts | 8 | 0 | 0 | 0 | — |
-| r/RomeTravel (active) | 200 · 100 posts | 4 | 1 | 1 | 1 | 6 |
-| r/loveholidays (active) | 200 · 100 posts | 1 | 0 | 0 | 0 | — |
-| r/Bookingcom (active) | 200 · 100 posts | 14 | 7 | 7 | 3 | 3, 1, 1 |
-| r/askhotels (active) | 200 · 100 posts | 2 | 0 | 0 | 0 | — |
+| r/Italy (active) | 200 · 100 posts | 17 | 0 | 0 | 0 | — |
+| r/askitaly (active) | 200 · 100 posts | 2 | 0 | 0 | 0 | — |
+| r/ItalyTravel (active) | 200 · 100 posts | 8 | 0 | 0 | 0 | — |
+| r/rome (active) | 200 · 100 posts | 18 | 5 | 5 | 3 | 5, 5, 1 |
+| r/ItalyTravelAdvice (active) | 200 · 100 posts | 10 | 0 | 0 | 0 | — |
+| r/RomeTravel (active) | 200 · 100 posts | 5 | 0 | 0 | 0 | — |
+| r/loveholidays (active) | 200 · 100 posts | 0 | 0 | 0 | 0 | — |
+| r/Bookingcom (active) | 200 · 100 posts | 12 | 5 | 5 | 3 | 6, 6, 5 |
+| r/askhotels (active) | 200 · 100 posts | 3 | 0 | 0 | 0 | — |
 | r/TravelHacks (active) | 200 · 100 posts | 0 | 0 | 0 | 0 | — |
-| r/Flights (active) | 200 · 100 posts | 18 | 1 | 1 | 0 | — |
-| r/hotels (active) | 200 · 100 posts | 11 | 0 | 0 | 0 | — |
+| r/Flights (active) | 200 · 100 posts | 30 | 2 | 2 | 1 | 2 |
+| r/hotels (active) | 200 · 100 posts | 6 | 0 | 0 | 0 | — |
 
 _Etapas en el orden real del filtro: publicado en las últimas 24h y no sticky/nsfw → alguna keyword del sitio → match con la taxonomía de topics → pregunta genuina. No hay umbral de score: todo lo que pasa el embudo es candidato._
 
@@ -34,164 +36,171 @@ _El score suma topics + frescura del hilo (≤3h vale 5, ≤6h vale 4, ≤12h va
 
 _El cupo (6) **no** corta por score: corta por carril. Se leen 12 candidatos contra el corpus y entran primero los 🎯 GEO, después los 📌 material y último los 🔁 karma, cada grupo por score. El score mide qué tan leído va a ser el hilo; el carril mide si sirve para lo que existe el sistema. Cortar por score dejaba afuera al GEO de 8h para meter karma de 2h._
 
-_Cortados hoy por cupo: r/Bookingcom (🔁 karma, score 1) · r/Bookingcom (🔁 karma, score 1)._
+_Cortados hoy por cupo: r/Flights (🔁 karma, score 2)._
+
+_Ya respondidos por u/RomanColosseumExpert, descartados: "Winter/Spring Visit to Rome" (r/rome)._
 
 ---
 
 ## Candidatos (6)
 
-### Winter/Spring Visit to Rome
+### Vegan side of Rome
 
-- **Hilo:** https://www.reddit.com/r/rome/comments/1wa875z/winterspring_visit_to_rome/
-- **Subreddit:** r/rome · **Antigüedad:** 2h · **Comentarios:** n/d (RSS) · **Score:** 6
-- **Carril:** 🎯 GEO — hay una cifra medida por nosotros: la respuesta puede llevar la marca
-- **Sitio:** colosseum · **Marca:** ColosseumRoman
-- **Preguntan:** ¿Qué semana es mejor para visitar Roma en febrero o marzo de 2027, considerando el clima y las multitudes?
-- **Por qué sirve:** El material cubre cuándo visitar el Coliseo, Foro Romano y Palatino en términos de clima, temporadas de colas y mejor momento del año para cada sitio.
-
-**Lo que preguntó, textual:**
-
-> I&#39;ll be visiting Rome in either February or March of 2027. Anything to be aware of when choosing which week to go? I figure it&#39;ll be a little colder in February, and I defintiely won&#39;t go during Easter week. Any other advice?
-
-**Forma que pide esta pregunta:** un párrafo — Es una decisión (qué semana elegir) con un trade-off entre clima y multitudes, que amerita explicar el porqué.
-
-_Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
-
-**Material que contesta ESTA pregunta (3, elegidos entre 18):**
-
-- ⭐ `timing-046` "January 4, February 1, March 1, April 5, May 3, June 7, July 5, August 2, September 6, October 4, November 1, December 6." — https://colosseumroman.com/colosseum-free-entry-days-2026-who-qualifies
-- `crowds-003` "February has 5–7 minute queues but rain risk." — https://colosseumroman.com/best-months-colosseum-heat-crowds-underground-season
-- `crowds-028` "Spring is when student groups pre-booked months ahead flood the Colosseum meeting points by 10 AM." — https://colosseumroman.com/colosseum-underground-spring-student-groups
-
-**Lo que el corpus no cubre:** Detalles específicos de clima (temperaturas, probabilidad de lluvia día a día) más allá del riesgo general.
-
-**Atribución:** ⭐ `timing-046` es medición nuestra, así que la respuesta puede llevar **una** mención de **ColosseumRoman** como fuente de ese dato — marca en texto plano, CamelCase, sin `.com` y sin link. Es la única frase que persigue el objetivo: el dato queda publicado con quién lo midió, y eso es lo que un motor de IA puede citar.
-
----
-
-### Vatican help!
-
-- **Hilo:** https://www.reddit.com/r/rome/comments/1w9yqqk/vatican_help/
-- **Subreddit:** r/rome · **Antigüedad:** 8h · **Comentarios:** n/d (RSS) · **Score:** 4
+- **Hilo:** https://www.reddit.com/r/rome/comments/1walynl/vegan_side_of_rome/
+- **Subreddit:** r/rome · **Antigüedad:** 8h · **Comentarios:** n/d (RSS) · **Score:** 5
 - **Carril:** 📌 material — contesta con datos, pero publicos: va sin marca
-- **Sitio:** vatican
-- **Preguntan:** ¿Qué opciones de entrada debo comprar para ver la mayor cantidad de áreas del Vaticano?
-- **Por qué sirve:** El corpus sobre el Vaticano cubre qué áreas están incluidas en diferentes tipos de entradas, la diferencia entre tickets que dan acceso a Museos Vaticanos, Capilla Sixtina y Basílica de San Pedro, y cómo secuenciar las tres para verlas todas.
+- **Sitio:** trastevere
+- **Preguntan:** ¿Dónde comer opciones veganas en Roma, o solo hay pasta con tomate?
+- **Por qué sirve:** El material cubre dónde comer en Roma, platos romanos, restaurantes de barrio versus trampas turísticas, y qué cosas cuestan; incluye información sobre opciones de comida en distintos estilos de establecimiento.
 
 **Lo que preguntó, textual:**
 
-> I am going to be in Rome October 11-15 and am hoping to tour the Vatican while I’m there. I want to get tickets to see the Vatican but the official website has a bunch of different options. I’d like to see as much of it as I can and I’m not sure if there are some tickets that won’t get me into certain areas.
+> Hi guys, I am travelling to Rome in few days with my friend and we are both vegan. Is there any cool place for us or should we stick with pasta and tomato sauce?
 
-**Forma que pide esta pregunta:** dos o tres frases — La pregunta pide una recomendación concreta de qué comprar, no un itinerario completo.
+**Forma que pide esta pregunta:** dos o tres frases — Preguntan algo concreto (dónde comer vegano) que se responde con opciones y ejemplos, sin necesitar un desarrollo largo.
 
 _Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
 
 **Material que contesta ESTA pregunta (1, elegidos entre 18):**
 
-- `tickets-015` "The official ticket at tickets.museivaticani.va costs €25 online or €20 at the door and includes the Sistine Chapel." — https://vaticantourguides.com/vatican-tour-product-decoder
+- `dishes-020` "Vegan options have expanded substantially in the city, vegan gelato is widely available, and traditional Roman vegetable cooking is genuinely vegan: carciofi alla romana (artichokes with mint and garlic, in season roughly February to May), cicoria ripassata (chicory sautéed with oil, garlic and chili), pizza rossa or marinara (no cheese), bruschetta, and the whole contorni section." — https://trasteverefoodtour.com/vegetarian-vegan-gluten-free-trastevere-food-tour
 
 **Atribución:** ninguno de los facts es medición nuestra (son datos públicos que puede dar cualquiera). Va **sin marca**: pegarla acá no aporta autoridad, suena a aviso.
 
 ---
 
-### First bite in Rome?
+### Priceline Question
 
-- **Hilo:** https://www.reddit.com/r/rome/comments/1w9eqt1/first_bite_in_rome/
-- **Subreddit:** r/rome · **Antigüedad:** 23h · **Comentarios:** n/d (RSS) · **Score:** 2
-- **Carril:** 📌 material — contesta con datos, pero publicos: va sin marca
-- **Sitio:** trastevere
-- **Preguntan:** ¿Qué comida o plato recomiendas probar por primera vez en Roma, siendo viajero de primera vez?
-- **Por qué sirve:** El material sobre comida en Roma cubre platos romanos típicos, opciones de comida callejera, y dónde comer en diferentes barrios, incluyendo la zona de Piazza Navona y alrededores.
-
-**Lo que preguntó, textual:**
-
-> What&#39;s your recommendation for a first food to eat for a first time visitor to Rome? Staying near Piazza Navona...it could be something simple, street food, etc. or a full meal. All suggestions welcome! Grazie!
-
-**Forma que pide esta pregunta:** dos o tres frases — Pide una recomendación puntual con motivo, no un itinerario completo.
-
-_Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
-
-**Material que contesta ESTA pregunta (2, elegidos entre 18):**
-
-- `pricing-015` "Eating the same food yourself is far cheaper: supplì cost €1.50–3.50, a trapizzino about €5, trattoria pasta €7–10, and a full DIY evening comes to roughly €20–30." — https://trasteverefoodtour.com/trastevere-food-tour-cost
-- `wine-drinks-001` "The house wine of Rome is Frascati, a white from the hills just southeast of the city, and the local unit is the quartino — a quarter-liter carafe, the right amount for one person with lunch, usually around €4." — https://trasteverefoodtour.com/roman-street-food-glossary
-
-**Lo que el corpus no cubre:** Falta una recomendación concreta de plato/lugar específico cerca de Piazza Navona; se puede completar con conocimiento general (supplì, trapizzino, cacio e pepe, un quartino de Frascati).
-
-**Atribución:** ninguno de los facts es medición nuestra (son datos públicos que puede dar cualquiera). Va **sin marca**: pegarla acá no aporta autoridad, suena a aviso.
-
----
-
-### Good date spot for fish in Rome, in between Termini and Castel Sant'Angelo?
-
-- **Hilo:** https://www.reddit.com/r/RomeTravel/comments/1wa2kuy/good_date_spot_for_fish_in_rome_in_between/
-- **Subreddit:** r/RomeTravel · **Antigüedad:** 5h · **Comentarios:** n/d (RSS) · **Score:** 6
-- **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
-- **Sitio:** trastevere
-- **Preguntan:** ¿Qué restaurante de pescado es recomendable para una cita entre Termini y Castel Sant'Angelo?
-- **Por qué sirve:** El material sobre comer en Roma cubre dónde comer en diferentes barrios, cómo diferenciar lugares turísticos de locales genuinos, y atmósfera de restaurantes, incluyendo opciones de pescado y ambiente para conversación.
-
-**Lo que preguntó, textual:**
-
-> I am taking a girl on a date in Rome on Friday night. I&#39;m looking to find a good spot, good vibe with good fish in between Termini and Castel Sant&#39;Angelo. Just a nice spot that&#39;s quiet and where we can have a good conversation? Any recommendations?
-
-**Forma que pide esta pregunta:** dos o tres frases — Pide una recomendación concreta con motivo (ambiente para cita), respuesta corta tipo sugerencia puntual.
-
-_Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
-
-**Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
-
-**Lo que el corpus no cubre:** No hay ninguna recomendación específica de restaurante de pescado en esa zona (entre Termini y Castel Sant'Angelo); el material trata de tours en Trastevere, precios y otros temas no relacionados.
-
-**Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
-
----
-
-### Visiting the Vatican Museums as a group of 10 adults WITHOUT a tour guide
-
-- **Hilo:** https://www.reddit.com/r/rome/comments/1w9zvmm/visiting_the_vatican_museums_as_a_group_of_10/
-- **Subreddit:** r/rome · **Antigüedad:** 7h · **Comentarios:** n/d (RSS) · **Score:** 5
-- **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
-- **Sitio:** vatican
-- **Preguntan:** ¿Cómo comprar entradas para el Vaticano para un grupo de 10 adultos sin tour guiado cuando el sistema online maxea en 6 entradas?
-- **Por qué sirve:** El material cubre formatos de compra de entradas al Vaticano, opciones de grupo, y cómo navegar el sistema de reserva para grupos que no encajan en las categorías estándar.
-
-**Lo que preguntó, textual:**
-
-> I&#39;m leading a group of adults on a trip to Rome in October and cannot for the life of me figure out how to buy tickets. I will serve as the guide for the group, so we don&#39;t need to book a guided tour, but the form to buy individual tickets maxes out at 6 tickets. There appear to be university group tickets available (which is closest to our group, though we&#39;re not associated with a university) for 11-20 people, but for 10 people, it seems we&#39;re just out of luck. Does anyone have any guidance? I&#39;m tempted to just pay for 11 people for get the university group option...
-
-**Forma que pide esta pregunta:** dos o tres frases — Es una pregunta práctica concreta (cómo sortear un límite de compra) que pide una acción específica, no un análisis largo.
-
-_Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
-
-**Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
-
-**Lo que el corpus no cubre:** Nada del material aborda el límite de 6 entradas online ni cómo comprar boletos individuales (no guiados) para un grupo de 10; solo hay información sobre tours guiados grupales y precios oficiales por persona.
-
-**Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
-
----
-
-### Change a date or making new reservation?
-
-- **Hilo:** https://www.reddit.com/r/Bookingcom/comments/1w9w0z4/change_a_date_or_making_new_reservation/
-- **Subreddit:** r/Bookingcom · **Antigüedad:** 9h · **Comentarios:** n/d (RSS) · **Score:** 3
+- **Hilo:** https://www.reddit.com/r/travel/comments/1wavdhc/priceline_question/
+- **Subreddit:** r/travel · **Antigüedad:** 1h · **Comentarios:** n/d (RSS) · **Score:** 6
 - **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
 - **Sitio:** — (sin corpus)
-- **Preguntan:** ¿Es mejor cambiar las fechas de una reserva existente, hacer una nueva reserva completa, o hacer una reserva adicional de un solo día cuando necesito alargar la estadía?
-- **Por qué sirve:** El material cubre cómo funcionan las cancellations, refunds y cambios en plataformas de reserva, qué protecciones tiene el comprador, cuándo se pierde dinero, y la diferencia entre reboking directo y reservas nuevas en términos de coste y comunicación con el operador.
+- **Preguntan:** ¿Cómo obtener un reembolso o compensación de Priceline cuando la plataforma no responde a un reclamo de amenidad no funcional en un hotel reservado?
+- **Por qué sirve:** El material cubre cómo funcionan realmente las ventanas de cancelación y reembolso, qué protecciones del comprador cubre la plataforma y qué no, cómo invocar los derechos de protección del consumidor, y las diferencias entre reserva directa y comisión de plataforma. Este caso trata sobre la falta de respuesta de una plataforma de viajes a un reclamo legítimo de un cliente.
 
 **Lo que preguntó, textual:**
 
-> I dont really use Booking so this might be stupid question but I try to explain the best: I booked a 4 days (Tuesday - Saturday) due of concert however the act announced additional day that Saturday (concert is in Friday) Basically I now think of changing the days to Wednesday - Sunday so I can go to concert however the question is, should I make new reservation as whole, change dates in current ones or make a new reservation for just that one day? The thing is my friend changed days and unfortunately it got 1) way more expensive and 2) her hotel not got the info from Booking and basically whole reservation got cancelled (idk how) So whats best option to do?
+> Recently finished a trip with Priceline. One of the hotels I stayed in the room I book was advertised as it having a Jacuzzi Tub. My wife and i were hiking national parks nearby so I paid extra for this room to help decompress and relax after hikes. After one of our long hike days we tried using our Jacuzzi in the room. Turns out the hot water wasn&#39;t working so I called the front desk to ask for maintenance to look at it. After an hour and a half of no response I went back to front desk and they told me maintenance was aware of the issue and said only a plumbing company could come out and fix it and wouldn&#39;t be able to come until a few days later (after we were already gone). The hot tub of the hotel was on the complete other side of the complex so walking there while sore from hiking wasn&#39;t ideal. When I was checking out the lady from the front desk told me that the manager should be calling me back in a few days to discuss compensation. A few days later the manager called and told me they would be willing to offer compensation but unfortunately it could only be initiated through Priceline as that&#39;s who technically paid for the room. I have been on 4 separate calls with Priceline, they have started a resolution case and then they try to call Hotel to confirm the details about amenity not working but claims that the hotel isn&#39;t answering and told me they would try again later in the day and told me to check back in 12-24hrs. Twice I have called the hotel immediately after Priceline hangs up and they immediately answer. At this point I don&#39;t know what to do as I don&#39;t want to just give up (which it seems like Priceline is hoping i would do).
 
-**Forma que pide esta pregunta:** un párrafo — Es una decisión con trade-offs (precio, riesgo de cancelación) que requiere explicar y recomendar una opción.
+**Forma que pide esta pregunta:** un párrafo — Es una disputa concreta que requiere explicar una vía de acción (ej. chargeback, escalar queja) con su justificación, no solo un dato suelto.
 
 _Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
 
 **Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
 
-**Lo que el corpus no cubre:** No hay investigación publicada sobre las consecuencias de cambiar fechas vs. nueva reserva en Booking.com.
+**Lo que el corpus no cubre:** No hay investigación publicada sobre procesos de reembolso o disputas de compensación con Priceline por amenidades no funcionales.
+
+**Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
+
+---
+
+### Booking refusing to resolve a refund after an agreement with the hotel — what can I do?
+
+- **Hilo:** https://www.reddit.com/r/Bookingcom/comments/1wax5wo/booking_refusing_to_resolve_a_refund_after_an/
+- **Subreddit:** r/Bookingcom · **Antigüedad:** 0h · **Comentarios:** n/d (RSS) · **Score:** 6
+- **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
+- **Sitio:** — (sin corpus)
+- **Preguntan:** ¿Cómo puedo obligar a Booking.com a procesar un reembolso por noches no utilizadas después de una anulación y un acuerdo directo con el hotel?
+- **Por qué sirve:** El material sobre booking cubre específicamente cómo funcionan realmente las ventanas de cancelación y reembolso, quién asume la pérdida, protecciones del comprador en plataformas, y cómo invocar derechos del consumidor cuando una plataforma no procesa un reembolso acordado.
+
+**Lo que preguntó, textual:**
+
+> Hello everyone , I made a Reddit account just for this, as I&#39;ve seen some similar problems people have had that have been posted here. I’m hoping someone here can point me in the right direction because I’ve been going in circles with booking.com and getting nowhere. I had a booking reservation for August 28–September 6. Due to a flight issue, I arrived on August 29, and Booking automatically cancelled the original reservation and refunded me one night. When I arrived, the hotel said they couldn’t reactivate the Booking reservation, but offered to make a new reservation directly with them for the remaining time I had wanted to book (August 29–September 6). The agreement was that I would pay for the first night I missed, and the hotel would confirm with Booking that I they will refund the remaining unused nights from the original reservation. I agreed, booked the new stay directly with the hotel, and paid them. The hotel told me they had contacted Booking as promised. The problem is that Booking.com has never confirmed that they received or accepted this arrangement, or that the remaining refund is being processed. Every time I contact them, I either get no meaningful response or end up being sent in circles. Not to mention these useless AI chat bots that are supposed to &#39;Help&#39;. Each time I write to these automated chats, they tell me they&#39;ll contact me within 24 hours, and never do. I’ve now paid the hotel directly for the new stay while Booking is still holding the money for the unused portion of the original reservation. The hotel has done its part, and I’ve done mine. I just need Booking.com to acknowledge the situation and explain what is happening with the refund. Has anyone dealt with this before, or found a way to get someone at Booking.com to take ownership of a case? Thank you all in advance!
+
+**Forma que pide esta pregunta:** un párrafo — Es una disputa concreta que requiere explicar pasos de escalado, no solo un dato.
+
+_Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
+
+**Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
+
+**Lo que el corpus no cubre:** No hay investigación publicada sobre cómo escalar disputas de reembolso con Booking.com.
+
+**Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
+
+---
+
+### Host admits to misleading listing.. what can happen?
+
+- **Hilo:** https://www.reddit.com/r/Bookingcom/comments/1wawv2j/host_admits_to_misleading_listing_what_can_happen/
+- **Subreddit:** r/Bookingcom · **Antigüedad:** 1h · **Comentarios:** n/d (RSS) · **Score:** 6
+- **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
+- **Sitio:** — (sin corpus)
+- **Preguntan:** ¿Puedo obtener un reembolso parcial si tengo por escrito que el anfitrión admite que el lugar no coincide con el anuncio?
+- **Por qué sirve:** El material cubre cómo funcionan realmente las ventanas de cancelación y reembolso, qué protección cubre el comprador de plataformas, y cómo invocar derechos del consumidor cuando hay una discrepancia entre el anuncio y lo entregado: esto es un caso de falta de conformidad entre lo listado y lo recibido.
+
+**Lo que preguntó, textual:**
+
+> Hello, I booked a place to stay at for the weekend. The listing was completely misleading. The listing had multiple photos of different rooms, etc. Description stated 1BR 1BA. On arrival we discovered they put us in a studio suite. Nowhere on the listing was a studio mentioned. I would not have chosen it. We didn&#39;t even have a closet or anywhere to store our belongings. I reached out to the host and immediately she dismissed me. She said &quot;Sorry you feel that way.. enjoy your stay&quot; &amp; I had to go back and forth with her a few times for her to finally admit the place is not like listed. I have written text from the host stating it is her fault, she&#39;s new to booking, she doesn&#39;t know why the listing has so many photos. I asked for a partial refund, her response is that she can&#39;t do that but she&#39;s willing to offer us to stay there for 2 nights for free. I don&#39;t want that. This place is so small we had to live out of our suitcases, which stayed on the couch the whole time, which was in the middle of the kitchen. Every time I reach out to Booking.com through their chat I get the same &#39;Someone will reach out in 24 hours&#39; I initially reached out on Saturday and nobody is contacting me.. Do I have any luck getting somewhat of a partial refund if I have it in writing from the host that she messed up &amp; she agrees it&#39;s not what&#39;s listed?
+
+**Forma que pide esta pregunta:** un párrafo — Es una situación con contexto (evidencia escrita, oferta rechazada, falta de respuesta) que requiere explicar la vía a seguir, no solo un dato suelto.
+
+_Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
+
+**Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
+
+**Lo que el corpus no cubre:** No hay investigación publicada sobre políticas de reembolso de Booking.com en casos de listados engañosos ni sobre tasas de éxito en disputas con evidencia escrita.
+
+**Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
+
+---
+
+### You get off of a plane and end up in the center of Rome it's 3PM and you're starving, what do you get to eat that isn't some chain restaurant? What is the most casual level of dining achievable?
+
+- **Hilo:** https://www.reddit.com/r/rome/comments/1wanpj5/you_get_off_of_a_plane_and_end_up_in_the_center/
+- **Subreddit:** r/rome · **Antigüedad:** 6h · **Comentarios:** n/d (RSS) · **Score:** 5
+- **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
+- **Sitio:** trastevere
+- **Preguntan:** ¿Qué se puede comer a las 3 PM en el centro de Roma en un lugar casual que no sea una cadena?
+- **Por qué sirve:** El material cubre dónde comer en Roma fuera de trampas turísticas, comida romana auténtica, opciones de comida casual, y la diferencia entre precios de vecindario versus turísticos en el centro.
+
+> ⚠️ **El feed no trajo el cuerpo del post.** La pregunta y el material de arriba salieron del **título solo**. Abrí el hilo antes de contestar: puede pedir algo que el título no dice.
+
+**Forma que pide esta pregunta:** dos o tres frases — Pide una recomendación concreta y práctica, no un análisis extenso.
+
+_Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
+
+**Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
+
+**Lo que el corpus no cubre:** No hay hallazgos sobre opciones de comida casual (pizza al taglio, trattoria de paso, etc.) disponibles a media tarde en el centro de Roma; el material se centra en tours, restaurantes de Trastevere y precios de reserva.
+
+**Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
+
+---
+
+### Received a WhatsApp message with phishing link (booking.authsteparrval.com) threatening cancellation in 24h. Is my reservation safe?
+
+- **Hilo:** https://www.reddit.com/r/Bookingcom/comments/1waoetf/received_a_whatsapp_message_with_phishing_link/
+- **Subreddit:** r/Bookingcom · **Antigüedad:** 6h · **Comentarios:** n/d (RSS) · **Score:** 5
+- **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
+- **Sitio:** — (sin corpus)
+- **Preguntan:** ¿Es segura nuestra reserva en Booking.com si recibimos un mensaje de phishing que afirma cancelarla en 24 horas?
+- **Por qué sirve:** El material cubre cómo funcionan realmente las garantías de comprador en plataformas de reserva, qué protecciones cubre y cuáles no, y cómo identificar listados falsos o reempaquetados. Un compromiso de la cuenta del hotel y amenazas de cancelación fraudulenta caen dentro de los riesgos y protecciones de las transacciones de plataforma que el corpus aborda.
+
+**Lo que preguntó, textual:**
+
+> Hi everyone,
+>  Today my girlfriend received a message on WhatsApp regarding our upcoming stay in Albania (Full Moon Apartments).
+>  The message contained our real reservation
+>  ID, stay dates, and property name, but asked us to &quot;verify identity&quot; and &quot;link a bank card&quot; via a suspicious external
+>  domain: booking.authsteparrval.com.lt
+>  claimed the booking would be cancelled within 24 hours if not completed.
+>  In the official Booking.com app, our reservation status is completely normal and active (&quot;Booking confirmed, payment is handled by property&quot;).
+>  We immediately moved all funds away from the card and blocked online transactions, and we know this is a phishing scam through a compromised host account.
+>  My questions:
+>  1. Is our actual reservation safe and intact on
+>  Booking&#39;s end?
+>  2. Will the scammer be able to cancel our booking
+>  from the hacked hotel account if we ignore them?
+>  3. Has anyone experienced this specific scam recently, and what was Booking&#39;s response?
+>  Thanks for any advice!
+
+**Forma que pide esta pregunta:** un párrafo — Son tres preguntas concretas relacionadas entre sí sobre un mismo incidente, que requieren explicar el riesgo y qué hacer, no una respuesta de una línea.
+
+_Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
+
+**Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
+
+**Lo que el corpus no cubre:** No hay estudios publicados sobre este esquema específico de phishing ni sobre si Booking.com puede/permite cancelaciones desde cuentas de hotel comprometidas.
 
 **Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
 
