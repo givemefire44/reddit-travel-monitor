@@ -504,6 +504,58 @@
       "shingles": [],
       "generatedAt": "2026-09-06",
       "estado": "publicada"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-restaurants-can-you-recommend-in-the-Trastevere-area-of-Rome-Any-top-3-favourites-to-advise",
+      "questionTitle": "What restaurants can you recommend in the Trastevere area of Rome? Any top 3 favourites to advise?",
+      "titleNormalized": "what restaurants can you recommend in the trastevere area of rome any top 3 favourites to advise",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "trastevere-restaurant-recommendations-same-five",
+        "trastevere-hidden-gem-authentic-what-it-means"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-08",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-some-decent-restaurants-in-Rome-Italy-that-wont-rip-you-off-with-tourist-traps-and-overpriced-food-wine",
+      "questionTitle": "What are some decent restaurants in Rome, Italy that won't rip you off with tourist traps and overpriced food/wine?",
+      "titleNormalized": "what are some decent restaurants in rome italy that won t rip you off with tourist traps and overpriced food wine",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "trastevere-hidden-gem-authentic-what-it-means",
+        "trastevere-tourist-traps-detection"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-08",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-strict-is-the-Vatican-s-dress-code",
+      "questionTitle": "How strict is the Vatican’s dress code?",
+      "titleNormalized": "how strict is the vatican s dress code",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-practical-experience"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-08",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Where-in-Rome-Italy-is-there-excellent-food-thats-not-expensive",
+      "questionTitle": "Where in Rome, Italy, is there excellent food that's not expensive?",
+      "titleNormalized": "where in rome italy is there excellent food that s not expensive",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "trastevere-food-tour-cost",
+        "is-trastevere-food-tour-worth-it",
+        "roman-street-food-glossary"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-08",
+      "estado": "entregado"
     }
   ]
 }
