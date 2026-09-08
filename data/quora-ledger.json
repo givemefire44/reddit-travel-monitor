@@ -516,7 +516,7 @@
       ],
       "shingles": [],
       "generatedAt": "2026-09-08",
-      "estado": "entregado"
+      "estado": "publicada"
     },
     {
       "questionUrl": "https://www.quora.com/What-are-some-decent-restaurants-in-Rome-Italy-that-wont-rip-you-off-with-tourist-traps-and-overpriced-food-wine",
@@ -529,7 +529,8 @@
       ],
       "shingles": [],
       "generatedAt": "2026-09-08",
-      "estado": "entregado"
+      "estado": "descartado",
+      "descartadaAt": "2026-09-08"
     },
     {
       "questionUrl": "https://www.quora.com/How-strict-is-the-Vatican-s-dress-code",
@@ -541,7 +542,8 @@
       ],
       "shingles": [],
       "generatedAt": "2026-09-08",
-      "estado": "entregado"
+      "estado": "descartado",
+      "descartadaAt": "2026-09-08"
     },
     {
       "questionUrl": "https://www.quora.com/Where-in-Rome-Italy-is-there-excellent-food-thats-not-expensive",
@@ -555,7 +557,8 @@
       ],
       "shingles": [],
       "generatedAt": "2026-09-08",
-      "estado": "entregado"
+      "estado": "descartado",
+      "descartadaAt": "2026-09-08"
     }
   ]
 }

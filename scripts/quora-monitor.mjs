@@ -61,6 +61,7 @@ const ONE_TITLE = argVal('--title');
 // y el chequeo de precio oficial. Lo unico que se saltea es la redaccion.
 const SIN_BORRADOR = args.includes('--sin-borrador');
 const PUBLICADA = argVal('--publicada');
+const DESCARTADA = argVal('--descartada');
 
 if (!process.env.ANTHROPIC_API_KEY) {
   console.error('Falta ANTHROPIC_API_KEY.');
@@ -506,6 +507,19 @@ function repetitionAgainstLedger(text, ledger) {
 // no se marca el peor caso es que la pregunta reaparezca, no que se pierda.
 const ENTREGA_TTL_DIAS = 21;
 
+// Descartar una pregunta NO es lo mismo que contestarla, y hasta el 8 sep 2026
+// costaba igual: los 4 candidatos de ese dia se anotaron como "entregado", yo
+// descarte 3 en el chat, y al dia siguiente los 4 aparecian como "ya respondida
+// (ledger)". Tres semanas de bloqueo para preguntas que nadie contesto.
+//
+// Los dos motivos de descarte piden volver pronto, no tarde. La que se descarta
+// por solaparse con otra recien publicada deja de solaparse en una semana. Y la
+// que se descarta por falta de material se vuelve contestable cuando crece el
+// corpus, que es exactamente lo que paso con trastevere entre el 5 y el 7 sep:
+// de 11 articulos a 23, y preguntas de comida que morian el viernes se
+// contestaban el lunes.
+const DESCARTE_TTL_DIAS = 3;
+
 function diasDesde(fecha) {
   if (!fecha) return Infinity;
   const t = Date.parse(fecha);
@@ -522,8 +536,39 @@ function alreadyAnswered(url, title, ledger) {
     // 'generado' es el estado viejo, de cuando el script redactaba: ahi el
     // descarte SI era una decision de Mario, asi que sigue bloqueando siempre.
     if (e.estado === 'generado') return true;
+    if (e.estado === 'descartado') return diasDesde(e.descartadaAt || e.generatedAt) < DESCARTE_TTL_DIAS;
     return diasDesde(e.generatedAt) < ENTREGA_TTL_DIAS;
   });
+}
+
+// Marca una pregunta como descartada: vuelve al pozo en DESCARTE_TTL_DIAS en
+// vez de quedar bloqueada las tres semanas de la entrega.
+//   node scripts/quora-monitor.mjs --descartada https://www.quora.com/...
+async function marcarDescartada(url) {
+  const ledger = loadLedger();
+  const limpia = (u) => u.split(/[?#]/)[0].replace(/\/+$/, '');
+  const objetivo = limpia(url);
+  const hit = ledger.answered.filter((e) => {
+    const q = limpia(e.questionUrl);
+    return objetivo === q || objetivo.startsWith(q + '/');
+  });
+  if (!hit.length) {
+    console.error(`No esta en el ledger: ${url}`);
+    console.error('Si nunca aparecio en un reporte no hay nada que desbloquear.');
+    return;
+  }
+  // Una publicada no se degrada: el bloqueo permanente gana sobre el descarte,
+  // porque el peor caso de equivocarse aca es volver a contestar algo que ya
+  // esta arriba con el nombre de Mario.
+  const saltadas = hit.filter((e) => e.estado === 'publicada');
+  const tocadas = hit.filter((e) => e.estado !== 'publicada');
+  for (const e of tocadas) {
+    e.estado = 'descartado';
+    e.descartadaAt = new Date().toISOString().slice(0, 10);
+  }
+  if (tocadas.length) fs.writeFileSync(LEDGER_PATH, JSON.stringify(ledger, null, 2) + '\n', 'utf8');
+  for (const e of tocadas) console.log(`Descartada, vuelve al pozo en ${DESCARTE_TTL_DIAS} dias: "${e.questionTitle}"`);
+  for (const e of saltadas) console.log(`SIN TOCAR (ya esta publicada): "${e.questionTitle}"`);
 }
 
 // Marca una pregunta como publicada de verdad: bloqueo permanente.
@@ -1702,7 +1747,7 @@ async function main() {
     `# Quora monitor — ${dateLabel}`,
     '',
     `**Perfil:** ${CONFIG.quoraProfile} (${CONFIG.quoraAccount}) · **Fase:** ${CONFIG.phase} · **Links:** ${allowLink ? 'habilitados' : 'deshabilitados'}`,
-    `**Facts:** ${CONFIG.sites.map((s) => `${s.key} ${FACTS_BY_SITE[s.key].facts.length}`).join(' · ')} · **Ledger:** ${ledger.answered.length} publicadas`,
+    `**Facts:** ${CONFIG.sites.map((s) => `${s.key} ${FACTS_BY_SITE[s.key].facts.length}`).join(' · ')} · **Ledger:** ${ledger.answered.filter((e) => e.estado === 'publicada').length} publicadas de ${ledger.answered.length}`,
     '',
     '---',
     '',
@@ -1826,6 +1871,8 @@ function loadEnv(file) {
 // para no gastar consultas de Brave ni tokens en marcar una linea.
 if (PUBLICADA) {
   await marcarPublicada(PUBLICADA);
+} else if (DESCARTADA) {
+  await marcarDescartada(DESCARTADA);
 } else {
   main().catch((err) => { console.error(err); process.exit(1); });
 }
