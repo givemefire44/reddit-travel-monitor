@@ -452,7 +452,7 @@
       ],
       "shingles": [],
       "generatedAt": "2026-09-02",
-      "estado": "entregado"
+      "estado": "publicada"
     },
     {
       "questionUrl": "https://www.quora.com/Help-I-want-to-visit-Palatine-Hill-only-and-without-a-tour-can-I-buy-tickets-on-the-day-on-site-If-so-where",
@@ -465,7 +465,7 @@
       ],
       "shingles": [],
       "generatedAt": "2026-09-02",
-      "estado": "entregado"
+      "estado": "publicada"
     },
     {
       "questionUrl": "https://www.quora.com/How-much-does-it-cost-to-visit-St-Peter-s-Cathedral-in-Rome-and-how-can-we-avoid-long-queues-at-the-entrance-of-St-Peter-s-Basilica-and-other-Roman-sites-during-our-stay-in-Italy",
@@ -559,6 +559,69 @@
       "generatedAt": "2026-09-08",
       "estado": "descartado",
       "descartadaAt": "2026-09-08"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-much-does-a-traditional-Italian-meal-cost-How-expensive-is-it-to-eat-at-an-authentic-restaurant-in-Rome-or-Florence",
+      "questionTitle": "How much does a traditional Italian meal cost? How expensive is it to eat at an authentic restaurant in Rome or Florence?",
+      "titleNormalized": "how much does a traditional italian meal cost how expensive is it to eat at an authentic restaurant in rome or florence",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "is-trastevere-food-tour-worth-it",
+        "trastevere-food-tour-cost"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-10",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Rome-How-do-I-distinguish-tourist-trap-restaurants-from-the-good-ones",
+      "questionTitle": "Rome: How do I distinguish tourist trap restaurants from the good ones?",
+      "titleNormalized": "rome how do i distinguish tourist trap restaurants from the good ones",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "trastevere-hidden-gem-authentic-what-it-means",
+        "trastevere-tourist-traps-detection"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-10",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-much-is-the-entry-fee-to-the-Colosseum-in-Italy",
+      "questionTitle": "How much is the entry fee to the Colosseum in Italy?",
+      "titleNormalized": "how much is the entry fee to the colosseum in italy",
+      "site": "colosseum",
+      "sourceSlugs": [
+        "best-colosseum-tour-under-eur50"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-10",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Is-St-Peters-Basilica-free",
+      "questionTitle": "Is St. Peter's Basilica free?",
+      "titleNormalized": "is st peter s basilica free",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-skip-the-line-explained",
+        "vatican-official-vs-platform-price"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-10",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-is-the-average-price-of-a-restaurant-meal-in-Rome",
+      "questionTitle": "What is the average price of a restaurant meal in Rome?",
+      "titleNormalized": "what is the average price of a restaurant meal in rome",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "is-trastevere-food-tour-worth-it"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-10",
+      "estado": "entregado"
     }
   ]
 }
