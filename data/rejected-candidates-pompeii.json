@@ -1,11 +1,6 @@
 [
   {
     "slug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
-    "fact": "Pompeii opens daily at 9:00 AM, closing at 19:00 in summer and 17:00 in winter, with a hard daily cap of 20,000 visitors.",
-    "reason": "cifra \"20,000\" sin unidad ni escala"
-  },
-  {
-    "slug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
     "fact": "Arrive at opening to beat the 15,000-person morning slot limit.",
     "reason": "cifra \"15,000\" sin unidad ni escala"
   },
@@ -15,9 +10,14 @@
     "reason": "cifra \"15,000\" sin unidad ni escala"
   },
   {
-    "slug": "how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes",
-    "fact": "This loop covers roughly 1.5 km of walking and gives you the Forum, one bath complex, one major house, and one of Pompeii's most famous streets without needing to reach the eastern side of the site.",
-    "reason": "apertura no autonoma"
+    "slug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
+    "fact": "The shoulder seasons—April, May, September and October—combine the longest opening hours (closing at 19:00) with moderate temperatures and smaller crowds compared to July and August, when the daily 20,000-visitor cap is reached early and the site becomes intensely hot.",
+    "reason": "frase no textual"
+  },
+  {
+    "slug": "pompeii-and-herculaneum-how-to-visit-both-and-which-is-better",
+    "fact": "Pompeii was a large commercial city of roughly 11,000 inhabitants spread across about 66 hectares, of which around 45 are currently visitable",
+    "reason": "cifra \"11,000\" sin unidad ni escala"
   },
   {
     "slug": "what-to-see-in-pompeii-must-visit-sites-in-order",

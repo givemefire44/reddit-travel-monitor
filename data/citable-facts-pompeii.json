@@ -1,5 +1,5 @@
 {
-  "extractedAt": "2026-09-07T18:00:21.473Z",
+  "extractedAt": "2026-09-10T16:37:56.469Z",
   "corpusSize": null,
   "facts": [
     {
@@ -10,30 +10,31 @@
       ],
       "topics": [
         "guides",
-        "highlights",
+        "tickets"
+      ],
+      "sourceSlug": "7-mistakes-people-make-when-booking-pompeii-tickets-and-tours",
+      "sourceUrl": "https://pompeiiguidetours.com/7-mistakes-people-make-when-booking-pompeii-tickets-and-tours"
+    },
+    {
+      "id": "guides-002",
+      "fact": "if you can stretch a little further, a 2–3‑hour guided tour that includes your entry ticket typically adds only a modest extra cost on top of the base ticket price, but dramatically improves your understanding and use of time.",
+      "figures": [
+        "2–3‑hour"
+      ],
+      "topics": [
+        "guides",
+        "pricing",
         "format-duration"
       ],
       "sourceSlug": "7-mistakes-people-make-when-booking-pompeii-tickets-and-tours",
       "sourceUrl": "https://pompeiiguidetours.com/7-mistakes-people-make-when-booking-pompeii-tickets-and-tours"
     },
     {
-      "id": "format-duration-001",
-      "fact": "The sweet spot for most visitors looks like this: get yourself to Pompeii by train or on a simple transfer, join a small‑group or private guided tour inside the ruins for 2–3 hours, and then stay longer to explore on your own.",
-      "figures": [
-        "2–3 hours"
-      ],
-      "topics": [
-        "format-duration",
-        "guides"
-      ],
-      "sourceSlug": "7-mistakes-people-make-when-booking-pompeii-tickets-and-tours",
-      "sourceUrl": "https://pompeiiguidetours.com/7-mistakes-people-make-when-booking-pompeii-tickets-and-tours"
-    },
-    {
       "id": "tickets-001",
-      "fact": "Pompeii tickets use morning and afternoon time bands, not a precise appointment, so a booking marked \"9:00\" means you can enter anytime during the morning window rather than at exactly nine o'clock.",
+      "fact": "Most official Pompeii tickets work on a simple time‑band system: you choose either a morning slot (for example, 9:00–13:00) or an afternoon slot (for example, 13:00 until last entry), and you can enter at any time within that band, not at one precise minute.",
       "figures": [
-        "9:00"
+        "9:00–13:00",
+        "13:00"
       ],
       "topics": [
         "tickets",
@@ -43,20 +44,49 @@
       "sourceUrl": "https://pompeiiguidetours.com/7-mistakes-people-make-when-booking-pompeii-tickets-and-tours"
     },
     {
-      "id": "format-duration-002",
-      "fact": "Visits shorter than two hours usually feel rushed because the site covers approximately 170 acres of ancient streets, houses, baths, and theaters.",
+      "id": "logistics-001",
+      "fact": "Spread across roughly 170 acres, with streets, houses, baths, theatres, shops and villas, the site is large enough to absorb a full day of exploration if you allow yourself the time.",
       "figures": [
-        "170 acres"
+        "170"
       ],
       "topics": [
-        "format-duration",
-        "highlights"
+        "logistics",
+        "format-duration"
       ],
       "sourceSlug": "7-mistakes-people-make-when-booking-pompeii-tickets-and-tours",
       "sourceUrl": "https://pompeiiguidetours.com/7-mistakes-people-make-when-booking-pompeii-tickets-and-tours"
     },
     {
-      "id": "logistics-001",
+      "id": "format-duration-001",
+      "fact": "Most visitors need between three and five hours to visit Pompeii properly: roughly two to three hours for a guided tour of the main highlights, plus one to two hours of independent exploration afterward.",
+      "figures": [
+        "three and five hours",
+        "two to three hours",
+        "one to two hours"
+      ],
+      "topics": [
+        "format-duration",
+        "timing"
+      ],
+      "sourceSlug": "7-mistakes-people-make-when-booking-pompeii-tickets-and-tours",
+      "sourceUrl": "https://pompeiiguidetours.com/7-mistakes-people-make-when-booking-pompeii-tickets-and-tours"
+    },
+    {
+      "id": "format-duration-002",
+      "fact": "Visits shorter than two hours usually feel rushed because the site covers approximately 170 acres of ancient streets, houses, baths, and theaters.",
+      "figures": [
+        "two hours",
+        "170"
+      ],
+      "topics": [
+        "format-duration",
+        "logistics"
+      ],
+      "sourceSlug": "7-mistakes-people-make-when-booking-pompeii-tickets-and-tours",
+      "sourceUrl": "https://pompeiiguidetours.com/7-mistakes-people-make-when-booking-pompeii-tickets-and-tours"
+    },
+    {
+      "id": "logistics-002",
       "fact": "On a typical visit people easily walk 10,000–17,000 steps on uneven stone streets, in strong sun with limited shade and basic facilities.",
       "figures": [
         "10,000–17,000"
@@ -64,6 +94,19 @@
       "topics": [
         "logistics",
         "weather"
+      ],
+      "sourceSlug": "7-mistakes-people-make-when-booking-pompeii-tickets-and-tours",
+      "sourceUrl": "https://pompeiiguidetours.com/7-mistakes-people-make-when-booking-pompeii-tickets-and-tours"
+    },
+    {
+      "id": "guides-003",
+      "fact": "Several experienced visitors specifically recommend booking at least a 2–3 hour private guide for seniors, as that allows the guide to tailor the walk to comfort levels while still covering the most interesting sites.",
+      "figures": [
+        "2–3 hour"
+      ],
+      "topics": [
+        "guides",
+        "accessibility"
       ],
       "sourceSlug": "7-mistakes-people-make-when-booking-pompeii-tickets-and-tours",
       "sourceUrl": "https://pompeiiguidetours.com/7-mistakes-people-make-when-booking-pompeii-tickets-and-tours"
@@ -84,20 +127,6 @@
     },
     {
       "id": "timing-001",
-      "fact": "Visitors who entered at opening time or after about 15:30–16:00 talk about cooler temperatures, easier movement through the site, and better light for photos, while those booked into midday slots describe baking heat, crowds, and feeling too tired to appreciate what they were seeing.",
-      "figures": [
-        "15:30–16:00"
-      ],
-      "topics": [
-        "timing",
-        "crowds",
-        "weather"
-      ],
-      "sourceSlug": "7-mistakes-people-make-when-booking-pompeii-tickets-and-tours",
-      "sourceUrl": "https://pompeiiguidetours.com/7-mistakes-people-make-when-booking-pompeii-tickets-and-tours"
-    },
-    {
-      "id": "timing-002",
       "fact": "The best time to visit Pompeii is either first thing in the morning between 9:00 and 11:00 or in the late afternoon after 15:30, when temperatures drop and most large tour groups have already left the site.",
       "figures": [
         "9:00",
@@ -121,34 +150,20 @@
       ],
       "topics": [
         "weather",
-        "crowds",
-        "timing"
+        "crowds"
       ],
       "sourceSlug": "7-mistakes-people-make-when-booking-pompeii-tickets-and-tours",
       "sourceUrl": "https://pompeiiguidetours.com/7-mistakes-people-make-when-booking-pompeii-tickets-and-tours"
     },
     {
-      "id": "guides-002",
-      "fact": "Several experienced visitors specifically recommend booking at least a 2–3 hour private guide for seniors, as that allows the guide to tailor the walk to comfort levels while still covering the most interesting sites.",
+      "id": "timing-002",
+      "fact": "Visitors who entered at opening time or after about 15:30–16:00 talk about cooler temperatures, easier movement through the site, and better light for photos, while those booked into midday slots describe baking heat, crowds, and feeling too tired to appreciate what they were seeing.",
       "figures": [
-        "2–3 hour"
+        "15:30–16:00"
       ],
       "topics": [
-        "guides",
-        "accessibility"
-      ],
-      "sourceSlug": "7-mistakes-people-make-when-booking-pompeii-tickets-and-tours",
-      "sourceUrl": "https://pompeiiguidetours.com/7-mistakes-people-make-when-booking-pompeii-tickets-and-tours"
-    },
-    {
-      "id": "format-duration-003",
-      "fact": "Spread across roughly 170 acres, with streets, houses, baths, theatres, shops and villas, the site is large enough to absorb a full day of exploration if you allow yourself the time.",
-      "figures": [
-        "170 acres"
-      ],
-      "topics": [
-        "format-duration",
-        "highlights"
+        "timing",
+        "crowds"
       ],
       "sourceSlug": "7-mistakes-people-make-when-booking-pompeii-tickets-and-tours",
       "sourceUrl": "https://pompeiiguidetours.com/7-mistakes-people-make-when-booking-pompeii-tickets-and-tours"
@@ -162,7 +177,7 @@
       ],
       "topics": [
         "getting-there",
-        "format-duration"
+        "timing"
       ],
       "sourceSlug": "how-to-get-to-pompeii-from-rome-naples-and-sorrento",
       "sourceUrl": "https://pompeiiguidetours.com/how-to-get-to-pompeii-from-rome-naples-and-sorrento"
@@ -176,20 +191,8 @@
       ],
       "topics": [
         "getting-there",
-        "pricing"
-      ],
-      "sourceSlug": "how-to-get-to-pompeii-from-rome-naples-and-sorrento",
-      "sourceUrl": "https://pompeiiguidetours.com/how-to-get-to-pompeii-from-rome-naples-and-sorrento"
-    },
-    {
-      "id": "logistics-002",
-      "fact": "Trains and buses stop at different stations depending on which one you are heading to, so picking the wrong stop can cost you 20 minutes of walking or a missed time slot.",
-      "figures": [
-        "20 minutes"
-      ],
-      "topics": [
-        "logistics",
-        "getting-there"
+        "pricing",
+        "timing"
       ],
       "sourceSlug": "how-to-get-to-pompeii-from-rome-naples-and-sorrento",
       "sourceUrl": "https://pompeiiguidetours.com/how-to-get-to-pompeii-from-rome-naples-and-sorrento"
@@ -202,7 +205,7 @@
       ],
       "topics": [
         "getting-there",
-        "format-duration"
+        "timing"
       ],
       "sourceSlug": "how-to-get-to-pompeii-from-rome-naples-and-sorrento",
       "sourceUrl": "https://pompeiiguidetours.com/how-to-get-to-pompeii-from-rome-naples-and-sorrento"
@@ -215,7 +218,7 @@
       ],
       "topics": [
         "getting-there",
-        "format-duration"
+        "timing"
       ],
       "sourceSlug": "how-to-get-to-pompeii-from-rome-naples-and-sorrento",
       "sourceUrl": "https://pompeiiguidetours.com/how-to-get-to-pompeii-from-rome-naples-and-sorrento"
@@ -228,7 +231,21 @@
       ],
       "topics": [
         "getting-there",
-        "format-duration"
+        "timing"
+      ],
+      "sourceSlug": "how-to-get-to-pompeii-from-rome-naples-and-sorrento",
+      "sourceUrl": "https://pompeiiguidetours.com/how-to-get-to-pompeii-from-rome-naples-and-sorrento"
+    },
+    {
+      "id": "pricing-001",
+      "fact": "Cost: around €15 one way / €25 round‑trip, typically bookable online via the official EAV/Campania Express website or at the station ticket office.",
+      "figures": [
+        "€15",
+        "€25"
+      ],
+      "topics": [
+        "pricing",
+        "tickets"
       ],
       "sourceSlug": "how-to-get-to-pompeii-from-rome-naples-and-sorrento",
       "sourceUrl": "https://pompeiiguidetours.com/how-to-get-to-pompeii-from-rome-naples-and-sorrento"
@@ -255,7 +272,7 @@
       ],
       "topics": [
         "getting-there",
-        "format-duration"
+        "timing"
       ],
       "sourceSlug": "how-to-get-to-pompeii-from-rome-naples-and-sorrento",
       "sourceUrl": "https://pompeiiguidetours.com/how-to-get-to-pompeii-from-rome-naples-and-sorrento"
@@ -264,11 +281,12 @@
       "id": "getting-there-008",
       "fact": "Pompeii is about 23–25 kilometres (14–15 miles) from Sorrento.",
       "figures": [
-        "23–25 kilometres",
-        "14–15 miles"
+        "23–25",
+        "14–15"
       ],
       "topics": [
-        "getting-there"
+        "getting-there",
+        "logistics"
       ],
       "sourceSlug": "how-to-get-to-pompeii-from-rome-naples-and-sorrento",
       "sourceUrl": "https://pompeiiguidetours.com/how-to-get-to-pompeii-from-rome-naples-and-sorrento"
@@ -281,54 +299,13 @@
       ],
       "topics": [
         "getting-there",
-        "format-duration"
+        "timing"
       ],
       "sourceSlug": "how-to-get-to-pompeii-from-rome-naples-and-sorrento",
       "sourceUrl": "https://pompeiiguidetours.com/how-to-get-to-pompeii-from-rome-naples-and-sorrento"
     },
     {
       "id": "getting-there-010",
-      "fact": "Taxi or private transfer: the fastest but most expensive option, taking around 30–35 minutes door‑to‑door and costing roughly €110–€140 for a standard taxi; private car services may have fixed rates.",
-      "figures": [
-        "30–35 minutes",
-        "€110–€140"
-      ],
-      "topics": [
-        "getting-there",
-        "pricing"
-      ],
-      "sourceSlug": "how-to-get-to-pompeii-from-rome-naples-and-sorrento",
-      "sourceUrl": "https://pompeiiguidetours.com/how-to-get-to-pompeii-from-rome-naples-and-sorrento"
-    },
-    {
-      "id": "getting-there-011",
-      "fact": "Self‑drive: if you are renting a car, the drive is about 30–35 minutes (23–25 km) along the coastal and inland roads, but you will need to factor in parking availability near the site.",
-      "figures": [
-        "30–35 minutes",
-        "23–25 km"
-      ],
-      "topics": [
-        "getting-there",
-        "logistics"
-      ],
-      "sourceSlug": "how-to-get-to-pompeii-from-rome-naples-and-sorrento",
-      "sourceUrl": "https://pompeiiguidetours.com/how-to-get-to-pompeii-from-rome-naples-and-sorrento"
-    },
-    {
-      "id": "getting-there-012",
-      "fact": "From Naples / Sorrento: SITA and EAV buses connect these cities with Pompeii via the coastal and inland roads, typically in 35–50 minutes depending on traffic.",
-      "figures": [
-        "35–50 minutes"
-      ],
-      "topics": [
-        "getting-there",
-        "format-duration"
-      ],
-      "sourceSlug": "how-to-get-to-pompeii-from-rome-naples-and-sorrento",
-      "sourceUrl": "https://pompeiiguidetours.com/how-to-get-to-pompeii-from-rome-naples-and-sorrento"
-    },
-    {
-      "id": "getting-there-013",
       "fact": "Pompeii–Vesuvius buses: if you plan to add Vesuvius, there is a specific EAV bus that runs between Pompeii (Piazza Anfiteatro / Villa dei Misteri) and the Vesuvius National Park parking at 1,000 m, roughly taking 50–55 minutes.",
       "figures": [
         "1,000 m",
@@ -336,7 +313,7 @@
       ],
       "topics": [
         "getting-there",
-        "logistics"
+        "timing"
       ],
       "sourceSlug": "how-to-get-to-pompeii-from-rome-naples-and-sorrento",
       "sourceUrl": "https://pompeiiguidetours.com/how-to-get-to-pompeii-from-rome-naples-and-sorrento"
@@ -355,15 +332,46 @@
       "sourceUrl": "https://pompeiiguidetours.com/how-to-get-to-pompeii-from-rome-naples-and-sorrento"
     },
     {
-      "id": "tickets-002",
-      "fact": "Standard tickets start at €20 (Pompeii Express), €25 for Pompeii Plus with Villa dei Misteri, and €30 for Pompei e Altri Siti covering all sites for 3 days.",
+      "id": "timing-003",
+      "fact": "From 16 March to 14 October the site opens at 9:00, last entry is at 17:30, and the site closes at 19:00.",
       "figures": [
-        "€20",
-        "€25",
-        "€30",
-        "3"
+        "16 March",
+        "14 October",
+        "9:00",
+        "17:30",
+        "19:00"
       ],
       "topics": [
+        "timing"
+      ],
+      "sourceSlug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
+      "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
+    },
+    {
+      "id": "timing-004",
+      "fact": "From 15 October to 15 March it opens at 9:00, last entry is at 15:30, and the site closes at 17:00.",
+      "figures": [
+        "15 October",
+        "15 March",
+        "9:00",
+        "15:30",
+        "17:00"
+      ],
+      "topics": [
+        "timing"
+      ],
+      "sourceSlug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
+      "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
+    },
+    {
+      "id": "timing-005",
+      "fact": "The park is closed on 25 December and 1 January; on the first Sunday of every month entry is free, with no advance booking option on those days and direct access at the gate.",
+      "figures": [
+        "25 December",
+        "1 January"
+      ],
+      "topics": [
+        "timing",
         "tickets",
         "pricing"
       ],
@@ -371,21 +379,20 @@
       "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
     },
     {
-      "id": "tickets-003",
-      "fact": "The park is closed on 25 December and 1 January; on the first Sunday of every month entry is free, with no advance booking option on those days and direct access at the gate.",
+      "id": "tickets-002",
+      "fact": "The only official online sales channel from 2 March 2026 is www.vivaticket.it.",
       "figures": [
-        "25 December",
-        "1 January"
+        "2 March 2026"
       ],
       "topics": [
         "tickets",
-        "timing"
+        "logistics"
       ],
       "sourceSlug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
       "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
     },
     {
-      "id": "tickets-004",
+      "id": "tickets-003",
       "fact": "The Pompeii Express (€20) covers the ancient city only, without the suburban villas; the Pompeii Plus (€25) adds Villa dei Misteri, Villa di Diomede and Villa Regina at Boscoreale with its Antiquarium, plus the shuttle bus; and the Pompei e Altri Siti (€30) includes all those sites plus Oplontis, Villa Arianna, Villa San Marco, and the Archaeological Museum of Stabia, valid for 3 days with one entry per site.",
       "figures": [
         "€20",
@@ -401,24 +408,26 @@
       "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
     },
     {
-      "id": "pricing-001",
+      "id": "tickets-004",
       "fact": "Entry to individual secondary sites such as Boscoreale, Oplontis or the Stabia museum costs €8 separately.",
       "figures": [
         "€8"
       ],
       "topics": [
+        "tickets",
         "pricing"
       ],
       "sourceSlug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
       "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
     },
     {
-      "id": "pricing-002",
+      "id": "tickets-005",
       "fact": "Children under 18 enter free.",
       "figures": [
         "18"
       ],
       "topics": [
+        "tickets",
         "pricing",
         "kids-families"
       ],
@@ -426,7 +435,7 @@
       "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
     },
     {
-      "id": "pricing-003",
+      "id": "tickets-006",
       "fact": "The reduced rate (€2) applies to EU citizens and eligible non-EU residents aged 18–24 (under 25).",
       "figures": [
         "€2",
@@ -434,46 +443,62 @@
         "25"
       ],
       "topics": [
+        "tickets",
         "pricing"
       ],
       "sourceSlug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
       "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
     },
     {
-      "id": "pricing-004",
+      "id": "tickets-007",
       "fact": "There is also an annual MyPompeii card at €45 (€10 for under-25 EU citizens) valid for unlimited entries at all park sites for one year from first validation, purchasable at vivaticket.it and collected at any of the three Pompeii gates.",
       "figures": [
         "€45",
         "€10"
       ],
       "topics": [
-        "pricing",
+        "tickets",
+        "pricing"
+      ],
+      "sourceSlug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
+      "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
+    },
+    {
+      "id": "getting-there-011",
+      "fact": "By train: take the Circumvesuviana from Naples Porta Nolana or Sorrento to Pompei Scavi – Villa dei Misteri, which sits directly opposite Porta Marina and Piazza Esedra, about 1–2 minutes on foot.",
+      "figures": [
+        "1–2"
+      ],
+      "topics": [
+        "getting-there",
         "logistics"
       ],
       "sourceSlug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
       "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
     },
     {
-      "id": "getting-there-014",
-      "fact": "By train: take the Circumvesuviana from Naples Porta Nolana or Sorrento to Pompei Scavi – Villa dei Misteri, which sits directly opposite Porta Marina and Piazza Esedra, about 1–2 minutes on foot.",
+      "id": "format-duration-003",
+      "fact": "Most visitors need between 2 and 5 hours depending on pace and interests.",
       "figures": [
-        "1–2 minutes"
+        "2",
+        "5"
       ],
       "topics": [
-        "getting-there"
+        "format-duration",
+        "timing"
       ],
       "sourceSlug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
       "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
     },
     {
       "id": "format-duration-004",
-      "fact": "Most visitors need between 2 and 5 hours depending on pace and interests.",
+      "fact": "A 2-hour express visit covers the Forum, Basilica, Temple of Jupiter and a loop along Via dell'Abbondanza past the Stabian Baths.",
       "figures": [
-        "2",
-        "5 hours"
+        "2-hour"
       ],
       "topics": [
-        "format-duration"
+        "format-duration",
+        "highlights"
       ],
       "sourceSlug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
       "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
@@ -482,7 +507,7 @@
       "id": "format-duration-005",
       "fact": "A 3–4 hour visit allows you to add the House of the Faun, House of the Menander, the Lupanar and one of the bath complexes.",
       "figures": [
-        "3–4 hour"
+        "3–4"
       ],
       "topics": [
         "format-duration",
@@ -495,18 +520,19 @@
       "id": "format-duration-006",
       "fact": "A full day of 6–8 hours lets you reach the Amphitheatre and Large Palaestra on the eastern side and walk out to the Villa dei Misteri, about 15–20 minutes from Porta Marina along the ancient funerary road Via dei Sepolcri and included in the Pompeii Plus ticket.",
       "figures": [
-        "6–8 hours",
-        "15–20 minutes"
+        "6–8",
+        "15–20"
       ],
       "topics": [
         "format-duration",
-        "highlights"
+        "highlights",
+        "tickets"
       ],
       "sourceSlug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
       "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
     },
     {
-      "id": "timing-003",
+      "id": "timing-006",
       "fact": "From 16 March 2026, a \"Casa del Giorno\" programme opens a different house each day with reduced hours (9:15–18:20, last access 18:00), so checking the schedule in advance lets you plan around whichever house is open on your visit date.",
       "figures": [
         "16 March 2026",
@@ -540,13 +566,14 @@
         "15:00"
       ],
       "topics": [
-        "weather"
+        "weather",
+        "timing"
       ],
       "sourceSlug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
       "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
     },
     {
-      "id": "guides-003",
+      "id": "guides-004",
       "fact": "The park offers themed guided itineraries (\"Pompei Civica\" and \"Pompei Quotidiana\") at €8 each on top of the entrance ticket, each lasting approximately 1.5 hours, and these are run by authorised park staff rather than private operators.",
       "figures": [
         "€8",
@@ -554,28 +581,59 @@
       ],
       "topics": [
         "guides",
-        "pricing"
+        "pricing",
+        "format-duration"
       ],
       "sourceSlug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
       "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
     },
     {
-      "id": "guides-004",
+      "id": "guides-005",
       "fact": "Private licensed guides add significant depth to house-by-house interpretation, offer flexible pacing, and can combine multiple highlights into a single logical route; they generally work in groups of up to 25 people.",
       "figures": [
         "25"
       ],
       "topics": [
-        "guides"
+        "guides",
+        "logistics"
       ],
       "sourceSlug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
       "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
     },
     {
-      "id": "timing-004",
-      "fact": "Arriving at 9:00 AM on any day is the most practical strategy because the site is quietest and you secure entry before the morning slot fills toward its 15,000-person limit.",
+      "id": "guides-006",
+      "fact": "For a first visit or a short 2–3 hour slot, a guided tour is usually the better choice; for repeat visitors or those who have read up in advance, self-guided with the official map and the park's audio guide (available at Piazza Esedra and Piazza Anfiteatro bookshops) is a perfectly solid option.",
       "figures": [
-        "9:00 AM",
+        "2–3 hour"
+      ],
+      "topics": [
+        "guides",
+        "timing",
+        "format-duration"
+      ],
+      "sourceSlug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
+      "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
+    },
+    {
+      "id": "timing-007",
+      "fact": "November to February sees much shorter hours (closing at 17:00, last entry 15:30) but very low visitor numbers, cooler walking conditions and no capacity restrictions in most weeks.",
+      "figures": [
+        "17:00",
+        "15:30"
+      ],
+      "topics": [
+        "timing",
+        "crowds"
+      ],
+      "sourceSlug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
+      "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
+    },
+    {
+      "id": "timing-008",
+      "fact": "For time of day, arriving at opening (9:00) is consistently the most practical strategy: the light is good for photography, the site is quietest, and you secure entry before the mid-morning surge that fills the 9:00–13:00 time slot toward its 15,000-person limit.",
+      "figures": [
+        "9:00",
+        "9:00–13:00",
         "15,000"
       ],
       "topics": [
@@ -586,7 +644,7 @@
       "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
     },
     {
-      "id": "timing-005",
+      "id": "timing-009",
       "fact": "Arriving after 13:00 gives access to the afternoon 5,000-person slot, which is noticeably less crowded but leaves only 4.5 hours before last entry in summer and just 2.5 hours in winter.",
       "figures": [
         "13:00",
@@ -602,8 +660,37 @@
       "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
     },
     {
+      "id": "getting-there-012",
+      "fact": "The standard approach is to spend 2–3 hours at Pompeii in the morning, then take the EAV bus from Pompei Piazza Anfiteatro or Pompei Villa dei Misteri up to the Vesuvius parking area at 1,000 m, a journey of roughly 50–55 minutes.",
+      "figures": [
+        "2–3 hours",
+        "1,000 m",
+        "50–55 minutes"
+      ],
+      "topics": [
+        "getting-there",
+        "logistics"
+      ],
+      "sourceSlug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
+      "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
+    },
+    {
+      "id": "getting-there-013",
+      "fact": "From the parking area the walk to the crater rim takes 20–40 minutes on a steep gravel path, and you should allow 1–1.5 hours total on the volcano before catching the last return bus down.",
+      "figures": [
+        "20–40 minutes",
+        "1–1.5 hours"
+      ],
+      "topics": [
+        "getting-there",
+        "logistics"
+      ],
+      "sourceSlug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
+      "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
+    },
+    {
       "id": "herculaneum-001",
-      "fact": "Herculaneum is only about 8 km from Pompeii and both are on the same Circumvesuviana line.",
+      "fact": "Pompeii + Herculaneum works particularly well for visitors who want to compare two eruption sites in one day, since Herculaneum is only about 8 km from Pompeii and both are on the same Circumvesuviana line.",
       "figures": [
         "8 km"
       ],
@@ -649,54 +736,47 @@
       ],
       "topics": [
         "herculaneum",
-        "pricing"
+        "pricing",
+        "tickets"
       ],
       "sourceSlug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
       "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
     },
     {
-      "id": "logistics-005",
-      "fact": "Pompeii has three entrances: Porta Marina (main gate, opposite the train station, best for first-timers), Piazza Anfiteatro (quieter east side, best if staying in Pompei town or arriving by car), and Piazza Esedra (smallest, least crowded, 2 minutes from Porta Marina).",
+      "id": "getting-there-014",
+      "fact": "From Pompei Scavi station, take the Circumvesuviana to Sorrento (about 30 minutes), then connect to the SITA bus or a ferry to the Amalfi Coast towns—Positano, Amalfi or Ravello.",
       "figures": [
-        "2"
+        "30 minutes"
       ],
       "topics": [
-        "logistics",
-        "getting-there"
-      ],
-      "sourceSlug": "pompeii-entrances-map-and-orientation-which-gate-should-you-use",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-entrances-map-and-orientation-which-gate-should-you-use"
-    },
-    {
-      "id": "logistics-006",
-      "fact": "Download the official map before your visit — the site covers 45 hectares with no reliable signage inside.",
-      "figures": [
-        "45"
-      ],
-      "topics": [
+        "getting-there",
         "logistics"
       ],
-      "sourceSlug": "pompeii-entrances-map-and-orientation-which-gate-should-you-use",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-entrances-map-and-orientation-which-gate-should-you-use"
+      "sourceSlug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
+      "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
     },
     {
-      "id": "logistics-007",
-      "fact": "Inside, this entrance gives the quickest access to the Forum, Basilica, and Temple of Jupiter area—around 5–10 minutes on foot—so most classic itineraries start here.",
+      "id": "timing-010",
+      "fact": "The realistic version of this combination is 2–3 hours at Pompeii in the morning (opening at 9:00, leaving by 12:00) and an afternoon on the coast, arriving in Positano or Amalfi by 14:00–14:30.",
       "figures": [
-        "5–10"
+        "2–3 hours",
+        "9:00",
+        "12:00",
+        "14:00–14:30"
       ],
       "topics": [
+        "timing",
         "logistics",
-        "timing"
+        "format-duration"
       ],
-      "sourceSlug": "pompeii-entrances-map-and-orientation-which-gate-should-you-use",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-entrances-map-and-orientation-which-gate-should-you-use"
+      "sourceSlug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
+      "sourceUrl": "https://pompeiiguidetours.com/complete-guide-to-visiting-pompeii-everything-you-need-to-know"
     },
     {
       "id": "getting-there-015",
-      "fact": "By train from Naples or Sorrento, you take the Circumvesuviana line to “Pompei Scavi – Villa dei Misteri”, exit the station, and walk about 1–2 minutes across the road following the brown “Scavi di Pompei – Porta Marina” signs to reach the ticket office and turnstiles.",
+      "fact": "Pompeii has three entrances: Porta Marina (main gate, opposite the train station, best for first-timers), Piazza Anfiteatro (quieter east side, best if staying in Pompei town or arriving by car), and Piazza Esedra (smallest, least crowded, 2 minutes from Porta Marina)",
       "figures": [
-        "1–2"
+        "2 minutes"
       ],
       "topics": [
         "getting-there",
@@ -706,8 +786,46 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-entrances-map-and-orientation-which-gate-should-you-use"
     },
     {
+      "id": "logistics-005",
+      "fact": "Download the official map before your visit — the site covers 45 hectares with no reliable signage inside",
+      "figures": [
+        "45 hectares"
+      ],
+      "topics": [
+        "logistics"
+      ],
+      "sourceSlug": "pompeii-entrances-map-and-orientation-which-gate-should-you-use",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-entrances-map-and-orientation-which-gate-should-you-use"
+    },
+    {
+      "id": "getting-there-016",
+      "fact": "By train from Naples or Sorrento, you take the Circumvesuviana line to \"Pompei Scavi – Villa dei Misteri\", exit the station, and walk about 1–2 minutes across the road following the brown \"Scavi di Pompei – Porta Marina\" signs to reach the ticket office and turnstiles",
+      "figures": [
+        "1–2 minutes"
+      ],
+      "topics": [
+        "getting-there",
+        "logistics"
+      ],
+      "sourceSlug": "pompeii-entrances-map-and-orientation-which-gate-should-you-use",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-entrances-map-and-orientation-which-gate-should-you-use"
+    },
+    {
+      "id": "timing-011",
+      "fact": "Inside, this entrance gives the quickest access to the Forum, Basilica, and Temple of Jupiter area—around 5–10 minutes on foot—so most classic itineraries start here",
+      "figures": [
+        "5–10 minutes"
+      ],
+      "topics": [
+        "timing",
+        "logistics"
+      ],
+      "sourceSlug": "pompeii-entrances-map-and-orientation-which-gate-should-you-use",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-entrances-map-and-orientation-which-gate-should-you-use"
+    },
+    {
       "id": "crowds-001",
-      "fact": "The main drawback of Porta Marina is that it concentrates the highest volume of visitors, especially between 9:30 and 11:00 AM when day-trip buses from Naples and cruise ships arrive.",
+      "fact": "The main drawback of Porta Marina is that it concentrates the highest volume of visitors, especially between 9:30 and 11:00 AM when day-trip buses from Naples and cruise ships arrive",
       "figures": [
         "9:30",
         "11:00 AM"
@@ -720,24 +838,24 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-entrances-map-and-orientation-which-gate-should-you-use"
     },
     {
-      "id": "timing-006",
-      "fact": "If you enter here, aim for 9:00 AM opening or after 13:00 to avoid the worst queues.",
+      "id": "crowds-002",
+      "fact": "If you enter here, aim for 9:00 AM opening or after 13:00 to avoid the worst queues",
       "figures": [
         "9:00 AM",
         "13:00"
       ],
       "topics": [
-        "timing",
-        "crowds"
+        "crowds",
+        "timing"
       ],
       "sourceSlug": "pompeii-entrances-map-and-orientation-which-gate-should-you-use",
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-entrances-map-and-orientation-which-gate-should-you-use"
     },
     {
-      "id": "logistics-008",
-      "fact": "Security screening is mandatory at all entrances and can add 10–15 minutes during peak hours.",
+      "id": "logistics-006",
+      "fact": "Security screening is mandatory at all entrances and can add 10–15 minutes during peak hours",
       "figures": [
-        "10–15"
+        "10–15 minutes"
       ],
       "topics": [
         "logistics",
@@ -747,10 +865,10 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-entrances-map-and-orientation-which-gate-should-you-use"
     },
     {
-      "id": "logistics-009",
-      "fact": "From here, you enter directly into the amphitheatre area and then walk roughly 10–15 minutes through the ancient streets to reach the Forum.",
+      "id": "logistics-007",
+      "fact": "From here, you enter directly into the amphitheatre area and then walk roughly 10–15 minutes through the ancient streets to reach the Forum",
       "figures": [
-        "10–15"
+        "10–15 minutes"
       ],
       "topics": [
         "logistics",
@@ -760,10 +878,10 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-entrances-map-and-orientation-which-gate-should-you-use"
     },
     {
-      "id": "crowds-002",
-      "fact": "Despite being just 2–3 minutes' walk from Porta Marina, it sees significantly less foot traffic because most visitors follow the signs to the larger gate without realising this alternative exists.",
+      "id": "crowds-003",
+      "fact": "Despite being just 2–3 minutes' walk from Porta Marina, it sees significantly less foot traffic because most visitors follow the signs to the larger gate without realising this alternative exists",
       "figures": [
-        "2–3"
+        "2–3 minutes"
       ],
       "topics": [
         "crowds",
@@ -773,10 +891,10 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-entrances-map-and-orientation-which-gate-should-you-use"
     },
     {
-      "id": "logistics-010",
-      "fact": "If you ever feel lost, head toward higher ground or follow any major street west — you will reach the Forum or Porta Marina area within 10–15 minutes.",
+      "id": "logistics-008",
+      "fact": "If you ever feel lost, head toward higher ground or follow any major street west — you will reach the Forum or Porta Marina area within 10–15 minutes",
       "figures": [
-        "10–15"
+        "10–15 minutes"
       ],
       "topics": [
         "logistics",
@@ -786,58 +904,298 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-entrances-map-and-orientation-which-gate-should-you-use"
     },
     {
-      "id": "logistics-011",
-      "fact": "Choosing a path in advance helps you plan a logical route and avoid backtracking inside the 45-hectare site.",
+      "id": "timing-012",
+      "fact": "Yes, you can visit Pompeii and Vesuvius in one day starting at Pompeii at 9:00 AM for 2–3 hours, then taking the EAV bus to Vesuvius (50–55 minutes) for a 1.5-hour visit including the crater climb.",
       "figures": [
-        "45"
+        "9:00 AM",
+        "2–3 hours",
+        "50–55 minutes",
+        "1.5-hour"
+      ],
+      "topics": [
+        "timing",
+        "getting-there",
+        "format-duration"
+      ],
+      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
+    },
+    {
+      "id": "pricing-002",
+      "fact": "Budget approximately €35–38 independently (€20 Pompeii + €15 Vesuvius crater) or €70–130 for an organised tour with transport and guide included.",
+      "figures": [
+        "€35–38",
+        "€20",
+        "€15",
+        "€70–130"
+      ],
+      "topics": [
+        "pricing",
+        "tickets",
+        "operators"
+      ],
+      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
+    },
+    {
+      "id": "timing-013",
+      "fact": "A realistic schedule includes 2–3 hours in Pompeii, 1.5–2 hours for Vesuvius, and about 1 hour total for transfers.",
+      "figures": [
+        "2–3",
+        "1.5–2",
+        "1 hour"
+      ],
+      "topics": [
+        "timing",
+        "format-duration"
+      ],
+      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
+    },
+    {
+      "id": "timing-014",
+      "fact": "Pompeii from 9:00 to 11:30 AM, EAV bus to Vesuvius (50–55 minutes), arrive at the crater parking by 12:30 PM, climb and visit the crater rim for 1.5 hours, and return by mid-afternoon.",
+      "figures": [
+        "9:00",
+        "11:30 AM",
+        "50–55 minutes",
+        "12:30 PM",
+        "1.5 hours"
+      ],
+      "topics": [
+        "timing",
+        "getting-there",
+        "format-duration"
+      ],
+      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
+    },
+    {
+      "id": "format-duration-007",
+      "fact": "The total day runs approximately 8–9 hours including all transport.",
+      "figures": [
+        "8–9 hours"
+      ],
+      "topics": [
+        "format-duration",
+        "timing"
+      ],
+      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
+    },
+    {
+      "id": "timing-015",
+      "fact": "Start with Pompeii in the morning because it opens at 9:00 AM and you need the coolest hours for 2–3 hours of walking on exposed ancient streets.",
+      "figures": [
+        "9:00 AM",
+        "2–3 hours"
+      ],
+      "topics": [
+        "timing",
+        "weather"
+      ],
+      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
+    },
+    {
+      "id": "getting-there-017",
+      "fact": "The main public option is the EAV bus from Pompei Piazza Anfiteatro or Pompei Villa dei Misteri to the Vesuvius parking area at 1,000 m.",
+      "figures": [
+        "1,000 m"
+      ],
+      "topics": [
+        "getting-there",
+        "logistics"
+      ],
+      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
+    },
+    {
+      "id": "getting-there-018",
+      "fact": "The journey takes around 50–55 minutes and costs just over €3.",
+      "figures": [
+        "50–55 minutes",
+        "€3"
+      ],
+      "topics": [
+        "getting-there",
+        "pricing"
+      ],
+      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
+    },
+    {
+      "id": "pricing-003",
+      "fact": "Private shuttles from near Porta Marina cost approximately €10–15 per person and run more frequently.",
+      "figures": [
+        "€10–15"
+      ],
+      "topics": [
+        "pricing",
+        "getting-there"
+      ],
+      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
+    },
+    {
+      "id": "timing-016",
+      "fact": "From the parking area, you walk 20–40 minutes uphill on a wide but steep gravel path to reach the crater.",
+      "figures": [
+        "20–40 minutes"
+      ],
+      "topics": [
+        "timing",
+        "logistics"
+      ],
+      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
+    },
+    {
+      "id": "pricing-004",
+      "fact": "Vesuvius crater entry costs €15 per person and must be purchased at the site or through authorised resellers.",
+      "figures": [
+        "€15"
+      ],
+      "topics": [
+        "pricing",
+        "tickets"
+      ],
+      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
+    },
+    {
+      "id": "timing-017",
+      "fact": "The crater is typically open from 9:00 AM to one hour before sunset, with timed entry slots in peak season.",
+      "figures": [
+        "9:00 AM"
+      ],
+      "topics": [
+        "timing"
+      ],
+      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
+    },
+    {
+      "id": "timing-018",
+      "fact": "You are allowed approximately 20–30 minutes at the crater rim.",
+      "figures": [
+        "20–30 minutes"
+      ],
+      "topics": [
+        "timing"
+      ],
+      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
+    },
+    {
+      "id": "logistics-009",
+      "fact": "The path is roughly 1 km with an elevation gain of about 150 metres.",
+      "figures": [
+        "1 km",
+        "150 metres"
       ],
       "topics": [
         "logistics"
       ],
-      "sourceSlug": "pompeii-entrances-map-and-orientation-which-gate-should-you-use",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-entrances-map-and-orientation-which-gate-should-you-use"
+      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
     },
     {
-      "id": "format-duration-007",
+      "id": "format-duration-008",
+      "fact": "They typically include transport, Pompeii entry, a guided visit of the ruins, Vesuvius tickets, and a reserved crater time slot, all in a single 9–11 hour day.",
+      "figures": [
+        "9–11 hour"
+      ],
+      "topics": [
+        "format-duration",
+        "operators"
+      ],
+      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
+    },
+    {
+      "id": "pricing-005",
+      "fact": "From Naples: €70–90 per person for 8–9 hour tours.",
+      "figures": [
+        "€70–90",
+        "8–9 hour"
+      ],
+      "topics": [
+        "pricing",
+        "operators"
+      ],
+      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
+    },
+    {
+      "id": "pricing-006",
+      "fact": "From Sorrento: €80–110 per person with coastal pickup.",
+      "figures": [
+        "€80–110"
+      ],
+      "topics": [
+        "pricing",
+        "operators"
+      ],
+      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
+    },
+    {
+      "id": "pricing-007",
+      "fact": "From Rome: €100–130 per person for 12–13 hour full-day tours including high-speed train or private transport.",
+      "figures": [
+        "€100–130",
+        "12–13 hour"
+      ],
+      "topics": [
+        "pricing",
+        "operators",
+        "getting-there"
+      ],
+      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
+    },
+    {
+      "id": "timing-019",
       "fact": "A 2-hour express visit covers the Forum, Forum Baths, and one major house.",
       "figures": [
         "2-hour"
       ],
       "topics": [
-        "format-duration",
-        "highlights"
+        "timing",
+        "format-duration"
       ],
       "sourceSlug": "how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes",
       "sourceUrl": "https://pompeiiguidetours.com/how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes"
     },
     {
-      "id": "format-duration-008",
+      "id": "timing-020",
       "fact": "A 4-hour visit adds the Amphitheatre, Garden of the Fugitives, and Via dell'Abbondanza.",
       "figures": [
         "4-hour"
       ],
       "topics": [
-        "format-duration",
-        "highlights"
+        "timing",
+        "format-duration"
       ],
       "sourceSlug": "how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes",
       "sourceUrl": "https://pompeiiguidetours.com/how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes"
     },
     {
-      "id": "format-duration-009",
+      "id": "timing-021",
       "fact": "A full day of 7–8 hours lets you reach the Villa of the Mysteries and explore quieter residential districts.",
       "figures": [
-        "7–8"
+        "7–8 hours"
       ],
       "topics": [
-        "format-duration",
-        "highlights"
+        "timing",
+        "format-duration"
       ],
       "sourceSlug": "how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes",
       "sourceUrl": "https://pompeiiguidetours.com/how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes"
     },
     {
-      "id": "timing-007",
+      "id": "timing-022",
       "fact": "From Porta Marina, walk directly to the Forum and spend 15–20 minutes taking in the Basilica, Temple of Jupiter, and the views toward Vesuvius.",
       "figures": [
         "15–20 minutes"
@@ -850,7 +1208,7 @@
       "sourceUrl": "https://pompeiiguidetours.com/how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes"
     },
     {
-      "id": "timing-008",
+      "id": "timing-023",
       "fact": "Continue north to the Forum Baths, which take about 10 minutes to walk through and show Roman bathing culture in a compact, well-preserved space.",
       "figures": [
         "10 minutes"
@@ -863,7 +1221,7 @@
       "sourceUrl": "https://pompeiiguidetours.com/how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes"
     },
     {
-      "id": "timing-009",
+      "id": "timing-024",
       "fact": "From there, head to the House of the Faun or the House of the Vettii, whichever is open, for 15–20 minutes to see the best domestic frescoes and mosaics on site.",
       "figures": [
         "15–20 minutes"
@@ -876,11 +1234,10 @@
       "sourceUrl": "https://pompeiiguidetours.com/how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes"
     },
     {
-      "id": "timing-010",
-      "fact": "Skip the Amphitheatre, Garden of the Fugitives, and Villa of the Mysteries on this route — they add 30–60 minutes each and are too far from Porta Marina for a 2-hour visit.",
+      "id": "timing-025",
+      "fact": "The Forum, Forum Baths, one major house (Faun or Vettii), and a walk along Via dell'Abbondanza, covering roughly 1.5 km from Porta Marina.",
       "figures": [
-        "30–60 minutes",
-        "2-hour"
+        "1.5 km"
       ],
       "topics": [
         "timing",
@@ -890,11 +1247,11 @@
       "sourceUrl": "https://pompeiiguidetours.com/how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes"
     },
     {
-      "id": "timing-011",
-      "fact": "Start at Porta Marina and follow the same Forum, Forum Baths, and major house sequence as the 2-hour route, but with more time at each stop — roughly 20–30 minutes per site instead of 10–15.",
+      "id": "timing-026",
+      "fact": "Skip the Amphitheatre, Garden of the Fugitives, and Villa of the Mysteries on this route — they add 30–60 minutes each and are too far from Porta Marina for a 2-hour visit.",
       "figures": [
-        "20–30 minutes",
-        "10–15"
+        "30–60 minutes",
+        "2-hour"
       ],
       "topics": [
         "timing",
@@ -904,7 +1261,22 @@
       "sourceUrl": "https://pompeiiguidetours.com/how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes"
     },
     {
-      "id": "timing-012",
+      "id": "timing-027",
+      "fact": "Start at Porta Marina and follow the same Forum, Forum Baths, and major house sequence as the 2-hour route, but with more time at each stop — roughly 20–30 minutes per site instead of 10–15.",
+      "figures": [
+        "2-hour",
+        "20–30 minutes",
+        "10–15"
+      ],
+      "topics": [
+        "timing",
+        "format-duration"
+      ],
+      "sourceSlug": "how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes",
+      "sourceUrl": "https://pompeiiguidetours.com/how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes"
+    },
+    {
+      "id": "timing-028",
       "fact": "Continue all the way to the Amphitheatre and Large Palaestra on the eastern side, which adds about 20 minutes of walking from the city centre but rewards you with Pompeii's best-preserved entertainment venue and an open green space to rest.",
       "figures": [
         "20 minutes"
@@ -917,7 +1289,7 @@
       "sourceUrl": "https://pompeiiguidetours.com/how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes"
     },
     {
-      "id": "timing-013",
+      "id": "timing-029",
       "fact": "Plan a lunch break of 30–45 minutes near the Forum or at the main restaurant area around the halfway point.",
       "figures": [
         "30–45 minutes"
@@ -930,10 +1302,10 @@
       "sourceUrl": "https://pompeiiguidetours.com/how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes"
     },
     {
-      "id": "timing-014",
-      "fact": "The Villa of the Mysteries lies just outside Pompeii's western walls, about a 15–20 minute walk from Porta Marina along Via dei Sepolcri, the ancient funerary road.",
+      "id": "timing-030",
+      "fact": "With 7–8 hours available, include the walk along the city walls to the Villa of the Mysteries, then return through quieter streets or secondary districts.",
       "figures": [
-        "15–20 minute"
+        "7–8 hours"
       ],
       "topics": [
         "timing",
@@ -943,7 +1315,20 @@
       "sourceUrl": "https://pompeiiguidetours.com/how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes"
     },
     {
-      "id": "pricing-005",
+      "id": "timing-031",
+      "fact": "The Villa of the Mysteries lies just outside Pompeii's western walls, about a 15–20 minute walk from Porta Marina along Via dei Sepolcri, the ancient funerary road.",
+      "figures": [
+        "15–20 minute"
+      ],
+      "topics": [
+        "timing",
+        "getting-there"
+      ],
+      "sourceSlug": "how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes",
+      "sourceUrl": "https://pompeiiguidetours.com/how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes"
+    },
+    {
+      "id": "pricing-008",
       "fact": "Yes, it contains one of the best-preserved Roman fresco cycles in the world, but it adds 40 minutes of walking round trip from Porta Marina and requires a Pompeii Plus ticket (€25 instead of €20).",
       "figures": [
         "40 minutes",
@@ -952,8 +1337,8 @@
       ],
       "topics": [
         "pricing",
-        "timing",
-        "highlights"
+        "tickets",
+        "timing"
       ],
       "sourceSlug": "how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes",
       "sourceUrl": "https://pompeiiguidetours.com/how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes"
@@ -972,7 +1357,7 @@
       "sourceUrl": "https://pompeiiguidetours.com/how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes"
     },
     {
-      "id": "format-duration-010",
+      "id": "format-duration-009",
       "fact": "Pompeii is a massive 66-hectare ancient city that takes 3–6 hours to visit; Herculaneum is a compact 4.5-hectare site with far better preservation that takes 1.5–2 hours.",
       "figures": [
         "66",
@@ -988,7 +1373,7 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-herculaneum-how-to-visit-both-and-which-is-better"
     },
     {
-      "id": "getting-there-016",
+      "id": "getting-there-019",
       "fact": "Both are on the same Circumvesuviana train line, 20–25 minutes apart, and can be combined in a single day if you start at 9:00 AM.",
       "figures": [
         "20–25 minutes",
@@ -996,14 +1381,13 @@
       ],
       "topics": [
         "getting-there",
-        "timing",
-        "logistics"
+        "timing"
       ],
       "sourceSlug": "pompeii-and-herculaneum-how-to-visit-both-and-which-is-better",
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-herculaneum-how-to-visit-both-and-which-is-better"
     },
     {
-      "id": "pricing-006",
+      "id": "pricing-009",
       "fact": "The Campania Artecard (€42) covers both sites plus Naples transport and pays for itself if you add one museum.",
       "figures": [
         "€42"
@@ -1017,11 +1401,8 @@
     },
     {
       "id": "herculaneum-005",
-      "fact": "Pompeii was a large commercial city of roughly 11,000 inhabitants spread across about 66 hectares, of which around 45 are currently visitable; Herculaneum was a smaller, wealthier seaside town of around 4,000–5,000 people, and the excavated area covers roughly 4.5 hectares—about one tenth the size.",
+      "fact": "Herculaneum was a smaller, wealthier seaside town of around 4,000–5,000 people, and the excavated area covers roughly 4.5 hectares—about one tenth the size.",
       "figures": [
-        "11,000",
-        "66",
-        "45",
         "4,000–5,000",
         "4.5"
       ],
@@ -1033,7 +1414,7 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-herculaneum-how-to-visit-both-and-which-is-better"
     },
     {
-      "id": "format-duration-011",
+      "id": "format-duration-010",
       "fact": "A thorough visit to Pompeii takes 3–6 hours; most visitors cover Herculaneum in 1.5–2 hours.",
       "figures": [
         "3–6",
@@ -1049,7 +1430,7 @@
       "id": "herculaneum-006",
       "fact": "At Herculaneum the site was sealed by a fast-moving pyroclastic surge and then buried under up to 20 metres of volcanic material, which preserved wooden furniture, door frames, staircases, food, fabrics and painted walls to a degree not seen anywhere else in the Roman world.",
       "figures": [
-        "20"
+        "20 metres"
       ],
       "topics": [
         "herculaneum",
@@ -1059,21 +1440,34 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-herculaneum-how-to-visit-both-and-which-is-better"
     },
     {
-      "id": "timing-015",
+      "id": "timing-032",
       "fact": "Yes, combining both in a single day is realistic and a very common itinerary, as long as you keep your Pompeii visit to 2–3 hours and plan the logistics in advance.",
       "figures": [
-        "2–3"
+        "2–3 hours"
       ],
       "topics": [
         "timing",
-        "format-duration",
-        "logistics"
+        "format-duration"
       ],
       "sourceSlug": "pompeii-and-herculaneum-how-to-visit-both-and-which-is-better",
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-herculaneum-how-to-visit-both-and-which-is-better"
     },
     {
-      "id": "timing-016",
+      "id": "timing-033",
+      "fact": "With both sites having last entry at 17:30 in the summer season, you have enough time to do both comfortably without rushing if you arrive at Pompeii by 9:00 and leave by 12:00.",
+      "figures": [
+        "17:30",
+        "9:00",
+        "12:00"
+      ],
+      "topics": [
+        "timing"
+      ],
+      "sourceSlug": "pompeii-and-herculaneum-how-to-visit-both-and-which-is-better",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-herculaneum-how-to-visit-both-and-which-is-better"
+    },
+    {
+      "id": "timing-034",
       "fact": "Yes, start at Pompeii at 9:00 AM for a 2.5–3 hour highlights loop, then take the Circumvesuviana to Ercolano Scavi (20–25 minutes, €2.80) and spend 1.5–2 hours at Herculaneum in the early afternoon.",
       "figures": [
         "9:00 AM",
@@ -1085,28 +1479,13 @@
       "topics": [
         "timing",
         "getting-there",
-        "format-duration"
+        "pricing"
       ],
       "sourceSlug": "pompeii-and-herculaneum-how-to-visit-both-and-which-is-better",
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-herculaneum-how-to-visit-both-and-which-is-better"
     },
     {
-      "id": "timing-017",
-      "fact": "With both sites having last entry at 17:30 in the summer season, you have enough time to do both comfortably without rushing if you arrive at Pompeii by 9:00 and leave by 12:00.",
-      "figures": [
-        "17:30",
-        "9:00",
-        "12:00"
-      ],
-      "topics": [
-        "timing",
-        "logistics"
-      ],
-      "sourceSlug": "pompeii-and-herculaneum-how-to-visit-both-and-which-is-better",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-herculaneum-how-to-visit-both-and-which-is-better"
-    },
-    {
-      "id": "timing-018",
+      "id": "timing-035",
       "fact": "The reverse order—Herculaneum first, Pompeii second—also works and has one advantage: Herculaneum opens at 8:30, thirty minutes earlier than Pompeii, so you can get ahead of the day-trip crowds if you take an early Circumvesuviana from Naples and reach Ercolano Scavi before 9:00.",
       "figures": [
         "8:30",
@@ -1114,43 +1493,40 @@
       ],
       "topics": [
         "timing",
-        "crowds",
+        "crowds"
+      ],
+      "sourceSlug": "pompeii-and-herculaneum-how-to-visit-both-and-which-is-better",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-herculaneum-how-to-visit-both-and-which-is-better"
+    },
+    {
+      "id": "getting-there-020",
+      "fact": "From Pompei Scavi – Villa dei Misteri station, take the line towards Naples (Napoli Porta Nolana direction) and get off at Ercolano Scavi station; from there it is a short, clearly signposted walk of about 10 minutes downhill to the Herculaneum entrance.",
+      "figures": [
+        "10 minutes"
+      ],
+      "topics": [
         "getting-there"
       ],
       "sourceSlug": "pompeii-and-herculaneum-how-to-visit-both-and-which-is-better",
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-herculaneum-how-to-visit-both-and-which-is-better"
     },
     {
-      "id": "getting-there-017",
+      "id": "getting-there-021",
       "fact": "The journey takes approximately 20–25 minutes and trains run roughly every 20–30 minutes throughout the day; a single ticket costs around €2.80 and the same standard Circumvesuviana ticket valid for Naples public transport applies.",
       "figures": [
-        "20–25",
-        "20–30",
+        "20–25 minutes",
+        "20–30 minutes",
         "€2.80"
       ],
       "topics": [
         "getting-there",
-        "timing",
         "pricing"
       ],
       "sourceSlug": "pompeii-and-herculaneum-how-to-visit-both-and-which-is-better",
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-herculaneum-how-to-visit-both-and-which-is-better"
     },
     {
-      "id": "getting-there-018",
-      "fact": "From Pompei Scavi – Villa dei Misteri station, take the line towards Naples (Napoli Porta Nolana direction) and get off at Ercolano Scavi station; from there it is a short, clearly signposted walk of about 10 minutes downhill to the Herculaneum entrance.",
-      "figures": [
-        "10"
-      ],
-      "topics": [
-        "getting-there",
-        "logistics"
-      ],
-      "sourceSlug": "pompeii-and-herculaneum-how-to-visit-both-and-which-is-better",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-herculaneum-how-to-visit-both-and-which-is-better"
-    },
-    {
-      "id": "pricing-007",
+      "id": "pricing-010",
       "fact": "The 3-day Campania Artecard costs €42 for adults and €30 for EU citizens aged 18–25; it gives free entry to the first two sites you visit and a 50% discount on all subsequent sites, plus unlimited use of public transport in the Naples area including the Circumvesuviana trains to Pompeii (Pompei Scavi) and Herculaneum (Ercolano Scavi) for three calendar days.",
       "figures": [
         "€42",
@@ -1166,7 +1542,7 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-herculaneum-how-to-visit-both-and-which-is-better"
     },
     {
-      "id": "pricing-008",
+      "id": "pricing-011",
       "fact": "The 7-day version costs €43 and covers free entry to the first five sites with 50% off further sites, also without transport.",
       "figures": [
         "€43",
@@ -1180,8 +1556,8 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-herculaneum-how-to-visit-both-and-which-is-better"
     },
     {
-      "id": "pricing-009",
-      "fact": "Yes if you plan to add at least one Naples museum. The 3-day card costs €42 and covers free entry to your first two sites plus unlimited Circumvesuviana transport, versus €36 for Pompeii (€20) and Herculaneum (€16) tickets bought separately without transport.",
+      "id": "pricing-012",
+      "fact": "The 3-day card costs €42 and covers free entry to your first two sites plus unlimited Circumvesuviana transport, versus €36 for Pompeii (€20) and Herculaneum (€16) tickets bought separately without transport.",
       "figures": [
         "€42",
         "€36",
@@ -1196,7 +1572,7 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-herculaneum-how-to-visit-both-and-which-is-better"
     },
     {
-      "id": "pricing-010",
+      "id": "pricing-013",
       "fact": "For a visitor who plans to see Pompeii (€20) and Herculaneum (€16) plus one or two Naples attractions such as the National Archaeological Museum (MANN, around €15–22), the 3-day card at €42 pays for itself easily and adds the train connections at no extra cost.",
       "figures": [
         "€20",
@@ -1212,257 +1588,13 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-herculaneum-how-to-visit-both-and-which-is-better"
     },
     {
-      "id": "timing-019",
-      "fact": "Yes, you can visit Pompeii and Vesuvius in one day starting at Pompeii at 9:00 AM for 2–3 hours, then taking the EAV bus to Vesuvius (50–55 minutes) for a 1.5-hour visit including the crater climb.",
-      "figures": [
-        "9:00 AM",
-        "2–3 hours",
-        "50–55 minutes",
-        "1.5-hour"
-      ],
-      "topics": [
-        "timing",
-        "logistics",
-        "getting-there"
-      ],
-      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
-    },
-    {
-      "id": "pricing-011",
-      "fact": "Budget approximately €35–38 independently (€20 Pompeii + €15 Vesuvius crater) or €70–130 for an organised tour with transport and guide included.",
-      "figures": [
-        "€35–38",
-        "€20",
-        "€15",
-        "€70–130"
-      ],
-      "topics": [
-        "pricing",
-        "tickets"
-      ],
-      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
-    },
-    {
-      "id": "timing-020",
-      "fact": "A realistic schedule includes 2–3 hours in Pompeii, 1.5–2 hours for Vesuvius, and about 1 hour total for transfers.",
-      "figures": [
-        "2–3 hours",
-        "1.5–2 hours",
-        "1 hour"
-      ],
-      "topics": [
-        "timing",
-        "format-duration",
-        "logistics"
-      ],
-      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
-    },
-    {
-      "id": "timing-021",
-      "fact": "Pompeii from 9:00 to 11:30 AM, EAV bus to Vesuvius (50–55 minutes), arrive at the crater parking by 12:30 PM, climb and visit the crater rim for 1.5 hours, and return by mid-afternoon.",
-      "figures": [
-        "9:00",
-        "11:30 AM",
-        "50–55 minutes",
-        "12:30 PM",
-        "1.5 hours"
-      ],
-      "topics": [
-        "timing",
-        "format-duration",
-        "getting-there"
-      ],
-      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
-    },
-    {
-      "id": "format-duration-012",
-      "fact": "The total day runs approximately 8–9 hours including all transport.",
-      "figures": [
-        "8–9 hours"
-      ],
-      "topics": [
-        "format-duration",
-        "logistics"
-      ],
-      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
-    },
-    {
-      "id": "timing-022",
-      "fact": "Start with Pompeii in the morning because it opens at 9:00 AM and you need the coolest hours for 2–3 hours of walking on exposed ancient streets.",
-      "figures": [
-        "9:00 AM",
-        "2–3 hours"
-      ],
-      "topics": [
-        "timing",
-        "crowds"
-      ],
-      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
-    },
-    {
-      "id": "getting-there-019",
-      "fact": "The main public option is the EAV bus from Pompei Piazza Anfiteatro or Pompei Villa dei Misteri to the Vesuvius parking area at 1,000 m.",
-      "figures": [
-        "1,000 m"
-      ],
-      "topics": [
-        "getting-there",
-        "logistics"
-      ],
-      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
-    },
-    {
-      "id": "getting-there-020",
-      "fact": "Private shuttles from near Porta Marina cost approximately €10–15 per person and run more frequently.",
-      "figures": [
-        "€10–15"
-      ],
-      "topics": [
-        "getting-there",
-        "pricing"
-      ],
-      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
-    },
-    {
-      "id": "logistics-012",
-      "fact": "From the parking area, you walk 20–40 minutes uphill on a wide but steep gravel path to reach the crater.",
-      "figures": [
-        "20–40 minutes"
-      ],
-      "topics": [
-        "logistics",
-        "highlights"
-      ],
-      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
-    },
-    {
-      "id": "pricing-012",
-      "fact": "Vesuvius crater entry costs €15 per person and must be purchased at the site or through authorised resellers.",
-      "figures": [
-        "€15"
-      ],
-      "topics": [
-        "pricing",
-        "tickets"
-      ],
-      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
-    },
-    {
-      "id": "timing-023",
-      "fact": "The crater is typically open from 9:00 AM to one hour before sunset, with timed entry slots in peak season.",
-      "figures": [
-        "9:00 AM"
-      ],
-      "topics": [
-        "timing",
-        "tickets"
-      ],
-      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
-    },
-    {
-      "id": "timing-024",
-      "fact": "You are allowed approximately 20–30 minutes at the crater rim.",
-      "figures": [
-        "20–30 minutes"
-      ],
-      "topics": [
-        "timing",
-        "highlights"
-      ],
-      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
-    },
-    {
-      "id": "logistics-013",
-      "fact": "The path is roughly 1 km with an elevation gain of about 150 metres.",
-      "figures": [
-        "1 km",
-        "150 metres"
-      ],
-      "topics": [
-        "logistics",
-        "highlights"
-      ],
-      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
-    },
-    {
-      "id": "format-duration-013",
-      "fact": "They typically include transport, Pompeii entry, a guided visit of the ruins, Vesuvius tickets, and a reserved crater time slot, all in a single 9–11 hour day.",
-      "figures": [
-        "9–11 hour"
-      ],
-      "topics": [
-        "format-duration",
-        "operators"
-      ],
-      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
-    },
-    {
-      "id": "pricing-013",
-      "fact": "From Naples: €70–90 per person for 8–9 hour tours.",
-      "figures": [
-        "€70–90",
-        "8–9 hour"
-      ],
-      "topics": [
-        "pricing",
-        "operators",
-        "getting-there"
-      ],
-      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
-    },
-    {
-      "id": "pricing-014",
-      "fact": "From Sorrento: €80–110 per person with coastal pickup.",
-      "figures": [
-        "€80–110"
-      ],
-      "topics": [
-        "pricing",
-        "operators",
-        "getting-there"
-      ],
-      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
-    },
-    {
-      "id": "pricing-015",
-      "fact": "From Rome: €100–130 per person for 12–13 hour full-day tours including high-speed train or private transport.",
-      "figures": [
-        "€100–130",
-        "12–13 hour"
-      ],
-      "topics": [
-        "pricing",
-        "operators",
-        "getting-there"
-      ],
-      "sourceSlug": "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
-    },
-    {
-      "id": "tickets-005",
+      "id": "tickets-008",
       "fact": "Pompeii sells three ticket types in 2026: Express (€20) for the ancient city only, Pompeii Plus (€25) adding Villa dei Misteri and suburban villas, and Pompei e Altri Siti (€30) covering all sites for 3 days.",
       "figures": [
-        "2026",
         "€20",
         "€25",
         "€30",
-        "3"
+        "3 days"
       ],
       "topics": [
         "tickets",
@@ -1472,7 +1604,7 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-tickets-explained-standard-plus-and-guided-options-compared"
     },
     {
-      "id": "tickets-006",
+      "id": "tickets-009",
       "fact": "EU citizens aged 18–24 get a reduced €2 ticket, and under-18s enter free, as long as they show ID at the ticket office or when collecting online bookings",
       "figures": [
         "18–24",
@@ -1486,10 +1618,10 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-tickets-explained-standard-plus-and-guided-options-compared"
     },
     {
-      "id": "tickets-007",
+      "id": "tickets-010",
       "fact": "Book 2–4 weeks ahead for visits between mid-March and mid-October, when the daily 20,000-visitor cap and timed entry slots apply.",
       "figures": [
-        "2–4",
+        "2–4 weeks",
         "20,000"
       ],
       "topics": [
@@ -1501,12 +1633,25 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-tickets-explained-standard-plus-and-guided-options-compared"
     },
     {
-      "id": "tickets-008",
+      "id": "highlights-001",
+      "fact": "Villa dei Misteri contains some of the best-preserved Roman frescoes in the world and is a 15-minute walk from the main site.",
+      "figures": [
+        "15-minute"
+      ],
+      "topics": [
+        "highlights",
+        "logistics"
+      ],
+      "sourceSlug": "pompeii-tickets-explained-standard-plus-and-guided-options-compared",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-tickets-explained-standard-plus-and-guided-options-compared"
+    },
+    {
+      "id": "tickets-011",
       "fact": "The Pompeii Plus ticket costs €25 for adults and is valid for one entry to each included site, while Pompei e Altri Siti at €30 adds Oplontis, Stabiae villas and the Stabia museum for 3 days.",
       "figures": [
         "€25",
         "€30",
-        "3"
+        "3 days"
       ],
       "topics": [
         "tickets",
@@ -1516,10 +1661,10 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-tickets-explained-standard-plus-and-guided-options-compared"
     },
     {
-      "id": "guides-005",
+      "id": "guides-007",
       "fact": "Group guided tours usually last 2–3 hours and cover the main highlights with a licensed guide and headsets.",
       "figures": [
-        "2–3"
+        "2–3 hours"
       ],
       "topics": [
         "guides",
@@ -1529,33 +1674,33 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-tickets-explained-standard-plus-and-guided-options-compared"
     },
     {
-      "id": "pricing-016",
+      "id": "guides-008",
       "fact": "Prices typically range from €45–70 per person including entry.",
       "figures": [
         "€45–70"
       ],
       "topics": [
-        "pricing",
-        "guides"
+        "guides",
+        "pricing"
       ],
       "sourceSlug": "pompeii-tickets-explained-standard-plus-and-guided-options-compared",
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-tickets-explained-standard-plus-and-guided-options-compared"
     },
     {
-      "id": "pricing-017",
+      "id": "pricing-014",
       "fact": "Total cost is usually around €25–35, and you can explore at your own pace, stopping wherever you like.",
       "figures": [
         "€25–35"
       ],
       "topics": [
         "pricing",
-        "guides"
+        "format-duration"
       ],
       "sourceSlug": "pompeii-tickets-explained-standard-plus-and-guided-options-compared",
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-tickets-explained-standard-plus-and-guided-options-compared"
     },
     {
-      "id": "tickets-009",
+      "id": "tickets-012",
       "fact": "Pompeii offers free entry on the first Sunday of every month and keeps year-round free and reduced tickets for under-18s and EU visitors aged 18–25.",
       "figures": [
         "18–25"
@@ -1568,7 +1713,7 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-tickets-explained-standard-plus-and-guided-options-compared"
     },
     {
-      "id": "crowds-003",
+      "id": "crowds-004",
       "fact": "The park caps visitors (around 20,000 people), and lines can be long from early morning.",
       "figures": [
         "20,000"
@@ -1581,10 +1726,25 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-tickets-explained-standard-plus-and-guided-options-compared"
     },
     {
-      "id": "tickets-010",
+      "id": "tickets-013",
+      "fact": "Children under 18 enter for free, while EU citizens aged 18–25 can buy a reduced €2 ticket with ID.",
+      "figures": [
+        "18",
+        "18–25",
+        "€2"
+      ],
+      "topics": [
+        "tickets",
+        "pricing"
+      ],
+      "sourceSlug": "pompeii-tickets-explained-standard-plus-and-guided-options-compared",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-tickets-explained-standard-plus-and-guided-options-compared"
+    },
+    {
+      "id": "tickets-014",
       "fact": "Tickets usually become available about 4–6 weeks in advance.",
       "figures": [
-        "4–6"
+        "4–6 weeks"
       ],
       "topics": [
         "tickets",
@@ -1594,10 +1754,10 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-tickets-explained-standard-plus-and-guided-options-compared"
     },
     {
-      "id": "timing-025",
+      "id": "timing-036",
       "fact": "For shoulder or low season, 1–2 weeks ahead is usually enough.",
       "figures": [
-        "1–2"
+        "1–2 weeks"
       ],
       "topics": [
         "timing",
@@ -1607,7 +1767,7 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-tickets-explained-standard-plus-and-guided-options-compared"
     },
     {
-      "id": "pricing-018",
+      "id": "pricing-015",
       "fact": "Pompeii offers the best value per minute of any major European monument at $0.70/min — 2.3 times cheaper per minute than the Louvre ($1.60/min).",
       "figures": [
         "$0.70/min",
@@ -1615,13 +1775,14 @@
         "$1.60/min"
       ],
       "topics": [
-        "pricing"
+        "pricing",
+        "format-duration"
       ],
       "sourceSlug": "pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min",
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
     },
     {
-      "id": "pricing-019",
+      "id": "pricing-016",
       "fact": "Tours average 4.9 hours, nearly double the Louvre's 2.6 hours, at a comparable price ($176 vs $194).",
       "figures": [
         "4.9 hours",
@@ -1650,7 +1811,7 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
     },
     {
-      "id": "pricing-020",
+      "id": "pricing-017",
       "fact": "At $0.70 per minute, Pompeii costs less per minute of guided experience than the Colosseum ($0.79), the Sagrada Familia ($1.04), the Last Supper ($1.36), and the Louvre ($1.60).",
       "figures": [
         "$0.70",
@@ -1666,7 +1827,7 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
     },
     {
-      "id": "pricing-021",
+      "id": "pricing-018",
       "fact": "The average tour costs $176 — comparable to the Colosseum ($174) and higher than the Sagrada Familia ($130).",
       "figures": [
         "$176",
@@ -1680,7 +1841,36 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
     },
     {
-      "id": "pricing-022",
+      "id": "format-duration-011",
+      "fact": "At 4.9 hours average duration, they are nearly twice as long as the Louvre (2.6 hours) and significantly longer than the Colosseum (3.4 hours).",
+      "figures": [
+        "4.9 hours",
+        "2.6 hours",
+        "3.4 hours"
+      ],
+      "topics": [
+        "format-duration"
+      ],
+      "sourceSlug": "pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
+    },
+    {
+      "id": "pricing-019",
+      "fact": "Pompeii's markup over its official ticket is 9.8x — the second-highest in our study, just behind the Last Supper (10.7x) and slightly above the Colosseum (9.6x).",
+      "figures": [
+        "9.8x",
+        "10.7x",
+        "9.6x"
+      ],
+      "topics": [
+        "pricing",
+        "tickets"
+      ],
+      "sourceSlug": "pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
+    },
+    {
+      "id": "pricing-020",
       "fact": "At Pompeii, a 9.8x markup produces a $176 tour that lasts 4.9 hours — because the archaeological park is enormous and there is genuinely that much to see.",
       "figures": [
         "9.8x",
@@ -1695,11 +1885,11 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
     },
     {
-      "id": "highlights-001",
+      "id": "highlights-002",
       "fact": "The archaeological park covers 66 hectares — over 160 acres — of excavated streets, houses, temples, baths, theaters, bakeries, workshops, and public spaces.",
       "figures": [
-        "66 hectares",
-        "160 acres"
+        "66",
+        "160"
       ],
       "topics": [
         "highlights",
@@ -1709,7 +1899,7 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
     },
     {
-      "id": "logistics-014",
+      "id": "logistics-010",
       "fact": "Walking the main route from the Porta Marina entrance to the amphitheater is over 2 kilometers.",
       "figures": [
         "2 kilometers"
@@ -1722,10 +1912,11 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
     },
     {
-      "id": "timing-026",
+      "id": "timing-037",
       "fact": "A comprehensive visit covering the major houses (House of the Faun, House of the Vettii, Villa of the Mysteries), the Forum, the theaters, the brothel, the bakeries, and the plaster casts requires 3 to 4 hours at minimum.",
       "figures": [
-        "3 to 4 hours"
+        "3",
+        "4 hours"
       ],
       "topics": [
         "timing",
@@ -1736,24 +1927,53 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
     },
     {
-      "id": "getting-there-021",
-      "fact": "They include transport from Naples, Sorrento, or Rome (adding 1 to 3 hours of travel time), an introduction to the historical context, the guided walk through the ruins, and sometimes additional stops at Herculaneum or Mount Vesuvius.",
+      "id": "format-duration-012",
+      "fact": "The 4.9-hour average reflects the full scope of the experience — not just the time on site.",
       "figures": [
-        "1 to 3 hours"
+        "4.9-hour"
       ],
       "topics": [
-        "getting-there",
-        "timing",
-        "herculaneum"
+        "format-duration"
+      ],
+      "sourceSlug": "pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
+    },
+    {
+      "id": "format-duration-013",
+      "fact": "At Pompeii, the tour can expand to 5 hours because the content — entire neighborhoods, dozens of buildings, centuries of history visible in the streets — sustains it.",
+      "figures": [
+        "5 hours"
+      ],
+      "topics": [
+        "format-duration",
+        "timing"
       ],
       "sourceSlug": "pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min",
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
     },
     {
       "id": "operators-002",
+      "fact": "Pompeii has more tour products than any other monument in our study — 219, compared to 94 at the Louvre, 81 at the Sagrada Familia, 76 at the Colosseum, and 35 at the Last Supper.",
+      "figures": [
+        "219",
+        "94",
+        "81",
+        "76",
+        "35"
+      ],
+      "topics": [
+        "operators",
+        "tickets"
+      ],
+      "sourceSlug": "pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
+    },
+    {
+      "id": "operators-003",
       "fact": "The top 3 operators — Askos Tours (15 tours), Enjoy Pompeii (12), and inStazione (10) — control only 17% of the market.",
       "figures": [
-        "15 tours",
+        "3",
+        "15",
         "12",
         "10",
         "17%"
@@ -1765,11 +1985,40 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
     },
     {
-      "id": "pricing-023",
-      "fact": "Pompeii contains both the cheapest tour in Europe ($4 shuttle bus) and comprehensive archaeologist-led tours at $65, demonstrating a market that serves every budget.",
+      "id": "operators-004",
+      "fact": "The top 5 add Tempio Travel (9) and WORLDTOURS (8) for a combined 25%.",
       "figures": [
-        "$4",
-        "$65"
+        "5",
+        "9",
+        "8",
+        "25%"
+      ],
+      "topics": [
+        "operators"
+      ],
+      "sourceSlug": "pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
+    },
+    {
+      "id": "operators-005",
+      "fact": "Dozens of smaller operators fill the remaining 75% with specialized products targeting every niche: archaeologist-led tours, sunset visits, dual-site Pompeii + Herculaneum combos, family tours, private experiences, and budget shuttle buses from Naples.",
+      "figures": [
+        "75%"
+      ],
+      "topics": [
+        "operators",
+        "herculaneum"
+      ],
+      "sourceSlug": "pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
+    },
+    {
+      "id": "pricing-021",
+      "fact": "The evidence is in the data: despite a 9.8x average markup, Pompeii contains the cheapest per-minute product in our entire 505-tour dataset — a Naples-Pompeii Shuttle Bus with Audio Guide at $0.10 per minute.",
+      "figures": [
+        "9.8x",
+        "505",
+        "$0.10 per minute"
       ],
       "topics": [
         "pricing",
@@ -1779,7 +2028,20 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
     },
     {
-      "id": "operators-003",
+      "id": "operators-006",
+      "fact": "The top 3 operators control only 17% of the market.",
+      "figures": [
+        "17%"
+      ],
+      "topics": [
+        "operators",
+        "pricing"
+      ],
+      "sourceSlug": "pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
+    },
+    {
+      "id": "operators-007",
       "fact": "With 50+ operators competing, prices face constant downward pressure.",
       "figures": [
         "50+"
@@ -1792,23 +2054,34 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
     },
     {
-      "id": "pricing-024",
-      "fact": "Two of the three perfect 5.0-rated tours in Intercoper's 505-tour study are Pompeii products priced at $58 and $65.",
+      "id": "pricing-022",
+      "fact": "Pompeii contains both the cheapest tour in Europe ($4 shuttle bus) and comprehensive archaeologist-led tours at $65, demonstrating a market that serves every budget.",
       "figures": [
-        "5.0",
-        "$58",
+        "$4",
         "$65"
+      ],
+      "topics": [
+        "pricing",
+        "tickets"
+      ],
+      "sourceSlug": "pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
+    },
+    {
+      "id": "pricing-023",
+      "fact": "Buy at the $58–$65 sweet spot for maximum quality.",
+      "figures": [
+        "$58–$65"
       ],
       "topics": [
         "pricing",
         "guides"
       ],
-      "scale": "It scores 3.9/5, which confirms our broader finding that audio-only products consistently underperform human-guided experiences.",
       "sourceSlug": "pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min",
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
     },
     {
-      "id": "pricing-025",
+      "id": "pricing-024",
       "fact": "At $121, you get a full-day experience from Naples or Sorrento with transport, a licensed guide, skip-the-line entry, and 2 to 3 hours inside the park.",
       "figures": [
         "$121",
@@ -1816,27 +2089,14 @@
       ],
       "topics": [
         "pricing",
-        "skip-the-line",
-        "getting-there"
+        "getting-there",
+        "skip-the-line"
       ],
       "sourceSlug": "pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min",
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
     },
     {
-      "id": "pricing-026",
-      "fact": "Pompeii's markup (9.8x) is nearly identical to the Colosseum's (9.6x), but its value per minute is the best in Europe.",
-      "figures": [
-        "9.8x",
-        "9.6x"
-      ],
-      "topics": [
-        "pricing"
-      ],
-      "sourceSlug": "pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min",
-      "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
-    },
-    {
-      "id": "pricing-027",
+      "id": "pricing-025",
       "fact": "The $176 average is inflated by luxury private tours ($500–$2,322) that most visitors do not need.",
       "figures": [
         "$176",
@@ -1849,7 +2109,34 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
     },
     {
-      "id": "pricing-028",
+      "id": "pricing-026",
+      "fact": "In value per minute, Pompeii is the best deal in European tourism at $0.70/min — 2.3 times more value per minute than the Louvre.",
+      "figures": [
+        "$0.70/min",
+        "2.3"
+      ],
+      "topics": [
+        "pricing",
+        "highlights"
+      ],
+      "sourceSlug": "pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
+    },
+    {
+      "id": "format-duration-014",
+      "fact": "Tours average 4.9 hours because the archaeological park is an entire excavated city, not a single building.",
+      "figures": [
+        "4.9 hours"
+      ],
+      "topics": [
+        "format-duration",
+        "highlights"
+      ],
+      "sourceSlug": "pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
+    },
+    {
+      "id": "pricing-027",
       "fact": "A $100 tour that spends 2 hours in the park ($0.83/min) is worse value than a $130 tour that spends 4 hours ($0.54/min).",
       "figures": [
         "$100",
@@ -1867,13 +2154,28 @@
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
     },
     {
-      "id": "operators-004",
+      "id": "operators-008",
       "fact": "With 219 tours and no dominant operator, you have more options at Pompeii than at any other major European monument.",
       "figures": [
         "219"
       ],
       "topics": [
-        "operators"
+        "operators",
+        "tickets"
+      ],
+      "sourceSlug": "pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min",
+      "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
+    },
+    {
+      "id": "operators-009",
+      "fact": "Compare 3 to 4 products at your price point, check recent reviews for guide quality, and book with free cancellation.",
+      "figures": [
+        "3 to 4"
+      ],
+      "topics": [
+        "operators",
+        "tickets",
+        "guides"
       ],
       "sourceSlug": "pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min",
       "sourceUrl": "https://pompeiiguidetours.com/pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"

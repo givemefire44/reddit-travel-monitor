@@ -1,11 +1,6 @@
 [
   {
     "slug": "vatican-crowd-handling-staff",
-    "fact": "It is 1.89 stars, the average of reviews describing being herded or treated like cattle, more than two stars below the corpus average of 4.08.",
-    "reason": "voz editorial interna"
-  },
-  {
-    "slug": "vatican-crowd-handling-staff",
     "fact": "Reviews describing staff as helpful or kind average 4.27, above the corpus average — on only fifteen reviews, so treat the figure lightly, but the direction matters: a good interaction lifts a review rather than merely failing to sink it.",
     "reason": "voz editorial interna"
   },
@@ -15,43 +10,8 @@
     "reason": "voz editorial interna"
   },
   {
-    "slug": "vatican-cross-monument-replication",
-    "fact": "Photography is banned inside the Sistine Chapel, so Vatican reviews mention it in the context of being stopped, giving −0.05.",
-    "reason": "cifra \"-0.05\" no encontrada"
-  },
-  {
-    "slug": "vatican-early-morning-tour-review",
-    "fact": "The Key Master (Clavigero) tour enters before dawn, before the public, and you accompany the Vatican's official key-holder as they unlock the museums and turn on the lights, ending in a near-empty Sistine Chapel.",
-    "reason": "sin cifra"
-  },
-  {
     "slug": "vatican-early-access-really-means",
     "fact": "That detail is worth double-checking against older guides that still cite an 8:30 opening, a mismatch that has left early birds staring at an unexpected queue.",
     "reason": "apertura no autonoma"
-  },
-  {
-    "slug": "vatican-mobility-access",
-    "fact": "Reviews mentioning a wheelchair average 4.25 stars, above the corpus average of 4.08 — ramps, lifts, priority entry and attentive stewards come up repeatedly.",
-    "reason": "voz editorial interna"
-  },
-  {
-    "slug": "vatican-mobility-access",
-    "fact": "Reviews mentioning the walking distance average 0.43 stars below the corpus average and those mentioning nowhere to sit 0.63 below, while reviews mentioning stairs are essentially at average.",
-    "reason": "voz editorial interna"
-  },
-  {
-    "slug": "vatican-one-way-route",
-    "fact": "Reviews mentioning a map sit only 0.26 below average, while reviews mentioning the one-way system sit 1.35 below average.",
-    "reason": "frase no textual"
-  },
-  {
-    "slug": "vatican-value-perception",
-    "fact": "Removing every review that also carries a tag for queues, scams, cancellations, skip-the-line or booking leaves 303 reviews that mention price with no service failure attached, and they still average 3.38 — 0.70 below the corpus average.",
-    "reason": "voz editorial interna"
-  },
-  {
-    "slug": "vatican-value-perception",
-    "fact": "It is the only paid element at the Vatican where price mentions score above the corpus average, at 4.27 across 157 reviews.",
-    "reason": "voz editorial interna"
   }
 ]
