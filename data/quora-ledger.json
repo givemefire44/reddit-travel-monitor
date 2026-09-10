@@ -571,7 +571,8 @@
       ],
       "shingles": [],
       "generatedAt": "2026-09-10",
-      "estado": "entregado"
+      "estado": "descartado",
+      "descartadaAt": "2026-09-10"
     },
     {
       "questionUrl": "https://www.quora.com/Rome-How-do-I-distinguish-tourist-trap-restaurants-from-the-good-ones",
@@ -584,7 +585,7 @@
       ],
       "shingles": [],
       "generatedAt": "2026-09-10",
-      "estado": "entregado"
+      "estado": "publicada"
     },
     {
       "questionUrl": "https://www.quora.com/How-much-is-the-entry-fee-to-the-Colosseum-in-Italy",
@@ -596,7 +597,7 @@
       ],
       "shingles": [],
       "generatedAt": "2026-09-10",
-      "estado": "entregado"
+      "estado": "publicada"
     },
     {
       "questionUrl": "https://www.quora.com/Is-St-Peters-Basilica-free",
@@ -609,7 +610,7 @@
       ],
       "shingles": [],
       "generatedAt": "2026-09-10",
-      "estado": "entregado"
+      "estado": "publicada"
     },
     {
       "questionUrl": "https://www.quora.com/What-is-the-average-price-of-a-restaurant-meal-in-Rome",
@@ -621,7 +622,8 @@
       ],
       "shingles": [],
       "generatedAt": "2026-09-10",
-      "estado": "entregado"
+      "estado": "descartado",
+      "descartadaAt": "2026-09-10"
     }
   ]
 }
