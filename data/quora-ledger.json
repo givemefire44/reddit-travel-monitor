@@ -624,6 +624,33 @@
       "generatedAt": "2026-09-10",
       "estado": "descartado",
       "descartadaAt": "2026-09-10"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Is-one-of-those-expensive-guided-tours-worth-it-while-visiting-the-Vatican-Or-would-an-audio-guide-be-sufficient",
+      "questionTitle": "Is one of those expensive guided tours worth it while visiting the Vatican? Or would an audio guide be sufficient?",
+      "titleNormalized": "is one of those expensive guided tours worth it while visiting the vatican or would an audio guide be sufficient",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-audio-guide-vs-guide",
+        "vatican-guide-quality-lottery",
+        "vatican-early-access-really-means"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-11",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-is-the-best-time-to-visit-the-Vatican-Museum",
+      "questionTitle": "What is the best time to visit the Vatican Museum?",
+      "titleNormalized": "what is the best time to visit the vatican museum",
+      "site": "vatican",
+      "sourceSlugs": [
+        "best-time-to-visit-vatican",
+        "vatican-early-access-really-means"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-11",
+      "estado": "entregado"
     }
   ]
 }
