@@ -110,8 +110,36 @@ export function mismaForma(a, b) {
   return perfil(a) === perfil(b);
 }
 
+// Las JUGADAS: como abre y como cierra. Existe por el 11 sep 2026: Mario vio las
+// dos respuestas del dia "con una estructura muy similar y muy detectable que es
+// AI", y ninguno de los detectores de arriba lo habia visto. No compartian 8
+// palabras seguidas ni una muletilla, y la silueta daba distinta (7 y 8
+// parrafos). Lo que compartian era la receta: abrir corrigiendo el marco ("June,
+// not August, is the month...") y cerrar con "If it were... I'd", rematando con
+// una frase de dos palabras ("It isn't.").
+//
+// Se clasifica grueso a proposito. No hace falta entender la frase para ver que
+// la primera trae una negacion o que el ultimo parrafo trae un "I'd".
+export function jugadas(texto) {
+  const cuerpo = texto.split(/\r?\n/).filter((l) => !/^\s*Mario Dalo\b/.test(l)).join('\n').trim();
+  const oraciones = cuerpo.split(/(?<=[.!?])\s+|\n+/).map((s) => s.trim()).filter(Boolean);
+  const primera = oraciones[0] || '';
+  let apertura = 'directa';
+  if (/^(?:yes|no|nope|yep)\b/i.test(primera)) apertura = 'si-no';
+  else if (/^(?:€|\d)/.test(primera)) apertura = 'cifra';
+  else if (/\b(?:not|never)\b|n't\b/i.test(primera)) apertura = 'corrige';
+
+  const pars = cuerpo.split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
+  const ultimo = pars[pars.length - 1] || '';
+  const cierre = [];
+  if (/\b(?:I'd|I would)\b/.test(ultimo)) cierre.push('yo-haria');
+  const ult = oraciones[oraciones.length - 1] || '';
+  if (ult && ult.split(/\s+/).length <= 4) cierre.push('remate');
+  return { apertura, cierre };
+}
+
 export function huella(texto) {
-  return { shingles: shingles(texto), aperturas: aperturas(texto), silueta: silueta(texto) };
+  return { shingles: shingles(texto), aperturas: aperturas(texto), silueta: silueta(texto), jugadas: jugadas(texto) };
 }
 
 // Compara un borrador contra los textos ya publicados.

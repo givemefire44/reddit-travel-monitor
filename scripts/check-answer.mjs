@@ -17,7 +17,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { contraPublicados } from './lib/fingerprint.mjs';
+import { contraPublicados, jugadas } from './lib/fingerprint.mjs';
 import { cargar as cargarPublicados } from './publicado.mjs';
 import { leerEnFrio } from './lib/lectura-ciega.mjs';
 import { verificarAfuera } from './lib/verificar-afuera.mjs';
@@ -35,8 +35,8 @@ const archivo = args.find((a) => !a.startsWith('--'));
 const SITE = args.includes('--site') ? args[args.indexOf('--site') + 1] : null;
 
 // La red cambia dos reglas y solo dos: en Reddit NO va firma (te delata, y ahi
-// sos un desconocido en la comunidad de otro) y el largo es 40-150 palabras en
-// vez de 400-700. Todo lo demas — muletillas, presencia, superlativos, OTAs,
+// sos un desconocido en la comunidad de otro) y el largo (ver el bloque de largo
+// mas abajo). Todo lo demas — muletillas, presencia, superlativos, OTAs,
 // cifras del corpus — es identico, porque es la persona y no el formato.
 const RED = args.includes('--red') ? args[args.indexOf('--red') + 1] : 'quora';
 // --pregunta dispara la lectura ciega: un pase que lee el borrador sin saber lo
@@ -49,6 +49,10 @@ const ES_REDDIT = RED === 'reddit';
 // una sola cifra, y afirmaba una regla sobre los bares italianos que no existe.
 // Un verificador que hay que invocar a proposito no corre el dia que importa.
 const SIN_RED = args.includes('--sin-red');
+// --reemplaza <url>: para reescribir una respuesta que ya esta publicada. Sin
+// esto el borrador choca contra su propia huella y cuenta como su propia jugada
+// anterior.
+const REEMPLAZA = args.includes('--reemplaza') ? args[args.indexOf('--reemplaza') + 1] : null;
 // Se llena en el chequeo del corpus y lo consume el chequeo contra la web.
 let FACTS_RESPALDO = [];
 
@@ -230,9 +234,12 @@ const palabras = cuerpo.trim().split(/\s+/).filter(Boolean).length;
 // corto y mas prolijo — y las dos veces el numero se dio por bueno porque venia
 // de una herramienta propia. Con los saltos de parrafo ya preservados, el dato
 // dice lo contrario de lo que se venia usando como regla.
-const [min, max] = ES_REDDIT ? [8, 70] : [150, 900];
+// Quora: sin piso real. Decia 150-900 y la skill pedia 400-700; la respuesta que
+// mejor rindio hasta el 11 sep 2026 (trampas de restaurantes, 2.1K vistas y 8
+// upvotes en un dia) tenia 254 palabras, y una de si o no se contesta en 100.
+const [min, max] = ES_REDDIT ? [8, 70] : [80, 550];
 if (palabras < min) avisos.push(`${palabras} palabras: corto para ${RED}`);
-else if (palabras > max) avisos.push(`${palabras} palabras: ${RED === 'reddit' ? `arriba del p75 real (48) — la mediana humana es 24` : 'largo, revisar si hay relleno'}`);
+else if (palabras > max) avisos.push(`${palabras} palabras: ${RED === 'reddit' ? `arriba del p75 real (48) — la mediana humana es 24` : 'largo: la que mejor rindio tenia 254, revisar si hay relleno'}`);
 else ok.push(`${palabras} palabras`);
 
 // El formato lo decide la PREGUNTA, no una regla fija.
@@ -267,6 +274,44 @@ if (ES_REDDIT) {
   } else {
     ok.push(`${bloques} parrafo(s) para ${palabras} palabras`);
   }
+}
+
+// -------------------------------------------------------------- tono academico
+// 11 sep 2026. Mario, sobre las dos respuestas del dia: "muy detectable que es
+// AI, que no sean tan academicas". Medido con el conteo de abajo: la de la mejor
+// epoca para los Museos tenia 22 cifras en 430 palabras, y la de guia contra
+// audioguia decia "standard deviation". La que mejor rindio hasta hoy (trampas
+// de restaurantes) tenia 6 cifras en 254 palabras: la columna eran consejos
+// practicos y las cifras iban de condimento.
+//
+// Se cuentan dos cosas: la densidad de cifras y el vocabulario de informe. En
+// Reddit la densidad no aplica (40 palabras con una cifra ya dan 2.5 cada 100),
+// pero la jerga suena igual de ajena en los dos lados.
+const JERGA = [/standard deviation/i, /satisfaction scores?/i, /dated (?:visits|reviews)/i,
+  /\bstatistic(?:al|ally|s)?\b/i, /\bcorrelat\w*/i, /\bdistribution\b/i, /\bvariance\b/i,
+  /\bmeasured as\b/i, /\bdata ?points?\b/i, /\bn\s?=\s?\d/i, /\bsample size\b/i];
+const JERGA_OJO = [/\bmedian\b/i, /\brated (?:visitor )?(?:reports|reviews)\b/i];
+const jergaHit = JERGA.map((r) => cuerpo.match(r)).filter(Boolean).map((m) => m[0]);
+const jergaOjo = JERGA_OJO.map((r) => cuerpo.match(r)).filter(Boolean).map((m) => m[0]);
+if (jergaHit.length) fallas.push(`vocabulario de informe: ${jergaHit.join(', ')} — decirlo como lo diria alguien en una charla`);
+else ok.push('sin vocabulario de informe');
+if (jergaOjo.length) avisos.push(`suena a metodologia: ${jergaOjo.join(', ')} — una vez para poner el marco, no mas`);
+
+if (!ES_REDDIT) {
+  // Los horarios cuentan como una cifra ("8:00", no "8" y "00"), igual que los
+  // precios con su simbolo.
+  const nCifras = (cuerpo.match(/€?\d+(?:[.,:]\d+)*%?/g) || []).length;
+  const densidad = (nCifras / Math.max(palabras, 1)) * 100;
+  const d = `${nCifras} cifras en ${palabras} palabras (${densidad.toFixed(1)} cada 100)`;
+  if (densidad > 4) fallas.push(`${d}: la columna tiene que ser el consejo, no los numeros — dejar 2 o 3, las que cambian la decision`);
+  else if (densidad > 3) avisos.push(`${d}: en el limite, revisar si todas hacen falta`);
+  else ok.push(d);
+
+  // "Short." "It isn't." "Roughly nine to one." Una suelta rompe el ritmo; tres
+  // en la misma respuesta ya son la receta, y se leen como tal.
+  const remates = cuerpo.split(/(?<=[.!?])\s+/).map((s) => s.trim())
+    .filter((s) => s && s.split(/\s+/).length <= 4);
+  if (remates.length >= 3) avisos.push(`${remates.length} frases-remate sueltas (${remates.slice(0, 4).map((s) => `"${s}"`).join(' ')}): con una alcanza`);
 }
 
 // ------------------------------------------------------------------------ cifras
@@ -364,7 +409,7 @@ if (oraciones.length >= 6) {
 // ------------------------------------------------------------------- muletillas
 // Contra TODO lo ya publicado, de Quora y de Reddit juntos. Es el chequeo que
 // habria cazado la bisagra repetida cuatro veces el 22 ago 2026.
-const publicados = cargarPublicados();
+const publicados = cargarPublicados().filter((p) => !REEMPLAZA || p.url !== REEMPLAZA);
 if (!publicados.length) {
   avisos.push('el almacen de publicados esta vacio — no se comparo contra textos anteriores');
 } else {
@@ -391,6 +436,36 @@ if (!publicados.length) {
     avisos.push(`arranque(s) ya usado(s): ${flojas.map((m) => `"${m.frase}" (${m.donde[0]})`).join(', ')}`);
   }
   if (!fuertes.length && !flojas.length) ok.push(`sin muletillas contra ${publicados.length} texto(s) publicado(s)`);
+
+  // ----------------------------------------------------------------- jugadas
+  // Apertura y cierre contra las ULTIMAS tres de la misma red, no contra todo el
+  // historial: una respuesta que abre corrigiendo el marco no es un problema; que
+  // lo hagan todas seguidas si. Solo Quora: en Reddit el comentario es tan corto
+  // que la apertura es la respuesta.
+  if (!ES_REDDIT) {
+    const mias = jugadas(cuerpo);
+    const previas = publicados.filter((p) => p.red === RED && p.jugadas).slice(-3);
+    if (!previas.length) {
+      avisos.push('ninguna publicada tiene jugadas guardadas: no se comparo apertura ni cierre');
+    } else {
+      let limpio = true;
+      const apRep = previas.filter((p) => p.jugadas.apertura === mias.apertura);
+      if (apRep.length && mias.apertura !== 'directa') {
+        limpio = false;
+        const msg = `abre con la misma jugada ("${mias.apertura}") que ${apRep.map((p) => p.titulo).join(' | ')}`;
+        if (mias.apertura === 'corrige') fallas.push(`${msg} — corregir el marco en la primera frase ya es la receta`);
+        else avisos.push(msg);
+      }
+      for (const c of mias.cierre) {
+        const rep = previas.filter((p) => (p.jugadas.cierre || []).includes(c));
+        if (rep.length) {
+          limpio = false;
+          fallas.push(`cierra con la misma jugada ("${c}") que ${rep.map((p) => p.titulo).join(' | ')} — terminar en el dato, en una instruccion, o de otra forma`);
+        }
+      }
+      if (limpio) ok.push(`apertura "${mias.apertura}" y cierre [${mias.cierre.join(', ') || 'dato'}] distintos de las ultimas ${previas.length} de ${RED}`);
+    }
+  }
 }
 
 // ----------------------------------------------------------------------- salida

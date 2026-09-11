@@ -39,7 +39,9 @@ export function registrar({ texto, url, red = 'quora', titulo, fecha }) {
     url,
     red,
     titulo: titulo || url.split('/').pop().replace(/-/g, ' ').slice(0, 70),
-    fecha: fecha || new Date().toISOString().slice(0, 10),
+    // Al re-registrar un texto editado se conserva la fecha original: el orden
+    // y la fecha son los que usa el chequeo de jugadas contra las ultimas tres.
+    fecha: fecha || (existente >= 0 ? lista[existente].fecha : null) || new Date().toISOString().slice(0, 10),
     palabras: texto.trim().split(/\s+/).length,
     ...hu,
   };
