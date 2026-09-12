@@ -651,6 +651,71 @@
       "shingles": [],
       "generatedAt": "2026-09-11",
       "estado": "publicada"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-do-you-get-tickets-to-go-inside-St-Peter-s-Basilica-and-The-Vatican-museum",
+      "questionTitle": "How to get tickets to go inside St. Peter’s Basilica and The Vatican museum",
+      "titleNormalized": "how to get tickets to go inside st peter s basilica and the vatican museum",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-museums-tickets-guide",
+        "vatican-official-vs-platform-price",
+        "vatican-vs-st-peters-vs-sistine-chapel"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-12",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-strict-is-the-Vatican-s-dress-code",
+      "questionTitle": "How strict is the Vatican’s dress code?",
+      "titleNormalized": "how strict is the vatican s dress code",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-practical-experience"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-12",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Can-you-visit-St-Peters-Basilica-without-going-through-Vatican-City-or-paying-for-a-tour-guide",
+      "questionTitle": "Can you visit St. Peter's Basilica without going through Vatican City or paying for a tour guide?",
+      "titleNormalized": "can you visit st peter s basilica without going through vatican city or paying for a tour guide",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-skip-the-line-explained",
+        "vatican-official-vs-platform-price"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-12",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-the-top-5-dishes-I-should-try-in-Rome-other-than-pizza-and-pasta",
+      "questionTitle": "What are the top 5 dishes I should try in Rome, other than pizza and pasta?",
+      "titleNormalized": "what are the top 5 dishes i should try in rome other than pizza and pasta",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "roman-street-food-glossary",
+        "vegetarian-vegan-gluten-free-trastevere-food-tour"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-12",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/I-will-be-for-few-hours-in-the-center-of-Rome-Where-can-I-have-the-best-pasta",
+      "questionTitle": "I will be for few hours in the center of Rome. Where can I have the best pasta?",
+      "titleNormalized": "i will be for few hours in the center of rome where can i have the best pasta",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "da-enzo-al-29-worth-the-queue",
+        "trastevere-roman-dishes-what-goes-wrong"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-12",
+      "estado": "entregado"
     }
   ]
 }
