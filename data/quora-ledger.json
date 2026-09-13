@@ -716,6 +716,19 @@
       "shingles": [],
       "generatedAt": "2026-09-12",
       "estado": "publicada"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-do-you-purchase-tickets-to-enter-the-Vatican",
+      "questionTitle": "How to purchase tickets to enter the Vatican",
+      "titleNormalized": "how to purchase tickets to enter the vatican",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-booking-trust-safety",
+        "vatican-museums-tickets-guide"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-13",
+      "estado": "entregado"
     }
   ]
 }
