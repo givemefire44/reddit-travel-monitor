@@ -398,8 +398,27 @@ function loadLedger() {
 //
 // El campo `estado` queda para poder distinguir generado de publicado el dia que
 // haga falta. Hoy los guards funcionan igual con "generado".
+//
+// Una pregunta que vuelve al pozo (vencio la entrega de 21 dias o el descarte de
+// 3) ACTUALIZA su entrada en vez de agregar otra. Hasta el 13 sep 2026 se
+// agregaba, y el ledger tenia 51 entradas para 47 preguntas: el encabezado
+// inflaba el total ("32 publicadas de 50") y --publicada tocaba las dos copias
+// sin que se viera cual era cual. Las fechas de las entregas anteriores quedan
+// en `entregasPrevias`. Los duplicados viejos se juntan con
+// scripts/compactar-ledger.mjs.
 function saveLedger(ledger, entries) {
-  ledger.answered.push(...entries);
+  for (const nueva of entries) {
+    const i = ledger.answered.findIndex((e) => e.questionUrl === nueva.questionUrl
+      || (e.titleNormalized && e.titleNormalized === nueva.titleNormalized));
+    if (i < 0) { ledger.answered.push(nueva); continue; }
+    const vieja = ledger.answered[i];
+    // alreadyAnswered ya bloquea las publicadas, asi que no deberian llegar
+    // aca. Si llegara una, no se degrada.
+    if (vieja.estado === 'publicada') continue;
+    const { descartadaAt, ...resto } = vieja;
+    const entregasPrevias = [...(vieja.entregasPrevias || []), vieja.generatedAt].filter(Boolean);
+    ledger.answered[i] = { ...resto, ...nueva, entregasPrevias };
+  }
   fs.mkdirSync(path.dirname(LEDGER_PATH), { recursive: true });
   fs.writeFileSync(LEDGER_PATH, JSON.stringify(ledger, null, 2) + '\n', 'utf8');
   return ledger.answered.length;

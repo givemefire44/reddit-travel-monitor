@@ -6,14 +6,16 @@
       "titleNormalized": "how to get tickets to go inside st peter s basilica and the vatican museum",
       "site": "vatican",
       "sourceSlugs": [
-        "vatican-cancellation-refunds",
-        "vatican-early-access-really-means",
-        "vatican-museums-itinerary",
-        "vatican-museums-tickets-guide"
+        "vatican-museums-tickets-guide",
+        "vatican-official-vs-platform-price",
+        "vatican-vs-st-peters-vs-sistine-chapel"
       ],
       "shingles": [],
-      "generatedAt": "2026-08-22",
-      "estado": "entregado"
+      "generatedAt": "2026-09-12",
+      "estado": "entregado",
+      "entregasPrevias": [
+        "2026-08-22"
+      ]
     },
     {
       "questionUrl": "https://www.quora.com/What-is-the-best-way-to-get-tickets-to-see-the-Colosseum-of-Rome-and-when-is-the-best-time-of-day-to-go",
@@ -149,13 +151,15 @@
       "titleNormalized": "can you visit st peter s basilica without going through vatican city or paying for a tour guide",
       "site": "vatican",
       "sourceSlugs": [
-        "vatican-audio-guide-vs-guide",
-        "vatican-early-access-really-means",
-        "vatican-guide-quality-lottery"
+        "vatican-skip-the-line-explained",
+        "vatican-official-vs-platform-price"
       ],
       "shingles": [],
-      "generatedAt": "2026-08-22",
-      "estado": "entregado"
+      "generatedAt": "2026-09-12",
+      "estado": "entregado",
+      "entregasPrevias": [
+        "2026-08-22"
+      ]
     },
     {
       "questionUrl": "https://www.quora.com/How-should-I-plan-a-Colosseum-trip-to-avoid-long-lines-and-get-the-best-experience",
@@ -178,15 +182,15 @@
       "titleNormalized": "how to purchase tickets to enter the vatican",
       "site": "vatican",
       "sourceSlugs": [
-        "best-time-to-visit-vatican",
-        "vatican-after-hours-tour-worth-it",
         "vatican-booking-trust-safety",
-        "vatican-cancellation-refunds",
-        "vatican-early-access-really-means"
+        "vatican-museums-tickets-guide"
       ],
       "shingles": [],
-      "generatedAt": "2026-08-23",
-      "estado": "entregado"
+      "generatedAt": "2026-09-13",
+      "estado": "entregado",
+      "entregasPrevias": [
+        "2026-08-23"
+      ]
     },
     {
       "questionUrl": "https://www.quora.com/What-is-the-experience-of-seeing-the-dome-of-St-Peter-s-Basilica-from-inside",
@@ -541,9 +545,11 @@
         "vatican-practical-experience"
       ],
       "shingles": [],
-      "generatedAt": "2026-09-08",
-      "estado": "descartado",
-      "descartadaAt": "2026-09-08"
+      "generatedAt": "2026-09-12",
+      "estado": "entregado",
+      "entregasPrevias": [
+        "2026-09-08"
+      ]
     },
     {
       "questionUrl": "https://www.quora.com/Where-in-Rome-Italy-is-there-excellent-food-thats-not-expensive",
@@ -653,45 +659,6 @@
       "estado": "publicada"
     },
     {
-      "questionUrl": "https://www.quora.com/How-do-you-get-tickets-to-go-inside-St-Peter-s-Basilica-and-The-Vatican-museum",
-      "questionTitle": "How to get tickets to go inside St. Peter’s Basilica and The Vatican museum",
-      "titleNormalized": "how to get tickets to go inside st peter s basilica and the vatican museum",
-      "site": "vatican",
-      "sourceSlugs": [
-        "vatican-museums-tickets-guide",
-        "vatican-official-vs-platform-price",
-        "vatican-vs-st-peters-vs-sistine-chapel"
-      ],
-      "shingles": [],
-      "generatedAt": "2026-09-12",
-      "estado": "entregado"
-    },
-    {
-      "questionUrl": "https://www.quora.com/How-strict-is-the-Vatican-s-dress-code",
-      "questionTitle": "How strict is the Vatican’s dress code?",
-      "titleNormalized": "how strict is the vatican s dress code",
-      "site": "vatican",
-      "sourceSlugs": [
-        "vatican-practical-experience"
-      ],
-      "shingles": [],
-      "generatedAt": "2026-09-12",
-      "estado": "entregado"
-    },
-    {
-      "questionUrl": "https://www.quora.com/Can-you-visit-St-Peters-Basilica-without-going-through-Vatican-City-or-paying-for-a-tour-guide",
-      "questionTitle": "Can you visit St. Peter's Basilica without going through Vatican City or paying for a tour guide?",
-      "titleNormalized": "can you visit st peter s basilica without going through vatican city or paying for a tour guide",
-      "site": "vatican",
-      "sourceSlugs": [
-        "vatican-skip-the-line-explained",
-        "vatican-official-vs-platform-price"
-      ],
-      "shingles": [],
-      "generatedAt": "2026-09-12",
-      "estado": "entregado"
-    },
-    {
       "questionUrl": "https://www.quora.com/What-are-the-top-5-dishes-I-should-try-in-Rome-other-than-pizza-and-pasta",
       "questionTitle": "What are the top 5 dishes I should try in Rome, other than pizza and pasta?",
       "titleNormalized": "what are the top 5 dishes i should try in rome other than pizza and pasta",
@@ -716,19 +683,6 @@
       "shingles": [],
       "generatedAt": "2026-09-12",
       "estado": "publicada"
-    },
-    {
-      "questionUrl": "https://www.quora.com/How-do-you-purchase-tickets-to-enter-the-Vatican",
-      "questionTitle": "How to purchase tickets to enter the Vatican",
-      "titleNormalized": "how to purchase tickets to enter the vatican",
-      "site": "vatican",
-      "sourceSlugs": [
-        "vatican-booking-trust-safety",
-        "vatican-museums-tickets-guide"
-      ],
-      "shingles": [],
-      "generatedAt": "2026-09-13",
-      "estado": "entregado"
     }
   ]
 }
