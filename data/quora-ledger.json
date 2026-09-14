@@ -187,7 +187,7 @@
       ],
       "shingles": [],
       "generatedAt": "2026-09-13",
-      "estado": "entregado",
+      "estado": "publicada",
       "entregasPrevias": [
         "2026-08-23"
       ]
@@ -264,13 +264,15 @@
       "titleNormalized": "how long does it take to see the vatican and sistine chapel",
       "site": "vatican",
       "sourceSlugs": [
-        "vatican-after-hours-tour-worth-it",
-        "best-time-to-visit-vatican",
-        "vatican-early-morning-tour-review"
+        "vatican-museums-itinerary",
+        "vatican-one-day-time-budget"
       ],
       "shingles": [],
-      "generatedAt": "2026-08-24",
-      "estado": "entregado"
+      "generatedAt": "2026-09-14",
+      "estado": "entregado",
+      "entregasPrevias": [
+        "2026-08-24"
+      ]
     },
     {
       "questionUrl": "https://www.quora.com/Is-the-St-Peters-Basilica-Vatican-worth-a-trip",
@@ -683,6 +685,18 @@
       "shingles": [],
       "generatedAt": "2026-09-12",
       "estado": "publicada"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-much-does-it-cost-to-enter-St-Peters-Basilica-in-the-Vatican",
+      "questionTitle": "How much does it cost to enter St. Peter's Basilica in the Vatican?",
+      "titleNormalized": "how much does it cost to enter st peter s basilica in the vatican",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-skip-the-line-explained"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-14",
+      "estado": "entregado"
     }
   ]
 }
