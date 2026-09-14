@@ -10,8 +10,73 @@
     "reason": "voz editorial interna"
   },
   {
+    "slug": "vatican-cross-monument-replication",
+    "fact": "Photography is banned inside the Sistine Chapel, so Vatican reviews mention it in the context of being stopped, giving −0.05.",
+    "reason": "cifra \"-0.05\" no encontrada"
+  },
+  {
     "slug": "vatican-early-access-really-means",
     "fact": "That detail is worth double-checking against older guides that still cite an 8:30 opening, a mismatch that has left early birds staring at an unexpected queue.",
     "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "vatican-history-context-effect",
+    "fact": "The Raphael Rooms sit 0.34 above the corpus average despite being just as crowded as everything around them, and they are the part of the collection least legible without context.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "vatican-mobility-access",
+    "fact": "Reviews mentioning a wheelchair average 4.25 stars, above the corpus average of 4.08 — ramps, lifts, priority entry and attentive stewards come up repeatedly.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "vatican-mobility-access",
+    "fact": "Reviews mentioning the walking distance average 0.43 stars below the corpus average and those mentioning nowhere to sit 0.63 below, while reviews mentioning stairs are essentially at average.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "vatican-one-way-route",
+    "fact": "Reviews mentioning a map sit only 0.26 stars below the corpus average, while reviews about the one-way system sit 1.35 below — knowing where you are does not help much when the route does not let you change course.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "vatican-one-way-route",
+    "fact": "Reviews mentioning poor or absent signage average 1.08 stars below the corpus average, and several describe staff giving contradictory directions in the absence of signs — which is how a wayfinding problem turns into a service complaint.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "vatican-papal-audience-wednesday",
+    "fact": "Another visitor booked a Wednesday 9 AM slot by mistake and found it \"turned out for the best\", heading straight to the Sistine Chapel while the crowd was elsewhere.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "vatican-practical-experience",
+    "fact": "The corpus average across 7,714 rated reviews is 4.08 stars.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "vatican-practical-experience",
+    "fact": "Reviews that mention the art sit above the corpus average — Bernini by 0.76 stars, the Pietà by 0.49, Michelangelo by 0.27.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "vatican-practical-experience",
+    "fact": "Reviews mentioning the dress code average just 0.09 stars below the corpus average, which is effectively neutral, and security screening is similar at 0.07 below.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "vatican-practical-experience",
+    "fact": "Reviews mentioning staff average 1.23 stars below the corpus average of 4.08, the largest negative gap in this research — larger than crowding, queues or price.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "vatican-practical-experience",
+    "fact": "Reviews mentioning pushchairs average 0.89 below the corpus average and those mentioning accessibility 0.53 below, on 32 and 92 reviews respectively.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "vatican-st-peters-dome",
+    "fact": "Reviews describing the ascent as narrow or tight average 4.75 against 4.47 for those that never raise it, and even the thirty people who use the word claustrophobic land at 4.60 — still above the group that says nothing about difficulty.",
+    "reason": "cifra \"30\" no esta en la frase"
   }
 ]
