@@ -578,9 +578,11 @@
         "trastevere-food-tour-cost"
       ],
       "shingles": [],
-      "generatedAt": "2026-09-10",
-      "estado": "descartado",
-      "descartadaAt": "2026-09-10"
+      "generatedAt": "2026-09-15",
+      "estado": "entregado",
+      "entregasPrevias": [
+        "2026-09-10"
+      ]
     },
     {
       "questionUrl": "https://www.quora.com/Rome-How-do-I-distinguish-tourist-trap-restaurants-from-the-good-ones",
@@ -629,9 +631,11 @@
         "is-trastevere-food-tour-worth-it"
       ],
       "shingles": [],
-      "generatedAt": "2026-09-10",
-      "estado": "descartado",
-      "descartadaAt": "2026-09-10"
+      "generatedAt": "2026-09-15",
+      "estado": "entregado",
+      "entregasPrevias": [
+        "2026-09-10"
+      ]
     },
     {
       "questionUrl": "https://www.quora.com/Is-one-of-those-expensive-guided-tours-worth-it-while-visiting-the-Vatican-Or-would-an-audio-guide-be-sufficient",
@@ -696,6 +700,18 @@
       ],
       "shingles": [],
       "generatedAt": "2026-09-14",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-do-I-avoid-being-given-the-more-expensive-tourist-menu-when-in-Italy",
+      "questionTitle": "How to avoid being given the more expensive tourist menu when in Italy",
+      "titleNormalized": "how to avoid being given the more expensive tourist menu when in italy",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "is-trastevere-food-tour-worth-it"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-15",
       "estado": "entregado"
     }
   ]
