@@ -724,7 +724,7 @@
       ],
       "shingles": [],
       "generatedAt": "2026-09-16",
-      "estado": "entregado"
+      "estado": "publicada"
     },
     {
       "questionUrl": "https://www.quora.com/What-are-the-dress-code-rules-in-Vatican-City-and-Rome",
@@ -737,7 +737,7 @@
       ],
       "shingles": [],
       "generatedAt": "2026-09-16",
-      "estado": "entregado"
+      "estado": "publicada"
     },
     {
       "questionUrl": "https://www.quora.com/How-much-does-it-cost-to-visit-the-Vatican",
@@ -750,6 +750,17 @@
       "shingles": [],
       "generatedAt": "2026-09-16",
       "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-much-does-it-cost-to-enter-the-Coliseum-in-Rome",
+      "questionTitle": "How much does it cost to enter the Coliseum in Rome",
+      "titleNormalized": "how much does it cost to enter the coliseum in rome",
+      "site": null,
+      "sourceSlugs": [],
+      "shingles": [],
+      "generatedAt": "2026-09-16",
+      "estado": "publicada",
+      "origen": "manual"
     }
   ]
 }
