@@ -632,7 +632,7 @@
       ],
       "shingles": [],
       "generatedAt": "2026-09-15",
-      "estado": "entregado",
+      "estado": "publicada",
       "entregasPrevias": [
         "2026-09-10"
       ]
@@ -712,6 +712,43 @@
       ],
       "shingles": [],
       "generatedAt": "2026-09-15",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Are-there-any-dress-code-restrictions-for-women-in-Vatican-City",
+      "questionTitle": "Are there any dress code restrictions for women in Vatican City?",
+      "titleNormalized": "are there any dress code restrictions for women in vatican city",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-dress-code-who-gets-turned-away"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-16",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-the-dress-code-rules-in-Vatican-City-and-Rome",
+      "questionTitle": "What are the dress code rules in Vatican City and Rome?",
+      "titleNormalized": "what are the dress code rules in vatican city and rome",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-dress-code-who-gets-turned-away",
+        "vatican-entry-time-slot-turned-away"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-16",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-much-does-it-cost-to-visit-the-Vatican",
+      "questionTitle": "How much does it cost to visit the Vatican?",
+      "titleNormalized": "how much does it cost to visit the vatican",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-official-site-check"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-16",
       "estado": "entregado"
     }
   ]
