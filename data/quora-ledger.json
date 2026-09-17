@@ -198,15 +198,16 @@
       "titleNormalized": "what is the experience of seeing the dome of st peter s basilica from inside",
       "site": "vatican",
       "sourceSlugs": [
+        "vatican-st-peters-dome",
         "vatican-best-rated-extras",
-        "vatican-one-day-time-budget",
-        "vatican-scavi-grottoes",
-        "vatican-early-access-really-means",
-        "vatican-museums-itinerary"
+        "vatican-mobility-access"
       ],
       "shingles": [],
-      "generatedAt": "2026-08-23",
-      "estado": "entregado"
+      "generatedAt": "2026-09-17",
+      "estado": "entregado",
+      "entregasPrevias": [
+        "2026-08-23"
+      ]
     },
     {
       "questionUrl": "https://www.quora.com/What-might-be-the-ideal-order-of-visiting-the-Vatican-Museums-the-Sistine-Chapel-and-St-Peters-Basilica-in-Vatican-City",
@@ -530,13 +531,14 @@
       "titleNormalized": "what are some decent restaurants in rome italy that won t rip you off with tourist traps and overpriced food wine",
       "site": "trastevere",
       "sourceSlugs": [
-        "trastevere-hidden-gem-authentic-what-it-means",
-        "trastevere-tourist-traps-detection"
+        "trastevere-restaurant-reviews-what-they-hide"
       ],
       "shingles": [],
-      "generatedAt": "2026-09-08",
-      "estado": "descartado",
-      "descartadaAt": "2026-09-08"
+      "generatedAt": "2026-09-17",
+      "estado": "entregado",
+      "entregasPrevias": [
+        "2026-09-08"
+      ]
     },
     {
       "questionUrl": "https://www.quora.com/How-strict-is-the-Vatican-s-dress-code",
@@ -819,6 +821,47 @@
       "site": "pompeii",
       "sourceSlugs": [
         "how-to-get-to-pompeii-from-rome-naples-and-sorrento"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-17",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-much-would-it-cost-for-an-American-tourist-to-visit-St-Peter-s-Basilica-and-other-sights-in-Rome-and-Vatican-City",
+      "questionTitle": "How much would it cost for an American tourist to visit St. Peter’s Basilica and other sights in Rome and Vatican City?",
+      "titleNormalized": "how much would it cost for an american tourist to visit st peter s basilica and other sights in rome and vatican city",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-skip-the-line-explained",
+        "vatican-official-vs-platform-price",
+        "vatican-tickets-sold-out-what-to-do",
+        "vatican-official-site-check"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-17",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Is-Herculaneum-worth-visiting-or-can-it-be-skipped-if-you-have-already-seen-Pompeii",
+      "questionTitle": "Is Herculaneum worth visiting, or can it be skipped if you have already seen Pompeii?",
+      "titleNormalized": "is herculaneum worth visiting or can it be skipped if you have already seen pompeii",
+      "site": "pompeii",
+      "sourceSlugs": [
+        "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
+        "pompeii-and-herculaneum-how-to-visit-both-and-which-is-better"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-17",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-is-the-cost-of-tickets-to-see-The-Last-Supper-painting-in-Milan-Do-the-tickets-include-any-additional-features-such-as-an-audio-guide",
+      "questionTitle": "What is the cost of tickets to see 'The Last Supper' painting in Milan? Do the tickets include any additional features such as an audio guide?",
+      "titleNormalized": "what is the cost of tickets to see the last supper painting in milan do the tickets include any additional features such as an audio guide",
+      "site": "milan",
+      "sourceSlugs": [
+        "last-supper-milan-tickets-prices-types-and-discounts-explained",
+        "last-supper-has-the-highest-markup-in-european-tourism"
       ],
       "shingles": [],
       "generatedAt": "2026-09-17",
