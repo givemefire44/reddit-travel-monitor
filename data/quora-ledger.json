@@ -761,6 +761,68 @@
       "generatedAt": "2026-09-16",
       "estado": "publicada",
       "origen": "manual"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Which-is-better-to-visit-Pompeii-or-Herculaneum-and-why",
+      "questionTitle": "Which is better to visit, Pompeii or Herculaneum and why?",
+      "titleNormalized": "which is better to visit pompeii or herculaneum and why",
+      "site": "pompeii",
+      "sourceSlugs": [
+        "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
+        "pompeii-and-herculaneum-how-to-visit-both-and-which-is-better"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-17",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-do-I-visit-Pompeii-from-Naples",
+      "questionTitle": "How to visit Pompeii from Naples",
+      "titleNormalized": "how to visit pompeii from naples",
+      "site": "pompeii",
+      "sourceSlugs": [
+        "how-to-get-to-pompeii-from-rome-naples-and-sorrento",
+        "complete-guide-to-visiting-pompeii-everything-you-need-to-know"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-17",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-long-does-it-take-to-walk-around-Pompeii",
+      "questionTitle": "How long does it take to walk around Pompeii?",
+      "titleNormalized": "how long does it take to walk around pompeii",
+      "site": "pompeii",
+      "sourceSlugs": [
+        "pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-17",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Can-you-do-Pompeii-and-Herculaneum-in-one-day",
+      "questionTitle": "Can you do Pompeii and Herculaneum in one day?",
+      "titleNormalized": "can you do pompeii and herculaneum in one day",
+      "site": "pompeii",
+      "sourceSlugs": [
+        "complete-guide-to-visiting-pompeii-everything-you-need-to-know"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-17",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Is-it-better-to-visit-Pompeii-from-Naples-or-Sorrento",
+      "questionTitle": "Is it better to visit Pompeii from Naples or Sorrento?",
+      "titleNormalized": "is it better to visit pompeii from naples or sorrento",
+      "site": "pompeii",
+      "sourceSlugs": [
+        "how-to-get-to-pompeii-from-rome-naples-and-sorrento"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-17",
+      "estado": "entregado"
     }
   ]
 }
