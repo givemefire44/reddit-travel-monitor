@@ -153,12 +153,37 @@ const TOPIC_KEYWORDS_BY_SITE = {
     'format-duration': ['how long', 'duration', 'hours', 'how many stops', 'walking'],
     logistics: ['meeting point', 'where does it start', 'metro', 'how to get', 'accessib', 'wheelchair'],
   },
+  pompeii: {
+    tickets: ['ticket', 'entry', 'sold out', 'book', 'reservation', 'time slot'],
+    pricing: ['price', 'cost', 'cheap', 'expensive', 'worth it', 'how much', '€', 'euro'],
+    guides: ['guide', 'guided tour', 'tour guide', 'audio guide', 'self guided'],
+    timing: ['what time', 'best time', 'morning', 'early', 'how long', 'hours', 'when to'],
+    'getting-there': ['from naples', 'from sorrento', 'from rome', 'circumvesuviana', 'train', 'day trip'],
+    herculaneum: ['herculaneum', 'ercolano'],
+    highlights: ['what to see', 'highlights', 'must see', 'villa of the mysteries', 'amphitheatre'],
+    weather: ['heat', 'hot', 'shade', 'summer', 'rain', 'august'],
+    accessibility: ['wheelchair', 'stroller', 'accessible', 'mobility', 'walking'],
+    crowds: ['crowd', 'busy', 'packed', 'queue', 'line'],
+  },
+  milan: {
+    'last-supper': ['last supper', 'cenacolo', 'santa maria delle grazie', 'leonardo'],
+    tickets: ['ticket', 'sold out', 'book', 'booking', 'reservation', 'release', 'official site'],
+    pricing: ['price', 'cost', 'how much', 'worth it', '€', 'euro'],
+    timing: ['what time', 'best time', 'how long', 'slot', 'when to'],
+    duomo: ['duomo', 'cathedral', 'rooftop', 'terraces'],
+    guides: ['guide', 'guided tour', 'audio guide'],
+    logistics: ['metro', 'how to get', 'walk', 'from the station', 'one day in milan'],
+    'group-size': ['group size', 'small group', 'how many people'],
+  },
 };
 
 function matchTopics(text, siteKey) {
   const t = text.toLowerCase();
   const matched = [];
-  for (const [topic, kws] of Object.entries(TOPIC_KEYWORDS_BY_SITE[siteKey])) {
+  // El `|| {}` es el mismo cinturon que el monitor de Reddit: un sitio nuevo en
+  // la config sin su taxonomia aca matchea cero topics (se degrada) en vez de
+  // tumbar la corrida con Object.entries(undefined). Alla ya paso: 6 subs caidos.
+  for (const [topic, kws] of Object.entries(TOPIC_KEYWORDS_BY_SITE[siteKey] || {})) {
     if (kws.some((kw) => hasKeyword(t, kw))) matched.push(topic);
   }
   return matched;

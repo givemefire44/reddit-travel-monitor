@@ -30,7 +30,7 @@
     "count": 10,
     "_": "Brave Search es la fuente por defecto. NO se entra a Quora: se le pregunta al indice de Brave, que ya tiene esas paginas indexadas. Quora bloquea a todos los bots en su robots.txt, asi que cualquier acceso automatico a quora.com esta descartado por diseño; el .txt manual (--file) queda como fuente alternativa.",
     "__": "UNA consulta por GRUPO de keywords, nunca una por keyword. El plan gratuito son ~1.000 consultas al mes: estos 8 grupos, corridos a diario, dan ~240.",
-    "queriesPorDia": 4,
+    "queriesPorDia": 6,
     "___": "Las consultas ROTAN: de la lista de cada sitio salen queriesPorDia por corrida, corriendo la ventana un lugar por dia. Se rota en vez de ampliar el gasto diario porque el plan gratuito de Brave son ~1.000 consultas al mes y buscar-reddit.mjs ya usa unas 300. Con 3 por sitio por dia son 9 diarias, unas 270 al mes, y el pozo tarda 6 dias en repetirse en vez de repetirse todos los dias. El problema nunca fue cuantas consultas se hacen, sino que fueran siempre las mismas: ocho fijas devuelven las mismas 80 preguntas y el ledger las agota."
   },
   "sites": [
@@ -138,6 +138,68 @@
         "site:quora.com trastevere food tour how much walking how long",
         "site:quora.com rome food tour vegetarian gluten free options",
         "site:quora.com rome evening food tour vs lunch which"
+      ]
+    },
+    {
+      "key": "pompeii",
+      "factsFile": "data/citable-facts-pompeii.json",
+      "brand": "PompeiiGuideTours",
+      "domain": "pompeiiguidetours.com",
+      "subject": "Visiting Pompeii and Herculaneum",
+      "keywords": [
+        "pompeii",
+        "pompei",
+        "herculaneum",
+        "ercolano",
+        "vesuvius",
+        "mount vesuvius",
+        "villa of the mysteries",
+        "naples day trip",
+        "sorrento to pompeii",
+        "circumvesuviana"
+      ],
+      "searchQueries": [
+        "site:quora.com pompeii tickets how to buy skip the line",
+        "site:quora.com pompeii guided tour worth it or self guided",
+        "site:quora.com how long do you need at pompeii",
+        "site:quora.com pompeii or herculaneum which is better",
+        "site:quora.com how to get to pompeii from naples train",
+        "site:quora.com pompeii day trip from sorrento or rome",
+        "site:quora.com best time of day to visit pompeii heat shade",
+        "site:quora.com what to see in pompeii highlights",
+        "site:quora.com pompeii with kids accessibility walking",
+        "site:quora.com pompeii and vesuvius same day"
+      ]
+    },
+    {
+      "key": "milan",
+      "factsFile": "data/citable-facts-milan.json",
+      "brand": "MilanLastSupper",
+      "domain": "milanlastsupper.com",
+      "subject": "Seeing Leonardo's Last Supper in Milan",
+      "keywords": [
+        "last supper",
+        "cenacolo",
+        "cenacolo vinciano",
+        "santa maria delle grazie",
+        "milan duomo",
+        "duomo di milano",
+        "sforza castle",
+        "castello sforzesco",
+        "milan tickets",
+        "milan tours"
+      ],
+      "searchQueries": [
+        "site:quora.com last supper milan tickets sold out how to book",
+        "site:quora.com how far in advance do last supper tickets release",
+        "site:quora.com is the last supper worth it 15 minutes",
+        "site:quora.com last supper official site versus tour operator",
+        "site:quora.com milan duomo tickets rooftop how to visit",
+        "site:quora.com one day in milan duomo last supper itinerary",
+        "site:quora.com last supper guided tour versus audio guide",
+        "site:quora.com santa maria delle grazie how to get there metro",
+        "site:quora.com last supper milan ticket price",
+        "site:quora.com milan duomo skip the line worth it"
       ]
     }
   ]

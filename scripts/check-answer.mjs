@@ -417,7 +417,14 @@ if (!publicados.length) {
   if (formas.length) {
     avisos.push(`misma arquitectura que ${formas.length} publicada(s) (${formas[0]}): cambiar la forma, no solo las palabras`);
   }
-  for (const v of verbatim) fallas.push(`repite texto casi literal de "${v.titulo}" (${v.comunes} tramos)`);
+  for (const v of verbatim) {
+    // Se imprimen los tramos, no solo cuantos. Buscarlos a mano con un script
+    // aparte costaba una vuelta entera cada vez que saltaba esto. Son los tramos
+    // NUESTROS: del otro lado el almacen guarda hashes, no texto.
+    const muestra = (v.tramos || []).map((s) => `
+          "${s}"`).join('');
+    fallas.push(`repite texto casi literal de "${v.titulo}" (${v.comunes} tramos)${muestra}`);
+  }
 
   // Los umbrales van bajos A PROPOSITO. Una vez filtradas las parejas de
   // palabras funcionales, lo que queda son construcciones con carga: si
@@ -428,7 +435,7 @@ if (!publicados.length) {
   const fuertes = muletillas.filter((m) => m.veces >= 2);
   const flojas = muletillas.filter((m) => m.veces === 1);
   if (fuertes.length) {
-    fallas.push(`MULETILLA en ${fuertes[0].veces}+ textos ya publicados: ${fuertes.slice(0, 6).map((m) => `"${m.frase}"`).join(', ')} — reescribir esos arranques`);
+    fallas.push(`MULETILLA en ${fuertes[0].veces}+ textos ya publicados: ${fuertes.slice(0, 6).map((m) => `"${m.frase}" (${m.donde.slice(0, 2).join(' | ')})`).join(', ')} — reescribir esos arranques`);
   }
   if (flojas.length >= 3) {
     fallas.push(`${flojas.length} arranques de frase repetidos de textos publicados: ${flojas.slice(0, 6).map((m) => `"${m.frase}"`).join(', ')} — reescribir`);

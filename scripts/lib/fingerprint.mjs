@@ -55,6 +55,19 @@ export function shingles(texto, n = 8) {
   return [...out];
 }
 
+// Los mismos shingles, pero con el texto de cada tramo. Existe porque el almacen
+// guarda hashes: sin esto, el verificador puede decir "repite 6 tramos" y no cual,
+// y hubo que salir a buscarlos con un script aparte cada vez que paso.
+export function shinglesConTexto(texto, n = 8) {
+  const w = palabras(texto);
+  const out = new Map();
+  for (let i = 0; i + n <= w.length; i++) {
+    const frase = w.slice(i, i + n).join(' ');
+    if (!out.has(h(frase))) out.set(h(frase), frase);
+  }
+  return out;
+}
+
 export function aperturas(texto) {
   // Se corta por oracion Y por parrafo: la muletilla suele abrir parrafo, y un
   // parrafo de una sola linea sin punto final igual cuenta.
@@ -148,10 +161,18 @@ export function contraPublicados(texto, publicados) {
   const mio = huella(texto);
   const setSh = new Set(mio.shingles);
 
+  const textoPorHash = shinglesConTexto(texto);
   const verbatim = [];
   for (const p of publicados) {
-    const comunes = (p.shingles || []).filter((s) => setSh.has(s)).length;
-    if (comunes) verbatim.push({ titulo: p.titulo || p.url, comunes });
+    const comunes = (p.shingles || []).filter((s) => setSh.has(s));
+    if (comunes.length) {
+      verbatim.push({
+        titulo: p.titulo || p.url,
+        comunes: comunes.length,
+        // Los tramos son NUESTROS: del otro lado solo hay hashes.
+        tramos: comunes.map((s) => textoPorHash.get(s)).filter(Boolean).slice(0, 3),
+      });
+    }
   }
 
   // Una apertura que aparece en UNA publicada ya es una repeticion, pero es
