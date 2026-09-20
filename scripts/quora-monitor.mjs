@@ -274,19 +274,42 @@ function pickFacts(topics, siteKey, max, postText = '') {
   const idf = idfDe(siteKey);
   const terminosPregunta = new Set(terminos(postText));
 
+  // EL TOPIC DOMINANTE ES UN BONUS, NO UN MURO. Medido el 20 sep 2026.
+  //
+  // Hasta hoy el fact que no pasaba el topic dominante salia con overlap 0 y su
+  // lexico ni se calculaba, asi que el puntaje no podia rescatar a nadie: solo
+  // reordenaba lo que la taxonomia ya habia dejado entrar. Y la taxonomia es una
+  // tabla de keywords escrita a mano, que no cubre como pregunta la gente.
+  //
+  // El caso que lo destapo: "How much time should I allow when viewing the Vatican
+  // Museums?" matchea UN topic, `pricing` — porque 'how much' esta en pricing y
+  // 'how much time' no matchea `timing`, que pide 'how long' o 'what time'. El
+  // selector recibio 18 facts de precios y contesto, con razon sobre lo que le
+  // dieron: "no hay datos sobre duracion, solo precios". En el corpus hay 14 facts
+  // que la contestan, repartidos en 8 topics dominantes distintos.
+  //
+  // Medido sobre las 20 preguntas que el selector rechazo ese dia por "sin
+  // material": 13 de 20 llegaban con la shortlist VACIA (promedio 2,2 facts). Con
+  // el bonus: 0 vacias, promedio 15,8. Contra el selector real, 9 de 20 pasan a
+  // contestable y ninguna empeora.
+  //
+  // El guard contra contaminacion que motivo el muro (accessibility-002 colandose
+  // por compartir 'tickets') no se pierde: lo sostiene el `contesta` del selector,
+  // que es el gate real, y en la medicion rechazo bien todo lo que no venia al caso.
   const scored = FACTS_BY_SITE[siteKey].facts
     .map((f) => {
       const dominante = topics.includes(f.topics[0]);
       const textHit = rareInPost.some((t) => f.fact.toLowerCase().includes(t)) ? 2 : 0;
-      if (!dominante && !textHit) return { f, overlap: 0 };
       // El overlap completo sigue ordenando: un fact cuyo tema principal coincide
       // Y ademas comparte topics secundarios es mas pertinente que uno que solo
-      // coincide en el principal.
+      // coincide en el principal. El +2 mantiene al topic dominante como la señal
+      // mas fuerte del puntaje, por encima de cualquier coincidencia lexica.
       const overlap = f.topics.filter((t) => topics.includes(t)).length;
+      const bonus = dominante ? overlap + 2 : 0;
       const lexico = [...new Set(terminos(f.fact))]
         .filter((t) => terminosPregunta.has(t))
         .reduce((a, t) => a + (idf.get(t) || 0), 0);
-      return { f, overlap: overlap + textHit + lexico };
+      return { f, overlap: bonus + textHit + lexico };
     })
     .filter((x) => x.overlap > 0)
     .sort((a, b) => b.overlap - a.overlap);
