@@ -866,6 +866,76 @@
       "shingles": [],
       "generatedAt": "2026-09-17",
       "estado": "publicada"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-some-things-that-people-dont-know-about-the-Vatican-city-and-its-museums-but-should-know-before-going-there",
+      "questionTitle": "What are some things that people don't know about the Vatican city and its museums, but should know before going there?",
+      "titleNormalized": "what are some things that people don t know about the vatican city and its museums but should know before going there",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-museums-itinerary",
+        "vatican-one-way-route",
+        "vatican-museums-tickets-guide",
+        "best-time-to-visit-vatican"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-20",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Which-food-tours-food-making-classes-are-the-best-in-Rome",
+      "questionTitle": "Which food tours/food making classes are the best in Rome?",
+      "titleNormalized": "which food tours food making classes are the best in rome",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "trastevere-food-tour-reviews-across-platforms",
+        "trastevere-food-tour-cost",
+        "which-trastevere-food-tour-fits-you"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-20",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-some-recommended-places-to-eat-in-Rome-that-are-not-tourist-traps",
+      "questionTitle": "What are some recommended places to eat in Rome that are not tourist traps?",
+      "titleNormalized": "what are some recommended places to eat in rome that are not tourist traps",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "is-trastevere-food-tour-worth-it",
+        "trastevere-restaurant-recommendations-same-five"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-20",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-should-I-know-about-visiting-Pompeii",
+      "questionTitle": "What should I know about visiting Pompeii?",
+      "titleNormalized": "what should i know about visiting pompeii",
+      "site": "pompeii",
+      "sourceSlugs": [
+        "7-mistakes-people-make-when-booking-pompeii-tickets-and-tours",
+        "pompeii-entrances-map-and-orientation-which-gate-should-you-use",
+        "pompeii-tickets-explained-standard-plus-and-guided-options-compared",
+        "how-to-get-to-pompeii-from-rome-naples-and-sorrento"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-20",
+      "estado": "publicada"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Is-it-better-to-visit-all-of-the-Vatican-museums-and-Sistine-Chapel-in-one-day-or-split-them-up-into-different-days",
+      "questionTitle": "Is it better to visit all of the Vatican museums and Sistine Chapel in one day or split them up into different days?",
+      "titleNormalized": "is it better to visit all of the vatican museums and sistine chapel in one day or split them up into different days",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-one-day-time-budget",
+        "vatican-museums-itinerary"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-20",
+      "estado": "entregado"
     }
   ]
 }
