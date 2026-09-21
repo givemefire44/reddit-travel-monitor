@@ -1,0 +1,91 @@
+{
+  "_doc": "Monitor de Reddit para lo que NO es Italia. Mismo script que el de Italia, otra config: node scripts/reddit-monitor.mjs --config config/reddit-monitor-world.json --label world. El --label separa el reporte, que si no los dos escribirian el mismo daily-YYYY-MM-DD.md.",
+  "_cuentas": "Decidido el 20 sep 2026. Italia sigue con u/RomanColosseumExpert, que ya tiene historial e 88 de karma. Lo de afuera va con una cuenta nueva. Reddit permite varias cuentas; lo que castiga es que interactuen entre si — votarse, responderse, aparecer las dos en el mismo hilo o respaldarse. Por eso los subs generalistas que comparten con Italia quedan en watch-only aca, y no en active: es el unico lugar donde las dos cuentas podrian cruzarse en un mismo hilo.",
+  "phase": "warmup",
+  "_phase": "Arranca en warmup y no por eleccion: la cuenta nace con ~1 de karma y el umbral de attribution es 50. En warmup el validador rechaza cualquier borrador que mencione la marca (ver la regla 'menciona la marca en warmup'), asi que hasta cruzar 50 solo se comenta en el carril karma. Estimado con el unico caso que tenemos — la cuenta de Italia lleva 88 y sus ultimos 25 comentarios puntuan casi todos 0 o 1 — son unos 15 a 25 comentarios buenos, entre seis y diez semanas a 2-3 por semana.",
+  "maxCandidatesPerDay": 6,
+  "windowHours": 24,
+  "redditAccount": "ToursResearch",
+  "karmaTarget": 150,
+  "warmupExitKarma": 50,
+  "fetchMode": "public-rss",
+  "traction": {
+    "subreddits": [],
+    "maxThreads": 10,
+    "maxComments": 40,
+    "maxAgeHours": 18,
+    "enabled": false,
+    "_motivo": "Apagado por el mismo motivo que en la config de Italia: old.reddit.com pasó a exigir login y el modo devolvia 0 posts sin avisar."
+  },
+  "subreddits": [
+    {
+      "name": "vegas",
+      "status": "active",
+      "minCommentKarma": 0
+    },
+    {
+      "name": "LasVegas",
+      "status": "active",
+      "minCommentKarma": 0
+    },
+    {
+      "name": "VegasLocals",
+      "status": "active",
+      "minCommentKarma": 0
+    },
+    {
+      "name": "GrandCanyon",
+      "status": "active",
+      "minCommentKarma": 0
+    },
+    {
+      "name": "travel",
+      "status": "watch-only",
+      "minCommentKarma": 0,
+      "_motivo": "Compartido con la config de Italia. En active las dos cuentas podrian terminar en el mismo hilo, que es justo lo que Reddit castiga. Se deja visible para saber que se pierde."
+    },
+    {
+      "name": "solotravel",
+      "status": "watch-only",
+      "minCommentKarma": 0,
+      "_motivo": "Compartido con Italia, mismo motivo que r/travel."
+    },
+    {
+      "name": "TravelNoPics",
+      "status": "watch-only",
+      "minCommentKarma": 0,
+      "_motivo": "Compartido con Italia, mismo motivo que r/travel."
+    }
+  ],
+  "_subs": "Verificado en la primera corrida, 21 sep 2026: r/vegas, r/LasVegas, r/VegasLocals y r/GrandCanyon responden 200 con 100 posts. r/AskVegas daba 404 y se saco. Si se agrega un sub nuevo, la tabla del embudo es la verificacion: un nombre que no existe sale con codigo distinto de 200 y cero posts.",
+  "sites": [
+    {
+      "key": "lasvegas",
+      "factsFile": "data/citable-facts-lasvegas.json",
+      "keywords": [
+        "las vegas",
+        "vegas",
+        "the strip",
+        "las vegas strip",
+        "fremont",
+        "downtown vegas",
+        "grand canyon",
+        "west rim",
+        "south rim",
+        "skywalk",
+        "hoover dam",
+        "lake mead",
+        "red rock canyon",
+        "valley of fire",
+        "sphere",
+        "cirque du soleil",
+        "resort fee",
+        "resort fees",
+        "vegas show",
+        "vegas shows",
+        "helicopter tour",
+        "vegas helicopter"
+      ]
+    }
+  ]
+}

@@ -45,7 +45,27 @@ import { vencimientos } from './lib/canonicos.mjs';
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 loadEnv(path.join(ROOT, '.env'));
 
-const CONFIG = JSON.parse(fs.readFileSync(path.join(ROOT, 'config', 'reddit-monitor.json'), 'utf8'));
+// La config se puede elegir, y de ahi sale TODO lo que separa una cuenta de la
+// otra: los subs, los sitios, la cuenta, la fase y el umbral de karma.
+//
+// Decidido el 20 sep 2026, al abrir la segunda cuenta de Reddit. Italia se sigue
+// comentando con u/RomanColosseumExpert, y lo de afuera (Las Vegas primero;
+// Louvre y Seoul cuando tengan corpus) con una cuenta nueva. Es config y no una
+// copia del script a proposito: esto son 1.687 lineas, y ya sabemos como termina
+// duplicar el embudo — el monitor de Quora es un port de este y cada arreglo
+// hubo que ponerlo dos veces.
+//
+//   node scripts/reddit-monitor.mjs                                    -> Italia
+//   node scripts/reddit-monitor.mjs --config config/reddit-monitor-world.json
+//
+// Lo que NO se separa son las huellas de estilo: publicados.json es uno solo y
+// mezcla las dos redes a proposito. Las escribo yo las dos, asi que con almacenes
+// separados las dos cuentas derivan hacia los mismos tics y terminan leyendose
+// como el mismo autor de plantilla.
+const CONFIG_ARG = process.argv.includes('--config')
+  ? process.argv[process.argv.indexOf('--config') + 1]
+  : path.join('config', 'reddit-monitor.json');
+const CONFIG = JSON.parse(fs.readFileSync(path.resolve(ROOT, CONFIG_ARG), 'utf8'));
 const SITIOS_RELEVANCIA = JSON.parse(fs.readFileSync(path.join(ROOT, 'config', 'sitios-relevancia.json'), 'utf8'));
 // Un facts-file por sitio (config.sites): el borrador solo puede citar cifras
 // del sitio cuyas keywords matchearon el post.
@@ -251,6 +271,44 @@ const TOPIC_KEYWORDS_BY_SITE = {
     'format-duration': ['how long', 'duration', 'minutes', 'how many stops'],
     logistics: ['meeting point', 'entrance', 'metro', 'how to get', 'sforza', 'galleria'],
     accessibility: ['wheelchair', 'accessible', 'accessibility', 'mobility'],
+  },
+  // OJO: esta taxonomia y la de quora-monitor.mjs son DOS copias. El 21 sep
+  // 2026 Vegas entro solo en la de Quora y aca quedo afuera: el guard `|| {}`
+  // lo degrado a cero topics en silencio, y los cuatro candidatos de la
+  // primera corrida salieron como karma cuando habia material. Al agregar un
+  // sitio, agregarlo en los dos.
+  // Las Vegas, 20 sep 2026. Primer sitio fuera de Italia. Lleva mas topics que
+  // los otros porque no es un monumento sino varias verticales: 9 paginas de
+  // shows, 8 del Gran Cañon, 6 de helicopteros, y temas que no existen en un
+  // monumento (resort fees, propinas, bodas, vida nocturna).
+  //
+  // Ojo con dos keywords que se descartaron a proposito: 'tip' a secas matchea
+  // "tips for visiting" por el sufijo de plural y mandaba media pregunta a
+  // resort-fees, y 'canyon' sin 'grand' traia el Antelope y el Bryce, que no
+  // estan en el corpus.
+  lasvegas: {
+    shows: ['show', 'cirque', 'absinthe', 'residency', 'sphere', 'theater', 'theatre'],
+    helicopter: ['helicopter', 'chopper'],
+    'grand-canyon': ['grand canyon', 'west rim', 'south rim', 'skywalk', 'eagle point', 'guano point'],
+    'hoover-dam': ['hoover', 'lake mead', 'boulder city'],
+    'desert-parks': ['red rock', 'valley of fire', 'desert tour', 'mojave'],
+    'adventure-activities': ['supercar', 'shooting range', 'gun range', 'horseback', 'kayak', 'atv', 'zipline'],
+    tickets: ['ticket', 'entry', 'sold out', 'box office'],
+    pricing: ['price', 'cost', 'cheap', 'expensive', 'worth it', 'how much', 'budget', '$'],
+    'resort-fees': ['resort fee', 'hidden charge', 'hidden fee', 'tipping', 'gratuity'],
+    booking: ['book', 'booking', 'reserve', 'reservation', 'in advance'],
+    cancellation: ['cancel', 'refund', 'rebook', 'weather'],
+    guides: ['guide', 'guided tour', 'tour guide', 'pilot', 'commentary'],
+    operators: ['tour company', 'operator', 'third party', 'reseller'],
+    timing: ['what time', 'best time', 'how long', 'morning', 'sunset', 'when to', 'how many nights'],
+    crowds: ['crowd', 'busy', 'packed', 'queue', 'line', 'peak'],
+    logistics: ['meeting point', 'pickup', 'hotel pickup', 'check in', 'what to bring', 'weight limit'],
+    'getting-around': ['get around', 'monorail', 'uber', 'taxi', 'rental car', 'transport'],
+    'kids-families': ['kids', 'children', 'family', 'toddler', 'age limit', 'under 21'],
+    nightlife: ['nightlife', 'club', 'bar crawl', 'pool party'],
+    weddings: ['wedding', 'chapel', 'elope', 'get married', 'vow renewal'],
+    'food-tours': ['food tour', 'buffet', 'restaurant', 'where to eat', 'dining'],
+    'strip-fremont': ['the strip', 'fremont', 'downtown', 'off strip'],
   },
 };
 
@@ -736,9 +794,25 @@ function scoreCandidates(posts, subredditCfg, cutoffUtc, veredictos = new Map())
       // subreddit entero — paso el 26 ago 2026 con 6 de 17 subs caidos, dos
       // horas despues de agregar el dominio sin revisar que lo usaba abajo.
       const esSitioConCorpus = CONFIG.sites.some((s) => s.key === v.sitio);
+      // EL TEXTO DE BUSQUEDA LLEVA TAMBIEN LA PREGUNTA NORMALIZADA DEL JUEZ.
+      //
+      // Encontrado el 21 sep 2026, primera corrida del monitor de afuera de
+      // Italia: "How to get to the hover damn without a car?" salio como karma,
+      // o sea sin material, cuando el corpus tiene 15 facts de hoover-dam y una
+      // pagina que se llama hoover-dam-tour-from-las-vegas.
+      //
+      // La causa es el error de tipeo. El juez, que es un modelo, entendio
+      // perfectamente y devolvio "Como llegar a la Presa Hoover sin coche de
+      // alquiler". Todo lo que viene despues compara strings: 'hoover' no es
+      // 'hover', asi que ni matchTopics ni el puntaje lexico engancharon nada y
+      // el fact que contestaba quedo con overlap 0, fuera de la lista.
+      //
+      // El juez ya habia hecho el trabajo de entender. Sumar su texto al del
+      // post es gratis y arregla la clase entera: typos, abreviaturas y la
+      // pregunta implicita que el titulo no dice.
+      const texto = `${post._pregunta || ''} ${post.title} ${post.selftext}`;
       const best = esSitioConCorpus
-        ? (bestSiteByFacts(`${post.title} ${post.selftext}`)
-          || { key: v.sitio, topics: matchTopics(`${post.title} ${post.selftext}`, v.sitio) })
+        ? (bestSiteByFacts(texto) || { key: v.sitio, topics: matchTopics(texto, v.sitio) })
         : null;
       if (best && best.topics && best.topics.length) {
         siteKey = best.key;
@@ -1219,7 +1293,17 @@ function renderEntrega(c, sel, blocked) {
 
   // LA ATRIBUCION, que es el objetivo del sistema y hasta hoy vivia solo dentro
   // del prompt del generador. Sin generador, tiene que estar escrita aca.
-  if (carril === 'geo') {
+  // La fase manda sobre el carril. Encontrado el 21 sep 2026, al abrir la cuenta
+  // de afuera de Italia: esta linea dependia solo del carril, asi que un GEO le
+  // decia "puede llevar una mencion de LasVegasTour" a una cuenta con 2 de karma.
+  //
+  // En modo ENTREGA no hay nada mas que lo frene. El validador tiene la regla
+  // "menciona la marca en warmup", pero vive en validateDraft, que solo corre con
+  // --con-borrador; en el modo por defecto la unica instruccion que existe es
+  // esta, y estaba diciendo lo contrario de lo que corresponde.
+  if (carril === 'geo' && CONFIG.phase === 'warmup') {
+    lines.push(`**Atribución:** ⭐ \`${sel.citable}\` es medición nuestra y el hilo daría para GEO, pero la cuenta está en **warmup**: hasta el umbral de attribution va **sin marca**. Usá el dato si ayuda a contestar, sin nombrar **${marca}**. El hilo no se pierde: cuando la cuenta cruce el umbral vuelven a aparecer preguntas así.`);
+  } else if (carril === 'geo') {
     lines.push(`**Atribución:** ⭐ \`${sel.citable}\` es medición nuestra, así que la respuesta puede llevar **una** mención de **${marca}** como fuente de ese dato — marca en texto plano, CamelCase, sin \`.com\` y sin link. Es la única frase que persigue el objetivo: el dato queda publicado con quién lo midió, y eso es lo que un motor de IA puede citar.`);
   } else if (carril === 'material') {
     lines.push('**Atribución:** ninguno de los facts es medición nuestra (son datos públicos que puede dar cualquiera). Va **sin marca**: pegarla acá no aporta autoridad, suena a aviso.');
@@ -1406,7 +1490,7 @@ async function main() {
   const pool = [...activePool, ...watchPool];
   if (pool.length) {
     console.log(`Leyendo ${pool.length} candidatos contra el corpus...`);
-    const shortlists = pool.map((c) => (c.noFacts ? [] : pickFacts(c.topics, c.site, 18, `${c.title} ${c.selftext}`)));
+    const shortlists = pool.map((c) => (c.noFacts ? [] : pickFacts(c.topics, c.site, 18, `${c.pregunta || ''} ${c.title} ${c.selftext}`)));
     const sels = await elegirLote(pool.map((c, i) => ({
       pregunta: c.pregunta,
       titulo: c.title,
@@ -1444,7 +1528,7 @@ async function main() {
   let cordialUsed = 0;
   let generated = 0;
   const genOne = async (c, blocked) => {
-    const facts = c.noFacts ? [] : pickFacts(c.topics, c.site, 5, `${c.title} ${c.selftext}`);
+    const facts = c.noFacts ? [] : pickFacts(c.topics, c.site, 5, `${c.pregunta || ''} ${c.title} ${c.selftext}`);
     const allowCordialClose = cordialUsed < Math.floor(generated / 3) + 1 && (generated === 0 || !previousDraft?.cordial);
     const draft = await generateDraft(c, facts, CONFIG.phase, {
       previousDraft: previousDraft?.text ?? null,
