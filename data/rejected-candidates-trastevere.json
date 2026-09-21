@@ -5,17 +5,22 @@
     "reason": "cifra \"10 p.m.\" no esta en la frase"
   },
   {
+    "slug": "trastevere-restaurant-queue-how-long-the-wait",
+    "fact": "This is the advice everybody gives, including 35 reviewers who gave four or five stars, against two who were unhappy — arriving early is something satisfied diners recommend.",
+    "reason": "apertura no autonoma"
+  },
+  {
     "slug": "trastevere-restaurant-recommendations-same-five",
     "fact": "Of 1,061 forum, question and video discussions about eating in Trastevere, only 95 name a specific restaurant.",
     "reason": "cifra \"1,061\" sin unidad ni escala"
   },
   {
-    "slug": "trastevere-seasoning-complaints-salt-bland",
-    "fact": "Only seven of the 35 salt complaints name a salty ingredient at all — guanciale, pancetta, pecorino or anchovy.",
-    "reason": "cifra \"7\" no esta en la frase"
+    "slug": "trastevere-restaurant-recommendations-same-five",
+    "fact": "Da Enzo al 29 is named more than any other restaurant in Trastevere, and rates lowest of the three in our sample — 4.02 against 4.63 and 4.73 on Google Maps.",
+    "reason": "cifra \"4.02\" sin unidad ni escala"
   },
   {
-    "slug": "trastevere-seasoning-complaints-salt-bland",
+    "slug": "trastevere-tiramisu-safest-order",
     "fact": "This article uses 5,020 rated reviews of three Trastevere restaurants verified by address and trading status in September 2026 — Tonnarello, Da Enzo al 29 and Nannarella.",
     "reason": "apertura no autonoma"
   },
@@ -26,17 +31,7 @@
   },
   {
     "slug": "trastevere-vs-rome-food-neighborhoods",
-    "fact": "Romans eat dinner between about 8 and 10:30 p.m.",
+    "fact": "One last piece of timing, which doubles as a tourist-trap test: Romans eat dinner between about 8 and 10:30 p.m.",
     "reason": "cifra \"10:30 p.m.\" no esta en la frase"
-  },
-  {
-    "slug": "trastevere-tiramisu-safest-order",
-    "fact": "This article uses 5,020 rated reviews of three Trastevere restaurants verified by address and trading status in September 2026 — Tonnarello, Da Enzo al 29 and Nannarella.",
-    "reason": "apertura no autonoma"
-  },
-  {
-    "slug": "which-trastevere-food-tour-fits-you",
-    "fact": "Another says that if your child is under 6 and won't be eating, they come free; but if they will eat, you must select the \"youth\" category at checkout so a seat is saved at the dinner table.",
-    "reason": "apertura no autonoma"
   }
 ]

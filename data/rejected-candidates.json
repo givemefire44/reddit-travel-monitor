@@ -10,14 +10,14 @@
     "reason": "apertura no autonoma"
   },
   {
-    "slug": "colosseum-day-of-logistics-guide",
-    "fact": "This scenario is most likely in 20+ person groups, especially when crossing the security/metal-detector checkpoint where the group naturally fragments.",
-    "reason": "apertura no autonoma"
+    "slug": "best-colosseum-tour-under-eur50",
+    "fact": "A guide turns piles of stone into stories — how 50,000 spectators were seated by social class, how the hypogeum's 80 elevators launched animals through trapdoors, why the Forum was the beating heart of an empire.",
+    "reason": "cifra \"50,000\" sin unidad ni escala"
   },
   {
-    "slug": "colosseum-free-audio-guide-rick-steves",
-    "fact": "That reviewer scored the visit two stars — the complaint was elsewhere — while describing three hours of self-guided visit for €18 against a £217 tour they found rushed.",
-    "reason": "apertura no autonoma"
+    "slug": "colosseum-accessibility-lifts-step-free-stroller",
+    "fact": "one visitor queued an additional hour for reduced-entry collection.",
+    "reason": "cifra \"an hour\" no encontrada"
   },
   {
     "slug": "colosseum-official-website-sells-out-before-listed",
@@ -25,18 +25,18 @@
     "reason": "apertura no autonoma"
   },
   {
-    "slug": "colosseum-real-tour-vs-street-scalper",
-    "fact": "Everything sold on the sidewalk in the last 90 seconds exists in a market that averages 1.63 on Trustpilot.",
-    "reason": "cifra \"1.63\" sin unidad ni escala"
+    "slug": "colosseum-scam-street-vs-booking",
+    "fact": "The booking failure is preventable with 10 minutes of checkout verification.",
+    "reason": "frase no textual"
   },
   {
-    "slug": "colosseum-tours-and-tickets-how-to-book-and-fix-common-problems",
-    "fact": "This can range from the standard 24-hour ticket to Full Experience options, Arena or Underground access, guided tours, or combined tickets that include the Roman Forum and Palatine Hill.",
+    "slug": "colosseum-tour-reviews-aggregated-5-star-1-star",
+    "fact": "This is not bad guiding — it is bad operations, and it is invisible inside a GetYourGuide 4.94 average because dissatisfied buyers escalate to Trustpilot, not back to the booking platform.",
     "reason": "apertura no autonoma"
   },
   {
     "slug": "colosseum-underground-vs-arena-floor",
-    "fact": "You are standing at the center of an ellipse that once held 50,000 spectators, looking up at the terraces from below instead of looking down from above",
+    "fact": "You are standing at the center of an ellipse that once held 50,000 spectators, looking up at the terraces from below instead of looking down from above.",
     "reason": "cifra \"50,000\" sin unidad ni escala"
   },
   {
@@ -46,8 +46,13 @@
   },
   {
     "slug": "gladiators-beasts-and-executions-what-really-happened-in-the-colosseum-arena",
-    "fact": "With up to 50,000 spectators seated in strict order—from emperor to senators, soldiers to common citizens, women, and even slaves—the amphitheater mirrored Rome’s rigid social pyramid",
+    "fact": "With up to 50,000 spectators seated in strict order—from emperor to senators, soldiers to common citizens, women, and even slaves—the amphitheater mirrored Rome’s rigid social pyramid.",
     "reason": "cifra \"50,000\" sin unidad ni escala"
+  },
+  {
+    "slug": "how-long-colosseum-tour-duration-compared",
+    "fact": "This cap holds whether your overall tour is 2.5 hours or 4 hours.",
+    "reason": "apertura no autonoma"
   },
   {
     "slug": "private-colosseum-tour",
@@ -56,12 +61,12 @@
   },
   {
     "slug": "skip-the-line-isn-t-magic-my-honest-colosseum-experience",
-    "fact": "This account describes a fifty-person group already waiting at 8am and crowds pressed against the railings by mid-morning.",
+    "fact": "This account describes a fifty-person group already waiting at 8am and crowds pressed against the railings by mid-morning",
     "reason": "apertura no autonoma"
   },
   {
-    "slug": "vatican-colosseum-same-day-realistic",
-    "fact": "That is before factoring in the Vatican Museums and Sistine Chapel, which independently absorb 2–3 hours.",
+    "slug": "skip-the-colosseum-roman-tour-line",
+    "fact": "This is the sweet spot for value: a significant experience upgrade for roughly €25–€50 more than the official ticket.",
     "reason": "apertura no autonoma"
   },
   {
