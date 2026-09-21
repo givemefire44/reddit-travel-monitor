@@ -175,6 +175,39 @@ const TOPIC_KEYWORDS_BY_SITE = {
     logistics: ['metro', 'how to get', 'walk', 'from the station', 'one day in milan'],
     'group-size': ['group size', 'small group', 'how many people'],
   },
+  // Las Vegas, 20 sep 2026. Primer sitio fuera de Italia. Lleva mas topics que
+  // los otros porque no es un monumento sino varias verticales: 9 paginas de
+  // shows, 8 del Gran Cañon, 6 de helicopteros, y temas que no existen en un
+  // monumento (resort fees, propinas, bodas, vida nocturna).
+  //
+  // Ojo con dos keywords que se descartaron a proposito: 'tip' a secas matchea
+  // "tips for visiting" por el sufijo de plural y mandaba media pregunta a
+  // resort-fees, y 'canyon' sin 'grand' traia el Antelope y el Bryce, que no
+  // estan en el corpus.
+  lasvegas: {
+    shows: ['show', 'cirque', 'absinthe', 'residency', 'sphere', 'theater', 'theatre'],
+    helicopter: ['helicopter', 'chopper'],
+    'grand-canyon': ['grand canyon', 'west rim', 'south rim', 'skywalk', 'eagle point', 'guano point'],
+    'hoover-dam': ['hoover', 'lake mead', 'boulder city'],
+    'desert-parks': ['red rock', 'valley of fire', 'desert tour', 'mojave'],
+    'adventure-activities': ['supercar', 'shooting range', 'gun range', 'horseback', 'kayak', 'atv', 'zipline'],
+    tickets: ['ticket', 'entry', 'sold out', 'box office'],
+    pricing: ['price', 'cost', 'cheap', 'expensive', 'worth it', 'how much', 'budget', '$'],
+    'resort-fees': ['resort fee', 'hidden charge', 'hidden fee', 'tipping', 'gratuity'],
+    booking: ['book', 'booking', 'reserve', 'reservation', 'in advance'],
+    cancellation: ['cancel', 'refund', 'rebook', 'weather'],
+    guides: ['guide', 'guided tour', 'tour guide', 'pilot', 'commentary'],
+    operators: ['tour company', 'operator', 'third party', 'reseller'],
+    timing: ['what time', 'best time', 'how long', 'morning', 'sunset', 'when to', 'how many nights'],
+    crowds: ['crowd', 'busy', 'packed', 'queue', 'line', 'peak'],
+    logistics: ['meeting point', 'pickup', 'hotel pickup', 'check in', 'what to bring', 'weight limit'],
+    'getting-around': ['get around', 'monorail', 'uber', 'taxi', 'rental car', 'transport'],
+    'kids-families': ['kids', 'children', 'family', 'toddler', 'age limit', 'under 21'],
+    nightlife: ['nightlife', 'club', 'bar crawl', 'pool party'],
+    weddings: ['wedding', 'chapel', 'elope', 'get married', 'vow renewal'],
+    'food-tours': ['food tour', 'buffet', 'restaurant', 'where to eat', 'dining'],
+    'strip-fremont': ['the strip', 'fremont', 'downtown', 'off strip'],
+  },
 };
 
 function matchTopics(text, siteKey) {
@@ -1046,8 +1079,9 @@ function normalizeCandidate(raw) {
 //
 // Una consulta por GRUPO de keywords, nunca una por keyword: el plan gratuito son
 // ~1.000 consultas al mes y los 8 grupos configurados dan ~240 corriendo a diario.
-async function braveSearch(query) {
-  const url = `${CONFIG.search.endpoint}?q=${encodeURIComponent(query)}&count=${CONFIG.search.count}`;
+async function braveSearch(query, offset = 0) {
+  const url = `${CONFIG.search.endpoint}?q=${encodeURIComponent(query)}&count=${CONFIG.search.count}`
+    + (offset ? `&offset=${offset}` : '');
   const res = await fetch(url, {
     headers: {
       'X-Subscription-Token': process.env.BRAVE_API_KEY,
@@ -1097,29 +1131,44 @@ function answersFromSnippet(raw) {
 // El desplazamiento sale del dia del año, no de un contador guardado: no hace
 // falta estado en disco y dos corridas del mismo dia dan lo mismo, que es lo que
 // uno quiere cuando repite una corrida para probar algo.
+// Y ademas BAJAN: cada consulta trae `count` resultados desde un `offset`, y el
+// offset avanza una pagina cada vez que la rotacion termino de barrer la lista
+// entera. Medido el 20 sep 2026: de los 56 candidatos de colosseum del dia, 23
+// ya estaban contestados, porque con offset fijo en 0 cada consulta devuelve
+// siempre los mismos 10 resultados y el pozo de un sitio trabajado se agota. Las
+// consultas ya cubren los angulos que el corpus cubre — colosseum tiene 15,
+// incluidas atico, nocturnas, accesibilidad y reventa — asi que el problema no
+// era que faltaran consultas sino que ninguna miraba mas alla del top 10.
+//
+// El offset sale del mismo dia del año, sin estado en disco: dos corridas del
+// mismo dia siguen dando lo mismo. Brave admite hasta 9, asi que el barrido
+// completo son 100 resultados por consulta antes de volver a empezar, y para
+// entonces la caducidad de 21 dias del ledger ya libero a los entregados.
 function rotarQueries(site) {
   const todas = site.searchQueries || [];
   const porDia = CONFIG.search.queriesPorDia ?? todas.length;
-  if (todas.length <= porDia) return todas;
   const dia = Math.floor((Date.now() - Date.UTC(new Date().getUTCFullYear(), 0, 0)) / 86400000);
-  return Array.from({ length: porDia }, (_, i) => todas[(dia * porDia + i) % todas.length]);
+  if (todas.length <= porDia) return todas.map((q) => ({ q, offset: dia % 10 }));
+  const vueltas = Math.floor((dia * porDia) / todas.length);
+  const offset = vueltas % 10;
+  return Array.from({ length: porDia }, (_, i) => ({ q: todas[(dia * porDia + i) % todas.length], offset }));
 }
 
 async function fetchFromSearch() {
   const out = [];
   const rows = [];
   for (const site of CONFIG.sites) {
-    for (const q of rotarQueries(site)) {
+    for (const { q, offset } of rotarQueries(site)) {
       try {
-        const hits = await braveSearch(q);
+        const hits = await braveSearch(q, offset);
         out.push(...hits);
-        rows.push({ q, ok: true, n: hits.length });
-        console.log(`  [${site.key}] "${q}" -> ${hits.length} resultados`);
+        rows.push({ q, offset, ok: true, n: hits.length });
+        console.log(`  [${site.key}] "${q}" (p${offset + 1}) -> ${hits.length} resultados`);
       } catch (err) {
         // Una consulta que falla no puede tumbar la corrida ni confundirse con
         // "no habia nada": se registra como ERROR, igual que el embudo de Reddit.
-        rows.push({ q, ok: false, error: err.message });
-        console.error(`  [${site.key}] "${q}" -> ERROR ${err.message}`);
+        rows.push({ q, offset, ok: false, error: err.message });
+        console.error(`  [${site.key}] "${q}" (p${offset + 1}) -> ERROR ${err.message}`);
       }
     }
   }

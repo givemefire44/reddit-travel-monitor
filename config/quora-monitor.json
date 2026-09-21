@@ -30,7 +30,7 @@
     "count": 10,
     "_": "Brave Search es la fuente por defecto. NO se entra a Quora: se le pregunta al indice de Brave, que ya tiene esas paginas indexadas. Quora bloquea a todos los bots en su robots.txt, asi que cualquier acceso automatico a quora.com esta descartado por diseño; el .txt manual (--file) queda como fuente alternativa.",
     "__": "UNA consulta por GRUPO de keywords, nunca una por keyword. El plan gratuito son ~1.000 consultas al mes: estos 8 grupos, corridos a diario, dan ~240.",
-    "queriesPorDia": 6,
+    "queriesPorDia": 5,
     "___": "Las consultas ROTAN: de la lista de cada sitio salen queriesPorDia por corrida, corriendo la ventana un lugar por dia. Se rota en vez de ampliar el gasto diario porque el plan gratuito de Brave son ~1.000 consultas al mes y buscar-reddit.mjs ya usa unas 300. Con 3 por sitio por dia son 9 diarias, unas 270 al mes, y el pozo tarda 6 dias en repetirse en vez de repetirse todos los dias. El problema nunca fue cuantas consultas se hacen, sino que fueran siempre las mismas: ocho fijas devuelven las mismas 80 preguntas y el ledger las agota."
   },
   "sites": [
@@ -191,15 +191,47 @@
       ],
       "searchQueries": [
         "site:quora.com last supper milan tickets sold out how to book",
-        "site:quora.com how far in advance do last supper tickets release",
-        "site:quora.com is the last supper worth it 15 minutes",
-        "site:quora.com last supper official site versus tour operator",
+        "site:quora.com cenacolo vinciano milan tickets release in advance",
+        "site:quora.com is the last supper milan worth it 15 minute slot",
+        "site:quora.com cenacolo vinciano official site versus tour operator",
         "site:quora.com milan duomo tickets rooftop how to visit",
         "site:quora.com one day in milan duomo last supper itinerary",
-        "site:quora.com last supper guided tour versus audio guide",
+        "site:quora.com da vinci last supper milan guided tour versus audio guide",
         "site:quora.com santa maria delle grazie how to get there metro",
         "site:quora.com last supper milan ticket price",
         "site:quora.com milan duomo skip the line worth it"
+      ]
+    },
+    {
+      "key": "lasvegas",
+      "factsFile": "data/citable-facts-lasvegas.json",
+      "brand": "LasVegasTour",
+      "domain": "lasvegastour.com",
+      "subject": "Las Vegas tours, shows and day trips",
+      "keywords": [
+        "las vegas",
+        "vegas",
+        "the strip",
+        "grand canyon",
+        "hoover dam",
+        "fremont",
+        "red rock canyon",
+        "valley of fire",
+        "sphere",
+        "cirque du soleil",
+        "resort fee"
+      ],
+      "searchQueries": [
+        "site:quora.com las vegas helicopter tour which one is worth it",
+        "site:quora.com grand canyon day trip from las vegas worth it",
+        "site:quora.com grand canyon west rim versus south rim from vegas",
+        "site:quora.com las vegas resort fees what are they and how much",
+        "site:quora.com how much does a trip to las vegas cost",
+        "site:quora.com which cirque du soleil show in las vegas is best",
+        "site:quora.com las vegas show seats where to sit worth paying",
+        "site:quora.com hoover dam tour from las vegas worth it",
+        "site:quora.com how to get around las vegas strip without a car",
+        "site:quora.com first time in las vegas how many nights to stay"
       ]
     }
   ]
