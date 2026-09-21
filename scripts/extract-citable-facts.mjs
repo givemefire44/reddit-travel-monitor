@@ -110,6 +110,41 @@ const SITES = {
     ],
     excludedSlugs: ['about', 'about-us', 'contact', 'contact-us', 'terms-conditions', 'cookies-privacy-policy', 'methodology'],
   },
+  // Las Vegas, agregado el 20 sep 2026. Es el PRIMER sitio del monitor fuera de
+  // Italia, y el unico de los de afuera que hoy tiene con que: su corpus es el
+  // mas grande del portfolio (40.701 items contra 21.308 de colosseum) y tiene
+  // 48 paginas publicadas. Louvre y Seoul no tienen corpus todavia.
+  //
+  // Dos diferencias con los cinco de Italia, que explican la taxonomia:
+  //
+  // 1. No es UN sitio, son verticales. Las 48 paginas se agrupan en shows (9),
+  //    helicoptero (6), Gran Cañon (8), Hoover (3), parques del desierto (4) y
+  //    una cola de actividades sueltas. Por eso van 22 topics y no 15: cada
+  //    vertical necesita el suyo o todo cae en 'logistics'.
+  // 2. Tiene temas que no existen en un monumento — resort fees y propinas,
+  //    capillas de boda, vida nocturna — y son justo los que mas se preguntan.
+  //
+  // OJO con los slugs excluidos: aca se llaman 'terms-and-conditions' y
+  // 'cookies-and-privacy-policy', CON el "and". Copiar la lista de otro sitio
+  // deja las dos institucionales adentro de la extraccion.
+  lasvegas: {
+    projectId: 'kabmqky1',
+    siteUrl: 'https://lasvegastour.com',
+    corpusSize: null, // el sitio no publica un numero fijo de reviews analizadas
+    outFile: 'citable-facts-lasvegas.json',
+    subjectName: 'Las Vegas tours, shows and day trips (Grand Canyon, Hoover Dam, helicopter flights, the Strip)',
+    subjectRule:
+      "the claim's subject must be Las Vegas - its tours, shows, helicopter flights, day trips to the Grand Canyon, Hoover Dam, Red Rock Canyon or Valley of Fire, resort fees and tipping, getting around the city, or booking any of it. Exclude sentences whose subject is another city or destination (Rome, Paris, Barcelona, New York...) even when they appear in a Las Vegas article. A comparison qualifies only if the Las Vegas side carries the figure and the claim stands as Las Vegas advice.",
+    internalVoiceRe: /\b(the corpus|our corpus|our analysis|we analyzed|our data|lasvegastour|las vegas tour)\b/i,
+    topics: [
+      'shows', 'helicopter', 'grand-canyon', 'hoover-dam', 'desert-parks',
+      'adventure-activities', 'tickets', 'pricing', 'resort-fees', 'booking',
+      'cancellation', 'guides', 'operators', 'timing', 'crowds', 'logistics',
+      'getting-around', 'kids-families', 'nightlife', 'weddings', 'food-tours',
+      'strip-fremont',
+    ],
+    excludedSlugs: ['about-us', 'contact-us', 'terms-and-conditions', 'cookies-and-privacy-policy'],
+  },
 };
 
 // ---------- CLI ----------
