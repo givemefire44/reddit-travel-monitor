@@ -936,6 +936,75 @@
       "shingles": [],
       "generatedAt": "2026-09-20",
       "estado": "publicada"
+    },
+    {
+      "questionUrl": "https://www.quora.com/When-researching-restaurants-in-Rome-how-do-I-know-the-good-from-the-bad",
+      "questionTitle": "When researching restaurants in Rome, how do I know the good from the bad?",
+      "titleNormalized": "when researching restaurants in rome how do i know the good from the bad",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "trastevere-restaurant-reviews-what-they-hide",
+        "da-enzo-al-29-worth-the-queue",
+        "trastevere-seasoning-complaints-salt-bland",
+        "trastevere-bill-extra-charges-tap-water",
+        "trastevere-restaurant-queue-how-long-the-wait"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-21",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-tips-do-locals-have-for-avoiding-tourist-traps-in-these-essential-European-cities-especially-when-it-comes-to-food-and-dining",
+      "questionTitle": "What tips do locals have for avoiding tourist traps in these essential European cities, especially when it comes to food and dining?",
+      "titleNormalized": "what tips do locals have for avoiding tourist traps in these essential european cities especially when it comes to food and dining",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "is-trastevere-food-tour-worth-it",
+        "trastevere-hidden-gem-authentic-what-it-means",
+        "trastevere-bill-extra-charges-tap-water"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-21",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-the-best-tours-of-the-Grand-Canyon",
+      "questionTitle": "What are the best tours of the Grand Canyon?",
+      "titleNormalized": "what are the best tours of the grand canyon",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "grand-canyon-west-vs-south-rim-from-las-vegas",
+        "grand-canyon-comedy-tour-what-reviews-describe"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-21",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Whats-are-some-good-restaurants-to-sample-the-local-cuisine-in-Rome",
+      "questionTitle": "Whats are some good restaurants to sample the local cuisine in Rome?",
+      "titleNormalized": "whats are some good restaurants to sample the local cuisine in rome",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "trastevere-hidden-gem-authentic-what-it-means",
+        "trastevere-vs-rome-food-neighborhoods"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-21",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Is-it-recommended-to-visit-both-the-North-Rim-and-South-Rim-of-the-Grand-Canyon-during-a-road-trip-from-Las-Vegas",
+      "questionTitle": "Is it recommended to visit both the North Rim and South Rim of the Grand Canyon during a road trip from Las Vegas?",
+      "titleNormalized": "is it recommended to visit both the north rim and south rim of the grand canyon during a road trip from las vegas",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "is-the-grand-canyon-day-trip-from-las-vegas-worth-it",
+        "grand-canyon-day-trip-from-las-vegas-how-long"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-21",
+      "estado": "entregado"
     }
   ]
 }
