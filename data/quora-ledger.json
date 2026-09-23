@@ -562,13 +562,15 @@
       "site": "trastevere",
       "sourceSlugs": [
         "trastevere-food-tour-cost",
-        "is-trastevere-food-tour-worth-it",
-        "roman-street-food-glossary"
+        "trastevere-vs-rome-food-neighborhoods",
+        "is-trastevere-food-tour-worth-it"
       ],
       "shingles": [],
-      "generatedAt": "2026-09-08",
-      "estado": "descartado",
-      "descartadaAt": "2026-09-08"
+      "generatedAt": "2026-09-23",
+      "estado": "entregado",
+      "entregasPrevias": [
+        "2026-09-08"
+      ]
     },
     {
       "questionUrl": "https://www.quora.com/How-much-does-a-traditional-Italian-meal-cost-How-expensive-is-it-to-eat-at-an-authentic-restaurant-in-Rome-or-Florence",
@@ -951,7 +953,7 @@
       ],
       "shingles": [],
       "generatedAt": "2026-09-21",
-      "estado": "entregado"
+      "estado": "publicada"
     },
     {
       "questionUrl": "https://www.quora.com/What-tips-do-locals-have-for-avoiding-tourist-traps-in-these-essential-European-cities-especially-when-it-comes-to-food-and-dining",
@@ -965,7 +967,7 @@
       ],
       "shingles": [],
       "generatedAt": "2026-09-21",
-      "estado": "entregado"
+      "estado": "publicada"
     },
     {
       "questionUrl": "https://www.quora.com/What-are-the-best-tours-of-the-Grand-Canyon",
@@ -1004,6 +1006,124 @@
       ],
       "shingles": [],
       "generatedAt": "2026-09-21",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Where-is-the-best-place-to-find-authentic-Roman-cuisine-in-Rome",
+      "questionTitle": "Where is the best place to find authentic Roman cuisine in Rome?",
+      "titleNormalized": "where is the best place to find authentic roman cuisine in rome",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "trastevere-vs-rome-food-neighborhoods",
+        "trastevere-food-tour-cost",
+        "is-trastevere-food-tour-worth-it"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-22",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-is-a-recommended-Italian-dish-for-an-authentic-experience-of-Romes-cuisine",
+      "questionTitle": "What is a recommended Italian dish for an authentic experience of Rome's cuisine?",
+      "titleNormalized": "what is a recommended italian dish for an authentic experience of rome s cuisine",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "da-enzo-al-29-worth-the-queue"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-22",
+      "estado": "publicada"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Where-can-I-go-for-the-most-authentic-dining-experience-in-Rome-Italy-and-what-should-I-do-to-enjoy-genuine-friendly-service",
+      "questionTitle": "Where can I go for the most authentic dining experience in Rome, Italy, and what should I do to enjoy genuine, friendly service?",
+      "titleNormalized": "where can i go for the most authentic dining experience in rome italy and what should i do to enjoy genuine friendly service",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "trastevere-hidden-gem-authentic-what-it-means",
+        "trastevere-table-service-rushed-or-welcomed"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-22",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-some-recommended-sights-to-see-on-a-day-trip-from-Rome-to-Naples-and-Pompeii",
+      "questionTitle": "What are some recommended sights to see on a day trip from Rome to Naples and Pompeii?",
+      "titleNormalized": "what are some recommended sights to see on a day trip from rome to naples and pompeii",
+      "site": "pompeii",
+      "sourceSlugs": [
+        "how-to-get-to-pompeii-from-rome-naples-and-sorrento",
+        "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-22",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/If-you-have-one-day-to-spend-in-Milan-what-are-the-things-that-you-should-do-and-the-places-you-should-visit",
+      "questionTitle": "If you have one day to spend in Milan what are the things that you should do and the places you should visit?",
+      "titleNormalized": "if you have one day to spend in milan what are the things that you should do and the places you should visit",
+      "site": "milan",
+      "sourceSlugs": [
+        "best-guided-tours-in-milan-last-supper-and-duomo-in-one-day",
+        "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
+        "leonardo-da-vinci-in-milan-complete-guide-to-all-sites"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-22",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Can-you-recommend-a-highly-rated-Italian-restaurant-in-Rome-and-what-are-some-of-its-popular-dishes",
+      "questionTitle": "Can you recommend a highly-rated Italian restaurant in Rome and what are some of its popular dishes?",
+      "titleNormalized": "can you recommend a highly rated italian restaurant in rome and what are some of its popular dishes",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "trastevere-restaurant-recommendations-same-five",
+        "da-enzo-al-29-worth-the-queue"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-23",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-is-the-average-cost-of-a-meal-at-an-authentic-Italian-restaurant-How-much-would-a-meal-cost-at-a-budget-friendly-Italian-restaurant",
+      "questionTitle": "What is the average cost of a meal at an authentic Italian restaurant? How much would a meal cost at a budget-friendly Italian restaurant?",
+      "titleNormalized": "what is the average cost of a meal at an authentic italian restaurant how much would a meal cost at a budget friendly italian restaurant",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "is-trastevere-food-tour-worth-it",
+        "roman-street-food-glossary"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-23",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-some-things-to-do-when-visiting-Las-Vegas-and-the-Grand-Canyon",
+      "questionTitle": "What are some things to do when visiting Las Vegas and the Grand Canyon?",
+      "titleNormalized": "what are some things to do when visiting las vegas and the grand canyon",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "grand-canyon-west-vs-south-rim-from-las-vegas",
+        "red-rock-canyon-from-las-vegas",
+        "valley-of-fire-from-las-vegas"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-23",
+      "estado": "publicada"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-pasta-dish-is-Rome-known-for",
+      "questionTitle": "What pasta dish is Rome known for?",
+      "titleNormalized": "what pasta dish is rome known for",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "da-enzo-al-29-worth-the-queue"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-23",
       "estado": "entregado"
     }
   ]
