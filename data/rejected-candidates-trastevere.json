@@ -20,7 +20,7 @@
     "reason": "cifra \"4.02\" sin unidad ni escala"
   },
   {
-    "slug": "trastevere-tiramisu-safest-order",
+    "slug": "trastevere-roman-dishes-what-goes-wrong",
     "fact": "This article uses 5,020 rated reviews of three Trastevere restaurants verified by address and trading status in September 2026 — Tonnarello, Da Enzo al 29 and Nannarella.",
     "reason": "apertura no autonoma"
   },
@@ -31,7 +31,17 @@
   },
   {
     "slug": "trastevere-vs-rome-food-neighborhoods",
-    "fact": "One last piece of timing, which doubles as a tourist-trap test: Romans eat dinner between about 8 and 10:30 p.m.",
+    "fact": "Romans eat dinner between about 8 and 10:30 p.m.",
     "reason": "cifra \"10:30 p.m.\" no esta en la frase"
+  },
+  {
+    "slug": "trastevere-wine-aperitivo-what-to-drink",
+    "fact": "On our data, the aperitivo is the safe order: reviews mentioning a spritz average 4.40, slightly above the 4.32 baseline for reviews naming anything consumed.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "which-trastevere-food-tour-fits-you",
+    "fact": "Another says that if your child is under 6 and won't be eating, they come free; but if they will eat, you must select the \"youth\" category at checkout so a seat is saved at the dinner table.",
+    "reason": "apertura no autonoma"
   }
 ]
