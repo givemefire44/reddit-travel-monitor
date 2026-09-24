@@ -1125,6 +1125,72 @@
       "shingles": [],
       "generatedAt": "2026-09-23",
       "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Is-it-difficult-to-walk-in-Pompeii-or-Sorrento-for-an-older-adult-with-cancer",
+      "questionTitle": "Is it difficult to walk in Pompeii or Sorrento for an older adult with cancer?",
+      "titleNormalized": "is it difficult to walk in pompeii or sorrento for an older adult with cancer",
+      "site": "pompeii",
+      "sourceSlugs": [
+        "7-mistakes-people-make-when-booking-pompeii-tickets-and-tours",
+        "how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-24",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-some-authentic-Italian-restaurants-in-Rome-that-are-not-geared-towards-tourists",
+      "questionTitle": "What are some authentic Italian restaurants in Rome that are not geared towards tourists?",
+      "titleNormalized": "what are some authentic italian restaurants in rome that are not geared towards tourists",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "is-trastevere-food-tour-worth-it"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-24",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/When-is-the-best-time-of-year-to-visit-the-Vatican-City",
+      "questionTitle": "When is the best time of year to visit the Vatican City?",
+      "titleNormalized": "when is the best time of year to visit the vatican city",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-best-time-to-visit"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-24",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-some-major-attractions-to-see-or-do-in-Las-Vegas-aside-from-the-strip",
+      "questionTitle": "What are some major attractions to see or do in Las Vegas aside from the strip?",
+      "titleNormalized": "what are some major attractions to see or do in las vegas aside from the strip",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "first-time-las-vegas-how-to-plan",
+        "hoover-dam-tour-from-las-vegas",
+        "red-rock-canyon-from-las-vegas",
+        "valley-of-fire-from-las-vegas",
+        "grand-canyon-west-vs-south-rim-from-las-vegas"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-24",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-is-the-dress-code-for-churches-Can-you-wear-shorts-and-sleeveless-tops-in-a-church",
+      "questionTitle": "What is the dress code for churches? Can you wear shorts and sleeveless tops in a church?",
+      "titleNormalized": "what is the dress code for churches can you wear shorts and sleeveless tops in a church",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-dress-code-who-gets-turned-away",
+        "vatican-entry-time-slot-turned-away"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-24",
+      "estado": "entregado"
     }
   ]
 }
