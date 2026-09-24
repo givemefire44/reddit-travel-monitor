@@ -29,14 +29,15 @@
       "minCommentKarma": 0
     },
     {
-      "name": "VegasLocals",
+      "name": "GrandCanyon",
       "status": "active",
       "minCommentKarma": 0
     },
     {
-      "name": "GrandCanyon",
+      "name": "roadtrip",
       "status": "active",
-      "minCommentKarma": 0
+      "minCommentKarma": 0,
+      "_motivo": "Entra el 24 sep 2026 en lugar de r/VegasLocals. Medido por RSS: 22 posts en 24h, el unico candidato con volumen real de los diez probados. Los itinerarios Vegas -> Gran Cañon -> Zion son su material habitual, que es justo el corpus de desert-parks y grand-canyon."
     },
     {
       "name": "travel",
@@ -57,7 +58,7 @@
       "_motivo": "Compartido con Italia, mismo motivo que r/travel."
     }
   ],
-  "_subs": "Verificado en la primera corrida, 21 sep 2026: r/vegas, r/LasVegas, r/VegasLocals y r/GrandCanyon responden 200 con 100 posts. r/AskVegas daba 404 y se saco. Si se agrega un sub nuevo, la tabla del embudo es la verificacion: un nombre que no existe sale con codigo distinto de 200 y cero posts.",
+  "_subs": "Verificado por RSS. Activos al 24 sep 2026: r/vegas, r/LasVegas, r/GrandCanyon y r/roadtrip. SACADO r/VegasLocals: 151 posts en tres dias y CERO keywords — es un sub de gente que vive ahi hablando de alquileres y trafico, no de visitar el canon. r/AskVegas daba 404. Descartados por sin movimiento en 24h: AskLasVegas (9 posts totales), LasVegasLocals, GrandCanyonHiking, Shoestring, AmericanTravel. r/Arizona (10/dia) y r/NationalParks (3/dia) quedan como segunda opcion si roadtrip no rinde.",
   "sites": [
     {
       "key": "lasvegas",
