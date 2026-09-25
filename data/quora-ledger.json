@@ -1203,7 +1203,8 @@
       ],
       "shingles": [],
       "generatedAt": "2026-09-25",
-      "estado": "entregado"
+      "estado": "publicada",
+      "publicadaAt": "2026-09-25T19:07:45.246Z"
     },
     {
       "questionUrl": "https://www.quora.com/What-are-some-recommendations-for-restaurants-in-Rome-Italy-Where-do-the-locals-choose-to-dine-out-at-for-authentic-food",
@@ -1229,7 +1230,8 @@
       ],
       "shingles": [],
       "generatedAt": "2026-09-25",
-      "estado": "entregado"
+      "estado": "publicada",
+      "publicadaAt": "2026-09-25T19:07:45.247Z"
     },
     {
       "questionUrl": "https://www.quora.com/What-are-some-good-places-to-eat-pasta-in-Rome-that-are-reasonably-priced",
