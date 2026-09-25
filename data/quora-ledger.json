@@ -1191,6 +1191,69 @@
       "shingles": [],
       "generatedAt": "2026-09-24",
       "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-is-the-best-way-to-tour-Grand-Canyon-in-one-day",
+      "questionTitle": "What is the best way to tour Grand Canyon in one day?",
+      "titleNormalized": "what is the best way to tour grand canyon in one day",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "grand-canyon-west-vs-south-rim-from-las-vegas",
+        "grand-canyon-day-trip-from-las-vegas-how-long"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-25",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-some-recommendations-for-restaurants-in-Rome-Italy-Where-do-the-locals-choose-to-dine-out-at-for-authentic-food",
+      "questionTitle": "What are some recommendations for restaurants in Rome, Italy? Where do the locals choose to dine out at for authentic food?",
+      "titleNormalized": "what are some recommendations for restaurants in rome italy where do the locals choose to dine out at for authentic food",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "trastevere-hidden-gem-authentic-what-it-means",
+        "trastevere-vs-rome-food-neighborhoods"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-25",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-some-things-to-do-in-Milan-Italy-for-someone-who-has-never-been-there-before-and-wants-to-see-its-major-attractions-in-one-day",
+      "questionTitle": "What are some things to do in Milan (Italy) for someone who has never been there before and wants to see its major attractions in one day?",
+      "titleNormalized": "what are some things to do in milan italy for someone who has never been there before and wants to see its major attractions in one day",
+      "site": "milan",
+      "sourceSlugs": [
+        "best-guided-tours-in-milan-last-supper-and-duomo-in-one-day",
+        "leonardo-da-vinci-in-milan-complete-guide-to-all-sites"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-25",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-some-good-places-to-eat-pasta-in-Rome-that-are-reasonably-priced",
+      "questionTitle": "What are some good places to eat pasta in Rome that are reasonably priced?",
+      "titleNormalized": "what are some good places to eat pasta in rome that are reasonably priced",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "is-trastevere-food-tour-worth-it"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-25",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Is-it-still-possible-to-enjoy-Las-Vegas-on-a-budget-or-is-avoiding-the-Strip-the-only-way-to-save-money-these-days",
+      "questionTitle": "Is it still possible to enjoy Las Vegas on a budget, or is avoiding the Strip the only way to save money these days?",
+      "titleNormalized": "is it still possible to enjoy las vegas on a budget or is avoiding the strip the only way to save money these days",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "first-time-las-vegas-how-to-plan"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-25",
+      "estado": "entregado"
     }
   ]
 }
