@@ -36,6 +36,15 @@ const CONTENIDO = new Set([
   'euro', 'euros', 'hour', 'hours', 'minute', 'minutes', 'day', 'days', 'week', 'weeks',
   'month', 'months', 'rome', 'roman', 'italy', 'security', 'slot', 'slots', 'floor',
   'official', 'site', 'online', 'door', 'gate', 'skywalk', 'dome', 'chapel', 'trastevere',
+  // Las Vegas, agregado el 24 sep 2026. Esta lista era toda de Roma, asi que los
+  // nombres de lugar del corpus nuevo contaban como MULETILLA DE ESTILO: contestar
+  // sobre Valley of Fire disparaba "valley of" y "of fire" como si fueran tics de
+  // autor. Paso en la respuesta a un hilo de r/vegas donde el lugar era, obviamente,
+  // el tema. Un bigrama con una palabra de contenido del dominio habla del asunto y
+  // no del estilo, que es justo para lo que existe este Set. Al sumar un sitio al
+  // portfolio hay que sumar aca su vocabulario, o el detector se vuelve ruido.
+  'vegas', 'strip', 'canyon', 'rim', 'valley', 'fire', 'hoover', 'dam', 'fremont',
+  'helicopter', 'sandstone', 'nevada', 'arizona', 'mojave', 'casino', 'sphere',
 ]);
 
 // Palabras funcionales. Un bigrama hecho solo de estas no distingue a nadie.
