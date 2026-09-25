@@ -418,7 +418,14 @@ function rssBodyText(contentHtml) {
     .trim();
 }
 
-async function fetchWithBackoff(url, tries = 4) {
+// tries = 6 desde el 25 sep 2026. Con 4 la escalera era 45s, 90s, 135s y se
+// abandonaba el sub. Ese dia se perdieron TRES subs enteros por 429 —
+// r/vegas, r/RomeTravel y r/loveholidays — sobre 28 reintentos en las dos
+// corridas. La clave esta en que otros subs pedidos EN EL MEDIO devolvieron
+// 200: el soft-block es intermitente, no un veto a la IP, asi que los que
+// cayeron estaban a una espera mas de entrar. Con 6 la escalera suma 180s y
+// 225s. No cuesta nada los dias sanos, porque solo se espera cuando ya fallo.
+async function fetchWithBackoff(url, tries = 6) {
   for (let attempt = 1; ; attempt++) {
     let res;
     try {
