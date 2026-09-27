@@ -1256,6 +1256,59 @@
       "shingles": [],
       "generatedAt": "2026-09-25",
       "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-some-activities-for-non-gamblers-and-non-show-goers-in-Las-Vegas-besides-eating-and-drinking",
+      "questionTitle": "What are some activities for non-gamblers and non-show-goers in Las Vegas besides eating and drinking?",
+      "titleNormalized": "what are some activities for non gamblers and non show goers in las vegas besides eating and drinking",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "grand-canyon-west-vs-south-rim-from-las-vegas",
+        "las-vegas-food-tour-what-you-get",
+        "las-vegas-horseback-riding-what-the-day-includes",
+        "las-vegas-shooting-range-what-reviews-describe"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-26",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-is-the-best-Cirque-du-Soleil-show-in-Las-Vegas",
+      "questionTitle": "What is the best Cirque du Soleil show in Las Vegas?",
+      "titleNormalized": "what is the best cirque du soleil show in las vegas",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "las-vegas-show-ratings-what-they-hide",
+        "michael-jackson-one-las-vegas-loud-dance-show"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-26",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Where-are-some-great-local-restaurants-to-eat-at-while-in-Rome",
+      "questionTitle": "Where are some great 'local' restaurants to eat at while in Rome?",
+      "titleNormalized": "where are some great local restaurants to eat at while in rome",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "is-trastevere-food-tour-worth-it",
+        "trastevere-vs-rome-food-neighborhoods"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-26",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Foodies-Where-is-best-place-to-eat-off-the-beaten-path-in-Rome",
+      "questionTitle": "Foodies: Where is best place to eat off the beaten path in Rome?",
+      "titleNormalized": "foodies where is best place to eat off the beaten path in rome",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "trastevere-vs-rome-food-neighborhoods"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-26",
+      "estado": "entregado"
     }
   ]
 }
