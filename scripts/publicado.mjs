@@ -38,7 +38,12 @@ export function registrar({ texto, url, red = 'quora', titulo, fecha }) {
   const entrada = {
     url,
     red,
-    titulo: titulo || url.split('/').pop().replace(/-/g, ' ').slice(0, 70),
+    // El .replace del final NO es cosmetico: las URL de Reddit terminan en '/',
+    // asi que split('/').pop() devolvia cadena vacia y el texto quedaba guardado
+    // con titulo "". Paso el 26 sep 2026 con el comentario de r/vegas: aparecia
+    // en el listado como una linea sin nombre, y el verificador lo nombra asi
+    // cuando reporta una muletilla, o sea que la pista no servia para nada.
+    titulo: titulo || url.replace(/\/+$/, '').split('/').pop().replace(/-/g, ' ').slice(0, 70),
     // Al re-registrar un texto editado se conserva la fecha original: el orden
     // y la fecha son los que usa el chequeo de jugadas contra las ultimas tres.
     fecha: fecha || (existente >= 0 ? lista[existente].fecha : null) || new Date().toISOString().slice(0, 10),
