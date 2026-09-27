@@ -129,16 +129,17 @@
       ],
       "searchQueries": [
         "site:quora.com rome food tour trastevere worth it",
-        "site:quora.com where to eat in rome carbonara cacio e pepe",
-        "site:quora.com rome tourist trap restaurant how to avoid",
         "site:quora.com how much does dinner cost in rome",
-        "site:quora.com best neighbourhood to eat in rome trastevere testaccio",
         "site:quora.com roman street food supplì trapizzino where",
         "site:quora.com rome food tour worth the money price",
         "site:quora.com trastevere food tour how much walking how long",
         "site:quora.com rome food tour vegetarian gluten free options",
-        "site:quora.com rome evening food tour vs lunch which"
-      ]
+        "site:quora.com rome evening food tour vs lunch which",
+        "site:quora.com rome restaurant queue wait for a table worth it",
+        "site:quora.com cappuccino after 11 italy coffee rules real",
+        "site:quora.com why charged for bread and water restaurant italy coperto"
+      ],
+      "_searchQueries": "Rotadas tres el 26 sep 2026. Las que salieron apuntaban al terreno donde ya hay OCHO textos publicados (trampas turisticas, donde comen los locales, precios de la cena): tres dias seguidos devolvieron preguntas cuyo unico material era dishes-025, que ya esta publicado palabra por palabra. Las que entraron van a lo MEDIDO que no se gasto: la cola (57% de las resenas de TripAdvisor de Da Enzo la mencionan, mediana de 45 minutos sobre 141 resenas que dan un numero), la regla del cappuccino despues de las 11 (timing-012) y el coperto (pricing-027, 31 de 285 resenas malas lo nombran). Las tres se probaron contra Brave antes de entrar y devolvieron 6 de 6 preguntas en tema. Se descartaron seis candidatas mas por la misma prueba; la del vino cayo en que 'Romans' hace que Brave entienda el imperio y no la ciudad."
     },
     {
       "key": "pompeii",
