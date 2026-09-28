@@ -1309,6 +1309,76 @@
       "shingles": [],
       "generatedAt": "2026-09-26",
       "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Have-you-ever-visited-Vatican-City-How-long-did-you-wait-to-get-in",
+      "questionTitle": "Have you ever visited Vatican City? How long did you wait to get in?",
+      "titleNormalized": "have you ever visited vatican city how long did you wait to get in",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-queue-times",
+        "best-time-to-visit-vatican"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-27",
+      "estado": "publicada",
+      "publicadaAt": "2026-09-28T17:14:51.597Z"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-can-I-save-money-on-food-in-Rome",
+      "questionTitle": "How to save money on food in Rome",
+      "titleNormalized": "how to save money on food in rome",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "is-trastevere-food-tour-worth-it",
+        "roman-street-food-glossary",
+        "trastevere-vs-rome-food-neighborhoods"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-27",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/I-have-a-7-hour-cruise-stop-in-Naples-Should-I-go-to-Sorrento-Pompeii-or-just-tour-Naples",
+      "questionTitle": "I have a 7-hour cruise stop in Naples. Should I go to Sorrento, Pompeii, or just tour Naples?",
+      "titleNormalized": "i have a 7 hour cruise stop in naples should i go to sorrento pompeii or just tour naples",
+      "site": "pompeii",
+      "sourceSlugs": [
+        "how-to-get-to-pompeii-from-rome-naples-and-sorrento",
+        "pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min",
+        "7-mistakes-people-make-when-booking-pompeii-tickets-and-tours"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-27",
+      "estado": "publicada",
+      "publicadaAt": "2026-09-28T17:14:51.597Z"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Is-it-worth-visiting-the-Grand-Canyon-when-in-Las-Vegas",
+      "questionTitle": "Is it worth visiting the Grand Canyon when in Las Vegas?",
+      "titleNormalized": "is it worth visiting the grand canyon when in las vegas",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "grand-canyon-west-vs-south-rim-from-las-vegas",
+        "grand-canyon-tour-reviews-google-vs-tripadvisor",
+        "is-the-grand-canyon-day-trip-from-las-vegas-worth-it"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-27",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-is-the-average-cost-of-an-Italian-meal-including-wine",
+      "questionTitle": "What is the average cost of an Italian meal, including wine?",
+      "titleNormalized": "what is the average cost of an italian meal including wine",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "is-trastevere-food-tour-worth-it",
+        "roman-street-food-glossary"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-09-27",
+      "estado": "entregado"
     }
   ]
 }
