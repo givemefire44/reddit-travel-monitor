@@ -15,18 +15,33 @@
     "reason": "cifra \"50,000\" sin unidad ni escala"
   },
   {
+    "slug": "colosseum-day-of-logistics-guide",
+    "fact": "This scenario is most likely in 20+ person groups, especially when crossing the security/metal-detector checkpoint where the group naturally fragments.",
+    "reason": "apertura no autonoma"
+  },
+  {
     "slug": "colosseum-official-website-sells-out-before-listed",
     "fact": "That is the same base access operators wrap into €60–€90 group tours.",
     "reason": "apertura no autonoma"
   },
   {
+    "slug": "colosseum-tours-and-tickets-how-to-book-and-fix-common-problems",
+    "fact": "This can range from the standard 24-hour ticket to Full Experience options, Arena or Underground access, guided tours, or combined tickets that include the Roman Forum and Palatine Hill.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "colosseum-underground-accredited-operators",
+    "fact": "That traveler paid €629.40 for a party of six, lost the underground portion, spent two hours walking the Forum in 34°C heat, queued thirty minutes for a skip-the-line ticket, got twenty minutes on the arena floor, and left early.",
+    "reason": "apertura no autonoma"
+  },
+  {
     "slug": "colosseum-underground-vs-arena-floor",
-    "fact": "You are standing at the center of an ellipse that once held 50,000 spectators, looking up at the terraces from below instead of looking down from above",
+    "fact": "You are standing at the center of an ellipse that once held 50,000 spectators, looking up at the terraces from below instead of looking down from above.",
     "reason": "cifra \"50,000\" sin unidad ni escala"
   },
   {
     "slug": "complete-guide-to-visiting-the-roman-colosseum-step-by-step",
-    "fact": "Capacity limit: Maximum 3,000 visitors inside at once.",
+    "fact": "Yes, the Colosseum uses timed entry with a maximum of 3,000 visitors inside at once.",
     "reason": "cifra \"3,000\" sin unidad ni escala"
   },
   {
@@ -36,13 +51,13 @@
   },
   {
     "slug": "how-long-colosseum-tour-duration-compared",
-    "fact": "This cap holds whether your overall tour is 2.5 hours or 4 hours.",
+    "fact": "That is 1 hour 45 minutes of dead time the buyer did not budget.",
     "reason": "apertura no autonoma"
   },
   {
-    "slug": "how-long-colosseum-tour-duration-compared",
-    "fact": "That is 1 hour 45 minutes of dead time the buyer did not budget.",
-    "reason": "apertura no autonoma"
+    "slug": "how-to-get-to-the-colosseum-from-termini-vatican-and-trastevere",
+    "fact": "When you get off at Colosseo, follow the station exits to street level; from there it is only a 2‑5‑minute walk to the Colosseum entrances and security checks.",
+    "reason": "frase no textual"
   },
   {
     "slug": "private-colosseum-tour",
@@ -51,12 +66,12 @@
   },
   {
     "slug": "skip-the-line-isn-t-magic-my-honest-colosseum-experience",
-    "fact": "This account describes a fifty-person group already waiting at 8am and crowds pressed against the railings by mid-morning",
+    "fact": "This account describes a fifty-person group already waiting at 8am and crowds pressed against the railings by mid-morning.",
     "reason": "apertura no autonoma"
   },
   {
     "slug": "why-was-the-colosseum-built-the-story-guides-don-t-tell-you",
-    "fact": "What had been Nero’s private playground became a public arena for 50,000 Romans.",
+    "fact": "What had been Nero's private playground became a public arena for 50,000 Romans.",
     "reason": "cifra \"50,000\" sin unidad ni escala"
   }
 ]
