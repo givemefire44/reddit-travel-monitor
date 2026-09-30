@@ -100,22 +100,80 @@ export async function evaluarPost({ titulo, cuerpo }, sitios) {
   return out;
 }
 
+// Un fallo que NO es del post sino de la cuenta o de la key. Reintentar no
+// sirve y seguir tampoco: la corrida entera va a dar cero.
+//
+// Existe por dos dias perdidos, el 26 y el 29 de sep 2026. La API estaba en su
+// tope configurado ("You have reached your specified API usage limits") y el
+// catch de abajo convertia cada uno de los 300 posts en contestable: false. El
+// reporte salia impecable — "300 de entrada, 290 preguntas reales, 0 pasan" —
+// idéntico a un dia flojo, sin una sola senal de que algo se habia roto. Las
+// dos veces se descubrio recien al preguntarse por que el cero era tan redondo.
+//
+// El costo no es solo el tiempo. La corrida de Quora gasta sus 30 consultas de
+// Brave ANTES de llegar al juez, asi que un corte se lleva tambien el
+// presupuesto de busqueda del dia. Cortando al primer 400 eso se salva.
+function esFallaSistemica(e) {
+  const s = e?.status;
+  if (s === 400 || s === 401 || s === 403 || s === 429) return true;
+  // Por si el SDK no expone status: el mensaje del tope es inconfundible.
+  return /usage limits|credit balance|invalid x-api-key|authentication/i.test(e?.message || '');
+}
+
+// PING PREVIO. Una llamada de veinte tokens antes de gastar nada.
+//
+// Cortar cuando el juez falla (abajo) llega tarde para lo caro. En Quora las 30
+// consultas de Brave salen ANTES del juez, asi que el 26 y el 29 de sep 2026 el
+// tope de la API se llevo el presupuesto de busqueda del dia sin devolver una
+// sola candidata. En Reddit son 17 feeds RSS y media hora de esperas por 429.
+//
+// Este ping se paga con lo que ahorra la primera vez que corta.
+export async function pingJuez() {
+  try {
+    await cliente().messages.create({
+      model: MODEL,
+      max_tokens: 4,
+      messages: [{ role: "user", content: "ok" }],
+    });
+    return { vivo: true };
+  } catch (e) {
+    return { vivo: false, motivo: (e && e.message ? e.message : String(e)).slice(0, 200) };
+  }
+}
+
 // Corre varios en paralelo con un tope, para no encolar 100 llamadas de golpe.
 export async function evaluarLote(posts, sitios, concurrencia = 6) {
   const out = new Array(posts.length);
   let i = 0;
+  let abortar = null;
   async function worker() {
     while (i < posts.length) {
+      if (abortar) return; // otro worker ya encontro una falla sistemica
       const idx = i++;
       try {
         out[idx] = await evaluarPost(posts[idx], sitios);
       } catch (e) {
-        // Un fallo de red no puede tumbar la corrida entera: ese post queda
-        // fuera con el motivo a la vista, y los demas siguen.
+        if (esFallaSistemica(e)) { abortar = e; return; }
+        // Un fallo de red SI puede ser de este post solo: queda fuera con el
+        // motivo a la vista, y los demas siguen.
         out[idx] = { pregunta: '', sitio: null, contestable: false, porque: `error: ${e.message.slice(0, 80)}`, temas: [] };
       }
     }
   }
   await Promise.all(Array.from({ length: Math.min(concurrencia, posts.length) }, worker));
+  if (abortar) {
+    const err = new Error(`JUEZ CAIDO — no es un dia flojo, es la API: ${abortar.message.slice(0, 200)}`);
+    err.sistemica = true;
+    throw err;
+  }
+  // Segunda red de seguridad: si la mayoria fallo por razones que no parecen
+  // sistemicas una por una, igual no hay corrida que valga. Un cero honesto se
+  // construye con veredictos, no con errores.
+  const conError = out.filter((v) => v && /^error:/.test(v.porque || '')).length;
+  if (posts.length >= 10 && conError > posts.length / 2) {
+    const err = new Error(`JUEZ CAIDO — ${conError} de ${posts.length} posts fallaron; el cero no es real`);
+    err.sistemica = true;
+    throw err;
+  }
   return out;
 }

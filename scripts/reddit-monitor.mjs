@@ -38,7 +38,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Anthropic from '@anthropic-ai/sdk';
-import { evaluarLote } from './lib/relevancia.mjs';
+import { evaluarLote, pingJuez } from './lib/relevancia.mjs';
 import { elegirLote, FORMAS } from './lib/elegir-facts.mjs';
 import { vencimientos } from './lib/canonicos.mjs';
 
@@ -1386,6 +1386,16 @@ async function main() {
   const dateLabel = new Date().toISOString().slice(0, 10);
 
   console.log(`Ventana: ultimas ${HOURS}h · fase: ${CONFIG.phase}${DRY_RUN ? ' · DRY-RUN' : ''}`);
+  // El ping va antes de los 17 feeds y de la media hora de esperas por 429.
+  const ping = await pingJuez();
+  if (!ping.vivo) {
+    console.error("");
+    console.error("JUEZ CAIDO — la corrida se detiene antes de tocar Reddit.");
+    console.error(`  ${ping.motivo}`);
+    console.error("  Sin juez no hay candidatos, y un cero por API caida no es un dato.");
+    process.exit(1);
+  }
+
   const karma = await fetchCommentKarma();
 
   const allCandidates = [];
@@ -1412,6 +1422,16 @@ async function main() {
       );
       allCandidates.push(...cands);
     } catch (err) {
+      // Una falla del JUEZ no es del sub: es de la API, y va a repetirse en los
+      // 17. Sin este corte, las corridas del 26 y del 29 de sep 2026 pedian el
+      // veredicto sub por sub, fallaban las 17 veces y escribian un reporte de
+      // ceros identico a un dia flojo. Se corta aca y se muere fuerte.
+      if (err.sistemica) {
+        console.error('');
+        console.error(`  ${err.message}`);
+        console.error('  La corrida se detiene: un cero por API caida no es un dato.');
+        throw err;
+      }
       // El try envuelve fetch + juez + scoring, asi que la etiqueta "FETCH
       // ERROR" mentia sobre donde paso la cosa: r/ItalyTravel figuro dias en el
       // reporte como un fallo de red. Se guarda el primer frame del stack, que

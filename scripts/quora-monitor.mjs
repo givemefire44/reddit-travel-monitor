@@ -23,7 +23,7 @@ import crypto from 'node:crypto';
 import Anthropic from '@anthropic-ai/sdk';
 // Los dos modulos que Reddit ya usa desde el 27 ago 2026. Ver el bloque EL JUEZ
 // Y EL SELECTOR mas abajo para por que reemplazan al filtro de keywords.
-import { evaluarLote } from './lib/relevancia.mjs';
+import { evaluarLote, pingJuez } from './lib/relevancia.mjs';
 import { elegirLote } from './lib/elegir-facts.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -1546,6 +1546,16 @@ async function main() {
   const allowLink = CONFIG.links.enabled;
 
   console.log(`Fase: ${CONFIG.phase} · links ${allowLink ? 'HABILITADOS' : 'deshabilitados'} · ledger: ${ledger.answered.length} respuestas publicadas`);
+
+  // El ping va ANTES de loadCandidates, que es lo que gasta Brave.
+  const ping = await pingJuez();
+  if (!ping.vivo) {
+    console.error("");
+    console.error("JUEZ CAIDO — la corrida se detiene antes de gastar Brave.");
+    console.error(`  ${ping.motivo}`);
+    console.error("  Sin juez no hay candidatas, y un cero por API caida no es un dato.");
+    process.exit(1);
+  }
 
   const { candidates: raw, rows: searchRows } = await loadCandidates();
   console.log(`Candidatos de entrada: ${raw.length}`);
