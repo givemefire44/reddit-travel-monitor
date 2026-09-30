@@ -764,7 +764,18 @@ async function juzgarPosts(posts, cutoffUtc) {
 const claveDe = (post) => post.id ?? post.url ?? post.title;
 
 function scoreCandidates(posts, subredditCfg, cutoffUtc, veredictos = new Map()) {
-  const funnel = { fetched: posts.length, inWindow: 0, keywordPass: 0, topicPass: 0, questionPass: 0 };
+  // filtroPass se llamaba keywordPass y NO contaba keywords en la mayoria de los
+  // subs. Cuenta la etapa que decide relevancia, y esa etapa es distinta segun el
+  // sub: en los 'active' es el veredicto del juez (contestable si/no), en los
+  // 'watch-only' si es el match contra las keywords del sitio.
+  //
+  // El nombre viejo costo dos diagnosticos equivocados. Tres dias leyendo
+  // "r/roadtrip: ventana 61 -> keyword 0" como "nadie habla de Vegas ahi", cuando
+  // lo que decia era "el juez no encontro nada contestable" — midiendo a mano, 5
+  // de esos 61 posts nombraban Vegas o el Gran Canon. Y el 26 de sep 2026, con la
+  // API caida, los 17 subs de Italia salieron en keyword 0 y eso se leyo como un
+  // dia flojo en vez de como el juez muerto.
+  const funnel = { fetched: posts.length, inWindow: 0, filtroPass: 0, topicPass: 0, questionPass: 0 };
   const out = [];
   const karmaMode = KARMA_MODE && subredditCfg.status === 'active';
   for (const post of posts) {
@@ -787,7 +798,7 @@ function scoreCandidates(posts, subredditCfg, cutoffUtc, veredictos = new Map())
       // devolver nada.
       const v = veredictos.get(claveDe(post));
       if (!v || !v.contestable) continue;
-      funnel.keywordPass += 1;
+      funnel.filtroPass += 1;
       post._porque = v.porque;
       // La pregunta que el juez ya escribio ("que estan preguntando de verdad,
       // en una linea"). Se venia tirando: el candidato guardaba el porque y no
@@ -854,7 +865,7 @@ function scoreCandidates(posts, subredditCfg, cutoffUtc, veredictos = new Map())
         .filter((s) => s.hits > 0)
         .sort((a, b) => b.hits - a.hits);
       if (siteHits.length === 0) continue;
-      funnel.keywordPass += 1;
+      funnel.filtroPass += 1;
       siteKey = siteHits[0].key;
       topics = matchTopics(`${post.title} ${post.selftext}`, siteKey);
       if (topics.length === 0) continue;
@@ -1418,7 +1429,7 @@ async function main() {
         scores: cands.map((c) => c.score).sort((a, b) => b - a),
       });
       console.log(
-        `  r/${sub.name} (${sub.status}): fetch ${funnel.fetched} -> ventana ${funnel.inWindow} -> keyword ${funnel.keywordPass} -> topic ${funnel.topicPass} -> pregunta ${funnel.questionPass}`
+        `  r/${sub.name} (${sub.status}): fetch ${funnel.fetched} -> ventana ${funnel.inWindow} -> filtro ${funnel.filtroPass} -> topic ${funnel.topicPass} -> pregunta ${funnel.questionPass}`
       );
       allCandidates.push(...cands);
     } catch (err) {
@@ -1630,15 +1641,15 @@ async function main() {
   const funnelSection = [
     '## Embudo por subreddit (diagnóstico)',
     '',
-    '| Subreddit | Fetch RSS | En ventana | Keyword | Topic | Pregunta | Scores |',
+    '| Subreddit | Fetch RSS | En ventana | Filtro | Topic | Pregunta | Scores |',
     '|---|---|---|---|---|---|---|',
     ...funnelRows.map((r) =>
       r.ok
-        ? `| r/${r.sub} (${r.status}) | 200 · ${r.funnel.fetched} posts | ${r.funnel.inWindow} | ${r.funnel.keywordPass} | ${r.funnel.topicPass} | ${r.funnel.questionPass} | ${r.scores.join(', ') || '—'} |`
+        ? `| r/${r.sub} (${r.status}) | 200 · ${r.funnel.fetched} posts | ${r.funnel.inWindow} | ${r.funnel.filtroPass} | ${r.funnel.topicPass} | ${r.funnel.questionPass} | ${r.scores.join(', ') || '—'} |`
         : `| r/${r.sub} (${r.status}) | ⛔ **ERROR — ${r.error.replace(/\|/g, '/')}** | — | — | — | — | — |`
     ),
     '',
-    `_Etapas en el orden real del filtro: publicado en las últimas ${HOURS}h y no sticky/nsfw → alguna keyword del sitio → match con la taxonomía de topics → pregunta genuina. No hay umbral de score: todo lo que pasa el embudo es candidato._`,
+    `_Etapas en el orden real: publicado en las últimas ${HOURS}h y no sticky/nsfw → **filtro** → match con la taxonomía de topics → pregunta genuina. **El filtro no es el mismo en todos los subs:** en los \`active\` es el juez decidiendo si el hilo se puede contestar con nuestro material, y en los \`watch-only\` es el match contra las keywords del sitio. Esta columna se llamaba "Keyword" para los dos, y eso hizo leer tres días de \`active\` en cero como "nadie habla del tema" cuando lo que decía era "el juez no encontró nada contestable". No hay umbral de score: todo lo que pasa el embudo es candidato._`,
     '',
     '_El score suma topics + frescura del hilo (≤3h vale 5, ≤6h vale 4, ≤12h vale 2, ≤18h vale 1, más viejo no suma). Un comentario en un hilo de un día no lo lee nadie por bueno que sea: a esa altura ya se cayó de la portada del sub y quien preguntó tiene sus respuestas. Por eso lo fresco gana._',
     '',
