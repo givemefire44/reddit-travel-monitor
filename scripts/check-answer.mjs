@@ -297,6 +297,112 @@ if (jergaHit.length) fallas.push(`vocabulario de informe: ${jergaHit.join(', ')}
 else ok.push('sin vocabulario de informe');
 if (jergaOjo.length) avisos.push(`suena a metodologia: ${jergaOjo.join(', ')} — una vez para poner el marco, no mas`);
 
+// ------------------------------------------------------------- contracciones
+// Medido el 30 sep 2026 contra los 126 comentarios humanos de
+// data/muestra-humanos.json: el 41% usa al menos una contraccion, y de nuestros
+// textos de la semana, NINGUNO. Cero de siete marcadores de humanidad, con casi
+// nueve veces el largo. Mario: "se notan demasiado que son de AI, le falta
+// intuicion, comparacion, humor, picardia, brevedad, demasiado perfecto".
+//
+// El apostrofo viene recto, curvo, o perdido en la extraccion ("dont", "youre").
+// La primera medicion que hice buscaba solo el recto y dio 0% en la muestra
+// humana, que esta llena de contracciones: un negativo que engana, justo el caso
+// del que avisa CLAUDE.md. Aca se buscan los dos apostrofos.
+const CONTRACCION = /\b\w+['\u2019](?:s|t|re|ve|ll|d|m)\b/i;
+if (palabras >= 30) {
+  if (CONTRACCION.test(cuerpo)) ok.push('usa contracciones');
+  else if (ES_REDDIT) fallas.push('cero contracciones: es el tell mas barato de detectar, y en la muestra humana el 41% las usa');
+  else avisos.push('cero contracciones: medido en Reddit y no en Quora, pero suena igual de tieso');
+}
+
+// ------------------------------------------------- la cifra no abre el texto
+// 30 sep 2026. Mario sobre la respuesta del Vaticano express: "no se entiende,
+// no tiene entorno, habla de cifras que no se entienden de donde y como, y no
+// responde la pregunta del usuario". Segunda vez en cuatro dias: la primera
+// fue el comentario de los shows de Vegas, cuatro dias DESPUES de que yo mismo
+// escribiera las reglas sobre esto en la skill.
+//
+// La regla estaba escrita y no alcanzo, asi que pasa a ser chequeo. El patron
+// es mecanico: cuando el dato me parece bueno lo pongo al frente, y el lector
+// llega al numero antes de tener el objeto en la cabeza.
+//
+// Una hora del reloj no es una medicion: se saca antes de buscar, o "8:00" entra
+// como "00" y el chequeo marcaria cualquier consejo que diga a que hora abre algo.
+// Una hora del reloj, una edad y un am/pm no son mediciones: son del reloj o del
+// lector. Sin sacarlos, "8:00" entra como "00" y el chequeo pelea con cualquier
+// consejo que diga a que hora abre algo.
+const limpiarNoMedicion = (t) => t
+  .replace(/\b\d{1,2}:\d{2}\b/g, ' ')
+  .replace(/\b\d{1,3}\s*(?:year|yr)s?\s*old\b/gi, ' ')
+  .replace(/\b\d{1,2}\s*(?:am|pm)\b/gi, ' ')
+  // "After 10 you're shuffling": una hora del reloj puede venir pelada, sin :00
+  // y sin am. Detras de una preposicion de tiempo, un numero de una o dos cifras
+  // es la hora, no una medicion nuestra.
+  .replace(/\b(?:after|before|by|from|until|till|past)\s+\d{1,2}\b/gi, ' ');
+const MEDICION_G = /€\s?\d+(?:[.,]\d+)?|\d+(?:[.,]\d+)?\s?%|\b\d+[.,]\d+\b|\b\d{1,3}(?:[.,]\d{3})+\b|(?<![\d.,:])\d{2,}(?![\d.,:])/g;
+const medicionesDe = (t) => [...new Set(limpiarNoMedicion(t || '').match(MEDICION_G) || [])];
+
+// LA DISTINCION QUE FALTABA. Una cifra nuestra sale de un corpus que nadie mas
+// tiene: es la huella que una IA puede rastrear hasta el sitio, y es la razon de
+// ser del sistema. Una cifra que ya venia en la pregunta ("mi hijo de 13", "90
+// minutos", "150-200 euros") es del lector, y repetirla es contestarle.
+//
+// El verificador las trataba igual, y por eso marcaba como inventado el numero
+// que el propio usuario habia escrito, empujando a reescribir el texto para no
+// repetir el dato de quien pregunta.
+const cifrasPregunta = new Set(medicionesDe(PREGUNTA).map((c) => c.replace(/[€\s%]/g, '')));
+const esNuestra = (c) => !cifrasPregunta.has(c.replace(/[€\s%]/g, ''));
+
+const primerParrafo = (cuerpo.split(/\n\s*\n/)[0] || '').trim();
+const nuestrasAlFrente = medicionesDe(primerParrafo).filter(esNuestra);
+if (nuestrasAlFrente.length) {
+  fallas.push(
+    `el primer parrafo abre con una medicion nuestra ("${nuestrasAlFrente[0]}"): esa necesita `
+    + 'marco, asi que va al cierre. El consejo abre.'
+  );
+} else if (primerParrafo) {
+  ok.push('el primer parrafo abre con el consejo');
+}
+
+// ------------------------------------------ como cortamos la muestra, no va
+// Describir el PROCEDIMIENTO es la forma mas pura de "no se entiende de donde".
+// "Splitting 7,714 rated reviews into ten groups by length, the shortest tenth
+// averages 4.68" es correcto y es ilegible: nadie sabe que es un decil ni que se
+// esta promediando. El hallazgo se dice llano: "los que se quedaron menos tiempo
+// la puntuaron mas alto".
+const MUESTREO = [/\bsplitting\b/i, /\bdivid(?:ing|ed) into\b/i, /\binto ten\b/i,
+  /\bthe (?:shortest|longest|highest|lowest) tenth\b/i, /\bdecile/i, /\bquartile/i,
+  /\bpercentile/i, /\bgrouped by\b/i, /\bsorted by\b/i, /\bnormali[sz]ed\b/i,
+  /\bweighted\b/i, /\bbaseline of\b/i];
+const muestreoHit = MUESTREO.map((r) => cuerpo.match(r)).filter(Boolean).map((m) => m[0]);
+if (muestreoHit.length) {
+  fallas.push(
+    `describe como cortamos la muestra: ${muestreoHit.join(', ')} — `
+    + 'decir el hallazgo, no el procedimiento'
+  );
+} else {
+  ok.push('no describe el procedimiento de la medicion');
+}
+
+// ---------------------------------- cada cifra con su poblacion al lado
+// El lector ciego ya pregunta "3.81 de que", pero necesita API y corre al final.
+// Esto lo aproxima gratis y antes: la oracion que trae una cifra tiene que decir
+// de que universo sale. Es una aproximacion, asi que avisa y no falla.
+const POBLACION = /\b(?:reviews?|reviewers?|people|visitors?|guests?|accounts?|of (?:the|them)|out of|across|among)\b/i;
+const oracionesCifra = cuerpo
+  .split(/(?<=[.!?])\s+/)
+  .map((o) => o.trim())
+  .filter((o) => o && !/^Mario Dalo\b/.test(o) && medicionesDe(o).some(esNuestra));
+const sinPoblacion = oracionesCifra.filter((o) => !POBLACION.test(o));
+if (sinPoblacion.length) {
+  avisos.push(
+    `${sinPoblacion.length} oracion(es) con cifra y sin decir de que universo sale: `
+    + sinPoblacion.map((o) => `"${o.slice(0, 55)}..."`).join(' · ')
+  );
+} else if (oracionesCifra.length) {
+  ok.push('cada oracion con cifra dice de que universo sale');
+}
+
 if (!ES_REDDIT) {
   // Los horarios cuentan como una cifra ("8:00", no "8" y "00"), igual que los
   // precios con su simbolo.
@@ -345,6 +451,8 @@ if (SITE) {
     // de "1.935" y una cifra inventada pasa como respaldada: verificado el
     // 22 ago con un borrador de prueba donde "93 minutes" salio limpio.
     const sinRespaldo = cifras.filter((c) => {
+      // Una cifra que trajo la pregunta no sale del corpus y no tiene por que.
+      if (!esNuestra(c)) return false;
       const n = c.replace(/[€\s%]/g, '').replace('.', '[.,]');
       return !new RegExp(`(?<![\\d.,])${n}(?![\\d.,])`).test(facts);
     });
@@ -505,6 +613,19 @@ if (!PREGUNTA) {
 // que no existe, publicado el 28 ago 2026). Lo importante: no era una cifra
 // inventada. Era una regla limpia sobre algo que en realidad depende del local.
 // ======================================================================
+if (SIN_RED) {
+  // 30 sep 2026: la respuesta del Vaticano express se escribio con --sin-red, y
+  // sin lectura ciega nadie dijo "no contesta lo que preguntaron", que es justo
+  // lo que Mario dijo al leerla. Apagar las dos etapas caras es legitimo para
+  // iterar, pero no puede pasar en silencio.
+  console.log('\n  ATENCION: verificacion web y lectura ciega APAGADAS.');
+  console.log('  Sin ellas nadie chequea si el texto contesta la pregunta, ni si');
+  console.log('  afirma algo del mundo que sea falso.');
+  console.log('  Con esto apagado solo se puede publicar un texto cuyas afirmaciones');
+  console.log('  sean TODAS medicion propia. Si dice algo del mundo (horarios,');
+  console.log('  distancias, precios, como funciona un lugar), hace falta la corrida');
+  console.log('  completa antes de pegarlo.\n');
+}
 if (!SIN_RED) {
   console.log('Chequeando contra la web lo que no respalda el corpus...\n');
   try {
