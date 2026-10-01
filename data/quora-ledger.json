@@ -1379,6 +1379,73 @@
       "shingles": [],
       "generatedAt": "2026-09-27",
       "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Is-it-possible-to-visit-all-of-the-Roman-sites-in-one-day-including-the-Vatican-and-Colosseum-Are-there-any-tours-that-offer-this-itinerary",
+      "questionTitle": "Is it possible to visit all of the Roman sites in one day, including the Vatican and Colosseum? Are there any tours that offer this itinerary?",
+      "titleNormalized": "is it possible to visit all of the roman sites in one day including the vatican and colosseum are there any tours that offer this itinerary",
+      "site": "colosseum",
+      "sourceSlugs": [
+        "vatican-and-colosseum-tours-in-one-day-how-to-see-both",
+        "why-a-guided-colosseum-tour-is-worth-it-1-817-reviews",
+        "rome-in-one-day-colosseum-forum-vatican-itinerary"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-01",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Is-Vatican-City-free-to-enter",
+      "questionTitle": "Is Vatican City free to enter?",
+      "titleNormalized": "is vatican city free to enter",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-museums-tickets-guide",
+        "vatican-free-sunday-worth-it"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-01",
+      "estado": "publicada",
+      "publicadaAt": "2026-10-01T16:43:19.504Z"
+    },
+    {
+      "questionUrl": "https://www.quora.com/I-m-planning-a-vacation-to-the-Grand-Canyon-for-myself-and-my-husband-Do-you-have-any-advice-or-tips-that-might-help",
+      "questionTitle": "I’m planning a vacation to the Grand Canyon for myself and my husband.Do you have any advice or tips that might help?",
+      "titleNormalized": "i m planning a vacation to the grand canyon for myself and my husband do you have any advice or tips that might help",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "grand-canyon-west-vs-south-rim-from-las-vegas",
+        "grand-canyon-day-trip-from-las-vegas-how-long",
+        "how-to-choose-las-vegas-shows"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-01",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-much-should-you-tip-at-restaurants-in-Italy-Rome",
+      "questionTitle": "How much should you tip at restaurants in Italy (Rome)?",
+      "titleNormalized": "how much should you tip at restaurants in italy rome",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "trastevere-bill-extra-charges-tap-water"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-01",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-is-the-recommended-way-to-experience-a-trip-around-and-over-the-Grand-Canyon",
+      "questionTitle": "What is the recommended way to experience a trip around and over the Grand Canyon?",
+      "titleNormalized": "what is the recommended way to experience a trip around and over the grand canyon",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "grand-canyon-west-skywalk-eagle-point-guano-point",
+        "las-vegas-helicopter-tours-which-worth-it"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-01",
+      "estado": "entregado"
     }
   ]
 }
