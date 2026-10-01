@@ -237,10 +237,27 @@ const palabras = cuerpo.trim().split(/\s+/).filter(Boolean).length;
 // Quora: sin piso real. Decia 150-900 y la skill pedia 400-700; la respuesta que
 // mejor rindio hasta el 11 sep 2026 (trampas de restaurantes, 2.1K vistas y 8
 // upvotes en un dia) tenia 254 palabras, y una de si o no se contesta en 100.
+// En Reddit el aviso por largo salio TODAS las veces esta semana y lo pise TODAS,
+// asi que a los 120 pasa a falla. Lo decidio Mario el 1 oct 2026, con la medicion
+// de la muestra humana a la vista: mediana 24, p75 48, p90 100. 120 esta arriba
+// del percentil 90 de lo que escribe un humano en estos subs, asi que un texto
+// mas largo que eso no es un caso raro: es relleno.
+//
+// Lo que encoge es el ANDAMIO, no la cifra. De las 208 palabras de la respuesta
+// del Vaticano express, las cifras con su marca ocupaban 40 y el marco 168; la
+// misma respuesta con las tres cifras intactas salio en 80. Si al recortar se
+// cae la medicion, se recorto lo que no habia que recortar.
+const TOPE_REDDIT = 120;
 const [min, max] = ES_REDDIT ? [8, 70] : [80, 550];
 if (palabras < min) avisos.push(`${palabras} palabras: corto para ${RED}`);
-else if (palabras > max) avisos.push(`${palabras} palabras: ${RED === 'reddit' ? `arriba del p75 real (48) — la mediana humana es 24` : 'largo: la que mejor rindio tenia 254, revisar si hay relleno'}`);
-else ok.push(`${palabras} palabras`);
+else if (ES_REDDIT && palabras > TOPE_REDDIT) {
+  fallas.push(
+    `${palabras} palabras en Reddit: el tope es ${TOPE_REDDIT} y la mediana humana es 24. `
+    + 'Recortar el marco, no las cifras'
+  );
+} else if (palabras > max) {
+  avisos.push(`${palabras} palabras: ${RED === 'reddit' ? `arriba del p75 real (48) — la mediana humana es 24` : 'largo: la que mejor rindio tenia 254, revisar si hay relleno'}`);
+} else ok.push(`${palabras} palabras`);
 
 // El formato lo decide la PREGUNTA, no una regla fija.
 //
