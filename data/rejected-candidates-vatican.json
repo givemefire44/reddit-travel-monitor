@@ -1,18 +1,8 @@
 [
   {
-    "slug": "vatican-best-rated-extras",
-    "fact": "By average rating, the Gardens at 4.76 and the Carriage Pavilion at 4.74, followed by the Scavi at 4.68 and the dome at 4.50 — all above the corpus average of 4.08, and all above the Sistine Chapel at 3.81.",
-    "reason": "voz editorial interna"
-  },
-  {
-    "slug": "vatican-closures-short-notice",
-    "fact": "The accounts describe an email more than a month ahead offering \\u20ac10 per person back for the missing basilica, a message the day before \"due to an event\", an email about a special papal audience on a Saturday, and an official dome booking for December 31 cancelled with no reason given.",
-    "reason": "frase no textual"
-  },
-  {
-    "slug": "vatican-closures-short-notice",
-    "fact": "one was facing the loss of \\u20ac148 on tickets marked \"non-refundable even in the case of a force majeure\".",
-    "reason": "frase no textual"
+    "slug": "best-time-to-visit-vatican",
+    "fact": "This is the \"golden window\" — enter at eight and you'll walk the Gallery of Maps and the Raphael Rooms nearly empty, reaching the Sistine Chapel by around 10:30, just before the tour-group wave fills it.",
+    "reason": "apertura no autonoma"
   },
   {
     "slug": "vatican-early-access-really-means",
@@ -20,8 +10,28 @@
     "reason": "apertura no autonoma"
   },
   {
-    "slug": "vatican-value-perception",
-    "fact": "Removing every review that also carries a tag for queues, scams, cancellations, skip-the-line or booking leaves 303 reviews that mention price with no service failure attached, and they still average 3.38 — 0.70 below the corpus average.",
+    "slug": "vatican-early-access-really-means",
+    "fact": "another visitor report describes sharing the room with a group of exactly 20 people",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "vatican-gardens-tour-what-ticket-includes",
+    "fact": "Another visitor, in 2025, found that the only gardens tickets left already included the Museums and the Sistine Chapel, which they had bought separately.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "vatican-gardens-tour-what-ticket-includes",
+    "fact": "Another found a gardens option on the official site in 2025 that mentioned the Sistine Chapel but not the full museum route, so the versions are not all the same.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "vatican-mobility-access",
+    "fact": "Reviews mentioning a wheelchair average 4.25 stars, above the corpus average of 4.08 — ramps, lifts, priority entry and attentive stewards come up repeatedly.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "vatican-mobility-access",
+    "fact": "Reviews mentioning the walking distance average 0.43 stars below the corpus average and those mentioning nowhere to sit 0.63 below, while reviews mentioning stairs are essentially at average.",
     "reason": "voz editorial interna"
   }
 ]
