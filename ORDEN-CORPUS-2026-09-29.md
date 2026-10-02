@@ -1,4 +1,4 @@
-# Orden de trabajo: 14 facts que no sobreviven al chequeo externo
+# Orden de trabajo: 16 facts que no sobreviven al chequeo externo
 
 **Fecha:** 29 sep 2026 · **Origen:** la etapa de verificación web de `check-answer.mjs`,
 corriendo entre el 24 y el 27 de sep mientras se escribían respuestas.
@@ -19,7 +19,7 @@ condición hay que agregarle la condición.
 
 ---
 
-## A · Dato equivocado (7)
+## A · Dato equivocado (9)
 
 Se cambia el número o el hecho en el artículo.
 
@@ -81,6 +81,32 @@ multiplicador "treinta veces" descansa sobre esa base, así que si la base cambi
 multiplicador también. Los otros dos números del fact (el add-on de €300 de San Pedro y
 los €750 de la mañana) no se pudieron corroborar afuera; puede ser porque son de una
 oferta concreta que medimos, pero conviene revisar de dónde salieron.
+
+---
+
+### `timing-021` — vatican
+**Artículo:** `vatican-queue-times` *(añadido el 1 oct 2026)*
+> on the **last Sunday of every month**, the Vatican Museums open free of charge
+
+No es cada mes. Se saltean **Pascua, el 29 de junio y el 25-26 de diciembre**,
+confirmado en `museivaticani.va`. Salió escribiendo la respuesta de "Is Vatican
+City free to enter?", donde quedó corregido; el fact sigue mal.
+
+### `neighborhoods-006` — trastevere — **BORRAR, no corregir**
+**Artículo:** por determinar *(añadido el 2 oct 2026)*
+> By the same raw method, an "Osteria Santo Spirito" arrived fourth with 23 mentions.
+
+**Ese restaurante está en Florencia**, Piazza Santo Spirito 16/R. No existe en
+Roma. El fact ya venía escrito con comillas y con un "an", señal de que el
+análisis original desconfiaba del conteo; la verificación del 2 oct lo confirma.
+
+Es el mismo caso que All'Antico Vinaio en la tabla de targets de `SEEDS.md`
+(cadena florentina, 49 menciones, descartada el 2 sep): **un corpus de comida
+italiana levantado de Reddit arrastra nombres de otras ciudades, y contar
+menciones no distingue la ubicación.** Las 23 menciones son reales; lo que es
+falso es la conclusión de que señalan un restaurante de Trastevere.
+
+No tiene arreglo por reescritura. Se borra.
 
 ---
 
