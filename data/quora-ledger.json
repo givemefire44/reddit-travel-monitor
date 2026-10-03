@@ -1446,6 +1446,70 @@
       "shingles": [],
       "generatedAt": "2026-10-01",
       "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Where-is-the-floor-of-the-Colosseum",
+      "questionTitle": "Where is the floor of the Colosseum?",
+      "titleNormalized": "where is the floor of the colosseum",
+      "site": "colosseum",
+      "sourceSlugs": [
+        "7-mistakes-people-make-when-booking-colosseum-tickets",
+        "colosseum-full-experience-vs-standard-ticket"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-02",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-can-you-not-miss-at-the-Vatican-Museum",
+      "questionTitle": "What can you not miss at the Vatican Museum?",
+      "titleNormalized": "what can you not miss at the vatican museum",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-museums-itinerary"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-02",
+      "estado": "publicada",
+      "publicadaAt": "2026-10-03T00:06:32.519Z"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-the-pros-and-cons-of-staying-on-the-strip-or-in-downtown-Vegas-if-you-don-t-gamble-and-just-want-to-see-shows-eat-great-food-and-shop",
+      "questionTitle": "What are the pros and cons of staying on the strip or in downtown Vegas if you don’t gamble and just want to see shows, eat great food and shop?",
+      "titleNormalized": "what are the pros and cons of staying on the strip or in downtown vegas if you don t gamble and just want to see shows eat great food and shop",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "first-time-las-vegas-how-to-plan",
+        "most-expensive-first-timer-mistakes-las-vegas"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-02",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-some-things-you-need-to-book-in-advance-before-going-to-Vegas",
+      "questionTitle": "What are some things you need to book in advance before going to Vegas?",
+      "titleNormalized": "what are some things you need to book in advance before going to vegas",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "red-rock-canyon-from-las-vegas"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-02",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Most-of-the-food-in-Rome-is-great-but-it-can-take-incredibly-long-to-get-your-order-and-much-longer-to-get-your-bill-am-I-am-impatient-American-or-is-this-a-thing",
+      "questionTitle": "Most of the food in Rome is great but it can take incredibly long to get your order and much longer to get your bill; am I am impatient American or is this a thing?",
+      "titleNormalized": "most of the food in rome is great but it can take incredibly long to get your order and much longer to get your bill am i am impatient american or is this a thing",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "trastevere-reviews-that-name-the-waiter"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-02",
+      "estado": "publicada",
+      "publicadaAt": "2026-10-03T00:06:32.520Z"
     }
   ]
 }
