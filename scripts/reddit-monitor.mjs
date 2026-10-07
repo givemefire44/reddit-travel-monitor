@@ -108,6 +108,16 @@ const SITE_VOICE = {
     brand: 'MilanLastSupper',
     brandRe: /milan\s?last\s?supper/gi,
   },
+  // Las Vegas entro como sitio del monitor world el 21 sep 2026 y le paso lo mismo
+  // que a Pompeya y Milan: en warmup no se notaba. Al pasar world a attribution
+  // (7 oct 2026) el reporte habria dicho "una mencion de null", porque la marca
+  // sale de aca. Sin variante con espacios, igual que trastevere: "a Las Vegas
+  // tour" es una frase de cualquier borrador legitimo.
+  lasvegas: {
+    subject: 'Las Vegas and the day trips from it - the Grand Canyon, Hoover Dam, Red Rock and Valley of Fire',
+    brand: 'LasVegasTour',
+    brandRe: /lasvegastour/gi,
+  },
   // Candidatos sin material del corpus: no hay sitio ni marca porque se contesta
   // como viajero comun. Nunca llevan mencion, ni siquiera en fase attribution:
   // la marca solo acompana medicion propia, y aca no hay ninguna.

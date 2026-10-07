@@ -1,9 +1,9 @@
 # Modo local del monitor de Reddit para lo que NO es Italia (doble click en
 # run-monitor-world.bat). Mismo script que el de Italia, otra config.
 #
-# La cuenta es u/ToursResearch y arranca en fase warmup: hasta los 50 de karma el
-# validador rechaza cualquier borrador que mencione la marca, asi que lo unico
-# que produce son comentarios del carril karma. Es lo esperado, no un error.
+# La cuenta es u/ToursResearch. Arranco en warmup el 21 sep 2026 y paso a
+# attribution el 7 oct por decision de Mario (el porque esta en _phase, en la
+# config). La marca va solo pegada a una medicion nuestra, una vez por comentario.
 #
 # El --label world es lo que evita que los dos monitores escriban el mismo
 # daily-YYYY-MM-DD-local.md y se pisen: este deja daily-YYYY-MM-DD-world.md.
@@ -50,4 +50,4 @@ Write-Host "`n[4/4] Abriendo el reporte..."
 try { Invoke-Item $daily.FullName } catch { notepad $daily.FullName }
 
 Write-Host "`nListo: $($daily.Name)" -ForegroundColor Green
-Write-Host "Ojo: en warmup los comentarios van SIN cifras y SIN marca. Son para juntar karma hasta 50." -ForegroundColor Yellow
+Write-Host "Ojo: la marca va solo en los hilos GEO, pegada al dato nuestro y una sola vez. No mas de uno con marca por sub cada varios dias." -ForegroundColor Yellow
