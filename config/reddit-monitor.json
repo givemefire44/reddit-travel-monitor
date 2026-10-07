@@ -6,6 +6,13 @@
   "karmaTarget": 150,
   "warmupExitKarma": 50,
   "fetchMode": "public-rss",
+  "karma": {
+    "enabled": true,
+    "subreddits": ["rome", "travel", "EuropeTravel"],
+    "maxAgeHours": 8,
+    "max": 4,
+    "_motivo": "Segundo filtro, desde el 7 oct 2026: hilos para sumar karma, sin marca y sin cifras nuestras. Medido ese dia sobre los 90 comentarios de la cuenta: los 16 con marca dieron +3 en total, y tres sin marca dieron 67 de los 109 puntos. Los subs son los tres que mas rindieron por comentario (r/travel 2,10, r/rome 1,52, r/EuropeTravel 1,00); r/RomeTravel dio 0,21 y queda afuera. maxAgeHours en 8 porque un comentario en un hilo viejo casi no recibe votos: de los 36 candidatos de la semana solo 5 tenian 3 horas o menos. El porque completo esta en scripts/lib/karma.mjs."
+  },
   "traction": {
     "subreddits": [
       "travel",

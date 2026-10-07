@@ -39,6 +39,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Anthropic from '@anthropic-ai/sdk';
 import { evaluarLote, pingJuez } from './lib/relevancia.mjs';
+import { buscarKarma } from './lib/karma.mjs';
 import { elegirLote, FORMAS } from './lib/elegir-facts.mjs';
 import { vencimientos } from './lib/canonicos.mjs';
 
@@ -1420,6 +1421,12 @@ async function main() {
   const karma = await fetchCommentKarma();
 
   const allCandidates = [];
+  // Pozo del filtro de karma: posts frescos de los subs de config.karma, se elija
+  // o no alguno como candidato. Se depura mas abajo, cuando ya se sabe cuales
+  // entraron por el otro juez y cuales ya contesto la cuenta.
+  const KARMA = CONFIG.karma?.enabled ? CONFIG.karma : null;
+  const KARMA_SUBS = new Set((KARMA?.subreddits || []).map((x) => x.toLowerCase()));
+  const karmaPool = [];
   // Embudo por subreddit. Un feed que falla el fetch (403/429 agotado, 5xx) se
   // registra como ERROR en el reporte: jamas debe confundirse con "0 posts".
   const funnelRows = [];
@@ -1429,6 +1436,16 @@ async function main() {
   for (const sub of subsDeHoy) {
     try {
       const posts = await fetchNewPosts(sub.name);
+      // Solo subs donde la cuenta puede comentar hoy: uno con umbral de karma
+      // devolveria hilos que no se pueden contestar.
+      if (KARMA_SUBS.has(sub.name.toLowerCase()) && !(sub.minCommentKarma > 0)) {
+        const ahora = Date.now() / 1000;
+        for (const p of posts) {
+          const ageHours = Math.round((ahora - p.created_utc) / 3600);
+          if (p.stickied || p.over_18 || p.created_utc < cutoffUtc || ageHours > KARMA.maxAgeHours) continue;
+          karmaPool.push({ sub: sub.name, title: p.title, selftext: p.selftext || '', url: `https://www.reddit.com${p.permalink}`, ageHours });
+        }
+      }
       // El juez de relevancia corre ANTES de puntuar, sobre los posts de la
       // ventana. Una llamada por post con un modelo chico. Ver lib/relevancia.mjs
       // para por que reemplaza a las listas de keywords.
@@ -1622,6 +1639,57 @@ async function main() {
     if (id) businessIds.add(id);
     businessTitles.add(normalizeTitle(c.title));
   }
+  // Segundo filtro: hilos para sumar karma. Corre sobre lo que el juez de
+  // material NO eligio. El porque y la medicion estan en lib/karma.mjs.
+  let karmaHilos = { elegidos: [], mirados: 0 };
+  if (KARMA) {
+    const pool = karmaPool
+      .filter((p) => {
+        const id = (p.url.match(/\/comments\/([a-z0-9]+)\//) || [])[1];
+        return !(id && businessIds.has(id)) && !businessTitles.has(normalizeTitle(p.title));
+      })
+      .sort((x, y) => x.ageHours - y.ageHours)
+      .slice(0, 60);
+    karmaHilos = await buscarKarma(pool, { max: KARMA.max ?? 4 });
+    console.log(karmaHilos.error
+      ? `Karma: el filtro fallo (${karmaHilos.error}) - la corrida sigue sin esa seccion`
+      : `Karma: ${karmaHilos.elegidos.length} hilo(s) elegidos de ${karmaHilos.mirados} mirados (hasta ${KARMA.maxAgeHours}h, en ${KARMA.subreddits.map((x) => `r/${x}`).join(', ')})`);
+  }
+  const TIPO_KARMA = {
+    premisa_equivocada: 'parte de una idea equivocada',
+    preocupacion: 'está preocupado por algo que tiene respuesta clara',
+    como_funciona: 'no entiende cómo funciona algo',
+    decision: 'una decisión con respuesta clara',
+  };
+  const karmaSection = !KARMA ? [] : [
+    `## Karma — hilos para sumar puntos (${karmaHilos.elegidos.length})`,
+    '',
+    '_Segundo filtro, desde el 7 oct 2026. No busca hilos que nuestro material conteste: busca los que dan puntos. Medido sobre los 90 comentarios de la cuenta, los 16 con marca dieron +3 en total y tres sin marca ni cifras dieron 67 de 109 (el hotel cambiado en r/travel, el café sentado y el primer vino en r/rome). Los tres corrigen lo que la persona creía, dan un paso concreto y se ponen de su lado._',
+    '',
+    '_Reglas de este carril: **sin marca y sin cifras nuestras**, corto, leyendo antes los comentarios del hilo, y con cada dato verificado afuera. Nunca experiencia propia. Uno por sub por día. Cero es una respuesta válida._',
+    '',
+    ...(karmaHilos.error ? [`_⚠️ El filtro falló hoy (${karmaHilos.error}). No es lo mismo que cero hilos._`, ''] : []),
+    ...(!karmaHilos.error && !karmaHilos.elegidos.length ? [`_Ninguno de los ${karmaHilos.mirados} hilos frescos mirados da para este carril._`, ''] : []),
+    ...karmaHilos.elegidos.flatMap((h) => [
+      `### ${h.title}`,
+      '',
+      `- **Hilo:** ${h.url}`,
+      `- **Subreddit:** r/${h.sub} · **Antigüedad:** ${h.ageHours}h`,
+      `- **Carril:** 🔁 karma — ${TIPO_KARMA[h.tipo] || h.tipo}`,
+      `- **Lo que cree o le preocupa:** ${h.cree}`,
+      `- **Lo que una buena respuesta deja claro:** ${h.respuesta}`,
+      `- **Verificar antes de escribir:** ${h.verificar}`,
+      ...(h.dinero ? ['- **⚠️ Tema de plata:** solo si la respuesta es precisa y resuelve; si no, se saltea.'] : []),
+      '',
+      '**Lo que preguntó, textual:**',
+      '',
+      h.selftext.trim() ? '> ' + h.selftext.trim().slice(0, 1500).replace(/\n+/g, '\n> ') : '> (sin cuerpo en el feed: abrir el hilo)',
+      '',
+      '---',
+      '',
+    ]),
+  ];
+
   // Apagado el 20 ago 2026: old.reddit pasó a exigir login (302 -> /login/?reason=lor2)
   // y era la unica fuente de puntaje y nro de comentarios. Ver config.traction._motivo.
   const tractionOn = CONFIG.traction?.enabled !== false;
@@ -1771,6 +1839,7 @@ async function main() {
     '',
     '---',
     '',
+    ...karmaSection,
     ...tractionSection,
     '## Rutina',
     '',
