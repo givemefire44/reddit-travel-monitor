@@ -1144,13 +1144,32 @@ function answersFromSnippet(raw) {
 // mismo dia siguen dando lo mismo. Brave admite hasta 9, asi que el barrido
 // completo son 100 resultados por consulta antes de volver a empezar, y para
 // entonces la caducidad de 21 dias del ledger ya libero a los entregados.
+//
+// EL BARRIDO SE CORTA EN LA PAGINA 6 Y CADA SITIO ARRANCA DESFASADO (7 oct 2026).
+// Bajar hasta la 10 no rendia, y se midio sobre los reportes del 17 sep al 6 oct
+// contando candidatos entregados por sitio y por dia: paginas 1-3 dieron 1,10 por
+// sitio-dia, las 4-6 dieron 1,09 y las 7-10 dieron 0,40. Colosseum paso diez dias
+// seguidos en cero entre la 7 y la 10 y volvio a dar cuando la rotacion lo
+// devolvio arriba.
+// Y habia un segundo problema encima: los cuatro sitios con 10 consultas avanzan
+// al mismo ritmo, asi que tocaban fondo EL MISMO DIA. El 5 y el 6 de octubre
+// trastevere, pompeii, milan y lasvegas estaban los cuatro en la pagina 10 y el
+// reporte salio solo con vatican y colosseum, que con 15 consultas iban por la 3
+// y la 4. Desde afuera parecia que el monitor "solo encontraba Vaticano".
+// La fase es la posicion del sitio en la config: sin estado en disco, igual que
+// todo lo demas de esta funcion.
+// Lo que esta medicion NO separa: el ledger libera lo entregado a los 21 dias y
+// eso empuja en la misma direccion. El embudo junta juez, selector y ledger en una
+// sola etapa y no la abre por sitio, asi que no hay con que distinguirlos.
 function rotarQueries(site) {
   const todas = site.searchQueries || [];
   const porDia = CONFIG.search.queriesPorDia ?? todas.length;
+  const paginas = CONFIG.search.paginasMax ?? 6;
+  const fase = Math.max(0, CONFIG.sites.indexOf(site));
   const dia = Math.floor((Date.now() - Date.UTC(new Date().getUTCFullYear(), 0, 0)) / 86400000);
-  if (todas.length <= porDia) return todas.map((q) => ({ q, offset: dia % 10 }));
+  if (todas.length <= porDia) return todas.map((q) => ({ q, offset: (dia + fase) % paginas }));
   const vueltas = Math.floor((dia * porDia) / todas.length);
-  const offset = vueltas % 10;
+  const offset = (vueltas + fase) % paginas;
   return Array.from({ length: porDia }, (_, i) => ({ q: todas[(dia * porDia + i) % todas.length], offset }));
 }
 

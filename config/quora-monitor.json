@@ -31,6 +31,8 @@
     "_": "Brave Search es la fuente por defecto. NO se entra a Quora: se le pregunta al indice de Brave, que ya tiene esas paginas indexadas. Quora bloquea a todos los bots en su robots.txt, asi que cualquier acceso automatico a quora.com esta descartado por diseño; el .txt manual (--file) queda como fuente alternativa.",
     "__": "UNA consulta por GRUPO de keywords, nunca una por keyword. El plan gratuito son ~1.000 consultas al mes: estos 8 grupos, corridos a diario, dan ~240.",
     "queriesPorDia": 5,
+    "paginasMax": 6,
+    "_paginasMax": "Hasta que pagina de Brave baja el barrido antes de volver a la 1. Era 10 fijo en el codigo. Medido el 7 oct 2026 sobre los reportes del 17 sep al 6 oct: paginas 1-3 dieron 1,10 candidatos por sitio-dia, 4-6 dieron 1,09 y 7-10 dieron 0,40. Ademas cada sitio arranca desfasado segun su posicion en esta lista, para que no toquen fondo todos el mismo dia.",
     "___": "Las consultas ROTAN: de la lista de cada sitio salen queriesPorDia por corrida, corriendo la ventana un lugar por dia. Se rota en vez de ampliar el gasto diario porque el plan gratuito de Brave son ~1.000 consultas al mes y buscar-reddit.mjs ya usa unas 300. Con 3 por sitio por dia son 9 diarias, unas 270 al mes, y el pozo tarda 6 dias en repetirse en vez de repetirse todos los dias. El problema nunca fue cuantas consultas se hacen, sino que fueran siempre las mismas: ocho fijas devuelven las mismas 80 preguntas y el ledger las agota."
   },
   "sites": [
