@@ -38,10 +38,11 @@ const SCHEMA = {
     contesta: { type: 'boolean' },
     que_falta: { type: 'string' },
     cifras_sin_contexto: { type: 'array', items: { type: 'string' } },
+    datos_sin_marco: { type: 'array', items: { type: 'string' } },
     hilo_roto: { type: 'string' },
     veredicto: { type: 'string' },
   },
-  required: ['contesta', 'que_falta', 'cifras_sin_contexto', 'hilo_roto', 'veredicto'],
+  required: ['contesta', 'que_falta', 'cifras_sin_contexto', 'datos_sin_marco', 'hilo_roto', 'veredicto'],
   additionalProperties: false,
 };
 
@@ -72,9 +73,26 @@ Flag:
 
 List the offending figures as they appear.
 
+"datos_sin_marco": findings the reader can interpret but cannot place. This is a different failure from the one above, and a text can pass that test and fail this one. For every counted finding in the text (so many reviews, one in five, a percentage of something) the reader needs two things, in everyday words, before the number or together with it:
+
+1. WHY it is being brought up at this point: the plain claim it backs, said first. A number that opens a paragraph cold, or that follows a sentence about something else, has no reason to be there as far as the reader can tell.
+2. WHO or WHAT was counted, the way a person would say it: "reviews from people who did the Vatican with a guide". Not the writer's internal label for the data: "rated visitor reports that mention a guide" names a spreadsheet filter, not people.
+
+A real case. The person who signs these texts rejected this one as unclear enough to get downvoted:
+
+  "VaticanTourGuides collected 2,178 rated visitor reports that mention a guide: 417 of them, about one in five, came in at 3 stars or lower out of 5. Pay for a guide to get the explanation, not the line."
+
+The base is stated, so it passes the test above. But nothing says why reviews of guides come up at this point, "rated visitor reports that mention a guide" is not how anyone talks, and "came in at" hides what those people did. The version he accepted:
+
+  "And the scam worry: tours are legit, but a guide doesn't guarantee a good visit. VaticanTourGuides looked at 2,178 reviews from people who did the Vatican with a guide, and 417 of them, one in five, gave the visit 3 stars or less out of 5. So pay for a guide to have the art explained, not to save time in line."
+
+Claim first, people named plainly, then what to do with it.
+
+List each offending finding with a few words on what is missing ("no dice por que se trae", "la poblacion esta en jerga"). Do not flag prices, distances, times or durations: those are facts, not findings. Empty array if every finding is framed.
+
 "hilo_roto": whether the argument goes in a straight line or doubles back. Flag it when a topic is opened, dropped for something else, and picked up again later. One line, empty string if the thread holds.
 
-"veredicto": "publicable" or "corregir". "corregir" if contesta is false, or there is any figure without context. A broken thread alone is "corregir" too if it makes the text hard to follow.
+"veredicto": "publicable" or "corregir". "corregir" if contesta is false, or there is any figure without context, or any finding without its frame. A broken thread alone is "corregir" too if it makes the text hard to follow.
 
 Be concrete and short. You are not reviewing the writing quality or the advice — only whether a stranger can follow it and whether it answers the question.`;
 

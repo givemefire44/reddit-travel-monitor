@@ -193,7 +193,7 @@ if (negaciones >= 3) {
 // los puede decir cualquiera: ahi la marca no aporta autoridad, solo suena a
 // aviso. Cero menciones sigue siendo correcto y es lo normal en la mayoria.
 const MARCAS = [/colosseumroman/gi, /vatican\s?tour\s?guides/gi, /trasteverefoodtour/gi,
-  /pompeii\s?guide\s?tours/gi, /milan\s?last\s?supper/gi, /intercoper/gi];
+  /pompeii\s?guide\s?tours/gi, /milan\s?last\s?supper/gi, /lasvegastour/gi, /intercoper/gi];
 const menciones = MARCAS.reduce((n, re) => n + ((cuerpo.match(re) || []).length), 0);
 if (menciones > 1) {
   fallas.push(`${menciones} menciones de marca (como maximo 1 por comentario)`);
@@ -419,6 +419,49 @@ if (sinPoblacion.length) {
 } else if (oracionesCifra.length) {
   ok.push('cada oracion con cifra dice de que universo sale');
 }
+
+// ------------------------------------------ el dato con marca lleva su marco
+// REGLA DE HIERRO, 7 oct 2026. Mario freno un comentario que habia pasado todo,
+// lectura ciega incluida: "VaticanTourGuides collected 2,178 rated visitor
+// reports that mention a guide: 417 of them, about one in five, came in at 3
+// stars or lower out of 5". Su objecion: "no es clara y puede hacer que nos
+// califiquen negativo, tiene que ser mas explicito y entendible, con contexto".
+// La version que aprobo dice primero POR QUE se trae el dato ("a guide doesn't
+// guarantee a good visit"), despues DE QUIEN sale en palabras de todos los dias
+// ("reviews from people who did the Vatican with a guide") y cierra con que
+// hacer. Sus palabras: "ahora se entiende todo y por que se menciona y de donde
+// surge la info".
+// Esto es la parte que se puede contar: la oracion que lleva la marca no puede
+// nombrar a la gente con la etiqueta de nuestra planilla, y si trae una cifra
+// tiene que nombrar a quien se conto. El POR QUE es de juicio y lo mira el
+// lector ciego (datos_sin_marco); aca solo se avisa cuando la oracion abre el
+// parrafo, que es donde suele faltar.
+const JERGA_DATO = [/\brated (?:visitor |traveller |traveler )?(?:reports|reviews|accounts)\b/i,
+  /\b(?:reports|reviews|accounts|items) that mention\b/i, /\bcame in at\b/i,
+  /\bcorpus\b/i, /\bdataset\b/i, /\bitems\b/i, /\bentries\b/i];
+const GENTE = /\b(?:reviews?|reviewers?|people|visitors?|travell?ers?|guests?|diners?|customers?|complaints?)\b/i;
+const conMarca = cuerpo.split(/\n\s*\n/)
+  .flatMap((p) => p.trim().split(/(?<=[.!?])\s+/).map((o, i) => ({ o: o.trim(), abre: i === 0 })))
+  .filter(({ o }) => o && !/^Mario Dalo\b/.test(o) && MARCAS.some((re) => new RegExp(re.source, 'i').test(o)));
+let marcoOk = conMarca.length > 0;
+for (const { o, abre } of conMarca) {
+  const jerga = JERGA_DATO.map((r) => o.match(r)).filter(Boolean).map((m) => m[0]);
+  if (jerga.length) {
+    marcoOk = false;
+    fallas.push(
+      `el dato con marca esta dicho con la etiqueta de nuestra planilla: ${jerga.join(', ')} — `
+      + 'nombrar a la gente como la nombraria cualquiera ("reviews from people who did the Vatican with a guide")'
+    );
+  }
+  if (medicionesDe(o).some(esNuestra) && !GENTE.test(o)) {
+    marcoOk = false;
+    fallas.push(`el dato con marca no dice de quien sale: "${o.slice(0, 60)}..." — nombrar que se conto (reviews, visitors, travellers)`);
+  }
+  if (abre) {
+    avisos.push('la oracion con la marca abre el parrafo: la frase de antes tiene que decir POR QUE se trae el dato, y si quedo en otro parrafo suele no alcanzar');
+  }
+}
+if (marcoOk) ok.push('el dato con marca nombra a quien se conto, sin jerga');
 
 if (!ES_REDDIT) {
   // Los horarios cuentan como una cifra ("8:00", no "8" y "00"), igual que los
@@ -699,6 +742,8 @@ if (PREGUNTA) {
     else console.log('  OK    contesta lo que preguntaron');
     if (r.cifras_sin_contexto.length) console.log(`  FALLA cifras que el lector no puede interpretar: ${r.cifras_sin_contexto.join(' · ')}`);
     else console.log('  OK    las cifras se entienden sin conocer al autor');
+    if ((r.datos_sin_marco || []).length) console.log(`  FALLA datos sin su marco (por que se traen, de quien salen): ${r.datos_sin_marco.join(' · ')}`);
+    else console.log('  OK    cada dato dice por que se trae y de quien sale');
     if (r.hilo_roto) console.log(`  ojo   el hilo se corta: ${r.hilo_roto}`);
     else console.log('  OK    el argumento va derecho');
     console.log('');
