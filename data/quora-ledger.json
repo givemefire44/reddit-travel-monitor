@@ -7,14 +7,15 @@
       "site": "vatican",
       "sourceSlugs": [
         "vatican-museums-tickets-guide",
-        "vatican-official-vs-platform-price",
+        "vatican-skip-the-line-explained",
         "vatican-vs-st-peters-vs-sistine-chapel"
       ],
       "shingles": [],
-      "generatedAt": "2026-09-12",
+      "generatedAt": "2026-10-05",
       "estado": "entregado",
       "entregasPrevias": [
-        "2026-08-22"
+        "2026-08-22",
+        "2026-09-12"
       ]
     },
     {
@@ -265,14 +266,14 @@
       "titleNormalized": "how long does it take to see the vatican and sistine chapel",
       "site": "vatican",
       "sourceSlugs": [
-        "vatican-museums-itinerary",
-        "vatican-one-day-time-budget"
+        "vatican-museums-itinerary"
       ],
       "shingles": [],
-      "generatedAt": "2026-09-14",
+      "generatedAt": "2026-10-05",
       "estado": "entregado",
       "entregasPrevias": [
-        "2026-08-24"
+        "2026-08-24",
+        "2026-09-14"
       ]
     },
     {
@@ -1510,6 +1511,163 @@
       "generatedAt": "2026-10-02",
       "estado": "publicada",
       "publicadaAt": "2026-10-03T00:06:32.520Z"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-do-resort-fees-cover-in-Las-Vegas",
+      "questionTitle": "What do resort fees cover in Las Vegas?",
+      "titleNormalized": "what do resort fees cover in las vegas",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "how-much-las-vegas-trip-costs"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-05",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Is-it-true-that-most-things-in-Vatican-City-are-free-to-visit-and-what-are-some-must-see-spots",
+      "questionTitle": "Is it true that most things in Vatican City are free to visit, and what are some must-see spots?",
+      "titleNormalized": "is it true that most things in vatican city are free to visit and what are some must see spots",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-free-sunday-worth-it"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-05",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Can-you-visit-both-Rome-and-Vatican-City-in-just-one-day",
+      "questionTitle": "Can you visit both Rome and Vatican City in just one day?",
+      "titleNormalized": "can you visit both rome and vatican city in just one day",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-museums-itinerary",
+        "vatican-museums-tickets-guide"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-05",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Is-it-hard-to-get-into-the-Vatican",
+      "questionTitle": "Is it hard to get into the Vatican?",
+      "titleNormalized": "is it hard to get into the vatican",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-booking-trust-safety",
+        "vatican-cancellation-refunds"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-06",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-do-you-spend-time-at-a-tourist-site-when-traveling-solo-Lets-say-the-Colosseum-in-Rome-what-do-you-do-and-how-much-time-do-you-spend-there",
+      "questionTitle": "How to spend time at a tourist site when traveling solo? Let's say the Colosseum in Rome, what do you do, and how much time do you spend there",
+      "titleNormalized": "how to spend time at a tourist site when traveling solo let s say the colosseum in rome what do you do and how much time do you spend there",
+      "site": "colosseum",
+      "sourceSlugs": [
+        "how-long-do-you-need-at-the-colosseum",
+        "roman-forum-rushed-meeting-time-gap"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-06",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/When-are-the-quietest-times-to-visit-Rome",
+      "questionTitle": "When are the quietest times to visit Rome?",
+      "titleNormalized": "when are the quietest times to visit rome",
+      "site": "colosseum",
+      "sourceSlugs": [
+        "colosseum-opening-hours-and-best-time-to-visit-in-2026",
+        "skip-the-colosseum-roman-tour-line"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-06",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Do-you-ever-leave-the-strip-when-visiting-Las-Vegas",
+      "questionTitle": "Do you ever leave the strip when visiting Las Vegas?",
+      "titleNormalized": "do you ever leave the strip when visiting las vegas",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "first-time-las-vegas-how-to-plan",
+        "red-rock-canyon-from-las-vegas",
+        "hoover-dam-tour-from-las-vegas"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-06",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-is-the-average-cost-of-a-dinner-of-spaghetti-in-Italy-including-drinks",
+      "questionTitle": "What is the average cost of a dinner of spaghetti in Italy, including drinks?",
+      "titleNormalized": "what is the average cost of a dinner of spaghetti in italy including drinks",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "trastevere-trattoria-prices-what-travellers-paid",
+        "roman-street-food-glossary"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-07",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Are-helicopter-rides-worth-the-cost",
+      "questionTitle": "Are helicopter rides worth the cost?",
+      "titleNormalized": "are helicopter rides worth the cost",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "las-vegas-helicopter-tour-cancellations",
+        "las-vegas-helicopter-tour-ground-time",
+        "grand-canyon-west-vs-south-rim-from-las-vegas",
+        "is-the-grand-canyon-day-trip-from-las-vegas-worth-it"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-07",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Which-one-is-the-best-way-to-visit-Grand-Canyon-West-Rim-from-Las-Vegas-take-a-tour-or-Rent-a-car",
+      "questionTitle": "Which one is the best way to visit Grand Canyon West Rim from Las Vegas- take a tour or Rent a car?",
+      "titleNormalized": "which one is the best way to visit grand canyon west rim from las vegas take a tour or rent a car",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "grand-canyon-day-trip-from-las-vegas-how-long",
+        "is-the-grand-canyon-day-trip-from-las-vegas-worth-it"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-07",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-can-I-plan-a-three-day-trip-to-Las-Vegas-and-the-Grand-Canyon-We-have-a-short-vacation",
+      "questionTitle": "How can I plan a three-day trip to Las Vegas and the Grand Canyon? We have a short vacation.",
+      "titleNormalized": "how can i plan a three day trip to las vegas and the grand canyon we have a short vacation",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "grand-canyon-west-vs-south-rim-from-las-vegas",
+        "how-to-choose-las-vegas-shows"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-07",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-the-differences-between-the-two-sides-of-the-Grand-Canyon-Is-there-anything-unique-or-significant-on-each-side-that-cannot-be-seen-from-the-other-side",
+      "questionTitle": "What are the differences between the two sides of the Grand Canyon? Is there anything unique or significant on each side that cannot be seen from the other side?",
+      "titleNormalized": "what are the differences between the two sides of the grand canyon is there anything unique or significant on each side that cannot be seen from the other side",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "grand-canyon-west-skywalk-eagle-point-guano-point",
+        "is-the-grand-canyon-day-trip-from-las-vegas-worth-it"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-07",
+      "estado": "entregado"
     }
   ]
 }
