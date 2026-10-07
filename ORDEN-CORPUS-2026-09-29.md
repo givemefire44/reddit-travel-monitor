@@ -1,4 +1,4 @@
-# Orden de trabajo: 16 facts que no sobreviven al chequeo externo
+# Orden de trabajo: 25 facts que no sobreviven al chequeo externo
 
 **Fecha:** 29 sep 2026 · **Origen:** la etapa de verificación web de `check-answer.mjs`,
 corriendo entre el 24 y el 27 de sep mientras se escribían respuestas.
@@ -16,6 +16,16 @@ pueden ser el juez equivocándose, no el fact.
 **No todos son el mismo tipo de error.** Van agrupados por tipo, porque el arreglo es
 distinto: un número mal se cambia, un absoluto se acota, y a un fact al que le falta la
 condición hay que agregarle la condición.
+
+**Los IDs de Italia se renumeraron (añadido el 7 oct 2026).** El cron re-extrajo
+colosseum, vatican, trastevere, pompeii y milan el 24 sep, el 28 sep y el 1 oct, y esas
+tres corridas recién entraron a este repo con el pull del 7 oct. Casi todos los IDs
+cambiaron y entre un cuarto y un tercio de los textos ya no está igual (colosseum 312 de
+983, vatican 77 de 219, trastevere 53 de 158). **Las entradas de abajo se buscan por el
+texto citado, no por el ID.** Ejemplo: `timing-021` de vatican, el domingo gratis "every
+month", hoy son `free-sunday-001` y `free-sunday-009`, y siguen diciendo lo mismo porque
+el artículo no se tocó. Lasvegas no se re-extrajo y conserva sus IDs. Las entradas del 5
+al 7 de octubre, al final, ya llevan el ID nuevo.
 
 ---
 
@@ -215,6 +225,129 @@ alcanza al caso— y lo único que lo caza es leer el hilo, que ya es obligatori
 
 ---
 
+## Añadidos del 5 al 7 de octubre (9 entradas)
+
+Salieron escribiendo las respuestas de esos tres días, y dos de ellas de gente que nos
+corrigió en Reddit. Van con el mismo criterio de grupos. **Lo que marcó el verificador
+web se vuelve a chequear al corregir**: en estos días devolvió veredictos distintos
+sobre la misma frase en corridas seguidas.
+
+### A · Dato equivocado
+
+#### `desert-parks-013` y `desert-parks-018` — lasvegas
+**Artículos:** `red-rock-canyon-from-las-vegas` y `valley-of-fire-from-las-vegas`
+> don't try to combine Red Rock with Valley of Fire in the same day — they're **about 90
+> minutes apart in opposite directions** from Vegas
+
+Contradicho el 5 oct: las fuentes dan **40 a 75 minutos** entre los dos, y no están en
+direcciones opuestas entre sí: Red Rock queda al oeste de la ciudad y Valley of Fire al
+noreste. El consejo de no combinarlos se sostiene; el número y la geografía, no. El
+monitor lo volvió a ofrecer el 7 oct para dos preguntas distintas.
+
+#### `timing-172` — colosseum
+**Artículo:** `how-long-do-you-need-at-the-colosseum`
+> take a proper lunch break in the Monti neighborhood (2-minute walk from the Forum exit
+> — **better food, lower prices** than the tourist restaurants at the Colosseum), then
+> return to Palatine Hill **in the early afternoon when the crowds have thinned**
+
+Dos afirmaciones caídas el 6 oct. Que Monti sea más barato: ninguna fuente lo compara.
+Que el Palatino se descongestione a primera tarde: **contradicho**, las fuentes ponen
+los momentos tranquilos a la apertura y después de las 16, y la primera tarde es cuando
+llega la gente que sale del Coliseo.
+
+#### `timing-200` — colosseum
+**Artículo:** `roman-forum-rushed-meeting-time-gap`
+> If the Colosseum entry slot is fixed and **roughly 45–60 minutes long**
+
+Contradicho el 6 oct: 45 a 60 minutos aparece en las fuentes como la antelación con la
+que conviene llegar, no como lo que dura la visita, que tendría un tope cercano a 90
+minutos. El fact está escrito en condicional y yo lo usé como afirmación; aun así el
+número de la premisa hay que revisarlo contra el artículo.
+
+### B · Absolutos que mueren con un contraejemplo
+
+#### `tickets-001` — vatican
+**Artículo:** `vatican-booking-trust-safety`
+> at €25 it is the cheapest and **the only seller that cannot fail to secure your entry**
+
+Contradicho el 6 oct como absoluto: el sitio oficial tiene fallas técnicas frecuentes y
+otros vendedores también garantizan la entrada. "El más barato" se sostiene. Ojo que es
+de los facts que más usamos: la frase salió casi textual en dos comentarios viejos.
+
+### C · Les falta la condición
+
+#### `st-peters-010`, `st-peters-006` y `pricing-013` — vatican — **sin verificar por mí**
+**Artículos:** `vatican-museums-tickets-guide` y `vatican-museums-itinerary`
+> **Many guided tours** include the Basilica by using an internal passage directly from
+> the Sistine Chapel
+
+Un usuario de r/rome nos corrigió hace dos semanas y recién se leyó el 7 oct: *"The
+official tours that OP is asking about don't use this passage, only certain third-party
+vendors do."* Si es así, a los tres facts les falta decir que el pasaje es de **tours de
+terceros** y no del tour oficial del museo. No lo chequeé afuera. Importa porque
+`skip-the-line-001`, la medición de los 45 minutos, cuelga de ese pasaje y es de las que
+llevan marca.
+
+### D · Contexto arrancado en la extracción
+
+#### `timing-103` — colosseum — **sospecha, sin verificar contra el artículo**
+**Artículo:** `colosseum-timed-entry-window-late-arrival`
+> The Colosseum enforces timed entry strictly — arrive 10 minutes late and you may lose
+> the booking entirely.
+
+Todos los demás facts del corpus que hablan de los diez minutos tarde describen un punto
+de encuentro de revendedor ("one documented case: a visitor arrived 10 minutes late,
+found nobody to issue tickets, and lost £180"), no la puerta del Coliseo. Este lo
+generaliza al monumento. Es el mismo patrón que `tickets-018` de vatican, más arriba.
+El 7 oct alguien preguntó justo eso en r/RomeTravel y no lo usé.
+
+### E · No está mal el fact, lo apliqué mal
+
+#### `tickets-018` — colosseum — **y falta un ticket en el corpus**
+**Artículo:** `colosseum-arena-tour`
+> Full Experience Arena Ticket (€24): Includes standard entry plus Arena floor access.
+
+Cierto para ese ticket. El 5 oct lo usé para decirle a alguien con entradas "arena only"
+que sus niveles venían incluidos, y el que preguntó nos corrigió: existe un ticket
+**"24h Only Arena"**, con entrada propia y 20 minutos en el piso, sin los niveles.
+Verificado el 7 oct en guías que citan la página oficial: se vende desde 2024 e incluye
+Foro y Palatino. **El corpus no tiene ningún fact sobre ese ticket**, así que el hueco
+está en el artículo. El comentario se corrigió en el hilo.
+
+### F · Se contradicen entre sí
+
+Grupo nuevo: no los encontró el verificador, salieron de comparar dos facts nuestros.
+
+#### `pricing-008` y `pricing-009` — trastevere
+**Artículo:** `is-trastevere-food-tour-worth-it`
+> authentic spots tend to charge around **€10–12 for pasta** [...] while traps ask
+> **€15–18**
+
+Nuestra propia medición dice otra cosa. `trastevere-trattoria-prices-what-travellers-paid`
+sigue publicando, verificado en vivo el 7 oct, que en las trattorias más conocidas de
+Trastevere la gente pagó "about fifteen euros for a Roman pasta in 2023 and 2024, and
+sixteen to seventeen by 2025 and 2026". Con el umbral de estos dos facts, las mejor
+puntuadas del barrio serían trampas. Ese fact medido además **se cayó de la extracción
+del 1 oct**: está en el artículo y no en `citable-facts-trastevere.json`.
+
+#### `crowds-002` y `last-supper-004` — milan
+**Artículos:** `last-supper-has-the-highest-markup-in-european-tourism` y
+`is-the-last-supper-worth-it-honest-pros-cons-and-alternatives-in-milan`
+> The viewing room admits only **40 people** every 15 minutes
+
+> You enter the refectory in a small group, **usually under 30 people**
+
+Dos cifras para el mismo grupo. No verifiqué cuál vale.
+
+### Anotado, sin fact que corregir
+
+**La ventana de venta del Vaticano no está confirmada.** `timing-029` lo dice bien:
+"visitors report booking opening around two months ahead; the museum does not publish
+the exact window". El 7 oct las fuentes daban 60 días, tres meses o venta continua. En
+un comentario viejo escribimos "tickets open 60 days out" como hecho: no se repite.
+
+---
+
 ## Resumen para el día que se arregle
 
 | Sitio | Facts | Artículos a tocar |
@@ -223,6 +356,8 @@ alcanza al caso— y lo único que lo caza es leer el hilo, que ya es obligatori
 | pompeii | 4 | 2 |
 | vatican | 2 | 2 |
 | trastevere | 1 | 1 |
+
+**Actualización del 7 oct:** con los añadidos, colosseum pasa de cero a cuatro (`timing-172`, `timing-200`, `timing-103` y `tickets-018`), vatican suma dos entradas, lasvegas una, y aparecen trastevere y milan con una contradicción interna cada uno. El párrafo que sigue es del 29 sep y quedó viejo en lo de colosseum.
 
 **Colosseum no tiene ninguno.** Es el corpus más viejo y el más estresado, y no me falló
 un fact en toda la semana. Trastevere tiene uno solo. Los dos que concentran el problema
