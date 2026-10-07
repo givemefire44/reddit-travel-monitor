@@ -1668,6 +1668,75 @@
       "shingles": [],
       "generatedAt": "2026-10-07",
       "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-is-there-to-see-between-Las-Vegas-and-the-Grand-Canyon",
+      "questionTitle": "What is there to see between Las Vegas and the Grand Canyon?",
+      "titleNormalized": "what is there to see between las vegas and the grand canyon",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "grand-canyon-west-vs-south-rim-from-las-vegas",
+        "red-rock-canyon-from-las-vegas",
+        "valley-of-fire-from-las-vegas",
+        "hoover-dam-from-las-vegas-photo-stop-or-dam-tour"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-07",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-some-good-day-trips-from-Las-Vegas",
+      "questionTitle": "What are some good day trips from Las Vegas?",
+      "titleNormalized": "what are some good day trips from las vegas",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "grand-canyon-west-vs-south-rim-from-las-vegas",
+        "hoover-dam-tour-from-las-vegas",
+        "red-rock-canyon-from-las-vegas",
+        "valley-of-fire-from-las-vegas"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-07",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-the-restrictions-for-entering-The-Last-Supper-Chapel-in-Milan-Italy",
+      "questionTitle": "What are the restrictions for entering The Last Supper Chapel in Milan, Italy?",
+      "titleNormalized": "what are the restrictions for entering the last supper chapel in milan italy",
+      "site": "milan",
+      "sourceSlugs": [
+        "common-mistakes-to-avoid-when-booking-last-supper-tickets-and-tours",
+        "last-supper-milan-tickets-sold-out-what-to-do-next"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-07",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-long-is-the-drive-from-Las-Vegas-to-the-Grand-Canyon",
+      "questionTitle": "How long is the drive from Las Vegas to the Grand Canyon?",
+      "titleNormalized": "how long is the drive from las vegas to the grand canyon",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "grand-canyon-west-vs-south-rim-from-las-vegas",
+        "grand-canyon-day-trip-from-las-vegas-how-long"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-07",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-is-the-best-rim-to-view-the-Grand-Canyon",
+      "questionTitle": "What is the best rim to view the Grand Canyon?",
+      "titleNormalized": "what is the best rim to view the grand canyon",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "grand-canyon-west-vs-south-rim-from-las-vegas",
+        "is-the-grand-canyon-day-trip-from-las-vegas-worth-it"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-07",
+      "estado": "entregado"
     }
   ]
 }
