@@ -1,37 +1,22 @@
 [
   {
-    "slug": "best-time-to-visit-vatican",
-    "fact": "This is the \"golden window\" — enter at eight and you'll walk the Gallery of Maps and the Raphael Rooms nearly empty, reaching the Sistine Chapel by around 10:30, just before the tour-group wave fills it.",
-    "reason": "apertura no autonoma"
-  },
-  {
-    "slug": "vatican-early-access-really-means",
-    "fact": "That detail is worth double-checking against older guides that still cite an 8:30 opening, a mismatch that has left early birds staring at an unexpected queue.",
-    "reason": "apertura no autonoma"
-  },
-  {
-    "slug": "vatican-early-access-really-means",
-    "fact": "another visitor report describes sharing the room with a group of exactly 20 people",
-    "reason": "apertura no autonoma"
-  },
-  {
-    "slug": "vatican-gardens-tour-what-ticket-includes",
-    "fact": "Another visitor, in 2025, found that the only gardens tickets left already included the Museums and the Sistine Chapel, which they had bought separately.",
-    "reason": "apertura no autonoma"
-  },
-  {
-    "slug": "vatican-gardens-tour-what-ticket-includes",
-    "fact": "Another found a gardens option on the official site in 2025 that mentioned the Sistine Chapel but not the full museum route, so the versions are not all the same.",
-    "reason": "apertura no autonoma"
-  },
-  {
-    "slug": "vatican-mobility-access",
-    "fact": "Reviews mentioning a wheelchair average 4.25 stars, above the corpus average of 4.08 — ramps, lifts, priority entry and attentive stewards come up repeatedly.",
+    "slug": "vatican-crowd-handling-staff",
+    "fact": "Reviews describing staff as helpful or kind average 4.27, above the corpus average — on only fifteen reviews, so treat the figure lightly, but the direction matters: a good interaction lifts a review rather than merely failing to sink it.",
     "reason": "voz editorial interna"
   },
   {
-    "slug": "vatican-mobility-access",
-    "fact": "Reviews mentioning the walking distance average 0.43 stars below the corpus average and those mentioning nowhere to sit 0.63 below, while reviews mentioning stairs are essentially at average.",
+    "slug": "vatican-crowd-handling-staff",
+    "fact": "Reviews mentioning staff average 1.23 stars below the corpus average, and those describing shouting by site staff 1.77 below — yet reviews describing staff as helpful or kind average above the corpus average.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "vatican-private-tour-what-it-buys",
+    "fact": "Another private tour in 2025 ended without the basilica, with a guide who \"was late and left earlier than agreed upon time.\"",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "vatican-value-perception",
+    "fact": "Removing every review that also carries a tag for queues, scams, cancellations, skip-the-line or booking leaves 303 reviews that mention price with no service failure attached, and they still average 3.38 — 0.70 below the corpus average.",
     "reason": "voz editorial interna"
   }
 ]

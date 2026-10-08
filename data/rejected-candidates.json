@@ -10,18 +10,23 @@
     "reason": "apertura no autonoma"
   },
   {
-    "slug": "best-rated-colosseum-tour-guides-by-name",
-    "fact": "On GetYourGuide, the average rating across 581 items is 4.94.",
-    "reason": "frase no textual"
-  },
-  {
-    "slug": "colosseum-day-of-logistics-guide",
-    "fact": "This scenario is most likely in 20+ person groups, especially when crossing the security/metal-detector checkpoint where the group naturally fragments.",
+    "slug": "colosseum-free-audio-guide-rick-steves",
+    "fact": "That reviewer scored the visit two stars — the complaint was elsewhere — while describing three hours of self-guided visit for €18 against a £217 tour they found rushed.",
     "reason": "apertura no autonoma"
   },
   {
-    "slug": "colosseum-official-website-sells-out-before-listed",
-    "fact": "That is the same base access operators wrap into €60–€90 group tours.",
+    "slug": "colosseum-real-tour-vs-street-scalper",
+    "fact": "Everything sold on the sidewalk in the last 90 seconds exists in a market that averages 1.63 on Trustpilot.",
+    "reason": "cifra \"1.63\" sin unidad ni escala"
+  },
+  {
+    "slug": "colosseum-timed-entry-window-late-arrival",
+    "fact": "This is why arriving 30 minutes early is non-negotiable on premium tiers.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "colosseum-tour-disruption-operator-handling",
+    "fact": "That reviewer watched other 10:30 AM ticket-holders still entering while their pre-paid tickets were voided.",
     "reason": "apertura no autonoma"
   },
   {
@@ -31,12 +36,12 @@
   },
   {
     "slug": "complete-guide-to-visiting-the-roman-colosseum-step-by-step",
-    "fact": "Capacity limit: Maximum 3,000 visitors inside at once.",
+    "fact": "Yes, the Colosseum uses timed entry with a maximum of 3,000 visitors inside at once.",
     "reason": "cifra \"3,000\" sin unidad ni escala"
   },
   {
     "slug": "gladiators-beasts-and-executions-what-really-happened-in-the-colosseum-arena",
-    "fact": "With up to 50,000 spectators seated in strict order—from emperor to senators, soldiers to common citizens, women, and even slaves—the amphitheater mirrored Rome’s rigid social pyramid",
+    "fact": "With up to 50,000 spectators seated in strict order—from emperor to senators, soldiers to common citizens, women, and even slaves—the amphitheater mirrored Rome's rigid social pyramid",
     "reason": "cifra \"50,000\" sin unidad ni escala"
   },
   {

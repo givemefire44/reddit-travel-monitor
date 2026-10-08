@@ -5,14 +5,14 @@
     "reason": "cifra \"10 p.m.\" no esta en la frase"
   },
   {
-    "slug": "trastevere-food-tour-reviews-across-platforms",
-    "fact": "Nineteen of Trustpilot\\u2019s 211 reviews mention Italy.",
-    "reason": "frase no textual"
+    "slug": "da-enzo-al-29-worth-the-queue",
+    "fact": "That test is weak: only 21 of the 57 early-arrival reviews name a number at all, and someone seated immediately has no wait to report, which would hide exactly the success cases.",
+    "reason": "apertura no autonoma"
   },
   {
-    "slug": "trastevere-food-tour-reviews-across-platforms",
-    "fact": "GetYourGuide\\u2019s 4.99 is accurate for what it measures: satisfaction among people who were served.",
-    "reason": "frase no textual"
+    "slug": "trastevere-restaurant-queue-how-long-the-wait",
+    "fact": "This is the advice everybody gives, including 35 reviewers who gave four or five stars, against two who were unhappy — arriving early is something satisfied diners recommend.",
+    "reason": "apertura no autonoma"
   },
   {
     "slug": "trastevere-restaurant-recommendations-same-five",
@@ -20,8 +20,13 @@
     "reason": "cifra \"1,061\" sin unidad ni escala"
   },
   {
-    "slug": "trastevere-twilight-food-tour-format",
-    "fact": "It's an evening format because Romans rarely eat dinner before 8 p.m.",
-    "reason": "cifra \"8 p.m.\" no esta en la frase"
+    "slug": "trastevere-vs-rome-food-neighborhoods",
+    "fact": "One last piece of timing, which doubles as a tourist-trap test: Romans eat dinner between about 8 and 10:30 p.m.",
+    "reason": "cifra \"10:30 p.m.\" no esta en la frase"
+  },
+  {
+    "slug": "which-trastevere-food-tour-fits-you",
+    "fact": "Another says that if your child is under 6 and won't be eating, they come free; but if they will eat, you must select the \"youth\" category at checkout so a seat is saved at the dinner table.",
+    "reason": "apertura no autonoma"
   }
 ]
