@@ -9,6 +9,22 @@
   "redditAccount": "ToursResearch",
   "karmaTarget": 150,
   "warmupExitKarma": 50,
+  "karma": {
+    "enabled": true,
+    "subreddits": [
+      "vegas",
+      "LasVegas"
+    ],
+    "maxAgeHours": 12,
+    "max": 4,
+    "alcance": "It is about visiting Las Vegas or the Grand Canyon area as a tourist, and about how something works for a visitor: resort fees and resort credits, hotel deposits and holds, parking charges, tickets and resale, ID and age rules, tipping, reservations, airport and Strip transport, tour bookings and cancellations.",
+    "noElegir": [
+      "Questions only a local or a regular can answer today: which casino has the cheapest tables right now, which club or bar is best this weekend, which restaurant, who is performing where.",
+      "Adult entertainment: strip clubs, swinger or lifestyle venues, escorts. Also gambling strategy, comps and player-card offers.",
+      "Hotel-versus-hotel choices and requests to review an itinerary, unless the post contains one specific doubt with a definite answer."
+    ],
+    "_motivo": "Activado el 8 oct 2026. La cuenta de world tiene 4 comentarios y necesita karma antes que marca. Medido ese dia sobre los ultimos 100 posts de cada sub: r/vegas habla de clubes, casinos, hoteles y entretenimiento para adultos, y el juez de material acepta 5 de 100; ampliarle la descripcion lo lleva a 12, pero los 7 nuevos son falsos positivos (acepto una pregunta de tragamonedas diciendo que cubrimos su matematica). O sea que el material de Vegas calza en Quora y casi no en Reddit, y lo que queda para esta cuenta son hilos de 'como funciona esto', sin corpus y sin marca. maxAgeHours en 12 y no en 8 porque r/LasVegas trae unos 8 posts por dia. El alcance y las exclusiones de aca pisan los de Italia, que estan en scripts/lib/karma.mjs."
+  },
   "fetchMode": "public-rss",
   "traction": {
     "subreddits": [],

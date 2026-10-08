@@ -468,6 +468,26 @@ async function fetchWithBackoff(url, tries = 6) {
   }
 }
 
+// Comentarios de un hilo, por RSS: el JSON da 403 desde esta maquina. La primera
+// entrada del feed es el post y el resto son los comentarios. Nunca tira: el
+// filtro de karma decide que hacer con un hilo que no se pudo leer.
+async function leerComentariosHilo(url) {
+  try {
+    const res = await fetchWithBackoff(`${url.replace(/\/+$/, '')}/.rss?limit=100`, 3);
+    const xml = await res.text();
+    const entradas = [...xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)].map((m) => m[1]).slice(1);
+    return {
+      ok: true,
+      comentarios: entradas.map((e) => ({
+        autor: (e.match(/<name>\/u\/([^<]+)<\/name>/) || [, '?'])[1],
+        texto: rssBodyText(unescapeXml((e.match(/<content type="html">([\s\S]*?)<\/content>/) || [, ''])[1])).replace(/\s+/g, ' ').trim(),
+      })).filter((c) => c.texto),
+    };
+  } catch (err) {
+    return { ok: false, comentarios: [], error: err.message };
+  }
+}
+
 async function fetchNewPostsRss(subreddit) {
   const res = await fetchWithBackoff(`https://www.reddit.com/r/${subreddit}/new.rss?limit=100`);
   const xml = await res.text();
@@ -1641,7 +1661,7 @@ async function main() {
   }
   // Segundo filtro: hilos para sumar karma. Corre sobre lo que el juez de
   // material NO eligio. El porque y la medicion estan en lib/karma.mjs.
-  let karmaHilos = { elegidos: [], mirados: 0 };
+  let karmaHilos = { elegidos: [], descartados: [], mirados: 0 };
   if (KARMA) {
     const pool = karmaPool
       .filter((p) => {
@@ -1650,10 +1670,12 @@ async function main() {
       })
       .sort((x, y) => x.ageHours - y.ageHours)
       .slice(0, 60);
-    karmaHilos = await buscarKarma(pool, { max: KARMA.max ?? 4 });
+    karmaHilos = await buscarKarma(pool, {
+      max: KARMA.max ?? 4, alcance: KARMA.alcance, noElegir: KARMA.noElegir, leerHilo: leerComentariosHilo,
+    });
     console.log(karmaHilos.error
       ? `Karma: el filtro fallo (${karmaHilos.error}) - la corrida sigue sin esa seccion`
-      : `Karma: ${karmaHilos.elegidos.length} hilo(s) elegidos de ${karmaHilos.mirados} mirados (hasta ${KARMA.maxAgeHours}h, en ${KARMA.subreddits.map((x) => `r/${x}`).join(', ')})`);
+      : `Karma: ${karmaHilos.elegidos.length} hilo(s) para contestar, ${(karmaHilos.descartados || []).length} descartados por ya resueltos, de ${karmaHilos.mirados} mirados (hasta ${KARMA.maxAgeHours}h, en ${KARMA.subreddits.map((x) => `r/${x}`).join(', ')})`);
   }
   const TIPO_KARMA = {
     premisa_equivocada: 'parte de una idea equivocada',
@@ -1664,12 +1686,16 @@ async function main() {
   const karmaSection = !KARMA ? [] : [
     `## Karma — hilos para sumar puntos (${karmaHilos.elegidos.length})`,
     '',
-    '_Segundo filtro, desde el 7 oct 2026. No busca hilos que nuestro material conteste: busca los que dan puntos. Medido sobre los 90 comentarios de la cuenta, los 16 con marca dieron +3 en total y tres sin marca ni cifras dieron 67 de 109 (el hotel cambiado en r/travel, el café sentado y el primer vino en r/rome). Los tres corrigen lo que la persona creía, dan un paso concreto y se ponen de su lado._',
+    '_Segundo filtro, desde el 7 oct 2026. No busca hilos que nuestro material conteste: busca los que dan puntos. Medido sobre los 90 comentarios de u/RomanColosseumExpert, los 16 con marca dieron +3 en total y tres sin marca ni cifras dieron 67 de 109 (el hotel cambiado en r/travel, el café sentado y el primer vino en r/rome). Los tres corrigen lo que la persona creía, dan un paso concreto y se ponen de su lado._',
     '',
     '_Reglas de este carril: **sin marca y sin cifras nuestras**, corto, leyendo antes los comentarios del hilo, y con cada dato verificado afuera. Nunca experiencia propia. Uno por sub por día. Cero es una respuesta válida._',
     '',
     ...(karmaHilos.error ? [`_⚠️ El filtro falló hoy (${karmaHilos.error}). No es lo mismo que cero hilos._`, ''] : []),
-    ...(!karmaHilos.error && !karmaHilos.elegidos.length ? [`_Ninguno de los ${karmaHilos.mirados} hilos frescos mirados da para este carril._`, ''] : []),
+    ...(!karmaHilos.error && !karmaHilos.elegidos.length ? [`_Ninguno de los ${karmaHilos.mirados} hilos frescos mirados quedó para contestar._`, ''] : []),
+    ...((karmaHilos.descartados || []).length ? [
+      `_Descartados después de leer los comentarios, por ya resueltos (${karmaHilos.descartados.length}): ${karmaHilos.descartados.map((d) => `"${d.title.slice(0, 50)}" (r/${d.sub}, ${d.nComentarios} comentarios: ${(d.falta || 'resuelto').slice(0, 90)})`).join(' · ')}._`,
+      '',
+    ] : []),
     ...karmaHilos.elegidos.flatMap((h) => [
       `### ${h.title}`,
       '',
@@ -1679,6 +1705,12 @@ async function main() {
       `- **Lo que cree o le preocupa:** ${h.cree}`,
       `- **Lo que una buena respuesta deja claro:** ${h.respuesta}`,
       `- **Verificar antes de escribir:** ${h.verificar}`,
+      h.comentariosLeidos === false
+        ? `- **Comentarios del hilo:** no se pudieron leer (${h.errorLectura}). Leerlos antes de escribir.`
+        : h.comentariosLeidos
+          ? `- **Comentarios del hilo:** ${h.nComentarios}${h.errorRevision ? ` — no se pudo revisar si ya está resuelto (${h.errorRevision})` : ''}`
+          : '- **Comentarios del hilo:** sin leer',
+      ...(h.falta ? [`- **Lo que todavía nadie dijo:** ${h.falta}`] : []),
       ...(h.dinero ? ['- **⚠️ Tema de plata:** solo si la respuesta es precisa y resuelve; si no, se saltea.'] : []),
       '',
       '**Lo que preguntó, textual:**',
