@@ -583,10 +583,11 @@
         "trastevere-food-tour-cost"
       ],
       "shingles": [],
-      "generatedAt": "2026-09-15",
+      "generatedAt": "2026-10-08",
       "estado": "entregado",
       "entregasPrevias": [
-        "2026-09-10"
+        "2026-09-10",
+        "2026-09-15"
       ]
     },
     {
@@ -1736,6 +1737,61 @@
       ],
       "shingles": [],
       "generatedAt": "2026-10-07",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Are-any-of-the-shows-in-Las-Vegas-that-you-can-see-with-discounted-tickets-worth-seeing",
+      "questionTitle": "Are any of the shows in Las Vegas that you can see with discounted tickets worth seeing?",
+      "titleNormalized": "are any of the shows in las vegas that you can see with discounted tickets worth seeing",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "las-vegas-show-ratings-what-they-hide",
+        "las-vegas-shows-with-kids",
+        "o-cirque-du-soleil-las-vegas-nobody-warns-you"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-08",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-do-you-visit-Vatican-City",
+      "questionTitle": "How to visit Vatican City",
+      "titleNormalized": "how to visit vatican city",
+      "site": "vatican",
+      "sourceSlugs": [
+        "vatican-booking-trust-safety",
+        "best-time-to-visit-vatican",
+        "vatican-museums-itinerary"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-08",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Beside-Grand-Canyon-what-are-the-best-tours-one-can-do-while-staying-in-Las-Vegas",
+      "questionTitle": "Beside Grand Canyon, what are the best tours one can do while staying in Las Vegas?",
+      "titleNormalized": "beside grand canyon what are the best tours one can do while staying in las vegas",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "valley-of-fire-from-las-vegas",
+        "red-rock-canyon-from-las-vegas",
+        "las-vegas-food-tour-what-you-get"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-08",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-do-tourists-visiting-Las-Vegas-get-around",
+      "questionTitle": "How do tourists visiting Las Vegas get around?",
+      "titleNormalized": "how do tourists visiting las vegas get around",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "how-to-get-around-las-vegas",
+        "most-expensive-first-timer-mistakes-las-vegas"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-08",
       "estado": "entregado"
     }
   ]
