@@ -778,8 +778,11 @@
         "pompeii-and-herculaneum-how-to-visit-both-and-which-is-better"
       ],
       "shingles": [],
-      "generatedAt": "2026-09-17",
-      "estado": "entregado"
+      "generatedAt": "2026-10-09",
+      "estado": "publicada",
+      "entregasPrevias": [
+        "2026-09-17"
+      ]
     },
     {
       "questionUrl": "https://www.quora.com/How-do-I-visit-Pompeii-from-Naples",
@@ -800,11 +803,15 @@
       "titleNormalized": "how long does it take to walk around pompeii",
       "site": "pompeii",
       "sourceSlugs": [
+        "pompeii-and-vesuvius-in-one-day-how-to-combine-both-visits",
         "pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min"
       ],
       "shingles": [],
-      "generatedAt": "2026-09-17",
-      "estado": "entregado"
+      "generatedAt": "2026-10-09",
+      "estado": "publicada",
+      "entregasPrevias": [
+        "2026-09-17"
+      ]
     },
     {
       "questionUrl": "https://www.quora.com/Can-you-do-Pompeii-and-Herculaneum-in-one-day",
@@ -1792,6 +1799,47 @@
       ],
       "shingles": [],
       "generatedAt": "2026-10-08",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Whats-it-like-to-visit-the-Pompeii-Archaeological-Park",
+      "questionTitle": "What's it like to visit the Pompeii Archaeological Park?",
+      "titleNormalized": "what s it like to visit the pompeii archaeological park",
+      "site": "pompeii",
+      "sourceSlugs": [
+        "pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min",
+        "7-mistakes-people-make-when-booking-pompeii-tickets-and-tours",
+        "pompeii-tickets-explained-standard-plus-and-guided-options-compared"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-09",
+      "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/While-visiting-Vegas-should-I-take-a-trip-to-see-the-Grand-Canyon-or-the-Hoover-Dam",
+      "questionTitle": "While visiting Vegas, should I take a trip to see the Grand Canyon, or the Hoover Dam?",
+      "titleNormalized": "while visiting vegas should i take a trip to see the grand canyon or the hoover dam",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "grand-canyon-west-vs-south-rim-from-las-vegas",
+        "hoover-dam-tour-from-las-vegas",
+        "grand-canyon-day-trip-from-las-vegas-how-long"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-09",
+      "estado": "publicada"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Which-is-the-best-place-to-see-the-Grand-Canyon-from-Las-Vegas",
+      "questionTitle": "Which is the best place to see the Grand Canyon from Las Vegas?",
+      "titleNormalized": "which is the best place to see the grand canyon from las vegas",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "grand-canyon-west-vs-south-rim-from-las-vegas",
+        "grand-canyon-tour-reviews-google-vs-tripadvisor"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-09",
       "estado": "entregado"
     }
   ]
