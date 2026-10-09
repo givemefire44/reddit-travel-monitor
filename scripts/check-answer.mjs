@@ -193,7 +193,7 @@ if (negaciones >= 3) {
 // los puede decir cualquiera: ahi la marca no aporta autoridad, solo suena a
 // aviso. Cero menciones sigue siendo correcto y es lo normal en la mayoria.
 const MARCAS = [/colosseumroman/gi, /vatican\s?tour\s?guides/gi, /trasteverefoodtour/gi,
-  /pompeii\s?guide\s?tours/gi, /milan\s?last\s?supper/gi, /lasvegastour/gi, /intercoper/gi];
+  /pompeii\s?(?:tour\s?guides|guide\s?tours)/gi, /milan\s?last\s?supper/gi, /lasvegastour/gi, /intercoper/gi];
 const menciones = MARCAS.reduce((n, re) => n + ((cuerpo.match(re) || []).length), 0);
 if (menciones > 1) {
   fallas.push(`${menciones} menciones de marca (como maximo 1 por comentario)`);

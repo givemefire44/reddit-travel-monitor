@@ -80,13 +80,14 @@ const SITES = {
   // son Italia, asi que entran por los subs que ya estan configurados.
   pompeii: {
     projectId: '34ibxssl',
-    siteUrl: 'https://pompeiiguidetours.com',
+    // El repo se llama pompeiiguidetours; el dominio es este otro (9 oct 2026).
+    siteUrl: 'https://pompeiitourguides.com',
     corpusSize: null,
     outFile: 'citable-facts-pompeii.json',
     subjectName: 'Pompeii and Herculaneum (the archaeological sites near Naples)',
     subjectRule:
       "the claim's subject must be Pompeii, Herculaneum, their tickets/tours/access, or getting there from Naples, Sorrento or Rome. Exclude sentences whose subject is another monument or city (Colosseum, Vatican, Louvre, Sagrada Familia...) even when they appear in a Pompeii article. A comparison qualifies only if the Pompeii side carries the figure and the claim stands as Pompeii advice.",
-    internalVoiceRe: /\b(the corpus|our corpus|our analysis|we analyzed|our data|pompeiiguidetours)\b/i,
+    internalVoiceRe: /\b(the corpus|our corpus|our analysis|we analyzed|our data|pompeiitourguides|pompeiiguidetours)\b/i,
     topics: [
       'tickets', 'pricing', 'crowds', 'timing', 'guides', 'operators', 'logistics',
       'kids-families', 'accessibility', 'weather', 'herculaneum', 'highlights',

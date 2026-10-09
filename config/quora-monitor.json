@@ -146,8 +146,8 @@
     {
       "key": "pompeii",
       "factsFile": "data/citable-facts-pompeii.json",
-      "brand": "PompeiiGuideTours",
-      "domain": "pompeiiguidetours.com",
+      "brand": "PompeiiTourGuides",
+      "domain": "pompeiitourguides.com",
       "subject": "Visiting Pompeii and Herculaneum",
       "keywords": [
         "pompeii",

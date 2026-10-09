@@ -101,8 +101,11 @@ const SITE_VOICE = {
   // cuatro en r/ItalyTravel en diez dias.
   pompeii: {
     subject: 'Pompeii and Herculaneum, near Naples',
-    brand: 'PompeiiGuideTours',
-    brandRe: /pompeii\s?guide\s?tours/gi,
+    // El sitio es pompeiitourguides.com. Hasta el 9 oct 2026 esto decia
+    // PompeiiGuideTours, que es el nombre del repo y no el de la marca; la
+    // regex acepta las dos formas para seguir contando lo ya publicado.
+    brand: 'PompeiiTourGuides',
+    brandRe: /pompeii\s?(?:tour\s?guides|guide\s?tours)/gi,
   },
   milan: {
     subject: "Leonardo's Last Supper and visiting Milan",
