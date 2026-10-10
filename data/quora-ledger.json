@@ -532,13 +532,14 @@
       "titleNormalized": "what are some decent restaurants in rome italy that won t rip you off with tourist traps and overpriced food wine",
       "site": "trastevere",
       "sourceSlugs": [
-        "trastevere-restaurant-reviews-what-they-hide"
+        "is-trastevere-food-tour-worth-it"
       ],
       "shingles": [],
-      "generatedAt": "2026-09-17",
-      "estado": "entregado",
+      "generatedAt": "2026-10-10",
+      "estado": "publicada",
       "entregasPrevias": [
-        "2026-09-08"
+        "2026-09-08",
+        "2026-09-17"
       ]
     },
     {
@@ -858,12 +859,16 @@
       "titleNormalized": "is herculaneum worth visiting or can it be skipped if you have already seen pompeii",
       "site": "pompeii",
       "sourceSlugs": [
-        "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
-        "pompeii-and-herculaneum-how-to-visit-both-and-which-is-better"
+        "pompeii-and-herculaneum-how-to-visit-both-and-which-is-better",
+        "complete-guide-to-visiting-pompeii-everything-you-need-to-know"
       ],
       "shingles": [],
-      "generatedAt": "2026-09-17",
-      "estado": "entregado"
+      "generatedAt": "2026-10-10",
+      "estado": "descartado",
+      "entregasPrevias": [
+        "2026-09-17"
+      ],
+      "descartadaAt": "2026-10-10"
     },
     {
       "questionUrl": "https://www.quora.com/What-is-the-cost-of-tickets-to-see-The-Last-Supper-painting-in-Milan-Do-the-tickets-include-any-additional-features-such-as-an-audio-guide",
@@ -1841,6 +1846,72 @@
       "shingles": [],
       "generatedAt": "2026-10-09",
       "estado": "entregado"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Is-it-worth-driving-in-Las-Vegas-or-should-you-just-use-ride-sharing-services-like-Uber-everywhere",
+      "questionTitle": "Is it worth driving in Las Vegas, or should you just use ride-sharing services like Uber everywhere?",
+      "titleNormalized": "is it worth driving in las vegas or should you just use ride sharing services like uber everywhere",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "how-much-las-vegas-trip-costs",
+        "how-to-get-around-las-vegas",
+        "most-expensive-first-timer-mistakes-las-vegas"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-10",
+      "estado": "descartado",
+      "descartadaAt": "2026-10-10"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-some-things-to-do-outside-of-Las-Vegas-if-youre-not-interested-in-gambling-or-shows-What-are-some-good-day-trips-that-are-easy-and-cheap-without-having-to-drive-far-away-outside-of-Las-Vegas",
+      "questionTitle": "What are some things to do outside of Las Vegas if you're not interested in gambling or shows? What are some good day trips that are easy and cheap without having to drive far away outside of Las Vegas?",
+      "titleNormalized": "what are some things to do outside of las vegas if you re not interested in gambling or shows what are some good day trips that are easy and cheap without having to drive far away outside of las vegas",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "hoover-dam-tour-from-las-vegas",
+        "red-rock-canyon-from-las-vegas",
+        "grand-canyon-west-vs-south-rim-from-las-vegas"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-10",
+      "estado": "descartado",
+      "descartadaAt": "2026-10-10"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-the-things-to-do-in-12-hours-in-Milan",
+      "questionTitle": "What are the things to do in 12 hours in Milan?",
+      "titleNormalized": "what are the things to do in 12 hours in milan",
+      "site": "milan",
+      "sourceSlugs": [
+        "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
+        "leonardo-da-vinci-in-milan-complete-guide-to-all-sites"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-10",
+      "estado": "descartado",
+      "descartadaAt": "2026-10-10"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Is-the-Colosseum-in-Rome-worth-visiting-Are-there-any-other-attractions-in-Rome-that-are-as-good-or-better",
+      "questionTitle": "Is the Colosseum in Rome worth visiting Are there any other attractions in Rome that are as good or better",
+      "titleNormalized": "is the colosseum in rome worth visiting are there any other attractions in rome that are as good or better",
+      "site": null,
+      "sourceSlugs": [],
+      "shingles": [],
+      "generatedAt": "2026-10-10",
+      "estado": "publicada",
+      "origen": "manual"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-much-does-it-cost-to-see-The-Sistine-Chapel-from-inside-St-Peter-s-Basilica",
+      "questionTitle": "How much does it cost to see The Sistine Chapel from inside St Peter s Basilica",
+      "titleNormalized": "how much does it cost to see the sistine chapel from inside st peter s basilica",
+      "site": null,
+      "sourceSlugs": [],
+      "shingles": [],
+      "generatedAt": "2026-10-10",
+      "estado": "publicada",
+      "origen": "manual"
     }
   ]
 }
