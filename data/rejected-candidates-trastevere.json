@@ -1,15 +1,5 @@
 [
   {
-    "slug": "best-trastevere-food-tours",
-    "fact": "Daytime tours are the other option: earlier hours, less alcohol, and a lighter format that suits families and anyone who'd rather not be eating at 10 p.m.",
-    "reason": "cifra \"10 p.m.\" no esta en la frase"
-  },
-  {
-    "slug": "da-enzo-al-29-worth-the-queue",
-    "fact": "That test is weak: only 21 of the 57 early-arrival reviews name a number at all, and someone seated immediately has no wait to report, which would hide exactly the success cases.",
-    "reason": "apertura no autonoma"
-  },
-  {
     "slug": "trastevere-restaurant-queue-how-long-the-wait",
     "fact": "This is the advice everybody gives, including 35 reviewers who gave four or five stars, against two who were unhappy — arriving early is something satisfied diners recommend.",
     "reason": "apertura no autonoma"
@@ -21,8 +11,18 @@
   },
   {
     "slug": "trastevere-vs-rome-food-neighborhoods",
-    "fact": "One last piece of timing, which doubles as a tourist-trap test: Romans eat dinner between about 8 and 10:30 p.m.",
+    "fact": "Romans eat dinner between about 8 and 10:30 p.m.",
     "reason": "cifra \"10:30 p.m.\" no esta en la frase"
+  },
+  {
+    "slug": "trastevere-twilight-food-tour-format",
+    "fact": "It's an evening format because Romans rarely eat dinner before 8 p.m.",
+    "reason": "cifra \"8 p.m.\" no esta en la frase"
+  },
+  {
+    "slug": "trastevere-wine-aperitivo-what-to-drink",
+    "fact": "On our data, the aperitivo is the safe order: reviews mentioning a spritz average 4.40, slightly above the 4.32 baseline for reviews naming anything consumed",
+    "reason": "voz editorial interna"
   },
   {
     "slug": "which-trastevere-food-tour-fits-you",
