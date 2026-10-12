@@ -548,14 +548,16 @@
       "titleNormalized": "how strict is the vatican s dress code",
       "site": "vatican",
       "sourceSlugs": [
-        "vatican-practical-experience"
+        "vatican-dress-code-who-gets-turned-away"
       ],
       "shingles": [],
-      "generatedAt": "2026-09-12",
-      "estado": "entregado",
+      "generatedAt": "2026-10-12",
+      "estado": "descartado",
       "entregasPrevias": [
-        "2026-09-08"
-      ]
+        "2026-09-08",
+        "2026-09-12"
+      ],
+      "descartadaAt": "2026-10-12"
     },
     {
       "questionUrl": "https://www.quora.com/Where-in-Rome-Italy-is-there-excellent-food-thats-not-expensive",
@@ -904,13 +906,17 @@
       "titleNormalized": "which food tours food making classes are the best in rome",
       "site": "trastevere",
       "sourceSlugs": [
-        "trastevere-food-tour-reviews-across-platforms",
         "trastevere-food-tour-cost",
+        "is-trastevere-food-tour-worth-it",
         "which-trastevere-food-tour-fits-you"
       ],
       "shingles": [],
-      "generatedAt": "2026-09-20",
-      "estado": "entregado"
+      "generatedAt": "2026-10-12",
+      "estado": "descartado",
+      "entregasPrevias": [
+        "2026-09-20"
+      ],
+      "descartadaAt": "2026-10-12"
     },
     {
       "questionUrl": "https://www.quora.com/What-are-some-recommended-places-to-eat-in-Rome-that-are-not-tourist-traps",
@@ -1910,6 +1916,58 @@
       "sourceSlugs": [],
       "shingles": [],
       "generatedAt": "2026-10-10",
+      "estado": "publicada",
+      "origen": "manual"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Does-the-coperto-charge-typically-amount-to-more-than-a-few-euros-in-Italian-restaurants",
+      "questionTitle": "Does the coperto charge typically amount to more than a few euros in Italian restaurants?",
+      "titleNormalized": "does the coperto charge typically amount to more than a few euros in italian restaurants",
+      "site": "trastevere",
+      "sourceSlugs": [
+        "trastevere-bill-extra-charges-tap-water"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-12",
+      "estado": "descartado",
+      "descartadaAt": "2026-10-12"
+    },
+    {
+      "questionUrl": "https://www.quora.com/Should-I-rent-a-car-in-Las-Vegas-or-walk-everywhere",
+      "questionTitle": "Should I rent a car in Las Vegas or walk everywhere?",
+      "titleNormalized": "should i rent a car in las vegas or walk everywhere",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "most-expensive-first-timer-mistakes-las-vegas",
+        "first-time-las-vegas-how-to-plan",
+        "how-to-get-around-las-vegas"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-12",
+      "estado": "descartado",
+      "descartadaAt": "2026-10-12"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-is-the-best-family-friendly-show-in-Las-Vegas?top_ans=122854594",
+      "questionTitle": "What is the best family friendly show in Las Vegas?",
+      "titleNormalized": "what is the best family friendly show in las vegas",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "las-vegas-shows-with-kids"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-10-12",
+      "estado": "descartado",
+      "descartadaAt": "2026-10-12"
+    },
+    {
+      "questionUrl": "https://www.quora.com/How-expensive-is-Rome-What-are-some-budget-friendly-places-to-visit-and-activities-to-do-in-the-city",
+      "questionTitle": "How expensive is Rome What are some budget friendly places to visit and activities to do in the city",
+      "titleNormalized": "how expensive is rome what are some budget friendly places to visit and activities to do in the city",
+      "site": null,
+      "sourceSlugs": [],
+      "shingles": [],
+      "generatedAt": "2026-10-12",
       "estado": "publicada",
       "origen": "manual"
     }
