@@ -48,6 +48,29 @@ const cliente = () => (_client ||= new Anthropic());
 
 const MODEL = process.env.ELEGIR_MODEL || 'claude-sonnet-5';
 
+// Acumulado de tokens de la corrida, para poder AFIRMAR si el cache funciono en
+// vez de suponerlo. Un prefijo por debajo del minimo del modelo no cachea y no
+// avisa: deja estos numeros en cero. Si al final de una corrida `leidos` sigue
+// en cero, el cache no esta entrando y hay que mirar por que.
+let ultimoUso = { escritos: 0, leidos: 0, sinCache: 0 };
+export const usoAcumulado = { escritos: 0, leidos: 0, sinCache: 0, llamadas: 0 };
+
+function acumular(u) {
+  usoAcumulado.escritos += u.escritos;
+  usoAcumulado.leidos += u.leidos;
+  usoAcumulado.sinCache += u.sinCache;
+  usoAcumulado.llamadas += 1;
+}
+
+export function resumenCache() {
+  const { escritos, leidos, sinCache, llamadas } = usoAcumulado;
+  const total = escritos + leidos + sinCache;
+  return {
+    llamadas, escritos, leidos, sinCache,
+    porcentajeDesdeCache: total ? Math.round((leidos / total) * 100) : 0,
+  };
+}
+
 export const FORMAS = {
   renglon: 'un renglón',
   frases: 'dos o tres frases',
@@ -107,14 +130,31 @@ export async function elegirFacts({ pregunta, titulo, cuerpo, facts, marca }) {
   const lista = sinMaterial
     ? '(none - we have no published research bearing on this question)'
     : facts.map((f) => `[${f.id}] ${f.fact}`).join('\n');
-  const texto = [
+  // EL ORDEN DE ESTOS DOS BLOQUES ES LO QUE DECIDE EL COSTO, no un detalle de
+  // estilo. El caching de Anthropic es un match de PREFIJO: cachea desde el
+  // principio del pedido hasta la marca, y cualquier byte distinto antes de esa
+  // marca tira el cache abajo.
+  //
+  // Antes el texto iba pregunta -> post -> facts, todo en un bloque. Como la
+  // pregunta cambia en cada candidato, no habia prefijo estable: el corpus
+  // entero se pagaba de nuevo en cada llamada. Medido el 12 oct 2026, el bloque
+  // de facts de colosseum son ~32.000 tokens; por 221 candidatos de una corrida
+  // son 7,1 millones de tokens de entrada, unos US$14 a precio de Sonnet 5 — y
+  // eso disparo dos recargas automaticas de credito el mismo dia.
+  //
+  // Ahora los facts van PRIMERO y con la marca de cache. Son los mismos para
+  // todas las preguntas de un sitio dentro de una corrida, asi que se escriben
+  // una vez y se leen a 0,1x: ~US$1,50 en lugar de ~US$14.
+  //
+  // Que el modelo lea igual no esta en duda: las dos partes viajan en la misma
+  // llamada. Y la pregunta queda ULTIMA, que es la posicion donde mejor se
+  // obedece una instruccion.
+  const bloqueFacts = ['SHORTLIST OF FINDINGS:', lista].join('\n');
+  const bloquePregunta = [
     `QUESTION AS MEANT: ${pregunta || '(no disponible)'}`,
     '',
     `POST TITLE: ${titulo}`,
     `POST BODY: ${(cuerpo || '').slice(0, 2500) || '(no body)'}`,
-    '',
-    'SHORTLIST OF FINDINGS:',
-    lista,
   ].join('\n');
 
   const res = await cliente().messages.create({
@@ -123,8 +163,26 @@ export async function elegirFacts({ pregunta, titulo, cuerpo, facts, marca }) {
     system: prompt(marca),
     tools: [{ name: 'responder', description: 'Devolver la seleccion', input_schema: SCHEMA }],
     tool_choice: { type: 'tool', name: 'responder' },
-    messages: [{ role: 'user', content: texto }],
+    messages: [{
+      role: 'user',
+      content: [
+        // La marca va en el bloque de facts: todo lo anterior (tools y system)
+        // tambien queda cacheado, porque el prefijo se cuenta desde el principio.
+        { type: 'text', text: bloqueFacts, cache_control: { type: 'ephemeral' } },
+        { type: 'text', text: bloquePregunta },
+      ],
+    }],
   });
+
+  // Sin esto el cambio no se puede comprobar: un prefijo por debajo del minimo
+  // del modelo (1.024 tokens en Sonnet 5) NO cachea y no da ningun error, solo
+  // deja estos contadores en cero. Se expone para que el monitor lo informe.
+  ultimoUso = {
+    escritos: res.usage?.cache_creation_input_tokens || 0,
+    leidos: res.usage?.cache_read_input_tokens || 0,
+    sinCache: res.usage?.input_tokens || 0,
+  };
+  acumular(ultimoUso);
 
   const use = res.content.find((c) => c.type === 'tool_use');
   if (!use) {
