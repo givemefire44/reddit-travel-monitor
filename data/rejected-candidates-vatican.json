@@ -1,27 +1,12 @@
 [
   {
-    "slug": "how-to-avoid-vatican-crowds",
-    "fact": "That is consistent with the wider finding that the median Museums visit runs three hours before anyone goes looking for the quiet rooms.",
-    "reason": "apertura no autonoma"
-  },
-  {
-    "slug": "vatican-crowd-handling-staff",
-    "fact": "Reviews describing staff as helpful or kind average 4.27, above the corpus average — on only fifteen reviews, so treat the figure lightly, but the direction matters: a good interaction lifts a review rather than merely failing to sink it.",
-    "reason": "voz editorial interna"
-  },
-  {
-    "slug": "vatican-crowd-handling-staff",
-    "fact": "Reviews mentioning staff average 1.23 stars below the corpus average, and those describing shouting by site staff 1.77 below — yet reviews describing staff as helpful or kind average above the corpus average.",
-    "reason": "voz editorial interna"
-  },
-  {
     "slug": "vatican-early-access-really-means",
     "fact": "That detail is worth double-checking against older guides that still cite an 8:30 opening, a mismatch that has left early birds staring at an unexpected queue.",
     "reason": "apertura no autonoma"
   },
   {
-    "slug": "vatican-history-context-effect",
-    "fact": "The Raphael Rooms sit 0.34 above the corpus average despite being just as crowded as everything around them, and they are the part of the collection least legible without context.",
-    "reason": "voz editorial interna"
+    "slug": "vatican-museums-itinerary",
+    "fact": "It's physically impossible to see it all in one visit; at one minute per artwork, it would take nearly 49 days.",
+    "reason": "cifra \"1\" no esta en la frase"
   }
 ]

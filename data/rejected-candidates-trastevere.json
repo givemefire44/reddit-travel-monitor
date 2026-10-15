@@ -1,5 +1,10 @@
 [
   {
+    "slug": "best-trastevere-food-tours",
+    "fact": "Daytime tours are the other option: earlier hours, less alcohol, and a lighter format that suits families and anyone who'd rather not be eating at 10 p.m.",
+    "reason": "cifra \"10 p.m.\" no esta en la frase"
+  },
+  {
     "slug": "trastevere-restaurant-queue-how-long-the-wait",
     "fact": "This is the advice everybody gives, including 35 reviewers who gave four or five stars, against two who were unhappy — arriving early is something satisfied diners recommend.",
     "reason": "apertura no autonoma"
@@ -10,18 +15,28 @@
     "reason": "cifra \"1,061\" sin unidad ni escala"
   },
   {
+    "slug": "trastevere-roman-dishes-what-goes-wrong",
+    "fact": "This article uses 5,020 rated reviews of three Trastevere restaurants verified by address and trading status in September 2026 — Tonnarello, Da Enzo al 29 and Nannarella.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "trastevere-seasoning-complaints-salt-bland",
+    "fact": "Three reviews manage both complaints at once, and they average 1.67 — the lowest of anything we measured",
+    "reason": "cifra \"3\" no esta en la frase"
+  },
+  {
+    "slug": "trastevere-seasoning-complaints-salt-bland",
+    "fact": "This article uses 5,020 rated reviews of three Trastevere restaurants verified by address and trading status in September 2026 — Tonnarello, Da Enzo al 29 and Nannarella.",
+    "reason": "apertura no autonoma"
+  },
+  {
     "slug": "trastevere-vs-rome-food-neighborhoods",
     "fact": "Romans eat dinner between about 8 and 10:30 p.m.",
     "reason": "cifra \"10:30 p.m.\" no esta en la frase"
   },
   {
-    "slug": "trastevere-twilight-food-tour-format",
-    "fact": "It's an evening format because Romans rarely eat dinner before 8 p.m.",
-    "reason": "cifra \"8 p.m.\" no esta en la frase"
-  },
-  {
     "slug": "trastevere-wine-aperitivo-what-to-drink",
-    "fact": "On our data, the aperitivo is the safe order: reviews mentioning a spritz average 4.40, slightly above the 4.32 baseline for reviews naming anything consumed",
+    "fact": "On our data, the aperitivo is the safe order: reviews mentioning a spritz average 4.40, slightly above the 4.32 baseline for reviews naming anything consumed.",
     "reason": "voz editorial interna"
   },
   {
