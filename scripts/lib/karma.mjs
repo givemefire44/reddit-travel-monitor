@@ -64,7 +64,12 @@ const SCHEMA = {
 // de abajo son los de la cuenta de Italia, que fue para la que se escribio esto;
 // world los pisa desde su config (8 oct 2026), porque "preferi Italia y Roma" no
 // tiene sentido en r/vegas.
-const ALCANCE_ITALIA = 'It is about Italy, or about how travel works in Europe in general: trains and connections, border and passport checks, flights, bookings, packages, consumer rules. Prefer Italy and Rome when there is a choice.';
+// 15 oct 2026: decia "Italia, o como funcionan los viajes en Europa, con
+// preferencia por Italia y Roma", y Mario lo marco con razon: el comentario que
+// mas karma dio (32 puntos, r/travel) fue un hotel cambiado por un operador del
+// Reino Unido, no Italia. Los problemas de tickets, reservas y vuelos son el
+// mejor hilo de esta cuenta cuando una regla los resuelve, esten donde esten.
+const ALCANCE_ITALIA = 'It is a travel problem or a travel system that works the same wherever it happens: tickets that will not load or were never sent, bookings cancelled or changed, hotels or package operators moving people, flight delays and cancellations, refunds, card charges, trains and connections, border and passport checks. Italy and Rome are welcome but not required.';
 const NO_ELEGIR_ITALIA = [
   'Destination advice for places outside Italy: what to see, which day trip, where to stay, which tour or driver. On 2026-10-07 the first run picked "is the Wachau Valley a good day trip from Vienna, and can you recommend a driver": that is local knowledge of Austria plus a request for names, and the account has neither. A question about how a train connection or a border check works is different, wherever it happens.',
 ];
@@ -92,7 +97,7 @@ Do NOT pick:
 - Itinerary dumps with no specific doubt in them, trip reports, photos, rants with no question.
 - Medical, visa, immigration or legal questions beyond basic consumer rights. Safety incidents.
 ${noElegir.map((x) => `- ${x}`).join('\n')}
-- Money disputes (refunds, chargebacks, cancelled bookings) where the only honest answer is "ask the platform". These qualify only if a precise rule or a precise step resolves the case; when you do pick one, set "dinero" to true.
+- Money disputes (refunds, chargebacks, cancelled bookings) where the only honest answer is "ask the platform". But when a precise rule or a precise step settles the case (EU 261 for flights, the UK package travel regulations, the platform's own published policy, a card chargeback and its time limit, never paying a host outside the platform), pick it: that kind of thread produced this account's best comment. Set "dinero" to true when you do.
 
 Be strict. Zero is a valid answer and a common one. Return at most ${max}, best first.
 

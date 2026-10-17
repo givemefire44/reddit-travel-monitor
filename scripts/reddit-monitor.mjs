@@ -491,6 +491,19 @@ async function leerComentariosHilo(url) {
   }
 }
 
+// Imagenes del post. El RSS trae el cuerpo como HTML y rssBodyText se queda solo
+// con el texto, asi que un post cuya clave estaba en una captura llegaba al
+// reporte sin ella. Paso el 16 oct 2026 en r/Flights: la captura mostraba que la
+// aerolinea le habia mandado la confirmacion de la cancelacion a la agencia, y
+// el comentario se escribio sin saberlo. Las de preview.redd.it van con su query
+// entera porque sin la firma no abren.
+function imagenesDelPost(contentHtml) {
+  const urls = (contentHtml.match(/https:\/\/(?:i\.redd\.it|preview\.redd\.it|i\.imgur\.com)\/[^"'\s<>)]+/g) || [])
+    .map((u) => u.replace(/&amp;/g, '&'));
+  if (/https:\/\/www\.reddit\.com\/gallery\//.test(contentHtml)) urls.push('galería de fotos: abrir el hilo');
+  return [...new Set(urls)];
+}
+
 async function fetchNewPostsRss(subreddit) {
   const res = await fetchWithBackoff(`https://www.reddit.com/r/${subreddit}/new.rss?limit=100`);
   const xml = await res.text();
@@ -499,11 +512,13 @@ async function fetchNewPostsRss(subreddit) {
     const get = (re) => (e.match(re) || [, ''])[1];
     const link = get(/<link href="([^"]+)"/);
     const published = get(/<published>([^<]+)<\/published>/);
+    const contenido = unescapeXml(get(/<content type="html">([\s\S]*?)<\/content>/));
     return {
       title: unescapeXml(get(/<title>([\s\S]*?)<\/title>/)),
       permalink: link.replace(/^https:\/\/www\.reddit\.com/, ''),
       created_utc: Date.parse(published) / 1000,
-      selftext: rssBodyText(unescapeXml(get(/<content type="html">([\s\S]*?)<\/content>/))),
+      selftext: rssBodyText(contenido),
+      imagenes: imagenesDelPost(contenido),
       num_comments: null, // el RSS no expone conteo de comentarios (vuelve con OAuth)
       stickied: false,
       over_18: false,
@@ -918,6 +933,7 @@ function scoreCandidates(posts, subredditCfg, cutoffUtc, veredictos = new Map())
       title: post.title,
       url: `https://www.reddit.com${post.permalink}`,
       selftext: post.selftext,
+      imagenes: post.imagenes || [],
       porque: post._porque || null,
       pregunta: post._pregunta || null,
       numComments: post.num_comments,
@@ -1319,6 +1335,10 @@ function renderEntrega(c, sel, blocked) {
     lines.push('> ⚠️ **El feed no trajo el cuerpo del post.** La pregunta y el material de arriba salieron del **título solo**. Abrí el hilo antes de contestar: puede pedir algo que el título no dice.');
   }
   lines.push('');
+  if ((c.imagenes || []).length) {
+    lines.push(`**⚠️ El post trae imagen, mirarla antes de escribir:** ${c.imagenes.join(' · ')}`);
+    lines.push('');
+  }
 
   // LA FORMA. Decidida por pregunta, no por regla de la casa.
   lines.push(`**Forma que pide esta pregunta:** ${FORMAS[sel.forma] || sel.forma} — ${sel.porque_forma}`);
@@ -1406,6 +1426,10 @@ function renderCandidate(c, facts, draft, blocked) {
     lines.push('_El post no tiene cuerpo: solo el título._');
     lines.push('');
   }
+  if ((c.imagenes || []).length) {
+    lines.push(`**⚠️ El post trae imagen, mirarla antes de escribir:** ${c.imagenes.join(' · ')}`);
+    lines.push('');
+  }
 
   if (blocked) lines.push('**[BLOQUEADO POR KARMA — guardar para etapa B]**');
   lines.push('');
@@ -1466,7 +1490,7 @@ async function main() {
         for (const p of posts) {
           const ageHours = Math.round((ahora - p.created_utc) / 3600);
           if (p.stickied || p.over_18 || p.created_utc < cutoffUtc || ageHours > KARMA.maxAgeHours) continue;
-          karmaPool.push({ sub: sub.name, title: p.title, selftext: p.selftext || '', url: `https://www.reddit.com${p.permalink}`, ageHours });
+          karmaPool.push({ sub: sub.name, title: p.title, selftext: p.selftext || '', imagenes: p.imagenes || [], url: `https://www.reddit.com${p.permalink}`, ageHours });
         }
       }
       // El juez de relevancia corre ANTES de puntuar, sobre los posts de la
@@ -1720,6 +1744,7 @@ async function main() {
       '',
       h.selftext.trim() ? '> ' + h.selftext.trim().slice(0, 1500).replace(/\n+/g, '\n> ') : '> (sin cuerpo en el feed: abrir el hilo)',
       '',
+      ...((h.imagenes || []).length ? [`**⚠️ El post trae imagen, mirarla antes de escribir:** ${h.imagenes.join(' · ')}`, ''] : []),
       '---',
       '',
     ]),
