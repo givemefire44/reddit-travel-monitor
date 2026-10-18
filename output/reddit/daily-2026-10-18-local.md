@@ -1,8 +1,8 @@
 # Reddit monitor — 2026-10-18
 
-**Fase:** attribution · **Ventana:** 24h · **Facts:** trastevere 143 · vatican 216 · colosseum 1036 · pompeii 126 · milan 82
+**Fase:** attribution · **Ventana:** 24h · **Facts:** trastevere 143 · vatican 216 · colosseum 1036 · pompeii 126 · milan 82 · lasvegas 212 · seoul 286
 **Comment karma u/RomanColosseumExpert:** (no disponible)
-**Objetivo (menciones sembradas hoy):** 0 🎯 GEO · 0 📌 material · 0 🔁 karma
+**Objetivo (menciones sembradas hoy):** 0 🎯 GEO · 0 📌 material · 4 🔁 karma
 
 > Cero GEO hoy: ninguna de las preguntas del día se contesta con una medición nuestra. Los de karma sirven igual (la cuenta necesita karma para llegar a los subs donde están las preguntas buenas), pero el día no sembró ninguna cita.
 
@@ -15,20 +15,25 @@
 | r/travel (active) | 200 · 100 posts | 41 | 0 | 0 | 0 | — |
 | r/solotravel (active) | 200 · 100 posts | 7 | 0 | 0 | 0 | — |
 | r/Eurotrip (active) | 200 · 54 posts | 0 | 0 | 0 | 0 | — |
-| r/EuropeTravel (active) | 200 · 100 posts | 7 | 0 | 0 | 0 | — |
+| r/EuropeTravel (active) | 200 · 100 posts | 8 | 0 | 0 | 0 | — |
 | r/TravelNoPics (active) | 200 · 100 posts | 1 | 0 | 0 | 0 | — |
 | r/Italy (active) | 200 · 100 posts | 9 | 0 | 0 | 0 | — |
 | r/askitaly (active) | 200 · 100 posts | 1 | 0 | 0 | 0 | — |
-| r/ItalyTravel (active) | 200 · 100 posts | 5 | 0 | 0 | 0 | — |
-| r/rome (active) | 200 · 100 posts | 7 | 0 | 0 | 0 | — |
+| r/ItalyTravel (active) | 200 · 100 posts | 4 | 0 | 0 | 0 | — |
+| r/rome (active) | 200 · 100 posts | 8 | 0 | 0 | 0 | — |
 | r/ItalyTravelAdvice (active) | 200 · 100 posts | 8 | 0 | 0 | 0 | — |
 | r/RomeTravel (active) | 200 · 100 posts | 4 | 0 | 0 | 0 | — |
 | r/loveholidays (active) | 200 · 100 posts | 0 | 0 | 0 | 0 | — |
 | r/Bookingcom (active) | 200 · 100 posts | 3 | 1 | 1 | 0 | — |
-| r/askhotels (active) | 200 · 100 posts | 9 | 0 | 0 | 0 | — |
-| r/TravelHacks (active) | 200 · 100 posts | 1 | 0 | 0 | 0 | — |
-| r/Flights (active) | 200 · 100 posts | 13 | 0 | 0 | 0 | — |
+| r/askhotels (active) | 200 · 100 posts | 8 | 0 | 0 | 0 | — |
+| r/TravelHacks (active) | 200 · 100 posts | 0 | 0 | 0 | 0 | — |
+| r/Flights (active) | 200 · 100 posts | 14 | 0 | 0 | 0 | — |
 | r/hotels (active) | 200 · 100 posts | 3 | 0 | 0 | 0 | — |
+| r/vegas (active) | 200 · 100 posts | 39 | 6 | 6 | 4 | 7, 7, 6, 3 |
+| r/LasVegas (active) | 200 · 100 posts | 8 | 0 | 0 | 0 | — |
+| r/GrandCanyon (active) | 200 · 100 posts | 2 | 0 | 0 | 0 | — |
+| r/seoul (active) | 200 · 100 posts | 22 | 1 | 1 | 0 | — |
+| r/koreatravel (active) | 200 · 100 posts | 14 | 0 | 0 | 0 | — |
 
 _Etapas en el orden real: publicado en las últimas 24h y no sticky/nsfw → **filtro** → match con la taxonomía de topics → pregunta genuina. **El filtro no es el mismo en todos los subs:** en los `active` es el juez decidiendo si el hilo se puede contestar con nuestro material, y en los `watch-only` es el match contra las keywords del sitio. Esta columna se llamaba "Keyword" para los dos, y eso hizo leer tres días de `active` en cero como "nadie habla del tema" cuando lo que decía era "el juez no encontró nada contestable". No hay umbral de score: todo lo que pasa el embudo es candidato._
 
@@ -38,9 +43,109 @@ _El cupo (6) **no** corta por score: corta por carril. Se leen 12 candidatos con
 
 ---
 
-## Candidatos (0)
+## Candidatos (4)
 
-_Sin candidatos hoy._
+### Did I mess up?
+
+- **Hilo:** https://www.reddit.com/r/vegas/comments/1x9bakq/did_i_mess_up/
+- **Subreddit:** r/vegas · **Antigüedad:** 3h · **Comentarios:** n/d (RSS) · **Score:** 7
+- **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
+- **Sitio:** lasvegas
+- **Preguntan:** ¿Qué hacer en Las Vegas durante la semana del Gran Premio (18-25 de noviembre)?
+- **Por qué sirve:** El material cubre qué ver y hacer en Las Vegas, qué espectáculos y tours valen la pena, cómo moverse por el Strip, costos de la visita y cuántas noches quedarse. Esto permite dar consejos útiles para una semana en Vegas en cualquier fecha.
+
+**Lo que preguntó, textual:**
+
+> First trip for me and the wife to Vegas coming up. Staying at Caesars for a week. I don&#39;t watch or follow racing so didn&#39;t realize I booked it basically the week the Grand Prix is happening lol. Any pro tips for the visit? Roughly the 18th to 25th of Nov timeline 😆
+
+**Forma que pide esta pregunta:** un párrafo — Es una pregunta abierta sobre cómo manejar una semana entera afectada por un evento especial, requiere varias consideraciones (tráfico, cierres, precios, alternativas), no una respuesta de una línea.
+
+_Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
+
+**Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
+
+**Lo que el corpus no cubre:** No hay hallazgos sobre el Gran Premio de F1 en Las Vegas, sus efectos en precios, tráfico, cierres de la Strip o cómo planear la semana alrededor del evento.
+
+**Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
+
+---
+
+### Money Saving Tips
+
+- **Hilo:** https://www.reddit.com/r/vegas/comments/1x99fr1/money_saving_tips/
+- **Subreddit:** r/vegas · **Antigüedad:** 5h · **Comentarios:** n/d (RSS) · **Score:** 7
+- **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
+- **Sitio:** lasvegas
+- **Preguntan:** ¿Dónde encontrar bebidas baratas o gratis y mesas de blackjack económicas en Las Vegas?
+- **Por qué sirve:** El material cubre estrategias de ahorro en Las Vegas incluyendo dónde beber barato, la relación entre apuestas y bebidas gratuitas, qué resorts tienen las mesas de menor apuesta, y las diferencias de costo entre el Strip y Fremont Street.
+
+**Lo que preguntó, textual:**
+
+> Husband and I are going in November for 4.5 days for his first time there. Staying at the Bellagio and Aria (already paid for, covered with credit card perks) We LOVE drinking and aren’t picky with our liquor. We LOVE blackjack and love spending hours at the cheapest tables we can find. Willing to go to fremont and on and off the strip. Give me all your best tips for free and cheap drinks and cheap blackjack!
+
+**Forma que pide esta pregunta:** varios párrafos — Piden consejos variados (bebidas gratis/baratas y mesas de blackjack económicas) que implican varias recomendaciones concretas, no una sola respuesta.
+
+_Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
+
+**Material que contesta ESTA pregunta (2, elegidos entre 18):**
+
+- `pricing-003` "The games with the lowest house edge — meaning your money lasts longer — are blackjack (under about 1% if you play basic strategy at a table that pays 3:2), baccarat (betting banker or player, around 1%), and craps (sticking to the basic pass/don't-pass bets, around 1.4%)." — https://lasvegastour.com/las-vegas-casino-gambling-responsibly
+- `getting-around-001` "Downtown (Fremont) is its own scene — more old-school Vegas, more affordable, a different energy — and it's a great choice if that's the vibe you want, but it's a 10–15 minute drive from the Strip, not a walk." — https://lasvegastour.com/first-time-las-vegas-how-to-plan
+
+**Lo que el corpus no cubre:** No hay datos sobre dónde conseguir bebidas gratis/baratas ni sobre mesas de blackjack con apuestas mínimas bajas específicas (ni en el Strip ni en Fremont); solo hay una mención general de la ventaja de la casa en blackjack y de que Fremont es más económico en general.
+
+**Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
+
+---
+
+### Cheap ways to kill time at/near Mandalay Bay?
+
+- **Hilo:** https://www.reddit.com/r/vegas/comments/1x98enw/cheap_ways_to_kill_time_atnear_mandalay_bay/
+- **Subreddit:** r/vegas · **Antigüedad:** 5h · **Comentarios:** n/d (RSS) · **Score:** 6
+- **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
+- **Sitio:** lasvegas
+- **Preguntan:** Qué actividades económicas o gratuitas hay para pasar tiempo en Mandalay Bay, Luxor, Excalibur o New York-New York entre las 8:30am y las 5pm, además de juegos de azar y atracciones ya visitadas
+- **Por qué sirve:** El material cubre actividades y atracciones en Las Vegas Strip, resorts, y cómo pasar el tiempo en diferentes propiedades, incluyendo el transporte gratuito entre resorts.
+
+**Lo que preguntó, textual:**
+
+> I&#39;m flying in at 8:30am, and my conference doesn&#39;t start until 5pm. What are some cheap ways to kill time down at Mandalay Bay? I&#39;m already planning on Pinball Hall of Fame (been twice), but not feeling Shark Reef (been there once). What else is there to do besides gamble? I&#39;m down with walking and using the free tram, so ideas at Luxor, Excalibur, or NY NY are welcome.
+
+**Forma que pide esta pregunta:** un párrafo — Pide varias ideas de actividades para llenar un día entero, no un dato único.
+
+_Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
+
+**Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
+
+**Lo que el corpus no cubre:** No hay hallazgos sobre actividades gratuitas o económicas dentro de Mandalay Bay, Luxor, Excalibur o NY-NY (paseo por los casinos temáticos, tiendas, el tranvía entre ellos, etc.); el material disponible trata de parking, Hoover Dam, helicópteros y otros temas no relacionados con este tramo del Strip.
+
+**Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
+
+---
+
+### Tell me all I need to know (tips,hacks,itinerary, etc)
+
+- **Hilo:** https://www.reddit.com/r/vegas/comments/1x8vuti/tell_me_all_i_need_to_know_tipshacksitinerary_etc/
+- **Subreddit:** r/vegas · **Antigüedad:** 16h · **Comentarios:** n/d (RSS) · **Score:** 3
+- **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
+- **Sitio:** lasvegas
+- **Preguntan:** ¿Qué hacer en Las Vegas además de clubes y casinos, dónde alojarse, y qué otros estados recomiendas?
+- **Por qué sirve:** El material cubre tours, shows, día trips (Grand Canyon, Red Rock Canyon, Valley of Fire, Hoover Dam), espectáculos de Cirque du Soleil, y costos de viajes en Las Vegas. No cubre hoteles ni spas, pero responde sobre qué hacer day or night más allá de clubes y casinos.
+
+**Lo que preguntó, textual:**
+
+> Me and a friend both 21 are going to Vegas end of November early December, we are looking for recommendations on hotels, things to do, places to try! We are interested in clubs however for the most part we’d enjoy doing other fun things day or night! Any spa places? give us some ideas of things you’ve done in Vegas that’s not clubbing or casinos AND if you don’t think Vegas is a good idea what other states would you recommend
+
+**Forma que pide esta pregunta:** varios párrafos — La pregunta mezcla varias decisiones (hoteles, actividades, alternativas de viaje) que requieren una respuesta con varios puntos encadenados.
+
+_Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
+
+**Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
+
+**Lo que el corpus no cubre:** El listado no cubre alojamiento recomendado, actividades no-club/casino de forma directa (spas, excursiones concretas) ni recomendaciones de otros estados; solo hay datos sueltos sobre reseñas de tours/shows/helicóptero que no responden a lo pedido.
+
+**Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
+
 
 ## Bloqueados — buenos hilos donde la cuenta todavía no puede comentar (0)
 
@@ -50,48 +155,28 @@ _Ninguno hoy._
 
 ---
 
-## Karma — hilos para sumar puntos (2)
+## Karma — hilos para sumar puntos (1)
 
 _Segundo filtro, desde el 7 oct 2026. No busca hilos que nuestro material conteste: busca los que dan puntos. Medido sobre los 90 comentarios de u/RomanColosseumExpert, los 16 con marca dieron +3 en total y tres sin marca ni cifras dieron 67 de 109 (el hotel cambiado en r/travel, el café sentado y el primer vino en r/rome). Los tres corrigen lo que la persona creía, dan un paso concreto y se ponen de su lado._
 
 _Reglas de este carril: **sin marca y sin cifras nuestras**, corto, leyendo antes los comentarios del hilo, y con cada dato verificado afuera. Nunca experiencia propia. Uno por sub por día. Cero es una respuesta válida._
 
-_Descartados después de leer los comentarios, por ya resueltos (2): "Middle name missing on my flight ticket but is ava" (r/travel, 11 comentarios: ya le dijeron que generalmente no hay problema (11 comentarios) pero hay conflicto sobre A) · "Booked 2 outbound flights can I safely cancel 1 of" (r/Flights, 6 comentarios: ya aclararon que EasyJet es punto a punto, no conectado, así que puede no hacer check-in e)._
+_Descartados después de leer los comentarios, por ya resueltos (3): "Strange Cathay Pacific Check in Experience" (r/travel, 1 comentarios: ya le dijeron que es un control de seguridad extra común en vuelos a EE.UU., con ejemplos ) · "Middle name missing on my flight ticket but is ava" (r/travel, 13 comentarios: ya hay 13 comentarios con experiencias variadas pero mayormente indicando que el nombre de) · "Should we fly or take the train from Vienna to Mun" (r/EuropeTravel, 53 comentarios: ya hay 53 comentarios llegando a consenso claro: el tren es mejor por comodidad, menos est)._
 
-### Compensation if I resigned from delayed flight after security control?
+### iPhone T-Money for you and your 8 year old.
 
-- **Hilo:** https://www.reddit.com/r/Flights/comments/1x92sj7/compensation_if_i_resigned_from_delayed_flight/
-- **Subreddit:** r/Flights · **Antigüedad:** 7h
-- **Carril:** 🔁 karma — está preocupado por algo que tiene respuesta clara
-- **Lo que cree o le preocupa:** Tiene derecho a compensación de EU 261 aunque haya renunciado a un vuelo retrasado 10+ horas después de pasar seguridad pero sin abordar
-- **Lo que una buena respuesta deja claro:** Aclarar si el derecho a compensación EU 261 requiere haber abordado el vuelo o solo presentarse en el aeropuerto; qué cuenta como haber sido "pasajero" a los efectos de la compensación
-- **Verificar antes de escribir:** EU 261 requisitos exactos de elegibilidad: si la compensación requiere abordar o solo llegar a la puerta; si abandonar voluntariamente anula el derecho; precedentes de reclamaciones similares
-- **Comentarios del hilo:** 4
-- **Lo que todavía nadie dijo:** ECJ C-474/22 menciona que se necesita probar que se presentó al personal de la aerolínea, pero falta clarificar si abandonar voluntariamente antes de 3 horas de retraso califica para compensación bajo EU261 o si pierde derecho
-- **⚠️ Tema de plata:** solo si la respuesta es precisa y resuelve; si no, se saltea.
-
-**Lo que preguntó, textual:**
-
-> So on 17th October I had a flight from Cracow to Mallorca at 17:55pm. After walking through security check and waiting at the gates it turned out my flight is delayed 6+ hours becuase of technical problems at the Cracovian airport. Of course boarding hasn&#39;t started yet. I stayed at the airport for about two hours and gave up, as the delay slowly got worse and my whole trip would be already meaningless. Ultimately, when I got home, I checked and the plane took off around 10 hours after planned time.
->  Am I eligible for compensation? I tried to apply for it on Ryanair site it wouldn&#39;t let me through, as I did not board the flight, but I was at the airport and it can be proven by me crossing security check. I am already confused, because the information I find are often contradictory. I&#39;d be very thankful for some help with it. I already asked for ticket refunds.
-
----
-
-### JetSmart: They cancelled my flight (Argentina), and are saying they will charge me a refund fee if I want a refund. An $86 fee for a $195 flight. Is this normal?
-
-- **Hilo:** https://www.reddit.com/r/Flights/comments/1x91tju/jetsmart_they_cancelled_my_flight_argentina_and/
-- **Subreddit:** r/Flights · **Antigüedad:** 8h
-- **Carril:** 🔁 karma — está preocupado por algo que tiene respuesta clara
-- **Lo que cree o le preocupa:** Una aerolínea puede cobrar una tarifa de reembolso cuando ellos mismos cancelan el vuelo
-- **Lo que una buena respuesta deja claro:** Establecer si JetSmart u otra aerolínea puede legalmente cobrar una tarifa por reembolsar un vuelo que ellos cancelaron; cuál es la obligación legal del transportista en caso de cancelación
-- **Verificar antes de escribir:** Regulaciones de aviación de Argentina o normas internacionales sobre reembolsos por cancelación; si las aerolíneas pueden cobrar tarifas de reembolso cuando la cancelación es culpa del transportista
-- **Comentarios del hilo:** 3
-- **Lo que todavía nadie dijo:** solo hay una respuesta (chargeback) pero falta info sobre derechos de pasajeros en Argentina cuando una aerolínea cancela: ¿pueden cobrar fee de reembolso legalmente? ¿hay regulación local?
-- **⚠️ Tema de plata:** solo si la respuesta es precisa y resuelve; si no, se saltea.
+- **Hilo:** https://www.reddit.com/r/koreatravel/comments/1x9b1s6/iphone_tmoney_for_you_and_your_8_year_old/
+- **Subreddit:** r/koreatravel · **Antigüedad:** 4h
+- **Carril:** 🔁 karma — no entiende cómo funciona algo
+- **Lo que cree o le preocupa:** No entiende cómo usar el T-Money virtual en iPhone para que su hijo de 8 años pase por el torniquete del metro, ya que el menú del app está en coreano.
+- **Lo que una buena respuesta deja claro:** Explicar cómo activar y usar el descuento infantil en la app de T-Money (aunque el menú esté en coreano), o si hay una forma alternativa, y confirmar que funciona en los torniquetes de Seúl.
+- **Verificar antes de escribir:** Cómo funciona T-Money infantil en iPhone, si el descuento se activa automáticamente o requiere pasos adicionales, si funciona en todos los torniquetes de Seúl.
+- **Comentarios del hilo:** 5
+- **Lo que todavía nadie dijo:** la pregunta específica sobre cómo usar el T-Money virtual del iPhone con descuento infantil no fue respondida directamente; los comentarios sugieren alternativas pero no contestan el 'cómo'
 
 **Lo que preguntó, textual:**
 
-> Hi everyone, As the title asks. JetSmart have cancelled my upcoming flight from Iguazu to Buenos Aires. I called customer support and they said if they refund me the $195, they will charge an $86 &#39;refund fee&#39;. This is despite it being their entire fault for cancelling. Is this normal??
+> We are going to Seoul in November. I am able to download iPhone version of T-money. I am also able to top off this virtual card. Question: how do I let my son, who is 8, through the subway turnstile with my iPhone? In the app, in the menu ≡ , there&#39;s a &quot;Child/Youth Discount&quot; but is in Korean. How do you get your kids in the subway by using your iPhone?
 
 ---
 
