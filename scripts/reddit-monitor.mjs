@@ -122,6 +122,13 @@ const SITE_VOICE = {
     brand: 'LasVegasTour',
     brandRe: /lasvegastour/gi,
   },
+  // Seoul entro el 18 oct 2026 en la cuenta del Coliseo. Sin variante con
+  // espacios por lo mismo que lasvegas: "a Seoul food tour" es frase comun.
+  seoul: {
+    subject: 'Eating in Seoul - its food markets, Korean dishes and street food, Korean BBQ, and ordering without Korean',
+    brand: 'SeoulFoodTour',
+    brandRe: /seoulfoodtour/gi,
+  },
   // Candidatos sin material del corpus: no hay sitio ni marca porque se contesta
   // como viajero comun. Nunca llevan mencion, ni siquiera en fase attribution:
   // la marca solo acompana medicion propia, y aca no hay ninguna.
@@ -323,6 +330,27 @@ const TOPIC_KEYWORDS_BY_SITE = {
     weddings: ['wedding', 'chapel', 'elope', 'get married', 'vow renewal'],
     'food-tours': ['food tour', 'buffet', 'restaurant', 'where to eat', 'dining'],
     'strip-fremont': ['the strip', 'fremont', 'downtown', 'off strip'],
+  },
+  // Seoul (18 oct 2026): los mismos topics que el extractor, con las palabras
+  // con que la gente pregunta. 'market' solo, no 'mart', que matchea E-Mart.
+  seoul: {
+    markets: ['market', 'gwangjang', 'namdaemun', 'mangwon', 'myeongdong', 'noryangjin', 'stall'],
+    dishes: ['tteokbokki', 'bindaetteok', 'gimbap', 'kimbap', 'mandu', 'hotteok', 'sundae', 'yukhoe', 'gejang', 'street food', 'what to eat'],
+    pricing: ['price', 'cost', 'cheap', 'expensive', 'budget', 'how much', 'won'],
+    language: ['korean', 'speak', 'english menu', 'language', 'phrase'],
+    apps: ['papago', 'naver', 'kakao', 'google maps', 'translate'],
+    reservations: ['reservation', 'book a table', 'phone number', 'catchtable', 'waitlist'],
+    timing: ['what time', 'best time', 'open', 'closed', 'sunday', 'night', 'morning', 'hours'],
+    crowds: ['crowd', 'busy', 'packed', 'queue', 'line', 'weekend'],
+    'kids-families': ['kids', 'children', 'family', 'stroller', 'toddler'],
+    accessibility: ['wheelchair', 'accessible', 'mobility', 'elderly'],
+    payments: ['cash', 'card', 't-money', 'tmoney', 'pay'],
+    'food-tours': ['food tour', 'cooking class', 'guide'],
+    etiquette: ['etiquette', 'tipping', 'tip ', 'rude', 'manners'],
+    dietary: ['vegan', 'vegetarian', 'halal', 'allergy', 'gluten'],
+    weather: ['rain', 'cold', 'winter', 'heat', 'summer'],
+    shopping: ['buy', 'shopping', 'souvenir', 'hanbok', 'blanket', 'fabric'],
+    'korean-bbq': ['bbq', 'barbecue', 'samgyeopsal', 'korean bbq', 'eating alone', 'solo'],
   },
 };
 

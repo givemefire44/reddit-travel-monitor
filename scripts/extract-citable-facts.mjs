@@ -146,6 +146,26 @@ const SITES = {
     ],
     excludedSlugs: ['about-us', 'contact-us', 'terms-and-conditions', 'cookies-and-privacy-policy'],
   },
+  // Seoul entro el 18 oct 2026, para la cuenta de Reddit del Coliseo (r/seoul,
+  // r/koreatravel). El research de seoulfoodtour mide los tres mercados
+  // (Gwangjang, Namdaemun, Mangwon), los platos, los precios y como pedir sin
+  // hablar coreano, sobre un corpus de 26.029 items.
+  seoul: {
+    projectId: 'f637nue4',
+    siteUrl: 'https://seoulfoodtour.com',
+    corpusSize: null,
+    outFile: 'citable-facts-seoul.json',
+    subjectName: "Eating in Seoul: its food markets (Gwangjang, Namdaemun, Mangwon, Myeongdong), Korean dishes and street food, Korean BBQ, food prices, ordering and booking without Korean, and Seoul food tours",
+    subjectRule:
+      "the claim's subject must be eating or food shopping in Seoul - its markets, dishes, prices, opening hours, crowds, payment, toilets and seating, ordering or booking without speaking Korean, the apps travellers use there (Papago, Naver Map, Kakao Map), Korean BBQ, or Seoul food tours. Exclude sentences whose subject is another city or country (Rome, Tokyo, Busan...) even when they appear in a Seoul article. A comparison qualifies only if the Seoul side carries the figure and the claim stands as Seoul advice.",
+    internalVoiceRe: /\b(the corpus|our corpus|our analysis|we analyzed|our data|seoulfoodtour)\b/i,
+    topics: [
+      'markets', 'dishes', 'pricing', 'language', 'apps', 'reservations',
+      'timing', 'crowds', 'kids-families', 'accessibility', 'payments',
+      'food-tours', 'etiquette', 'dietary', 'weather', 'shopping', 'korean-bbq',
+    ],
+    excludedSlugs: ['about', 'contact', 'terms-conditions', 'cookies-privacy-policy'],
+  },
 };
 
 // ---------- CLI ----------

@@ -8,7 +8,13 @@
   "fetchMode": "public-rss",
   "karma": {
     "enabled": true,
-    "subreddits": ["rome", "travel", "EuropeTravel", "solotravel", "Flights", "TravelHacks", "ItalyTravelAdvice"],
+    "subreddits": ["rome", "travel", "EuropeTravel", "solotravel", "Flights", "TravelHacks", "ItalyTravelAdvice", "vegas", "LasVegas", "seoul", "koreatravel"],
+    "noElegir": [
+      "Destination advice for places outside Italy: what to see, which day trip, where to stay, which tour or driver. On 2026-10-07 the first run picked \"is the Wachau Valley a good day trip from Vienna, and can you recommend a driver\": that is local knowledge of Austria plus a request for names, and the account has neither. A question about how a train connection or a border check works is different, wherever it happens.",
+      "Las Vegas questions only a local or a regular can answer today: which casino has the cheapest tables right now, which club or bar is best this weekend, which restaurant, who is performing where, which floor or room to ask for, how club promoters operate.",
+      "Adult entertainment: strip clubs, swinger or lifestyle venues, escorts. Also gambling strategy, comps and player-card offers.",
+      "Hotel-versus-hotel choices and requests to review an itinerary, unless the post contains one specific doubt with a definite answer."
+    ],
     "maxAgeHours": 8,
     "max": 6,
     "_ampliado": "15 oct 2026: de 3 subs y 4 hilos a 7 y 6. En cinco dias salieron 3 comentarios entre las dos cuentas, y el alcance (Italia primero, plata solo como excepcion) dejaba afuera justo el tipo de hilo que dio el mejor comentario de la cuenta. Medir en una semana cuantos se pegan contra esos 3.",
@@ -106,6 +112,31 @@
     {
       "name": "hotels",
       "status": "active"
+    },
+    {
+      "name": "vegas",
+      "status": "active",
+      "minCommentKarma": 0
+    },
+    {
+      "name": "LasVegas",
+      "status": "active",
+      "minCommentKarma": 0
+    },
+    {
+      "name": "GrandCanyon",
+      "status": "active",
+      "minCommentKarma": 0
+    },
+    {
+      "name": "seoul",
+      "status": "active",
+      "minCommentKarma": 0
+    },
+    {
+      "name": "koreatravel",
+      "status": "active",
+      "minCommentKarma": 0
     }
   ],
   "sites": [
@@ -205,6 +236,18 @@
         "milan tickets",
         "milan tours"
       ]
+    },
+    {
+      "key": "lasvegas",
+      "factsFile": "data/citable-facts-lasvegas.json",
+      "_desde": "18 oct 2026: Las Vegas paso de la cuenta world (u/ToursResearch, 4 comentarios y 1 de karma en un mes) a esta, cuyo perfil ya nombra LasVegasTour. Los comentarios de Vegas van SIN marca por ahora: el corte de Quora coincidio con una sola cuenta nombrando seis sitios de rubros distintos.",
+      "keywords": ["las vegas", "vegas", "the strip", "las vegas strip", "fremont", "downtown vegas", "grand canyon", "west rim", "south rim", "skywalk", "hoover dam", "lake mead", "red rock canyon", "valley of fire", "sphere", "cirque du soleil", "resort fee", "resort fees", "vegas show", "vegas shows", "helicopter tour", "vegas helicopter"]
+    },
+    {
+      "key": "seoul",
+      "factsFile": "data/citable-facts-seoul.json",
+      "_desde": "18 oct 2026, a pedido de Mario. Corpus de 26.029 items y 57 articulos con mediciones propias en seoulfoodtour.com. Igual que Las Vegas, los comentarios van SIN marca al principio.",
+      "keywords": ["seoul", "korea", "korean food", "gwangjang", "namdaemun", "mangwon", "myeongdong", "tteokbokki", "bindaetteok", "korean bbq", "korean street food", "papago", "naver map", "kakao map", "seoul market", "seoul food tour"]
     }
   ]
 }

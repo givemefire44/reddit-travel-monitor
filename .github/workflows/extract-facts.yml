@@ -65,6 +65,21 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/extract-citable-facts.mjs --site trastevere
 
+      # Las Vegas estaba en el extractor desde el 21 sep y Seoul entro el 18 oct
+      # 2026, cuando los dos pasaron a la cuenta de Reddit del Coliseo. Ninguno se
+      # habia sumado aca, asi que el corpus de Vegas no se re-extraia.
+      - name: Extract lasvegas
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/extract-citable-facts.mjs --site lasvegas
+
+      - name: Extract seoul
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/extract-citable-facts.mjs --site seoul
+
       - name: Commit updated facts
         run: |
           git config user.name "github-actions[bot]"
