@@ -1,51 +1,25 @@
 {
-  "extractedAt": "2026-10-18T21:17:31.122Z",
+  "extractedAt": "2026-10-19T20:48:48.535Z",
   "corpusSize": null,
   "facts": [
     {
-      "id": "markets-001",
-      "fact": "Opened in 1905, it's Korea's oldest permanent market, and its second-floor food alley became internationally famous through Netflix's Street Food: Asia.",
-      "figures": [
-        "1905"
-      ],
-      "topics": [
-        "markets"
-      ],
-      "sourceSlug": "best-areas-seoul-food-tour",
-      "sourceUrl": "https://seoulfoodtour.com/best-areas-seoul-food-tour"
-    },
-    {
       "id": "food-tours-001",
-      "fact": "For a first visit, the classic Gwangjang Market street-food walking tour is the strongest all-round choice: it's the city's most iconic market, tours start around $29, and it delivers a wide range of Korean dishes with cultural context.",
-      "figures": [
-        "$29"
-      ],
-      "topics": [
-        "food-tours",
-        "markets",
-        "pricing"
-      ],
-      "sourceSlug": "best-seoul-food-tours",
-      "sourceUrl": "https://seoulfoodtour.com/best-seoul-food-tours"
-    },
-    {
-      "id": "food-tours-002",
       "fact": "Prices for a group market tour start around $29 and rise with the number of tastings and the level of curation — half-day tours packing in eight to twelve-plus dishes typically run higher.",
       "figures": [
         "$29"
       ],
       "topics": [
         "food-tours",
-        "pricing"
+        "pricing",
+        "markets"
       ],
       "sourceSlug": "best-seoul-food-tours",
       "sourceUrl": "https://seoulfoodtour.com/best-seoul-food-tours"
     },
     {
-      "id": "food-tours-003",
-      "fact": "Group market tours start around $29 and rise with the number of tastings; half-day tours with eight to twelve-plus dishes typically run higher; and private tours generally range from about $150 to $335 or more depending on duration and group size.",
+      "id": "food-tours-002",
+      "fact": "Private tours in Seoul typically start around $150 and climb to $335 or more, depending on duration, group size, and inclusions.",
       "figures": [
-        "$29",
         "$150",
         "$335"
       ],
@@ -58,6 +32,102 @@
     },
     {
       "id": "pricing-001",
+      "fact": "Price ranges are approximate, reflect 2026 listings, and change with season, group size, and demand — always confirm current prices on the booking platform before you reserve.",
+      "figures": [
+        "2026"
+      ],
+      "topics": [
+        "pricing",
+        "food-tours"
+      ],
+      "sourceSlug": "best-seoul-food-tours",
+      "sourceUrl": "https://seoulfoodtour.com/best-seoul-food-tours"
+    },
+    {
+      "id": "markets-001",
+      "fact": "Forty reviews describe breakfast at Gwangjang Market, Namdaemun Market or Mangwon Market: 18, 16 and 6.",
+      "figures": [
+        "18",
+        "16",
+        "6"
+      ],
+      "topics": [
+        "markets",
+        "timing"
+      ],
+      "sourceSlug": "breakfast-seoul-markets-gwangjang-namdaemun-mangwon",
+      "sourceUrl": "https://seoulfoodtour.com/breakfast-seoul-markets-gwangjang-namdaemun-mangwon"
+    },
+    {
+      "id": "markets-002",
+      "fact": "Mangwon Market starts late: 19 reviews found stalls closed in the morning.",
+      "figures": [
+        "19"
+      ],
+      "topics": [
+        "markets",
+        "timing"
+      ],
+      "sourceSlug": "breakfast-seoul-markets-gwangjang-namdaemun-mangwon",
+      "sourceUrl": "https://seoulfoodtour.com/breakfast-seoul-markets-gwangjang-namdaemun-mangwon"
+    },
+    {
+      "id": "dishes-001",
+      "fact": "At Namdaemun Market the breakfasts named most are kalguksu and dumplings, and reviewers ate from 7 am.",
+      "figures": [
+        "7 am"
+      ],
+      "topics": [
+        "dishes",
+        "timing",
+        "markets"
+      ],
+      "sourceSlug": "breakfast-seoul-markets-gwangjang-namdaemun-mangwon",
+      "sourceUrl": "https://seoulfoodtour.com/breakfast-seoul-markets-gwangjang-namdaemun-mangwon"
+    },
+    {
+      "id": "markets-003",
+      "fact": "At Gwangjang Market five reviews put the opening at about 9 am, and two describe eating there at 8.",
+      "figures": [
+        "9 am",
+        "8"
+      ],
+      "topics": [
+        "markets",
+        "timing"
+      ],
+      "sourceSlug": "breakfast-seoul-markets-gwangjang-namdaemun-mangwon",
+      "sourceUrl": "https://seoulfoodtour.com/breakfast-seoul-markets-gwangjang-namdaemun-mangwon"
+    },
+    {
+      "id": "markets-004",
+      "fact": "At Mangwon Market five reviews also put the opening at about 9, but that is the hour for produce, meat and fish.",
+      "figures": [
+        "9"
+      ],
+      "topics": [
+        "markets",
+        "timing"
+      ],
+      "sourceSlug": "breakfast-seoul-markets-gwangjang-namdaemun-mangwon",
+      "sourceUrl": "https://seoulfoodtour.com/breakfast-seoul-markets-gwangjang-namdaemun-mangwon"
+    },
+    {
+      "id": "markets-005",
+      "fact": "Three at Gwangjang Market and one at Namdaemun Market put the arrival of the crowd at about 11.",
+      "figures": [
+        "11"
+      ],
+      "topics": [
+        "markets",
+        "crowds",
+        "timing"
+      ],
+      "sourceSlug": "breakfast-seoul-markets-gwangjang-namdaemun-mangwon",
+      "sourceUrl": "https://seoulfoodtour.com/breakfast-seoul-markets-gwangjang-namdaemun-mangwon"
+    },
+    {
+      "id": "pricing-002",
       "fact": "A day of eating in Seoul costs roughly ₩20,000–30,000 on a lean budget, ₩30,000–50,000 eating the way office workers do, and ₩50,000–70,000 with a barbecue dinner.",
       "figures": [
         "₩20,000–30,000",
@@ -72,7 +142,7 @@
       "sourceUrl": "https://seoulfoodtour.com/food-prices-seoul-daily-budget"
     },
     {
-      "id": "pricing-002",
+      "id": "pricing-003",
       "fact": "The official consumer survey puts the average Seoul price of a gimbap roll at about ₩3,900, kimchi stew with rice at ₩8,700, kalguksu at ₩10,000, bibimbap at ₩11,800, naengmyeon at ₩12,700 and samgyetang at ₩18,200.",
       "figures": [
         "₩3,900",
@@ -90,35 +160,7 @@
       "sourceUrl": "https://seoulfoodtour.com/food-prices-seoul-daily-budget"
     },
     {
-      "id": "pricing-003",
-      "fact": "A roll of gimbap is under ₩4,000 and a stew with rice is under ₩9,000.",
-      "figures": [
-        "₩4,000",
-        "₩9,000"
-      ],
-      "topics": [
-        "pricing",
-        "dishes"
-      ],
-      "sourceSlug": "food-prices-seoul-daily-budget",
-      "sourceUrl": "https://seoulfoodtour.com/food-prices-seoul-daily-budget"
-    },
-    {
       "id": "pricing-004",
-      "fact": "The bowls that visitors seek out, bibimbap and cold noodles, sit a step higher at ₩11,000 to ₩13,000.",
-      "figures": [
-        "₩11,000",
-        "₩13,000"
-      ],
-      "topics": [
-        "pricing",
-        "dishes"
-      ],
-      "sourceSlug": "food-prices-seoul-daily-budget",
-      "sourceUrl": "https://seoulfoodtour.com/food-prices-seoul-daily-budget"
-    },
-    {
-      "id": "pricing-005",
       "fact": "well-known cold-noodle houses in Seoul were reported in 2026 at ₩15,000 to ₩18,000 a bowl.",
       "figures": [
         "2026",
@@ -133,8 +175,8 @@
       "sourceUrl": "https://seoulfoodtour.com/food-prices-seoul-daily-budget"
     },
     {
-      "id": "pricing-006",
-      "fact": "Street food is priced by the item, and most items fall between ₩2,000 and ₩6,000.",
+      "id": "pricing-005",
+      "fact": "Most street-food items in Seoul cost about ₩2,000 to ₩6,000 each.",
       "figures": [
         "₩2,000",
         "₩6,000"
@@ -147,7 +189,7 @@
       "sourceUrl": "https://seoulfoodtour.com/food-prices-seoul-daily-budget"
     },
     {
-      "id": "pricing-007",
+      "id": "pricing-006",
       "fact": "A budget chain sells an Americano for under ₩2,000; a large café chain charges more than twice that, which is more than a roll of gimbap.",
       "figures": [
         "₩2,000"
@@ -159,7 +201,7 @@
       "sourceUrl": "https://seoulfoodtour.com/food-prices-seoul-daily-budget"
     },
     {
-      "id": "pricing-008",
+      "id": "pricing-007",
       "fact": "A plate of tteokbokki runs about ₩4,000 to ₩6,000 and a hotteok about ₩2,000 to ₩3,000.",
       "figures": [
         "₩4,000",
@@ -175,7 +217,7 @@
       "sourceUrl": "https://seoulfoodtour.com/food-prices-seoul-daily-budget"
     },
     {
-      "id": "pricing-009",
+      "id": "pricing-008",
       "fact": "Prices are higher in Myeongdong, where the same tteokbokki is commonly ₩5,000 to ₩7,000.",
       "figures": [
         "₩5,000",
@@ -183,26 +225,27 @@
       ],
       "topics": [
         "pricing",
-        "markets"
+        "markets",
+        "dishes"
+      ],
+      "sourceSlug": "food-prices-seoul-daily-budget",
+      "sourceUrl": "https://seoulfoodtour.com/food-prices-seoul-daily-budget"
+    },
+    {
+      "id": "pricing-009",
+      "fact": "Restaurants in Korea have been required since 2013 to display final prices, with value-added tax and any service charge already included, so the menu price is what you pay.",
+      "figures": [
+        "2013"
+      ],
+      "topics": [
+        "pricing",
+        "payments"
       ],
       "sourceSlug": "food-prices-seoul-daily-budget",
       "sourceUrl": "https://seoulfoodtour.com/food-prices-seoul-daily-budget"
     },
     {
       "id": "pricing-010",
-      "fact": "Since 2013 restaurants have been required to show final prices, with tax and any service charge already included, and there is no tipping.",
-      "figures": [
-        "2013"
-      ],
-      "topics": [
-        "pricing",
-        "etiquette"
-      ],
-      "sourceSlug": "food-prices-seoul-daily-budget",
-      "sourceUrl": "https://seoulfoodtour.com/food-prices-seoul-daily-budget"
-    },
-    {
-      "id": "pricing-011",
       "fact": "A ₩9,000 stew is a stew, a bowl of rice and three or four side dishes.",
       "figures": [
         "₩9,000"
@@ -215,7 +258,7 @@
       "sourceUrl": "https://seoulfoodtour.com/food-prices-seoul-daily-budget"
     },
     {
-      "id": "pricing-012",
+      "id": "pricing-011",
       "fact": "Pork belly averages about ₩18,200 a portion as sold, most restaurants require two portions per table, and a dinner for two with a stew and drinks reaches ₩50,000 to ₩80,000.",
       "figures": [
         "₩18,200",
@@ -230,20 +273,21 @@
       "sourceUrl": "https://seoulfoodtour.com/food-prices-seoul-daily-budget"
     },
     {
-      "id": "pricing-013",
+      "id": "pricing-012",
       "fact": "Hanwoo, the domestic breed, starts at about ₩40,000 for a small portion and climbs steeply.",
       "figures": [
         "₩40,000"
       ],
       "topics": [
         "pricing",
-        "korean-bbq"
+        "korean-bbq",
+        "dishes"
       ],
       "sourceSlug": "food-prices-seoul-daily-budget",
       "sourceUrl": "https://seoulfoodtour.com/food-prices-seoul-daily-budget"
     },
     {
-      "id": "pricing-014",
+      "id": "pricing-013",
       "fact": "Everyday food in Seoul is moderately priced: about ₩8,000 to ₩13,000 for a sit-down meal, with tax included and no tipping.",
       "figures": [
         "₩8,000",
@@ -256,7 +300,7 @@
       "sourceUrl": "https://seoulfoodtour.com/food-prices-seoul-daily-budget"
     },
     {
-      "id": "pricing-015",
+      "id": "pricing-014",
       "fact": "What costs more is barbecue, at roughly ₩25,000 to ₩40,000 per person, premium hanwoo beef, café coffee at about ₩4,500 to ₩5,000 a cup, and street food in visitor districts such as Myeongdong.",
       "figures": [
         "₩25,000",
@@ -273,90 +317,7 @@
       "sourceUrl": "https://seoulfoodtour.com/food-prices-seoul-daily-budget"
     },
     {
-      "id": "markets-002",
-      "fact": "Forty reviews describe breakfast at Gwangjang Market, Namdaemun Market or Mangwon Market: 18, 16 and 6.",
-      "figures": [
-        "18",
-        "16",
-        "6"
-      ],
-      "topics": [
-        "markets",
-        "timing"
-      ],
-      "sourceSlug": "breakfast-seoul-markets-gwangjang-namdaemun-mangwon",
-      "sourceUrl": "https://seoulfoodtour.com/breakfast-seoul-markets-gwangjang-namdaemun-mangwon"
-    },
-    {
-      "id": "markets-003",
-      "fact": "At Namdaemun Market the breakfasts named most are kalguksu and dumplings, and reviewers ate from 7 am.",
-      "figures": [
-        "7 am"
-      ],
-      "topics": [
-        "markets",
-        "dishes",
-        "timing"
-      ],
-      "sourceSlug": "breakfast-seoul-markets-gwangjang-namdaemun-mangwon",
-      "sourceUrl": "https://seoulfoodtour.com/breakfast-seoul-markets-gwangjang-namdaemun-mangwon"
-    },
-    {
-      "id": "markets-004",
-      "fact": "Mangwon Market starts late: 19 reviews found stalls closed in the morning.",
-      "figures": [
-        "19"
-      ],
-      "topics": [
-        "markets",
-        "timing"
-      ],
-      "sourceSlug": "breakfast-seoul-markets-gwangjang-namdaemun-mangwon",
-      "sourceUrl": "https://seoulfoodtour.com/breakfast-seoul-markets-gwangjang-namdaemun-mangwon"
-    },
-    {
-      "id": "markets-005",
-      "fact": "At Gwangjang Market five reviews put the opening at about 9 am, and two describe eating there at 8.",
-      "figures": [
-        "9",
-        "8"
-      ],
-      "topics": [
-        "markets",
-        "timing"
-      ],
-      "sourceSlug": "breakfast-seoul-markets-gwangjang-namdaemun-mangwon",
-      "sourceUrl": "https://seoulfoodtour.com/breakfast-seoul-markets-gwangjang-namdaemun-mangwon"
-    },
-    {
-      "id": "markets-006",
-      "fact": "At Mangwon Market five reviews also put the opening at about 9, but that is the hour for produce, meat and fish.",
-      "figures": [
-        "9"
-      ],
-      "topics": [
-        "markets",
-        "timing"
-      ],
-      "sourceSlug": "breakfast-seoul-markets-gwangjang-namdaemun-mangwon",
-      "sourceUrl": "https://seoulfoodtour.com/breakfast-seoul-markets-gwangjang-namdaemun-mangwon"
-    },
-    {
-      "id": "markets-007",
-      "fact": "Three at Gwangjang Market and one at Namdaemun Market put the arrival of the crowd at about 11.",
-      "figures": [
-        "11"
-      ],
-      "topics": [
-        "markets",
-        "crowds",
-        "timing"
-      ],
-      "sourceSlug": "breakfast-seoul-markets-gwangjang-namdaemun-mangwon",
-      "sourceUrl": "https://seoulfoodtour.com/breakfast-seoul-markets-gwangjang-namdaemun-mangwon"
-    },
-    {
-      "id": "food-tours-004",
+      "id": "food-tours-003",
       "fact": "A group food tour is the affordable, social choice — typically $49–110 per person, in a group of around 12–15, following a set route and pace.",
       "figures": [
         "$49–110",
@@ -364,13 +325,14 @@
       ],
       "topics": [
         "food-tours",
-        "pricing"
+        "pricing",
+        "crowds"
       ],
       "sourceSlug": "group-vs-private-seoul-food-tour",
       "sourceUrl": "https://seoulfoodtour.com/group-vs-private-seoul-food-tour"
     },
     {
-      "id": "food-tours-005",
+      "id": "food-tours-004",
       "fact": "A private tour costs more (usually $150–300+) but gives you a flexible pace, a customizable route, and a guide who adapts in real time to market closures and queues.",
       "figures": [
         "$150–300+"
@@ -383,51 +345,37 @@
       "sourceUrl": "https://seoulfoodtour.com/group-vs-private-seoul-food-tour"
     },
     {
+      "id": "food-tours-005",
+      "fact": "Group tours follow a fixed itinerary and pace, so you can't linger at a stall that fascinates you or skip one that doesn't, and the guide's attention is split across the whole group (usually around 12–15 people, though \"small group\" isn't a strictly regulated term, so check the actual cap).",
+      "figures": [
+        "12–15"
+      ],
+      "topics": [
+        "food-tours",
+        "crowds"
+      ],
+      "sourceSlug": "group-vs-private-seoul-food-tour",
+      "sourceUrl": "https://seoulfoodtour.com/group-vs-private-seoul-food-tour"
+    },
+    {
       "id": "food-tours-006",
-      "fact": "Group tours are the default choice for good reason: they're the most affordable way to get a guided market experience, typically running $49 to $110 per person, and they come with a social energy that many travelers love.",
-      "figures": [
-        "$49",
-        "$110"
-      ],
-      "topics": [
-        "food-tours",
-        "pricing"
-      ],
-      "sourceSlug": "group-vs-private-seoul-food-tour",
-      "sourceUrl": "https://seoulfoodtour.com/group-vs-private-seoul-food-tour"
-    },
-    {
-      "id": "food-tours-007",
-      "fact": "A private tour flips the equation: you pay more — usually $150 to $300 or more — but the entire experience bends to you.",
-      "figures": [
-        "$150",
-        "$300"
-      ],
-      "topics": [
-        "food-tours",
-        "pricing"
-      ],
-      "sourceSlug": "group-vs-private-seoul-food-tour",
-      "sourceUrl": "https://seoulfoodtour.com/group-vs-private-seoul-food-tour"
-    },
-    {
-      "id": "food-tours-008",
       "fact": "Small-group Seoul food tours typically host around 12–15 people, though the exact size varies and \"small group\" isn't a strictly regulated term — some tours cap lower, and a few labeled \"small group\" run larger, so always check the stated maximum before booking.",
       "figures": [
         "12–15"
       ],
       "topics": [
-        "food-tours"
+        "food-tours",
+        "crowds"
       ],
       "sourceSlug": "group-vs-private-seoul-food-tour",
       "sourceUrl": "https://seoulfoodtour.com/group-vs-private-seoul-food-tour"
     },
     {
-      "id": "markets-008",
-      "fact": "Seven describe it as takeaway, and one notes the market has few seats.",
+      "id": "markets-006",
+      "fact": "Twenty-four of 1,089 reviews of Mangwon Market name marinated crab: 2.2%.",
       "figures": [
-        "Seven",
-        "one"
+        "1,089",
+        "2.2%"
       ],
       "topics": [
         "markets",
@@ -437,37 +385,7 @@
       "sourceUrl": "https://seoulfoodtour.com/ganjang-gejang-marinated-crab-mangwon-market"
     },
     {
-      "id": "markets-009",
-      "fact": "Eight of the 24 are written in Korean, and six of those are among the ten verdicts.",
-      "figures": [
-        "Eight",
-        "24",
-        "six",
-        "ten"
-      ],
-      "topics": [
-        "markets",
-        "language"
-      ],
-      "sourceSlug": "ganjang-gejang-marinated-crab-mangwon-market",
-      "sourceUrl": "https://seoulfoodtour.com/ganjang-gejang-marinated-crab-mangwon-market"
-    },
-    {
-      "id": "markets-010",
-      "fact": "Eight reviews call the marinated crab cheap or good value, and four give a price.",
-      "figures": [
-        "Eight",
-        "four"
-      ],
-      "topics": [
-        "markets",
-        "pricing"
-      ],
-      "sourceSlug": "ganjang-gejang-marinated-crab-mangwon-market",
-      "sourceUrl": "https://seoulfoodtour.com/ganjang-gejang-marinated-crab-mangwon-market"
-    },
-    {
-      "id": "pricing-016",
+      "id": "pricing-015",
       "fact": "The French reviewer who paid 28,000 won calls it a very good price for a dish Koreans prize.",
       "figures": [
         "28,000"
@@ -480,34 +398,20 @@
       "sourceUrl": "https://seoulfoodtour.com/ganjang-gejang-marinated-crab-mangwon-market"
     },
     {
-      "id": "markets-011",
-      "fact": "At Gwangjang Market the same search finds five reviews that name marinated crab, and three of them complain about price or size.",
-      "figures": [
-        "five",
-        "three"
-      ],
-      "topics": [
-        "markets",
-        "pricing"
-      ],
-      "sourceSlug": "ganjang-gejang-marinated-crab-mangwon-market",
-      "sourceUrl": "https://seoulfoodtour.com/ganjang-gejang-marinated-crab-mangwon-market"
-    },
-    {
-      "id": "markets-012",
+      "id": "dishes-002",
       "fact": "A reviewer writing in Chinese in 2025 found the soy crabs small with little roe and suggests eating something else.",
       "figures": [
         "2025"
       ],
       "topics": [
-        "markets",
-        "dishes"
+        "dishes",
+        "markets"
       ],
       "sourceSlug": "ganjang-gejang-marinated-crab-mangwon-market",
       "sourceUrl": "https://seoulfoodtour.com/ganjang-gejang-marinated-crab-mangwon-market"
     },
     {
-      "id": "dishes-001",
+      "id": "dishes-003",
       "fact": "Of 1,458 reviews of the market, 142 name the mung bean pancake and 55 say how theirs tasted: 39 call it good, 8 call it average and 8 did not like it, for the grease, the texture or a flavor that did not suit them.",
       "figures": [
         "1,458",
@@ -525,7 +429,7 @@
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-bindaetteok-mung-bean-pancake"
     },
     {
-      "id": "markets-013",
+      "id": "markets-007",
       "fact": "Bindaetteok is named in 9.7% of Gwangjang Market reviews, against 0.1% at Namdaemun Market and 0.2% at Mangwon Market.",
       "figures": [
         "9.7%",
@@ -540,23 +444,7 @@
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-bindaetteok-mung-bean-pancake"
     },
     {
-      "id": "dishes-002",
-      "fact": "Inside the Gwangjang Market sample it leans toward the happy reviews: 10.4% (127) of the four- and five-star reviews name it, against 6.2% (15) of those with three stars or fewer.",
-      "figures": [
-        "10.4%",
-        "127",
-        "6.2%",
-        "15"
-      ],
-      "topics": [
-        "dishes",
-        "markets"
-      ],
-      "sourceSlug": "gwangjang-market-bindaetteok-mung-bean-pancake",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-bindaetteok-mung-bean-pancake"
-    },
-    {
-      "id": "dishes-003",
+      "id": "dishes-004",
       "fact": "Nine of the 55 verdicts come from people who rated the market three stars or lower, and four of the nine still say the pancake was good.",
       "figures": [
         "55"
@@ -569,21 +457,21 @@
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-bindaetteok-mung-bean-pancake"
     },
     {
-      "id": "language-001",
+      "id": "dishes-005",
       "fact": "Chinese-language reviews give 16 of the 55 verdicts and five of the eight negative ones.",
       "figures": [
         "16",
         "55"
       ],
       "topics": [
-        "language",
-        "dishes"
+        "dishes",
+        "language"
       ],
       "sourceSlug": "gwangjang-market-bindaetteok-mung-bean-pancake",
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-bindaetteok-mung-bean-pancake"
     },
     {
-      "id": "pricing-017",
+      "id": "pricing-016",
       "fact": "Three say one pancake is large, and three name what they paid: 5,000 won each, in April 2024, October 2025 and August 2026.",
       "figures": [
         "5,000 won",
@@ -600,38 +488,22 @@
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-bindaetteok-mung-bean-pancake"
     },
     {
-      "id": "crowds-001",
+      "id": "timing-001",
       "fact": "One from July 2019 describes a long line for the pancake, and one from February 2020, when visitors were few, found none.",
       "figures": [
         "July 2019",
         "February 2020"
       ],
       "topics": [
-        "crowds",
         "timing",
+        "crowds",
         "markets"
       ],
       "sourceSlug": "gwangjang-market-bindaetteok-mung-bean-pancake",
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-bindaetteok-mung-bean-pancake"
     },
     {
-      "id": "markets-014",
-      "fact": "Of the 139 reviews that mention blankets or bedding, 111 are written in Chinese, 19 in English and 7 in Japanese.",
-      "figures": [
-        "139",
-        "111",
-        "19",
-        "7"
-      ],
-      "topics": [
-        "markets",
-        "language"
-      ],
-      "sourceSlug": "gwangjang-market-blankets-bedding",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-blankets-bedding"
-    },
-    {
-      "id": "markets-015",
+      "id": "markets-008",
       "fact": "Twenty-six reviewers say they bought: 23 were happy and 3 were not.",
       "figures": [
         "23",
@@ -645,7 +517,7 @@
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-blankets-bedding"
     },
     {
-      "id": "markets-016",
+      "id": "markets-009",
       "fact": "Reviewers report Chinese-speaking staff (15 reviews), vacuum packing (9), shipping home (8) and a 10% surcharge for paying by card (6).",
       "figures": [
         "15",
@@ -663,7 +535,7 @@
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-blankets-bedding"
     },
     {
-      "id": "markets-017",
+      "id": "markets-010",
       "fact": "Eighteen reviews give a shop number, and they give 14 different ones.",
       "figures": [
         "14"
@@ -676,91 +548,7 @@
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-blankets-bedding"
     },
     {
-      "id": "markets-018",
-      "fact": "One, in July 2025, asked whether a blanket was made in Korea, was told yes, and received a box in which the blankets were labeled made in China and only the pillows had been compressed.",
-      "figures": [
-        "July 2025"
-      ],
-      "topics": [
-        "markets",
-        "shopping"
-      ],
-      "sourceSlug": "gwangjang-market-blankets-bedding",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-blankets-bedding"
-    },
-    {
-      "id": "markets-019",
-      "fact": "One, in June 2025, says a shop handed over a yellowed blanket when the purchase was carried out rather than shipped.",
-      "figures": [
-        "June 2025"
-      ],
-      "topics": [
-        "markets",
-        "shopping"
-      ],
-      "sourceSlug": "gwangjang-market-blankets-bedding",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-blankets-bedding"
-    },
-    {
-      "id": "timing-001",
-      "fact": "One arrived after 6 pm and found the shops shut.",
-      "figures": [
-        "6 pm"
-      ],
-      "topics": [
-        "timing",
-        "markets"
-      ],
-      "sourceSlug": "gwangjang-market-blankets-bedding",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-blankets-bedding"
-    },
-    {
-      "id": "markets-020",
-      "fact": "The trade-off: twenty-three happy buyers out of 26 is a good record, and every one of the three complaints is about something a buyer can check on the spot: the label, the actual item handed over, and the price before paying.",
-      "figures": [
-        "26"
-      ],
-      "topics": [
-        "markets",
-        "shopping"
-      ],
-      "sourceSlug": "gwangjang-market-blankets-bedding",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-blankets-bedding"
-    },
-    {
-      "id": "pricing-018",
-      "fact": "In June 2025 another saw the same kind of blanket at 60,000, 65,000, 70,000 and 75,000 won in different shops, and sale items around 45,000.",
-      "figures": [
-        "June 2025",
-        "60,000",
-        "65,000",
-        "70,000",
-        "75,000",
-        "45,000"
-      ],
-      "topics": [
-        "pricing",
-        "markets"
-      ],
-      "sourceSlug": "gwangjang-market-blankets-bedding",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-blankets-bedding"
-    },
-    {
-      "id": "pricing-019",
-      "fact": "one, heading for the shop asking 65,000 won, had the shop asking 70,000 lower its price unprompted.",
-      "figures": [
-        "65,000",
-        "70,000"
-      ],
-      "topics": [
-        "pricing",
-        "markets"
-      ],
-      "sourceSlug": "gwangjang-market-blankets-bedding",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-blankets-bedding"
-    },
-    {
-      "id": "markets-021",
+      "id": "markets-011",
       "fact": "The number that recurs most, 166-2, appears in four reviews.",
       "figures": [
         "166-2"
@@ -773,10 +561,325 @@
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-blankets-bedding"
     },
     {
-      "id": "pricing-020",
+      "id": "markets-012",
+      "fact": "In June 2025 another saw the same kind of blanket at 60,000, 65,000, 70,000 and 75,000 won in different shops, and sale items around 45,000.",
+      "figures": [
+        "June 2025",
+        "60,000",
+        "65,000",
+        "70,000",
+        "75,000",
+        "45,000"
+      ],
+      "topics": [
+        "markets",
+        "pricing"
+      ],
+      "sourceSlug": "gwangjang-market-blankets-bedding",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-blankets-bedding"
+    },
+    {
+      "id": "markets-013",
+      "fact": "One, heading for the shop asking 65,000 won, had the shop asking 70,000 lower its price unprompted.",
+      "figures": [
+        "65,000",
+        "70,000"
+      ],
+      "topics": [
+        "markets",
+        "pricing",
+        "etiquette"
+      ],
+      "sourceSlug": "gwangjang-market-blankets-bedding",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-blankets-bedding"
+    },
+    {
+      "id": "markets-014",
+      "fact": "One, in July 2025, asked whether a blanket was made in Korea, was told yes, and received a box in which the blankets were labeled made in China and only the pillows had been compressed.",
+      "figures": [
+        "July 2025"
+      ],
+      "topics": [
+        "markets",
+        "shopping"
+      ],
+      "sourceSlug": "gwangjang-market-blankets-bedding",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-blankets-bedding"
+    },
+    {
+      "id": "markets-015",
+      "fact": "One, in June 2025, says a shop handed over a yellowed blanket when the purchase was carried out rather than shipped.",
+      "figures": [
+        "June 2025"
+      ],
+      "topics": [
+        "markets",
+        "shopping"
+      ],
+      "sourceSlug": "gwangjang-market-blankets-bedding",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-blankets-bedding"
+    },
+    {
+      "id": "markets-016",
+      "fact": "One arrived after 6 pm and found the shops shut.",
+      "figures": [
+        "6 pm"
+      ],
+      "topics": [
+        "markets",
+        "timing"
+      ],
+      "sourceSlug": "gwangjang-market-blankets-bedding",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-blankets-bedding"
+    },
+    {
+      "id": "markets-017",
+      "fact": "Of the 139 reviews that mention blankets or bedding, 111 are written in Chinese, 19 in English and 7 in Japanese.",
+      "figures": [
+        "139",
+        "111",
+        "19",
+        "7"
+      ],
+      "topics": [
+        "markets",
+        "language"
+      ],
+      "sourceSlug": "gwangjang-market-blankets-bedding",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-blankets-bedding"
+    },
+    {
+      "id": "payments-001",
+      "fact": "Of 1,458 reviews of Gwangjang Market, 24 say how they paid, and 16 of them say to bring cash or report paying with it.",
+      "figures": [
+        "1,458",
+        "24",
+        "16"
+      ],
+      "topics": [
+        "payments",
+        "markets"
+      ],
+      "sourceSlug": "gwangjang-market-cash-or-card",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-cash-or-card"
+    },
+    {
+      "id": "payments-002",
+      "fact": "Five paid by card at least in part, all five written since May 2025.",
+      "figures": [
+        "Five",
+        "May 2025"
+      ],
+      "topics": [
+        "payments",
+        "markets"
+      ],
+      "sourceSlug": "gwangjang-market-cash-or-card",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-cash-or-card"
+    },
+    {
+      "id": "payments-003",
+      "fact": "A Korean-language review from June 2025 says the same thing from the inside: these days, it notes, the stalls take cards too.",
+      "figures": [
+        "June 2025"
+      ],
+      "topics": [
+        "payments",
+        "markets"
+      ],
+      "sourceSlug": "gwangjang-market-cash-or-card",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-cash-or-card"
+    },
+    {
+      "id": "payments-004",
+      "fact": "Two of the five reviewers who paid by card still recommend cash.",
+      "figures": [
+        "Two",
+        "five"
+      ],
+      "topics": [
+        "payments",
+        "markets"
+      ],
+      "sourceSlug": "gwangjang-market-cash-or-card",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-cash-or-card"
+    },
+    {
+      "id": "payments-005",
+      "fact": "A Korean-language review from 2020 goes further and advises bringing plenty of small notes.",
+      "figures": [
+        "2020"
+      ],
+      "topics": [
+        "payments"
+      ],
+      "sourceSlug": "gwangjang-market-cash-or-card",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-cash-or-card"
+    },
+    {
+      "id": "payments-006",
+      "fact": "one reviewer, in 2019, describes a dispute with a shopkeeper over which banknote had been handed over, which is the one risk cash carries that a card does not.",
+      "figures": [
+        "2019"
+      ],
+      "topics": [
+        "payments"
+      ],
+      "sourceSlug": "gwangjang-market-cash-or-card",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-cash-or-card"
+    },
+    {
+      "id": "markets-018",
+      "fact": "Fourteen of the 1,458 reviews of Gwangjang Market mention a menu the reviewer could read.",
+      "figures": [
+        "1,458"
+      ],
+      "topics": [
+        "markets",
+        "language"
+      ],
+      "sourceSlug": "gwangjang-market-english-menus-pointing-prices",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-english-menus-pointing-prices"
+    },
+    {
+      "id": "markets-019",
+      "fact": "Four reviewers writing in Japanese found a Japanese menu between 2019 and 2026, and one of them says every shop had one.",
+      "figures": [
+        "2019",
+        "2026"
+      ],
+      "topics": [
+        "markets",
+        "language"
+      ],
+      "sourceSlug": "gwangjang-market-english-menus-pointing-prices",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-english-menus-pointing-prices"
+    },
+    {
+      "id": "markets-020",
+      "fact": "In 2023 three visitors, in a review written in Japanese, pointed at four dishes on the menu and showed “one” with their fingers for each.",
+      "figures": [
+        "2023"
+      ],
+      "topics": [
+        "markets",
+        "etiquette"
+      ],
+      "sourceSlug": "gwangjang-market-english-menus-pointing-prices",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-english-menus-pointing-prices"
+    },
+    {
+      "id": "markets-021",
+      "fact": "In 2019 another reviewer writing in Japanese signaled one portion of fish cake to a vendor who spoke only Korean; everyone in the group was served and everyone was charged.",
+      "figures": [
+        "2019"
+      ],
+      "topics": [
+        "markets",
+        "etiquette"
+      ],
+      "sourceSlug": "gwangjang-market-english-menus-pointing-prices",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-english-menus-pointing-prices"
+    },
+    {
+      "id": "markets-022",
+      "fact": "A reviewer writing in Chinese in 2025 says some stalls do not mark prices clearly and suggests asking the price and the portion before ordering.",
+      "figures": [
+        "2025"
+      ],
+      "topics": [
+        "markets",
+        "pricing"
+      ],
+      "sourceSlug": "gwangjang-market-english-menus-pointing-prices",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-english-menus-pointing-prices"
+    },
+    {
+      "id": "markets-023",
+      "fact": "A Korean reviewer describing a visit in 2017 says they worked out afterwards that a stall had used two price lists, one when they ordered and another at the bill.",
+      "figures": [
+        "2017"
+      ],
+      "topics": [
+        "markets",
+        "pricing"
+      ],
+      "sourceSlug": "gwangjang-market-english-menus-pointing-prices",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-english-menus-pointing-prices"
+    },
+    {
+      "id": "markets-024",
+      "fact": "a one-star review in Chinese from October 2025 says a stall charged for a dish the table never ordered; the reviewer advises adding up your own bill as you order.",
+      "figures": [
+        "October 2025"
+      ],
+      "topics": [
+        "markets",
+        "pricing"
+      ],
+      "sourceSlug": "gwangjang-market-english-menus-pointing-prices",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-english-menus-pointing-prices"
+    },
+    {
+      "id": "markets-025",
+      "fact": "Two Japanese reviews from 2019 and 2020 say many of the clothing and shoe shops showed no prices.",
+      "figures": [
+        "2019",
+        "2020"
+      ],
+      "topics": [
+        "markets",
+        "pricing",
+        "shopping"
+      ],
+      "sourceSlug": "gwangjang-market-english-menus-pointing-prices",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-english-menus-pointing-prices"
+    },
+    {
+      "id": "apps-001",
+      "fact": "Six reviews mention ordering through a machine, and all six are from 2023 or later.",
+      "figures": [
+        "2023"
+      ],
+      "topics": [
+        "apps",
+        "markets"
+      ],
+      "sourceSlug": "gwangjang-market-english-menus-pointing-prices",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-english-menus-pointing-prices"
+    },
+    {
+      "id": "markets-026",
+      "fact": "Gwangjang Market, opened in 1905, is Korea's oldest permanent market and Seoul's most famous street-food destination, made famous by Netflix's Street Food: Asia.",
+      "figures": [
+        "1905"
+      ],
+      "topics": [
+        "markets"
+      ],
+      "sourceSlug": "gwangjang-market-food-guide",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-food-guide"
+    },
+    {
+      "id": "timing-002",
+      "fact": "Visit on a weekday late morning or lunchtime to beat the crowds, bring cash in small bills (most stalls are cash-only), and take the subway to Jongno 5-ga, Exit 8.",
+      "figures": [
+        "8"
+      ],
+      "topics": [
+        "timing",
+        "payments",
+        "markets"
+      ],
+      "sourceSlug": "gwangjang-market-food-guide",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-food-guide"
+    },
+    {
+      "id": "pricing-017",
       "fact": "Prices are approximate (around ₩1,400 to the US dollar, 2026) and vary by stall and portion; most stalls are cash-only.",
       "figures": [
-        "₩1,400"
+        "₩1,400",
+        "2026"
       ],
       "topics": [
         "pricing",
@@ -786,7 +889,20 @@
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-food-guide"
     },
     {
-      "id": "timing-002",
+      "id": "pricing-018",
+      "fact": "Aim for around ₩30,000–50,000 in cash for a couple of people, and note there are ATMs near Gate 1 if you run short.",
+      "figures": [
+        "₩30,000–50,000"
+      ],
+      "topics": [
+        "pricing",
+        "payments"
+      ],
+      "sourceSlug": "gwangjang-market-food-guide",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-food-guide"
+    },
+    {
+      "id": "timing-003",
       "fact": "The food stalls generally run from around 8:30 AM until late — roughly 11:00 to 11:30 PM — but many don't actually open until 10 or 11 in the morning, so an early visit finds only part of the market awake.",
       "figures": [
         "8:30 AM",
@@ -797,21 +913,6 @@
       ],
       "topics": [
         "timing"
-      ],
-      "sourceSlug": "gwangjang-market-food-guide",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-food-guide"
-    },
-    {
-      "id": "timing-003",
-      "fact": "The upper-level fabric shops keep shorter hours, roughly 8:30 AM to 6 PM, Monday to Saturday.",
-      "figures": [
-        "8:30 AM",
-        "6 PM"
-      ],
-      "topics": [
-        "timing",
-        "shopping",
-        "markets"
       ],
       "sourceSlug": "gwangjang-market-food-guide",
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-food-guide"
@@ -843,7 +944,7 @@
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-food-guide"
     },
     {
-      "id": "crowds-002",
+      "id": "crowds-001",
       "fact": "The market gets packed at peak lunch (roughly 11 AM–2 PM) and again in the evening (6–8 PM), and weekend afternoons are the most crowded of all, with the longest queues at the famous stalls.",
       "figures": [
         "11 AM–2 PM",
@@ -857,195 +958,22 @@
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-food-guide"
     },
     {
-      "id": "markets-022",
+      "id": "markets-027",
       "fact": "The most convenient stop is Jongno 5-ga Station on Line 1, Exit 8, which brings you out right beside the market's Gate 2 — and Gate 2 drops you straight into the heart of the food alley.",
       "figures": [
-        "Line 1",
-        "Exit 8"
+        "1",
+        "8",
+        "2"
       ],
       "topics": [
-        "markets"
+        "markets",
+        "accessibility"
       ],
       "sourceSlug": "gwangjang-market-food-guide",
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-food-guide"
     },
     {
-      "id": "pricing-021",
-      "fact": "Aim for around ₩30,000–50,000 in cash for a couple of people, and note there are ATMs near Gate 1 if you run short.",
-      "figures": [
-        "₩30,000–50,000"
-      ],
-      "topics": [
-        "pricing",
-        "payments"
-      ],
-      "sourceSlug": "gwangjang-market-food-guide",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-food-guide"
-    },
-    {
-      "id": "markets-023",
-      "fact": "Of 1,458 reviews of Gwangjang Market, 24 say how they paid, and 16 of them say to bring cash or report paying with it.",
-      "figures": [
-        "1,458",
-        "24",
-        "16"
-      ],
-      "topics": [
-        "markets",
-        "payments"
-      ],
-      "sourceSlug": "gwangjang-market-cash-or-card",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-cash-or-card"
-    },
-    {
-      "id": "payments-001",
-      "fact": "Five paid by card at least in part, all five written since May 2025.",
-      "figures": [
-        "May 2025"
-      ],
-      "topics": [
-        "payments",
-        "markets"
-      ],
-      "sourceSlug": "gwangjang-market-cash-or-card",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-cash-or-card"
-    },
-    {
-      "id": "payments-002",
-      "fact": "A Korean-language review from June 2025 says the same thing from the inside: these days, it notes, the stalls take cards too.",
-      "figures": [
-        "June 2025"
-      ],
-      "topics": [
-        "payments",
-        "language",
-        "markets"
-      ],
-      "sourceSlug": "gwangjang-market-cash-or-card",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-cash-or-card"
-    },
-    {
-      "id": "payments-003",
-      "fact": "A Korean-language review from 2020 goes further and advises bringing plenty of small notes.",
-      "figures": [
-        "2020"
-      ],
-      "topics": [
-        "payments",
-        "language",
-        "markets"
-      ],
-      "sourceSlug": "gwangjang-market-cash-or-card",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-cash-or-card"
-    },
-    {
-      "id": "payments-004",
-      "fact": "one reviewer, in 2019, describes a dispute with a shopkeeper over which banknote had been handed over, which is the one risk cash carries that a card does not.",
-      "figures": [
-        "2019"
-      ],
-      "topics": [
-        "payments",
-        "etiquette",
-        "markets"
-      ],
-      "sourceSlug": "gwangjang-market-cash-or-card",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-cash-or-card"
-    },
-    {
-      "id": "markets-024",
-      "fact": "Fourteen of the 1,458 reviews of Gwangjang Market mention a menu the reviewer could read.",
-      "figures": [
-        "1,458"
-      ],
-      "topics": [
-        "markets",
-        "language"
-      ],
-      "sourceSlug": "gwangjang-market-english-menus-pointing-prices",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-english-menus-pointing-prices"
-    },
-    {
-      "id": "language-002",
-      "fact": "Four reviewers writing in Japanese found a Japanese menu between 2019 and 2026, and one of them says every shop had one.",
-      "figures": [
-        "2019",
-        "2026"
-      ],
-      "topics": [
-        "language",
-        "markets"
-      ],
-      "sourceSlug": "gwangjang-market-english-menus-pointing-prices",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-english-menus-pointing-prices"
-    },
-    {
-      "id": "markets-025",
-      "fact": "In 2023 three visitors, in a review written in Japanese, pointed at four dishes on the menu and showed \"one\" with their fingers for each.",
-      "figures": [
-        "2023"
-      ],
-      "topics": [
-        "markets",
-        "language"
-      ],
-      "sourceSlug": "gwangjang-market-english-menus-pointing-prices",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-english-menus-pointing-prices"
-    },
-    {
-      "id": "markets-026",
-      "fact": "In 2019 another reviewer writing in Japanese signaled one portion of fish cake to a vendor who spoke only Korean; everyone in the group was served and everyone was charged.",
-      "figures": [
-        "2019"
-      ],
-      "topics": [
-        "markets",
-        "pricing"
-      ],
-      "sourceSlug": "gwangjang-market-english-menus-pointing-prices",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-english-menus-pointing-prices"
-    },
-    {
-      "id": "pricing-022",
-      "fact": "A Korean reviewer describing a visit in 2017 says they worked out afterwards that a stall had used two price lists, one when they ordered and another at the bill.",
-      "figures": [
-        "2017"
-      ],
-      "topics": [
-        "pricing",
-        "markets"
-      ],
-      "sourceSlug": "gwangjang-market-english-menus-pointing-prices",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-english-menus-pointing-prices"
-    },
-    {
-      "id": "pricing-023",
-      "fact": "a one-star review in Chinese from October 2025 says a stall charged for a dish the table never ordered; the reviewer advises adding up your own bill as you order.",
-      "figures": [
-        "October 2025"
-      ],
-      "topics": [
-        "pricing",
-        "markets"
-      ],
-      "sourceSlug": "gwangjang-market-english-menus-pointing-prices",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-english-menus-pointing-prices"
-    },
-    {
-      "id": "apps-001",
-      "fact": "Six reviews mention ordering through a machine, and all six are from 2023 or later.",
-      "figures": [
-        "2023"
-      ],
-      "topics": [
-        "apps",
-        "markets"
-      ],
-      "sourceSlug": "gwangjang-market-english-menus-pointing-prices",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-english-menus-pointing-prices"
-    },
-    {
-      "id": "markets-027",
+      "id": "markets-028",
       "fact": "Of 1,458 reviews of the market, 124 name gimbap and 40 of them call it mayak gimbap, the bite-size version.",
       "figures": [
         "1,458",
@@ -1060,7 +988,7 @@
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-mayak-gimbap"
     },
     {
-      "id": "dishes-004",
+      "id": "dishes-006",
       "fact": "Forty-two say how theirs tasted: 33 call it good, 8 call it ordinary and 1 did not like it.",
       "figures": [
         "33",
@@ -1068,6 +996,21 @@
         "1"
       ],
       "topics": [
+        "dishes"
+      ],
+      "sourceSlug": "gwangjang-market-mayak-gimbap",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-mayak-gimbap"
+    },
+    {
+      "id": "pricing-019",
+      "fact": "Three reviews name a price, and each says 3,000 won an order: two from 2019 and one from October 2025.",
+      "figures": [
+        "3,000",
+        "2019",
+        "October 2025"
+      ],
+      "topics": [
+        "pricing",
         "dishes",
         "markets"
       ],
@@ -1075,48 +1018,51 @@
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-mayak-gimbap"
     },
     {
-      "id": "pricing-024",
-      "fact": "Three reviews name a price, and each says 3,000 won an order: two from 2019 and one from October 2025.",
+      "id": "language-001",
+      "fact": "Forty of the 124 are written in Japanese, 33 in English, 32 in Chinese and 16 in Korean.",
       "figures": [
-        "3,000 won",
-        "2019",
-        "October 2025"
+        "124",
+        "33",
+        "32",
+        "16"
       ],
       "topics": [
-        "pricing",
+        "language",
         "markets"
       ],
+      "scale": "Of 1,458 reviews of the market, 124 name gimbap and 40 of them call it mayak gimbap, the bite-size version.",
       "sourceSlug": "gwangjang-market-mayak-gimbap",
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-mayak-gimbap"
     },
     {
-      "id": "pricing-025",
-      "fact": "The single negative verdict is a one-star review from 2019 whose writer was also charged twice for another dish.",
+      "id": "dishes-007",
+      "fact": "Fifty of the 124 only list gimbap among the things the market sells.",
       "figures": [
-        "2019"
+        "124"
       ],
       "topics": [
-        "pricing",
+        "dishes",
         "markets"
       ],
+      "scale": "Of 1,458 reviews of the market, 124 name gimbap and 40 of them call it mayak gimbap, the bite-size version.",
       "sourceSlug": "gwangjang-market-mayak-gimbap",
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-mayak-gimbap"
     },
     {
-      "id": "markets-028",
-      "fact": "Of 1,458 reviews, 43 talk about sitting.",
+      "id": "dishes-008",
+      "fact": "Seven of the 42 verdicts come from reviews of three stars or lower, and three of the seven are good.",
       "figures": [
-        "1,458",
-        "43"
+        "42"
       ],
       "topics": [
-        "markets"
+        "dishes"
       ],
-      "sourceSlug": "gwangjang-market-seating-benches",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-seating-benches"
+      "scale": "Of the 42 who give a verdict, 33 say the gimbap was good.",
+      "sourceSlug": "gwangjang-market-mayak-gimbap",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-mayak-gimbap"
     },
     {
-      "id": "dishes-005",
+      "id": "markets-029",
       "fact": "Of the 53 reviews of Gwangjang Market that name the donut, 31 say how it tasted, and 29 of them say it was good.",
       "figures": [
         "53",
@@ -1124,33 +1070,34 @@
         "29"
       ],
       "topics": [
-        "dishes",
-        "markets"
+        "markets",
+        "dishes"
       ],
       "sourceSlug": "gwangjang-market-twisted-donut-kkwabaegi",
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-twisted-donut-kkwabaegi"
     },
     {
-      "id": "dishes-006",
+      "id": "markets-030",
       "fact": "At Mangwon Market, where 38 reviews name the same donut, all 16 who judged it liked it and only one mentions a line.",
       "figures": [
         "38",
-        "16"
+        "16",
+        "one"
       ],
       "topics": [
-        "dishes",
-        "markets"
+        "markets",
+        "dishes"
       ],
       "sourceSlug": "gwangjang-market-twisted-donut-kkwabaegi",
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-twisted-donut-kkwabaegi"
     },
     {
-      "id": "pricing-026",
+      "id": "pricing-020",
       "fact": "Three reviewers name the price, and all three say 1,000 won: one in January 2023 and two in June 2025.",
       "figures": [
-        "1,000 won",
-        "January 2023",
-        "June 2025"
+        "1,000",
+        "2023",
+        "2025"
       ],
       "topics": [
         "pricing",
@@ -1162,6 +1109,19 @@
     },
     {
       "id": "timing-006",
+      "fact": "Two note that it opens early: one visitor at 9 am on a Friday found most stalls still shut and the donut stall already open.",
+      "figures": [
+        "9 am"
+      ],
+      "topics": [
+        "timing",
+        "markets"
+      ],
+      "sourceSlug": "gwangjang-market-twisted-donut-kkwabaegi",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-twisted-donut-kkwabaegi"
+    },
+    {
+      "id": "timing-007",
       "fact": "A Japanese reviewer in June 2025 arrived while the stall was getting ready to open at 10 am, an hour that differed from the one listed online, was third in line, and watched a long queue form behind.",
       "figures": [
         "June 2025",
@@ -1176,20 +1136,7 @@
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-twisted-donut-kkwabaegi"
     },
     {
-      "id": "timing-007",
-      "fact": "Two note that it opens early: one visitor at 9 am on a Friday found most stalls still shut and the donut stall already open.",
-      "figures": [
-        "9 am"
-      ],
-      "topics": [
-        "timing",
-        "markets"
-      ],
-      "sourceSlug": "gwangjang-market-twisted-donut-kkwabaegi",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-twisted-donut-kkwabaegi"
-    },
-    {
-      "id": "markets-029",
+      "id": "markets-031",
       "fact": "Of 1,458 reviews of the market, 61 mention the series and 29 describe going to a stall it featured.",
       "figures": [
         "1,458",
@@ -1203,37 +1150,7 @@
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-netflix-stall-reviews"
     },
     {
-      "id": "markets-030",
-      "fact": "Of the 25 who judge the food, 21 are in favour and 4 are not.",
-      "figures": [
-        "25",
-        "21",
-        "4"
-      ],
-      "topics": [
-        "markets",
-        "dishes"
-      ],
-      "scale": "Of 1,458 reviews of the market, 61 mention the series and 29 describe going to a stall it featured.",
-      "sourceSlug": "gwangjang-market-netflix-stall-reviews",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-netflix-stall-reviews"
-    },
-    {
-      "id": "markets-031",
-      "fact": "Ten of the 61 mention a queue or a wait.",
-      "figures": [
-        "61"
-      ],
-      "topics": [
-        "markets",
-        "crowds"
-      ],
-      "scale": "Of 1,458 reviews of the market, 61 mention the series and 29 describe going to a stall it featured.",
-      "sourceSlug": "gwangjang-market-netflix-stall-reviews",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-netflix-stall-reviews"
-    },
-    {
-      "id": "dishes-007",
+      "id": "dishes-009",
       "fact": "The dishes named alongside the series are the ones it showed: knife-cut noodles in 27 reviews, dumplings in 19, mung bean pancake in 13.",
       "figures": [
         "27",
@@ -1249,6 +1166,31 @@
     },
     {
       "id": "markets-032",
+      "fact": "One visitor could not find the stall at all, and a review from September 2026 says some of what the series showed is no longer there",
+      "figures": [
+        "September 2026"
+      ],
+      "topics": [
+        "markets"
+      ],
+      "sourceSlug": "gwangjang-market-netflix-stall-reviews",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-netflix-stall-reviews"
+    },
+    {
+      "id": "markets-033",
+      "fact": "Gwangjang is the yardstick: 83 of the 100 are reviews of Mangwon or Namdaemun that bring up Gwangjang.",
+      "figures": [
+        "83",
+        "100"
+      ],
+      "topics": [
+        "markets"
+      ],
+      "sourceSlug": "gwangjang-vs-namdaemun-vs-mangwon-market",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-vs-namdaemun-vs-mangwon-market"
+    },
+    {
+      "id": "markets-034",
       "fact": "In 100 reviews that name two of Gwangjang Market, Namdaemun Market and Mangwon Market, reviewers give Mangwon the local feel (24 reviews), the thinner crowds (23) and the lower prices (12), and give Gwangjang the choice and the size (15).",
       "figures": [
         "100",
@@ -1259,177 +1201,78 @@
       ],
       "topics": [
         "markets",
-        "crowds",
-        "pricing"
+        "pricing",
+        "crowds"
       ],
       "sourceSlug": "gwangjang-vs-namdaemun-vs-mangwon-market",
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-vs-namdaemun-vs-mangwon-market"
     },
     {
-      "id": "markets-033",
-      "fact": "Of the 1,458 reviews written by people who went, 83.4% give four or five stars and the average is 4.30.",
+      "id": "markets-035",
+      "fact": "Of 1,458 reviews of Gwangjang Market, 210 mention an hour, a day or a time of day.",
       "figures": [
         "1,458",
-        "83.4%",
-        "4.30"
+        "210"
       ],
       "topics": [
-        "markets"
+        "markets",
+        "timing"
       ],
-      "sourceSlug": "gwangjang-market-what-reviews-say",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-what-reviews-say"
-    },
-    {
-      "id": "markets-034",
-      "fact": "Of the 411 items that mention the market, 46 argue against going.",
-      "figures": [
-        "411",
-        "46"
-      ],
-      "topics": [
-        "markets"
-      ],
-      "sourceSlug": "gwangjang-market-what-reviews-say",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-what-reviews-say"
-    },
-    {
-      "id": "markets-035",
-      "fact": "One or two stars account for 6.7% of visitors.",
-      "figures": [
-        "6.7%"
-      ],
-      "topics": [
-        "markets"
-      ],
-      "sourceSlug": "gwangjang-market-what-reviews-say",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-what-reviews-say"
+      "sourceSlug": "gwangjang-market-when-to-go",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-when-to-go"
     },
     {
       "id": "markets-036",
-      "fact": "Of the 45 that give a verdict on the visit itself, 34 say Gwangjang Market is worth it, 7 say so with a condition (once, if you are nearby, or to look rather than to eat) and 4 say it is not, or only barely.",
-      "figures": [
-        "45",
-        "34",
-        "7",
-        "4"
-      ],
-      "topics": [
-        "markets"
-      ],
-      "sourceSlug": "gwangjang-market-what-reviews-say",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-what-reviews-say"
-    },
-    {
-      "id": "markets-037",
-      "fact": "14.5% of low reviews and 4.3% of high ones say most stalls sell the same few dishes.",
-      "figures": [
-        "14.5%",
-        "4.3%"
-      ],
-      "topics": [
-        "markets",
-        "dishes"
-      ],
-      "sourceSlug": "gwangjang-market-what-reviews-say",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-what-reviews-say"
-    },
-    {
-      "id": "markets-038",
-      "fact": "Complaints about a vendor’s manner appear in 23 low reviews and five high ones, and they read differently on each side",
-      "figures": [
-        "23",
-        "five"
-      ],
-      "topics": [
-        "markets",
-        "etiquette"
-      ],
-      "sourceSlug": "gwangjang-market-what-reviews-say",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-what-reviews-say"
-    },
-    {
-      "id": "markets-039",
-      "fact": "Seventeen of the 47 low reviews that call the market expensive are written in Korean, one more than in English.",
-      "figures": [
-        "Seventeen",
-        "47"
-      ],
-      "topics": [
-        "markets",
-        "pricing",
-        "language"
-      ],
-      "sourceSlug": "gwangjang-market-what-reviews-say",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-what-reviews-say"
-    },
-    {
-      "id": "timing-008",
       "fact": "Twenty-two found something closed from mid-afternoon on: in twelve it was the shops, and four who arrived at 8:30 pm or later found many food stalls shut.",
       "figures": [
         "8:30 pm"
       ],
       "topics": [
-        "timing",
-        "markets"
-      ],
-      "sourceSlug": "gwangjang-market-when-to-go",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-when-to-go"
-    },
-    {
-      "id": "timing-009",
-      "fact": "In twelve of the 22, what had closed was the shops: fabric, clothing, bedding, dry goods, a kimchi seller, while the food stalls carried on.",
-      "figures": [
-        "22"
-      ],
-      "topics": [
-        "timing",
         "markets",
-        "shopping"
-      ],
-      "scale": "Twenty-two reviews describe stalls or shops closed or closing from mid-afternoon on, or warn that they close.",
-      "sourceSlug": "gwangjang-market-when-to-go",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-when-to-go"
-    },
-    {
-      "id": "timing-010",
-      "fact": "Not everyone who came late found shutters: two reviewers in the evening group arrived at about 9 pm and still found stalls serving.",
-      "figures": [
-        "9 pm"
-      ],
-      "topics": [
-        "timing",
-        "markets"
+        "timing"
       ],
       "sourceSlug": "gwangjang-market-when-to-go",
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-when-to-go"
     },
     {
-      "id": "timing-011",
-      "fact": "Eight reviews name lunch or midday as a peak, and eight name dinner time or the hours after 5 pm.",
-      "figures": [
-        "5 pm"
-      ],
-      "topics": [
-        "timing",
-        "crowds",
-        "markets"
-      ],
-      "sourceSlug": "gwangjang-market-when-to-go",
-      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-when-to-go"
-    },
-    {
-      "id": "timing-012",
+      "id": "markets-037",
       "fact": "Five reviews put the opening at about 9 am, and three say the crowd arrives from about 11.",
       "figures": [
         "9 am",
         "11"
       ],
       "topics": [
+        "markets",
         "timing",
-        "crowds",
-        "markets"
+        "crowds"
       ],
-      "scale": "From 11am onwards, it can get very crowded.",
+      "sourceSlug": "gwangjang-market-when-to-go",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-when-to-go"
+    },
+    {
+      "id": "markets-038",
+      "fact": "Not everyone who came late found shutters: two reviewers in the evening group arrived at about 9 pm and still found stalls serving.",
+      "figures": [
+        "9 pm"
+      ],
+      "topics": [
+        "markets",
+        "timing"
+      ],
+      "sourceSlug": "gwangjang-market-when-to-go",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-when-to-go"
+    },
+    {
+      "id": "markets-039",
+      "fact": "Eight reviews name lunch or midday as a peak, and eight name dinner time or the hours after 5 pm.",
+      "figures": [
+        "5 pm"
+      ],
+      "topics": [
+        "markets",
+        "timing",
+        "crowds"
+      ],
       "sourceSlug": "gwangjang-market-when-to-go",
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-when-to-go"
     },
@@ -1449,7 +1292,7 @@
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-yukhoe-live-octopus-sannakji"
     },
     {
-      "id": "dishes-008",
+      "id": "dishes-010",
       "fact": "Among reviewers who say how it tasted, 36 of 39 call the yukhoe good and 19 of 24 say the same of the octopus.",
       "figures": [
         "36",
@@ -1464,7 +1307,7 @@
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-yukhoe-live-octopus-sannakji"
     },
     {
-      "id": "language-003",
+      "id": "dishes-011",
       "fact": "What stands out is who writes about them: 80 of the 118 reviews that name yukhoe are in Japanese or Chinese, and so are 48 of the 70 that name the octopus.",
       "figures": [
         "80",
@@ -1473,39 +1316,76 @@
         "70"
       ],
       "topics": [
-        "language",
-        "dishes"
+        "dishes",
+        "language"
       ],
       "sourceSlug": "gwangjang-market-yukhoe-live-octopus-sannakji",
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-yukhoe-live-octopus-sannakji"
     },
     {
-      "id": "language-004",
-      "fact": "Japanese-language reviews give 18 of the 39 verdicts.",
+      "id": "dishes-012",
+      "fact": "One 2025 review, written in Chinese, mentions a half-and-half order that the reviewer found friendly for a first try.",
       "figures": [
-        "18",
-        "39"
+        "2025"
       ],
       "topics": [
-        "language",
-        "dishes"
+        "dishes",
+        "language"
       ],
       "sourceSlug": "gwangjang-market-yukhoe-live-octopus-sannakji",
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-yukhoe-live-octopus-sannakji"
     },
     {
-      "id": "timing-013",
+      "id": "dishes-013",
+      "fact": "A review cannot establish a cause, and one report among the 49 reviewers who give a verdict on either dish is not a rate.",
+      "figures": [
+        "49"
+      ],
+      "topics": [
+        "dishes",
+        "dietary"
+      ],
+      "sourceSlug": "gwangjang-market-yukhoe-live-octopus-sannakji",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-yukhoe-live-octopus-sannakji"
+    },
+    {
+      "id": "dishes-014",
+      "fact": "A 2019 review attaches that to Buchon Yukhoe, and a 2026 review speaks of a Bib Gourmand restaurant without naming it.",
+      "figures": [
+        "2019",
+        "2026"
+      ],
+      "topics": [
+        "dishes",
+        "markets"
+      ],
+      "sourceSlug": "gwangjang-market-yukhoe-live-octopus-sannakji",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-yukhoe-live-octopus-sannakji"
+    },
+    {
+      "id": "crowds-002",
       "fact": "In August 2026 one reviewer counted five groups ahead before 6 pm and 25 on the way out.",
       "figures": [
-        "August 2026",
-        "five",
+        "2026",
         "6 pm",
         "25"
       ],
       "topics": [
-        "timing",
-        "markets",
-        "crowds"
+        "crowds",
+        "timing"
+      ],
+      "sourceSlug": "gwangjang-market-yukhoe-live-octopus-sannakji",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-yukhoe-live-octopus-sannakji"
+    },
+    {
+      "id": "crowds-003",
+      "fact": "In September 2025 one gave up and ate at a stall.",
+      "figures": [
+        "2025"
+      ],
+      "topics": [
+        "crowds",
+        "timing"
       ],
       "sourceSlug": "gwangjang-market-yukhoe-live-octopus-sannakji",
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-yukhoe-live-octopus-sannakji"
@@ -1514,64 +1394,203 @@
       "id": "reservations-001",
       "fact": "Two describe the system: take a number and shop while you wait, in August 2025, or book on a tablet and get an email when your turn is near, in July 2026.",
       "figures": [
-        "August 2025",
-        "July 2026"
+        "2025",
+        "2026"
       ],
       "topics": [
         "reservations",
-        "timing",
-        "markets"
+        "crowds"
       ],
       "sourceSlug": "gwangjang-market-yukhoe-live-octopus-sannakji",
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-yukhoe-live-octopus-sannakji"
     },
     {
-      "id": "timing-014",
+      "id": "timing-008",
       "fact": "A 2019 review mentions an afternoon break, with service resuming at 3 pm.",
       "figures": [
         "2019",
         "3 pm"
       ],
       "topics": [
-        "timing",
-        "markets"
+        "timing"
       ],
       "sourceSlug": "gwangjang-market-yukhoe-live-octopus-sannakji",
       "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-yukhoe-live-octopus-sannakji"
     },
     {
-      "id": "pricing-027",
-      "fact": "Seoul's street food is cheap — a market meal costs $20–30 — so you're not paying a tour for the food.",
+      "id": "markets-041",
+      "fact": "Of the 1,458 reviews written by people who went, 83.4% give four or five stars and the average is 4.30.",
+      "figures": [
+        "1,458",
+        "83.4%",
+        "4.30"
+      ],
+      "topics": [
+        "markets"
+      ],
+      "sourceSlug": "gwangjang-market-what-reviews-say",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-what-reviews-say"
+    },
+    {
+      "id": "markets-042",
+      "fact": "Of the 411 items that mention the market, 46 argue against going.",
+      "figures": [
+        "411",
+        "46"
+      ],
+      "topics": [
+        "markets"
+      ],
+      "sourceSlug": "gwangjang-market-what-reviews-say",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-what-reviews-say"
+    },
+    {
+      "id": "markets-043",
+      "fact": "One or two stars account for 6.7% of visitors.",
+      "figures": [
+        "6.7%"
+      ],
+      "topics": [
+        "markets"
+      ],
+      "sourceSlug": "gwangjang-market-what-reviews-say",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-what-reviews-say"
+    },
+    {
+      "id": "markets-044",
+      "fact": "Of the 45 that give a verdict on the visit itself, 34 say Gwangjang Market is worth it, 7 say so with a condition (once, if you are nearby, or to look rather than to eat) and 4 say it is not, or only barely.",
+      "figures": [
+        "45",
+        "34",
+        "7",
+        "4"
+      ],
+      "topics": [
+        "markets"
+      ],
+      "sourceSlug": "gwangjang-market-what-reviews-say",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-what-reviews-say"
+    },
+    {
+      "id": "markets-045",
+      "fact": "Eleven of those 45 verdicts come from people who rated the market three stars or lower, and seven of the eleven still say go.",
+      "figures": [
+        "Eleven",
+        "45",
+        "three",
+        "seven",
+        "eleven"
+      ],
+      "topics": [
+        "markets"
+      ],
+      "sourceSlug": "gwangjang-market-what-reviews-say",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-what-reviews-say"
+    },
+    {
+      "id": "dishes-015",
+      "fact": "One in five says the food was not good, almost as many call the market expensive, and 16.1% mention dirt, smell or hygiene.",
+      "figures": [
+        "16.1%"
+      ],
+      "topics": [
+        "dishes",
+        "pricing",
+        "markets"
+      ],
+      "sourceSlug": "gwangjang-market-what-reviews-say",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-what-reviews-say"
+    },
+    {
+      "id": "pricing-021",
+      "fact": "Seventeen of the 47 low reviews that call the market expensive are written in Korean, one more than in English.",
+      "figures": [
+        "Seventeen",
+        "47"
+      ],
+      "topics": [
+        "pricing",
+        "language",
+        "markets"
+      ],
+      "sourceSlug": "gwangjang-market-what-reviews-say",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-what-reviews-say"
+    },
+    {
+      "id": "markets-046",
+      "fact": "14.5% of low reviews and 4.3% of high ones say most stalls sell the same few dishes.",
+      "figures": [
+        "14.5%",
+        "4.3%"
+      ],
+      "topics": [
+        "markets",
+        "dishes"
+      ],
+      "sourceSlug": "gwangjang-market-what-reviews-say",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-what-reviews-say"
+    },
+    {
+      "id": "markets-047",
+      "fact": "Complaints about a vendor’s manner appear in 23 low reviews and five high ones, and they read differently on each side",
+      "figures": [
+        "23",
+        "five"
+      ],
+      "topics": [
+        "markets",
+        "etiquette"
+      ],
+      "sourceSlug": "gwangjang-market-what-reviews-say",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-what-reviews-say"
+    },
+    {
+      "id": "pricing-022",
+      "fact": "Eighteen low reviews describe a problem with the bill itself: a dish they did not order, change that did not come back, or a price that was different when they paid.",
+      "figures": [
+        "Eighteen"
+      ],
+      "topics": [
+        "pricing",
+        "payments",
+        "markets"
+      ],
+      "sourceSlug": "gwangjang-market-what-reviews-say",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-what-reviews-say"
+    },
+    {
+      "id": "pricing-023",
+      "fact": "Fifteen of the low reviews mention overcharging and foreign visitors in the same breath.",
+      "figures": [
+        "Fifteen"
+      ],
+      "topics": [
+        "pricing",
+        "markets"
+      ],
+      "sourceSlug": "gwangjang-market-what-reviews-say",
+      "sourceUrl": "https://seoulfoodtour.com/gwangjang-market-what-reviews-say"
+    },
+    {
+      "id": "markets-048",
+      "fact": "You can eat a full, delicious meal at Gwangjang Market for $20–30, so a tour costing several times that clearly isn't about the price of the dishes.",
       "figures": [
         "$20–30"
       ],
       "topics": [
-        "pricing",
-        "food-tours",
-        "markets"
-      ],
-      "sourceSlug": "is-seoul-food-tour-worth-it",
-      "sourceUrl": "https://seoulfoodtour.com/is-seoul-food-tour-worth-it"
-    },
-    {
-      "id": "food-tours-009",
-      "fact": "You're paying for a guide who skips the 30–40 minute queues, translates Korean-only menus, steers you to the best stalls, and adds cultural context.",
-      "figures": [
-        "30–40"
-      ],
-      "topics": [
-        "food-tours",
         "markets",
-        "timing"
+        "pricing",
+        "dishes"
       ],
       "sourceSlug": "is-seoul-food-tour-worth-it",
       "sourceUrl": "https://seoulfoodtour.com/is-seoul-food-tour-worth-it"
     },
     {
-      "id": "markets-041",
+      "id": "markets-049",
       "fact": "The famous stalls, especially the Netflix-featured ones at Gwangjang, can have 30 to 40 minute queues at peak times.",
       "figures": [
-        "30 to 40"
+        "30",
+        "40"
       ],
       "topics": [
         "markets",
@@ -1582,113 +1601,173 @@
       "sourceUrl": "https://seoulfoodtour.com/is-seoul-food-tour-worth-it"
     },
     {
-      "id": "pricing-028",
-      "fact": "Exploring on your own is far cheaper (a market meal is $20–30 versus a tour costing several times that) and preserves the adventure, and Seoul's markets are approachable enough that confident eaters manage well solo, especially with translation apps.",
+      "id": "food-tours-007",
+      "fact": "You're paying for a guide who skips the 30–40 minute queues, translates Korean-only menus, steers you to the best stalls, and adds cultural context.",
       "figures": [
-        "$20–30"
+        "30–40 minute"
+      ],
+      "topics": [
+        "food-tours",
+        "timing",
+        "crowds",
+        "language"
+      ],
+      "sourceSlug": "is-seoul-food-tour-worth-it",
+      "sourceUrl": "https://seoulfoodtour.com/is-seoul-food-tour-worth-it"
+    },
+    {
+      "id": "timing-009",
+      "fact": "Four went on a weekday: a Monday at nine, a Tuesday at half past one, a Friday at eleven, and one who names no hour.",
+      "figures": [
+        "Four",
+        "nine",
+        "half past one",
+        "eleven"
+      ],
+      "topics": [
+        "timing",
+        "crowds"
+      ],
+      "sourceSlug": "is-mangwon-market-crowded-weekday-weekend",
+      "sourceUrl": "https://seoulfoodtour.com/is-mangwon-market-crowded-weekday-weekend"
+    },
+    {
+      "id": "timing-010",
+      "fact": "One reviewer writing in Chinese recommends arriving at 11 or at about 2 p.m., when the shops are open and the lunch crowd is thinner.",
+      "figures": [
+        "11",
+        "2 p.m."
+      ],
+      "topics": [
+        "timing",
+        "crowds",
+        "language"
+      ],
+      "sourceSlug": "is-mangwon-market-crowded-weekday-weekend",
+      "sourceUrl": "https://seoulfoodtour.com/is-mangwon-market-crowded-weekday-weekend"
+    },
+    {
+      "id": "pricing-024",
+      "fact": "Pork belly (samgyeopsal) runs roughly ₩15,000–20,000 a portion, a dinner for two about ₩50,000–80,000, and all-you-can-eat about ₩18,000–30,000 a head.",
+      "figures": [
+        "₩15,000–20,000",
+        "₩50,000–80,000",
+        "₩18,000–30,000"
       ],
       "topics": [
         "pricing",
-        "markets",
-        "food-tours",
-        "apps"
+        "korean-bbq"
       ],
-      "sourceSlug": "is-seoul-food-tour-worth-it",
-      "sourceUrl": "https://seoulfoodtour.com/is-seoul-food-tour-worth-it"
+      "sourceSlug": "korean-bbq-seoul-guide",
+      "sourceUrl": "https://seoulfoodtour.com/korean-bbq-seoul-guide"
     },
     {
-      "id": "food-tours-010",
-      "fact": "Next, look for a good tastings-to-price ratio: a tour serving ten-plus dishes is better value than one serving five for a similar price.",
+      "id": "pricing-025",
+      "fact": "The official price surveys count a portion of pork belly as 200 grams, but Korean press reports describe restaurants now selling portions of 150 to 180 grams, which keeps the price on the menu under ₩20,000.",
       "figures": [
-        "ten-plus",
-        "five"
-      ],
-      "topics": [
-        "food-tours",
-        "pricing"
-      ],
-      "sourceSlug": "is-seoul-food-tour-worth-it",
-      "sourceUrl": "https://seoulfoodtour.com/is-seoul-food-tour-worth-it"
-    },
-    {
-      "id": "korean-bbq-001",
-      "fact": "For pork belly at an ordinary restaurant, plan on roughly ₩25,000 to ₩40,000 per person including rice or stew and a drink, with menu portions of 150 to 180 grams priced at about ₩15,000 to ₩20,000 each.",
-      "figures": [
-        "₩25,000",
-        "₩40,000",
-        "150 to 180",
-        "₩15,000",
+        "200 grams",
+        "150 to 180 grams",
         "₩20,000"
       ],
       "topics": [
+        "pricing",
+        "korean-bbq"
+      ],
+      "sourceSlug": "korean-bbq-seoul-guide",
+      "sourceUrl": "https://seoulfoodtour.com/korean-bbq-seoul-guide"
+    },
+    {
+      "id": "korean-bbq-001",
+      "fact": "Two portions is therefore less meat than it sounds: about 300 to 360 grams before cooking.",
+      "figures": [
+        "300 to 360 grams"
+      ],
+      "topics": [
         "korean-bbq",
+        "dishes"
+      ],
+      "sourceSlug": "korean-bbq-seoul-guide",
+      "sourceUrl": "https://seoulfoodtour.com/korean-bbq-seoul-guide"
+    },
+    {
+      "id": "pricing-026",
+      "fact": "The Seoul average for a 200-gram portion passed ₩20,000 in 2024 and stood at about ₩21,300 in the agency’s August 2026 survey.",
+      "figures": [
+        "200-gram",
+        "₩20,000",
+        "2024",
+        "₩21,300",
+        "August 2026"
+      ],
+      "topics": [
+        "pricing",
+        "korean-bbq"
+      ],
+      "sourceSlug": "korean-bbq-seoul-guide",
+      "sourceUrl": "https://seoulfoodtour.com/korean-bbq-seoul-guide"
+    },
+    {
+      "id": "pricing-027",
+      "fact": "a menu that says ₩16,000 or ₩18,000 can cost more per gram than one that says ₩20,000.",
+      "figures": [
+        "₩16,000",
+        "₩18,000",
+        "₩20,000"
+      ],
+      "topics": [
         "pricing"
+      ],
+      "sourceSlug": "korean-bbq-seoul-guide",
+      "sourceUrl": "https://seoulfoodtour.com/korean-bbq-seoul-guide"
+    },
+    {
+      "id": "pricing-028",
+      "fact": "Hanwoo, the domestic breed that Korean diners treat as the premium choice, starts at about ₩40,000 for a portion of 100 to 150 grams and climbs far higher for the best cuts.",
+      "figures": [
+        "₩40,000",
+        "100 to 150 grams"
+      ],
+      "topics": [
+        "pricing",
+        "dishes",
+        "korean-bbq"
+      ],
+      "sourceSlug": "korean-bbq-seoul-guide",
+      "sourceUrl": "https://seoulfoodtour.com/korean-bbq-seoul-guide"
+    },
+    {
+      "id": "pricing-029",
+      "fact": "For pork belly at an ordinary restaurant, plan on roughly ₩25,000 to ₩40,000 per person including rice or stew and a drink, with menu portions of 150 to 180 grams priced at about ₩15,000 to ₩20,000 each.",
+      "figures": [
+        "₩25,000 to ₩40,000",
+        "150 to 180 grams",
+        "₩15,000 to ₩20,000"
+      ],
+      "topics": [
+        "pricing",
+        "korean-bbq"
+      ],
+      "sourceSlug": "korean-bbq-seoul-guide",
+      "sourceUrl": "https://seoulfoodtour.com/korean-bbq-seoul-guide"
+    },
+    {
+      "id": "pricing-030",
+      "fact": "You pay a flat price per person, about ₩18,000 to ₩30,000, and take meat until a time limit runs out.",
+      "figures": [
+        "₩18,000 to ₩30,000"
+      ],
+      "topics": [
+        "pricing",
+        "korean-bbq"
       ],
       "sourceSlug": "korean-bbq-seoul-guide",
       "sourceUrl": "https://seoulfoodtour.com/korean-bbq-seoul-guide"
     },
     {
       "id": "korean-bbq-002",
-      "fact": "For the whole meal, a pork belly dinner for two with a stew or rice and a couple of drinks lands at roughly ₩50,000 to ₩80,000.",
+      "fact": "Most Korean barbecue restaurants require at least two portions of meat per table, written 2인분, whether one person or two sit down.",
       "figures": [
-        "₩50,000",
-        "₩80,000"
-      ],
-      "topics": [
-        "korean-bbq",
-        "pricing"
-      ],
-      "sourceSlug": "korean-bbq-seoul-guide",
-      "sourceUrl": "https://seoulfoodtour.com/korean-bbq-seoul-guide"
-    },
-    {
-      "id": "korean-bbq-003",
-      "fact": "All-you-can-eat places run about ₩18,000 to ₩30,000 per person.",
-      "figures": [
-        "₩18,000",
-        "₩30,000"
-      ],
-      "topics": [
-        "korean-bbq",
-        "pricing"
-      ],
-      "sourceSlug": "korean-bbq-seoul-guide",
-      "sourceUrl": "https://seoulfoodtour.com/korean-bbq-seoul-guide"
-    },
-    {
-      "id": "korean-bbq-004",
-      "fact": "Hanwoo, the domestic breed that Korean diners treat as the premium choice, starts at about ₩40,000 for a portion of 100 to 150 grams and climbs far higher for the best cuts.",
-      "figures": [
-        "₩40,000",
-        "100 to 150"
-      ],
-      "topics": [
-        "korean-bbq",
-        "pricing"
-      ],
-      "sourceSlug": "korean-bbq-seoul-guide",
-      "sourceUrl": "https://seoulfoodtour.com/korean-bbq-seoul-guide"
-    },
-    {
-      "id": "korean-bbq-005",
-      "fact": "The official price surveys count a portion of pork belly as 200 grams, but Korean press reports describe restaurants now selling portions of 150 to 180 grams, which keeps the price on the menu under ₩20,000.",
-      "figures": [
-        "200",
-        "150 to 180",
-        "₩20,000"
-      ],
-      "topics": [
-        "korean-bbq",
-        "pricing"
-      ],
-      "sourceSlug": "korean-bbq-seoul-guide",
-      "sourceUrl": "https://seoulfoodtour.com/korean-bbq-seoul-guide"
-    },
-    {
-      "id": "korean-bbq-006",
-      "fact": "Two portions is therefore less meat than it sounds: about 300 to 360 grams before cooking.",
-      "figures": [
-        "300 to 360"
+        "2인분"
       ],
       "topics": [
         "korean-bbq"
@@ -1697,54 +1776,22 @@
       "sourceUrl": "https://seoulfoodtour.com/korean-bbq-seoul-guide"
     },
     {
-      "id": "korean-bbq-007",
-      "fact": "The Seoul average for a 200-gram portion passed ₩20,000 in 2024 and stood at about ₩21,300 in the agency’s August 2026 survey.",
+      "id": "language-002",
+      "fact": "The Korean word on the menu is inbun, a serving for one person: 1인분 is one portion, 2인분 is two.",
       "figures": [
-        "200",
-        "₩20,000",
-        "2024",
-        "₩21,300",
-        "August 2026"
+        "1인분",
+        "2인분"
       ],
       "topics": [
+        "language",
         "korean-bbq",
-        "pricing"
+        "dishes"
       ],
       "sourceSlug": "korean-bbq-seoul-guide",
       "sourceUrl": "https://seoulfoodtour.com/korean-bbq-seoul-guide"
     },
     {
-      "id": "markets-042",
-      "fact": "Sixty reviews of Mangwon Market say it is crowded, 43 of them written in Korean, and 16 point to the weekend.",
-      "figures": [
-        "43",
-        "16"
-      ],
-      "topics": [
-        "markets",
-        "crowds",
-        "language"
-      ],
-      "sourceSlug": "is-mangwon-market-crowded-weekday-weekend",
-      "sourceUrl": "https://seoulfoodtour.com/is-mangwon-market-crowded-weekday-weekend"
-    },
-    {
-      "id": "markets-043",
-      "fact": "One reviewer writing in Chinese recommends arriving at 11 or at about 2 p.m., when the shops are open and the lunch crowd is thinner.",
-      "figures": [
-        "11",
-        "2 p.m."
-      ],
-      "topics": [
-        "markets",
-        "timing",
-        "crowds"
-      ],
-      "sourceSlug": "is-mangwon-market-crowded-weekday-weekend",
-      "sourceUrl": "https://seoulfoodtour.com/is-mangwon-market-crowded-weekday-weekend"
-    },
-    {
-      "id": "dishes-009",
+      "id": "dishes-016",
       "fact": "Of the 204 reviews, 84 say how the hotteok tasted, and 76 of those say it was good.",
       "figures": [
         "204",
@@ -1755,94 +1802,12 @@
         "dishes",
         "markets"
       ],
+      "scale": "That gives 204 reviews: 93, 77 and 34.",
       "sourceSlug": "hotteok-seoul-namdaemun-mangwon-gwangjang",
       "sourceUrl": "https://seoulfoodtour.com/hotteok-seoul-namdaemun-mangwon-gwangjang"
     },
     {
-      "id": "dishes-010",
-      "fact": "Twenty-nine of the 93 reviews name the vegetable version, also called japchae hotteok: a fried shell filled with glass noodles and vegetables.",
-      "figures": [
-        "93"
-      ],
-      "topics": [
-        "dishes",
-        "markets"
-      ],
-      "sourceSlug": "hotteok-seoul-namdaemun-mangwon-gwangjang",
-      "sourceUrl": "https://seoulfoodtour.com/hotteok-seoul-namdaemun-mangwon-gwangjang"
-    },
-    {
-      "id": "markets-044",
-      "fact": "One review from January 2025 names Gate 5.",
-      "figures": [
-        "January 2025",
-        "5"
-      ],
-      "topics": [
-        "markets",
-        "dishes"
-      ],
-      "sourceSlug": "hotteok-seoul-namdaemun-mangwon-gwangjang",
-      "sourceUrl": "https://seoulfoodtour.com/hotteok-seoul-namdaemun-mangwon-gwangjang"
-    },
-    {
-      "id": "dishes-011",
-      "fact": "Forty-one of the 43 verdicts at Namdaemun Market are good.",
-      "figures": [
-        "43"
-      ],
-      "topics": [
-        "dishes",
-        "markets"
-      ],
-      "sourceSlug": "hotteok-seoul-namdaemun-mangwon-gwangjang",
-      "sourceUrl": "https://seoulfoodtour.com/hotteok-seoul-namdaemun-mangwon-gwangjang"
-    },
-    {
-      "id": "markets-045",
-      "fact": "A Korean reviewer waited 50 minutes in February 2023 and concluded that the hotteok is good for a short weekday wait and hard to justify for fifty minutes.",
-      "figures": [
-        "50",
-        "February 2023"
-      ],
-      "topics": [
-        "markets",
-        "dishes",
-        "timing",
-        "crowds"
-      ],
-      "sourceSlug": "hotteok-seoul-namdaemun-mangwon-gwangjang",
-      "sourceUrl": "https://seoulfoodtour.com/hotteok-seoul-namdaemun-mangwon-gwangjang"
-    },
-    {
-      "id": "markets-046",
-      "fact": "Two practical reports: a visitor in July 2025 came on a Monday and found the stall closed, and one reviewer notes how it takes payment.",
-      "figures": [
-        "July 2025"
-      ],
-      "topics": [
-        "markets",
-        "timing",
-        "payments"
-      ],
-      "sourceSlug": "hotteok-seoul-namdaemun-mangwon-gwangjang",
-      "sourceUrl": "https://seoulfoodtour.com/hotteok-seoul-namdaemun-mangwon-gwangjang"
-    },
-    {
-      "id": "dishes-012",
-      "fact": "Twenty-six of the 29 verdicts are good.",
-      "figures": [
-        "29"
-      ],
-      "topics": [
-        "dishes",
-        "markets"
-      ],
-      "sourceSlug": "hotteok-seoul-namdaemun-mangwon-gwangjang",
-      "sourceUrl": "https://seoulfoodtour.com/hotteok-seoul-namdaemun-mangwon-gwangjang"
-    },
-    {
-      "id": "markets-047",
+      "id": "markets-050",
       "fact": "Gwangjang Market is known for other things, and only 34 of its 1,458 reviews name hotteok.",
       "figures": [
         "34",
@@ -1856,42 +1821,202 @@
       "sourceUrl": "https://seoulfoodtour.com/hotteok-seoul-namdaemun-mangwon-gwangjang"
     },
     {
-      "id": "markets-048",
+      "id": "dishes-017",
+      "fact": "Forty-one of the 43 verdicts at Namdaemun Market are good.",
+      "figures": [
+        "Forty-one",
+        "43"
+      ],
+      "topics": [
+        "dishes",
+        "markets"
+      ],
+      "scale": "A review counts as a verdict only when the reviewer ate the hotteok and says how it was: 84 do.",
+      "sourceSlug": "hotteok-seoul-namdaemun-mangwon-gwangjang",
+      "sourceUrl": "https://seoulfoodtour.com/hotteok-seoul-namdaemun-mangwon-gwangjang"
+    },
+    {
+      "id": "pricing-031",
       "fact": "The Namdaemun Market price reports rise steadily: 1,000 won in three reviews from late 2019 and early 2020, 2,000 won for the vegetable one in June 2024 and 2,500 won in two reviews from May and June 2025.",
       "figures": [
         "1,000 won",
+        "2019",
+        "2020",
         "2,000 won",
-        "2,500 won",
-        "late 2019",
-        "early 2020",
         "June 2024",
+        "2,500 won",
         "May",
         "June 2025"
       ],
       "topics": [
-        "markets",
         "pricing",
+        "markets",
         "dishes"
       ],
       "sourceSlug": "hotteok-seoul-namdaemun-mangwon-gwangjang",
       "sourceUrl": "https://seoulfoodtour.com/hotteok-seoul-namdaemun-mangwon-gwangjang"
     },
     {
-      "id": "markets-049",
-      "fact": "A Japanese reviewer in December 2025 notes that hotteok there had gone up, to prices starting at 2,000 won.",
+      "id": "markets-051",
+      "fact": "In our samples, mandu is named in 5.8% of reviews of Gwangjang Market, 3.8% of Namdaemun Market and 1.7% of Mangwon Market.",
       "figures": [
-        "2,000 won",
-        "December 2025"
+        "5.8%",
+        "3.8%",
+        "1.7%"
       ],
       "topics": [
         "markets",
-        "pricing"
+        "dishes"
       ],
-      "sourceSlug": "hotteok-seoul-namdaemun-mangwon-gwangjang",
-      "sourceUrl": "https://seoulfoodtour.com/hotteok-seoul-namdaemun-mangwon-gwangjang"
+      "sourceSlug": "mandu-dumplings-seoul-gwangjang-namdaemun-mangwon",
+      "sourceUrl": "https://seoulfoodtour.com/mandu-dumplings-seoul-gwangjang-namdaemun-mangwon"
     },
     {
-      "id": "pricing-029",
+      "id": "dishes-018",
+      "fact": "At Gwangjang Market, 16 reviews tie the dumplings to the noodle stall featured on Netflix.",
+      "figures": [
+        "16"
+      ],
+      "topics": [
+        "dishes",
+        "markets"
+      ],
+      "sourceSlug": "mandu-dumplings-seoul-gwangjang-namdaemun-mangwon",
+      "sourceUrl": "https://seoulfoodtour.com/mandu-dumplings-seoul-gwangjang-namdaemun-mangwon"
+    },
+    {
+      "id": "markets-052",
+      "fact": "At Namdaemun Market the draw is a steamed mandu shop with a queue, named in four reviews as Gamegol Son Wang Mandu.",
+      "figures": [
+        "four"
+      ],
+      "topics": [
+        "markets",
+        "dishes"
+      ],
+      "sourceSlug": "mandu-dumplings-seoul-gwangjang-namdaemun-mangwon",
+      "sourceUrl": "https://seoulfoodtour.com/mandu-dumplings-seoul-gwangjang-namdaemun-mangwon"
+    },
+    {
+      "id": "dishes-019",
+      "fact": "At Gwangjang Market 31 of the 39 reviewers who judged the mandu liked them.",
+      "figures": [
+        "31",
+        "39"
+      ],
+      "topics": [
+        "dishes",
+        "markets"
+      ],
+      "sourceSlug": "mandu-dumplings-seoul-gwangjang-namdaemun-mangwon",
+      "sourceUrl": "https://seoulfoodtour.com/mandu-dumplings-seoul-gwangjang-namdaemun-mangwon"
+    },
+    {
+      "id": "dishes-020",
+      "fact": "Sixteen of the 84 reviews that name mandu are about one place, the noodle and dumpling stall that appeared on Netflix, which we cover in a separate article.",
+      "figures": [
+        "Sixteen",
+        "84"
+      ],
+      "topics": [
+        "dishes",
+        "markets"
+      ],
+      "sourceSlug": "mandu-dumplings-seoul-gwangjang-namdaemun-mangwon",
+      "sourceUrl": "https://seoulfoodtour.com/mandu-dumplings-seoul-gwangjang-namdaemun-mangwon"
+    },
+    {
+      "id": "dishes-021",
+      "fact": "One says the food at several stalls was not good for the price, with small dumplings at 8,000 won.",
+      "figures": [
+        "8,000 won"
+      ],
+      "topics": [
+        "dishes",
+        "pricing",
+        "markets"
+      ],
+      "sourceSlug": "mandu-dumplings-seoul-gwangjang-namdaemun-mangwon",
+      "sourceUrl": "https://seoulfoodtour.com/mandu-dumplings-seoul-gwangjang-namdaemun-mangwon"
+    },
+    {
+      "id": "dishes-022",
+      "fact": "At Namdaemun Market 17 of the 21 reviewers who judged the mandu liked them, and four reviews name the shop: Gamegol Son Wang Mandu (가메골 손왕만두), which reviewers also write as Kamegol.",
+      "figures": [
+        "17",
+        "21",
+        "four"
+      ],
+      "topics": [
+        "dishes",
+        "markets"
+      ],
+      "sourceSlug": "mandu-dumplings-seoul-gwangjang-namdaemun-mangwon",
+      "sourceUrl": "https://seoulfoodtour.com/mandu-dumplings-seoul-gwangjang-namdaemun-mangwon"
+    },
+    {
+      "id": "dishes-023",
+      "fact": "Two note a minimum order of five pieces, which one reviewer counts against the market.",
+      "figures": [
+        "five"
+      ],
+      "topics": [
+        "dishes",
+        "markets"
+      ],
+      "sourceSlug": "mandu-dumplings-seoul-gwangjang-namdaemun-mangwon",
+      "sourceUrl": "https://seoulfoodtour.com/mandu-dumplings-seoul-gwangjang-namdaemun-mangwon"
+    },
+    {
+      "id": "markets-053",
+      "fact": "Only 18 reviews of Mangwon Market name mandu, and the five that say how they tasted all liked them.",
+      "figures": [
+        "18",
+        "five"
+      ],
+      "topics": [
+        "markets",
+        "dishes"
+      ],
+      "sourceSlug": "mandu-dumplings-seoul-gwangjang-namdaemun-mangwon",
+      "sourceUrl": "https://seoulfoodtour.com/mandu-dumplings-seoul-gwangjang-namdaemun-mangwon"
+    },
+    {
+      "id": "dishes-024",
+      "fact": "What they add is a price and a portion: five large dumplings for 6,000 won in March 2026.",
+      "figures": [
+        "five",
+        "6,000 won",
+        "March 2026"
+      ],
+      "topics": [
+        "dishes",
+        "pricing",
+        "markets"
+      ],
+      "sourceSlug": "mandu-dumplings-seoul-gwangjang-namdaemun-mangwon",
+      "sourceUrl": "https://seoulfoodtour.com/mandu-dumplings-seoul-gwangjang-namdaemun-mangwon"
+    },
+    {
+      "id": "dishes-025",
+      "fact": "On price, Gwangjang Market reviewers report 5,000 won an order in May 2019 and January 2020, and one reports 8,000 won for small dumplings in August 2025.",
+      "figures": [
+        "5,000 won",
+        "May 2019",
+        "January 2020",
+        "8,000 won",
+        "August 2025"
+      ],
+      "topics": [
+        "dishes",
+        "pricing",
+        "markets"
+      ],
+      "sourceSlug": "mandu-dumplings-seoul-gwangjang-namdaemun-mangwon",
+      "sourceUrl": "https://seoulfoodtour.com/mandu-dumplings-seoul-gwangjang-namdaemun-mangwon"
+    },
+    {
+      "id": "pricing-032",
       "fact": "Most dishes cost just ₩1,000–10,000 (about $1–8), so you can sample widely.",
       "figures": [
         "₩1,000–10,000",
@@ -1905,19 +2030,20 @@
       "sourceUrl": "https://seoulfoodtour.com/korean-street-food-glossary"
     },
     {
-      "id": "dishes-013",
+      "id": "dishes-026",
       "fact": "One warning learned exactly once by everyone: the sugar filling is volcanically hot, so let it cool for at least 30 seconds before biting.",
       "figures": [
         "30 seconds"
       ],
       "topics": [
-        "dishes"
+        "dishes",
+        "timing"
       ],
       "sourceSlug": "korean-street-food-glossary",
       "sourceUrl": "https://seoulfoodtour.com/korean-street-food-glossary"
     },
     {
-      "id": "payments-005",
+      "id": "payments-007",
       "fact": "Most importantly, bring cash in small bills — traditional markets and older stalls are frequently cash-only, so carry ₩30,000–50,000 on any market day (ATMs are in every convenience store if you run short).",
       "figures": [
         "₩30,000–50,000"
@@ -1930,20 +2056,7 @@
       "sourceUrl": "https://seoulfoodtour.com/korean-street-food-glossary"
     },
     {
-      "id": "timing-015",
-      "fact": "time it by season: winter (November to February) is peak street food season, when hot tteokbokki, odeng broth, hotteok, and bungeoppang are at their most magical, while in humid summer many stalls cut hours or close.",
-      "figures": [
-        "November to February"
-      ],
-      "topics": [
-        "timing",
-        "dishes"
-      ],
-      "sourceSlug": "korean-street-food-glossary",
-      "sourceUrl": "https://seoulfoodtour.com/korean-street-food-glossary"
-    },
-    {
-      "id": "pricing-030",
+      "id": "pricing-033",
       "fact": "Dish descriptions, spice levels, and prices reflect current 2026 information and vary by stall, season, and location — approximate USD equivalents use roughly ₩1,400 to the dollar.",
       "figures": [
         "2026",
@@ -1956,7 +2069,79 @@
       "sourceUrl": "https://seoulfoodtour.com/korean-street-food-glossary"
     },
     {
-      "id": "language-005",
+      "id": "markets-054",
+      "fact": "The river comes up in 19 reviews, the café streets in 38, Hongdae in 21 and the market across the road in 17.",
+      "figures": [
+        "19",
+        "38",
+        "21",
+        "17"
+      ],
+      "topics": [
+        "markets",
+        "crowds"
+      ],
+      "sourceSlug": "mangwon-market-hangang-park-mangnidan-gil-how-to-get-there",
+      "sourceUrl": "https://seoulfoodtour.com/mangwon-market-hangang-park-mangnidan-gil-how-to-get-there"
+    },
+    {
+      "id": "markets-055",
+      "fact": "The official Visit Seoul listing gives Subway Line 6, Mangwon Station, Exit 2, 351 m.",
+      "figures": [
+        "6",
+        "2",
+        "351"
+      ],
+      "topics": [
+        "markets",
+        "accessibility"
+      ],
+      "sourceSlug": "mangwon-market-hangang-park-mangnidan-gil-how-to-get-there",
+      "sourceUrl": "https://seoulfoodtour.com/mangwon-market-hangang-park-mangnidan-gil-how-to-get-there"
+    },
+    {
+      "id": "markets-056",
+      "fact": "The trade-off: the picnic depends on the weather and on a walk reviewers time at anything from five to 20 minutes.",
+      "figures": [
+        "five",
+        "20"
+      ],
+      "topics": [
+        "markets",
+        "weather",
+        "timing"
+      ],
+      "sourceSlug": "mangwon-market-hangang-park-mangnidan-gil-how-to-get-there",
+      "sourceUrl": "https://seoulfoodtour.com/mangwon-market-hangang-park-mangnidan-gil-how-to-get-there"
+    },
+    {
+      "id": "markets-057",
+      "fact": "One reviewer writing in Chinese walked from Hongdae in 30 minutes.",
+      "figures": [
+        "30"
+      ],
+      "topics": [
+        "markets",
+        "timing"
+      ],
+      "sourceSlug": "mangwon-market-hangang-park-mangnidan-gil-how-to-get-there",
+      "sourceUrl": "https://seoulfoodtour.com/mangwon-market-hangang-park-mangnidan-gil-how-to-get-there"
+    },
+    {
+      "id": "markets-058",
+      "fact": "Seven reviews came by bus: one bus from Myeongdong, a bus from Seoul Station that took about 30 minutes, and buses from the Hongdae area.",
+      "figures": [
+        "30"
+      ],
+      "topics": [
+        "markets",
+        "timing"
+      ],
+      "sourceSlug": "mangwon-market-hangang-park-mangnidan-gil-how-to-get-there",
+      "sourceUrl": "https://seoulfoodtour.com/mangwon-market-hangang-park-mangnidan-gil-how-to-get-there"
+    },
+    {
+      "id": "language-003",
       "fact": "In 54 first-hand accounts on Reddit, 33 used Korean phrases on the trip, and the ones they name are short: thank you in 15 accounts, hello in 12, sorry in 6.",
       "figures": [
         "54",
@@ -1972,291 +2157,78 @@
       "sourceUrl": "https://seoulfoodtour.com/korean-phrases-travelers-used-hangul"
     },
     {
-      "id": "dishes-014",
-      "fact": "Sixty-five of the 154 reviews say how the mandu tasted, and 53 of those say they were good.",
+      "id": "language-004",
+      "fact": "A guide from 2026 lists five lines for ordering: 이거 하나 주세요 (one of this, please), 추천 메뉴 있어요? (is there a recommended dish?), 덜 맵게 해주세요 (less spicy, please), 포장 가능해요? (can I take it to go?) and 계산할게요 (I would like to pay).",
       "figures": [
-        "154",
-        "53"
-      ],
-      "topics": [
-        "dishes",
-        "markets"
-      ],
-      "sourceSlug": "mandu-dumplings-seoul-gwangjang-namdaemun-mangwon",
-      "sourceUrl": "https://seoulfoodtour.com/mandu-dumplings-seoul-gwangjang-namdaemun-mangwon"
-    },
-    {
-      "id": "markets-050",
-      "fact": "At Gwangjang Market, 16 reviews tie the dumplings to the noodle stall featured on Netflix.",
-      "figures": [
-        "16"
-      ],
-      "topics": [
-        "markets",
-        "dishes"
-      ],
-      "sourceSlug": "mandu-dumplings-seoul-gwangjang-namdaemun-mangwon",
-      "sourceUrl": "https://seoulfoodtour.com/mandu-dumplings-seoul-gwangjang-namdaemun-mangwon"
-    },
-    {
-      "id": "markets-051",
-      "fact": "At Gwangjang Market 31 of the 39 reviewers who judged the mandu liked them.",
-      "figures": [
-        "31",
-        "39"
-      ],
-      "topics": [
-        "markets",
-        "dishes"
-      ],
-      "sourceSlug": "mandu-dumplings-seoul-gwangjang-namdaemun-mangwon",
-      "sourceUrl": "https://seoulfoodtour.com/mandu-dumplings-seoul-gwangjang-namdaemun-mangwon"
-    },
-    {
-      "id": "markets-052",
-      "fact": "At Namdaemun Market 17 of the 21 reviewers who judged the mandu liked them, and four reviews name the shop: Gamegol Son Wang Mandu (가메골 손왕만두), which reviewers also write as Kamegol.",
-      "figures": [
-        "17",
-        "21"
-      ],
-      "topics": [
-        "markets",
-        "dishes"
-      ],
-      "sourceSlug": "mandu-dumplings-seoul-gwangjang-namdaemun-mangwon",
-      "sourceUrl": "https://seoulfoodtour.com/mandu-dumplings-seoul-gwangjang-namdaemun-mangwon"
-    },
-    {
-      "id": "markets-053",
-      "fact": "Only 18 reviews of Mangwon Market name mandu, and the five that say how they tasted all liked them.",
-      "figures": [
-        "18"
-      ],
-      "topics": [
-        "markets",
-        "dishes"
-      ],
-      "sourceSlug": "mandu-dumplings-seoul-gwangjang-namdaemun-mangwon",
-      "sourceUrl": "https://seoulfoodtour.com/mandu-dumplings-seoul-gwangjang-namdaemun-mangwon"
-    },
-    {
-      "id": "markets-054",
-      "fact": "What they add is a price and a portion: five large dumplings for 6,000 won in March 2026.",
-      "figures": [
-        "6,000",
-        "March 2026"
-      ],
-      "topics": [
-        "markets",
-        "pricing",
-        "dishes"
-      ],
-      "sourceSlug": "mandu-dumplings-seoul-gwangjang-namdaemun-mangwon",
-      "sourceUrl": "https://seoulfoodtour.com/mandu-dumplings-seoul-gwangjang-namdaemun-mangwon"
-    },
-    {
-      "id": "pricing-031",
-      "fact": "On price, Gwangjang Market reviewers report 5,000 won an order in May 2019 and January 2020, and one reports 8,000 won for small dumplings in August 2025.",
-      "figures": [
-        "5,000",
-        "8,000",
-        "May 2019",
-        "January 2020",
-        "August 2025"
-      ],
-      "topics": [
-        "pricing",
-        "markets",
-        "dishes"
-      ],
-      "sourceSlug": "mandu-dumplings-seoul-gwangjang-namdaemun-mangwon",
-      "sourceUrl": "https://seoulfoodtour.com/mandu-dumplings-seoul-gwangjang-namdaemun-mangwon"
-    },
-    {
-      "id": "markets-055",
-      "fact": "The official Visit Seoul listing gives Subway Line 6, Mangwon Station, Exit 2, 351 m.",
-      "figures": [
-        "6",
-        "2",
-        "351 m"
-      ],
-      "topics": [
-        "markets",
-        "accessibility"
-      ],
-      "sourceSlug": "mangwon-market-hangang-park-mangnidan-gil-how-to-get-there",
-      "sourceUrl": "https://seoulfoodtour.com/mangwon-market-hangang-park-mangnidan-gil-how-to-get-there"
-    },
-    {
-      "id": "markets-056",
-      "fact": "The river comes up in 19 reviews, the café streets in 38, Hongdae in 21 and the market across the road in 17.",
-      "figures": [
-        "19",
-        "38",
-        "21",
-        "17"
-      ],
-      "topics": [
-        "markets"
-      ],
-      "sourceSlug": "mangwon-market-hangang-park-mangnidan-gil-how-to-get-there",
-      "sourceUrl": "https://seoulfoodtour.com/mangwon-market-hangang-park-mangnidan-gil-how-to-get-there"
-    },
-    {
-      "id": "markets-057",
-      "fact": "The trade-off: the picnic depends on the weather and on a walk reviewers time at anything from five to 20 minutes.",
-      "figures": [
-        "five",
-        "20"
-      ],
-      "topics": [
-        "markets",
-        "weather",
-        "timing"
-      ],
-      "sourceSlug": "mangwon-market-hangang-park-mangnidan-gil-how-to-get-there",
-      "sourceUrl": "https://seoulfoodtour.com/mangwon-market-hangang-park-mangnidan-gil-how-to-get-there"
-    },
-    {
-      "id": "pricing-032",
-      "fact": "Two recommend a rice-cake shop at the entrance of the World Cup Market, one of them at 2,000 won a pack in December 2023.",
-      "figures": [
-        "2,000 won",
-        "2023"
-      ],
-      "topics": [
-        "pricing",
-        "shopping",
-        "markets"
-      ],
-      "sourceSlug": "mangwon-market-hangang-park-mangnidan-gil-how-to-get-there",
-      "sourceUrl": "https://seoulfoodtour.com/mangwon-market-hangang-park-mangnidan-gil-how-to-get-there"
-    },
-    {
-      "id": "markets-058",
-      "fact": "Seven reviews came by bus: one bus from Myeongdong, a bus from Seoul Station that took about 30 minutes, and buses from the Hongdae area.",
-      "figures": [
-        "30 minutes"
-      ],
-      "topics": [
-        "markets",
-        "timing"
-      ],
-      "sourceSlug": "mangwon-market-hangang-park-mangnidan-gil-how-to-get-there",
-      "sourceUrl": "https://seoulfoodtour.com/mangwon-market-hangang-park-mangnidan-gil-how-to-get-there"
-    },
-    {
-      "id": "markets-059",
-      "fact": "One reviewer writing in Chinese walked from Hongdae in 30 minutes.",
-      "figures": [
-        "30 minutes"
-      ],
-      "topics": [
-        "markets",
-        "timing"
-      ],
-      "sourceSlug": "mangwon-market-hangang-park-mangnidan-gil-how-to-get-there",
-      "sourceUrl": "https://seoulfoodtour.com/mangwon-market-hangang-park-mangnidan-gil-how-to-get-there"
-    },
-    {
-      "id": "accessibility-001",
-      "fact": "Two say to turn right out of Exit 2, and one of them adds to keep straight until the market entrance appears on the right.",
-      "figures": [
-        "2"
-      ],
-      "topics": [
-        "accessibility",
-        "markets"
-      ],
-      "sourceSlug": "mangwon-market-hangang-park-mangnidan-gil-how-to-get-there",
-      "sourceUrl": "https://seoulfoodtour.com/mangwon-market-hangang-park-mangnidan-gil-how-to-get-there"
-    },
-    {
-      "id": "markets-060",
-      "fact": "Myeongdong comes up in 122 reviews of Gwangjang Market, Namdaemun Market and Mangwon Market.",
-      "figures": [
-        "122"
-      ],
-      "topics": [
-        "markets"
-      ],
-      "sourceSlug": "myeongdong-vs-namdaemun-gwangjang-markets",
-      "sourceUrl": "https://seoulfoodtour.com/myeongdong-vs-namdaemun-gwangjang-markets"
-    },
-    {
-      "id": "markets-061",
-      "fact": "Namdaemun Market accounts for most of them: 89 of its 1,376 reviews name Myeongdong, which is 6.5%.",
-      "figures": [
-        "89",
-        "1,376",
-        "6.5%"
-      ],
-      "topics": [
-        "markets"
-      ],
-      "sourceSlug": "myeongdong-vs-namdaemun-gwangjang-markets",
-      "sourceUrl": "https://seoulfoodtour.com/myeongdong-vs-namdaemun-gwangjang-markets"
-    },
-    {
-      "id": "pricing-033",
-      "fact": "Forty-two reviews say the market is cheaper than Myeongdong: 30 of Namdaemun Market, 8 of Gwangjang Market and 4 of Mangwon Market.",
-      "figures": [
-        "30",
-        "8",
-        "4"
-      ],
-      "topics": [
-        "pricing",
-        "markets"
-      ],
-      "sourceSlug": "myeongdong-vs-namdaemun-gwangjang-markets",
-      "sourceUrl": "https://seoulfoodtour.com/myeongdong-vs-namdaemun-gwangjang-markets"
-    },
-    {
-      "id": "language-006",
-      "fact": "The reviews are spread from 2019 to 2026 and across languages: 23 in English, eight in Japanese, five in Chinese and six in other languages.",
-      "figures": [
-        "2019",
-        "2026",
-        "23"
+        "2026"
       ],
       "topics": [
         "language",
+        "dishes"
+      ],
+      "sourceSlug": "korean-phrases-travelers-used-hangul",
+      "sourceUrl": "https://seoulfoodtour.com/korean-phrases-travelers-used-hangul"
+    },
+    {
+      "id": "markets-059",
+      "fact": "Two Japanese reviewers of Gwangjang Market, both in 2019, say the same thing from the stalls: one felt the service doubled when they spoke Korean, and the other was chatted to warmly by a vendor in spite of broken Korean.",
+      "figures": [
+        "2019"
+      ],
+      "topics": [
+        "markets",
+        "language"
+      ],
+      "sourceSlug": "korean-phrases-travelers-used-hangul",
+      "sourceUrl": "https://seoulfoodtour.com/korean-phrases-travelers-used-hangul"
+    },
+    {
+      "id": "markets-060",
+      "fact": "A review from 2019 describes wholesale hours from 10 p.m. to 5 a.m. with discounts from three pieces.",
+      "figures": [
+        "2019",
+        "10 p.m.",
+        "5 a.m.",
+        "three"
+      ],
+      "topics": [
+        "markets",
+        "pricing",
+        "timing"
+      ],
+      "sourceSlug": "namdaemun-market-childrens-clothing",
+      "sourceUrl": "https://seoulfoodtour.com/namdaemun-market-childrens-clothing"
+    },
+    {
+      "id": "markets-061",
+      "fact": "A reviewer in 2024 notes that the street-level shops are only the front of several small malls, each specializing in one kind of goods, and that one of them is given over to children’s wear.",
+      "figures": [
+        "2024"
+      ],
+      "topics": [
+        "markets",
+        "shopping",
+        "kids-families"
+      ],
+      "sourceSlug": "namdaemun-market-childrens-clothing",
+      "sourceUrl": "https://seoulfoodtour.com/namdaemun-market-childrens-clothing"
+    },
+    {
+      "id": "etiquette-001",
+      "fact": "A Japanese reviewer in 2026 describes a vendor of children’s clothing who said looking was fine and then, when nothing was bought, made a remark about Japanese customers, assuming it would not be understood.",
+      "figures": [
+        "2026"
+      ],
+      "topics": [
+        "etiquette",
+        "language",
         "markets"
       ],
-      "sourceSlug": "myeongdong-vs-namdaemun-gwangjang-markets",
-      "sourceUrl": "https://seoulfoodtour.com/myeongdong-vs-namdaemun-gwangjang-markets"
+      "sourceSlug": "namdaemun-market-childrens-clothing",
+      "sourceUrl": "https://seoulfoodtour.com/namdaemun-market-childrens-clothing"
     },
     {
       "id": "markets-062",
-      "fact": "Sixty-six of 1,376 reviews say Namdaemun Market is crowded, packed or very busy: 4.8%.",
-      "figures": [
-        "1,376",
-        "4.8%"
-      ],
-      "topics": [
-        "markets",
-        "crowds"
-      ],
-      "sourceSlug": "namdaemun-market-crowds-best-time",
-      "sourceUrl": "https://seoulfoodtour.com/namdaemun-market-crowds-best-time"
-    },
-    {
-      "id": "markets-063",
-      "fact": "Fifty-three of the 66 gave the market four or five stars.",
-      "figures": [
-        "66"
-      ],
-      "topics": [
-        "markets",
-        "crowds"
-      ],
-      "scale": "Sixty-six of 1,376 reviews say Namdaemun Market is crowded, packed or very busy: 4.8%.",
-      "sourceSlug": "namdaemun-market-crowds-best-time",
-      "sourceUrl": "https://seoulfoodtour.com/namdaemun-market-crowds-best-time"
-    },
-    {
-      "id": "markets-064",
       "fact": "Mangwon Market is a covered neighborhood market in Seoul, and 88.5% of its 1,089 reviews give four or five stars.",
       "figures": [
         "88.5%",
@@ -2269,20 +2241,20 @@
       "sourceUrl": "https://seoulfoodtour.com/mangwon-market-what-to-eat-reviews"
     },
     {
-      "id": "timing-016",
+      "id": "timing-011",
       "fact": "Ten reviews say the cooked-food stalls open around 11, and sixteen say there are few seats or that the food is sold to take away.",
       "figures": [
         "11"
       ],
       "topics": [
         "timing",
-        "crowds"
+        "markets"
       ],
       "sourceSlug": "mangwon-market-what-to-eat-reviews",
       "sourceUrl": "https://seoulfoodtour.com/mangwon-market-what-to-eat-reviews"
     },
     {
-      "id": "markets-065",
+      "id": "markets-063",
       "fact": "The commonest low review, 49 of 125, says the market is small and not worth a special trip.",
       "figures": [
         "49",
@@ -2291,25 +2263,24 @@
       "topics": [
         "markets"
       ],
-      "scale": "Every percentage is taken from these 1,089: 125 reviews of one to three stars and 964 of four and five.",
       "sourceSlug": "mangwon-market-what-to-eat-reviews",
       "sourceUrl": "https://seoulfoodtour.com/mangwon-market-what-to-eat-reviews"
     },
     {
-      "id": "dishes-015",
+      "id": "markets-064",
       "fact": "Fruit comes up in 138 reviews, more than any dish.",
       "figures": [
         "138"
       ],
       "topics": [
-        "dishes",
-        "markets"
+        "markets",
+        "dishes"
       ],
       "sourceSlug": "mangwon-market-what-to-eat-reviews",
       "sourceUrl": "https://seoulfoodtour.com/mangwon-market-what-to-eat-reviews"
     },
     {
-      "id": "dishes-016",
+      "id": "dishes-027",
       "fact": "Among cooked food, dakgangjeong leads with 89 reviews, then hotteok, kalguksu and the stuffed fried pepper.",
       "figures": [
         "89"
@@ -2321,7 +2292,7 @@
       "sourceUrl": "https://seoulfoodtour.com/mangwon-market-what-to-eat-reviews"
     },
     {
-      "id": "dishes-017",
+      "id": "dishes-028",
       "fact": "Dakgangjeong is also the only dish with enough low reviews to compare: it is named in 10.4% of them against 7.9% of the high ones, 1.3 times as often.",
       "figures": [
         "10.4%",
@@ -2335,7 +2306,7 @@
       "sourceUrl": "https://seoulfoodtour.com/mangwon-market-what-to-eat-reviews"
     },
     {
-      "id": "markets-066",
+      "id": "markets-065",
       "fact": "One or two stars account for 27 reviews, 2.5%.",
       "figures": [
         "27",
@@ -2348,7 +2319,7 @@
       "sourceUrl": "https://seoulfoodtour.com/mangwon-market-what-to-eat-reviews"
     },
     {
-      "id": "markets-067",
+      "id": "markets-066",
       "fact": "For reviewers writing in other languages, the objection is scale: 26 of 54 say Mangwon Market is small, has little to eat, or is nothing special.",
       "figures": [
         "26",
@@ -2361,21 +2332,85 @@
       "sourceUrl": "https://seoulfoodtour.com/mangwon-market-what-to-eat-reviews"
     },
     {
-      "id": "pricing-034",
-      "fact": "For reviewers writing in Korean, the objections are price and crowds: 18 of 71 each.",
+      "id": "timing-012",
+      "fact": "One suggests ten to eleven, and two found most stalls open by about 10:30.",
       "figures": [
-        "18",
-        "71"
+        "10:30"
       ],
       "topics": [
-        "pricing",
-        "crowds"
+        "timing"
       ],
       "sourceSlug": "mangwon-market-what-to-eat-reviews",
       "sourceUrl": "https://seoulfoodtour.com/mangwon-market-what-to-eat-reviews"
     },
     {
-      "id": "pricing-035",
+      "id": "timing-013",
+      "fact": "Three reviews, from January 2023, October 2024 and October 2025, say that some of the best-known stalls close on Mondays.",
+      "figures": [
+        "January 2023",
+        "October 2024",
+        "October 2025"
+      ],
+      "topics": [
+        "timing"
+      ],
+      "sourceSlug": "mangwon-market-what-to-eat-reviews",
+      "sourceUrl": "https://seoulfoodtour.com/mangwon-market-what-to-eat-reviews"
+    },
+    {
+      "id": "payments-008",
+      "fact": "Eight, written between 2018 and 2026, say to bring cash or that some stalls take only cash.",
+      "figures": [
+        "2018",
+        "2026"
+      ],
+      "topics": [
+        "payments"
+      ],
+      "sourceSlug": "mangwon-market-what-to-eat-reviews",
+      "sourceUrl": "https://seoulfoodtour.com/mangwon-market-what-to-eat-reviews"
+    },
+    {
+      "id": "payments-009",
+      "fact": "Six, written between 2023 and 2025, paid by card or QR code, or say that going without cash was no problem.",
+      "figures": [
+        "2023",
+        "2025"
+      ],
+      "topics": [
+        "payments"
+      ],
+      "sourceSlug": "mangwon-market-what-to-eat-reviews",
+      "sourceUrl": "https://seoulfoodtour.com/mangwon-market-what-to-eat-reviews"
+    },
+    {
+      "id": "payments-010",
+      "fact": "One review from July 2025, written in Chinese, describes the gap between the two: stalls that can take cards but keep the terminal out of sight, or add a surcharge for using it.",
+      "figures": [
+        "July 2025"
+      ],
+      "topics": [
+        "payments"
+      ],
+      "sourceSlug": "mangwon-market-what-to-eat-reviews",
+      "sourceUrl": "https://seoulfoodtour.com/mangwon-market-what-to-eat-reviews"
+    },
+    {
+      "id": "markets-067",
+      "fact": "Of the 68 reviews that bring up Gwangjang Market, 12 say Mangwon is cheaper.",
+      "figures": [
+        "68",
+        "12"
+      ],
+      "topics": [
+        "markets",
+        "pricing"
+      ],
+      "sourceSlug": "mangwon-market-what-to-eat-reviews",
+      "sourceUrl": "https://seoulfoodtour.com/mangwon-market-what-to-eat-reviews"
+    },
+    {
+      "id": "pricing-034",
       "fact": "among the low reviews, 18 of the 71 written in Korean complain about price, and four of them say it has gone up.",
       "figures": [
         "18",
@@ -2389,75 +2424,59 @@
     },
     {
       "id": "markets-068",
-      "fact": "Three reviews, from January 2023, October 2024 and October 2025, say that some of the best-known stalls close on Mondays.",
+      "fact": "Sixty-six of 1,376 reviews say Namdaemun Market is crowded, packed or very busy: 4.8%.",
       "figures": [
-        "January 2023",
-        "October 2024",
-        "October 2025"
+        "1,376",
+        "4.8%"
       ],
       "topics": [
         "markets",
-        "timing"
+        "crowds"
       ],
-      "sourceSlug": "mangwon-market-what-to-eat-reviews",
-      "sourceUrl": "https://seoulfoodtour.com/mangwon-market-what-to-eat-reviews"
-    },
-    {
-      "id": "pricing-036",
-      "fact": "Of the 68 reviews that bring up Gwangjang Market, 12 say Mangwon is cheaper.",
-      "figures": [
-        "68",
-        "12"
-      ],
-      "topics": [
-        "pricing",
-        "markets"
-      ],
-      "sourceSlug": "mangwon-market-what-to-eat-reviews",
-      "sourceUrl": "https://seoulfoodtour.com/mangwon-market-what-to-eat-reviews"
+      "sourceSlug": "namdaemun-market-crowds-best-time",
+      "sourceUrl": "https://seoulfoodtour.com/namdaemun-market-crowds-best-time"
     },
     {
       "id": "markets-069",
-      "fact": "A review from 2019 describes wholesale hours from 10 p.m. to 5 a.m. with discounts from three pieces.",
+      "fact": "Forty-two reviews say the market is cheaper than Myeongdong: 30 of Namdaemun Market, 8 of Gwangjang Market and 4 of Mangwon Market.",
       "figures": [
-        "2019",
-        "10 p.m.",
-        "5 a.m."
+        "Forty-two",
+        "30",
+        "8",
+        "4"
       ],
       "topics": [
         "markets",
-        "timing",
         "pricing"
       ],
-      "sourceSlug": "namdaemun-market-childrens-clothing",
-      "sourceUrl": "https://seoulfoodtour.com/namdaemun-market-childrens-clothing"
+      "sourceSlug": "myeongdong-vs-namdaemun-gwangjang-markets",
+      "sourceUrl": "https://seoulfoodtour.com/myeongdong-vs-namdaemun-gwangjang-markets"
     },
     {
       "id": "markets-070",
-      "fact": "A reviewer in 2024 notes that the street-level shops are only the front of several small malls, each specializing in one kind of goods, and that one of them is given over to children’s wear.",
+      "fact": "Myeongdong comes up in 122 reviews of Gwangjang Market, Namdaemun Market and Mangwon Market.",
       "figures": [
-        "2024"
+        "122"
       ],
       "topics": [
-        "markets",
-        "shopping"
+        "markets"
       ],
-      "sourceSlug": "namdaemun-market-childrens-clothing",
-      "sourceUrl": "https://seoulfoodtour.com/namdaemun-market-childrens-clothing"
+      "sourceSlug": "myeongdong-vs-namdaemun-gwangjang-markets",
+      "sourceUrl": "https://seoulfoodtour.com/myeongdong-vs-namdaemun-gwangjang-markets"
     },
     {
       "id": "markets-071",
-      "fact": "A Japanese reviewer in 2026 describes a vendor of children’s clothing who said looking was fine and then, when nothing was bought, made a remark about Japanese customers, assuming it would not be understood.",
+      "fact": "Namdaemun Market accounts for most of them: 89 of its 1,376 reviews name Myeongdong, which is 6.5%.",
       "figures": [
-        "2026"
+        "89",
+        "1,376",
+        "6.5%"
       ],
       "topics": [
-        "markets",
-        "language",
-        "etiquette"
+        "markets"
       ],
-      "sourceSlug": "namdaemun-market-childrens-clothing",
-      "sourceUrl": "https://seoulfoodtour.com/namdaemun-market-childrens-clothing"
+      "sourceSlug": "myeongdong-vs-namdaemun-gwangjang-markets",
+      "sourceUrl": "https://seoulfoodtour.com/myeongdong-vs-namdaemun-gwangjang-markets"
     },
     {
       "id": "apps-002",
@@ -2499,7 +2518,7 @@
       "sourceUrl": "https://seoulfoodtour.com/order-food-seoul-without-korean"
     },
     {
-      "id": "language-007",
+      "id": "language-005",
       "fact": "English, Chinese and Japanese are available 24 hours a day, with other languages during daytime hours.",
       "figures": [
         "24 hours a day"
@@ -2512,7 +2531,7 @@
       "sourceUrl": "https://seoulfoodtour.com/order-food-seoul-without-korean"
     },
     {
-      "id": "language-008",
+      "id": "language-006",
       "fact": "From inside Korea you dial 1330; from abroad, +82-2-1330.",
       "figures": [
         "1330",
@@ -2528,9 +2547,7 @@
       "id": "markets-072",
       "fact": "Twenty-two of the 1,376 reviews of Namdaemun Market mention them, and thirteen describe the red clothing.",
       "figures": [
-        "Twenty-two",
-        "1,376",
-        "thirteen"
+        "1,376"
       ],
       "topics": [
         "markets"
@@ -2540,25 +2557,8 @@
     },
     {
       "id": "markets-073",
-      "fact": "Fourteen of the 22 reviews are from 2024 or later, and the earliest is from 2019, so this is not a recent experiment.",
-      "figures": [
-        "Fourteen",
-        "22",
-        "2024",
-        "2019"
-      ],
-      "topics": [
-        "markets"
-      ],
-      "sourceSlug": "namdaemun-market-red-guides-information",
-      "sourceUrl": "https://seoulfoodtour.com/namdaemun-market-red-guides-information"
-    },
-    {
-      "id": "markets-074",
       "fact": "Eleven reviews of Gwangjang Market mention information staff, ten of them from 2024 or later.",
       "figures": [
-        "Eleven",
-        "ten",
         "2024"
       ],
       "topics": [
@@ -2568,13 +2568,14 @@
       "sourceUrl": "https://seoulfoodtour.com/namdaemun-market-red-guides-information"
     },
     {
-      "id": "markets-075",
+      "id": "markets-074",
       "fact": "One review of Mangwon Market, from May 2024, says guides are available there for translation.",
       "figures": [
         "May 2024"
       ],
       "topics": [
-        "markets"
+        "markets",
+        "language"
       ],
       "sourceSlug": "namdaemun-market-red-guides-information",
       "sourceUrl": "https://seoulfoodtour.com/namdaemun-market-red-guides-information"
@@ -2585,6 +2586,7 @@
       "figures": [
         "151",
         "42",
+        "seven",
         "2026",
         "56"
       ],
@@ -2609,6 +2611,19 @@
     },
     {
       "id": "apps-007",
+      "fact": "Travelers in August 2026 describe navigation as the biggest struggle of their trip: Google Maps showed them public transport only.",
+      "figures": [
+        "August 2026"
+      ],
+      "topics": [
+        "apps",
+        "timing"
+      ],
+      "sourceSlug": "naver-map-kakao-map-google-maps-korea",
+      "sourceUrl": "https://seoulfoodtour.com/naver-map-kakao-map-google-maps-korea"
+    },
+    {
+      "id": "apps-008",
       "fact": "A resident who lived in Seoul from 2023 to 2025 found Google Maps fine for subway and bus, and often better than the Korean apps at offering routes with the least walking.",
       "figures": [
         "2023",
@@ -2621,7 +2636,7 @@
       "sourceUrl": "https://seoulfoodtour.com/naver-map-kakao-map-google-maps-korea"
     },
     {
-      "id": "apps-008",
+      "id": "apps-009",
       "fact": "A traveler in 2024 found Kakao Map hard to use because of the language and used Google Maps instead, following the blue dot where walking directions were missing.",
       "figures": [
         "2024"
@@ -2634,7 +2649,7 @@
       "sourceUrl": "https://seoulfoodtour.com/naver-map-kakao-map-google-maps-korea"
     },
     {
-      "id": "apps-009",
+      "id": "apps-010",
       "fact": "Korea’s government gave Google conditional approval in 2026 to export map data.",
       "figures": [
         "2026"
@@ -2646,7 +2661,7 @@
       "sourceUrl": "https://seoulfoodtour.com/naver-map-kakao-map-google-maps-korea"
     },
     {
-      "id": "apps-010",
+      "id": "apps-011",
       "fact": "Naver Map is named in 127 of the accounts and Kakao Map in 54.",
       "figures": [
         "127",
@@ -2659,20 +2674,59 @@
       "sourceUrl": "https://seoulfoodtour.com/naver-map-kakao-map-google-maps-korea"
     },
     {
-      "id": "apps-011",
+      "id": "apps-012",
       "fact": "One traveler in 2026 describes restaurants offering a free soda or side dish in exchange for a five-star review.",
       "figures": [
         "2026"
       ],
       "topics": [
         "apps",
-        "etiquette"
+        "dishes"
       ],
       "sourceSlug": "naver-map-kakao-map-google-maps-korea",
       "sourceUrl": "https://seoulfoodtour.com/naver-map-kakao-map-google-maps-korea"
     },
     {
-      "id": "markets-076",
+      "id": "apps-013",
+      "fact": "A traveler in 2022 notes that when the walking route passes through an underground shopping arcade, the app does not say so in English, and you stand at a road with no crossing.",
+      "figures": [
+        "2022"
+      ],
+      "topics": [
+        "apps",
+        "language"
+      ],
+      "sourceSlug": "naver-map-kakao-map-google-maps-korea",
+      "sourceUrl": "https://seoulfoodtour.com/naver-map-kakao-map-google-maps-korea"
+    },
+    {
+      "id": "apps-014",
+      "fact": "The worst case is one traveler in 2025 who registered and verified a Naver account before the trip and saved every hotel and place in it.",
+      "figures": [
+        "2025"
+      ],
+      "topics": [
+        "apps"
+      ],
+      "sourceSlug": "naver-map-kakao-map-google-maps-korea",
+      "sourceUrl": "https://seoulfoodtour.com/naver-map-kakao-map-google-maps-korea"
+    },
+    {
+      "id": "apps-015",
+      "fact": "Of the 101 accounts with a date, 68 are from 2024 or later.",
+      "figures": [
+        "101",
+        "68",
+        "2024"
+      ],
+      "topics": [
+        "apps"
+      ],
+      "sourceSlug": "naver-map-kakao-map-google-maps-korea",
+      "sourceUrl": "https://seoulfoodtour.com/naver-map-kakao-map-google-maps-korea"
+    },
+    {
+      "id": "markets-075",
       "fact": "Namdaemun Market is a shopping market first: its 1,376 reviews name clothing (211) and souvenirs (181) more often than any food, and hotteok (93) is the dish they name most.",
       "figures": [
         "1,376",
@@ -2682,14 +2736,14 @@
       ],
       "topics": [
         "markets",
-        "dishes",
-        "shopping"
+        "shopping",
+        "dishes"
       ],
       "sourceSlug": "namdaemun-market-what-to-buy-eat-reviews",
       "sourceUrl": "https://seoulfoodtour.com/namdaemun-market-what-to-buy-eat-reviews"
     },
     {
-      "id": "markets-077",
+      "id": "markets-076",
       "fact": "Four or five stars account for 85.1% of the 1,376 reviews, and one or two stars for 61 of them, 4.4%.",
       "figures": [
         "85.1%",
@@ -2704,7 +2758,7 @@
       "sourceUrl": "https://seoulfoodtour.com/namdaemun-market-what-to-buy-eat-reviews"
     },
     {
-      "id": "markets-078",
+      "id": "markets-077",
       "fact": "The low reviews object to the goods, not the food: 78 of 205 call them cheap, repetitive or nothing special.",
       "figures": [
         "78",
@@ -2718,7 +2772,7 @@
       "sourceUrl": "https://seoulfoodtour.com/namdaemun-market-what-to-buy-eat-reviews"
     },
     {
-      "id": "markets-079",
+      "id": "markets-078",
       "fact": "Food is a smaller complaint, raised in 17 low reviews, and so is how vendors behave, in 15.",
       "figures": [
         "17",
@@ -2726,22 +2780,21 @@
       ],
       "topics": [
         "markets",
-        "dishes",
-        "etiquette"
+        "dishes"
       ],
       "sourceSlug": "namdaemun-market-what-to-buy-eat-reviews",
       "sourceUrl": "https://seoulfoodtour.com/namdaemun-market-what-to-buy-eat-reviews"
     },
     {
-      "id": "timing-017",
+      "id": "markets-079",
       "fact": "Twenty-six reviews, written between 2019 and 2026, say that the shops close in the early evening, or describe arriving in the evening to find them shut.",
       "figures": [
         "2019",
         "2026"
       ],
       "topics": [
-        "timing",
-        "markets"
+        "markets",
+        "timing"
       ],
       "sourceSlug": "namdaemun-market-what-to-buy-eat-reviews",
       "sourceUrl": "https://seoulfoodtour.com/namdaemun-market-what-to-buy-eat-reviews"
@@ -2754,6 +2807,7 @@
       ],
       "topics": [
         "markets",
+        "etiquette",
         "pricing"
       ],
       "sourceSlug": "namdaemun-market-what-to-buy-eat-reviews",
@@ -2763,17 +2817,31 @@
       "id": "markets-081",
       "fact": "37 reviews say it is easy to get lost; fifteen of them are low reviews.",
       "figures": [
-        "37",
-        "fifteen"
+        "37"
       ],
       "topics": [
-        "markets"
+        "markets",
+        "accessibility"
       ],
       "sourceSlug": "namdaemun-market-what-to-buy-eat-reviews",
       "sourceUrl": "https://seoulfoodtour.com/namdaemun-market-what-to-buy-eat-reviews"
     },
     {
-      "id": "pricing-037",
+      "id": "food-tours-008",
+      "fact": "A cooking class and market tour combo pairs a guided market walk (about an hour) with a hands-on Korean cooking class (around two hours), ending with a meal you cook yourself.",
+      "figures": [
+        "an hour",
+        "two hours"
+      ],
+      "topics": [
+        "food-tours",
+        "timing"
+      ],
+      "sourceSlug": "seoul-cooking-class-market-tour",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-cooking-class-market-tour"
+    },
+    {
+      "id": "food-tours-009",
       "fact": "A cooking class and market tour combo typically runs around three hours in total — roughly an hour in the market and two hours cooking and eating — and costs in the region of $60–100 per person, depending on the menu, group size, and inclusions.",
       "figures": [
         "three hours",
@@ -2782,15 +2850,15 @@
         "$60–100"
       ],
       "topics": [
+        "food-tours",
         "pricing",
-        "timing",
-        "food-tours"
+        "timing"
       ],
       "sourceSlug": "seoul-cooking-class-market-tour",
       "sourceUrl": "https://seoulfoodtour.com/seoul-cooking-class-market-tour"
     },
     {
-      "id": "food-tours-011",
+      "id": "food-tours-010",
       "fact": "Group sizes are small (usually six to twelve people), the classes are taught in English (many hosts also speak Japanese or Chinese), and they finish with everyone sitting down to eat their creations together, typically accompanied by an array of side dishes and often makgeolli.",
       "figures": [
         "six to twelve"
@@ -2803,38 +2871,37 @@
       "sourceUrl": "https://seoulfoodtour.com/seoul-cooking-class-market-tour"
     },
     {
-      "id": "dishes-018",
+      "id": "food-tours-011",
       "fact": "In a kimchi class, you'll typically make several types of kimchi — four is common — using fresh cabbage, radish, and cucumber, and take home a sealed jar of your own creation.",
       "figures": [
         "four"
       ],
       "topics": [
-        "dishes",
-        "food-tours"
-      ],
-      "sourceSlug": "seoul-cooking-class-market-tour",
-      "sourceUrl": "https://seoulfoodtour.com/seoul-cooking-class-market-tour"
-    },
-    {
-      "id": "dishes-019",
-      "fact": "In a full-course class, you'll make several main dishes and sit down to a complete Korean meal with over ten side dishes, dessert, and rice wine.",
-      "figures": [
-        "ten"
-      ],
-      "topics": [
-        "dishes",
-        "food-tours"
+        "food-tours",
+        "dishes"
       ],
       "sourceSlug": "seoul-cooking-class-market-tour",
       "sourceUrl": "https://seoulfoodtour.com/seoul-cooking-class-market-tour"
     },
     {
       "id": "food-tours-012",
-      "fact": "At the affordable end, a group market tour starts around $29, with most small-group tours falling in the $49 to $110 range depending on the number of tastings and the level of curation.",
+      "fact": "In a full-course class, you'll make several main dishes and sit down to a complete Korean meal with over ten side dishes, dessert, and rice wine.",
+      "figures": [
+        "over ten"
+      ],
+      "topics": [
+        "food-tours",
+        "dishes"
+      ],
+      "sourceSlug": "seoul-cooking-class-market-tour",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-cooking-class-market-tour"
+    },
+    {
+      "id": "food-tours-013",
+      "fact": "Seoul food tours generally cost from around $29 for a basic group tour, with most small-group tours in the $49–110 range.",
       "figures": [
         "$29",
-        "$49",
-        "$110"
+        "$49–110"
       ],
       "topics": [
         "food-tours",
@@ -2844,7 +2911,37 @@
       "sourceUrl": "https://seoulfoodtour.com/seoul-food-tour-cost"
     },
     {
-      "id": "food-tours-013",
+      "id": "food-tours-014",
+      "fact": "Private tours typically cost $150–300+ for three to four hours.",
+      "figures": [
+        "$150–300+",
+        "three to four hours"
+      ],
+      "topics": [
+        "food-tours",
+        "pricing",
+        "timing"
+      ],
+      "sourceSlug": "seoul-food-tour-cost",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-food-tour-cost"
+    },
+    {
+      "id": "markets-082",
+      "fact": "Eating at markets like Gwangjang yourself costs about $2–7 per dish, or roughly $20–30 for a full meal — several times cheaper than a guided group tour.",
+      "figures": [
+        "$2–7",
+        "$20–30"
+      ],
+      "topics": [
+        "markets",
+        "pricing",
+        "dishes"
+      ],
+      "sourceSlug": "seoul-food-tour-cost",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-food-tour-cost"
+    },
+    {
+      "id": "food-tours-015",
       "fact": "Step up to a half-day tour packing in more dishes, drinks, or landmarks, and prices typically run $85 to $130.",
       "figures": [
         "$85",
@@ -2858,7 +2955,7 @@
       "sourceUrl": "https://seoulfoodtour.com/seoul-food-tour-cost"
     },
     {
-      "id": "food-tours-014",
+      "id": "food-tours-016",
       "fact": "Night food-and-drink tours, which usually include alcohol, tend to land in the $70 to $100 range.",
       "figures": [
         "$70",
@@ -2872,7 +2969,7 @@
       "sourceUrl": "https://seoulfoodtour.com/seoul-food-tour-cost"
     },
     {
-      "id": "food-tours-015",
+      "id": "food-tours-017",
       "fact": "At the premium end, private tours generally cost $150 to $300 or more for a three-to-four-hour experience, scaling with guide expertise, group size, and customization.",
       "figures": [
         "$150",
@@ -2881,24 +2978,8 @@
       ],
       "topics": [
         "food-tours",
-        "pricing"
-      ],
-      "sourceSlug": "seoul-food-tour-cost",
-      "sourceUrl": "https://seoulfoodtour.com/seoul-food-tour-cost"
-    },
-    {
-      "id": "markets-082",
-      "fact": "individual dishes at markets like Gwangjang and Namdaemun typically run $2 to $7 each, and a full, filling meal of several dishes comes to roughly $20 to $30 per person",
-      "figures": [
-        "$2",
-        "$7",
-        "$20",
-        "$30"
-      ],
-      "topics": [
-        "markets",
         "pricing",
-        "dishes"
+        "timing"
       ],
       "sourceSlug": "seoul-food-tour-cost",
       "sourceUrl": "https://seoulfoodtour.com/seoul-food-tour-cost"
@@ -2917,21 +2998,7 @@
       "sourceUrl": "https://seoulfoodtour.com/seoul-food-tour-cost"
     },
     {
-      "id": "food-tours-016",
-      "fact": "Look for a group tour with a high number of tastings relative to its price — a tour serving ten-plus dishes for $70 is better value than one serving five for $60.",
-      "figures": [
-        "$70",
-        "$60"
-      ],
-      "topics": [
-        "food-tours",
-        "pricing"
-      ],
-      "sourceSlug": "seoul-food-tour-cost",
-      "sourceUrl": "https://seoulfoodtour.com/seoul-food-tour-cost"
-    },
-    {
-      "id": "pricing-038",
+      "id": "pricing-035",
       "fact": "Approximate USD equivalents at roughly ₩1,400 to the dollar (2025–2026); prices vary by stall and location.",
       "figures": [
         "₩1,400",
@@ -2945,40 +3012,44 @@
       "sourceUrl": "https://seoulfoodtour.com/seoul-food-tour-cost"
     },
     {
-      "id": "food-tours-017",
-      "fact": "Tours can be pricier during peak seasons (cherry blossom season in early April, and major holidays), so booking outside those windows can help.",
+      "id": "food-tours-018",
+      "fact": "Look for a group tour with a high number of tastings relative to its price — a tour serving ten-plus dishes for $70 is better value than one serving five for $60.",
       "figures": [
-        "early April"
+        "ten-plus",
+        "$70",
+        "five",
+        "$60"
       ],
       "topics": [
         "food-tours",
-        "timing"
+        "pricing"
       ],
       "sourceSlug": "seoul-food-tour-cost",
       "sourceUrl": "https://seoulfoodtour.com/seoul-food-tour-cost"
     },
     {
-      "id": "etiquette-001",
+      "id": "etiquette-002",
       "fact": "The one exception is a private tour guide, where a tip is optional and appreciated but never expected (around ₩20,000 for a day, given in an envelope with both hands).",
       "figures": [
         "₩20,000"
       ],
       "topics": [
         "etiquette",
-        "pricing"
+        "pricing",
+        "food-tours"
       ],
       "sourceSlug": "seoul-food-tour-etiquette-tipping",
       "sourceUrl": "https://seoulfoodtour.com/seoul-food-tour-etiquette-tipping"
     },
     {
-      "id": "pricing-039",
-      "fact": "Tax and any service charge are already included in the menu price, as Korean rules have required since 2013.",
+      "id": "pricing-036",
+      "fact": "since 2013 menus must show the final price, with tax and any service charge (봉사료, bongsaryo) already included, so nothing is added to the bill.",
       "figures": [
         "2013"
       ],
       "topics": [
         "pricing",
-        "payments"
+        "etiquette"
       ],
       "sourceSlug": "seoul-food-tour-etiquette-tipping",
       "sourceUrl": "https://seoulfoodtour.com/seoul-food-tour-etiquette-tipping"
@@ -2991,35 +3062,22 @@
       ],
       "topics": [
         "markets",
-        "pricing",
-        "payments"
+        "payments",
+        "pricing"
       ],
       "sourceSlug": "seoul-food-tour-etiquette-tipping",
       "sourceUrl": "https://seoulfoodtour.com/seoul-food-tour-etiquette-tipping"
     },
     {
-      "id": "pricing-040",
+      "id": "payments-011",
       "fact": "Small denominations matter — trying to pay for a ₩3,000 snack with a ₩50,000 note slows everyone down.",
       "figures": [
         "₩3,000",
         "₩50,000"
       ],
       "topics": [
-        "pricing",
-        "payments"
-      ],
-      "sourceSlug": "seoul-food-tour-etiquette-tipping",
-      "sourceUrl": "https://seoulfoodtour.com/seoul-food-tour-etiquette-tipping"
-    },
-    {
-      "id": "payments-006",
-      "fact": "Korea is nearly a cashless society in 2026, and cards work almost everywhere — but there's one crucial exception for food lovers: traditional markets and older street-food stalls are frequently cash-only.",
-      "figures": [
-        "2026"
-      ],
-      "topics": [
         "payments",
-        "markets"
+        "pricing"
       ],
       "sourceSlug": "seoul-food-tour-etiquette-tipping",
       "sourceUrl": "https://seoulfoodtour.com/seoul-food-tour-etiquette-tipping"
@@ -3028,7 +3086,8 @@
       "id": "weather-001",
       "fact": "Dress for the weather in layers — winter (November to February) is peak street-food season but genuinely cold, while summer is hot and humid — and bring a small pack of tissues or hand wipes, since market stalls don't always offer napkins.",
       "figures": [
-        "November to February"
+        "November",
+        "February"
       ],
       "topics": [
         "weather",
@@ -3038,10 +3097,11 @@
       "sourceUrl": "https://seoulfoodtour.com/seoul-food-tour-etiquette-tipping"
     },
     {
-      "id": "apps-012",
-      "fact": "Of 102 accounts that name Papago or Google Translate, eighteen name both.",
+      "id": "apps-016",
+      "fact": "One used Papago exclusively for three weeks in 2023 and calls it much better with Hangul.",
       "figures": [
-        "102"
+        "three weeks",
+        "2023"
       ],
       "topics": [
         "apps",
@@ -3051,10 +3111,55 @@
       "sourceUrl": "https://seoulfoodtour.com/papago-vs-google-translate-korea"
     },
     {
-      "id": "apps-013",
+      "id": "apps-017",
+      "fact": "One group in 2023 found Google faster on pictures of menus and of products in grocery stores.",
+      "figures": [
+        "2023"
+      ],
+      "topics": [
+        "apps",
+        "dishes"
+      ],
+      "sourceSlug": "papago-vs-google-translate-korea",
+      "sourceUrl": "https://seoulfoodtour.com/papago-vs-google-translate-korea"
+    },
+    {
+      "id": "apps-018",
+      "fact": "Across all 102 accounts, twelve describe reading a menu with a phone: six with Papago, four with Google Translate and two with ChatGPT.",
+      "figures": [
+        "102",
+        "twelve",
+        "six",
+        "four",
+        "two"
+      ],
+      "topics": [
+        "apps",
+        "dishes",
+        "language"
+      ],
+      "sourceSlug": "papago-vs-google-translate-korea",
+      "sourceUrl": "https://seoulfoodtour.com/papago-vs-google-translate-korea"
+    },
+    {
+      "id": "apps-019",
+      "fact": "One of the ChatGPT users, in 2025, reports a wild mistranslation at one restaurant and ended up eating beef tartare and clam chowder.",
+      "figures": [
+        "2025"
+      ],
+      "topics": [
+        "apps",
+        "dishes",
+        "language"
+      ],
+      "sourceSlug": "papago-vs-google-translate-korea",
+      "sourceUrl": "https://seoulfoodtour.com/papago-vs-google-translate-korea"
+    },
+    {
+      "id": "apps-020",
       "fact": "A restaurant owner used Papago to tell his guests the place had been in business for 37 years.",
       "figures": [
-        "37"
+        "37 years"
       ],
       "topics": [
         "apps",
@@ -3064,7 +3169,61 @@
       "sourceUrl": "https://seoulfoodtour.com/papago-vs-google-translate-korea"
     },
     {
-      "id": "apps-014",
+      "id": "dietary-001",
+      "fact": "A vegetarian in 2023 asked restaurants through Papago and found most could make something.",
+      "figures": [
+        "2023"
+      ],
+      "topics": [
+        "dietary",
+        "apps",
+        "language"
+      ],
+      "sourceSlug": "papago-vs-google-translate-korea",
+      "sourceUrl": "https://seoulfoodtour.com/papago-vs-google-translate-korea"
+    },
+    {
+      "id": "dietary-002",
+      "fact": "A family in 2026, traveling with a relative who has severe food allergies, used an allergy card together with Papago and had no severe reaction; they credit equal amounts of luck and caution.",
+      "figures": [
+        "2026"
+      ],
+      "topics": [
+        "dietary",
+        "apps"
+      ],
+      "sourceSlug": "papago-vs-google-translate-korea",
+      "sourceUrl": "https://seoulfoodtour.com/papago-vs-google-translate-korea"
+    },
+    {
+      "id": "dietary-003",
+      "fact": "A traveler with life-threatening allergies in 2023 says Google Lens did a great job on the labels of packaged food and did not risk eating in restaurants at all.",
+      "figures": [
+        "2023"
+      ],
+      "topics": [
+        "dietary",
+        "apps"
+      ],
+      "sourceSlug": "papago-vs-google-translate-korea",
+      "sourceUrl": "https://seoulfoodtour.com/papago-vs-google-translate-korea"
+    },
+    {
+      "id": "dietary-004",
+      "fact": "In 2024 a couple asked a street vendor in Insadong, through Google Translate, whether a candy contained nuts, bought it, and one of them had an allergic reaction.",
+      "figures": [
+        "2024"
+      ],
+      "topics": [
+        "dietary",
+        "markets",
+        "apps"
+      ],
+      "sourceSlug": "papago-vs-google-translate-korea",
+      "sourceUrl": "https://seoulfoodtour.com/papago-vs-google-translate-korea"
+    },
+    {
+      "id": "apps-021",
       "fact": "Papago’s App Store listing, on October 8, 2026: the developer is NAVER Corp., and the listing describes text, voice, conversation and image translation, with text translation available offline.",
       "figures": [
         "October 8, 2026"
@@ -3083,40 +3242,44 @@
         "21"
       ],
       "topics": [
-        "markets"
+        "markets",
+        "accessibility"
       ],
       "sourceSlug": "seoul-market-toilets-gwangjang-namdaemun-mangwon",
       "sourceUrl": "https://seoulfoodtour.com/seoul-market-toilets-gwangjang-namdaemun-mangwon"
     },
     {
       "id": "markets-086",
-      "fact": "All nine at Namdaemun Market and all seven at Mangwon Market are from 2024 or later.",
+      "fact": "A Japanese reviewer in 2019 notes they are free.",
       "figures": [
-        "2024"
+        "2019"
       ],
       "topics": [
-        "markets"
+        "markets",
+        "accessibility",
+        "pricing"
       ],
       "sourceSlug": "seoul-market-toilets-gwangjang-namdaemun-mangwon",
       "sourceUrl": "https://seoulfoodtour.com/seoul-market-toilets-gwangjang-namdaemun-mangwon"
     },
     {
       "id": "markets-087",
-      "fact": "Thirty-seven reviews in 3,923 show what stood out, not the average state of the facilities.",
+      "fact": "The other, by a Japanese reviewer in 2025, says the paper cannot be flushed and recommends carrying tissue that can be, along with wet wipes for the food samples.",
       "figures": [
-        "3,923"
+        "2025"
       ],
       "topics": [
-        "markets"
+        "markets",
+        "accessibility"
       ],
       "sourceSlug": "seoul-market-toilets-gwangjang-namdaemun-mangwon",
       "sourceUrl": "https://seoulfoodtour.com/seoul-market-toilets-gwangjang-namdaemun-mangwon"
     },
     {
       "id": "markets-088",
-      "fact": "The most useful description is from an Indonesian reviewer in September 2026: a very clean toilet block on three floors, the ground floor for visitors with disabilities, the second for men and the third for women.",
+      "fact": "One, in August 2026, says the toilets are in a dim place like a back alley, fine for men, and suggests that a woman alone or a group of women use a nearby hotel instead.",
       "figures": [
-        "September 2026"
+        "August 2026"
       ],
       "topics": [
         "markets",
@@ -3133,7 +3296,8 @@
         "2025"
       ],
       "topics": [
-        "markets"
+        "markets",
+        "accessibility"
       ],
       "sourceSlug": "seoul-market-toilets-gwangjang-namdaemun-mangwon",
       "sourceUrl": "https://seoulfoodtour.com/seoul-market-toilets-gwangjang-namdaemun-mangwon"
@@ -3169,6 +3333,20 @@
     },
     {
       "id": "markets-092",
+      "fact": "A Korean reviewer in 2021 says vegetables and fruit there run 30% or more below the neighborhood supermarket.",
+      "figures": [
+        "2021",
+        "30%"
+      ],
+      "topics": [
+        "markets",
+        "pricing"
+      ],
+      "sourceSlug": "seoul-markets-cheaper-than-supermarkets",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-cheaper-than-supermarkets"
+    },
+    {
+      "id": "markets-093",
       "fact": "At Namdaemun Market, a reviewer writing in Chinese bought grapes and cherries for more than 5,000 won less than at a hypermarket, in January 2025.",
       "figures": [
         "5,000 won",
@@ -3182,7 +3360,35 @@
       "sourceUrl": "https://seoulfoodtour.com/seoul-markets-cheaper-than-supermarkets"
     },
     {
-      "id": "markets-093",
+      "id": "markets-094",
+      "fact": "A Japanese reviewer in 2025 found the sweets people buy to hand out, milk crackers and yakgwa among them, cheaper than at Lotte Mart.",
+      "figures": [
+        "2025"
+      ],
+      "topics": [
+        "markets",
+        "dishes",
+        "pricing"
+      ],
+      "sourceSlug": "seoul-markets-cheaper-than-supermarkets",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-cheaper-than-supermarkets"
+    },
+    {
+      "id": "markets-095",
+      "fact": "Nine of the 23 are written in Korean, six on the cheaper side and three on the other.",
+      "figures": [
+        "23"
+      ],
+      "topics": [
+        "markets",
+        "language"
+      ],
+      "scale": "Twenty-three reviews of Gwangjang Market, Namdaemun Market and Mangwon Market compare prices with a supermarket, department store or mall: 18 say the market is cheaper and 5 say it is not.",
+      "sourceSlug": "seoul-markets-cheaper-than-supermarkets",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-cheaper-than-supermarkets"
+    },
+    {
+      "id": "markets-096",
       "fact": "One review in ten of Gwangjang Market says it is crowded: 10.0%, against 4.8% at Namdaemun Market and 5.5% at Mangwon Market.",
       "figures": [
         "10.0%",
@@ -3197,7 +3403,7 @@
       "sourceUrl": "https://seoulfoodtour.com/seoul-markets-crowds-kids-toilets-access"
     },
     {
-      "id": "markets-094",
+      "id": "markets-097",
       "fact": "Among reviews of three stars or fewer, the crowd comes up in 15.3% at Gwangjang Market, 10.4% at Mangwon Market and 6.3% at Namdaemun Market.",
       "figures": [
         "15.3%",
@@ -3212,9 +3418,10 @@
       "sourceUrl": "https://seoulfoodtour.com/seoul-markets-crowds-kids-toilets-access"
     },
     {
-      "id": "markets-095",
+      "id": "markets-098",
       "fact": "Sixty reviews say Mangwon Market is crowded, and 43 of those are in Korean.",
       "figures": [
+        "Sixty",
         "43"
       ],
       "topics": [
@@ -3225,27 +3432,80 @@
       "sourceUrl": "https://seoulfoodtour.com/seoul-markets-crowds-kids-toilets-access"
     },
     {
-      "id": "kids-families-001",
-      "fact": "Separate searches matched 127 reviews about children and family, 40 about toilets and 57 about mobility, luggage and steps.",
+      "id": "markets-099",
+      "fact": "Sixty-six reviews of Namdaemun Market say it is crowded, 4.8% of the sample.",
       "figures": [
-        "127",
-        "40",
-        "57"
+        "Sixty-six",
+        "4.8%"
       ],
       "topics": [
-        "kids-families",
+        "markets",
+        "crowds"
+      ],
+      "sourceSlug": "seoul-markets-crowds-kids-toilets-access",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-crowds-kids-toilets-access"
+    },
+    {
+      "id": "markets-100",
+      "fact": "Thirty-seven reviews mention toilets, twenty-one of them at Gwangjang Market.",
+      "figures": [
+        "Thirty-seven",
+        "twenty-one"
+      ],
+      "topics": [
+        "markets",
         "accessibility"
       ],
       "sourceSlug": "seoul-markets-crowds-kids-toilets-access",
       "sourceUrl": "https://seoulfoodtour.com/seoul-markets-crowds-kids-toilets-access"
     },
     {
-      "id": "markets-096",
+      "id": "markets-101",
+      "fact": "One review from 2026 describes a toilet block on three floors, with the ground floor for visitors with disabilities.",
+      "figures": [
+        "2026",
+        "three"
+      ],
+      "topics": [
+        "markets",
+        "accessibility"
+      ],
+      "sourceSlug": "seoul-markets-crowds-kids-toilets-access",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-crowds-kids-toilets-access"
+    },
+    {
+      "id": "markets-102",
+      "fact": "At Mangwon Market, four reviewers writing in Chinese mention a public toilet; one says it is the only one, near the middle of the market, with its opening hours posted.",
+      "figures": [
+        "four",
+        "one"
+      ],
+      "topics": [
+        "markets",
+        "accessibility"
+      ],
+      "sourceSlug": "seoul-markets-crowds-kids-toilets-access",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-crowds-kids-toilets-access"
+    },
+    {
+      "id": "markets-103",
+      "fact": "Five reviewers of Mangwon Market say it suits children and none warns against it.",
+      "figures": [
+        "Five"
+      ],
+      "topics": [
+        "markets",
+        "kids-families"
+      ],
+      "sourceSlug": "seoul-markets-crowds-kids-toilets-access",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-crowds-kids-toilets-access"
+    },
+    {
+      "id": "markets-104",
       "fact": "At Namdaemun Market, 26 reviewers found shops shut by early evening, at times from 5 to 9 pm.",
       "figures": [
         "26",
-        "5",
-        "9 pm"
+        "5 to 9 pm"
       ],
       "topics": [
         "markets",
@@ -3255,7 +3515,7 @@
       "sourceUrl": "https://seoulfoodtour.com/seoul-market-hours-gwangjang-namdaemun-mangwon"
     },
     {
-      "id": "markets-097",
+      "id": "markets-105",
       "fact": "At Gwangjang Market, 40 describe food stalls busy at night, but four who came at 8:30 pm or later found many closed.",
       "figures": [
         "40",
@@ -3269,7 +3529,7 @@
       "sourceUrl": "https://seoulfoodtour.com/seoul-market-hours-gwangjang-namdaemun-mangwon"
     },
     {
-      "id": "markets-098",
+      "id": "markets-106",
       "fact": "At Mangwon Market, 19 arrived in the morning to closed stalls, and ten say cooked food starts around 11.",
       "figures": [
         "19",
@@ -3283,21 +3543,7 @@
       "sourceUrl": "https://seoulfoodtour.com/seoul-market-hours-gwangjang-namdaemun-mangwon"
     },
     {
-      "id": "markets-099",
-      "fact": "Go at 7 pm to eat and you will not be buying fabric or bedding on the same trip.",
-      "figures": [
-        "7 pm"
-      ],
-      "topics": [
-        "markets",
-        "timing",
-        "shopping"
-      ],
-      "sourceSlug": "seoul-market-hours-gwangjang-namdaemun-mangwon",
-      "sourceUrl": "https://seoulfoodtour.com/seoul-market-hours-gwangjang-namdaemun-mangwon"
-    },
-    {
-      "id": "markets-100",
+      "id": "markets-107",
       "fact": "At Gwangjang Market, 15 reviews say something is closed on Sunday and 15 describe going on a Sunday and finding food and crowds.",
       "figures": [
         "15",
@@ -3312,47 +3558,50 @@
       "sourceUrl": "https://seoulfoodtour.com/seoul-market-hours-gwangjang-namdaemun-mangwon"
     },
     {
-      "id": "markets-101",
-      "fact": "Eighteen of the 25 Mangwon reviews are written in Korean, and five of them are about parking.",
+      "id": "markets-108",
+      "fact": "Twenty-five Mangwon reviews say weekends are packed or advise a weekday, which is 2.3% of its sample.",
       "figures": [
-        "25"
+        "2.3%"
       ],
       "topics": [
         "markets",
-        "language"
+        "crowds",
+        "timing"
       ],
       "sourceSlug": "seoul-market-hours-gwangjang-namdaemun-mangwon",
       "sourceUrl": "https://seoulfoodtour.com/seoul-market-hours-gwangjang-namdaemun-mangwon"
     },
     {
-      "id": "markets-102",
-      "fact": "In 43 reviews about visiting with children or family, five reviewers of Mangwon Market say it suits children and none warns against it.",
+      "id": "markets-109",
+      "fact": "At Namdaemun Market, two reviews in Japanese had been told the market runs until 11 pm; one arrived after 8 and the other after 9, and both found nearly everything shut.",
       "figures": [
-        "43"
+        "11 pm",
+        "8",
+        "9"
       ],
       "topics": [
         "markets",
-        "kids-families"
+        "timing"
       ],
-      "sourceSlug": "seoul-markets-with-kids-strollers",
-      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-with-kids-strollers"
+      "sourceSlug": "seoul-market-hours-gwangjang-namdaemun-mangwon",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-market-hours-gwangjang-namdaemun-mangwon"
     },
     {
-      "id": "markets-103",
-      "fact": "A family writing in Chinese left early with the children and found that most stalls open after 11 a.m., so they waited in a café.",
+      "id": "markets-110",
+      "fact": "The reviewer quoted earlier had read that Gwangjang Market closes at 6 pm and found the food going at 10.",
       "figures": [
-        "11 a.m."
+        "6 pm",
+        "10"
       ],
       "topics": [
         "markets",
-        "timing",
-        "kids-families"
+        "timing"
       ],
-      "sourceSlug": "seoul-markets-with-kids-strollers",
-      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-with-kids-strollers"
+      "sourceSlug": "seoul-market-hours-gwangjang-namdaemun-mangwon",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-market-hours-gwangjang-namdaemun-mangwon"
     },
     {
-      "id": "markets-104",
+      "id": "crowds-004",
       "fact": "Twenty-five Mangwon reviews say weekends are packed or advise a weekday, which is 2.3% of its sample, against 0.8% at Gwangjang Market and 0.6% at Namdaemun Market.",
       "figures": [
         "2.3%",
@@ -3360,55 +3609,85 @@
         "0.6%"
       ],
       "topics": [
-        "markets",
-        "crowds"
+        "crowds",
+        "markets"
       ],
       "sourceSlug": "seoul-markets-open-sunday-holidays",
       "sourceUrl": "https://seoulfoodtour.com/seoul-markets-open-sunday-holidays"
     },
     {
-      "id": "weather-002",
+      "id": "language-007",
+      "fact": "Of 3,923 reviews of Gwangjang Market, Namdaemun Market and Mangwon Market, 121 say something about language.",
+      "figures": [
+        "3,923",
+        "121"
+      ],
+      "topics": [
+        "language",
+        "markets"
+      ],
+      "sourceSlug": "seoul-markets-english-language-ordering",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-english-language-ordering"
+    },
+    {
+      "id": "language-008",
+      "fact": "Chinese is reported more often, in 26 reviews, and so is Japanese, in 17.",
+      "figures": [
+        "26",
+        "17"
+      ],
+      "topics": [
+        "language",
+        "markets"
+      ],
+      "sourceSlug": "seoul-markets-english-language-ordering",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-english-language-ordering"
+    },
+    {
+      "id": "language-009",
+      "fact": "What reviewers used instead of Korean: translated or picture menus at Gwangjang Market (14 reviews), pointing (12), and the multilingual information guides at Namdaemun Market (22).",
+      "figures": [
+        "14",
+        "12",
+        "22"
+      ],
+      "topics": [
+        "language",
+        "markets"
+      ],
+      "sourceSlug": "seoul-markets-english-language-ordering",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-english-language-ordering"
+    },
+    {
+      "id": "language-010",
+      "fact": "Across the three, 56 reviews report a vendor who understood a foreign language and 17 describe language as a barrier.",
+      "figures": [
+        "56",
+        "17"
+      ],
+      "topics": [
+        "language",
+        "markets"
+      ],
+      "sourceSlug": "seoul-markets-english-language-ordering",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-english-language-ordering"
+    },
+    {
+      "id": "markets-111",
       "fact": "Gwangjang Market is covered: eleven reviews recommend it in the rain, and 35 say it is hot or stuffy inside, 34 of them dated June to September.",
       "figures": [
         "35",
         "34"
       ],
       "topics": [
-        "weather",
-        "markets"
+        "markets",
+        "weather"
       ],
       "sourceSlug": "seoul-markets-rain-heat-winter",
       "sourceUrl": "https://seoulfoodtour.com/seoul-markets-rain-heat-winter"
     },
     {
-      "id": "weather-003",
-      "fact": "Namdaemun Market is mostly outdoors: thirteen reviews struggled with heat there, and five from 2025 and 2026 describe a new canopy over the main street.",
-      "figures": [
-        "2025",
-        "2026"
-      ],
-      "topics": [
-        "weather",
-        "markets"
-      ],
-      "sourceSlug": "seoul-markets-rain-heat-winter",
-      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-rain-heat-winter"
-    },
-    {
-      "id": "weather-004",
-      "fact": "In the cold, 22 reviews say the hot food is the point.",
-      "figures": [
-        "22"
-      ],
-      "topics": [
-        "weather",
-        "dishes"
-      ],
-      "sourceSlug": "seoul-markets-rain-heat-winter",
-      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-rain-heat-winter"
-    },
-    {
-      "id": "markets-105",
+      "id": "markets-112",
       "fact": "Five reviews from 2025 and 2026 describe a canopy over the main street.",
       "figures": [
         "2025",
@@ -3422,7 +3701,21 @@
       "sourceUrl": "https://seoulfoodtour.com/seoul-markets-rain-heat-winter"
     },
     {
-      "id": "weather-005",
+      "id": "markets-113",
+      "fact": "In the cold, 22 reviews say the hot food is the point.",
+      "figures": [
+        "22"
+      ],
+      "topics": [
+        "markets",
+        "dishes",
+        "weather"
+      ],
+      "sourceSlug": "seoul-markets-rain-heat-winter",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-rain-heat-winter"
+    },
+    {
+      "id": "markets-114",
       "fact": "Thirty-five reviews say it was hot, stuffy or humid, which is 2.4% of its sample, against 0.9% at Namdaemun Market and 0.3% at Mangwon Market.",
       "figures": [
         "2.4%",
@@ -3430,202 +3723,103 @@
         "0.3%"
       ],
       "topics": [
-        "weather",
-        "markets"
+        "markets",
+        "weather"
       ],
       "sourceSlug": "seoul-markets-rain-heat-winter",
       "sourceUrl": "https://seoulfoodtour.com/seoul-markets-rain-heat-winter"
     },
     {
-      "id": "weather-006",
+      "id": "markets-115",
+      "fact": "One, in Japanese, describes cooked ingredients sitting out at 36 degrees before being reheated to order, and says it made them uneasy.",
+      "figures": [
+        "36"
+      ],
+      "topics": [
+        "markets",
+        "dietary",
+        "weather"
+      ],
+      "sourceSlug": "seoul-markets-rain-heat-winter",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-rain-heat-winter"
+    },
+    {
+      "id": "markets-116",
+      "fact": "One, in Korean, describes food left unprotected at 30 degrees and reports that the group fell ill afterwards.",
+      "figures": [
+        "30"
+      ],
+      "topics": [
+        "markets",
+        "dietary",
+        "weather"
+      ],
+      "sourceSlug": "seoul-markets-rain-heat-winter",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-rain-heat-winter"
+    },
+    {
+      "id": "markets-117",
       "fact": "One Korean-language review from July 2026 draws the line exactly: some parts felt cool enough to walk in comfort, and the food stalls in the middle were hot.",
       "figures": [
         "2026"
       ],
       "topics": [
-        "weather",
-        "markets"
+        "markets",
+        "weather"
       ],
       "sourceSlug": "seoul-markets-rain-heat-winter",
       "sourceUrl": "https://seoulfoodtour.com/seoul-markets-rain-heat-winter"
     },
     {
-      "id": "weather-007",
+      "id": "markets-118",
       "fact": "At Gwangjang Market five reviews, dated 2019 to 2024, mention that the benches at the stalls are heated.",
       "figures": [
         "2019",
         "2024"
       ],
       "topics": [
-        "weather",
-        "markets"
+        "markets",
+        "weather"
       ],
       "sourceSlug": "seoul-markets-rain-heat-winter",
       "sourceUrl": "https://seoulfoodtour.com/seoul-markets-rain-heat-winter"
     },
     {
-      "id": "markets-106",
-      "fact": "Of 3,923 reviews of Gwangjang Market, Namdaemun Market and Mangwon Market, 121 say something about language.",
+      "id": "markets-119",
+      "fact": "In 43 reviews about visiting with children or family, five reviewers of Mangwon Market say it suits children and none warns against it.",
       "figures": [
-        "3,923",
-        "121"
+        "43"
       ],
       "topics": [
         "markets",
-        "language"
+        "kids-families"
       ],
-      "sourceSlug": "seoul-markets-english-language-ordering",
-      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-english-language-ordering"
+      "sourceSlug": "seoul-markets-with-kids-strollers",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-with-kids-strollers"
     },
     {
-      "id": "markets-107",
-      "fact": "Chinese is reported more often, in 26 reviews, and so is Japanese, in 17.",
+      "id": "markets-120",
+      "fact": "A family writing in Chinese left early with the children and found that most stalls open after 11 a.m., so they waited in a café.",
       "figures": [
-        "26",
-        "17"
+        "11 a.m."
       ],
       "topics": [
         "markets",
-        "language"
-      ],
-      "sourceSlug": "seoul-markets-english-language-ordering",
-      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-english-language-ordering"
-    },
-    {
-      "id": "markets-108",
-      "fact": "What reviewers used instead of Korean: translated or picture menus at Gwangjang Market (14 reviews), pointing (12), and the multilingual information guides at Namdaemun Market (22).",
-      "figures": [
-        "14",
-        "12",
-        "22"
-      ],
-      "topics": [
-        "markets",
-        "language"
-      ],
-      "sourceSlug": "seoul-markets-english-language-ordering",
-      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-english-language-ordering"
-    },
-    {
-      "id": "markets-109",
-      "fact": "Across the three, 56 reviews report a vendor who understood a foreign language and 17 describe language as a barrier.",
-      "figures": [
-        "56",
-        "17"
-      ],
-      "topics": [
-        "markets",
-        "language"
-      ],
-      "sourceSlug": "seoul-markets-english-language-ordering",
-      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-english-language-ordering"
-    },
-    {
-      "id": "food-tours-018",
-      "fact": "guided night food tours generally run around $70–100 per person, but read the inclusions carefully, because some cheaper \"night tours\" don't actually include your dinner or all food costs — a few are essentially guided night walks with a market stop where you pay for your own food",
-      "figures": [
-        "$70–100"
-      ],
-      "topics": [
-        "food-tours",
-        "pricing"
-      ],
-      "sourceSlug": "seoul-night-food-tour",
-      "sourceUrl": "https://seoulfoodtour.com/seoul-night-food-tour"
-    },
-    {
-      "id": "pricing-041",
-      "fact": "a full pojangmacha evening with multiple dishes and soju typically runs around ₩25,000–45,000 per person (roughly $18–32)",
-      "figures": [
-        "₩25,000–45,000",
-        "$18–32"
-      ],
-      "topics": [
-        "pricing",
-        "markets"
-      ],
-      "sourceSlug": "seoul-night-food-tour",
-      "sourceUrl": "https://seoulfoodtour.com/seoul-night-food-tour"
-    },
-    {
-      "id": "markets-110",
-      "fact": "Gwangjang Market transforms at night — from around 7 PM you can settle in for sit-down bindaetteok and makgeolli, and after 10 PM the food alley takes over entirely from the fabric stalls",
-      "figures": [
-        "7 PM",
-        "10 PM"
-      ],
-      "topics": [
-        "markets",
-        "timing"
-      ],
-      "sourceSlug": "seoul-night-food-tour",
-      "sourceUrl": "https://seoulfoodtour.com/seoul-night-food-tour"
-    },
-    {
-      "id": "markets-111",
-      "fact": "Gwangjang Market's food alley runs until around 11:30 PM (and takes over from the fabric stalls after 10 PM), while the pojangmacha tent bars of Euljiro and Jongno 3-ga get going in the evening and continue late",
-      "figures": [
-        "11:30 PM",
-        "10 PM"
-      ],
-      "topics": [
-        "markets",
-        "timing"
-      ],
-      "sourceSlug": "seoul-night-food-tour",
-      "sourceUrl": "https://seoulfoodtour.com/seoul-night-food-tour"
-    },
-    {
-      "id": "markets-112",
-      "fact": "For the latest hours, Dongdaemun is the standout — its street carts run until roughly 5 AM, making it more active at 2 AM than at 10 PM — and Namdaemun stays busy past 1 AM",
-      "figures": [
-        "5 AM",
-        "2 AM",
-        "10 PM",
-        "1 AM"
-      ],
-      "topics": [
-        "markets",
-        "timing"
-      ],
-      "sourceSlug": "seoul-night-food-tour",
-      "sourceUrl": "https://seoulfoodtour.com/seoul-night-food-tour"
-    },
-    {
-      "id": "markets-113",
-      "fact": "For a more local, untouristed evening, Mangwon Market in Mapo-gu is the anti-tourist night market — its pojangmacha operators set up from 6 PM serving grilled skewers, tteokbokki, and sundae at neighborhood prices, in a small, warm covered alley you can explore in under an hour",
-      "figures": [
-        "6 PM"
-      ],
-      "topics": [
-        "markets",
-        "timing"
-      ],
-      "sourceSlug": "seoul-night-food-tour",
-      "sourceUrl": "https://seoulfoodtour.com/seoul-night-food-tour"
-    },
-    {
-      "id": "timing-018",
-      "fact": "Seoul's Night Owl (올빼미) bus network runs until around 5 AM, and Kakao T taxis fill any gaps when you want speed",
-      "figures": [
-        "5 AM"
-      ],
-      "topics": [
         "timing",
-        "apps"
+        "kids-families"
       ],
-      "sourceSlug": "seoul-night-food-tour",
-      "sourceUrl": "https://seoulfoodtour.com/seoul-night-food-tour"
+      "sourceSlug": "seoul-markets-with-kids-strollers",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-markets-with-kids-strollers"
     },
     {
       "id": "reservations-002",
-      "fact": "Deposits are common, and a no-show can cost up to 40% of the meal at fine-dining restaurants.",
+      "fact": "Two routes now work without one: the CatchTable Global app, which signs you up with an email and takes foreign cards, and Naver’s passport verification, live since June 2026.",
       "figures": [
-        "40%"
+        "June 2026"
       ],
       "topics": [
         "reservations",
-        "pricing"
+        "apps"
       ],
       "sourceSlug": "seoul-restaurant-reservations-without-korean-number",
       "sourceUrl": "https://seoulfoodtour.com/seoul-restaurant-reservations-without-korean-number"
@@ -3659,7 +3853,132 @@
       "sourceUrl": "https://seoulfoodtour.com/seoul-restaurant-reservations-without-korean-number"
     },
     {
-      "id": "dishes-020",
+      "id": "reservations-005",
+      "fact": "Deposits are common, and a no-show can cost up to 40% of the meal at fine-dining restaurants.",
+      "figures": [
+        "40%"
+      ],
+      "topics": [
+        "reservations",
+        "pricing"
+      ],
+      "sourceSlug": "seoul-restaurant-reservations-without-korean-number",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-restaurant-reservations-without-korean-number"
+    },
+    {
+      "id": "pricing-037",
+      "fact": "Tours run roughly $70–100, though some cheaper ones don't include dinner.",
+      "figures": [
+        "$70–100"
+      ],
+      "topics": [
+        "pricing",
+        "food-tours"
+      ],
+      "sourceSlug": "seoul-night-food-tour",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-night-food-tour"
+    },
+    {
+      "id": "pricing-038",
+      "fact": "Budget-wise, the tent bars are accessible: a full pojangmacha evening with multiple dishes and soju typically runs around ₩25,000–45,000 per person (roughly $18–32).",
+      "figures": [
+        "₩25,000–45,000",
+        "$18–32"
+      ],
+      "topics": [
+        "pricing",
+        "dishes"
+      ],
+      "sourceSlug": "seoul-night-food-tour",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-night-food-tour"
+    },
+    {
+      "id": "markets-121",
+      "fact": "Gwangjang Market transforms at night — from around 7 PM you can settle in for sit-down bindaetteok and makgeolli, and after 10 PM the food alley takes over entirely from the fabric stalls.",
+      "figures": [
+        "7 PM",
+        "10 PM"
+      ],
+      "topics": [
+        "markets",
+        "timing"
+      ],
+      "sourceSlug": "seoul-night-food-tour",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-night-food-tour"
+    },
+    {
+      "id": "markets-122",
+      "fact": "Gwangjang Market's food alley runs until around 11:30 PM (and takes over from the fabric stalls after 10 PM), while the pojangmacha tent bars of Euljiro and Jongno 3-ga get going in the evening and continue late.",
+      "figures": [
+        "11:30 PM",
+        "10 PM"
+      ],
+      "topics": [
+        "markets",
+        "timing"
+      ],
+      "sourceSlug": "seoul-night-food-tour",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-night-food-tour"
+    },
+    {
+      "id": "markets-123",
+      "fact": "For the latest hours, Dongdaemun is the standout — its street carts run until roughly 5 AM, making it more active at 2 AM than at 10 PM — and Namdaemun stays busy past 1 AM.",
+      "figures": [
+        "5 AM",
+        "2 AM",
+        "10 PM",
+        "1 AM"
+      ],
+      "topics": [
+        "markets",
+        "timing"
+      ],
+      "sourceSlug": "seoul-night-food-tour",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-night-food-tour"
+    },
+    {
+      "id": "markets-124",
+      "fact": "For a more local, untouristed evening, Mangwon Market in Mapo-gu is the anti-tourist night market — its pojangmacha operators set up from 6 PM serving grilled skewers, tteokbokki, and sundae at neighborhood prices, in a small, warm covered alley you can explore in under an hour.",
+      "figures": [
+        "6 PM"
+      ],
+      "topics": [
+        "markets",
+        "timing"
+      ],
+      "sourceSlug": "seoul-night-food-tour",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-night-food-tour"
+    },
+    {
+      "id": "apps-022",
+      "fact": "Getting home late is easy: Seoul's Night Owl (올빼미) bus network runs until around 5 AM, and Kakao T taxis fill any gaps when you want speed.",
+      "figures": [
+        "5 AM"
+      ],
+      "topics": [
+        "apps",
+        "timing"
+      ],
+      "sourceSlug": "seoul-night-food-tour",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-night-food-tour"
+    },
+    {
+      "id": "markets-125",
+      "fact": "Forty-three of 1,458 reviews of Gwangjang Market name sundae: 2.9%.",
+      "figures": [
+        "Forty-three",
+        "1,458",
+        "2.9%"
+      ],
+      "topics": [
+        "markets",
+        "dishes"
+      ],
+      "sourceSlug": "sundae-korean-blood-sausage-gwangjang-market",
+      "sourceUrl": "https://seoulfoodtour.com/sundae-korean-blood-sausage-gwangjang-market"
+    },
+    {
+      "id": "markets-126",
       "fact": "Forty-three reviews of Gwangjang Market name sundae, the Korean blood sausage, and 12 say how it tasted: five liked it, six did not and one called it ordinary.",
       "figures": [
         "Forty-three",
@@ -3669,59 +3988,42 @@
         "one"
       ],
       "topics": [
-        "dishes",
-        "markets"
+        "markets",
+        "dishes"
       ],
       "sourceSlug": "sundae-korean-blood-sausage-gwangjang-market",
       "sourceUrl": "https://seoulfoodtour.com/sundae-korean-blood-sausage-gwangjang-market"
     },
     {
-      "id": "dishes-021",
-      "fact": "Forty-three of 1,458 reviews of Gwangjang Market name sundae: 2.9%.",
-      "figures": [
-        "Forty-three",
-        "1,458",
-        "2.9%"
-      ],
-      "topics": [
-        "dishes",
-        "markets"
-      ],
-      "sourceSlug": "sundae-korean-blood-sausage-gwangjang-market",
-      "sourceUrl": "https://seoulfoodtour.com/sundae-korean-blood-sausage-gwangjang-market"
-    },
-    {
-      "id": "dishes-022",
-      "fact": "For comparison, 39 reviews of the same market say how the mandu tasted, and 31 of them call it good.",
-      "figures": [
-        "39",
-        "31"
-      ],
-      "topics": [
-        "dishes",
-        "markets"
-      ],
-      "sourceSlug": "sundae-korean-blood-sausage-gwangjang-market",
-      "sourceUrl": "https://seoulfoodtour.com/sundae-korean-blood-sausage-gwangjang-market"
-    },
-    {
-      "id": "dishes-023",
-      "fact": "Seven reviews order or name it with tteokbokki, and a set of both with gimbap cost one reviewer 10,000 won in 2025.",
+      "id": "markets-127",
+      "fact": "Seven of the 43 reviews order or name sundae together with tteokbokki.",
       "figures": [
         "Seven",
-        "10,000 won",
-        "2025"
+        "43"
       ],
       "topics": [
-        "dishes",
+        "markets",
+        "dishes"
+      ],
+      "sourceSlug": "sundae-korean-blood-sausage-gwangjang-market",
+      "sourceUrl": "https://seoulfoodtour.com/sundae-korean-blood-sausage-gwangjang-market"
+    },
+    {
+      "id": "pricing-039",
+      "fact": "The set at 10,000 won comes from the Japanese reviewer who could not eat the sundae; the same review calls the price very cheap for the amount.",
+      "figures": [
+        "10,000"
+      ],
+      "topics": [
         "pricing",
+        "dishes",
         "markets"
       ],
       "sourceSlug": "sundae-korean-blood-sausage-gwangjang-market",
       "sourceUrl": "https://seoulfoodtour.com/sundae-korean-blood-sausage-gwangjang-market"
     },
     {
-      "id": "dishes-024",
+      "id": "markets-128",
       "fact": "Sundae is named about as often in low reviews as in high ones: in 3.3% (8) of the one-to-three-star reviews and 2.9% (35) of the four-and-five-star ones.",
       "figures": [
         "3.3%",
@@ -3730,14 +4032,14 @@
         "35"
       ],
       "topics": [
-        "dishes",
-        "markets"
+        "markets",
+        "dishes"
       ],
       "sourceSlug": "sundae-korean-blood-sausage-gwangjang-market",
       "sourceUrl": "https://seoulfoodtour.com/sundae-korean-blood-sausage-gwangjang-market"
     },
     {
-      "id": "markets-114",
+      "id": "markets-129",
       "fact": "At Namdaemun Market, 26 reviews found the shops shut by early evening, at hours from 5 to 9 pm, while 30 describe street food or dinner there.",
       "figures": [
         "26",
@@ -3753,7 +4055,20 @@
       "sourceUrl": "https://seoulfoodtour.com/seoul-night-markets-gwangjang-namdaemun-mangwon"
     },
     {
-      "id": "markets-115",
+      "id": "markets-130",
+      "fact": "At Mangwon Market, two found it closing at about 8.",
+      "figures": [
+        "8"
+      ],
+      "topics": [
+        "markets",
+        "timing"
+      ],
+      "sourceSlug": "seoul-night-markets-gwangjang-namdaemun-mangwon",
+      "sourceUrl": "https://seoulfoodtour.com/seoul-night-markets-gwangjang-namdaemun-mangwon"
+    },
+    {
+      "id": "markets-131",
       "fact": "At Gwangjang Market, 40 describe food and people at night, and four who arrived at 8:30 pm or later found many stalls closed.",
       "figures": [
         "40",
@@ -3768,22 +4083,8 @@
       "sourceUrl": "https://seoulfoodtour.com/seoul-night-markets-gwangjang-namdaemun-mangwon"
     },
     {
-      "id": "markets-116",
-      "fact": "At Mangwon Market, two found it closing at about 8.",
-      "figures": [
-        "8"
-      ],
-      "topics": [
-        "markets",
-        "timing"
-      ],
-      "scale": "Two of the three name an hour, and both say about 8 pm.",
-      "sourceSlug": "seoul-night-markets-gwangjang-namdaemun-mangwon",
-      "sourceUrl": "https://seoulfoodtour.com/seoul-night-markets-gwangjang-namdaemun-mangwon"
-    },
-    {
-      "id": "dietary-001",
-      "fact": "Around 95% of market stalls use fish sauce or meat powder, anchovy broth (dashi) is in nearly every soup, and most kimchi and commercial gochujang contain fish sauce or paste — so even vegetable dishes often aren't truly vegan or vegetarian.",
+      "id": "dietary-005",
+      "fact": "an estimated 95% of market stalls add fish sauce or meat powder to their food, so even a seemingly vegetable-based dish is often not truly vegetarian or vegan",
       "figures": [
         "95%"
       ],
@@ -3795,50 +4096,12 @@
       "sourceUrl": "https://seoulfoodtour.com/vegan-vegetarian-halal-food-tour-seoul"
     },
     {
-      "id": "food-tours-019",
-      "fact": "They're often chef-designed, capped at small group sizes (around eight guests), and highly regarded.",
-      "figures": [
-        "eight"
-      ],
-      "topics": [
-        "food-tours",
-        "dietary"
-      ],
-      "sourceSlug": "vegan-vegetarian-halal-food-tour-seoul",
-      "sourceUrl": "https://seoulfoodtour.com/vegan-vegetarian-halal-food-tour-seoul"
-    },
-    {
-      "id": "dietary-002",
-      "fact": "Seoul's vegan scene has grown dramatically — central Seoul now has around 100 vegan or vegan-friendly restaurants, up from a couple of dozen a decade ago, concentrated in Hongdae and Yeonnam-dong (cafés and casual spots), Insadong (temple cuisine), and Gangnam (upscale plant-based).",
+      "id": "dietary-006",
+      "fact": "central Seoul now has around 100 vegan or vegan-friendly restaurants, up from a couple of dozen a decade ago, concentrated in Hongdae and Yeonnam-dong (cafés and casual spots), Insadong (temple cuisine), and Gangnam (upscale plant-based)",
       "figures": [
         "100"
       ],
       "topics": [
-        "dietary"
-      ],
-      "sourceSlug": "vegan-vegetarian-halal-food-tour-seoul",
-      "sourceUrl": "https://seoulfoodtour.com/vegan-vegetarian-halal-food-tour-seoul"
-    },
-    {
-      "id": "dietary-003",
-      "fact": "To navigate the wider city, it helps to know that the Korea Tourism Organization classifies restaurants into four Muslim-friendly levels — from fully halal-certified down to pork-free — which takes much of the guesswork out of eating beyond Itaewon.",
-      "figures": [
-        "four"
-      ],
-      "topics": [
-        "dietary"
-      ],
-      "sourceSlug": "vegan-vegetarian-halal-food-tour-seoul",
-      "sourceUrl": "https://seoulfoodtour.com/vegan-vegetarian-halal-food-tour-seoul"
-    },
-    {
-      "id": "food-tours-020",
-      "fact": "Yes — Seoul has dedicated plant-based food tours, most based at Gwangjang Market, that run 100% vegan routes (no meat, fish, dairy, or eggs) with guides who've pre-vetted every stall and handle all ordering.",
-      "figures": [
-        "100%"
-      ],
-      "topics": [
-        "food-tours",
         "dietary",
         "markets"
       ],
@@ -3846,37 +4109,47 @@
       "sourceUrl": "https://seoulfoodtour.com/vegan-vegetarian-halal-food-tour-seoul"
     },
     {
-      "id": "markets-117",
-      "fact": "At Mangwon Market 14 of the 18 reviewers who judged the tteokbokki liked it, and some of the praise is strong",
+      "id": "food-tours-019",
+      "fact": "Airbnb Experiences relaunched in 2025 after a two-year pause, and it operates on a fundamentally different model from the others.",
       "figures": [
-        "14",
-        "18"
-      ],
-      "topics": [
-        "markets",
-        "dishes"
-      ],
-      "sourceSlug": "tteokbokki-seoul-gwangjang-mangwon-namdaemun",
-      "sourceUrl": "https://seoulfoodtour.com/tteokbokki-seoul-gwangjang-mangwon-namdaemun"
-    },
-    {
-      "id": "markets-118",
-      "fact": "Reviewers at Gwangjang Market report 4,000 won a plate in 2025 and 2026.",
-      "figures": [
-        "4,000",
         "2025",
-        "2026"
+        "two-year"
       ],
       "topics": [
-        "markets",
-        "pricing",
-        "dishes"
+        "food-tours"
       ],
-      "sourceSlug": "tteokbokki-seoul-gwangjang-mangwon-namdaemun",
-      "sourceUrl": "https://seoulfoodtour.com/tteokbokki-seoul-gwangjang-mangwon-namdaemun"
+      "sourceSlug": "where-to-book-seoul-food-tour",
+      "sourceUrl": "https://seoulfoodtour.com/where-to-book-seoul-food-tour"
     },
     {
-      "id": "markets-119",
+      "id": "food-tours-020",
+      "fact": "Most do as a general policy — Viator, GetYourGuide, and Klook typically offer free cancellation up to 24 hours before start on standard tours, and GetYourGuide sometimes up to 48.",
+      "figures": [
+        "24",
+        "48"
+      ],
+      "topics": [
+        "food-tours",
+        "reservations"
+      ],
+      "sourceSlug": "where-to-book-seoul-food-tour",
+      "sourceUrl": "https://seoulfoodtour.com/where-to-book-seoul-food-tour"
+    },
+    {
+      "id": "food-tours-021",
+      "fact": "The same or a similar tour can differ in price, meeting point, and cancellation terms between platforms, and a two-minute comparison can save money or buy you more flexibility.",
+      "figures": [
+        "two-minute"
+      ],
+      "topics": [
+        "food-tours",
+        "pricing"
+      ],
+      "sourceSlug": "where-to-book-seoul-food-tour",
+      "sourceUrl": "https://seoulfoodtour.com/where-to-book-seoul-food-tour"
+    },
+    {
+      "id": "markets-132",
       "fact": "Three reviews name a price at Gwangjang Market: 4,000 won in October 2025 and again in July 2026, and 3,000 won in December 2019.",
       "figures": [
         "4,000",
@@ -3894,7 +4167,21 @@
       "sourceUrl": "https://seoulfoodtour.com/tteokbokki-seoul-gwangjang-mangwon-namdaemun"
     },
     {
-      "id": "markets-120",
+      "id": "markets-133",
+      "fact": "At Mangwon Market 14 of the 18 reviewers who judged the tteokbokki liked it, and some of the praise is strong",
+      "figures": [
+        "14",
+        "18"
+      ],
+      "topics": [
+        "markets",
+        "dishes"
+      ],
+      "sourceSlug": "tteokbokki-seoul-gwangjang-mangwon-namdaemun",
+      "sourceUrl": "https://seoulfoodtour.com/tteokbokki-seoul-gwangjang-mangwon-namdaemun"
+    },
+    {
+      "id": "markets-134",
       "fact": "Only 17 of the 1,376 reviews of Namdaemun Market name tteokbokki, and none of them has three stars or fewer.",
       "figures": [
         "17",
@@ -3908,33 +4195,22 @@
       "sourceUrl": "https://seoulfoodtour.com/tteokbokki-seoul-gwangjang-mangwon-namdaemun"
     },
     {
-      "id": "food-tours-021",
-      "fact": "Most do as a general policy — Viator, GetYourGuide, and Klook typically offer free cancellation up to 24 hours before start on standard tours, and GetYourGuide sometimes up to 48.",
+      "id": "pricing-040",
+      "fact": "One reviewer in June 2025 paid 10,000 won for a set of gimbap, tteokbokki and blood sausage, and another says tteokbokki and fish cake cost the same at every stall, so any that looks good will do.",
       "figures": [
-        "24",
-        "48"
+        "10,000",
+        "June 2025"
       ],
       "topics": [
-        "food-tours",
-        "reservations"
+        "pricing",
+        "dishes",
+        "markets"
       ],
-      "sourceSlug": "where-to-book-seoul-food-tour",
-      "sourceUrl": "https://seoulfoodtour.com/where-to-book-seoul-food-tour"
+      "sourceSlug": "tteokbokki-seoul-gwangjang-mangwon-namdaemun",
+      "sourceUrl": "https://seoulfoodtour.com/tteokbokki-seoul-gwangjang-mangwon-namdaemun"
     },
     {
-      "id": "food-tours-022",
-      "fact": "Airbnb Experiences relaunched in 2025 after a two-year pause, and it operates on a fundamentally different model from the others.",
-      "figures": [
-        "2025"
-      ],
-      "topics": [
-        "food-tours"
-      ],
-      "sourceSlug": "where-to-book-seoul-food-tour",
-      "sourceUrl": "https://seoulfoodtour.com/where-to-book-seoul-food-tour"
-    },
-    {
-      "id": "markets-121",
+      "id": "markets-135",
       "fact": "At Mangwon Market, 43.0% of the reviews are written in Korean.",
       "figures": [
         "43.0%"
@@ -3947,38 +4223,24 @@
       "sourceUrl": "https://seoulfoodtour.com/where-locals-eat-seoul-markets"
     },
     {
-      "id": "crowds-003",
-      "fact": "Across the three markets, 507 reviews mention tourists or foreigners.",
-      "figures": [
-        "507"
-      ],
-      "topics": [
-        "crowds",
-        "markets"
-      ],
-      "sourceSlug": "where-locals-eat-seoul-markets",
-      "sourceUrl": "https://seoulfoodtour.com/where-locals-eat-seoul-markets"
-    },
-    {
-      "id": "crowds-004",
+      "id": "markets-136",
       "fact": "When a Mangwon review mentions tourists, it is more often than not to say there are few: 83 of 147 do.",
       "figures": [
         "83",
         "147"
       ],
       "topics": [
-        "crowds",
-        "markets"
+        "markets",
+        "crowds"
       ],
       "sourceSlug": "where-locals-eat-seoul-markets",
       "sourceUrl": "https://seoulfoodtour.com/where-locals-eat-seoul-markets"
     },
     {
-      "id": "markets-122",
+      "id": "markets-137",
       "fact": "At Gwangjang Market, 80 reviews call the market touristy and fifteen more say foreigners are charged more or treated worse.",
       "figures": [
-        "80",
-        "fifteen"
+        "80"
       ],
       "topics": [
         "markets",
@@ -3989,7 +4251,7 @@
       "sourceUrl": "https://seoulfoodtour.com/where-locals-eat-seoul-markets"
     },
     {
-      "id": "markets-123",
+      "id": "markets-138",
       "fact": "Namdaemun reviews bring up Gwangjang 15 times.",
       "figures": [
         "15"
@@ -4001,10 +4263,9 @@
       "sourceUrl": "https://seoulfoodtour.com/where-locals-eat-seoul-markets"
     },
     {
-      "id": "markets-124",
+      "id": "markets-139",
       "fact": "Forty-eight Korean-language reviews of Mangwon Market mention parking, and 58 mention groceries.",
       "figures": [
-        "Forty-eight",
         "58"
       ],
       "topics": [
@@ -4015,15 +4276,27 @@
       "sourceUrl": "https://seoulfoodtour.com/where-locals-eat-seoul-markets"
     },
     {
-      "id": "markets-125",
+      "id": "markets-140",
       "fact": "At Gwangjang Market, two of 116 Korean-language reviews mention parking, and two mention groceries.",
       "figures": [
-        "two",
         "116"
       ],
       "topics": [
         "markets",
         "shopping"
+      ],
+      "sourceSlug": "where-locals-eat-seoul-markets",
+      "sourceUrl": "https://seoulfoodtour.com/where-locals-eat-seoul-markets"
+    },
+    {
+      "id": "markets-141",
+      "fact": "Across the three markets, 507 reviews mention tourists or foreigners.",
+      "figures": [
+        "507"
+      ],
+      "topics": [
+        "markets",
+        "crowds"
       ],
       "sourceSlug": "where-locals-eat-seoul-markets",
       "sourceUrl": "https://seoulfoodtour.com/where-locals-eat-seoul-markets"

@@ -6,18 +6,8 @@
   },
   {
     "slug": "ganjang-gejang-marinated-crab-mangwon-market",
-    "fact": "Twenty-four reviews of Mangwon Market name ganjang gejang or another marinated crab, and none is below four stars.",
-    "reason": "cifra \"24\" no esta en la frase"
-  },
-  {
-    "slug": "ganjang-gejang-marinated-crab-mangwon-market",
     "fact": "Eight call it cheap: reviewers paid 18,000 to 28,000 won for a box in 2023 and 2024.",
     "reason": "cifra \"18,000\" sin unidad ni escala"
-  },
-  {
-    "slug": "ganjang-gejang-marinated-crab-mangwon-market",
-    "fact": "Twenty-four of 1,089 reviews of Mangwon Market name marinated crab: 2.2%.",
-    "reason": "cifra \"24\" no esta en la frase"
   },
   {
     "slug": "ganjang-gejang-marinated-crab-mangwon-market",
@@ -36,28 +26,28 @@
   },
   {
     "slug": "gwangjang-market-food-guide",
-    "fact": "a dense, loud, exhilarating maze of more than 5,000 stalls where the sizzle of frying pancakes and the grinding of stone mills turning mung beans into batter fill the air",
+    "fact": "for visitors, the draw is the food corridor: a dense, loud, exhilarating maze of more than 5,000 stalls where the sizzle of frying pancakes and the grinding of stone mills turning mung beans into batter fill the air.",
     "reason": "cifra \"5,000\" sin unidad ni escala"
   },
   {
-    "slug": "gwangjang-market-yukhoe-live-octopus-sannakji",
-    "fact": "Seven reviews describe the two dishes together, the octopus on top of the raw beef.",
-    "reason": "cifra \"7\" no esta en la frase"
+    "slug": "is-mangwon-market-crowded-weekday-weekend",
+    "fact": "Sixty reviews of Mangwon Market say it is crowded, 43 of them written in Korean, and 16 point to the weekend.",
+    "reason": "cifra \"60\" no esta en la frase"
   },
   {
-    "slug": "gwangjang-market-yukhoe-live-octopus-sannakji",
-    "fact": "Ten reviews use a name for the place: Yukhoe Alley, or yukhoe street in Japanese and Chinese.",
-    "reason": "cifra \"10\" no encontrada"
+    "slug": "is-mangwon-market-crowded-weekday-weekend",
+    "fact": "Fifty-six reviews say it is not crowded or is calmer than other markets, and none of those is in Korean.",
+    "reason": "cifra \"56\" no encontrada"
   },
   {
-    "slug": "gwangjang-market-yukhoe-live-octopus-sannakji",
-    "fact": "Buchon Yukhoe (부촌육회) is the name reviewers give, in four reviews written in Japanese and Chinese.",
-    "reason": "cifra \"4\" no esta en la frase"
+    "slug": "is-mangwon-market-crowded-weekday-weekend",
+    "fact": "The catch is that many stalls do not open until about 11 a.m.",
+    "reason": "cifra \"11 a.m.\" no esta en la frase"
   },
   {
-    "slug": "gwangjang-market-yukhoe-live-octopus-sannakji",
-    "fact": "Six reviews say one of the yukhoe restaurants is listed in the Michelin Guide.",
-    "reason": "cifra \"6\" no esta en la frase"
+    "slug": "is-mangwon-market-crowded-weekday-weekend",
+    "fact": "Fifteen reviews say outright that Mangwon Market is less crowded than Gwangjang Market.",
+    "reason": "cifra \"15\" no encontrada"
   },
   {
     "slug": "is-mangwon-market-crowded-weekday-weekend",
@@ -65,28 +55,43 @@
     "reason": "cifra \"11 a.m.\" no esta en la frase"
   },
   {
-    "slug": "hotteok-seoul-namdaemun-mangwon-gwangjang",
-    "fact": "The reviewer asked for a classic hotteok, expected to pay 2,000 won and was charged 2,500",
-    "reason": "cifra \"2,500\" sin unidad ni escala"
+    "slug": "mandu-dumplings-seoul-gwangjang-namdaemun-mangwon",
+    "fact": "Sixty-five of the 154 reviews say how the mandu tasted, and 53 of those say they were good.",
+    "reason": "cifra \"65\" no esta en la frase"
   },
   {
-    "slug": "seoul-markets-crowds-kids-toilets-access",
-    "fact": "One family found that most stalls open after 11 a.m.",
-    "reason": "cifra \"11 a.m.\" no esta en la frase"
+    "slug": "mangwon-market-hangang-park-mangnidan-gil-how-to-get-there",
+    "fact": "Two recommend a rice-cake shop at the entrance of the World Cup Market, one of them at 2,000 won a pack in December 2023.",
+    "reason": "cifra \"2,000\" sin unidad ni escala"
   },
   {
-    "slug": "seoul-market-hours-gwangjang-namdaemun-mangwon",
-    "fact": "Twenty-five Mangwon reviews say weekends are packed or advise a weekday, which is 2.3% of its sample.",
-    "reason": "cifra \"25\" no esta en la frase"
+    "slug": "namdaemun-market-childrens-clothing",
+    "fact": "That reviewer bought nine children’s sleep sacks to give to friends and gives the arithmetic for a child’s hat: 15,000 won for one, 9,000 won each for more than three.",
+    "reason": "apertura no autonoma"
   },
   {
-    "slug": "tteokbokki-seoul-gwangjang-mangwon-namdaemun",
-    "fact": "One reviewer in June 2025 paid 10,000 won for a set of gimbap, tteokbokki and blood sausage",
-    "reason": "cifra \"10,000\" sin unidad ni escala"
+    "slug": "namdaemun-market-childrens-clothing",
+    "fact": "That second reviewer, in April 2026, walked through the children’s clothes on a weekend and found few options.",
+    "reason": "apertura no autonoma"
   },
   {
-    "slug": "tteokbokki-seoul-gwangjang-mangwon-namdaemun",
-    "fact": "One reviewer, in mid-2025, paid 5,000 won for a portion they found small and very chewy.",
-    "reason": "cifra \"5,000\" sin unidad ni escala"
+    "slug": "seoul-market-toilets-gwangjang-namdaemun-mangwon",
+    "fact": "Another Japanese reviewer, in 2026, warns that in some toilets the paper cannot be flushed and that some have none.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "seoul-markets-cheaper-than-supermarkets",
+    "fact": "Eight of the 18 are about fresh produce, seven of them at Mangwon Market.",
+    "reason": "cifra \"7\" no esta en la frase"
+  },
+  {
+    "slug": "seoul-markets-cheaper-than-supermarkets",
+    "fact": "Ten reviews of Namdaemun Market name Shinsegae, the department store beside it, and most use it as a landmark for finding the market.",
+    "reason": "cifra \"10\" no encontrada"
+  },
+  {
+    "slug": "sundae-korean-blood-sausage-gwangjang-market",
+    "fact": "The reviewer expected 13,000 won and was charged 15,000, and concluded afterwards that the stall had shown one menu, with sundae at 4,000 won, and charged from another.",
+    "reason": "cifra \"13,000\" sin unidad ni escala"
   }
 ]

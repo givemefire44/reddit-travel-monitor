@@ -1,6 +1,11 @@
 [
   {
     "slug": "best-trastevere-food-tours",
+    "fact": "After that, look at how many tastings you get (a good evening tour runs six to seven stops and around ten tastings), the format (street-food grazing versus a sit-down pasta course), the group size (caps typically run 12 to 14), and the timing — most tours are evening, which suits Rome, since Romans themselves rarely sit down to dinner before 8 p.m.",
+    "reason": "cifra \"8 p.m.\" no esta en la frase"
+  },
+  {
+    "slug": "best-trastevere-food-tours",
     "fact": "Daytime tours are the other option: earlier hours, less alcohol, and a lighter format that suits families and anyone who'd rather not be eating at 10 p.m.",
     "reason": "cifra \"10 p.m.\" no esta en la frase"
   },
@@ -15,14 +20,9 @@
     "reason": "cifra \"1,061\" sin unidad ni escala"
   },
   {
-    "slug": "trastevere-roman-dishes-what-goes-wrong",
+    "slug": "trastevere-tiramisu-safest-order",
     "fact": "This article uses 5,020 rated reviews of three Trastevere restaurants verified by address and trading status in September 2026 — Tonnarello, Da Enzo al 29 and Nannarella.",
     "reason": "apertura no autonoma"
-  },
-  {
-    "slug": "trastevere-seasoning-complaints-salt-bland",
-    "fact": "Three reviews manage both complaints at once, and they average 1.67 — the lowest of anything we measured",
-    "reason": "cifra \"3\" no esta en la frase"
   },
   {
     "slug": "trastevere-seasoning-complaints-salt-bland",
@@ -40,8 +40,8 @@
     "reason": "voz editorial interna"
   },
   {
-    "slug": "which-trastevere-food-tour-fits-you",
-    "fact": "Another says that if your child is under 6 and won't be eating, they come free; but if they will eat, you must select the \"youth\" category at checkout so a seat is saved at the dinner table.",
-    "reason": "apertura no autonoma"
+    "slug": "trastevere-wine-aperitivo-what-to-drink",
+    "fact": "Wine averages 3.92 and beer 3.30.",
+    "reason": "cifra \"3.92\" sin unidad ni escala"
   }
 ]
