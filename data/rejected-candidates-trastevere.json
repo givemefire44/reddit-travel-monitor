@@ -1,28 +1,18 @@
 [
   {
     "slug": "best-trastevere-food-tours",
-    "fact": "After that, look at how many tastings you get (a good evening tour runs six to seven stops and around ten tastings), the format (street-food grazing versus a sit-down pasta course), the group size (caps typically run 12 to 14), and the timing — most tours are evening, which suits Rome, since Romans themselves rarely sit down to dinner before 8 p.m.",
-    "reason": "cifra \"8 p.m.\" no esta en la frase"
-  },
-  {
-    "slug": "best-trastevere-food-tours",
     "fact": "Daytime tours are the other option: earlier hours, less alcohol, and a lighter format that suits families and anyone who'd rather not be eating at 10 p.m.",
     "reason": "cifra \"10 p.m.\" no esta en la frase"
   },
   {
-    "slug": "trastevere-restaurant-queue-how-long-the-wait",
-    "fact": "This is the advice everybody gives, including 35 reviewers who gave four or five stars, against two who were unhappy — arriving early is something satisfied diners recommend.",
-    "reason": "apertura no autonoma"
+    "slug": "trastevere-food-tour-reviews-across-platforms",
+    "fact": "Three platforms rate Trastevere food tours almost identically: GetYourGuide 4.99, Google Maps 4.48, TripAdvisor 4.43.",
+    "reason": "cifra \"4.99\" sin unidad ni escala"
   },
   {
     "slug": "trastevere-restaurant-recommendations-same-five",
     "fact": "Of 1,061 forum, question and video discussions about eating in Trastevere, only 95 name a specific restaurant.",
     "reason": "cifra \"1,061\" sin unidad ni escala"
-  },
-  {
-    "slug": "trastevere-tiramisu-safest-order",
-    "fact": "This article uses 5,020 rated reviews of three Trastevere restaurants verified by address and trading status in September 2026 — Tonnarello, Da Enzo al 29 and Nannarella.",
-    "reason": "apertura no autonoma"
   },
   {
     "slug": "trastevere-seasoning-complaints-salt-bland",
@@ -35,13 +25,8 @@
     "reason": "cifra \"10:30 p.m.\" no esta en la frase"
   },
   {
-    "slug": "trastevere-wine-aperitivo-what-to-drink",
-    "fact": "On our data, the aperitivo is the safe order: reviews mentioning a spritz average 4.40, slightly above the 4.32 baseline for reviews naming anything consumed.",
-    "reason": "voz editorial interna"
-  },
-  {
-    "slug": "trastevere-wine-aperitivo-what-to-drink",
-    "fact": "Wine averages 3.92 and beer 3.30.",
-    "reason": "cifra \"3.92\" sin unidad ni escala"
+    "slug": "which-trastevere-food-tour-fits-you",
+    "fact": "Another says that if your child is under 6 and won't be eating, they come free; but if they will eat, you must select the \"youth\" category at checkout so a seat is saved at the dinner table.",
+    "reason": "apertura no autonoma"
   }
 ]

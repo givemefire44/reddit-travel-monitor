@@ -6,18 +6,13 @@
   },
   {
     "slug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
-    "fact": "Arrive at opening to beat the 15,000-person morning slot limit.",
-    "reason": "cifra \"15,000\" sin unidad ni escala"
-  },
-  {
-    "slug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
     "fact": "From 16 March the park also enforces time-slot capacity limits: a maximum of 15,000 visitors are admitted between 9:00 and 13:00, and a maximum of 5,000 visitors between 13:00 and 17:30, for a hard daily cap of 20,000 visitors.",
     "reason": "cifra \"15,000\" sin unidad ni escala"
   },
   {
-    "slug": "how-to-visit-pompeii-by-time-2-hour-4-hour-and-full-day-routes",
-    "fact": "This loop covers roughly 1.5 km of walking and gives you the Forum, one bath complex, one major house, and one of Pompeii's most famous streets without needing to reach the eastern side of the site.",
-    "reason": "apertura no autonoma"
+    "slug": "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
+    "fact": "The shoulder seasons—April, May, September and October—combine the longest opening hours (closing at 19:00) with moderate temperatures and smaller crowds compared to July and August, when the daily 20,000-visitor cap is reached early and the site becomes intensely hot.",
+    "reason": "frase no textual"
   },
   {
     "slug": "what-to-see-in-pompeii-must-visit-sites-in-order",
@@ -26,12 +21,12 @@
   },
   {
     "slug": "pompeii-tickets-explained-standard-plus-and-guided-options-compared",
-    "fact": "This ticket is ideal if you have 2–4 hours and want a simple, focused visit.",
-    "reason": "apertura no autonoma"
-  },
-  {
-    "slug": "pompeii-tickets-explained-standard-plus-and-guided-options-compared",
     "fact": "Morning slots (9:00–13:00, limited to 15,000 visitors) sell out faster than afternoon slots (13:00–17:30, limited to 5,000).",
     "reason": "cifra \"15,000\" sin unidad ni escala"
+  },
+  {
+    "slug": "pompeii-offers-the-best-value-per-minute-among-europe-s-top-5-monuments-at-usd0-70-min",
+    "fact": "This is the standard Pompeii tour — reliable, well-reviewed, and far below the $176 average.",
+    "reason": "apertura no autonoma"
   }
 ]

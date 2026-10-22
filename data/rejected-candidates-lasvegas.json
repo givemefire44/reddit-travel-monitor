@@ -1,48 +1,18 @@
 [
   {
-    "slug": "blue-man-group-las-vegas-what-divides-the-reviews",
-    "fact": "Twenty-seven percent of the one- and two-star reviews mention how long something took, against 5 percent of the four- and five-star ones.",
-    "reason": "cifra \"27\" no esta en la frase"
+    "slug": "how-to-book-a-las-vegas-tour-without-getting-burned",
+    "fact": "Seventy-one reviews across 21 listings name the channel.",
+    "reason": "cifra \"71\" no esta en la frase"
   },
   {
-    "slug": "blue-man-group-las-vegas-what-divides-the-reviews",
-    "fact": "Twenty-two of the 81 low-rated reviews name a duration, count the minutes to a point, or say the show dragged — 27.2 percent, against 5.0 percent of the 377 high-rated ones.",
-    "reason": "cifra \"22\" no encontrada"
+    "slug": "how-to-book-a-las-vegas-tour-without-getting-burned",
+    "fact": "Nine reviews describe contacting a company and getting nothing back at all — no answered phone, no reply to an email, a number that did not connect.",
+    "reason": "cifra \"9\" no esta en la frase"
   },
   {
-    "slug": "blue-man-group-las-vegas-what-divides-the-reviews",
-    "fact": "Thirteen of the 81 low-rated reviews describe leaving early.",
-    "reason": "cifra \"13\" no esta en la frase"
-  },
-  {
-    "slug": "blue-man-group-las-vegas-what-divides-the-reviews",
-    "fact": "Nineteen of the enthusiastic reviews also mention duration — and they use it as praise.",
-    "reason": "cifra \"19\" no esta en la frase"
-  },
-  {
-    "slug": "blue-man-group-las-vegas-what-divides-the-reviews",
-    "fact": "Thirteen of 500 reviewers describe leaving before the end.",
-    "reason": "cifra \"13\" no esta en la frase"
-  },
-  {
-    "slug": "grand-canyon-tour-reviews-google-vs-tripadvisor",
-    "fact": "The platforms' own published averages disagree in the same direction: about 4.1 on Google against about 3.4 on TripAdvisor.",
-    "reason": "cifra \"4.1\" sin unidad ni escala"
-  },
-  {
-    "slug": "how-long-are-las-vegas-shows",
-    "fact": "Blue Man Group lists 90 to 105, but six of the 17 reviewers who timed it report less.",
-    "reason": "cifra \"6\" no esta en la frase"
-  },
-  {
-    "slug": "maverick-helicopters-las-vegas-what-reviews-say",
-    "fact": "This article measures one operator: 283 TripAdvisor reviews of the Maverick Helicopters listing, collected without filtering by rating and written between June 2025 and September 2026.",
-    "reason": "apertura no autonoma"
-  },
-  {
-    "slug": "mystere-las-vegas-character-that-splits-reviews",
-    "fact": "Ten of the 51 low-rated reviews — 19.6% — describe the production or the theater as old or dated, against 6.4% of the good ones.",
-    "reason": "cifra \"10\" no esta en la frase"
+    "slug": "how-to-book-a-las-vegas-tour-without-getting-burned",
+    "fact": "Thirty-one reviews across 11 listings describe money that was not in the number they compared.",
+    "reason": "cifra \"31\" no esta en la frase"
   },
   {
     "slug": "sphere-las-vegas-seats-tickets-guide",
@@ -53,10 +23,5 @@
     "slug": "sphere-las-vegas-seats-tickets-guide",
     "fact": "Around 10,000 seats are \"haptic,\" meaning they physically rumble in sync with the content, and they're spread throughout the venue rather than reserved for premium areas.",
     "reason": "cifra \"10,000\" sin unidad ni escala"
-  },
-  {
-    "slug": "what-to-bring-las-vegas-tour",
-    "fact": "This is the finding we did not expect: being cold is mentioned in 87 reviews, against 30 for the sun.",
-    "reason": "apertura no autonoma"
   }
 ]
