@@ -11,9 +11,10 @@ name: Re-extract citable facts
 # Sanity se consulta por la API publica (sin token); el unico secret es la
 # API key de Anthropic, la misma que ya usa el monitor.
 
+# Desde el 24 oct 2026 no corre solo. Mandaba los ~400 articulos de los 7 sitios
+# a la API dos veces por semana, hubieran cambiado o no, y genero recargas de
+# credito con la PC apagada. Queda el boton "Run workflow" para correrlo a mano.
 on:
-  schedule:
-    - cron: '0 12 * * 1,4'
   workflow_dispatch:
 
 permissions:
