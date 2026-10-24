@@ -1,77 +1,9 @@
 {
-  "extractedAt": "2026-10-22T18:31:09.752Z",
+  "extractedAt": "2026-10-24T23:09:49.163Z",
   "corpusSize": null,
   "facts": [
     {
       "id": "shows-001",
-      "fact": "Twenty-seven percent of the one- and two-star reviews mention how long something took, against 5 percent of the four- and five-star ones.",
-      "figures": [
-        "Twenty-seven percent",
-        "5 percent"
-      ],
-      "topics": [
-        "shows"
-      ],
-      "sourceSlug": "blue-man-group-las-vegas-what-divides-the-reviews",
-      "sourceUrl": "https://lasvegastour.com/blue-man-group-las-vegas-what-divides-the-reviews"
-    },
-    {
-      "id": "shows-002",
-      "fact": "The paint and the ponchos appear in 8.6 percent of the bad reviews and 8.5 percent of the good ones.",
-      "figures": [
-        "8.6 percent",
-        "8.5 percent"
-      ],
-      "topics": [
-        "shows"
-      ],
-      "sourceSlug": "blue-man-group-las-vegas-what-divides-the-reviews",
-      "sourceUrl": "https://lasvegastour.com/blue-man-group-las-vegas-what-divides-the-reviews"
-    },
-    {
-      "id": "shows-003",
-      "fact": "Twenty-two of the 81 low-rated reviews name a duration, count the minutes to a point, or say the show dragged — 27.2 percent, against 5.0 percent of the 377 high-rated ones.",
-      "figures": [
-        "Twenty-two",
-        "81",
-        "27.2 percent",
-        "5.0 percent",
-        "377"
-      ],
-      "topics": [
-        "shows"
-      ],
-      "sourceSlug": "blue-man-group-las-vegas-what-divides-the-reviews",
-      "sourceUrl": "https://lasvegastour.com/blue-man-group-las-vegas-what-divides-the-reviews"
-    },
-    {
-      "id": "shows-004",
-      "fact": "Thirteen of the 81 low-rated reviews describe leaving early.",
-      "figures": [
-        "Thirteen",
-        "81"
-      ],
-      "topics": [
-        "shows"
-      ],
-      "sourceSlug": "blue-man-group-las-vegas-what-divides-the-reviews",
-      "sourceUrl": "https://lasvegastour.com/blue-man-group-las-vegas-what-divides-the-reviews"
-    },
-    {
-      "id": "shows-005",
-      "fact": "Thirteen of 500 reviewers describe leaving before the end.",
-      "figures": [
-        "Thirteen",
-        "500"
-      ],
-      "topics": [
-        "shows"
-      ],
-      "sourceSlug": "blue-man-group-las-vegas-what-divides-the-reviews",
-      "sourceUrl": "https://lasvegastour.com/blue-man-group-las-vegas-what-divides-the-reviews"
-    },
-    {
-      "id": "shows-006",
       "fact": "28.9% of the four- and five-star reviews carry an explicit warning, against 12% of the one- and two-star ones.",
       "figures": [
         "28.9%",
@@ -84,7 +16,7 @@
       "sourceUrl": "https://lasvegastour.com/absinthe-las-vegas-five-star-reviews-warn"
     },
     {
-      "id": "shows-007",
+      "id": "shows-002",
       "fact": "The largest single pattern — some version of “if you are easily offended, this is not for you” — appears in 16.6% of the good reviews and 2% of the bad ones.",
       "figures": [
         "16.6%",
@@ -97,7 +29,7 @@
       "sourceUrl": "https://lasvegastour.com/absinthe-las-vegas-five-star-reviews-warn"
     },
     {
-      "id": "shows-008",
+      "id": "shows-003",
       "fact": "“I’m not a prude” appears in four of the 100 bad reviews and in none of the 356 good ones.",
       "figures": [
         "four",
@@ -111,7 +43,7 @@
       "sourceUrl": "https://lasvegastour.com/absinthe-las-vegas-five-star-reviews-warn"
     },
     {
-      "id": "shows-009",
+      "id": "shows-004",
       "fact": "Twelve percent of the bad reviews say they walked out, against 1.1% of the good ones.",
       "figures": [
         "Twelve percent",
@@ -124,7 +56,7 @@
       "sourceUrl": "https://lasvegastour.com/absinthe-las-vegas-five-star-reviews-warn"
     },
     {
-      "id": "shows-010",
+      "id": "shows-005",
       "fact": "The audience being teased is named in 14% of the good reviews and 5% of the bad ones — the fans bring it up nearly three times as often, because for them it is the point.",
       "figures": [
         "14%",
@@ -137,7 +69,7 @@
       "sourceUrl": "https://lasvegastour.com/absinthe-las-vegas-five-star-reviews-warn"
     },
     {
-      "id": "shows-011",
+      "id": "shows-006",
       "fact": "Eight of the 356 positive reviews give explicit seating advice; none of the 100 negative ones do",
       "figures": [
         "Eight",
@@ -151,7 +83,7 @@
       "sourceUrl": "https://lasvegastour.com/absinthe-las-vegas-five-star-reviews-warn"
     },
     {
-      "id": "shows-012",
+      "id": "shows-007",
       "fact": "The seating is genuinely uncomfortable — it comes up in 45% of the bad reviews and 37% of the good ones — and the fans treat it as a solved problem rather than a reason not to go.",
       "figures": [
         "45%",
@@ -537,79 +469,72 @@
       "sourceUrl": "https://lasvegastour.com/are-las-vegas-grand-canyon-helicopter-tours-safe"
     },
     {
-      "id": "desert-parks-003",
-      "fact": "Death Valley National Park is about a two-and-a-half-hour drive from Las Vegas to the Furnace Creek Visitor Center, in California but on the same Pacific clock.",
+      "id": "shows-008",
+      "fact": "Twenty-seven percent of the one- and two-star reviews mention how long something took, against 5 percent of the four- and five-star ones.",
       "figures": [
-        "two-and-a-half-hour"
+        "Twenty-seven percent",
+        "5 percent"
       ],
       "topics": [
-        "desert-parks",
-        "timing",
-        "logistics"
+        "shows"
       ],
-      "sourceSlug": "death-valley-from-las-vegas",
-      "sourceUrl": "https://lasvegastour.com/death-valley-from-las-vegas"
+      "sourceSlug": "blue-man-group-las-vegas-what-divides-the-reviews",
+      "sourceUrl": "https://lasvegastour.com/blue-man-group-las-vegas-what-divides-the-reviews"
     },
     {
-      "id": "desert-parks-004",
-      "fact": "Entry is $30 per private vehicle or $15 per person, and unlike Zion and Grand Canyon National Park it adds no surcharge for non-US residents.",
+      "id": "shows-009",
+      "fact": "The paint and the ponchos appear in 8.6 percent of the bad reviews and 8.5 percent of the good ones.",
       "figures": [
-        "$30",
-        "$15"
+        "8.6 percent",
+        "8.5 percent"
       ],
       "topics": [
-        "desert-parks",
-        "pricing",
-        "tickets"
+        "shows"
       ],
-      "sourceSlug": "death-valley-from-las-vegas",
-      "sourceUrl": "https://lasvegastour.com/death-valley-from-las-vegas"
+      "sourceSlug": "blue-man-group-las-vegas-what-divides-the-reviews",
+      "sourceUrl": "https://lasvegastour.com/blue-man-group-las-vegas-what-divides-the-reviews"
     },
     {
-      "id": "desert-parks-005",
-      "fact": "The National Park Service says summer temperatures can reach 130°F, with nights that stay as warm as 90°F, and the hottest air temperature ever recorded there was 134°F at Furnace Creek in 1913.",
+      "id": "shows-010",
+      "fact": "Twenty-two of the 81 low-rated reviews name a duration, count the minutes to a point, or say the show dragged — 27.2 percent, against 5.0 percent of the 377 high-rated ones.",
       "figures": [
-        "130°F",
-        "90°F",
-        "134°F",
-        "1913"
+        "Twenty-two",
+        "81",
+        "27.2 percent",
+        "5.0 percent",
+        "377"
       ],
       "topics": [
-        "desert-parks",
-        "timing"
+        "shows"
       ],
-      "sourceSlug": "death-valley-from-las-vegas",
-      "sourceUrl": "https://lasvegastour.com/death-valley-from-las-vegas"
+      "sourceSlug": "blue-man-group-las-vegas-what-divides-the-reviews",
+      "sourceUrl": "https://lasvegastour.com/blue-man-group-las-vegas-what-divides-the-reviews"
     },
     {
-      "id": "desert-parks-006",
-      "fact": "Zion and Grand Canyon National Park charge non-US residents aged 16 and over an extra $100 per person.",
+      "id": "shows-011",
+      "fact": "Thirteen of the 81 low-rated reviews describe leaving early.",
       "figures": [
-        "$100",
-        "16"
+        "Thirteen",
+        "81"
       ],
       "topics": [
-        "desert-parks",
-        "pricing",
-        "tickets"
+        "shows"
       ],
-      "sourceSlug": "death-valley-from-las-vegas",
-      "sourceUrl": "https://lasvegastour.com/death-valley-from-las-vegas"
+      "sourceSlug": "blue-man-group-las-vegas-what-divides-the-reviews",
+      "sourceUrl": "https://lasvegastour.com/blue-man-group-las-vegas-what-divides-the-reviews"
     },
     {
-      "id": "desert-parks-007",
-      "fact": "Day tours from Las Vegas are listed at around 7 to 12 hours, including sunset and stargazing versions.",
+      "id": "shows-012",
+      "fact": "Thirteen of 500 reviewers describe leaving before the end.",
       "figures": [
-        "7",
-        "12"
+        "Thirteen",
+        "500"
       ],
       "topics": [
-        "desert-parks",
-        "timing",
-        "tickets"
+        "shows"
       ],
-      "sourceSlug": "death-valley-from-las-vegas",
-      "sourceUrl": "https://lasvegastour.com/death-valley-from-las-vegas"
+      "sourceSlug": "blue-man-group-las-vegas-what-divides-the-reviews",
+      "sourceUrl": "https://lasvegastour.com/blue-man-group-las-vegas-what-divides-the-reviews"
     },
     {
       "id": "adventure-activities-001",
@@ -763,6 +688,147 @@
       "sourceUrl": "https://lasvegastour.com/cartzilla-las-vegas-shopping-cart-tour"
     },
     {
+      "id": "shows-013",
+      "fact": "Across 1,361 reviews of the three Cirque du Soleil shows on the Strip, the word “random” appears 21 times in the bad ones and zero times in the 1,146 good ones.",
+      "figures": [
+        "1,361",
+        "21",
+        "1,146"
+      ],
+      "topics": [
+        "shows"
+      ],
+      "sourceSlug": "cirque-du-soleil-las-vegas-random-reviews",
+      "sourceUrl": "https://lasvegastour.com/cirque-du-soleil-las-vegas-random-reviews"
+    },
+    {
+      "id": "shows-014",
+      "fact": "“Random” appears in 21 of the 215 bad reviews and in none of the 1,146 good ones.",
+      "figures": [
+        "21",
+        "215",
+        "1,146"
+      ],
+      "topics": [
+        "shows"
+      ],
+      "sourceSlug": "cirque-du-soleil-las-vegas-random-reviews",
+      "sourceUrl": "https://lasvegastour.com/cirque-du-soleil-las-vegas-random-reviews"
+    },
+    {
+      "id": "shows-015",
+      "fact": "“No plot” and “no story” come close: 14% of the bad reviews, six of the 1,146 good ones.",
+      "figures": [
+        "14%",
+        "1,146"
+      ],
+      "topics": [
+        "shows"
+      ],
+      "sourceSlug": "cirque-du-soleil-las-vegas-random-reviews",
+      "sourceUrl": "https://lasvegastour.com/cirque-du-soleil-las-vegas-random-reviews"
+    },
+    {
+      "id": "shows-016",
+      "fact": "Among reviewers who say they could not follow it, 41% mention the clowns.",
+      "figures": [
+        "41%"
+      ],
+      "topics": [
+        "shows"
+      ],
+      "sourceSlug": "cirque-du-soleil-las-vegas-random-reviews",
+      "sourceUrl": "https://lasvegastour.com/cirque-du-soleil-las-vegas-random-reviews"
+    },
+    {
+      "id": "shows-017",
+      "fact": "the word “expect” appears in 15% of the bad Cirque reviews and 5% of the good ones.",
+      "figures": [
+        "15%",
+        "5%"
+      ],
+      "topics": [
+        "shows"
+      ],
+      "sourceSlug": "cirque-du-soleil-las-vegas-random-reviews",
+      "sourceUrl": "https://lasvegastour.com/cirque-du-soleil-las-vegas-random-reviews"
+    },
+    {
+      "id": "desert-parks-003",
+      "fact": "Death Valley National Park is about a two-and-a-half-hour drive from Las Vegas to the Furnace Creek Visitor Center, in California but on the same Pacific clock.",
+      "figures": [
+        "two-and-a-half-hour"
+      ],
+      "topics": [
+        "desert-parks",
+        "timing",
+        "logistics"
+      ],
+      "sourceSlug": "death-valley-from-las-vegas",
+      "sourceUrl": "https://lasvegastour.com/death-valley-from-las-vegas"
+    },
+    {
+      "id": "desert-parks-004",
+      "fact": "Entry is $30 per private vehicle or $15 per person, and unlike Zion and Grand Canyon National Park it adds no surcharge for non-US residents.",
+      "figures": [
+        "$30",
+        "$15"
+      ],
+      "topics": [
+        "desert-parks",
+        "pricing",
+        "tickets"
+      ],
+      "sourceSlug": "death-valley-from-las-vegas",
+      "sourceUrl": "https://lasvegastour.com/death-valley-from-las-vegas"
+    },
+    {
+      "id": "desert-parks-005",
+      "fact": "The National Park Service says summer temperatures can reach 130°F, with nights that stay as warm as 90°F, and the hottest air temperature ever recorded there was 134°F at Furnace Creek in 1913.",
+      "figures": [
+        "130°F",
+        "90°F",
+        "134°F",
+        "1913"
+      ],
+      "topics": [
+        "desert-parks",
+        "timing"
+      ],
+      "sourceSlug": "death-valley-from-las-vegas",
+      "sourceUrl": "https://lasvegastour.com/death-valley-from-las-vegas"
+    },
+    {
+      "id": "desert-parks-006",
+      "fact": "Zion and Grand Canyon National Park charge non-US residents aged 16 and over an extra $100 per person.",
+      "figures": [
+        "$100",
+        "16"
+      ],
+      "topics": [
+        "desert-parks",
+        "pricing",
+        "tickets"
+      ],
+      "sourceSlug": "death-valley-from-las-vegas",
+      "sourceUrl": "https://lasvegastour.com/death-valley-from-las-vegas"
+    },
+    {
+      "id": "desert-parks-007",
+      "fact": "Day tours from Las Vegas are listed at around 7 to 12 hours, including sunset and stargazing versions.",
+      "figures": [
+        "7",
+        "12"
+      ],
+      "topics": [
+        "desert-parks",
+        "timing",
+        "tickets"
+      ],
+      "sourceSlug": "death-valley-from-las-vegas",
+      "sourceUrl": "https://lasvegastour.com/death-valley-from-las-vegas"
+    },
+    {
       "id": "strip-fremont-001",
       "fact": "Downtown (Fremont) is its own scene — more old-school Vegas, more affordable, a different energy — and it's a great choice if that's the vibe you want, but it's a 10–15 minute drive from the Strip, not a walk.",
       "figures": [
@@ -791,7 +857,7 @@
       "sourceUrl": "https://lasvegastour.com/first-time-las-vegas-how-to-plan"
     },
     {
-      "id": "shows-013",
+      "id": "shows-018",
       "fact": "The fountains are free and take 15 minutes — easy yes.",
       "figures": [
         "15 minutes"
@@ -817,152 +883,91 @@
       "sourceUrl": "https://lasvegastour.com/first-time-las-vegas-how-to-plan"
     },
     {
-      "id": "shows-014",
-      "fact": "Across 1,361 reviews of the three Cirque du Soleil shows on the Strip, the word “random” appears 21 times in the bad ones and zero times in the 1,146 good ones.",
-      "figures": [
-        "1,361",
-        "21",
-        "1,146"
-      ],
-      "topics": [
-        "shows"
-      ],
-      "sourceSlug": "cirque-du-soleil-las-vegas-random-reviews",
-      "sourceUrl": "https://lasvegastour.com/cirque-du-soleil-las-vegas-random-reviews"
-    },
-    {
-      "id": "shows-015",
-      "fact": "“Random” appears in 21 of the 215 bad reviews and in none of the 1,146 good ones.",
-      "figures": [
-        "21",
-        "215",
-        "1,146"
-      ],
-      "topics": [
-        "shows"
-      ],
-      "sourceSlug": "cirque-du-soleil-las-vegas-random-reviews",
-      "sourceUrl": "https://lasvegastour.com/cirque-du-soleil-las-vegas-random-reviews"
-    },
-    {
-      "id": "shows-016",
-      "fact": "“No plot” and “no story” come close: 14% of the bad reviews, six of the 1,146 good ones.",
-      "figures": [
-        "14%",
-        "1,146"
-      ],
-      "topics": [
-        "shows"
-      ],
-      "sourceSlug": "cirque-du-soleil-las-vegas-random-reviews",
-      "sourceUrl": "https://lasvegastour.com/cirque-du-soleil-las-vegas-random-reviews"
-    },
-    {
-      "id": "shows-017",
-      "fact": "Among reviewers who say they could not follow it, 41% mention the clowns.",
-      "figures": [
-        "41%"
-      ],
-      "topics": [
-        "shows"
-      ],
-      "sourceSlug": "cirque-du-soleil-las-vegas-random-reviews",
-      "sourceUrl": "https://lasvegastour.com/cirque-du-soleil-las-vegas-random-reviews"
-    },
-    {
-      "id": "shows-018",
-      "fact": "the word “expect” appears in 15% of the bad Cirque reviews and 5% of the good ones.",
-      "figures": [
-        "15%",
-        "5%"
-      ],
-      "topics": [
-        "shows"
-      ],
-      "sourceSlug": "cirque-du-soleil-las-vegas-random-reviews",
-      "sourceUrl": "https://lasvegastour.com/cirque-du-soleil-las-vegas-random-reviews"
-    },
-    {
       "id": "strip-fremont-002",
-      "fact": "Fifty-six of 300 Fremont Street reviews mention the zip line, SlotZilla.",
+      "fact": "In 300 reviews of Fremont Street collected without filtering, 24.4% of the four- and five-star ones mention the overhead screen and the light show.",
       "figures": [
-        "300"
+        "300",
+        "24.4%"
       ],
       "topics": [
         "strip-fremont",
-        "adventure-activities"
+        "shows"
       ],
-      "sourceSlug": "fremont-street-zip-line-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/fremont-street-zip-line-what-reviews-say"
+      "sourceSlug": "fremont-street-experience-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/fremont-street-experience-what-reviews-say"
     },
     {
       "id": "strip-fremont-003",
-      "fact": "Thirty-seven of the 56 mention it the way you would mention a landmark: in a list of what the street contains.",
+      "fact": "Among the one- and two-star reviews, 40.5% mention dirt or smell, 37.8% mention panhandlers or street performers, 27% mention children and 18.9% say they felt unsafe.",
       "figures": [
-        "56"
+        "40.5%",
+        "37.8%",
+        "27%",
+        "18.9%"
       ],
       "topics": [
         "strip-fremont",
-        "adventure-activities"
+        "crowds",
+        "kids-families"
       ],
-      "scale": "Fifty-six of 300 Fremont Street reviews mention the zip line, SlotZilla.",
-      "sourceSlug": "fremont-street-zip-line-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/fremont-street-zip-line-what-reviews-say"
+      "sourceSlug": "fremont-street-experience-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/fremont-street-experience-what-reviews-say"
+    },
+    {
+      "id": "kids-families-002",
+      "fact": "Children are mentioned in 27% of the low-rated reviews and 9.7% of the high-rated ones.",
+      "figures": [
+        "27%",
+        "9.7%"
+      ],
+      "topics": [
+        "kids-families",
+        "strip-fremont"
+      ],
+      "sourceSlug": "fremont-street-experience-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/fremont-street-experience-what-reviews-say"
     },
     {
       "id": "strip-fremont-004",
-      "fact": "Eleven of the 56 are rated one to three stars, and the two that are specifically about the ride say different things.",
+      "fact": "Street performers and people asking for money appear in 37.8% of the low-rated reviews and 17.1% of the high-rated ones — the same feature described twice, as color or as hassle.",
       "figures": [
-        "56"
+        "37.8%",
+        "17.1%"
       ],
       "topics": [
         "strip-fremont",
-        "adventure-activities"
+        "crowds"
       ],
-      "scale": "Fifty-six of 300 Fremont Street reviews mention the zip line, SlotZilla.",
-      "sourceSlug": "fremont-street-zip-line-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/fremont-street-zip-line-what-reviews-say"
+      "sourceSlug": "fremont-street-experience-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/fremont-street-experience-what-reviews-say"
+    },
+    {
+      "id": "timing-002",
+      "fact": "Time of day is mentioned at the same rate by both camps, 16.6% and 16.2%, which makes it a description rather than a fault.",
+      "figures": [
+        "16.6%",
+        "16.2%"
+      ],
+      "topics": [
+        "timing",
+        "strip-fremont"
+      ],
+      "sourceSlug": "fremont-street-experience-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/fremont-street-experience-what-reviews-say"
     },
     {
       "id": "strip-fremont-005",
-      "fact": "Thirty-four of 300 Fremont Street reviews mention the old casinos, and 21 of them use the phrase \"old Vegas\" or something close to it.",
+      "fact": "Reviewers are split: 18.9% of the low-rated reviews say they felt unsafe, against 8.3% of the high-rated ones, and several of the latter credit the visible police presence.",
       "figures": [
-        "Thirty-four",
-        "300",
-        "21"
+        "18.9%",
+        "8.3%"
       ],
       "topics": [
-        "strip-fremont"
+        "strip-fremont",
+        "crowds"
       ],
-      "sourceSlug": "fremont-street-old-casinos-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/fremont-street-old-casinos-what-reviews-say"
-    },
-    {
-      "id": "strip-fremont-006",
-      "fact": "Reviewers name the Golden Nugget most often — 13 of the 34 mentions — along with the Four Queens and El Cortez.",
-      "figures": [
-        "13",
-        "34"
-      ],
-      "topics": [
-        "strip-fremont"
-      ],
-      "sourceSlug": "fremont-street-old-casinos-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/fremont-street-old-casinos-what-reviews-say"
-    },
-    {
-      "id": "strip-fremont-007",
-      "fact": "Ten of the 34 are rated one to three stars, and those use the same nostalgia as a complaint.",
-      "figures": [
-        "Ten",
-        "34"
-      ],
-      "topics": [
-        "strip-fremont"
-      ],
-      "scale": "Thirty-four of 300 Fremont Street reviews mention the old casinos, and 21 of them use the phrase \"old Vegas\" or something close to it.",
-      "sourceSlug": "fremont-street-old-casinos-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/fremont-street-old-casinos-what-reviews-say"
+      "sourceSlug": "fremont-street-experience-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/fremont-street-experience-what-reviews-say"
     },
     {
       "id": "shows-019",
@@ -995,91 +1000,86 @@
       "sourceUrl": "https://lasvegastour.com/fremont-street-live-music-what-reviews-say"
     },
     {
-      "id": "strip-fremont-008",
-      "fact": "In 300 reviews of Fremont Street collected without filtering, 24.4% of the four- and five-star ones mention the overhead screen and the light show.",
+      "id": "strip-fremont-006",
+      "fact": "Thirty-four of 300 Fremont Street reviews mention the old casinos, and 21 of them use the phrase \"old Vegas\" or something close to it.",
       "figures": [
+        "Thirty-four",
         "300",
-        "24.4%"
+        "21"
       ],
       "topics": [
-        "strip-fremont",
-        "shows"
+        "strip-fremont"
       ],
-      "sourceSlug": "fremont-street-experience-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/fremont-street-experience-what-reviews-say"
+      "sourceSlug": "fremont-street-old-casinos-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/fremont-street-old-casinos-what-reviews-say"
+    },
+    {
+      "id": "strip-fremont-007",
+      "fact": "Reviewers name the Golden Nugget most often — 13 of the 34 mentions — along with the Four Queens and El Cortez.",
+      "figures": [
+        "13",
+        "34"
+      ],
+      "topics": [
+        "strip-fremont"
+      ],
+      "sourceSlug": "fremont-street-old-casinos-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/fremont-street-old-casinos-what-reviews-say"
+    },
+    {
+      "id": "strip-fremont-008",
+      "fact": "Ten of the 34 are rated one to three stars, and those use the same nostalgia as a complaint.",
+      "figures": [
+        "Ten",
+        "34"
+      ],
+      "topics": [
+        "strip-fremont"
+      ],
+      "scale": "Thirty-four of 300 Fremont Street reviews mention the old casinos, and 21 of them use the phrase \"old Vegas\" or something close to it.",
+      "sourceSlug": "fremont-street-old-casinos-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/fremont-street-old-casinos-what-reviews-say"
     },
     {
       "id": "strip-fremont-009",
-      "fact": "Among the one- and two-star reviews, 40.5% mention dirt or smell, 37.8% mention panhandlers or street performers, 27% mention children and 18.9% say they felt unsafe.",
+      "fact": "Fifty-six of 300 Fremont Street reviews mention the zip line, SlotZilla.",
       "figures": [
-        "40.5%",
-        "37.8%",
-        "27%",
-        "18.9%"
+        "300"
       ],
       "topics": [
         "strip-fremont",
-        "crowds",
-        "kids-families"
+        "adventure-activities"
       ],
-      "sourceSlug": "fremont-street-experience-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/fremont-street-experience-what-reviews-say"
-    },
-    {
-      "id": "kids-families-002",
-      "fact": "Children are mentioned in 27% of the low-rated reviews and 9.7% of the high-rated ones.",
-      "figures": [
-        "27%",
-        "9.7%"
-      ],
-      "topics": [
-        "kids-families",
-        "strip-fremont"
-      ],
-      "sourceSlug": "fremont-street-experience-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/fremont-street-experience-what-reviews-say"
+      "sourceSlug": "fremont-street-zip-line-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/fremont-street-zip-line-what-reviews-say"
     },
     {
       "id": "strip-fremont-010",
-      "fact": "Street performers and people asking for money appear in 37.8% of the low-rated reviews and 17.1% of the high-rated ones — the same feature described twice, as color or as hassle.",
+      "fact": "Thirty-seven of the 56 mention it the way you would mention a landmark: in a list of what the street contains.",
       "figures": [
-        "37.8%",
-        "17.1%"
+        "56"
       ],
       "topics": [
         "strip-fremont",
-        "crowds"
+        "adventure-activities"
       ],
-      "sourceSlug": "fremont-street-experience-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/fremont-street-experience-what-reviews-say"
-    },
-    {
-      "id": "timing-002",
-      "fact": "Time of day is mentioned at the same rate by both camps, 16.6% and 16.2%, which makes it a description rather than a fault.",
-      "figures": [
-        "16.6%",
-        "16.2%"
-      ],
-      "topics": [
-        "timing",
-        "strip-fremont"
-      ],
-      "sourceSlug": "fremont-street-experience-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/fremont-street-experience-what-reviews-say"
+      "scale": "Fifty-six of 300 Fremont Street reviews mention the zip line, SlotZilla.",
+      "sourceSlug": "fremont-street-zip-line-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/fremont-street-zip-line-what-reviews-say"
     },
     {
       "id": "strip-fremont-011",
-      "fact": "Reviewers are split: 18.9% of the low-rated reviews say they felt unsafe, against 8.3% of the high-rated ones, and several of the latter credit the visible police presence.",
+      "fact": "Eleven of the 56 are rated one to three stars, and the two that are specifically about the ride say different things.",
       "figures": [
-        "18.9%",
-        "8.3%"
+        "56"
       ],
       "topics": [
         "strip-fremont",
-        "crowds"
+        "adventure-activities"
       ],
-      "sourceSlug": "fremont-street-experience-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/fremont-street-experience-what-reviews-say"
+      "scale": "Fifty-six of 300 Fremont Street reviews mention the zip line, SlotZilla.",
+      "sourceSlug": "fremont-street-zip-line-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/fremont-street-zip-line-what-reviews-say"
     },
     {
       "id": "grand-canyon-002",
@@ -1236,6 +1236,52 @@
     },
     {
       "id": "grand-canyon-011",
+      "fact": "In 5,467 four- and five-star reviews of Las Vegas coach operators that run Grand Canyon day trips, 60.7% mention the guide or the driver, and 1,896 name them.",
+      "figures": [
+        "5,467",
+        "60.7%",
+        "1,896"
+      ],
+      "topics": [
+        "grand-canyon",
+        "guides",
+        "operators"
+      ],
+      "sourceSlug": "grand-canyon-coach-tour-guide-quality",
+      "sourceUrl": "https://lasvegastour.com/grand-canyon-coach-tour-guide-quality"
+    },
+    {
+      "id": "grand-canyon-012",
+      "fact": "Knowledge is praised in 14.2% of the happy reviews against 2.1% of the unhappy, humour in 6.5% against 0.3%.",
+      "figures": [
+        "14.2%",
+        "2.1%",
+        "6.5%",
+        "0.3%"
+      ],
+      "topics": [
+        "grand-canyon",
+        "guides"
+      ],
+      "sourceSlug": "grand-canyon-coach-tour-guide-quality",
+      "sourceUrl": "https://lasvegastour.com/grand-canyon-coach-tour-guide-quality"
+    },
+    {
+      "id": "grand-canyon-013",
+      "fact": "Safe driving over a long desert day appears in 4.6% of the happy reviews and in none of the unhappy ones.",
+      "figures": [
+        "4.6%"
+      ],
+      "topics": [
+        "grand-canyon",
+        "guides",
+        "logistics"
+      ],
+      "sourceSlug": "grand-canyon-coach-tour-guide-quality",
+      "sourceUrl": "https://lasvegastour.com/grand-canyon-coach-tour-guide-quality"
+    },
+    {
+      "id": "grand-canyon-014",
       "fact": "One Las Vegas operator, Comedy on Deck Tours, sells the Grand Canyon day trip as a comedy show with a canyon in it, and the reviews take the premise seriously: 50.1% of 1,275 positive reviews mention the comedy.",
       "figures": [
         "50.1%",
@@ -1250,7 +1296,7 @@
       "sourceUrl": "https://lasvegastour.com/grand-canyon-comedy-tour-what-reviews-describe"
     },
     {
-      "id": "grand-canyon-012",
+      "id": "grand-canyon-015",
       "fact": "Strip the comedy out and what remains is a standard Las Vegas canyon day, and reviewers describe it in those terms: 25.3% write about the stops and 22.0% about the food, which on this operator includes both a breakfast and a lunch.",
       "figures": [
         "25.3%",
@@ -1279,7 +1325,7 @@
       "sourceUrl": "https://lasvegastour.com/grand-canyon-comedy-tour-what-reviews-describe"
     },
     {
-      "id": "grand-canyon-013",
+      "id": "grand-canyon-016",
       "fact": "In 70 reviews that give a figure, a West Rim coach day runs about 10 to 12 hours door to door, a South Rim day about 14 to 15, and a Hoover Dam tour about 3 to 6.",
       "figures": [
         "70",
@@ -1342,141 +1388,6 @@
       "sourceUrl": "https://lasvegastour.com/grand-canyon-day-trip-from-las-vegas-how-long"
     },
     {
-      "id": "grand-canyon-014",
-      "fact": "In 5,467 four- and five-star reviews of Las Vegas coach operators that run Grand Canyon day trips, 60.7% mention the guide or the driver, and 1,896 name them.",
-      "figures": [
-        "5,467",
-        "60.7%",
-        "1,896"
-      ],
-      "topics": [
-        "grand-canyon",
-        "guides",
-        "operators"
-      ],
-      "sourceSlug": "grand-canyon-coach-tour-guide-quality",
-      "sourceUrl": "https://lasvegastour.com/grand-canyon-coach-tour-guide-quality"
-    },
-    {
-      "id": "grand-canyon-015",
-      "fact": "Knowledge is praised in 14.2% of the happy reviews against 2.1% of the unhappy, humour in 6.5% against 0.3%.",
-      "figures": [
-        "14.2%",
-        "2.1%",
-        "6.5%",
-        "0.3%"
-      ],
-      "topics": [
-        "grand-canyon",
-        "guides"
-      ],
-      "sourceSlug": "grand-canyon-coach-tour-guide-quality",
-      "sourceUrl": "https://lasvegastour.com/grand-canyon-coach-tour-guide-quality"
-    },
-    {
-      "id": "grand-canyon-016",
-      "fact": "Safe driving over a long desert day appears in 4.6% of the happy reviews and in none of the unhappy ones.",
-      "figures": [
-        "4.6%"
-      ],
-      "topics": [
-        "grand-canyon",
-        "guides",
-        "logistics"
-      ],
-      "sourceSlug": "grand-canyon-coach-tour-guide-quality",
-      "sourceUrl": "https://lasvegastour.com/grand-canyon-coach-tour-guide-quality"
-    },
-    {
-      "id": "grand-canyon-017",
-      "fact": "Across 111 reviews that state two or more clock times, the day runs like this: pickup around 6am, often at a hotel that is not yours, a breakfast stop, the Hoover Dam bridge, then the West Rim, where a second shuttle takes you between viewpoints.",
-      "figures": [
-        "111",
-        "6am"
-      ],
-      "topics": [
-        "grand-canyon",
-        "timing",
-        "logistics"
-      ],
-      "sourceSlug": "grand-canyon-west-coach-day-hour-by-hour",
-      "sourceUrl": "https://lasvegastour.com/grand-canyon-west-coach-day-hour-by-hour"
-    },
-    {
-      "id": "grand-canyon-018",
-      "fact": "The pickup is raised in 22.8% of the low-rated reviews and 4.6% of the high-rated ones, which makes it the single most complained-about stop of the day.",
-      "figures": [
-        "22.8%",
-        "4.6%"
-      ],
-      "topics": [
-        "grand-canyon",
-        "timing",
-        "logistics"
-      ],
-      "sourceSlug": "grand-canyon-west-coach-day-hour-by-hour",
-      "sourceUrl": "https://lasvegastour.com/grand-canyon-west-coach-day-hour-by-hour"
-    },
-    {
-      "id": "food-tours-001",
-      "fact": "Lunch is included on many of these tours, and it is mentioned in 9.8% of the low-rated reviews against 5.7% of the high-rated ones.",
-      "figures": [
-        "9.8%",
-        "5.7%"
-      ],
-      "topics": [
-        "food-tours",
-        "grand-canyon",
-        "logistics"
-      ],
-      "sourceSlug": "grand-canyon-west-coach-day-hour-by-hour",
-      "sourceUrl": "https://lasvegastour.com/grand-canyon-west-coach-day-hour-by-hour"
-    },
-    {
-      "id": "grand-canyon-019",
-      "fact": "Toilets follow the same pattern, mentioned in 4.4% of the low-rated reviews and 1.3% of the high-rated ones.",
-      "figures": [
-        "4.4%",
-        "1.3%"
-      ],
-      "topics": [
-        "grand-canyon",
-        "logistics",
-        "timing"
-      ],
-      "sourceSlug": "grand-canyon-west-coach-day-hour-by-hour",
-      "sourceUrl": "https://lasvegastour.com/grand-canyon-west-coach-day-hour-by-hour"
-    },
-    {
-      "id": "grand-canyon-020",
-      "fact": "Of the reviews that state an hour, the middle sits at about 6:10am, with some before 5am and the Hoover Dam half-day tours leaving later in the morning.",
-      "figures": [
-        "6:10am",
-        "5am"
-      ],
-      "topics": [
-        "grand-canyon",
-        "timing",
-        "hoover-dam"
-      ],
-      "sourceSlug": "grand-canyon-west-coach-day-hour-by-hour",
-      "sourceUrl": "https://lasvegastour.com/grand-canyon-west-coach-day-hour-by-hour"
-    },
-    {
-      "id": "grand-canyon-021",
-      "fact": "Most reviews that give a time describe the late afternoon or the evening, with some after 10pm.",
-      "figures": [
-        "10pm"
-      ],
-      "topics": [
-        "grand-canyon",
-        "timing",
-        "logistics"
-      ],
-      "sourceSlug": "grand-canyon-west-coach-day-hour-by-hour",
-      "sourceUrl": "https://lasvegastour.com/grand-canyon-west-coach-day-hour-by-hour"
-    },
-    {
       "id": "tickets-001",
       "fact": "In October 2026 it was included in two passes on the official site: the All-Access Pass at $99 and the Sunset Pass at $59, after 3 pm.",
       "figures": [
@@ -1508,7 +1419,7 @@
       "sourceUrl": "https://lasvegastour.com/grand-canyon-skywalk-tickets-price-phone-rule"
     },
     {
-      "id": "grand-canyon-022",
+      "id": "grand-canyon-017",
       "fact": "Phones are now permitted on the glass, while cameras and bags go in free lockers; reviews from 2023 to early 2025 describe phones being banned.",
       "figures": [
         "2023",
@@ -1634,7 +1545,7 @@
       "sourceUrl": "https://lasvegastour.com/grand-canyon-skywalk-tickets-price-phone-rule"
     },
     {
-      "id": "grand-canyon-023",
+      "id": "grand-canyon-018",
       "fact": "The National Park Service lists a standard entrance pass of $20 to $35, and adds that non-US residents must pay a $100 per person fee in addition to the standard entrance fee, unless admitted with an annual or America the Beautiful pass.",
       "figures": [
         "$20 to $35",
@@ -1664,7 +1575,7 @@
       "sourceUrl": "https://lasvegastour.com/grand-canyon-south-rim-tour-from-las-vegas-what-reviews-say"
     },
     {
-      "id": "grand-canyon-024",
+      "id": "grand-canyon-019",
       "fact": "None of the 44 low-rated reviews has the canyon itself as its main complaint.",
       "figures": [
         "44"
@@ -1722,7 +1633,7 @@
       "sourceUrl": "https://lasvegastour.com/grand-canyon-south-rim-tour-from-las-vegas-what-reviews-say"
     },
     {
-      "id": "grand-canyon-025",
+      "id": "grand-canyon-020",
       "fact": "None of the 254 reviews mentions an entrance fee of any kind.",
       "figures": [
         "254"
@@ -1753,7 +1664,7 @@
       "sourceUrl": "https://lasvegastour.com/grand-canyon-south-rim-tour-from-las-vegas-what-reviews-say"
     },
     {
-      "id": "grand-canyon-026",
+      "id": "grand-canyon-021",
       "fact": "At Grand Canyon West, 78% of the Google reviews are four or five stars and 26% of the TripAdvisor ones are.",
       "figures": [
         "78%",
@@ -1767,7 +1678,7 @@
       "sourceUrl": "https://lasvegastour.com/grand-canyon-tour-reviews-google-vs-tripadvisor"
     },
     {
-      "id": "grand-canyon-027",
+      "id": "grand-canyon-022",
       "fact": "In the reviews we collected without filtering by rating, 78% of 526 Google reviews are four or five stars.",
       "figures": [
         "78%",
@@ -1810,7 +1721,7 @@
       "sourceUrl": "https://lasvegastour.com/grand-canyon-tour-reviews-google-vs-tripadvisor"
     },
     {
-      "id": "grand-canyon-028",
+      "id": "grand-canyon-023",
       "fact": "At the other extreme, 160 reviews of Grand Canyon West span almost three years, about five a month, and 280 reviews of Hoover Dam span nearly four.",
       "figures": [
         "160",
@@ -1826,6 +1737,95 @@
       ],
       "sourceSlug": "grand-canyon-tour-reviews-google-vs-tripadvisor",
       "sourceUrl": "https://lasvegastour.com/grand-canyon-tour-reviews-google-vs-tripadvisor"
+    },
+    {
+      "id": "grand-canyon-024",
+      "fact": "Across 111 reviews that state two or more clock times, the day runs like this: pickup around 6am, often at a hotel that is not yours, a breakfast stop, the Hoover Dam bridge, then the West Rim, where a second shuttle takes you between viewpoints.",
+      "figures": [
+        "111",
+        "6am"
+      ],
+      "topics": [
+        "grand-canyon",
+        "timing",
+        "logistics"
+      ],
+      "sourceSlug": "grand-canyon-west-coach-day-hour-by-hour",
+      "sourceUrl": "https://lasvegastour.com/grand-canyon-west-coach-day-hour-by-hour"
+    },
+    {
+      "id": "grand-canyon-025",
+      "fact": "The pickup is raised in 22.8% of the low-rated reviews and 4.6% of the high-rated ones, which makes it the single most complained-about stop of the day.",
+      "figures": [
+        "22.8%",
+        "4.6%"
+      ],
+      "topics": [
+        "grand-canyon",
+        "timing",
+        "logistics"
+      ],
+      "sourceSlug": "grand-canyon-west-coach-day-hour-by-hour",
+      "sourceUrl": "https://lasvegastour.com/grand-canyon-west-coach-day-hour-by-hour"
+    },
+    {
+      "id": "food-tours-001",
+      "fact": "Lunch is included on many of these tours, and it is mentioned in 9.8% of the low-rated reviews against 5.7% of the high-rated ones.",
+      "figures": [
+        "9.8%",
+        "5.7%"
+      ],
+      "topics": [
+        "food-tours",
+        "grand-canyon",
+        "logistics"
+      ],
+      "sourceSlug": "grand-canyon-west-coach-day-hour-by-hour",
+      "sourceUrl": "https://lasvegastour.com/grand-canyon-west-coach-day-hour-by-hour"
+    },
+    {
+      "id": "grand-canyon-026",
+      "fact": "Toilets follow the same pattern, mentioned in 4.4% of the low-rated reviews and 1.3% of the high-rated ones.",
+      "figures": [
+        "4.4%",
+        "1.3%"
+      ],
+      "topics": [
+        "grand-canyon",
+        "logistics",
+        "timing"
+      ],
+      "sourceSlug": "grand-canyon-west-coach-day-hour-by-hour",
+      "sourceUrl": "https://lasvegastour.com/grand-canyon-west-coach-day-hour-by-hour"
+    },
+    {
+      "id": "grand-canyon-027",
+      "fact": "Of the reviews that state an hour, the middle sits at about 6:10am, with some before 5am and the Hoover Dam half-day tours leaving later in the morning.",
+      "figures": [
+        "6:10am",
+        "5am"
+      ],
+      "topics": [
+        "grand-canyon",
+        "timing",
+        "hoover-dam"
+      ],
+      "sourceSlug": "grand-canyon-west-coach-day-hour-by-hour",
+      "sourceUrl": "https://lasvegastour.com/grand-canyon-west-coach-day-hour-by-hour"
+    },
+    {
+      "id": "grand-canyon-028",
+      "fact": "Most reviews that give a time describe the late afternoon or the evening, with some after 10pm.",
+      "figures": [
+        "10pm"
+      ],
+      "topics": [
+        "grand-canyon",
+        "timing",
+        "logistics"
+      ],
+      "sourceSlug": "grand-canyon-west-coach-day-hour-by-hour",
+      "sourceUrl": "https://lasvegastour.com/grand-canyon-west-coach-day-hour-by-hour"
     },
     {
       "id": "grand-canyon-029",
@@ -1871,35 +1871,6 @@
       ],
       "sourceSlug": "grand-canyon-west-helicopter-boat-add-on-from-las-vegas",
       "sourceUrl": "https://lasvegastour.com/grand-canyon-west-helicopter-boat-add-on-from-las-vegas"
-    },
-    {
-      "id": "grand-canyon-031",
-      "fact": "Sixty-four reviews across 11 listings mention the zip line at Grand Canyon West, and 52 of them are rated four or five stars.",
-      "figures": [
-        "11",
-        "52"
-      ],
-      "topics": [
-        "grand-canyon",
-        "adventure-activities",
-        "tickets"
-      ],
-      "sourceSlug": "grand-canyon-west-zip-line-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/grand-canyon-west-zip-line-what-reviews-say"
-    },
-    {
-      "id": "grand-canyon-032",
-      "fact": "Twelve of the 64 are rated one to three stars — a small minority, and mostly about the price of the day rather than the line.",
-      "figures": [
-        "64"
-      ],
-      "topics": [
-        "grand-canyon",
-        "adventure-activities",
-        "pricing"
-      ],
-      "sourceSlug": "grand-canyon-west-zip-line-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/grand-canyon-west-zip-line-what-reviews-say"
     },
     {
       "id": "pricing-006",
@@ -1962,7 +1933,7 @@
       "sourceUrl": "https://lasvegastour.com/grand-canyon-west-skywalk-eagle-point-guano-point"
     },
     {
-      "id": "grand-canyon-033",
+      "id": "grand-canyon-031",
       "fact": "The trade-off: walking on glass 4,000 feet above the floor is the one thing at this site you cannot do anywhere else, and the people who wanted that experience say it delivered.",
       "figures": [
         "4,000 feet"
@@ -1975,7 +1946,7 @@
       "sourceUrl": "https://lasvegastour.com/grand-canyon-west-skywalk-eagle-point-guano-point"
     },
     {
-      "id": "grand-canyon-034",
+      "id": "grand-canyon-032",
       "fact": "Grand Canyon West is ~125 miles from Las Vegas (2–2.5 hours each way), home to the Skywalk, and easy to fit around a Vegas trip.",
       "figures": [
         "125",
@@ -1990,7 +1961,7 @@
       "sourceUrl": "https://lasvegastour.com/grand-canyon-west-vs-south-rim-from-las-vegas"
     },
     {
-      "id": "grand-canyon-035",
+      "id": "grand-canyon-033",
       "fact": "The South Rim is ~275 miles away (4.5–5 hours each way) and delivers the deep, classic postcard views, but turns your free day into a 13–15 hour marathon.",
       "figures": [
         "275",
@@ -2006,7 +1977,7 @@
       "sourceUrl": "https://lasvegastour.com/grand-canyon-west-vs-south-rim-from-las-vegas"
     },
     {
-      "id": "grand-canyon-036",
+      "id": "grand-canyon-034",
       "fact": "Phones are now permitted, according to the official site in October 2026; reviews from before mid-2025 describe a no-phone rule, when the only photos were the ones sold by the official photographers, which are now optional.",
       "figures": [
         "October 2026",
@@ -2020,7 +1991,7 @@
       "sourceUrl": "https://lasvegastour.com/grand-canyon-west-vs-south-rim-from-las-vegas"
     },
     {
-      "id": "grand-canyon-037",
+      "id": "grand-canyon-035",
       "fact": "At roughly 275 miles each way it’s four and a half to five hours of driving before traffic, and doing it yourself means one person spends nine or ten hours at the wheel and still has to be alert for the drive home in the dark.",
       "figures": [
         "275"
@@ -2034,7 +2005,7 @@
       "sourceUrl": "https://lasvegastour.com/grand-canyon-west-vs-south-rim-from-las-vegas"
     },
     {
-      "id": "grand-canyon-038",
+      "id": "grand-canyon-036",
       "fact": "Tickets stop selling at 4:30 in the afternoon, which is the detail that ruins the occasional late start.",
       "figures": [
         "4:30"
@@ -2047,7 +2018,7 @@
       "sourceUrl": "https://lasvegastour.com/grand-canyon-west-vs-south-rim-from-las-vegas"
     },
     {
-      "id": "grand-canyon-039",
+      "id": "grand-canyon-037",
       "fact": "Since January 1, 2026, non-US residents aged 16 and over pay an extra $100 per person on top of the standard entrance fee, at the Grand Canyon and ten other national parks.",
       "figures": [
         "January 1, 2026",
@@ -2077,7 +2048,7 @@
       "sourceUrl": "https://lasvegastour.com/grand-canyon-west-vs-south-rim-from-las-vegas"
     },
     {
-      "id": "grand-canyon-040",
+      "id": "grand-canyon-038",
       "fact": "If it's your first Vegas trip with 3 or 4 nights and the canyon is one item on a packed list, West is usually the kinder choice — you get the canyon without sacrificing a full day and a night of energy.",
       "figures": [
         "3",
@@ -2105,163 +2076,36 @@
       "sourceUrl": "https://lasvegastour.com/grand-canyon-west-vs-south-rim-from-las-vegas"
     },
     {
+      "id": "grand-canyon-039",
+      "fact": "Sixty-four reviews across 11 listings mention the zip line at Grand Canyon West, and 52 of them are rated four or five stars.",
+      "figures": [
+        "11",
+        "52"
+      ],
+      "topics": [
+        "grand-canyon",
+        "adventure-activities",
+        "tickets"
+      ],
+      "sourceSlug": "grand-canyon-west-zip-line-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/grand-canyon-west-zip-line-what-reviews-say"
+    },
+    {
+      "id": "grand-canyon-040",
+      "fact": "Twelve of the 64 are rated one to three stars — a small minority, and mostly about the price of the day rather than the line.",
+      "figures": [
+        "64"
+      ],
+      "topics": [
+        "grand-canyon",
+        "adventure-activities",
+        "pricing"
+      ],
+      "sourceSlug": "grand-canyon-west-zip-line-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/grand-canyon-west-zip-line-what-reviews-say"
+    },
+    {
       "id": "hoover-dam-001",
-      "fact": "Hoover Dam is an easy half-day trip from Las Vegas — about a 35–45 minute drive — and worth it if engineering, history, or a break from the Strip appeals to you.",
-      "figures": [
-        "35–45 minute"
-      ],
-      "topics": [
-        "hoover-dam",
-        "timing",
-        "logistics"
-      ],
-      "sourceSlug": "hoover-dam-tour-from-las-vegas",
-      "sourceUrl": "https://lasvegastour.com/hoover-dam-tour-from-las-vegas"
-    },
-    {
-      "id": "hoover-dam-002",
-      "fact": "Hoover Dam sits about 35 to 45 minutes from the Strip, which makes self-driving tempting — and it works, with caveats.",
-      "figures": [
-        "35 to 45 minutes"
-      ],
-      "topics": [
-        "hoover-dam",
-        "getting-around"
-      ],
-      "sourceSlug": "hoover-dam-tour-from-las-vegas",
-      "sourceUrl": "https://lasvegastour.com/hoover-dam-tour-from-las-vegas"
-    },
-    {
-      "id": "hoover-dam-003",
-      "fact": "You'll pass through a mandatory security checkpoint (keep your vehicle tidy to speed it up), and parking runs around $10 on the Nevada side, with a free lot farther out on the Arizona side.",
-      "figures": [
-        "$10"
-      ],
-      "topics": [
-        "hoover-dam",
-        "logistics",
-        "pricing"
-      ],
-      "sourceSlug": "hoover-dam-tour-from-las-vegas",
-      "sourceUrl": "https://lasvegastour.com/hoover-dam-tour-from-las-vegas"
-    },
-    {
-      "id": "hoover-dam-004",
-      "fact": "The Self-Guided Visitor Center Tour (around $15) is the lightest — exhibits, a film, a 3D model, and the observation deck with 360-degree views of the dam, Colorado River, Lake Mead, and the bypass bridge.",
-      "figures": [
-        "$15"
-      ],
-      "topics": [
-        "hoover-dam",
-        "tickets",
-        "pricing"
-      ],
-      "sourceSlug": "hoover-dam-tour-from-las-vegas",
-      "sourceUrl": "https://lasvegastour.com/hoover-dam-tour-from-las-vegas"
-    },
-    {
-      "id": "hoover-dam-005",
-      "fact": "The Guided Powerplant Tour (roughly $15–25, about 30 minutes) takes you down to see the generators in the Nevada powerhouse and a viewing platform over a massive penstock — your first real look inside.",
-      "figures": [
-        "$15–25",
-        "30 minutes"
-      ],
-      "topics": [
-        "hoover-dam",
-        "tickets",
-        "pricing"
-      ],
-      "sourceSlug": "hoover-dam-tour-from-las-vegas",
-      "sourceUrl": "https://lasvegastour.com/hoover-dam-tour-from-las-vegas"
-    },
-    {
-      "id": "hoover-dam-006",
-      "fact": "The Guided Dam Tour (around $30–40, about an hour) is the deepest experience: it includes the powerplant portion plus a walk through the original construction tunnels, an elevator ride, and a view of the Colorado River through an inspection ventilation shaft.",
-      "figures": [
-        "$30–40"
-      ],
-      "topics": [
-        "hoover-dam",
-        "tickets",
-        "pricing"
-      ],
-      "sourceSlug": "hoover-dam-tour-from-las-vegas",
-      "sourceUrl": "https://lasvegastour.com/hoover-dam-tour-from-las-vegas"
-    },
-    {
-      "id": "hoover-dam-007",
-      "fact": "Plan for a genuine half day, roughly four to five hours door to door if you're doing a guided tour or a thorough self-drive visit.",
-      "figures": [
-        "four to five hours"
-      ],
-      "topics": [
-        "hoover-dam",
-        "timing",
-        "logistics"
-      ],
-      "sourceSlug": "hoover-dam-tour-from-las-vegas",
-      "sourceUrl": "https://lasvegastour.com/hoover-dam-tour-from-las-vegas"
-    },
-    {
-      "id": "hoover-dam-008",
-      "fact": "Tours and the visitor center generally operate from around 9 AM to 5 PM, with the last guided tour departing in the mid-afternoon (often around 3:45 PM), so don't leave it too late in the day.",
-      "figures": [
-        "9 AM",
-        "5 PM",
-        "3:45 PM"
-      ],
-      "topics": [
-        "hoover-dam",
-        "timing"
-      ],
-      "sourceSlug": "hoover-dam-tour-from-las-vegas",
-      "sourceUrl": "https://lasvegastour.com/hoover-dam-tour-from-las-vegas"
-    },
-    {
-      "id": "hoover-dam-009",
-      "fact": "The Guided Dam Tour (~$30–40, ~1 hour) is the most in-depth — adding the original construction tunnels and a Colorado River view — but it's sold on-site only and sells out daily, so arrive early.",
-      "figures": [
-        "$30–40",
-        "1 hour"
-      ],
-      "topics": [
-        "hoover-dam",
-        "tickets",
-        "pricing"
-      ],
-      "sourceSlug": "hoover-dam-tour-from-las-vegas",
-      "sourceUrl": "https://lasvegastour.com/hoover-dam-tour-from-las-vegas"
-    },
-    {
-      "id": "hoover-dam-010",
-      "fact": "Hoover Dam sits about 45 minutes from the Strip, which leaves most of a day to fill.",
-      "figures": [
-        "45 minutes"
-      ],
-      "topics": [
-        "hoover-dam",
-        "timing",
-        "logistics"
-      ],
-      "sourceSlug": "hoover-dam-lake-mead-boulder-city-day",
-      "sourceUrl": "https://lasvegastour.com/hoover-dam-lake-mead-boulder-city-day"
-    },
-    {
-      "id": "hoover-dam-011",
-      "fact": "Five minutes of checking beats arguing in a queue in 40-degree heat.",
-      "figures": [
-        "40-degree"
-      ],
-      "topics": [
-        "hoover-dam",
-        "tickets",
-        "logistics"
-      ],
-      "sourceSlug": "hoover-dam-lake-mead-boulder-city-day",
-      "sourceUrl": "https://lasvegastour.com/hoover-dam-lake-mead-boulder-city-day"
-    },
-    {
-      "id": "hoover-dam-012",
       "fact": "A coach tour that \"includes Hoover Dam\" usually means a stop of about half an hour, often at the bridge above it.",
       "figures": [
         "half an hour"
@@ -2275,7 +2119,7 @@
       "sourceUrl": "https://lasvegastour.com/hoover-dam-from-las-vegas-photo-stop-or-dam-tour"
     },
     {
-      "id": "hoover-dam-013",
+      "id": "hoover-dam-002",
       "fact": "Across the reviews of six coach operators that mention Hoover Dam, how long they had is raised in 40% of the one- and two-star reviews and 8.9% of the four- and five-star ones.",
       "figures": [
         "six",
@@ -2291,7 +2135,7 @@
       "sourceUrl": "https://lasvegastour.com/hoover-dam-from-las-vegas-photo-stop-or-dam-tour"
     },
     {
-      "id": "hoover-dam-014",
+      "id": "hoover-dam-003",
       "fact": "Heat is the other thing that turns a wait into a complaint, mentioned in 11% of the low-rated tour reviews and 4.8% of the high-rated ones.",
       "figures": [
         "11%",
@@ -2306,7 +2150,7 @@
       "sourceUrl": "https://lasvegastour.com/hoover-dam-from-las-vegas-photo-stop-or-dam-tour"
     },
     {
-      "id": "hoover-dam-015",
+      "id": "hoover-dam-004",
       "fact": "Parking is the most mentioned practical subject of all, in 16% of the high-rated reviews: there is a paid garage and some free roadside parking further out, and reviewers who arrived late describe a walk.",
       "figures": [
         "16%"
@@ -2386,60 +2230,228 @@
       "sourceUrl": "https://lasvegastour.com/hoover-dam-helicopter-tour-from-las-vegas"
     },
     {
-      "id": "resort-fees-001",
-      "fact": "Almost every Strip hotel adds a mandatory resort fee — typically $40 to $55 per night before tax — that you pay whether or not you touch the wifi, gym, or pool it supposedly covers.",
+      "id": "hoover-dam-005",
+      "fact": "Hoover Dam sits about 45 minutes from the Strip, which leaves most of a day to fill.",
       "figures": [
-        "$40",
-        "$55"
+        "45 minutes"
       ],
       "topics": [
-        "resort-fees",
-        "pricing"
+        "hoover-dam",
+        "timing",
+        "logistics"
       ],
-      "sourceSlug": "how-much-las-vegas-trip-costs",
-      "sourceUrl": "https://lasvegastour.com/how-much-las-vegas-trip-costs"
+      "sourceSlug": "hoover-dam-lake-mead-boulder-city-day",
+      "sourceUrl": "https://lasvegastour.com/hoover-dam-lake-mead-boulder-city-day"
     },
     {
-      "id": "resort-fees-002",
-      "fact": "A room advertised at a tempting rate can land 25% higher at checkout once the fee and taxes are added.",
+      "id": "hoover-dam-006",
+      "fact": "Five minutes of checking beats arguing in a queue in 40-degree heat.",
       "figures": [
-        "25%"
+        "40-degree"
       ],
       "topics": [
-        "resort-fees",
-        "pricing"
+        "hoover-dam",
+        "tickets",
+        "logistics"
       ],
-      "sourceSlug": "how-much-las-vegas-trip-costs",
-      "sourceUrl": "https://lasvegastour.com/how-much-las-vegas-trip-costs"
+      "sourceSlug": "hoover-dam-lake-mead-boulder-city-day",
+      "sourceUrl": "https://lasvegastour.com/hoover-dam-lake-mead-boulder-city-day"
     },
     {
-      "id": "pricing-008",
-      "fact": "If you're driving, add parking: most Strip garages charge guests $20 to $25 a day for self-parking, with valet running $40 to $50.",
+      "id": "hoover-dam-007",
+      "fact": "Hoover Dam is an easy half-day trip from Las Vegas — about a 35–45 minute drive — and worth it if engineering, history, or a break from the Strip appeals to you.",
       "figures": [
-        "$20",
-        "$25",
-        "$40",
-        "$50"
+        "35–45 minute"
       ],
       "topics": [
-        "pricing",
+        "hoover-dam",
+        "timing",
+        "logistics"
+      ],
+      "sourceSlug": "hoover-dam-tour-from-las-vegas",
+      "sourceUrl": "https://lasvegastour.com/hoover-dam-tour-from-las-vegas"
+    },
+    {
+      "id": "hoover-dam-008",
+      "fact": "Hoover Dam sits about 35 to 45 minutes from the Strip, which makes self-driving tempting — and it works, with caveats.",
+      "figures": [
+        "35 to 45 minutes"
+      ],
+      "topics": [
+        "hoover-dam",
         "getting-around"
       ],
-      "sourceSlug": "how-much-las-vegas-trip-costs",
-      "sourceUrl": "https://lasvegastour.com/how-much-las-vegas-trip-costs"
+      "sourceSlug": "hoover-dam-tour-from-las-vegas",
+      "sourceUrl": "https://lasvegastour.com/hoover-dam-tour-from-las-vegas"
     },
     {
-      "id": "cancellation-006",
-      "fact": "Twenty-three reviews describe a refund being refused, delayed or never arriving, and all 23 come from reviews rated one to three stars.",
+      "id": "hoover-dam-009",
+      "fact": "You'll pass through a mandatory security checkpoint (keep your vehicle tidy to speed it up), and parking runs around $10 on the Nevada side, with a free lot farther out on the Arizona side.",
       "figures": [
-        "23"
+        "$10"
       ],
       "topics": [
-        "cancellation",
-        "booking"
+        "hoover-dam",
+        "logistics",
+        "pricing"
       ],
-      "sourceSlug": "how-to-book-a-las-vegas-tour-without-getting-burned",
-      "sourceUrl": "https://lasvegastour.com/how-to-book-a-las-vegas-tour-without-getting-burned"
+      "sourceSlug": "hoover-dam-tour-from-las-vegas",
+      "sourceUrl": "https://lasvegastour.com/hoover-dam-tour-from-las-vegas"
+    },
+    {
+      "id": "hoover-dam-010",
+      "fact": "The Self-Guided Visitor Center Tour (around $15) is the lightest — exhibits, a film, a 3D model, and the observation deck with 360-degree views of the dam, Colorado River, Lake Mead, and the bypass bridge.",
+      "figures": [
+        "$15"
+      ],
+      "topics": [
+        "hoover-dam",
+        "tickets",
+        "pricing"
+      ],
+      "sourceSlug": "hoover-dam-tour-from-las-vegas",
+      "sourceUrl": "https://lasvegastour.com/hoover-dam-tour-from-las-vegas"
+    },
+    {
+      "id": "hoover-dam-011",
+      "fact": "The Guided Powerplant Tour (roughly $15–25, about 30 minutes) takes you down to see the generators in the Nevada powerhouse and a viewing platform over a massive penstock — your first real look inside.",
+      "figures": [
+        "$15–25",
+        "30 minutes"
+      ],
+      "topics": [
+        "hoover-dam",
+        "tickets",
+        "pricing"
+      ],
+      "sourceSlug": "hoover-dam-tour-from-las-vegas",
+      "sourceUrl": "https://lasvegastour.com/hoover-dam-tour-from-las-vegas"
+    },
+    {
+      "id": "hoover-dam-012",
+      "fact": "The Guided Dam Tour (around $30–40, about an hour) is the deepest experience: it includes the powerplant portion plus a walk through the original construction tunnels, an elevator ride, and a view of the Colorado River through an inspection ventilation shaft.",
+      "figures": [
+        "$30–40"
+      ],
+      "topics": [
+        "hoover-dam",
+        "tickets",
+        "pricing"
+      ],
+      "sourceSlug": "hoover-dam-tour-from-las-vegas",
+      "sourceUrl": "https://lasvegastour.com/hoover-dam-tour-from-las-vegas"
+    },
+    {
+      "id": "hoover-dam-013",
+      "fact": "Plan for a genuine half day, roughly four to five hours door to door if you're doing a guided tour or a thorough self-drive visit.",
+      "figures": [
+        "four to five hours"
+      ],
+      "topics": [
+        "hoover-dam",
+        "timing",
+        "logistics"
+      ],
+      "sourceSlug": "hoover-dam-tour-from-las-vegas",
+      "sourceUrl": "https://lasvegastour.com/hoover-dam-tour-from-las-vegas"
+    },
+    {
+      "id": "hoover-dam-014",
+      "fact": "Tours and the visitor center generally operate from around 9 AM to 5 PM, with the last guided tour departing in the mid-afternoon (often around 3:45 PM), so don't leave it too late in the day.",
+      "figures": [
+        "9 AM",
+        "5 PM",
+        "3:45 PM"
+      ],
+      "topics": [
+        "hoover-dam",
+        "timing"
+      ],
+      "sourceSlug": "hoover-dam-tour-from-las-vegas",
+      "sourceUrl": "https://lasvegastour.com/hoover-dam-tour-from-las-vegas"
+    },
+    {
+      "id": "hoover-dam-015",
+      "fact": "The Guided Dam Tour (~$30–40, ~1 hour) is the most in-depth — adding the original construction tunnels and a Colorado River view — but it's sold on-site only and sells out daily, so arrive early.",
+      "figures": [
+        "$30–40",
+        "1 hour"
+      ],
+      "topics": [
+        "hoover-dam",
+        "tickets",
+        "pricing"
+      ],
+      "sourceSlug": "hoover-dam-tour-from-las-vegas",
+      "sourceUrl": "https://lasvegastour.com/hoover-dam-tour-from-las-vegas"
+    },
+    {
+      "id": "grand-canyon-041",
+      "fact": "Only one of the 84 reviews is rated below four stars.",
+      "figures": [
+        "84"
+      ],
+      "topics": [
+        "grand-canyon",
+        "desert-parks"
+      ],
+      "sourceSlug": "horseshoe-bend-from-las-vegas-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/horseshoe-bend-from-las-vegas-what-reviews-say"
+    },
+    {
+      "id": "grand-canyon-042",
+      "fact": "Ten of the 84 mention photographs, and the pattern is specific: the guide takes them.",
+      "figures": [
+        "84"
+      ],
+      "topics": [
+        "grand-canyon",
+        "guides"
+      ],
+      "scale": "Eighty-four reviews across five operators mention Horseshoe Bend, and only one is rated below four stars.",
+      "sourceSlug": "horseshoe-bend-from-las-vegas-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/horseshoe-bend-from-las-vegas-what-reviews-say"
+    },
+    {
+      "id": "grand-canyon-043",
+      "fact": "Fifteen of the 84 mention the temperature, water or shade, and they mention it alongside what the operator handed them.",
+      "figures": [
+        "84"
+      ],
+      "topics": [
+        "grand-canyon",
+        "logistics"
+      ],
+      "scale": "Eighty-four reviews across five operators mention Horseshoe Bend, and only one is rated below four stars.",
+      "sourceSlug": "horseshoe-bend-from-las-vegas-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/horseshoe-bend-from-las-vegas-what-reviews-say"
+    },
+    {
+      "id": "grand-canyon-044",
+      "fact": "In 84 reviews of a place famous for a sheer unfenced drop above a river, three mention the edge and six mention the walk to reach it.",
+      "figures": [
+        "84"
+      ],
+      "topics": [
+        "grand-canyon",
+        "logistics"
+      ],
+      "sourceSlug": "horseshoe-bend-from-las-vegas-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/horseshoe-bend-from-las-vegas-what-reviews-say"
+    },
+    {
+      "id": "grand-canyon-045",
+      "fact": "One reviewer describes a 4:45 in the morning pickup.",
+      "figures": [
+        "4:45"
+      ],
+      "topics": [
+        "grand-canyon",
+        "timing",
+        "logistics"
+      ],
+      "sourceSlug": "horseshoe-bend-from-las-vegas-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/horseshoe-bend-from-las-vegas-what-reviews-say"
     },
     {
       "id": "shows-020",
@@ -2522,72 +2534,60 @@
       "sourceUrl": "https://lasvegastour.com/how-long-are-las-vegas-shows"
     },
     {
-      "id": "grand-canyon-041",
-      "fact": "Only one of the 84 reviews is rated below four stars.",
+      "id": "resort-fees-001",
+      "fact": "Almost every Strip hotel adds a mandatory resort fee — typically $40 to $55 per night before tax — that you pay whether or not you touch the wifi, gym, or pool it supposedly covers.",
       "figures": [
-        "84"
+        "$40",
+        "$55"
       ],
       "topics": [
-        "grand-canyon",
-        "desert-parks"
+        "resort-fees",
+        "pricing"
       ],
-      "sourceSlug": "horseshoe-bend-from-las-vegas-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/horseshoe-bend-from-las-vegas-what-reviews-say"
+      "sourceSlug": "how-much-las-vegas-trip-costs",
+      "sourceUrl": "https://lasvegastour.com/how-much-las-vegas-trip-costs"
     },
     {
-      "id": "grand-canyon-042",
-      "fact": "Ten of the 84 mention photographs, and the pattern is specific: the guide takes them.",
+      "id": "resort-fees-002",
+      "fact": "A room advertised at a tempting rate can land 25% higher at checkout once the fee and taxes are added.",
       "figures": [
-        "84"
+        "25%"
       ],
       "topics": [
-        "grand-canyon",
-        "guides"
+        "resort-fees",
+        "pricing"
       ],
-      "scale": "Eighty-four reviews across five operators mention Horseshoe Bend, and only one is rated below four stars.",
-      "sourceSlug": "horseshoe-bend-from-las-vegas-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/horseshoe-bend-from-las-vegas-what-reviews-say"
+      "sourceSlug": "how-much-las-vegas-trip-costs",
+      "sourceUrl": "https://lasvegastour.com/how-much-las-vegas-trip-costs"
     },
     {
-      "id": "grand-canyon-043",
-      "fact": "Fifteen of the 84 mention the temperature, water or shade, and they mention it alongside what the operator handed them.",
+      "id": "pricing-008",
+      "fact": "If you're driving, add parking: most Strip garages charge guests $20 to $25 a day for self-parking, with valet running $40 to $50.",
       "figures": [
-        "84"
+        "$20",
+        "$25",
+        "$40",
+        "$50"
       ],
       "topics": [
-        "grand-canyon",
-        "logistics"
+        "pricing",
+        "getting-around"
       ],
-      "scale": "Eighty-four reviews across five operators mention Horseshoe Bend, and only one is rated below four stars.",
-      "sourceSlug": "horseshoe-bend-from-las-vegas-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/horseshoe-bend-from-las-vegas-what-reviews-say"
+      "sourceSlug": "how-much-las-vegas-trip-costs",
+      "sourceUrl": "https://lasvegastour.com/how-much-las-vegas-trip-costs"
     },
     {
-      "id": "grand-canyon-044",
-      "fact": "In 84 reviews of a place famous for a sheer unfenced drop above a river, three mention the edge and six mention the walk to reach it.",
+      "id": "cancellation-006",
+      "fact": "Twenty-three reviews describe a refund being refused, delayed or never arriving, and all 23 come from reviews rated one to three stars.",
       "figures": [
-        "84"
+        "23"
       ],
       "topics": [
-        "grand-canyon",
-        "logistics"
+        "cancellation",
+        "booking"
       ],
-      "sourceSlug": "horseshoe-bend-from-las-vegas-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/horseshoe-bend-from-las-vegas-what-reviews-say"
-    },
-    {
-      "id": "grand-canyon-045",
-      "fact": "One reviewer describes a 4:45 in the morning pickup.",
-      "figures": [
-        "4:45"
-      ],
-      "topics": [
-        "grand-canyon",
-        "timing",
-        "logistics"
-      ],
-      "sourceSlug": "horseshoe-bend-from-las-vegas-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/horseshoe-bend-from-las-vegas-what-reviews-say"
+      "sourceSlug": "how-to-book-a-las-vegas-tour-without-getting-burned",
+      "sourceUrl": "https://lasvegastour.com/how-to-book-a-las-vegas-tour-without-getting-burned"
     },
     {
       "id": "timing-007",
@@ -2854,104 +2854,6 @@
       "sourceUrl": "https://lasvegastour.com/ka-cirque-du-soleil-las-vegas-boring-reviews"
     },
     {
-      "id": "weddings-001",
-      "fact": "Seventy-three of 300 reviews of The Little Vegas Chapel in Las Vegas mention the limousine, and exactly one of those is rated below four stars.",
-      "figures": [
-        "300"
-      ],
-      "topics": [
-        "weddings"
-      ],
-      "sourceSlug": "las-vegas-chapel-wedding-limo-and-transport",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-chapel-wedding-limo-and-transport"
-    },
-    {
-      "id": "nightlife-001",
-      "fact": "The games with the lowest house edge — meaning your money lasts longer — are blackjack (under about 1% if you play basic strategy at a table that pays 3:2), baccarat (betting banker or player, around 1%), and craps (sticking to the basic pass/don't-pass bets, around 1.4%)",
-      "figures": [
-        "1%",
-        "3:2",
-        "1%",
-        "1.4%"
-      ],
-      "topics": [
-        "nightlife",
-        "pricing"
-      ],
-      "sourceSlug": "las-vegas-casino-gambling-responsibly",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-casino-gambling-responsibly"
-    },
-    {
-      "id": "nightlife-002",
-      "fact": "Roulette is middling on a single-zero wheel (about 2.7%) and worse on double-zero (about 5.3%)",
-      "figures": [
-        "2.7%",
-        "5.3%"
-      ],
-      "topics": [
-        "nightlife",
-        "pricing"
-      ],
-      "scale": "Every game has a built-in house edge — the percentage the casino expects to keep, on average, of everything wagered over time",
-      "sourceSlug": "las-vegas-casino-gambling-responsibly",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-casino-gambling-responsibly"
-    },
-    {
-      "id": "nightlife-003",
-      "fact": "Steer clear of 6:5 blackjack (the payout rule quietly doubles the house edge versus a 3:2 table), triple-zero roulette, exotic craps bets like \"any seven,\" the tie bet in baccarat, and most slots and side bets, which carry high and unpredictable edges",
-      "figures": [
-        "6:5",
-        "3:2"
-      ],
-      "topics": [
-        "nightlife",
-        "pricing"
-      ],
-      "sourceSlug": "las-vegas-casino-gambling-responsibly",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-casino-gambling-responsibly"
-    },
-    {
-      "id": "nightlife-004",
-      "fact": "In the U.S., the National Problem Gambling Helpline offers free, confidential support 24/7 — call 1-800-MY-RESET, text 800GAM, or chat at ncpgambling.org/chat",
-      "figures": [
-        "24/7",
-        "1-800-MY-RESET",
-        "800GAM"
-      ],
-      "topics": [
-        "nightlife",
-        "logistics"
-      ],
-      "sourceSlug": "las-vegas-casino-gambling-responsibly",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-casino-gambling-responsibly"
-    },
-    {
-      "id": "nightlife-005",
-      "fact": "Tip the dealer occasionally and your cocktail server a dollar or two per drink — it's expected and keeps the service coming",
-      "figures": [
-        "a dollar or two"
-      ],
-      "topics": [
-        "nightlife",
-        "logistics"
-      ],
-      "sourceSlug": "las-vegas-casino-gambling-responsibly",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-casino-gambling-responsibly"
-    },
-    {
-      "id": "nightlife-006",
-      "fact": "Gambling is for adults 21+ and should be treated as paid entertainment, never as a source of income",
-      "figures": [
-        "21+"
-      ],
-      "topics": [
-        "nightlife",
-        "logistics"
-      ],
-      "sourceSlug": "las-vegas-casino-gambling-responsibly",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-casino-gambling-responsibly"
-    },
-    {
       "id": "adventure-activities-006",
       "fact": "Of 300 reviews of one Las Vegas ATV tour operator, listed on TripAdvisor as Las Vegas ATVs, 154 name one guide and only 34 describe the terrain.",
       "figures": [
@@ -3053,6 +2955,104 @@
       "sourceUrl": "https://lasvegastour.com/las-vegas-atv-tour-what-reviews-say"
     },
     {
+      "id": "nightlife-001",
+      "fact": "The games with the lowest house edge — meaning your money lasts longer — are blackjack (under about 1% if you play basic strategy at a table that pays 3:2), baccarat (betting banker or player, around 1%), and craps (sticking to the basic pass/don't-pass bets, around 1.4%)",
+      "figures": [
+        "1%",
+        "3:2",
+        "1%",
+        "1.4%"
+      ],
+      "topics": [
+        "nightlife",
+        "pricing"
+      ],
+      "sourceSlug": "las-vegas-casino-gambling-responsibly",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-casino-gambling-responsibly"
+    },
+    {
+      "id": "nightlife-002",
+      "fact": "Roulette is middling on a single-zero wheel (about 2.7%) and worse on double-zero (about 5.3%)",
+      "figures": [
+        "2.7%",
+        "5.3%"
+      ],
+      "topics": [
+        "nightlife",
+        "pricing"
+      ],
+      "scale": "Every game has a built-in house edge — the percentage the casino expects to keep, on average, of everything wagered over time",
+      "sourceSlug": "las-vegas-casino-gambling-responsibly",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-casino-gambling-responsibly"
+    },
+    {
+      "id": "nightlife-003",
+      "fact": "Steer clear of 6:5 blackjack (the payout rule quietly doubles the house edge versus a 3:2 table), triple-zero roulette, exotic craps bets like \"any seven,\" the tie bet in baccarat, and most slots and side bets, which carry high and unpredictable edges",
+      "figures": [
+        "6:5",
+        "3:2"
+      ],
+      "topics": [
+        "nightlife",
+        "pricing"
+      ],
+      "sourceSlug": "las-vegas-casino-gambling-responsibly",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-casino-gambling-responsibly"
+    },
+    {
+      "id": "nightlife-004",
+      "fact": "In the U.S., the National Problem Gambling Helpline offers free, confidential support 24/7 — call 1-800-MY-RESET, text 800GAM, or chat at ncpgambling.org/chat",
+      "figures": [
+        "24/7",
+        "1-800-MY-RESET",
+        "800GAM"
+      ],
+      "topics": [
+        "nightlife",
+        "logistics"
+      ],
+      "sourceSlug": "las-vegas-casino-gambling-responsibly",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-casino-gambling-responsibly"
+    },
+    {
+      "id": "nightlife-005",
+      "fact": "Tip the dealer occasionally and your cocktail server a dollar or two per drink — it's expected and keeps the service coming",
+      "figures": [
+        "a dollar or two"
+      ],
+      "topics": [
+        "nightlife",
+        "logistics"
+      ],
+      "sourceSlug": "las-vegas-casino-gambling-responsibly",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-casino-gambling-responsibly"
+    },
+    {
+      "id": "nightlife-006",
+      "fact": "Gambling is for adults 21+ and should be treated as paid entertainment, never as a source of income",
+      "figures": [
+        "21+"
+      ],
+      "topics": [
+        "nightlife",
+        "logistics"
+      ],
+      "sourceSlug": "las-vegas-casino-gambling-responsibly",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-casino-gambling-responsibly"
+    },
+    {
+      "id": "weddings-001",
+      "fact": "Seventy-three of 300 reviews of The Little Vegas Chapel in Las Vegas mention the limousine, and exactly one of those is rated below four stars.",
+      "figures": [
+        "300"
+      ],
+      "topics": [
+        "weddings"
+      ],
+      "sourceSlug": "las-vegas-chapel-wedding-limo-and-transport",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-chapel-wedding-limo-and-transport"
+    },
+    {
       "id": "weddings-002",
       "fact": "Elvis appears in 35.1% of the positive reviews of The Little Vegas Chapel, which makes him popular rather than standard.",
       "figures": [
@@ -3063,35 +3063,6 @@
       ],
       "sourceSlug": "las-vegas-chapel-wedding-what-you-are-buying",
       "sourceUrl": "https://lasvegastour.com/las-vegas-chapel-wedding-what-you-are-buying"
-    },
-    {
-      "id": "food-tours-002",
-      "fact": "In 300 reviews of Secret Food Tours, a Las Vegas food tour operator, 25 describe walking downtown and 16 describe the Strip.",
-      "figures": [
-        "300",
-        "25",
-        "16"
-      ],
-      "topics": [
-        "food-tours",
-        "strip-fremont"
-      ],
-      "sourceSlug": "las-vegas-food-tour-downtown-or-strip",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-food-tour-downtown-or-strip"
-    },
-    {
-      "id": "food-tours-003",
-      "fact": "Across both versions, the single most mentioned element is the person leading it, named 221 times in 300 reviews.",
-      "figures": [
-        "221",
-        "300"
-      ],
-      "topics": [
-        "food-tours",
-        "guides"
-      ],
-      "sourceSlug": "las-vegas-food-tour-downtown-or-strip",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-food-tour-downtown-or-strip"
     },
     {
       "id": "adventure-activities-007",
@@ -3133,46 +3104,6 @@
       ],
       "sourceSlug": "las-vegas-colorado-river-kayak-what-reviews-say",
       "sourceUrl": "https://lasvegastour.com/las-vegas-colorado-river-kayak-what-reviews-say"
-    },
-    {
-      "id": "adventure-activities-009",
-      "fact": "The most common thing a happy reviewer volunteers is that they had never done it before: 7.2% say so outright, and 4.6% describe the briefing or the practice they were given.",
-      "figures": [
-        "7.2%",
-        "4.6%"
-      ],
-      "topics": [
-        "adventure-activities",
-        "guides"
-      ],
-      "sourceSlug": "las-vegas-desert-adventure-tours-what-they-ask",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-desert-adventure-tours-what-they-ask"
-    },
-    {
-      "id": "desert-parks-009",
-      "fact": "Heat and water appear in 8.4% of the high-rated reviews and in a similar share of the low-rated ones — the signature of something that describes the day rather than ruining it.",
-      "figures": [
-        "8.4%"
-      ],
-      "topics": [
-        "desert-parks",
-        "adventure-activities"
-      ],
-      "sourceSlug": "las-vegas-desert-adventure-tours-what-they-ask",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-desert-adventure-tours-what-they-ask"
-    },
-    {
-      "id": "guides-014",
-      "fact": "The one complaint that never appears is the one you might expect: in the high-rated reviews the guide or instructor is praised in 11.3%, and in the low-rated ones not once.",
-      "figures": [
-        "11.3%"
-      ],
-      "topics": [
-        "guides",
-        "adventure-activities"
-      ],
-      "sourceSlug": "las-vegas-desert-adventure-tours-what-they-ask",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-desert-adventure-tours-what-they-ask"
     },
     {
       "id": "kids-families-004",
@@ -3257,7 +3188,7 @@
       "sourceUrl": "https://lasvegastour.com/las-vegas-day-tours-with-kids"
     },
     {
-      "id": "adventure-activities-010",
+      "id": "adventure-activities-009",
       "fact": "Forty-five of the 214 come from desert adventure listings — shooting ranges, horseback, supercars — and they are the group where an age limit clearly exists, because reviewers describe being sorted into a product by it.",
       "figures": [
         "214"
@@ -3271,83 +3202,73 @@
       "sourceUrl": "https://lasvegastour.com/las-vegas-day-tours-with-kids"
     },
     {
-      "id": "helicopter-022",
-      "fact": "Twenty-three of the 308 one- and two-star reviews mention which side of the helicopter they sat on.",
+      "id": "adventure-activities-010",
+      "fact": "The most common thing a happy reviewer volunteers is that they had never done it before: 7.2% say so outright, and 4.6% describe the briefing or the practice they were given.",
       "figures": [
-        "Twenty-three",
-        "308"
+        "7.2%",
+        "4.6%"
       ],
       "topics": [
-        "helicopter",
-        "logistics"
+        "adventure-activities",
+        "guides"
       ],
-      "sourceSlug": "las-vegas-helicopter-seat-assignment",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-seat-assignment"
+      "sourceSlug": "las-vegas-desert-adventure-tours-what-they-ask",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-desert-adventure-tours-what-they-ask"
     },
     {
-      "id": "helicopter-023",
-      "fact": "Of 427 four- and five-star reviews, two mention the side.",
+      "id": "desert-parks-009",
+      "fact": "Heat and water appear in 8.4% of the high-rated reviews and in a similar share of the low-rated ones — the signature of something that describes the day rather than ruining it.",
       "figures": [
-        "427",
-        "two"
+        "8.4%"
       ],
       "topics": [
-        "helicopter",
-        "logistics"
+        "desert-parks",
+        "adventure-activities"
       ],
-      "sourceSlug": "las-vegas-helicopter-seat-assignment",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-seat-assignment"
+      "sourceSlug": "las-vegas-desert-adventure-tours-what-they-ask",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-desert-adventure-tours-what-they-ask"
     },
     {
-      "id": "helicopter-024",
-      "fact": "Being seated by weight appears in 6.8% of the bad reviews and 3.0% of the good — a ratio of 2.2.",
+      "id": "guides-014",
+      "fact": "The one complaint that never appears is the one you might expect: in the high-rated reviews the guide or instructor is praised in 11.3%, and in the low-rated ones not once.",
       "figures": [
-        "6.8%",
-        "3.0%",
-        "2.2"
+        "11.3%"
       ],
       "topics": [
-        "helicopter",
-        "logistics"
+        "guides",
+        "adventure-activities"
       ],
-      "sourceSlug": "las-vegas-helicopter-seat-assignment",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-seat-assignment"
+      "sourceSlug": "las-vegas-desert-adventure-tours-what-they-ask",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-desert-adventure-tours-what-they-ask"
     },
     {
-      "id": "helicopter-025",
-      "fact": "The upgrade is the one part of this that satisfied passengers talk about more than unhappy ones: it appears in 6.1% of the good reviews and 2.6% of the bad.",
+      "id": "food-tours-002",
+      "fact": "In 300 reviews of Secret Food Tours, a Las Vegas food tour operator, 25 describe walking downtown and 16 describe the Strip.",
       "figures": [
-        "6.1%",
-        "2.6%"
+        "300",
+        "25",
+        "16"
       ],
       "topics": [
-        "helicopter",
-        "pricing",
-        "booking"
+        "food-tours",
+        "strip-fremont"
       ],
-      "sourceSlug": "las-vegas-helicopter-seat-assignment",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-seat-assignment"
+      "sourceSlug": "las-vegas-food-tour-downtown-or-strip",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-food-tour-downtown-or-strip"
     },
     {
-      "id": "helicopter-026",
-      "fact": "What they report paying, by the year they wrote: around $50 through most of the last decade, with $100 reported in 2019 and 2022, $120 in 2023, and $30 in 2026 at an operator that charges only if the upgrade actually happens.",
+      "id": "food-tours-003",
+      "fact": "Across both versions, the single most mentioned element is the person leading it, named 221 times in 300 reviews.",
       "figures": [
-        "$50",
-        "$100",
-        "2019",
-        "2022",
-        "$120",
-        "2023",
-        "$30",
-        "2026"
+        "221",
+        "300"
       ],
       "topics": [
-        "helicopter",
-        "pricing",
-        "booking"
+        "food-tours",
+        "guides"
       ],
-      "sourceSlug": "las-vegas-helicopter-seat-assignment",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-seat-assignment"
+      "sourceSlug": "las-vegas-food-tour-downtown-or-strip",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-food-tour-downtown-or-strip"
     },
     {
       "id": "food-tours-004",
@@ -3438,7 +3359,7 @@
       "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-cancellation-rebooking"
     },
     {
-      "id": "helicopter-027",
+      "id": "helicopter-022",
       "fact": "Of 784 four- and five-star reviews, 70% mention the pilot, 27% describe them as informative and 27% give their name.",
       "figures": [
         "784",
@@ -3454,7 +3375,7 @@
       "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-pilot-commentary"
     },
     {
-      "id": "helicopter-028",
+      "id": "helicopter-023",
       "fact": "Among unhappy reviews it cuts both ways: of 42 that mention the pilot, 16 praise them despite some other complaint, and 9 say the pilot barely spoke.",
       "figures": [
         "42",
@@ -3469,7 +3390,7 @@
       "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-pilot-commentary"
     },
     {
-      "id": "helicopter-029",
+      "id": "helicopter-024",
       "fact": "The pilot appears in 70% of the four- and five-star reviews and in 26% of the one- and two-star ones.",
       "figures": [
         "70%",
@@ -3483,7 +3404,7 @@
       "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-pilot-commentary"
     },
     {
-      "id": "helicopter-030",
+      "id": "helicopter-025",
       "fact": "The pattern holds at both operators we measured, with nearly identical figures: the pilot appears in 69% and 71% of their good reviews.",
       "figures": [
         "69%",
@@ -3498,7 +3419,7 @@
       "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-pilot-commentary"
     },
     {
-      "id": "helicopter-031",
+      "id": "helicopter-026",
       "fact": "Most unhappy reviews do not mention the pilot at all: 73 of the 98.",
       "figures": [
         "73",
@@ -3512,311 +3433,86 @@
       "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-pilot-commentary"
     },
     {
-      "id": "helicopter-032",
-      "fact": "A third of the one- and two-star reviews of Las Vegas helicopter operators describe a cancelled flight — against 1.4% of the good ones.",
+      "id": "helicopter-027",
+      "fact": "Twenty-three of the 308 one- and two-star reviews mention which side of the helicopter they sat on.",
       "figures": [
-        "1.4%"
+        "Twenty-three",
+        "308"
       ],
       "topics": [
         "helicopter",
-        "cancellation"
-      ],
-      "sourceSlug": "las-vegas-helicopter-tour-cancellations",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-cancellations"
-    },
-    {
-      "id": "helicopter-033",
-      "fact": "Weather is the only reason that also turns up in five-star reviews, at 5%.",
-      "figures": [
-        "5%"
-      ],
-      "topics": [
-        "helicopter",
-        "cancellation"
-      ],
-      "sourceSlug": "las-vegas-helicopter-tour-cancellations",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-cancellations"
-    },
-    {
-      "id": "helicopter-034",
-      "fact": "“They could not fill the aircraft” appears zero times in 784 positive reviews.",
-      "figures": [
-        "zero",
-        "784"
-      ],
-      "topics": [
-        "helicopter",
-        "cancellation"
-      ],
-      "sourceSlug": "las-vegas-helicopter-tour-cancellations",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-cancellations"
-    },
-    {
-      "id": "helicopter-035",
-      "fact": "Waiting is just as frequent but far less decisive: it also appears in 6.9% of the good reviews, because a wait is part of a normal flight day.",
-      "figures": [
-        "6.9%"
-      ],
-      "topics": [
-        "helicopter",
-        "timing"
-      ],
-      "sourceSlug": "las-vegas-helicopter-tour-cancellations",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-cancellations"
-    },
-    {
-      "id": "helicopter-036",
-      "fact": "Across 103 negative reviews that mention a cancellation, the wording points to the operator in 67 and to the customer in one.",
-      "figures": [
-        "103",
-        "67",
-        "one"
-      ],
-      "topics": [
-        "helicopter",
-        "cancellation"
-      ],
-      "sourceSlug": "las-vegas-helicopter-tour-cancellations",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-cancellations"
-    },
-    {
-      "id": "helicopter-037",
-      "fact": "When the reviews do name weather, travelers largely accept it — the 2.90-star average of those cancellations is well above the 1.51 of the rest.",
-      "figures": [
-        "2.90",
-        "1.51"
-      ],
-      "topics": [
-        "helicopter",
-        "cancellation"
-      ],
-      "scale": "When we tagged the corpus by topic, weather-related cancellations separated themselves from the rest, and the two groups do not score alike: 2.90 stars against 1.51.",
-      "sourceSlug": "las-vegas-helicopter-tour-cancellations",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-cancellations"
-    },
-    {
-      "id": "helicopter-038",
-      "fact": "Across the twelve months of the year, the share of negative helicopter reviews mentioning a cancellation runs between 14% and 37% with no pattern — February and January sit near the top, May and June near the bottom, and July, August and December land in the middle.",
-      "figures": [
-        "14%",
-        "37%"
-      ],
-      "topics": [
-        "helicopter",
-        "cancellation",
-        "timing"
-      ],
-      "sourceSlug": "las-vegas-helicopter-tour-cancellations",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-cancellations"
-    },
-    {
-      "id": "helicopter-039",
-      "fact": "Of the 103 negative reviews describing a cancellation, 17% say they were told less than a day ahead, 13% say they were told the day of the flight, and 3% say they found out after arriving at the terminal.",
-      "figures": [
-        "103",
-        "17%",
-        "13%",
-        "3%"
-      ],
-      "topics": [
-        "helicopter",
-        "cancellation",
-        "timing"
-      ],
-      "sourceSlug": "las-vegas-helicopter-tour-cancellations",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-cancellations"
-    },
-    {
-      "id": "helicopter-040",
-      "fact": "Money comes up in 28% of the negative reviews and 0.6% of the positive ones.",
-      "figures": [
-        "28%",
-        "0.6%"
-      ],
-      "topics": [
-        "helicopter",
-        "cancellation"
-      ],
-      "sourceSlug": "las-vegas-helicopter-tour-cancellations",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-cancellations"
-    },
-    {
-      "id": "helicopter-041",
-      "fact": "The flight rarely disappoints: of 123 low-rated reviews in our sample, only 19 blamed the aircraft, the pilot or the flight itself.",
-      "figures": [
-        "123",
-        "19"
-      ],
-      "topics": [
-        "helicopter",
-        "adventure-activities"
-      ],
-      "sourceSlug": "las-vegas-helicopter-tour-ground-time",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-ground-time"
-    },
-    {
-      "id": "helicopter-042",
-      "fact": "Waiting an hour or more shows up in 7 of the 95 one- and two-star reviews and in one of the 784 four- and five-star reviews.",
-      "figures": [
-        "7",
-        "95",
-        "784"
-      ],
-      "topics": [
-        "helicopter",
-        "timing",
         "logistics"
       ],
-      "sourceSlug": "las-vegas-helicopter-tour-ground-time",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-ground-time"
+      "sourceSlug": "las-vegas-helicopter-seat-assignment",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-seat-assignment"
     },
     {
-      "id": "helicopter-043",
-      "fact": "The transfer comes up in about a third of all reviews, and at the same rate in both camps: 35% of the bad reviews and 36% of the good.",
+      "id": "helicopter-028",
+      "fact": "Of 427 four- and five-star reviews, two mention the side.",
       "figures": [
-        "35%",
-        "36%"
-      ],
-      "topics": [
-        "helicopter",
-        "getting-around",
-        "logistics"
-      ],
-      "sourceSlug": "las-vegas-helicopter-tour-ground-time",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-ground-time"
-    },
-    {
-      "id": "helicopter-044",
-      "fact": "On the other side, 141 of the 784 happy reviews mention a limousine, against two of the bad ones",
-      "figures": [
-        "141",
-        "784"
-      ],
-      "topics": [
-        "helicopter",
-        "getting-around"
-      ],
-      "sourceSlug": "las-vegas-helicopter-tour-ground-time",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-ground-time"
-    },
-    {
-      "id": "helicopter-045",
-      "fact": "A fuel surcharge is mentioned in 4.2% of the one- and two-star reviews and 0.8% of the good ones.",
-      "figures": [
-        "4.2%",
-        "0.8%"
-      ],
-      "topics": [
-        "helicopter",
-        "pricing"
-      ],
-      "sourceSlug": "las-vegas-helicopter-tour-ground-time",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-ground-time"
-    },
-    {
-      "id": "helicopter-046",
-      "fact": "Four point nine per cent of the four- and five-star reviews mention being frightened, against 2.0% of the one- and two-star ones.",
-      "figures": [
-        "Four point nine per cent",
-        "2.0%"
-      ],
-      "topics": [
-        "helicopter"
-      ],
-      "sourceSlug": "las-vegas-helicopter-tour-nervous-flyers",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-nervous-flyers"
-    },
-    {
-      "id": "helicopter-047",
-      "fact": "Motion sickness appears four times in 1,195.",
-      "figures": [
-        "four",
-        "1,195"
-      ],
-      "topics": [
-        "helicopter"
-      ],
-      "scale": "We read 1,195 reviews of three Las Vegas helicopter operators, collected without filtering by rating.",
-      "sourceSlug": "las-vegas-helicopter-tour-nervous-flyers",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-nervous-flyers"
-    },
-    {
-      "id": "helicopter-048",
-      "fact": "Of the 54, exactly two gave one or two stars.",
-      "figures": [
-        "54",
-        "two",
-        "one or two"
-      ],
-      "topics": [
-        "helicopter"
-      ],
-      "scale": "Fifty-four say the writer or someone with them was nervous, scared or terrified.",
-      "sourceSlug": "las-vegas-helicopter-tour-nervous-flyers",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-nervous-flyers"
-    },
-    {
-      "id": "helicopter-049",
-      "fact": "Forty-eight of the 54 mention the pilot.",
-      "figures": [
-        "Forty-eight",
-        "54"
-      ],
-      "topics": [
-        "helicopter",
-        "guides"
-      ],
-      "scale": "Fifty-four say the writer or someone with them was nervous, scared or terrified.",
-      "sourceSlug": "las-vegas-helicopter-tour-nervous-flyers",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-nervous-flyers"
-    },
-    {
-      "id": "helicopter-050",
-      "fact": "Thirteen of the 54 say the flight was smoother than they expected, which is the other half of the same thing: what frightens people in advance is an imagined ride, and the ride they describe is not it.",
-      "figures": [
-        "Thirteen",
-        "54"
-      ],
-      "topics": [
-        "helicopter"
-      ],
-      "scale": "Fifty-four say the writer or someone with them was nervous, scared or terrified.",
-      "sourceSlug": "las-vegas-helicopter-tour-nervous-flyers",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-nervous-flyers"
-    },
-    {
-      "id": "helicopter-051",
-      "fact": "Of the 1,195, 1,067 are at four or five stars, 30 at three and 98 at one or two.",
-      "figures": [
-        "1,195",
-        "1,067",
-        "30",
-        "98"
-      ],
-      "topics": [
-        "helicopter",
-        "operators"
-      ],
-      "scale": "We read 1,195 reviews of three Las Vegas helicopter operators, collected without filtering by rating.",
-      "sourceSlug": "las-vegas-helicopter-tour-nervous-flyers",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-nervous-flyers"
-    },
-    {
-      "id": "helicopter-052",
-      "fact": "The fear group is 54 reviews: 52 positive, none at three stars and two at one or two.",
-      "figures": [
-        "54",
-        "52",
+        "427",
         "two"
       ],
       "topics": [
-        "helicopter"
+        "helicopter",
+        "logistics"
       ],
-      "sourceSlug": "las-vegas-helicopter-tour-nervous-flyers",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-nervous-flyers"
+      "sourceSlug": "las-vegas-helicopter-seat-assignment",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-seat-assignment"
     },
     {
-      "id": "helicopter-053",
+      "id": "helicopter-029",
+      "fact": "Being seated by weight appears in 6.8% of the bad reviews and 3.0% of the good — a ratio of 2.2.",
+      "figures": [
+        "6.8%",
+        "3.0%",
+        "2.2"
+      ],
+      "topics": [
+        "helicopter",
+        "logistics"
+      ],
+      "sourceSlug": "las-vegas-helicopter-seat-assignment",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-seat-assignment"
+    },
+    {
+      "id": "helicopter-030",
+      "fact": "The upgrade is the one part of this that satisfied passengers talk about more than unhappy ones: it appears in 6.1% of the good reviews and 2.6% of the bad.",
+      "figures": [
+        "6.1%",
+        "2.6%"
+      ],
+      "topics": [
+        "helicopter",
+        "pricing",
+        "booking"
+      ],
+      "sourceSlug": "las-vegas-helicopter-seat-assignment",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-seat-assignment"
+    },
+    {
+      "id": "helicopter-031",
+      "fact": "What they report paying, by the year they wrote: around $50 through most of the last decade, with $100 reported in 2019 and 2022, $120 in 2023, and $30 in 2026 at an operator that charges only if the upgrade actually happens.",
+      "figures": [
+        "$50",
+        "$100",
+        "2019",
+        "2022",
+        "$120",
+        "2023",
+        "$30",
+        "2026"
+      ],
+      "topics": [
+        "helicopter",
+        "pricing",
+        "booking"
+      ],
+      "sourceSlug": "las-vegas-helicopter-seat-assignment",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-seat-assignment"
+    },
+    {
+      "id": "helicopter-032",
       "fact": "Of the 74 reviews, 41 mention a birthday, 20 an anniversary, 9 a wedding, a honeymoon or a vow renewal, and 4 a proposal.",
       "figures": [
         "74",
@@ -3834,7 +3530,7 @@
       "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-birthday-anniversary-proposal"
     },
     {
-      "id": "helicopter-054",
+      "id": "helicopter-033",
       "fact": "Nine of the 74 are at one or two stars, too few for a rate.",
       "figures": [
         "Nine",
@@ -3849,7 +3545,7 @@
       "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-birthday-anniversary-proposal"
     },
     {
-      "id": "helicopter-055",
+      "id": "helicopter-034",
       "fact": "Of the 74, 37.8% mention champagne or a picnic, against 21.8% of the other 1,108 reviews, and 25.7% mention photos, against 13.9%.",
       "figures": [
         "74",
@@ -3865,6 +3561,310 @@
       ],
       "sourceSlug": "las-vegas-helicopter-tour-birthday-anniversary-proposal",
       "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-birthday-anniversary-proposal"
+    },
+    {
+      "id": "helicopter-035",
+      "fact": "A third of the one- and two-star reviews of Las Vegas helicopter operators describe a cancelled flight — against 1.4% of the good ones.",
+      "figures": [
+        "1.4%"
+      ],
+      "topics": [
+        "helicopter",
+        "cancellation"
+      ],
+      "sourceSlug": "las-vegas-helicopter-tour-cancellations",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-cancellations"
+    },
+    {
+      "id": "helicopter-036",
+      "fact": "Weather is the only reason that also turns up in five-star reviews, at 5%.",
+      "figures": [
+        "5%"
+      ],
+      "topics": [
+        "helicopter",
+        "cancellation"
+      ],
+      "sourceSlug": "las-vegas-helicopter-tour-cancellations",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-cancellations"
+    },
+    {
+      "id": "helicopter-037",
+      "fact": "“They could not fill the aircraft” appears zero times in 784 positive reviews.",
+      "figures": [
+        "zero",
+        "784"
+      ],
+      "topics": [
+        "helicopter",
+        "cancellation"
+      ],
+      "sourceSlug": "las-vegas-helicopter-tour-cancellations",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-cancellations"
+    },
+    {
+      "id": "helicopter-038",
+      "fact": "Waiting is just as frequent but far less decisive: it also appears in 6.9% of the good reviews, because a wait is part of a normal flight day.",
+      "figures": [
+        "6.9%"
+      ],
+      "topics": [
+        "helicopter",
+        "timing"
+      ],
+      "sourceSlug": "las-vegas-helicopter-tour-cancellations",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-cancellations"
+    },
+    {
+      "id": "helicopter-039",
+      "fact": "Across 103 negative reviews that mention a cancellation, the wording points to the operator in 67 and to the customer in one.",
+      "figures": [
+        "103",
+        "67",
+        "one"
+      ],
+      "topics": [
+        "helicopter",
+        "cancellation"
+      ],
+      "sourceSlug": "las-vegas-helicopter-tour-cancellations",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-cancellations"
+    },
+    {
+      "id": "helicopter-040",
+      "fact": "When the reviews do name weather, travelers largely accept it — the 2.90-star average of those cancellations is well above the 1.51 of the rest.",
+      "figures": [
+        "2.90",
+        "1.51"
+      ],
+      "topics": [
+        "helicopter",
+        "cancellation"
+      ],
+      "scale": "When we tagged the corpus by topic, weather-related cancellations separated themselves from the rest, and the two groups do not score alike: 2.90 stars against 1.51.",
+      "sourceSlug": "las-vegas-helicopter-tour-cancellations",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-cancellations"
+    },
+    {
+      "id": "helicopter-041",
+      "fact": "Across the twelve months of the year, the share of negative helicopter reviews mentioning a cancellation runs between 14% and 37% with no pattern — February and January sit near the top, May and June near the bottom, and July, August and December land in the middle.",
+      "figures": [
+        "14%",
+        "37%"
+      ],
+      "topics": [
+        "helicopter",
+        "cancellation",
+        "timing"
+      ],
+      "sourceSlug": "las-vegas-helicopter-tour-cancellations",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-cancellations"
+    },
+    {
+      "id": "helicopter-042",
+      "fact": "Of the 103 negative reviews describing a cancellation, 17% say they were told less than a day ahead, 13% say they were told the day of the flight, and 3% say they found out after arriving at the terminal.",
+      "figures": [
+        "103",
+        "17%",
+        "13%",
+        "3%"
+      ],
+      "topics": [
+        "helicopter",
+        "cancellation",
+        "timing"
+      ],
+      "sourceSlug": "las-vegas-helicopter-tour-cancellations",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-cancellations"
+    },
+    {
+      "id": "helicopter-043",
+      "fact": "Money comes up in 28% of the negative reviews and 0.6% of the positive ones.",
+      "figures": [
+        "28%",
+        "0.6%"
+      ],
+      "topics": [
+        "helicopter",
+        "cancellation"
+      ],
+      "sourceSlug": "las-vegas-helicopter-tour-cancellations",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-cancellations"
+    },
+    {
+      "id": "helicopter-044",
+      "fact": "The flight rarely disappoints: of 123 low-rated reviews in our sample, only 19 blamed the aircraft, the pilot or the flight itself.",
+      "figures": [
+        "123",
+        "19"
+      ],
+      "topics": [
+        "helicopter",
+        "adventure-activities"
+      ],
+      "sourceSlug": "las-vegas-helicopter-tour-ground-time",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-ground-time"
+    },
+    {
+      "id": "helicopter-045",
+      "fact": "Waiting an hour or more shows up in 7 of the 95 one- and two-star reviews and in one of the 784 four- and five-star reviews.",
+      "figures": [
+        "7",
+        "95",
+        "784"
+      ],
+      "topics": [
+        "helicopter",
+        "timing",
+        "logistics"
+      ],
+      "sourceSlug": "las-vegas-helicopter-tour-ground-time",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-ground-time"
+    },
+    {
+      "id": "helicopter-046",
+      "fact": "The transfer comes up in about a third of all reviews, and at the same rate in both camps: 35% of the bad reviews and 36% of the good.",
+      "figures": [
+        "35%",
+        "36%"
+      ],
+      "topics": [
+        "helicopter",
+        "getting-around",
+        "logistics"
+      ],
+      "sourceSlug": "las-vegas-helicopter-tour-ground-time",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-ground-time"
+    },
+    {
+      "id": "helicopter-047",
+      "fact": "On the other side, 141 of the 784 happy reviews mention a limousine, against two of the bad ones",
+      "figures": [
+        "141",
+        "784"
+      ],
+      "topics": [
+        "helicopter",
+        "getting-around"
+      ],
+      "sourceSlug": "las-vegas-helicopter-tour-ground-time",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-ground-time"
+    },
+    {
+      "id": "helicopter-048",
+      "fact": "A fuel surcharge is mentioned in 4.2% of the one- and two-star reviews and 0.8% of the good ones.",
+      "figures": [
+        "4.2%",
+        "0.8%"
+      ],
+      "topics": [
+        "helicopter",
+        "pricing"
+      ],
+      "sourceSlug": "las-vegas-helicopter-tour-ground-time",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-ground-time"
+    },
+    {
+      "id": "helicopter-049",
+      "fact": "Four point nine per cent of the four- and five-star reviews mention being frightened, against 2.0% of the one- and two-star ones.",
+      "figures": [
+        "Four point nine per cent",
+        "2.0%"
+      ],
+      "topics": [
+        "helicopter"
+      ],
+      "sourceSlug": "las-vegas-helicopter-tour-nervous-flyers",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-nervous-flyers"
+    },
+    {
+      "id": "helicopter-050",
+      "fact": "Motion sickness appears four times in 1,195.",
+      "figures": [
+        "four",
+        "1,195"
+      ],
+      "topics": [
+        "helicopter"
+      ],
+      "scale": "We read 1,195 reviews of three Las Vegas helicopter operators, collected without filtering by rating.",
+      "sourceSlug": "las-vegas-helicopter-tour-nervous-flyers",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-nervous-flyers"
+    },
+    {
+      "id": "helicopter-051",
+      "fact": "Of the 54, exactly two gave one or two stars.",
+      "figures": [
+        "54",
+        "two",
+        "one or two"
+      ],
+      "topics": [
+        "helicopter"
+      ],
+      "scale": "Fifty-four say the writer or someone with them was nervous, scared or terrified.",
+      "sourceSlug": "las-vegas-helicopter-tour-nervous-flyers",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-nervous-flyers"
+    },
+    {
+      "id": "helicopter-052",
+      "fact": "Forty-eight of the 54 mention the pilot.",
+      "figures": [
+        "Forty-eight",
+        "54"
+      ],
+      "topics": [
+        "helicopter",
+        "guides"
+      ],
+      "scale": "Fifty-four say the writer or someone with them was nervous, scared or terrified.",
+      "sourceSlug": "las-vegas-helicopter-tour-nervous-flyers",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-nervous-flyers"
+    },
+    {
+      "id": "helicopter-053",
+      "fact": "Thirteen of the 54 say the flight was smoother than they expected, which is the other half of the same thing: what frightens people in advance is an imagined ride, and the ride they describe is not it.",
+      "figures": [
+        "Thirteen",
+        "54"
+      ],
+      "topics": [
+        "helicopter"
+      ],
+      "scale": "Fifty-four say the writer or someone with them was nervous, scared or terrified.",
+      "sourceSlug": "las-vegas-helicopter-tour-nervous-flyers",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-nervous-flyers"
+    },
+    {
+      "id": "helicopter-054",
+      "fact": "Of the 1,195, 1,067 are at four or five stars, 30 at three and 98 at one or two.",
+      "figures": [
+        "1,195",
+        "1,067",
+        "30",
+        "98"
+      ],
+      "topics": [
+        "helicopter",
+        "operators"
+      ],
+      "scale": "We read 1,195 reviews of three Las Vegas helicopter operators, collected without filtering by rating.",
+      "sourceSlug": "las-vegas-helicopter-tour-nervous-flyers",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-nervous-flyers"
+    },
+    {
+      "id": "helicopter-055",
+      "fact": "The fear group is 54 reviews: 52 positive, none at three stars and two at one or two.",
+      "figures": [
+        "54",
+        "52",
+        "two"
+      ],
+      "topics": [
+        "helicopter"
+      ],
+      "sourceSlug": "las-vegas-helicopter-tour-nervous-flyers",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tour-nervous-flyers"
     },
     {
       "id": "helicopter-056",
@@ -3952,6 +3952,89 @@
       ],
       "sourceSlug": "las-vegas-helicopter-tours-which-worth-it",
       "sourceUrl": "https://lasvegastour.com/las-vegas-helicopter-tours-which-worth-it"
+    },
+    {
+      "id": "timing-008",
+      "fact": "The ranch sells a breakfast departure and a sunset one, and the reviews are not evenly split: 39.7% of the positive ones mention breakfast against 11.0% that mention the sunset.",
+      "figures": [
+        "39.7%",
+        "11.0%"
+      ],
+      "topics": [
+        "timing",
+        "adventure-activities"
+      ],
+      "sourceSlug": "las-vegas-horseback-riding-what-the-day-includes",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-horseback-riding-what-the-day-includes"
+    },
+    {
+      "id": "guides-015",
+      "fact": "Nineteen of the 290 positive reviewers — 6.6% — describe the same person doing both jobs.",
+      "figures": [
+        "Nineteen",
+        "290",
+        "6.6%"
+      ],
+      "topics": [
+        "guides",
+        "operators"
+      ],
+      "sourceSlug": "las-vegas-horseback-riding-what-the-day-includes",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-horseback-riding-what-the-day-includes"
+    },
+    {
+      "id": "guides-016",
+      "fact": "At the ranch the roles change hands: the wranglers who run the trail ride are different people, and they are mentioned in 32.8% of the positive reviews, more often than the food.",
+      "figures": [
+        "32.8%"
+      ],
+      "topics": [
+        "guides",
+        "adventure-activities"
+      ],
+      "sourceSlug": "las-vegas-horseback-riding-what-the-day-includes",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-horseback-riding-what-the-day-includes"
+    },
+    {
+      "id": "adventure-activities-011",
+      "fact": "By the reviews, no: 9.3% of positive reviewers say it was their first time on a horse and describe a briefing and a horse chosen for them.",
+      "figures": [
+        "9.3%"
+      ],
+      "topics": [
+        "adventure-activities",
+        "kids-families"
+      ],
+      "sourceSlug": "las-vegas-horseback-riding-what-the-day-includes",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-horseback-riding-what-the-day-includes"
+    },
+    {
+      "id": "logistics-008",
+      "fact": "Reviewers of Wild West Horseback Adventures describe a drive of around 45 minutes each way plus the ride and a meal at the ranch.",
+      "figures": [
+        "45 minutes"
+      ],
+      "topics": [
+        "logistics",
+        "getting-around",
+        "timing"
+      ],
+      "sourceSlug": "las-vegas-horseback-riding-what-the-day-includes",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-horseback-riding-what-the-day-includes"
+    },
+    {
+      "id": "adventure-activities-012",
+      "fact": "Ten per cent of the positive reviews mention the ranch animals — the goats, the calf, the dog — as part of what they enjoyed, and 7.9% say something about the condition of the horses, almost always that they looked well kept.",
+      "figures": [
+        "Ten per cent",
+        "7.9%"
+      ],
+      "topics": [
+        "adventure-activities",
+        "desert-parks"
+      ],
+      "sourceSlug": "las-vegas-horseback-riding-what-the-day-includes",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-horseback-riding-what-the-day-includes"
     },
     {
       "id": "nightlife-007",
@@ -4078,116 +4161,6 @@
       "sourceUrl": "https://lasvegastour.com/las-vegas-resort-fees-tipping-hidden-charges"
     },
     {
-      "id": "timing-008",
-      "fact": "The ranch sells a breakfast departure and a sunset one, and the reviews are not evenly split: 39.7% of the positive ones mention breakfast against 11.0% that mention the sunset.",
-      "figures": [
-        "39.7%",
-        "11.0%"
-      ],
-      "topics": [
-        "timing",
-        "adventure-activities"
-      ],
-      "sourceSlug": "las-vegas-horseback-riding-what-the-day-includes",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-horseback-riding-what-the-day-includes"
-    },
-    {
-      "id": "guides-015",
-      "fact": "Nineteen of the 290 positive reviewers — 6.6% — describe the same person doing both jobs.",
-      "figures": [
-        "Nineteen",
-        "290",
-        "6.6%"
-      ],
-      "topics": [
-        "guides",
-        "operators"
-      ],
-      "sourceSlug": "las-vegas-horseback-riding-what-the-day-includes",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-horseback-riding-what-the-day-includes"
-    },
-    {
-      "id": "guides-016",
-      "fact": "At the ranch the roles change hands: the wranglers who run the trail ride are different people, and they are mentioned in 32.8% of the positive reviews, more often than the food.",
-      "figures": [
-        "32.8%"
-      ],
-      "topics": [
-        "guides",
-        "adventure-activities"
-      ],
-      "sourceSlug": "las-vegas-horseback-riding-what-the-day-includes",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-horseback-riding-what-the-day-includes"
-    },
-    {
-      "id": "adventure-activities-011",
-      "fact": "By the reviews, no: 9.3% of positive reviewers say it was their first time on a horse and describe a briefing and a horse chosen for them.",
-      "figures": [
-        "9.3%"
-      ],
-      "topics": [
-        "adventure-activities",
-        "kids-families"
-      ],
-      "sourceSlug": "las-vegas-horseback-riding-what-the-day-includes",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-horseback-riding-what-the-day-includes"
-    },
-    {
-      "id": "logistics-008",
-      "fact": "Reviewers of Wild West Horseback Adventures describe a drive of around 45 minutes each way plus the ride and a meal at the ranch.",
-      "figures": [
-        "45 minutes"
-      ],
-      "topics": [
-        "logistics",
-        "getting-around",
-        "timing"
-      ],
-      "sourceSlug": "las-vegas-horseback-riding-what-the-day-includes",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-horseback-riding-what-the-day-includes"
-    },
-    {
-      "id": "adventure-activities-012",
-      "fact": "Ten per cent of the positive reviews mention the ranch animals — the goats, the calf, the dog — as part of what they enjoyed, and 7.9% say something about the condition of the horses, almost always that they looked well kept.",
-      "figures": [
-        "Ten per cent",
-        "7.9%"
-      ],
-      "topics": [
-        "adventure-activities",
-        "desert-parks"
-      ],
-      "sourceSlug": "las-vegas-horseback-riding-what-the-day-includes",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-horseback-riding-what-the-day-includes"
-    },
-    {
-      "id": "shows-035",
-      "fact": "All 21 who took kids to Mystère gave it four or five stars, including parents of four- and five-year-olds.",
-      "figures": [
-        "21"
-      ],
-      "topics": [
-        "shows",
-        "kids-families"
-      ],
-      "sourceSlug": "las-vegas-shows-with-kids",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-shows-with-kids"
-    },
-    {
-      "id": "shows-036",
-      "fact": "Blue Man Group had the most families, 31 of 38 happy, but the unhappy ones say the humor lands with young children and not with adults.",
-      "figures": [
-        "31",
-        "38"
-      ],
-      "topics": [
-        "shows",
-        "kids-families"
-      ],
-      "sourceSlug": "las-vegas-shows-with-kids",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-shows-with-kids"
-    },
-    {
       "id": "adventure-activities-013",
       "fact": "What reviewers describe is a supervised session rather than time on a lane: 22.5% write about being instructed one to one, 17.6% mention that staff are veterans, 16.3% mention the free ride from the hotel and 28.4% mention the military vehicles outside.",
       "figures": [
@@ -4220,7 +4193,7 @@
       "sourceUrl": "https://lasvegastour.com/las-vegas-shooting-range-what-reviews-describe"
     },
     {
-      "id": "shows-037",
+      "id": "shows-035",
       "fact": "Absinthe and O both average 3.98 stars, and for both, about one review in five is negative.",
       "figures": [
         "3.98"
@@ -4232,7 +4205,7 @@
       "sourceUrl": "https://lasvegastour.com/las-vegas-show-ratings-what-they-hide"
     },
     {
-      "id": "shows-038",
+      "id": "shows-036",
       "fact": "Absinthe — 3.98 average, 20.0% one- and two-star, 71.2% four- and five-star.",
       "figures": [
         "3.98",
@@ -4247,7 +4220,7 @@
       "sourceUrl": "https://lasvegastour.com/las-vegas-show-ratings-what-they-hide"
     },
     {
-      "id": "shows-039",
+      "id": "shows-037",
       "fact": "O by Cirque du Soleil — 3.98 average, 19.8% one- and two-star, 71.4% four- and five-star.",
       "figures": [
         "3.98",
@@ -4262,7 +4235,7 @@
       "sourceUrl": "https://lasvegastour.com/las-vegas-show-ratings-what-they-hide"
     },
     {
-      "id": "shows-040",
+      "id": "shows-038",
       "fact": "“Raunchy” appears in 23% of Absinthe’s bad reviews and in none of O’s.",
       "figures": [
         "23%"
@@ -4274,7 +4247,7 @@
       "sourceUrl": "https://lasvegastour.com/las-vegas-show-ratings-what-they-hide"
     },
     {
-      "id": "shows-041",
+      "id": "shows-039",
       "fact": "“Clowns” appears in 42% of O’s and in none of Absinthe’s.",
       "figures": [
         "42%"
@@ -4286,7 +4259,7 @@
       "sourceUrl": "https://lasvegastour.com/las-vegas-show-ratings-what-they-hide"
     },
     {
-      "id": "shows-042",
+      "id": "shows-040",
       "fact": "For Absinthe, the adult humor appears in 47% of its bad reviews and 46% of its good ones.",
       "figures": [
         "47%",
@@ -4299,7 +4272,7 @@
       "sourceUrl": "https://lasvegastour.com/las-vegas-show-ratings-what-they-hide"
     },
     {
-      "id": "shows-043",
+      "id": "shows-041",
       "fact": "Craft is the one thing the two camps tend not to fight about: roughly one in five of the bad reviews of each show goes out of its way to praise the performers anyway — 19% for Absinthe, 18% for O.",
       "figures": [
         "19%",
@@ -4312,7 +4285,7 @@
       "sourceUrl": "https://lasvegastour.com/las-vegas-show-ratings-what-they-hide"
     },
     {
-      "id": "shows-044",
+      "id": "shows-042",
       "fact": "At Michael Jackson ONE, 22 reviewers, nearly all fans, advise sitting further back so you do not miss what happens overhead.",
       "figures": [
         "22"
@@ -4322,6 +4295,33 @@
       ],
       "sourceSlug": "las-vegas-show-seats-where-to-sit",
       "sourceUrl": "https://lasvegastour.com/las-vegas-show-seats-where-to-sit"
+    },
+    {
+      "id": "shows-043",
+      "fact": "All 21 who took kids to Mystère gave it four or five stars, including parents of four- and five-year-olds.",
+      "figures": [
+        "21"
+      ],
+      "topics": [
+        "shows",
+        "kids-families"
+      ],
+      "sourceSlug": "las-vegas-shows-with-kids",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-shows-with-kids"
+    },
+    {
+      "id": "shows-044",
+      "fact": "Blue Man Group had the most families, 31 of 38 happy, but the unhappy ones say the humor lands with young children and not with adults.",
+      "figures": [
+        "31",
+        "38"
+      ],
+      "topics": [
+        "shows",
+        "kids-families"
+      ],
+      "sourceSlug": "las-vegas-shows-with-kids",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-shows-with-kids"
     },
     {
       "id": "helicopter-060",
@@ -4365,71 +4365,6 @@
       "scale": "This article measures 44 reviews mentioning a night or evening flight over the Strip, across three helicopter operators, drawn from a corpus of 14,656 rated Las Vegas reviews collected in 2026 without filtering by rating.",
       "sourceSlug": "las-vegas-strip-night-helicopter-flight",
       "sourceUrl": "https://lasvegastour.com/las-vegas-strip-night-helicopter-flight"
-    },
-    {
-      "id": "booking-005",
-      "fact": "Some 132 reviews describe being collected at their hotel door, but only 26 of those are coach tours.",
-      "figures": [
-        "132",
-        "26"
-      ],
-      "topics": [
-        "booking",
-        "logistics",
-        "grand-canyon"
-      ],
-      "sourceSlug": "las-vegas-tour-pickup-and-meeting-point",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-tour-pickup-and-meeting-point"
-    },
-    {
-      "id": "timing-009",
-      "fact": "One hundred and thirty-three reviews across 21 listings name a specific time between three and seven in the morning.",
-      "figures": [
-        "One hundred and thirty-three",
-        "21",
-        "three",
-        "seven"
-      ],
-      "topics": [
-        "timing",
-        "logistics",
-        "getting-around"
-      ],
-      "sourceSlug": "las-vegas-tour-pickup-and-meeting-point",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-tour-pickup-and-meeting-point"
-    },
-    {
-      "id": "timing-010",
-      "fact": "The most repeated single time is 6:00 a.m., and 4:30 a.m. appears as often as 6:05 does.",
-      "figures": [
-        "6:00 a.m.",
-        "4:30 a.m.",
-        "6:05"
-      ],
-      "topics": [
-        "timing",
-        "logistics"
-      ],
-      "sourceSlug": "las-vegas-tour-pickup-and-meeting-point",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-tour-pickup-and-meeting-point"
-    },
-    {
-      "id": "logistics-010",
-      "fact": "Forty-seven reviews across 11 listings describe waiting for a vehicle that had not arrived, and 31 of those 47 come from reviews rated one to three stars.",
-      "figures": [
-        "Forty-seven",
-        "11",
-        "31",
-        "47",
-        "one to three"
-      ],
-      "topics": [
-        "logistics",
-        "grand-canyon",
-        "getting-around"
-      ],
-      "sourceSlug": "las-vegas-tour-pickup-and-meeting-point",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-tour-pickup-and-meeting-point"
     },
     {
       "id": "guides-017",
@@ -4571,6 +4506,103 @@
       "sourceUrl": "https://lasvegastour.com/las-vegas-tour-group-size"
     },
     {
+      "id": "booking-005",
+      "fact": "Some 132 reviews describe being collected at their hotel door, but only 26 of those are coach tours.",
+      "figures": [
+        "132",
+        "26"
+      ],
+      "topics": [
+        "booking",
+        "logistics",
+        "grand-canyon"
+      ],
+      "sourceSlug": "las-vegas-tour-pickup-and-meeting-point",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-tour-pickup-and-meeting-point"
+    },
+    {
+      "id": "timing-009",
+      "fact": "One hundred and thirty-three reviews across 21 listings name a specific time between three and seven in the morning.",
+      "figures": [
+        "One hundred and thirty-three",
+        "21",
+        "three",
+        "seven"
+      ],
+      "topics": [
+        "timing",
+        "logistics",
+        "getting-around"
+      ],
+      "sourceSlug": "las-vegas-tour-pickup-and-meeting-point",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-tour-pickup-and-meeting-point"
+    },
+    {
+      "id": "timing-010",
+      "fact": "The most repeated single time is 6:00 a.m., and 4:30 a.m. appears as often as 6:05 does.",
+      "figures": [
+        "6:00 a.m.",
+        "4:30 a.m.",
+        "6:05"
+      ],
+      "topics": [
+        "timing",
+        "logistics"
+      ],
+      "sourceSlug": "las-vegas-tour-pickup-and-meeting-point",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-tour-pickup-and-meeting-point"
+    },
+    {
+      "id": "logistics-010",
+      "fact": "Forty-seven reviews across 11 listings describe waiting for a vehicle that had not arrived, and 31 of those 47 come from reviews rated one to three stars.",
+      "figures": [
+        "Forty-seven",
+        "11",
+        "31",
+        "47",
+        "one to three"
+      ],
+      "topics": [
+        "logistics",
+        "grand-canyon",
+        "getting-around"
+      ],
+      "sourceSlug": "las-vegas-tour-pickup-and-meeting-point",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-tour-pickup-and-meeting-point"
+    },
+    {
+      "id": "grand-canyon-051",
+      "fact": "Rudeness and customer service is the clearest: it appears in 13.1% of the one- and two-star reviews and 0.8% of the four- and five-star ones, a gap of 17 times, spread across 17 listings and three different products — coach tours to the canyon, shows and helicopter flights.",
+      "figures": [
+        "13.1%",
+        "0.8%",
+        "17 times",
+        "17 listings"
+      ],
+      "topics": [
+        "grand-canyon",
+        "shows",
+        "helicopter"
+      ],
+      "sourceSlug": "las-vegas-tours-customer-service-after-a-problem",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-tours-customer-service-after-a-problem"
+    },
+    {
+      "id": "grand-canyon-052",
+      "fact": "A reviewer brings a 95-year-old father on a coach tour; another takes an 83-year-old mother in a helicopter.",
+      "figures": [
+        "95",
+        "83"
+      ],
+      "topics": [
+        "grand-canyon",
+        "helicopter",
+        "logistics"
+      ],
+      "sourceSlug": "las-vegas-tours-walking-and-mobility",
+      "sourceUrl": "https://lasvegastour.com/las-vegas-tours-walking-and-mobility"
+    },
+    {
       "id": "weddings-003",
       "fact": "Of 300 reviews of The Little Vegas Chapel in Las Vegas, 73 describe a vow renewal rather than a wedding — close to one in four.",
       "figures": [
@@ -4616,38 +4648,6 @@
       "sourceUrl": "https://lasvegastour.com/las-vegas-vow-renewal-what-reviews-say"
     },
     {
-      "id": "grand-canyon-051",
-      "fact": "Rudeness and customer service is the clearest: it appears in 13.1% of the one- and two-star reviews and 0.8% of the four- and five-star ones, a gap of 17 times, spread across 17 listings and three different products — coach tours to the canyon, shows and helicopter flights.",
-      "figures": [
-        "13.1%",
-        "0.8%",
-        "17 times",
-        "17 listings"
-      ],
-      "topics": [
-        "grand-canyon",
-        "shows",
-        "helicopter"
-      ],
-      "sourceSlug": "las-vegas-tours-customer-service-after-a-problem",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-tours-customer-service-after-a-problem"
-    },
-    {
-      "id": "grand-canyon-052",
-      "fact": "A reviewer brings a 95-year-old father on a coach tour; another takes an 83-year-old mother in a helicopter.",
-      "figures": [
-        "95",
-        "83"
-      ],
-      "topics": [
-        "grand-canyon",
-        "helicopter",
-        "logistics"
-      ],
-      "sourceSlug": "las-vegas-tours-walking-and-mobility",
-      "sourceUrl": "https://lasvegastour.com/las-vegas-tours-walking-and-mobility"
-    },
-    {
       "id": "helicopter-063",
       "fact": "In our sample of 283 TripAdvisor reviews from June 2025 to September 2026, all are at four or five stars and 64.3% mention the pilot.",
       "figures": [
@@ -4681,113 +4681,83 @@
     },
     {
       "id": "shows-045",
-      "fact": "One recurring character — a grown man dressed as a baby — appears in 39.2% of the one- and two-star reviews, 39.0% of the three-star ones and 14.0% of the good ones.",
+      "fact": "35% of the bad reviews complain it is too loud, against 6% of the good; 22% say it is mostly dancing with little Cirque, against 4%.",
       "figures": [
-        "39.2%",
-        "39.0%",
-        "14.0%"
+        "35%",
+        "6%",
+        "22%",
+        "4%"
       ],
       "topics": [
         "shows"
       ],
-      "sourceSlug": "mystere-las-vegas-character-that-splits-reviews",
-      "sourceUrl": "https://lasvegastour.com/mystere-las-vegas-character-that-splits-reviews"
+      "sourceSlug": "michael-jackson-one-las-vegas-loud-dance-show",
+      "sourceUrl": "https://lasvegastour.com/michael-jackson-one-las-vegas-loud-dance-show"
     },
     {
       "id": "shows-046",
-      "fact": "Of the 51 low-rated reviews, 19 use a word of praise about the performers or the acts in the same review that awards one or two stars.",
+      "fact": "Fourteen of the 65 bad reviews say it is mostly dancing, a musical or a concert, with little of the acrobatics Cirque du Soleil is known for.",
       "figures": [
-        "51",
-        "19"
+        "65"
       ],
       "topics": [
         "shows"
       ],
-      "sourceSlug": "mystere-las-vegas-character-that-splits-reviews",
-      "sourceUrl": "https://lasvegastour.com/mystere-las-vegas-character-that-splits-reviews"
+      "sourceSlug": "michael-jackson-one-las-vegas-loud-dance-show",
+      "sourceUrl": "https://lasvegastour.com/michael-jackson-one-las-vegas-loud-dance-show"
     },
     {
       "id": "shows-047",
-      "fact": "Ten of the 51 low-rated reviews — 19.6% — describe the production or the theater as old or dated, against 6.4% of the good ones.",
+      "fact": "Twenty-three of the 65 bad reviews describe the show as too loud, and 10 of the 54 three-star ones do: 35% and 19%.",
       "figures": [
-        "51",
-        "19.6%",
-        "6.4%"
+        "65",
+        "10",
+        "54",
+        "35%",
+        "19%"
       ],
       "topics": [
         "shows"
       ],
-      "sourceSlug": "mystere-las-vegas-character-that-splits-reviews",
-      "sourceUrl": "https://lasvegastour.com/mystere-las-vegas-character-that-splits-reviews"
+      "sourceSlug": "michael-jackson-one-las-vegas-loud-dance-show",
+      "sourceUrl": "https://lasvegastour.com/michael-jackson-one-las-vegas-loud-dance-show"
     },
     {
       "id": "shows-048",
-      "fact": "Two of the 51 low-rated reviews fault the acrobatic acts; 19 of them praise the performers while giving one or two stars.",
+      "fact": "Seven of the 23 good reviews that mention the volume also mention earplugs or ear protection.",
       "figures": [
-        "51",
-        "19"
+        "23"
       ],
       "topics": [
         "shows"
       ],
-      "sourceSlug": "mystere-las-vegas-character-that-splits-reviews",
-      "sourceUrl": "https://lasvegastour.com/mystere-las-vegas-character-that-splits-reviews"
+      "sourceSlug": "michael-jackson-one-las-vegas-loud-dance-show",
+      "sourceUrl": "https://lasvegastour.com/michael-jackson-one-las-vegas-loud-dance-show"
     },
     {
       "id": "shows-049",
-      "fact": "On the numbers they are twins: 3.98 average for both, 20.0% and 19.8% at one and two stars, 71.2% and 71.4% at four and five.",
+      "fact": "Three of the 65 bad reviews say they left before the end, and two of those name the volume as the reason",
       "figures": [
-        "3.98",
-        "20.0%",
-        "19.8%",
-        "71.2%",
-        "71.4%"
+        "65"
       ],
       "topics": [
         "shows"
       ],
-      "sourceSlug": "o-cirque-du-soleil-las-vegas-nobody-warns-you",
-      "sourceUrl": "https://lasvegastour.com/o-cirque-du-soleil-las-vegas-nobody-warns-you"
+      "sourceSlug": "michael-jackson-one-las-vegas-loud-dance-show",
+      "sourceUrl": "https://lasvegastour.com/michael-jackson-one-las-vegas-loud-dance-show"
     },
     {
       "id": "shows-050",
-      "fact": "28.9% of Absinthe’s positive reviews contain a warning about who should not go, against 1.1% of O’s.",
+      "fact": "Music: 48% of bad reviews, 49% of good.",
       "figures": [
-        "28.9%",
-        "1.1%"
+        "48%",
+        "49%"
       ],
       "topics": [
         "shows"
       ],
-      "sourceSlug": "o-cirque-du-soleil-las-vegas-nobody-warns-you",
-      "sourceUrl": "https://lasvegastour.com/o-cirque-du-soleil-las-vegas-nobody-warns-you"
-    },
-    {
-      "id": "shows-051",
-      "fact": "The clowns appear in 42% of O’s one- and two-star reviews and 10% of its four- and five-star ones, and of the 37 positive reviews that mention them, three actually praise them.",
-      "figures": [
-        "42%",
-        "10%",
-        "37"
-      ],
-      "topics": [
-        "shows"
-      ],
-      "sourceSlug": "o-cirque-du-soleil-las-vegas-nobody-warns-you",
-      "sourceUrl": "https://lasvegastour.com/o-cirque-du-soleil-las-vegas-nobody-warns-you"
-    },
-    {
-      "id": "shows-052",
-      "fact": "Within O’s bad reviews, the ones naming boredom run to a median 405 characters against 558 for the rest.",
-      "figures": [
-        "405",
-        "558"
-      ],
-      "topics": [
-        "shows"
-      ],
-      "sourceSlug": "o-cirque-du-soleil-las-vegas-nobody-warns-you",
-      "sourceUrl": "https://lasvegastour.com/o-cirque-du-soleil-las-vegas-nobody-warns-you"
+      "sourceSlug": "michael-jackson-one-las-vegas-loud-dance-show",
+      "sourceUrl": "https://lasvegastour.com/michael-jackson-one-las-vegas-loud-dance-show"
     },
     {
       "id": "resort-fees-004",
@@ -4882,84 +4852,189 @@
       "sourceUrl": "https://lasvegastour.com/most-expensive-first-timer-mistakes-las-vegas"
     },
     {
-      "id": "shows-053",
-      "fact": "35% of the bad reviews complain it is too loud, against 6% of the good; 22% say it is mostly dancing with little Cirque, against 4%.",
+      "id": "shows-051",
+      "fact": "One recurring character — a grown man dressed as a baby — appears in 39.2% of the one- and two-star reviews, 39.0% of the three-star ones and 14.0% of the good ones.",
       "figures": [
-        "35%",
-        "6%",
-        "22%",
-        "4%"
+        "39.2%",
+        "39.0%",
+        "14.0%"
       ],
       "topics": [
         "shows"
       ],
-      "sourceSlug": "michael-jackson-one-las-vegas-loud-dance-show",
-      "sourceUrl": "https://lasvegastour.com/michael-jackson-one-las-vegas-loud-dance-show"
+      "sourceSlug": "mystere-las-vegas-character-that-splits-reviews",
+      "sourceUrl": "https://lasvegastour.com/mystere-las-vegas-character-that-splits-reviews"
+    },
+    {
+      "id": "shows-052",
+      "fact": "Of the 51 low-rated reviews, 19 use a word of praise about the performers or the acts in the same review that awards one or two stars.",
+      "figures": [
+        "51",
+        "19"
+      ],
+      "topics": [
+        "shows"
+      ],
+      "sourceSlug": "mystere-las-vegas-character-that-splits-reviews",
+      "sourceUrl": "https://lasvegastour.com/mystere-las-vegas-character-that-splits-reviews"
+    },
+    {
+      "id": "shows-053",
+      "fact": "Ten of the 51 low-rated reviews — 19.6% — describe the production or the theater as old or dated, against 6.4% of the good ones.",
+      "figures": [
+        "51",
+        "19.6%",
+        "6.4%"
+      ],
+      "topics": [
+        "shows"
+      ],
+      "sourceSlug": "mystere-las-vegas-character-that-splits-reviews",
+      "sourceUrl": "https://lasvegastour.com/mystere-las-vegas-character-that-splits-reviews"
     },
     {
       "id": "shows-054",
-      "fact": "Fourteen of the 65 bad reviews say it is mostly dancing, a musical or a concert, with little of the acrobatics Cirque du Soleil is known for.",
+      "fact": "Two of the 51 low-rated reviews fault the acrobatic acts; 19 of them praise the performers while giving one or two stars.",
       "figures": [
-        "65"
+        "51",
+        "19"
       ],
       "topics": [
         "shows"
       ],
-      "sourceSlug": "michael-jackson-one-las-vegas-loud-dance-show",
-      "sourceUrl": "https://lasvegastour.com/michael-jackson-one-las-vegas-loud-dance-show"
+      "sourceSlug": "mystere-las-vegas-character-that-splits-reviews",
+      "sourceUrl": "https://lasvegastour.com/mystere-las-vegas-character-that-splits-reviews"
     },
     {
       "id": "shows-055",
-      "fact": "Twenty-three of the 65 bad reviews describe the show as too loud, and 10 of the 54 three-star ones do: 35% and 19%.",
+      "fact": "On the numbers they are twins: 3.98 average for both, 20.0% and 19.8% at one and two stars, 71.2% and 71.4% at four and five.",
       "figures": [
-        "65",
-        "10",
-        "54",
-        "35%",
-        "19%"
+        "3.98",
+        "20.0%",
+        "19.8%",
+        "71.2%",
+        "71.4%"
       ],
       "topics": [
         "shows"
       ],
-      "sourceSlug": "michael-jackson-one-las-vegas-loud-dance-show",
-      "sourceUrl": "https://lasvegastour.com/michael-jackson-one-las-vegas-loud-dance-show"
+      "sourceSlug": "o-cirque-du-soleil-las-vegas-nobody-warns-you",
+      "sourceUrl": "https://lasvegastour.com/o-cirque-du-soleil-las-vegas-nobody-warns-you"
     },
     {
       "id": "shows-056",
-      "fact": "Seven of the 23 good reviews that mention the volume also mention earplugs or ear protection.",
+      "fact": "28.9% of Absinthe’s positive reviews contain a warning about who should not go, against 1.1% of O’s.",
       "figures": [
-        "23"
+        "28.9%",
+        "1.1%"
       ],
       "topics": [
         "shows"
       ],
-      "sourceSlug": "michael-jackson-one-las-vegas-loud-dance-show",
-      "sourceUrl": "https://lasvegastour.com/michael-jackson-one-las-vegas-loud-dance-show"
+      "sourceSlug": "o-cirque-du-soleil-las-vegas-nobody-warns-you",
+      "sourceUrl": "https://lasvegastour.com/o-cirque-du-soleil-las-vegas-nobody-warns-you"
     },
     {
       "id": "shows-057",
-      "fact": "Three of the 65 bad reviews say they left before the end, and two of those name the volume as the reason",
+      "fact": "The clowns appear in 42% of O’s one- and two-star reviews and 10% of its four- and five-star ones, and of the 37 positive reviews that mention them, three actually praise them.",
       "figures": [
-        "65"
+        "42%",
+        "10%",
+        "37"
       ],
       "topics": [
         "shows"
       ],
-      "sourceSlug": "michael-jackson-one-las-vegas-loud-dance-show",
-      "sourceUrl": "https://lasvegastour.com/michael-jackson-one-las-vegas-loud-dance-show"
+      "sourceSlug": "o-cirque-du-soleil-las-vegas-nobody-warns-you",
+      "sourceUrl": "https://lasvegastour.com/o-cirque-du-soleil-las-vegas-nobody-warns-you"
     },
     {
       "id": "shows-058",
-      "fact": "Music: 48% of bad reviews, 49% of good.",
+      "fact": "Within O’s bad reviews, the ones naming boredom run to a median 405 characters against 558 for the rest.",
       "figures": [
-        "48%",
-        "49%"
+        "405",
+        "558"
       ],
       "topics": [
         "shows"
       ],
-      "sourceSlug": "michael-jackson-one-las-vegas-loud-dance-show",
-      "sourceUrl": "https://lasvegastour.com/michael-jackson-one-las-vegas-loud-dance-show"
+      "sourceSlug": "o-cirque-du-soleil-las-vegas-nobody-warns-you",
+      "sourceUrl": "https://lasvegastour.com/o-cirque-du-soleil-las-vegas-nobody-warns-you"
+    },
+    {
+      "id": "helicopter-065",
+      "fact": "In the four- and five-star reviews, 68.3% mention the pilot.",
+      "figures": [
+        "68.3%"
+      ],
+      "topics": [
+        "helicopter",
+        "guides",
+        "grand-canyon"
+      ],
+      "sourceSlug": "papillon-helicopters-las-vegas-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/papillon-helicopters-las-vegas-what-reviews-say"
+    },
+    {
+      "id": "helicopter-066",
+      "fact": "In the one- and two-star reviews, cancellation appears in 35.1% against 2.0% of the good ones, and refunds in 31.2% against 0.8%.",
+      "figures": [
+        "35.1%",
+        "2.0%",
+        "31.2%",
+        "0.8%"
+      ],
+      "topics": [
+        "helicopter",
+        "cancellation",
+        "booking"
+      ],
+      "sourceSlug": "papillon-helicopters-las-vegas-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/papillon-helicopters-las-vegas-what-reviews-say"
+    },
+    {
+      "id": "helicopter-067",
+      "fact": "The sample averages 4.27 stars; the listing publishes 4.5.",
+      "figures": [
+        "4.27",
+        "4.5"
+      ],
+      "topics": [
+        "helicopter",
+        "operators"
+      ],
+      "sourceSlug": "papillon-helicopters-las-vegas-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/papillon-helicopters-las-vegas-what-reviews-say"
+    },
+    {
+      "id": "helicopter-068",
+      "fact": "The good reviews mention the landing in 26.1% and a champagne or picnic stop in 22.1%.",
+      "figures": [
+        "26.1%",
+        "22.1%"
+      ],
+      "topics": [
+        "helicopter",
+        "grand-canyon",
+        "adventure-activities"
+      ],
+      "sourceSlug": "papillon-helicopters-las-vegas-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/papillon-helicopters-las-vegas-what-reviews-say"
+    },
+    {
+      "id": "helicopter-069",
+      "fact": "Waiting appears in 36.4% of the low-rated reviews and 5.6% of the good ones.",
+      "figures": [
+        "36.4%",
+        "5.6%"
+      ],
+      "topics": [
+        "helicopter",
+        "cancellation",
+        "logistics"
+      ],
+      "sourceSlug": "papillon-helicopters-las-vegas-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/papillon-helicopters-las-vegas-what-reviews-say"
     },
     {
       "id": "desert-parks-010",
@@ -5120,79 +5195,34 @@
       "sourceUrl": "https://lasvegastour.com/red-rock-canyon-from-las-vegas"
     },
     {
-      "id": "helicopter-065",
-      "fact": "In the four- and five-star reviews, 68.3% mention the pilot.",
+      "id": "adventure-activities-015",
+      "fact": "Thirty-one of 300 reviewers of Red Rock Scooter Tours say they had never ridden a scooter, and describe being taught before the ride starts.",
       "figures": [
-        "68.3%"
+        "Thirty-one",
+        "300"
       ],
       "topics": [
-        "helicopter",
+        "adventure-activities",
         "guides",
-        "grand-canyon"
+        "desert-parks"
       ],
-      "sourceSlug": "papillon-helicopters-las-vegas-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/papillon-helicopters-las-vegas-what-reviews-say"
+      "sourceSlug": "red-rock-canyon-scooter-tour-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/red-rock-canyon-scooter-tour-what-reviews-say"
     },
     {
-      "id": "helicopter-066",
-      "fact": "In the one- and two-star reviews, cancellation appears in 35.1% against 2.0% of the good ones, and refunds in 31.2% against 0.8%.",
+      "id": "adventure-activities-016",
+      "fact": "A hundred and three of the 300 reviews — about a third — mention safety, being kept safe, or feeling comfortable.",
       "figures": [
-        "35.1%",
-        "2.0%",
-        "31.2%",
-        "0.8%"
+        "A hundred and three",
+        "300"
       ],
       "topics": [
-        "helicopter",
-        "cancellation",
-        "booking"
+        "adventure-activities",
+        "guides",
+        "desert-parks"
       ],
-      "sourceSlug": "papillon-helicopters-las-vegas-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/papillon-helicopters-las-vegas-what-reviews-say"
-    },
-    {
-      "id": "helicopter-067",
-      "fact": "The sample averages 4.27 stars; the listing publishes 4.5.",
-      "figures": [
-        "4.27",
-        "4.5"
-      ],
-      "topics": [
-        "helicopter",
-        "operators"
-      ],
-      "sourceSlug": "papillon-helicopters-las-vegas-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/papillon-helicopters-las-vegas-what-reviews-say"
-    },
-    {
-      "id": "helicopter-068",
-      "fact": "The good reviews mention the landing in 26.1% and a champagne or picnic stop in 22.1%.",
-      "figures": [
-        "26.1%",
-        "22.1%"
-      ],
-      "topics": [
-        "helicopter",
-        "grand-canyon",
-        "adventure-activities"
-      ],
-      "sourceSlug": "papillon-helicopters-las-vegas-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/papillon-helicopters-las-vegas-what-reviews-say"
-    },
-    {
-      "id": "helicopter-069",
-      "fact": "Waiting appears in 36.4% of the low-rated reviews and 5.6% of the good ones.",
-      "figures": [
-        "36.4%",
-        "5.6%"
-      ],
-      "topics": [
-        "helicopter",
-        "cancellation",
-        "logistics"
-      ],
-      "sourceSlug": "papillon-helicopters-las-vegas-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/papillon-helicopters-las-vegas-what-reviews-say"
+      "sourceSlug": "red-rock-canyon-scooter-tour-what-reviews-say",
+      "sourceUrl": "https://lasvegastour.com/red-rock-canyon-scooter-tour-what-reviews-say"
     },
     {
       "id": "shows-059",
@@ -5270,95 +5300,7 @@
       "sourceUrl": "https://lasvegastour.com/shin-lim-limitless-las-vegas-what-reviews-say"
     },
     {
-      "id": "adventure-activities-015",
-      "fact": "Thirty-one of 300 reviewers of Red Rock Scooter Tours say they had never ridden a scooter, and describe being taught before the ride starts.",
-      "figures": [
-        "Thirty-one",
-        "300"
-      ],
-      "topics": [
-        "adventure-activities",
-        "guides",
-        "desert-parks"
-      ],
-      "sourceSlug": "red-rock-canyon-scooter-tour-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/red-rock-canyon-scooter-tour-what-reviews-say"
-    },
-    {
-      "id": "adventure-activities-016",
-      "fact": "A hundred and three of the 300 reviews — about a third — mention safety, being kept safe, or feeling comfortable.",
-      "figures": [
-        "A hundred and three",
-        "300"
-      ],
-      "topics": [
-        "adventure-activities",
-        "guides",
-        "desert-parks"
-      ],
-      "sourceSlug": "red-rock-canyon-scooter-tour-what-reviews-say",
-      "sourceUrl": "https://lasvegastour.com/red-rock-canyon-scooter-tour-what-reviews-say"
-    },
-    {
       "id": "shows-064",
-      "fact": "Tournament of Kings is the medieval dinner show at Excalibur on the Las Vegas Strip: knights on horseback in a 900-seat arena in the round, with a dinner you eat with your hands.",
-      "figures": [
-        "900"
-      ],
-      "topics": [
-        "shows",
-        "strip-fremont"
-      ],
-      "sourceSlug": "tournament-of-kings-las-vegas-medieval-dinner-show",
-      "sourceUrl": "https://lasvegastour.com/tournament-of-kings-las-vegas-medieval-dinner-show"
-    },
-    {
-      "id": "shows-065",
-      "fact": "If anyone in your group has dietary needs, Excalibur says accommodations may be available on request, and that they have to be requested at least four hours before showtime through the Excalibur box office.",
-      "figures": [
-        "four hours"
-      ],
-      "topics": [
-        "shows",
-        "booking",
-        "logistics"
-      ],
-      "sourceSlug": "tournament-of-kings-las-vegas-medieval-dinner-show",
-      "sourceUrl": "https://lasvegastour.com/tournament-of-kings-las-vegas-medieval-dinner-show"
-    },
-    {
-      "id": "shows-066",
-      "fact": "Excalibur listed performances Wednesday through Monday at 6:00 pm and 8:30 pm in October 2026, with no show on Tuesdays and some additional dark dates through the year.",
-      "figures": [
-        "6:00 pm",
-        "8:30 pm",
-        "October 2026"
-      ],
-      "topics": [
-        "shows",
-        "timing",
-        "booking"
-      ],
-      "sourceSlug": "tournament-of-kings-las-vegas-medieval-dinner-show",
-      "sourceUrl": "https://lasvegastour.com/tournament-of-kings-las-vegas-medieval-dinner-show"
-    },
-    {
-      "id": "shows-067",
-      "fact": "The 6:00 pm show ends early enough for children; the 8:30 pm show leaves the start of the evening free.",
-      "figures": [
-        "6:00 pm",
-        "8:30 pm"
-      ],
-      "topics": [
-        "shows",
-        "timing",
-        "kids-families"
-      ],
-      "sourceSlug": "tournament-of-kings-las-vegas-medieval-dinner-show",
-      "sourceUrl": "https://lasvegastour.com/tournament-of-kings-las-vegas-medieval-dinner-show"
-    },
-    {
-      "id": "shows-068",
       "fact": "Avoid the back rows of the 100 level (roughly row 24+), where the overhang blocks the upper screen.",
       "figures": [
         "24+"
@@ -5385,7 +5327,7 @@
       "sourceUrl": "https://lasvegastour.com/sphere-las-vegas-seats-tickets-guide"
     },
     {
-      "id": "shows-069",
+      "id": "shows-065",
       "fact": "Arrive early — at least 30 to 45 minutes before showtime.",
       "figures": [
         "30",
@@ -5397,6 +5339,64 @@
       ],
       "sourceSlug": "sphere-las-vegas-seats-tickets-guide",
       "sourceUrl": "https://lasvegastour.com/sphere-las-vegas-seats-tickets-guide"
+    },
+    {
+      "id": "shows-066",
+      "fact": "Tournament of Kings is the medieval dinner show at Excalibur on the Las Vegas Strip: knights on horseback in a 900-seat arena in the round, with a dinner you eat with your hands.",
+      "figures": [
+        "900"
+      ],
+      "topics": [
+        "shows",
+        "strip-fremont"
+      ],
+      "sourceSlug": "tournament-of-kings-las-vegas-medieval-dinner-show",
+      "sourceUrl": "https://lasvegastour.com/tournament-of-kings-las-vegas-medieval-dinner-show"
+    },
+    {
+      "id": "shows-067",
+      "fact": "If anyone in your group has dietary needs, Excalibur says accommodations may be available on request, and that they have to be requested at least four hours before showtime through the Excalibur box office.",
+      "figures": [
+        "four hours"
+      ],
+      "topics": [
+        "shows",
+        "booking",
+        "logistics"
+      ],
+      "sourceSlug": "tournament-of-kings-las-vegas-medieval-dinner-show",
+      "sourceUrl": "https://lasvegastour.com/tournament-of-kings-las-vegas-medieval-dinner-show"
+    },
+    {
+      "id": "shows-068",
+      "fact": "Excalibur listed performances Wednesday through Monday at 6:00 pm and 8:30 pm in October 2026, with no show on Tuesdays and some additional dark dates through the year.",
+      "figures": [
+        "6:00 pm",
+        "8:30 pm",
+        "October 2026"
+      ],
+      "topics": [
+        "shows",
+        "timing",
+        "booking"
+      ],
+      "sourceSlug": "tournament-of-kings-las-vegas-medieval-dinner-show",
+      "sourceUrl": "https://lasvegastour.com/tournament-of-kings-las-vegas-medieval-dinner-show"
+    },
+    {
+      "id": "shows-069",
+      "fact": "The 6:00 pm show ends early enough for children; the 8:30 pm show leaves the start of the evening free.",
+      "figures": [
+        "6:00 pm",
+        "8:30 pm"
+      ],
+      "topics": [
+        "shows",
+        "timing",
+        "kids-families"
+      ],
+      "sourceSlug": "tournament-of-kings-las-vegas-medieval-dinner-show",
+      "sourceUrl": "https://lasvegastour.com/tournament-of-kings-las-vegas-medieval-dinner-show"
     },
     {
       "id": "desert-parks-017",

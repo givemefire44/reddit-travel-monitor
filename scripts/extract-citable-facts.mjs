@@ -5,10 +5,14 @@
 // el script verifica programaticamente frase y cifras contra el texto fuente
 // y descarta cualquier candidato no verificable.
 //
-// Uso:  node scripts/extract-citable-facts.mjs [--site colosseum|vatican] [--limit N] [--slug <slug>]
+// Uso:  node scripts/extract-citable-facts.mjs [--site colosseum|vatican] [--limit N] [--slug <slug>] [--full] [--plan]
+// Solo llama a la API para los articulos cuyo texto cambio desde la ultima
+// extraccion (cache en data/extract-cache-<sitio>.json). --full re-extrae todo;
+// --plan cuenta cuantos irian a la API sin llamarla ni escribir nada.
 // Sin --site corre colosseum (compatibilidad con el uso historico).
 // Re-ejecucion manual cuando se publiquen articulos nuevos, o via extract-facts.yml.
 
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -178,6 +182,8 @@ if (!SITE) {
 }
 const limitArg = args.includes('--limit') ? Number(args[args.indexOf('--limit') + 1]) : null;
 const slugArg = args.includes('--slug') ? args[args.indexOf('--slug') + 1] : null;
+const fullArg = args.includes('--full');   // ignora el cache y re-extrae todo
+const planArg = args.includes('--plan');   // dice que iria a la API, sin llamarla
 
 // ---------- env ----------
 loadEnv(path.join(ROOT, '.env'));
@@ -201,7 +207,7 @@ async function fetchArticles() {
     ? `_type == "page" && slug.current == "${slugArg}"`
     : `_type == "page" && !(_id in path("drafts.**")) && defined(slug.current)
        && !(slug.current in [${EXCLUDED_SLUGS.map((s) => `"${s}"`).join(', ')}])`;
-  const query = `*[${filter}]{ title, "slug": slug.current, content } | order(slug asc)`;
+  const query = `*[${filter}]{ title, "slug": slug.current, _updatedAt, content } | order(slug asc)`;
   const url = `https://${PROJECT_ID}.api.sanity.io/v${API_VERSION}/data/query/${DATASET}?query=${encodeURIComponent(query)}`;
   const res = await fetch(url);
   if (!res.ok) throw new Error(`Sanity ${res.status}: ${await res.text()}`);
@@ -402,10 +408,17 @@ Quality over quantity: 3-12 strong facts per article is typical. If an article h
 //
 // Un articulo denso tiene MAS facts citables, no menos: quedarse corto de techo
 // castiga justamente a los mejores.
+//
+// Sin thinking (24 oct 2026). Sonnet 5 piensa por defecto cuando no se le dice
+// nada, y ese pensamiento se cobra como salida en cada una de las ~400 llamadas
+// de una corrida completa. Para copiar frases textuales no aporta: cada fact
+// pasa despues por verifyFact contra el articulo, que es la garantia real.
+const uso = { llamadas: 0, entrada: 0, salida: 0 };
 async function extractFromArticle(article, text, nivel = 0) {
   const response = await client.messages.create({
     model: MODEL,
     max_tokens: 16000,
+    thinking: { type: 'disabled' },
     system: SYSTEM_PROMPT,
     output_config: { format: { type: 'json_schema', schema: OUTPUT_SCHEMA } },
     messages: [
@@ -415,6 +428,9 @@ async function extractFromArticle(article, text, nivel = 0) {
       },
     ],
   });
+  uso.llamadas += 1;
+  uso.entrada += response.usage.input_tokens;
+  uso.salida += response.usage.output_tokens;
   if (response.stop_reason === 'refusal') {
     console.warn(`  [${article.slug}] refusal - se omite`);
     return [];
@@ -435,6 +451,56 @@ async function extractFromArticle(article, text, nivel = 0) {
   return JSON.parse(textBlock.text).facts;
 }
 
+// ---------- cache por articulo ----------
+// Hasta el 24 oct 2026 cada corrida le mandaba a la API TODOS los articulos de
+// los 7 sitios, dos veces por semana, hubieran cambiado o no. Ademas el modelo
+// redactaba distinto las mismas frases: cerca del 30% de los facts del Coliseo
+// cambiaba en cada corrida sin que cambiara el articulo, y con eso se corrian
+// los IDs.
+//
+// Ahora se guarda, por articulo, la huella de su texto y los candidatos que
+// devolvio el modelo. Si la huella coincide, se reusan los candidatos sin
+// llamar a la API. La verificacion textual (verifyFact) se corre igual sobre
+// todos, en cada corrida, contra el texto vigente: el cache ahorra la
+// extraccion, nunca el control.
+//
+// La firma invalida el cache entero si cambia el modelo, el prompt o el schema,
+// porque los candidatos guardados ya no son lo que el extractor nuevo sacaria.
+const CACHE_PATH = path.join(ROOT, 'data', `extract-cache-${siteArg}.json`);
+const FIRMA = huella(MODEL + SYSTEM_PROMPT + JSON.stringify(OUTPUT_SCHEMA)).slice(0, 16);
+
+function huella(s) {
+  return crypto.createHash('sha256').update(s).digest('hex');
+}
+
+function leerCache() {
+  if (!fs.existsSync(CACHE_PATH)) return { existe: false, articulos: {} };
+  const c = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf8'));
+  if (c.firma !== FIRMA) {
+    console.log('El cache es de otro modelo, prompt o schema: se re-extrae todo.');
+    return { existe: true, articulos: {} };
+  }
+  return { existe: true, articulos: c.articulos || {} };
+}
+
+// Semilla para la primera corrida con cache: los facts que ya estan publicados
+// en el facts-file sirven de candidatos para los articulos que no se tocaron
+// desde esa extraccion (su _updatedAt es anterior al extractedAt del archivo).
+// Sin esto, estrenar el cache costaria una corrida completa de los 7 sitios.
+// Solo se usa cuando el archivo de cache no existe todavia.
+function leerSemilla(outPath) {
+  if (!fs.existsSync(outPath)) return null;
+  const previo = JSON.parse(fs.readFileSync(outPath, 'utf8'));
+  const porSlug = new Map();
+  for (const f of previo.facts || []) {
+    if (!porSlug.has(f.sourceSlug)) porSlug.set(f.sourceSlug, []);
+    porSlug.get(f.sourceSlug).push({
+      fact: f.fact, figures: f.figures, topics: f.topics, ...(f.scale ? { scale: f.scale } : {}),
+    });
+  }
+  return { extractedAt: previo.extractedAt, porSlug };
+}
+
 // ---------- main ----------
 async function main() {
   console.log('Consultando Sanity...');
@@ -442,9 +508,12 @@ async function main() {
   if (limitArg) articles = articles.slice(0, limitArg);
   console.log(`${articles.length} articulos editoriales publicados.`);
 
-  const allFacts = [];
-  const rejected = [];
-  const topicCounters = {};
+  const outPath = path.join(ROOT, 'data', SITE.outFile);
+  const cache = leerCache();
+  const semilla = !cache.existe && !fullArg ? leerSemilla(outPath) : null;
+  const nuevoCache = {};
+  const porArticulo = new Map();   // slug -> { facts, rechazados }, para ordenar al final
+  const origenes = { cache: 0, semilla: 0, api: 0, 'cache viejo': 0 };
   const CONCURRENCY = 4;
 
   for (let i = 0; i < articles.length; i += CONCURRENCY) {
@@ -456,29 +525,55 @@ async function main() {
           console.warn(`  [${article.slug}] body casi vacio (${text.length} chars) - se omite`);
           return;
         }
+        const hash = huella(text);
+        const previo = cache.articulos[article.slug];
         let candidates;
-        try {
-          candidates = await extractFromArticle(article, text);
-        } catch (err) {
-          console.error(`  [${article.slug}] error de extraccion: ${err.message}`);
+        let origen;
+        if (!fullArg && previo && previo.hash === hash) {
+          candidates = previo.candidatos;
+          origen = 'cache';
+        } else if (semilla && article._updatedAt && article._updatedAt <= semilla.extractedAt) {
+          candidates = semilla.porSlug.get(article.slug) || [];
+          origen = 'semilla';
+        } else if (planArg) {
+          origenes.api += 1;
+          console.log(`  [${article.slug}] iria a la API`);
           return;
+        } else {
+          try {
+            candidates = await extractFromArticle(article, text);
+            origen = 'api';
+          } catch (err) {
+            console.error(`  [${article.slug}] error de extraccion: ${err.message}`);
+            // Si el articulo ya tenia candidatos, se usan los viejos contra el
+            // texto nuevo: los que siguen siendo textuales pasan, el resto se
+            // cae en la verificacion. La huella vieja se conserva, asi la
+            // corrida siguiente lo vuelve a intentar.
+            if (!previo) return;
+            candidates = previo.candidatos;
+            origen = 'cache viejo';
+          }
         }
+        origenes[origen] += 1;
+        nuevoCache[article.slug] = origen === 'cache viejo' ? previo : { hash, candidatos: candidates };
+
         const sourceNorm = normalize(text);
         const seenInArticle = new Set();
-        let ok = 0;
-        for (const cand of candidates) {
+        const facts = [];
+        const rechazados = [];
+        for (const original of candidates) {
+          // Copia: verifyFact recorta conectores sobre el objeto, y lo que va
+          // al cache tiene que ser lo que devolvio el modelo.
+          const cand = { ...original, figures: [...(original.figures || [])], topics: [...(original.topics || [])] };
           const dedupKey = normalize(cand.fact);
           if (seenInArticle.has(dedupKey)) continue;
           seenInArticle.add(dedupKey);
           const verdict = verifyFact(cand, sourceNorm);
           if (!verdict.ok) {
-            rejected.push({ slug: article.slug, fact: cand.fact, reason: verdict.reason });
+            rechazados.push({ slug: article.slug, fact: cand.fact, reason: verdict.reason });
             continue;
           }
-          const topic = cand.topics[0] || 'logistics';
-          topicCounters[topic] = (topicCounters[topic] || 0) + 1;
-          allFacts.push({
-            id: `${topic}-${String(topicCounters[topic]).padStart(3, '0')}`,
+          facts.push({
             fact: cand.fact,
             figures: cand.figures,
             topics: cand.topics,
@@ -489,14 +584,48 @@ async function main() {
             sourceSlug: article.slug,
             sourceUrl: `${SITE_URL}/${article.slug}`,
           });
-          ok += 1;
         }
-        console.log(`  [${article.slug}] ${candidates.length} candidatos -> ${ok} verificados`);
+        porArticulo.set(article.slug, { facts, rechazados });
+        if (origen !== 'cache') console.log(`  [${article.slug}] ${origen}: ${candidates.length} candidatos -> ${facts.length} verificados`);
       })
     );
   }
 
-  const outPath = path.join(ROOT, 'data', SITE.outFile);
+  console.log(`\nOrigen de los candidatos: ${Object.entries(origenes).map(([k, v]) => `${k} ${v}`).join(' · ')}`);
+  if (planArg) {
+    console.log(`(--plan) ${origenes.api} articulos irian a la API. No se llamo ni se escribio nada.`);
+    return;
+  }
+  if (uso.llamadas) {
+    // Precio de lista de Sonnet 5: US$2 por millon de entrada, US$10 de salida.
+    const costo = (uso.entrada * 2 + uso.salida * 10) / 1e6;
+    console.log(`API: ${uso.llamadas} llamadas, ${uso.entrada} tokens de entrada, ${uso.salida} de salida, ~US$${costo.toFixed(2)}`);
+  } else {
+    console.log('API: ninguna llamada.');
+  }
+
+  // El cache se escribe aunque despues aborte el piso: lo que ya se pago no se
+  // vuelve a pagar. En una corrida completa quedan solo los articulos vigentes;
+  // con --slug o --limit se suma a lo que habia.
+  const articulosCache = slugArg || limitArg ? { ...cache.articulos, ...nuevoCache } : nuevoCache;
+  const cacheOrdenado = Object.fromEntries(Object.keys(articulosCache).sort().map((k) => [k, articulosCache[k]]));
+  fs.writeFileSync(CACHE_PATH, JSON.stringify({ firma: FIRMA, articulos: cacheOrdenado }, null, 2) + '\n', 'utf8');
+
+  // Los IDs se asignan en orden de slug y no en el orden en que terminaron las
+  // llamadas en paralelo, que cambiaba de corrida a corrida.
+  const allFacts = [];
+  const rejected = [];
+  const topicCounters = {};
+  for (const article of articles) {
+    const r = porArticulo.get(article.slug);
+    if (!r) continue;
+    rejected.push(...r.rechazados);
+    for (const f of r.facts) {
+      const topic = f.topics[0] || 'logistics';
+      topicCounters[topic] = (topicCounters[topic] || 0) + 1;
+      allFacts.push({ id: `${topic}-${String(topicCounters[topic]).padStart(3, '0')}`, ...f });
+    }
+  }
 
   // Modo --slug: merge sobre el JSON existente (reemplaza solo los facts de ese slug)
   let finalFacts = allFacts;
@@ -539,6 +668,13 @@ async function main() {
     }
   }
 
+  // Si los facts quedaron identicos no se reescribe el archivo: sin esto cada
+  // corrida cambiaria solo el extractedAt y el bot commitearia un diff vacio.
+  const anterior = fs.existsSync(outPath) ? JSON.parse(fs.readFileSync(outPath, 'utf8')) : null;
+  if (anterior && JSON.stringify(anterior.facts) === JSON.stringify(finalFacts)) {
+    console.log(`\n${finalFacts.length} facts, identicos a los publicados: ${path.relative(ROOT, outPath)} no se toca.`);
+    return;
+  }
   const output = {
     extractedAt: new Date().toISOString(),
     corpusSize: CORPUS_SIZE,

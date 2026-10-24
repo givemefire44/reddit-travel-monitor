@@ -1,61 +1,7 @@
 {
-  "extractedAt": "2026-10-15T17:26:11.803Z",
+  "extractedAt": "2026-10-24T23:09:46.906Z",
   "corpusSize": null,
   "facts": [
-    {
-      "id": "booking-001",
-      "fact": "Book 2-3 months ahead through the official Cenacolo system, or choose a reputable guided tour with guaranteed entry.",
-      "figures": [
-        "2-3 months"
-      ],
-      "topics": [
-        "booking",
-        "tickets",
-        "timing"
-      ],
-      "sourceSlug": "common-mistakes-to-avoid-when-booking-last-supper-tickets-and-tours",
-      "sourceUrl": "https://milanlastsupper.com/common-mistakes-to-avoid-when-booking-last-supper-tickets-and-tours"
-    },
-    {
-      "id": "timing-001",
-      "fact": "Only small groups are allowed inside every 15 minutes to protect the fragile mural, so daily capacity is far lower than the number of people who want to visit — especially during peak season and weekends.",
-      "figures": [
-        "15 minutes"
-      ],
-      "topics": [
-        "timing",
-        "group-size",
-        "last-supper"
-      ],
-      "sourceSlug": "common-mistakes-to-avoid-when-booking-last-supper-tickets-and-tours",
-      "sourceUrl": "https://milanlastsupper.com/common-mistakes-to-avoid-when-booking-last-supper-tickets-and-tours"
-    },
-    {
-      "id": "booking-002",
-      "fact": "It’s also common to rush through checkout and enter incorrect names, or to have a payment blocked by the bank, causing the 20–30 minute reservation window to expire and the selected slot to be released back into the system.",
-      "figures": [
-        "20–30"
-      ],
-      "topics": [
-        "booking",
-        "timing"
-      ],
-      "sourceSlug": "common-mistakes-to-avoid-when-booking-last-supper-tickets-and-tours",
-      "sourceUrl": "https://milanlastsupper.com/common-mistakes-to-avoid-when-booking-last-supper-tickets-and-tours"
-    },
-    {
-      "id": "booking-003",
-      "fact": "Double-check names, dates, and times before confirming, arrive 15–30 minutes early with matching ID, and if everything is sold out, pivot calmly to vetted tours or alternative highlights in Milan instead of panic-buying from unknown sites.",
-      "figures": [
-        "15–30"
-      ],
-      "topics": [
-        "booking",
-        "logistics"
-      ],
-      "sourceSlug": "common-mistakes-to-avoid-when-booking-last-supper-tickets-and-tours",
-      "sourceUrl": "https://milanlastsupper.com/common-mistakes-to-avoid-when-booking-last-supper-tickets-and-tours"
-    },
     {
       "id": "crowds-001",
       "fact": "Accessible restrooms are available, and visitor numbers are capped at small groups every 15 minutes, reducing crowding and allowing comfortable maneuvering inside the viewing space.",
@@ -71,7 +17,7 @@
       "sourceUrl": "https://milanlastsupper.com/accesible-last-supper-tour-wheelchair-access-and-low-mobility-tips"
     },
     {
-      "id": "timing-002",
+      "id": "timing-001",
       "fact": "Arrive at Santa Maria delle Grazie at least 30 minutes early so you can validate tickets, use the accessible entrance, and move through security at a relaxed pace.",
       "figures": [
         "30 minutes"
@@ -219,7 +165,7 @@
       "sourceUrl": "https://milanlastsupper.com/best-guided-tours-in-milan-last-supper-and-duomo-in-one-day"
     },
     {
-      "id": "timing-003",
+      "id": "timing-002",
       "fact": "Finally, arrive at the meeting point 10–15 minutes early.",
       "figures": [
         "10–15 minutes"
@@ -233,6 +179,60 @@
       "sourceUrl": "https://milanlastsupper.com/best-guided-tours-in-milan-last-supper-and-duomo-in-one-day"
     },
     {
+      "id": "booking-001",
+      "fact": "Book 2-3 months ahead through the official Cenacolo system, or choose a reputable guided tour with guaranteed entry.",
+      "figures": [
+        "2-3 months"
+      ],
+      "topics": [
+        "booking",
+        "tickets",
+        "timing"
+      ],
+      "sourceSlug": "common-mistakes-to-avoid-when-booking-last-supper-tickets-and-tours",
+      "sourceUrl": "https://milanlastsupper.com/common-mistakes-to-avoid-when-booking-last-supper-tickets-and-tours"
+    },
+    {
+      "id": "timing-003",
+      "fact": "Only small groups are allowed inside every 15 minutes to protect the fragile mural, so daily capacity is far lower than the number of people who want to visit — especially during peak season and weekends.",
+      "figures": [
+        "15 minutes"
+      ],
+      "topics": [
+        "timing",
+        "group-size",
+        "last-supper"
+      ],
+      "sourceSlug": "common-mistakes-to-avoid-when-booking-last-supper-tickets-and-tours",
+      "sourceUrl": "https://milanlastsupper.com/common-mistakes-to-avoid-when-booking-last-supper-tickets-and-tours"
+    },
+    {
+      "id": "booking-002",
+      "fact": "It’s also common to rush through checkout and enter incorrect names, or to have a payment blocked by the bank, causing the 20–30 minute reservation window to expire and the selected slot to be released back into the system.",
+      "figures": [
+        "20–30"
+      ],
+      "topics": [
+        "booking",
+        "timing"
+      ],
+      "sourceSlug": "common-mistakes-to-avoid-when-booking-last-supper-tickets-and-tours",
+      "sourceUrl": "https://milanlastsupper.com/common-mistakes-to-avoid-when-booking-last-supper-tickets-and-tours"
+    },
+    {
+      "id": "booking-003",
+      "fact": "Double-check names, dates, and times before confirming, arrive 15–30 minutes early with matching ID, and if everything is sold out, pivot calmly to vetted tours or alternative highlights in Milan instead of panic-buying from unknown sites.",
+      "figures": [
+        "15–30"
+      ],
+      "topics": [
+        "booking",
+        "logistics"
+      ],
+      "sourceSlug": "common-mistakes-to-avoid-when-booking-last-supper-tickets-and-tours",
+      "sourceUrl": "https://milanlastsupper.com/common-mistakes-to-avoid-when-booking-last-supper-tickets-and-tours"
+    },
+    {
       "id": "last-supper-002",
       "fact": "Estimates vary, but many scholars suggest that only a small fraction of the visible surface—often cited around 20 percent—can be confidently attributed to Leonardo’s hand.",
       "figures": [
@@ -243,6 +243,356 @@
       ],
       "sourceSlug": "how-leonardo-painted-the-last-supper-technique-secrets-and-restoration",
       "sourceUrl": "https://milanlastsupper.com/how-leonardo-painted-the-last-supper-technique-secrets-and-restoration"
+    },
+    {
+      "id": "tickets-002",
+      "fact": "In 2026 the official Last Supper tickets are sold directly by the Cenacolo Vinciano Museum through its authorized booking system, with compulsory reservations for every visitor, including children and infants.",
+      "figures": [
+        "2026"
+      ],
+      "topics": [
+        "tickets",
+        "booking"
+      ],
+      "sourceSlug": "how-to-buy-official-last-supper-tickets-step-by-step-guide",
+      "sourceUrl": "https://milanlastsupper.com/how-to-buy-official-last-supper-tickets-step-by-step-guide"
+    },
+    {
+      "id": "booking-004",
+      "fact": "Official Last Supper tickets in Milan are released in quarterly blocks, and in 2026 you can usually buy them up to about three months before your visit dates.",
+      "figures": [
+        "2026",
+        "three months"
+      ],
+      "topics": [
+        "booking",
+        "timing"
+      ],
+      "sourceSlug": "how-to-buy-official-last-supper-tickets-step-by-step-guide",
+      "sourceUrl": "https://milanlastsupper.com/how-to-buy-official-last-supper-tickets-step-by-step-guide"
+    },
+    {
+      "id": "booking-005",
+      "fact": "Bookings for each quarter open around noon Italian time on specific release days, and for the February–April 2026 period, sales opened on 17 December 2025 via the usual online and phone channels.",
+      "figures": [
+        "2026",
+        "17 December 2025"
+      ],
+      "topics": [
+        "booking",
+        "timing"
+      ],
+      "sourceSlug": "how-to-buy-official-last-supper-tickets-step-by-step-guide",
+      "sourceUrl": "https://milanlastsupper.com/how-to-buy-official-last-supper-tickets-step-by-step-guide"
+    },
+    {
+      "id": "booking-006",
+      "fact": "To book official Last Supper tickets online in 2026 you must use the Cenacolo Vinciano’s authorized system linked to the Vivaticket platform and reserve in advance, as walk‑in sales are not normally available.",
+      "figures": [
+        "2026"
+      ],
+      "topics": [
+        "booking",
+        "operators",
+        "tickets"
+      ],
+      "sourceSlug": "how-to-buy-official-last-supper-tickets-step-by-step-guide",
+      "sourceUrl": "https://milanlastsupper.com/how-to-buy-official-last-supper-tickets-step-by-step-guide"
+    },
+    {
+      "id": "timing-004",
+      "fact": "It is wise to choose a time when you can arrive at least 20–30 minutes early for check‑in, especially if you are visiting in high season or combining the Last Supper with another timed activity in Milan.",
+      "figures": [
+        "20–30 minutes"
+      ],
+      "topics": [
+        "timing",
+        "logistics"
+      ],
+      "sourceSlug": "how-to-buy-official-last-supper-tickets-step-by-step-guide",
+      "sourceUrl": "https://milanlastsupper.com/how-to-buy-official-last-supper-tickets-step-by-step-guide"
+    },
+    {
+      "id": "booking-007",
+      "fact": "If you prefer to book by phone, you can call the official Cenacolo Vinciano call center at +39 02 9280 0360 and reserve up to nine tickets in one transaction, choosing your date, time slot and ticket types with an operator.",
+      "figures": [
+        "+39 02 9280 0360",
+        "nine"
+      ],
+      "topics": [
+        "booking",
+        "logistics"
+      ],
+      "sourceSlug": "how-to-buy-official-last-supper-tickets-step-by-step-guide",
+      "sourceUrl": "https://milanlastsupper.com/how-to-buy-official-last-supper-tickets-step-by-step-guide"
+    },
+    {
+      "id": "booking-008",
+      "fact": "If official tickets are sold out for your dates, the first thing to try is the weekly “extra release”: a small batch of additional Last Supper tickets is usually loaded every Wednesday at 12:00 (Italian time) for visits in the following week on the official system.",
+      "figures": [
+        "12:00"
+      ],
+      "topics": [
+        "booking",
+        "timing"
+      ],
+      "sourceSlug": "how-to-buy-official-last-supper-tickets-step-by-step-guide",
+      "sourceUrl": "https://milanlastsupper.com/how-to-buy-official-last-supper-tickets-step-by-step-guide"
+    },
+    {
+      "id": "timing-005",
+      "fact": "You must arrive at the ticket office in Piazza Santa Maria delle Grazie around 30 minutes before your time slot with your booking voucher, ID and any documents proving reduced or free‑ticket eligibility.",
+      "figures": [
+        "30 minutes"
+      ],
+      "topics": [
+        "timing",
+        "logistics"
+      ],
+      "sourceSlug": "how-to-buy-official-last-supper-tickets-step-by-step-guide",
+      "sourceUrl": "https://milanlastsupper.com/how-to-buy-official-last-supper-tickets-step-by-step-guide"
+    },
+    {
+      "id": "timing-006",
+      "fact": "The viewing takes only 15 minutes — book your slot in advance, treat it as your fixed anchor, and plan the Duomo and city highlights around it.",
+      "figures": [
+        "15 minutes"
+      ],
+      "topics": [
+        "timing",
+        "last-supper",
+        "format-duration"
+      ],
+      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
+      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
+    },
+    {
+      "id": "logistics-002",
+      "fact": "From either Duomo or Centrale, you'll reach Santa Maria delle Grazie in under 25 minutes.",
+      "figures": [
+        "25 minutes"
+      ],
+      "topics": [
+        "logistics",
+        "timing",
+        "last-supper"
+      ],
+      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
+      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
+    },
+    {
+      "id": "timing-007",
+      "fact": "The visit to Santa Maria delle Grazie is short and tightly controlled: about 15 minutes in front of the painting, plus arrival and security checks, meaning roughly 30–45 minutes total on site.",
+      "figures": [
+        "15 minutes",
+        "30–45 minutes"
+      ],
+      "topics": [
+        "timing",
+        "last-supper",
+        "format-duration"
+      ],
+      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
+      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
+    },
+    {
+      "id": "operators-001",
+      "fact": "One-day guided tours that combine the Last Supper and the Duomo in 3–6 hours show how comfortably the two fit into a single day, and many independent travelers report doing the same with time left for the Galleria, an aperitivo, or a quick museum stop.",
+      "figures": [
+        "3–6 hours"
+      ],
+      "topics": [
+        "operators",
+        "timing",
+        "last-supper",
+        "duomo"
+      ],
+      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
+      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
+    },
+    {
+      "id": "tickets-003",
+      "fact": "Tickets are released in advance in quarterly blocks at a specific time (usually noon, Milan time), and standard tickets sell out fast.",
+      "figures": [
+        "noon"
+      ],
+      "topics": [
+        "tickets",
+        "booking",
+        "timing",
+        "last-supper"
+      ],
+      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
+      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
+    },
+    {
+      "id": "timing-008",
+      "fact": "Weekday mornings between about 8:15 and 11:00 often offer softer natural light inside the refectory and slightly fewer large tour groups, making the 15-minute viewing feel calmer.",
+      "figures": [
+        "8:15",
+        "11:00",
+        "15-minute"
+      ],
+      "topics": [
+        "timing",
+        "crowds",
+        "last-supper"
+      ],
+      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
+      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
+    },
+    {
+      "id": "timing-009",
+      "fact": "Late-afternoon slots around 16:00–18:00 can also work well, especially in shoulder season, and pair nicely with a relaxed walk back toward the Duomo.",
+      "figures": [
+        "16:00–18:00"
+      ],
+      "topics": [
+        "timing",
+        "last-supper"
+      ],
+      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
+      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
+    },
+    {
+      "id": "duomo-001",
+      "fact": "Plan 1–2 hours for the Duomo interior and rooftop, then stroll through Galleria Vittorio Emanuele II and Piazza della Scala.",
+      "figures": [
+        "1–2 hours"
+      ],
+      "topics": [
+        "duomo",
+        "timing",
+        "format-duration"
+      ],
+      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
+      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
+    },
+    {
+      "id": "logistics-003",
+      "fact": "The total distance is about 1.7–2 km, so many visitors simply walk via Via Dante in 20–30 minutes at a relaxed pace.",
+      "figures": [
+        "1.7–2 km",
+        "20–30 minutes"
+      ],
+      "topics": [
+        "logistics",
+        "timing"
+      ],
+      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
+      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
+    },
+    {
+      "id": "timing-010",
+      "fact": "For a tighter schedule, booking a mid-afternoon Last Supper entry (around 15:00–17:00) works well, allowing you to complete all Duomo visits earlier in the day and enjoy lunch near the cathedral before heading out.",
+      "figures": [
+        "15:00–17:00"
+      ],
+      "topics": [
+        "timing",
+        "booking",
+        "last-supper"
+      ],
+      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
+      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
+    },
+    {
+      "id": "logistics-004",
+      "fact": "From the station, take the M3 (yellow) line to Duomo and spend your first 2–3 hours exploring the cathedral, Galleria Vittorio Emanuele II, and the surrounding squares.",
+      "figures": [
+        "2–3 hours"
+      ],
+      "topics": [
+        "logistics",
+        "timing",
+        "duomo"
+      ],
+      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
+      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
+    },
+    {
+      "id": "logistics-005",
+      "fact": "Metro line M2 (green) from Cadorna to Centrale takes about 15 minutes, while a taxi usually takes 10–15 minutes depending on traffic and costs roughly €10–13.",
+      "figures": [
+        "15 minutes",
+        "10–15 minutes",
+        "€10–13"
+      ],
+      "topics": [
+        "logistics",
+        "pricing"
+      ],
+      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
+      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
+    },
+    {
+      "id": "timing-011",
+      "fact": "Travelers attempting ambitious same-day trips, such as Rome–Milan–Rome, should allow at least 2–3 hours between their Last Supper slot and train departure to account for luggage, station navigation, and platform changes.",
+      "figures": [
+        "2–3 hours"
+      ],
+      "topics": [
+        "timing",
+        "logistics",
+        "last-supper"
+      ],
+      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
+      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
+    },
+    {
+      "id": "logistics-006",
+      "fact": "Take M2 (green) from Centrale FS to Cadorna FN, then walk about 8–10 minutes along Corso Magenta to Santa Maria delle Grazie.",
+      "figures": [
+        "8–10 minutes"
+      ],
+      "topics": [
+        "logistics",
+        "last-supper"
+      ],
+      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
+      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
+    },
+    {
+      "id": "logistics-007",
+      "fact": "In general, if you’re unfamiliar with Milan, aim to leave Centrale 45–60 minutes before your scheduled entry to allow for station navigation, ticketing, and the final walk to the church.",
+      "figures": [
+        "45–60 minutes"
+      ],
+      "topics": [
+        "logistics",
+        "timing",
+        "last-supper"
+      ],
+      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
+      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
+    },
+    {
+      "id": "timing-012",
+      "fact": "Because missing your fixed 15-minute entry window can mean losing the visit altogether, it’s generally safer to choose metro, tram, or taxi over walking if you’re within about 45 minutes of your scheduled entry or unfamiliar with the city.",
+      "figures": [
+        "15-minute",
+        "45 minutes"
+      ],
+      "topics": [
+        "timing",
+        "logistics",
+        "last-supper"
+      ],
+      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
+      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
+    },
+    {
+      "id": "timing-013",
+      "fact": "Plan to arrive at Santa Maria delle Grazie at least 20–30 minutes before your scheduled entry.",
+      "figures": [
+        "20–30 minutes"
+      ],
+      "topics": [
+        "timing",
+        "last-supper"
+      ],
+      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
+      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
     },
     {
       "id": "last-supper-003",
@@ -302,370 +652,6 @@
       "sourceUrl": "https://milanlastsupper.com/is-the-last-supper-worth-it-honest-pros-cons-and-alternatives-in-milan"
     },
     {
-      "id": "timing-004",
-      "fact": "The viewing takes only 15 minutes — book your slot in advance, treat it as your fixed anchor, and plan the Duomo and city highlights around it.",
-      "figures": [
-        "15 minutes"
-      ],
-      "topics": [
-        "timing",
-        "last-supper",
-        "format-duration"
-      ],
-      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
-      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
-    },
-    {
-      "id": "logistics-002",
-      "fact": "From either Duomo or Centrale, you'll reach Santa Maria delle Grazie in under 25 minutes.",
-      "figures": [
-        "25 minutes"
-      ],
-      "topics": [
-        "logistics",
-        "timing",
-        "last-supper"
-      ],
-      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
-      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
-    },
-    {
-      "id": "timing-005",
-      "fact": "The visit to Santa Maria delle Grazie is short and tightly controlled: about 15 minutes in front of the painting, plus arrival and security checks, meaning roughly 30–45 minutes total on site.",
-      "figures": [
-        "15 minutes",
-        "30–45 minutes"
-      ],
-      "topics": [
-        "timing",
-        "last-supper",
-        "format-duration"
-      ],
-      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
-      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
-    },
-    {
-      "id": "operators-001",
-      "fact": "One-day guided tours that combine the Last Supper and the Duomo in 3–6 hours show how comfortably the two fit into a single day, and many independent travelers report doing the same with time left for the Galleria, an aperitivo, or a quick museum stop.",
-      "figures": [
-        "3–6 hours"
-      ],
-      "topics": [
-        "operators",
-        "timing",
-        "last-supper",
-        "duomo"
-      ],
-      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
-      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
-    },
-    {
-      "id": "tickets-002",
-      "fact": "Tickets are released in advance in quarterly blocks at a specific time (usually noon, Milan time), and standard tickets sell out fast.",
-      "figures": [
-        "noon"
-      ],
-      "topics": [
-        "tickets",
-        "booking",
-        "timing",
-        "last-supper"
-      ],
-      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
-      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
-    },
-    {
-      "id": "timing-006",
-      "fact": "Weekday mornings between about 8:15 and 11:00 often offer softer natural light inside the refectory and slightly fewer large tour groups, making the 15-minute viewing feel calmer.",
-      "figures": [
-        "8:15",
-        "11:00",
-        "15-minute"
-      ],
-      "topics": [
-        "timing",
-        "crowds",
-        "last-supper"
-      ],
-      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
-      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
-    },
-    {
-      "id": "timing-007",
-      "fact": "Late-afternoon slots around 16:00–18:00 can also work well, especially in shoulder season, and pair nicely with a relaxed walk back toward the Duomo.",
-      "figures": [
-        "16:00–18:00"
-      ],
-      "topics": [
-        "timing",
-        "last-supper"
-      ],
-      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
-      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
-    },
-    {
-      "id": "duomo-001",
-      "fact": "Plan 1–2 hours for the Duomo interior and rooftop, then stroll through Galleria Vittorio Emanuele II and Piazza della Scala.",
-      "figures": [
-        "1–2 hours"
-      ],
-      "topics": [
-        "duomo",
-        "timing",
-        "format-duration"
-      ],
-      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
-      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
-    },
-    {
-      "id": "logistics-003",
-      "fact": "The total distance is about 1.7–2 km, so many visitors simply walk via Via Dante in 20–30 minutes at a relaxed pace.",
-      "figures": [
-        "1.7–2 km",
-        "20–30 minutes"
-      ],
-      "topics": [
-        "logistics",
-        "timing"
-      ],
-      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
-      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
-    },
-    {
-      "id": "timing-008",
-      "fact": "For a tighter schedule, booking a mid-afternoon Last Supper entry (around 15:00–17:00) works well, allowing you to complete all Duomo visits earlier in the day and enjoy lunch near the cathedral before heading out.",
-      "figures": [
-        "15:00–17:00"
-      ],
-      "topics": [
-        "timing",
-        "booking",
-        "last-supper"
-      ],
-      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
-      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
-    },
-    {
-      "id": "logistics-004",
-      "fact": "From the station, take the M3 (yellow) line to Duomo and spend your first 2–3 hours exploring the cathedral, Galleria Vittorio Emanuele II, and the surrounding squares.",
-      "figures": [
-        "2–3 hours"
-      ],
-      "topics": [
-        "logistics",
-        "timing",
-        "duomo"
-      ],
-      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
-      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
-    },
-    {
-      "id": "logistics-005",
-      "fact": "Metro line M2 (green) from Cadorna to Centrale takes about 15 minutes, while a taxi usually takes 10–15 minutes depending on traffic and costs roughly €10–13.",
-      "figures": [
-        "15 minutes",
-        "10–15 minutes",
-        "€10–13"
-      ],
-      "topics": [
-        "logistics",
-        "pricing"
-      ],
-      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
-      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
-    },
-    {
-      "id": "timing-009",
-      "fact": "Travelers attempting ambitious same-day trips, such as Rome–Milan–Rome, should allow at least 2–3 hours between their Last Supper slot and train departure to account for luggage, station navigation, and platform changes.",
-      "figures": [
-        "2–3 hours"
-      ],
-      "topics": [
-        "timing",
-        "logistics",
-        "last-supper"
-      ],
-      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
-      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
-    },
-    {
-      "id": "logistics-006",
-      "fact": "Take M2 (green) from Centrale FS to Cadorna FN, then walk about 8–10 minutes along Corso Magenta to Santa Maria delle Grazie.",
-      "figures": [
-        "8–10 minutes"
-      ],
-      "topics": [
-        "logistics",
-        "last-supper"
-      ],
-      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
-      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
-    },
-    {
-      "id": "logistics-007",
-      "fact": "In general, if you’re unfamiliar with Milan, aim to leave Centrale 45–60 minutes before your scheduled entry to allow for station navigation, ticketing, and the final walk to the church.",
-      "figures": [
-        "45–60 minutes"
-      ],
-      "topics": [
-        "logistics",
-        "timing",
-        "last-supper"
-      ],
-      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
-      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
-    },
-    {
-      "id": "timing-010",
-      "fact": "Because missing your fixed 15-minute entry window can mean losing the visit altogether, it’s generally safer to choose metro, tram, or taxi over walking if you’re within about 45 minutes of your scheduled entry or unfamiliar with the city.",
-      "figures": [
-        "15-minute",
-        "45 minutes"
-      ],
-      "topics": [
-        "timing",
-        "logistics",
-        "last-supper"
-      ],
-      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
-      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
-    },
-    {
-      "id": "timing-011",
-      "fact": "Plan to arrive at Santa Maria delle Grazie at least 20–30 minutes before your scheduled entry.",
-      "figures": [
-        "20–30 minutes"
-      ],
-      "topics": [
-        "timing",
-        "last-supper"
-      ],
-      "sourceSlug": "how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station",
-      "sourceUrl": "https://milanlastsupper.com/how-to-visit-the-last-supper-in-milan-in-one-day-itineraries-from-the-duomo-and-central-station"
-    },
-    {
-      "id": "tickets-003",
-      "fact": "In 2026 the official Last Supper tickets are sold directly by the Cenacolo Vinciano Museum through its authorized booking system, with compulsory reservations for every visitor, including children and infants.",
-      "figures": [
-        "2026"
-      ],
-      "topics": [
-        "tickets",
-        "booking"
-      ],
-      "sourceSlug": "how-to-buy-official-last-supper-tickets-step-by-step-guide",
-      "sourceUrl": "https://milanlastsupper.com/how-to-buy-official-last-supper-tickets-step-by-step-guide"
-    },
-    {
-      "id": "booking-004",
-      "fact": "Official Last Supper tickets in Milan are released in quarterly blocks, and in 2026 you can usually buy them up to about three months before your visit dates.",
-      "figures": [
-        "2026",
-        "three months"
-      ],
-      "topics": [
-        "booking",
-        "timing"
-      ],
-      "sourceSlug": "how-to-buy-official-last-supper-tickets-step-by-step-guide",
-      "sourceUrl": "https://milanlastsupper.com/how-to-buy-official-last-supper-tickets-step-by-step-guide"
-    },
-    {
-      "id": "booking-005",
-      "fact": "Bookings for each quarter open around noon Italian time on specific release days, and for the February–April 2026 period, sales opened on 17 December 2025 via the usual online and phone channels.",
-      "figures": [
-        "2026",
-        "17 December 2025"
-      ],
-      "topics": [
-        "booking",
-        "timing"
-      ],
-      "sourceSlug": "how-to-buy-official-last-supper-tickets-step-by-step-guide",
-      "sourceUrl": "https://milanlastsupper.com/how-to-buy-official-last-supper-tickets-step-by-step-guide"
-    },
-    {
-      "id": "booking-006",
-      "fact": "To book official Last Supper tickets online in 2026 you must use the Cenacolo Vinciano’s authorized system linked to the Vivaticket platform and reserve in advance, as walk‑in sales are not normally available.",
-      "figures": [
-        "2026"
-      ],
-      "topics": [
-        "booking",
-        "operators",
-        "tickets"
-      ],
-      "sourceSlug": "how-to-buy-official-last-supper-tickets-step-by-step-guide",
-      "sourceUrl": "https://milanlastsupper.com/how-to-buy-official-last-supper-tickets-step-by-step-guide"
-    },
-    {
-      "id": "timing-012",
-      "fact": "It is wise to choose a time when you can arrive at least 20–30 minutes early for check‑in, especially if you are visiting in high season or combining the Last Supper with another timed activity in Milan.",
-      "figures": [
-        "20–30 minutes"
-      ],
-      "topics": [
-        "timing",
-        "logistics"
-      ],
-      "sourceSlug": "how-to-buy-official-last-supper-tickets-step-by-step-guide",
-      "sourceUrl": "https://milanlastsupper.com/how-to-buy-official-last-supper-tickets-step-by-step-guide"
-    },
-    {
-      "id": "booking-007",
-      "fact": "If you prefer to book by phone, you can call the official Cenacolo Vinciano call center at +39 02 9280 0360 and reserve up to nine tickets in one transaction, choosing your date, time slot and ticket types with an operator.",
-      "figures": [
-        "+39 02 9280 0360",
-        "nine"
-      ],
-      "topics": [
-        "booking",
-        "logistics"
-      ],
-      "sourceSlug": "how-to-buy-official-last-supper-tickets-step-by-step-guide",
-      "sourceUrl": "https://milanlastsupper.com/how-to-buy-official-last-supper-tickets-step-by-step-guide"
-    },
-    {
-      "id": "booking-008",
-      "fact": "If official tickets are sold out for your dates, the first thing to try is the weekly “extra release”: a small batch of additional Last Supper tickets is usually loaded every Wednesday at 12:00 (Italian time) for visits in the following week on the official system.",
-      "figures": [
-        "12:00"
-      ],
-      "topics": [
-        "booking",
-        "timing"
-      ],
-      "sourceSlug": "how-to-buy-official-last-supper-tickets-step-by-step-guide",
-      "sourceUrl": "https://milanlastsupper.com/how-to-buy-official-last-supper-tickets-step-by-step-guide"
-    },
-    {
-      "id": "timing-013",
-      "fact": "You must arrive at the ticket office in Piazza Santa Maria delle Grazie around 30 minutes before your time slot with your booking voucher, ID and any documents proving reduced or free‑ticket eligibility.",
-      "figures": [
-        "30 minutes"
-      ],
-      "topics": [
-        "timing",
-        "logistics"
-      ],
-      "sourceSlug": "how-to-buy-official-last-supper-tickets-step-by-step-guide",
-      "sourceUrl": "https://milanlastsupper.com/how-to-buy-official-last-supper-tickets-step-by-step-guide"
-    },
-    {
-      "id": "tickets-004",
-      "fact": "On the official Cenacolo Vinciano booking system, you’ll typically find a standard adult ticket, reduced options for specific age or professional categories, and free tickets for children and certain EU residents — all tied to a fixed 15-minute time slot inside the refectory.",
-      "figures": [
-        "15-minute"
-      ],
-      "topics": [
-        "tickets",
-        "timing",
-        "format-duration"
-      ],
-      "sourceSlug": "last-supper-milan-tickets-prices-types-and-discounts-explained",
-      "sourceUrl": "https://milanlastsupper.com/last-supper-milan-tickets-prices-types-and-discounts-explained"
-    },
-    {
       "id": "timing-014",
       "fact": "The Last Supper itself allows just 15 minutes in front of the painting, but the full experience usually takes 45–60 minutes from arrival to exit once you factor in early check-in, security, and controlled entry.",
       "figures": [
@@ -694,20 +680,6 @@
       "sourceUrl": "https://milanlastsupper.com/last-supper-and-lake-como-day-trip-is-it-possible"
     },
     {
-      "id": "last-supper-007",
-      "fact": "To protect Leonardo da Vinci’s masterpiece, access to Cenacolo Vinciano is strictly controlled, with only small groups allowed inside for about 15 minutes at a time.",
-      "figures": [
-        "15"
-      ],
-      "topics": [
-        "last-supper",
-        "timing",
-        "format-duration"
-      ],
-      "sourceSlug": "last-supper-milan-tickets-sold-out-what-to-do-next",
-      "sourceUrl": "https://milanlastsupper.com/last-supper-milan-tickets-sold-out-what-to-do-next"
-    },
-    {
       "id": "pricing-001",
       "fact": "Leonardo's Last Supper charges 10.7x its official ticket price — the highest markup of any major monument in Europe.",
       "figures": [
@@ -734,7 +706,7 @@
       "sourceUrl": "https://milanlastsupper.com/last-supper-has-the-highest-markup-in-european-tourism"
     },
     {
-      "id": "tickets-005",
+      "id": "tickets-004",
       "fact": "only 40 people enter the viewing room every 15 minutes, for a maximum of approximately 1,720 visitors per day",
       "figures": [
         "40",
@@ -1039,36 +1011,35 @@
       "sourceUrl": "https://milanlastsupper.com/last-supper-has-the-highest-markup-in-european-tourism"
     },
     {
-      "id": "timing-017",
-      "fact": "Many reviewers highlight these tours as good value: you pay more than a bare ticket, but you get guaranteed entry plus context on architecture, symbolism and Milan’s history in about 60–90 minutes of total experience.",
+      "id": "tickets-005",
+      "fact": "On the official Cenacolo Vinciano booking system, you’ll typically find a standard adult ticket, reduced options for specific age or professional categories, and free tickets for children and certain EU residents — all tied to a fixed 15-minute time slot inside the refectory.",
       "figures": [
-        "60–90"
+        "15-minute"
       ],
       "topics": [
+        "tickets",
         "timing",
-        "format-duration",
-        "pricing"
+        "format-duration"
       ],
-      "sourceSlug": "small-group-vs-private-last-supper-tours-which-is-best",
-      "sourceUrl": "https://milanlastsupper.com/small-group-vs-private-last-supper-tours-which-is-best"
+      "sourceSlug": "last-supper-milan-tickets-prices-types-and-discounts-explained",
+      "sourceUrl": "https://milanlastsupper.com/last-supper-milan-tickets-prices-types-and-discounts-explained"
     },
     {
-      "id": "timing-018",
-      "fact": "Some private products also negotiate a longer slot around the viewing (for example, up to 45 minutes total in the complex instead of the standard 15 minutes inside the refectory), though the core in‑front‑of‑the‑mural time is still tightly regulated.",
+      "id": "last-supper-007",
+      "fact": "To protect Leonardo da Vinci’s masterpiece, access to Cenacolo Vinciano is strictly controlled, with only small groups allowed inside for about 15 minutes at a time.",
       "figures": [
-        "45",
         "15"
       ],
       "topics": [
+        "last-supper",
         "timing",
-        "format-duration",
-        "last-supper"
+        "format-duration"
       ],
-      "sourceSlug": "small-group-vs-private-last-supper-tours-which-is-best",
-      "sourceUrl": "https://milanlastsupper.com/small-group-vs-private-last-supper-tours-which-is-best"
+      "sourceSlug": "last-supper-milan-tickets-sold-out-what-to-do-next",
+      "sourceUrl": "https://milanlastsupper.com/last-supper-milan-tickets-sold-out-what-to-do-next"
     },
     {
-      "id": "timing-019",
+      "id": "timing-017",
       "fact": "Start your day near Santa Maria delle Grazie with a reserved morning slot for the Last Supper, arriving 20–30 minutes early to collect tickets and pass controls without stress.",
       "figures": [
         "20–30"
@@ -1133,6 +1104,35 @@
       ],
       "sourceSlug": "leonardo-da-vinci-in-milan-complete-guide-to-all-sites",
       "sourceUrl": "https://milanlastsupper.com/leonardo-da-vinci-in-milan-complete-guide-to-all-sites"
+    },
+    {
+      "id": "timing-018",
+      "fact": "Many reviewers highlight these tours as good value: you pay more than a bare ticket, but you get guaranteed entry plus context on architecture, symbolism and Milan’s history in about 60–90 minutes of total experience.",
+      "figures": [
+        "60–90"
+      ],
+      "topics": [
+        "timing",
+        "format-duration",
+        "pricing"
+      ],
+      "sourceSlug": "small-group-vs-private-last-supper-tours-which-is-best",
+      "sourceUrl": "https://milanlastsupper.com/small-group-vs-private-last-supper-tours-which-is-best"
+    },
+    {
+      "id": "timing-019",
+      "fact": "Some private products also negotiate a longer slot around the viewing (for example, up to 45 minutes total in the complex instead of the standard 15 minutes inside the refectory), though the core in‑front‑of‑the‑mural time is still tightly regulated.",
+      "figures": [
+        "45",
+        "15"
+      ],
+      "topics": [
+        "timing",
+        "format-duration",
+        "last-supper"
+      ],
+      "sourceSlug": "small-group-vs-private-last-supper-tours-which-is-best",
+      "sourceUrl": "https://milanlastsupper.com/small-group-vs-private-last-supper-tours-which-is-best"
     }
   ]
 }

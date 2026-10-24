@@ -1,5 +1,5 @@
 {
-  "extractedAt": "2026-10-22T18:00:00.049Z",
+  "extractedAt": "2026-10-24T23:09:47.716Z",
   "corpusSize": null,
   "facts": [
     {
@@ -139,163 +139,6 @@
       ],
       "sourceSlug": "campo-de-fiori-jewish-ghetto-trastevere-food-tour",
       "sourceUrl": "https://trasteverefoodtour.com/campo-de-fiori-jewish-ghetto-trastevere-food-tour"
-    },
-    {
-      "id": "group-size-001",
-      "fact": "You can't audit a guide from a listing, but you can check the structure: group size caps (typically 7–14), whether the operator says its guides are licensed, and how candid it is about what it can't do.",
-      "figures": [
-        "7–14"
-      ],
-      "topics": [
-        "group-size",
-        "guides"
-      ],
-      "sourceSlug": "how-to-pick-trastevere-food-tour-guide",
-      "sourceUrl": "https://trasteverefoodtour.com/how-to-pick-trastevere-food-tour-guide"
-    },
-    {
-      "id": "guides-001",
-      "fact": "The current framework comes from Law 190 of December 2023, subsequently amended, with its implementing regulation published in the official gazette in June 2024 and in force from July 2024.",
-      "figures": [
-        "2023",
-        "2024",
-        "2024"
-      ],
-      "topics": [
-        "guides",
-        "logistics"
-      ],
-      "sourceSlug": "how-to-pick-trastevere-food-tour-guide",
-      "sourceUrl": "https://trasteverefoodtour.com/how-to-pick-trastevere-food-tour-guide"
-    },
-    {
-      "id": "guides-002",
-      "fact": "The enforcement is real — foreign professionals working temporarily in Italy face fines running from roughly €1,500 to €6,000 for failing to file the required prior declaration.",
-      "figures": [
-        "€1,500",
-        "€6,000"
-      ],
-      "topics": [
-        "guides",
-        "pricing"
-      ],
-      "sourceSlug": "how-to-pick-trastevere-food-tour-guide",
-      "sourceUrl": "https://trasteverefoodtour.com/how-to-pick-trastevere-food-tour-guide"
-    },
-    {
-      "id": "group-size-002",
-      "fact": "Trastevere caps run from about 7 to 14 depending on the operator, and the difference is qualitative: at seven you have a conversation, at fourteen you have an audience, and an unstated cap is itself an answer.",
-      "figures": [
-        "7",
-        "14"
-      ],
-      "topics": [
-        "group-size"
-      ],
-      "sourceSlug": "how-to-pick-trastevere-food-tour-guide",
-      "sourceUrl": "https://trasteverefoodtour.com/how-to-pick-trastevere-food-tour-guide"
-    },
-    {
-      "id": "booking-001",
-      "fact": "Viator and GetYourGuide both offer free cancellation up to 24 hours before on most tours, plus buyer protection; GetYourGuide refunds faster.",
-      "figures": [
-        "24 hours"
-      ],
-      "topics": [
-        "booking",
-        "logistics"
-      ],
-      "sourceSlug": "how-to-book-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
-    },
-    {
-      "id": "booking-002",
-      "fact": "Both platforms offer free cancellation up to 24 hours before start on most listings, both give you a fallback if the operator lets you down, and both are secure.",
-      "figures": [
-        "24 hours"
-      ],
-      "topics": [
-        "booking"
-      ],
-      "sourceSlug": "how-to-book-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
-    },
-    {
-      "id": "booking-003",
-      "fact": "What you get for it is buyer protection, a review system, self-service cancellation, and someone to escalate to at 9 p.m. when your confirmation hasn't arrived.",
-      "figures": [
-        "9 p.m."
-      ],
-      "topics": [
-        "booking",
-        "logistics"
-      ],
-      "sourceSlug": "how-to-book-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
-    },
-    {
-      "id": "pricing-004",
-      "fact": "The most obvious is price: without a platform commission in the middle, direct bookings are commonly cited as running around 10–20% cheaper for the same product, though the exact gap varies by operator and isn't guaranteed.",
-      "figures": [
-        "10–20%"
-      ],
-      "topics": [
-        "pricing",
-        "booking"
-      ],
-      "sourceSlug": "how-to-book-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
-    },
-    {
-      "id": "pricing-005",
-      "fact": "A rough rule that holds up: for a €40 walking tour, direct is fine.",
-      "figures": [
-        "€40"
-      ],
-      "topics": [
-        "pricing",
-        "booking"
-      ],
-      "sourceSlug": "how-to-book-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
-    },
-    {
-      "id": "pricing-006",
-      "fact": "For a €150 private or premium experience, the platform's protection earns its markup.",
-      "figures": [
-        "€150"
-      ],
-      "topics": [
-        "pricing",
-        "booking"
-      ],
-      "sourceSlug": "how-to-book-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
-    },
-    {
-      "id": "booking-004",
-      "fact": "Private food tours in Rome commonly require around a week's notice for a full refund rather than 24 hours — a policy that catches people who assume the standard applies everywhere.",
-      "figures": [
-        "24 hours"
-      ],
-      "topics": [
-        "booking",
-        "logistics"
-      ],
-      "sourceSlug": "how-to-book-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
-    },
-    {
-      "id": "group-size-003",
-      "fact": "Check the group size cap (12–14 is typical) if intimacy matters.",
-      "figures": [
-        "12–14"
-      ],
-      "topics": [
-        "group-size"
-      ],
-      "sourceSlug": "how-to-book-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
     },
     {
       "id": "timing-001",
@@ -450,48 +293,164 @@
       "sourceUrl": "https://trasteverefoodtour.com/da-enzo-al-29-worth-the-queue"
     },
     {
-      "id": "pricing-007",
-      "fact": "Pizza al taglio is Roman pizza by the slab, sold by weight — you point at the tray, indicate how much you want, and they cut and weigh it, which is why the price is quoted per 100 grams rather than per slice.",
+      "id": "booking-001",
+      "fact": "Viator and GetYourGuide both offer free cancellation up to 24 hours before on most tours, plus buyer protection; GetYourGuide refunds faster.",
       "figures": [
-        "100"
+        "24 hours"
       ],
       "topics": [
-        "pricing",
-        "dishes",
-        "street-food"
-      ],
-      "sourceSlug": "roman-street-food-glossary",
-      "sourceUrl": "https://trasteverefoodtour.com/roman-street-food-glossary"
-    },
-    {
-      "id": "wine-drinks-002",
-      "fact": "The house wine of Rome is Frascati, a white from the hills just southeast of the city, and the local unit is the quartino — a quarter-liter carafe, the right amount for one person with lunch, usually around €4.",
-      "figures": [
-        "€4"
-      ],
-      "topics": [
-        "wine-drinks",
-        "pricing"
-      ],
-      "sourceSlug": "roman-street-food-glossary",
-      "sourceUrl": "https://trasteverefoodtour.com/roman-street-food-glossary"
-    },
-    {
-      "id": "pricing-008",
-      "fact": "Un etto is 100 grams, the working unit at any deli or bakery counter — pizza al taglio and cured meats are sold this way, and it's why you can't buy a taste of five things without ending up with half a kilo.",
-      "figures": [
-        "100"
-      ],
-      "topics": [
-        "pricing",
-        "dishes",
+        "booking",
         "logistics"
       ],
-      "sourceSlug": "roman-street-food-glossary",
-      "sourceUrl": "https://trasteverefoodtour.com/roman-street-food-glossary"
+      "sourceSlug": "how-to-book-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
     },
     {
-      "id": "pricing-009",
+      "id": "booking-002",
+      "fact": "Both platforms offer free cancellation up to 24 hours before start on most listings, both give you a fallback if the operator lets you down, and both are secure.",
+      "figures": [
+        "24 hours"
+      ],
+      "topics": [
+        "booking"
+      ],
+      "sourceSlug": "how-to-book-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
+    },
+    {
+      "id": "booking-003",
+      "fact": "What you get for it is buyer protection, a review system, self-service cancellation, and someone to escalate to at 9 p.m. when your confirmation hasn't arrived.",
+      "figures": [
+        "9 p.m."
+      ],
+      "topics": [
+        "booking",
+        "logistics"
+      ],
+      "sourceSlug": "how-to-book-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
+    },
+    {
+      "id": "pricing-004",
+      "fact": "The most obvious is price: without a platform commission in the middle, direct bookings are commonly cited as running around 10–20% cheaper for the same product, though the exact gap varies by operator and isn't guaranteed.",
+      "figures": [
+        "10–20%"
+      ],
+      "topics": [
+        "pricing",
+        "booking"
+      ],
+      "sourceSlug": "how-to-book-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
+    },
+    {
+      "id": "pricing-005",
+      "fact": "A rough rule that holds up: for a €40 walking tour, direct is fine.",
+      "figures": [
+        "€40"
+      ],
+      "topics": [
+        "pricing",
+        "booking"
+      ],
+      "sourceSlug": "how-to-book-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
+    },
+    {
+      "id": "pricing-006",
+      "fact": "For a €150 private or premium experience, the platform's protection earns its markup.",
+      "figures": [
+        "€150"
+      ],
+      "topics": [
+        "pricing",
+        "booking"
+      ],
+      "sourceSlug": "how-to-book-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
+    },
+    {
+      "id": "booking-004",
+      "fact": "Private food tours in Rome commonly require around a week's notice for a full refund rather than 24 hours — a policy that catches people who assume the standard applies everywhere.",
+      "figures": [
+        "24 hours"
+      ],
+      "topics": [
+        "booking",
+        "logistics"
+      ],
+      "sourceSlug": "how-to-book-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
+    },
+    {
+      "id": "group-size-001",
+      "fact": "Check the group size cap (12–14 is typical) if intimacy matters.",
+      "figures": [
+        "12–14"
+      ],
+      "topics": [
+        "group-size"
+      ],
+      "sourceSlug": "how-to-book-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/how-to-book-trastevere-food-tour"
+    },
+    {
+      "id": "group-size-002",
+      "fact": "You can't audit a guide from a listing, but you can check the structure: group size caps (typically 7–14), whether the operator says its guides are licensed, and how candid it is about what it can't do.",
+      "figures": [
+        "7–14"
+      ],
+      "topics": [
+        "group-size",
+        "guides"
+      ],
+      "sourceSlug": "how-to-pick-trastevere-food-tour-guide",
+      "sourceUrl": "https://trasteverefoodtour.com/how-to-pick-trastevere-food-tour-guide"
+    },
+    {
+      "id": "guides-001",
+      "fact": "The current framework comes from Law 190 of December 2023, subsequently amended, with its implementing regulation published in the official gazette in June 2024 and in force from July 2024.",
+      "figures": [
+        "2023",
+        "2024",
+        "2024"
+      ],
+      "topics": [
+        "guides",
+        "logistics"
+      ],
+      "sourceSlug": "how-to-pick-trastevere-food-tour-guide",
+      "sourceUrl": "https://trasteverefoodtour.com/how-to-pick-trastevere-food-tour-guide"
+    },
+    {
+      "id": "guides-002",
+      "fact": "The enforcement is real — foreign professionals working temporarily in Italy face fines running from roughly €1,500 to €6,000 for failing to file the required prior declaration.",
+      "figures": [
+        "€1,500",
+        "€6,000"
+      ],
+      "topics": [
+        "guides",
+        "pricing"
+      ],
+      "sourceSlug": "how-to-pick-trastevere-food-tour-guide",
+      "sourceUrl": "https://trasteverefoodtour.com/how-to-pick-trastevere-food-tour-guide"
+    },
+    {
+      "id": "group-size-003",
+      "fact": "Trastevere caps run from about 7 to 14 depending on the operator, and the difference is qualitative: at seven you have a conversation, at fourteen you have an audience, and an unstated cap is itself an answer.",
+      "figures": [
+        "7",
+        "14"
+      ],
+      "topics": [
+        "group-size"
+      ],
+      "sourceSlug": "how-to-pick-trastevere-food-tour-guide",
+      "sourceUrl": "https://trasteverefoodtour.com/how-to-pick-trastevere-food-tour-guide"
+    },
+    {
+      "id": "pricing-007",
       "fact": "The tells that separate a real trattoria from a tourist trap are free and learnable in ten minutes: no tout outside, no laminated multilingual menu, side streets rather than main piazzas, pasta at €10–12 rather than €15–18.",
       "figures": [
         "ten minutes",
@@ -507,7 +466,7 @@
       "sourceUrl": "https://trasteverefoodtour.com/is-trastevere-food-tour-worth-it"
     },
     {
-      "id": "pricing-010",
+      "id": "pricing-008",
       "fact": "You do not need to pay €100 to find out that the man waving a laminated menu at you is not your friend.",
       "figures": [
         "€100"
@@ -520,7 +479,7 @@
       "sourceUrl": "https://trasteverefoodtour.com/is-trastevere-food-tour-worth-it"
     },
     {
-      "id": "pricing-011",
+      "id": "pricing-009",
       "fact": "At €80–120 against €20–30 to eat alone, it's a real premium — worth it on a short trip, less so on a tight budget.",
       "figures": [
         "€80–120",
@@ -534,7 +493,7 @@
       "sourceUrl": "https://trasteverefoodtour.com/is-trastevere-food-tour-worth-it"
     },
     {
-      "id": "pricing-012",
+      "id": "pricing-010",
       "fact": "Prices confirm it: authentic spots tend to charge around €10–12 for pasta and €15–20 for a secondo, while traps ask €15–18 for pasta and €25 or more for mains without anything to justify it.",
       "figures": [
         "€10–12",
@@ -564,6 +523,47 @@
       "sourceUrl": "https://trasteverefoodtour.com/is-trastevere-food-tour-worth-it"
     },
     {
+      "id": "pricing-011",
+      "fact": "Pizza al taglio is Roman pizza by the slab, sold by weight — you point at the tray, indicate how much you want, and they cut and weigh it, which is why the price is quoted per 100 grams rather than per slice.",
+      "figures": [
+        "100"
+      ],
+      "topics": [
+        "pricing",
+        "dishes",
+        "street-food"
+      ],
+      "sourceSlug": "roman-street-food-glossary",
+      "sourceUrl": "https://trasteverefoodtour.com/roman-street-food-glossary"
+    },
+    {
+      "id": "wine-drinks-002",
+      "fact": "The house wine of Rome is Frascati, a white from the hills just southeast of the city, and the local unit is the quartino — a quarter-liter carafe, the right amount for one person with lunch, usually around €4.",
+      "figures": [
+        "€4"
+      ],
+      "topics": [
+        "wine-drinks",
+        "pricing"
+      ],
+      "sourceSlug": "roman-street-food-glossary",
+      "sourceUrl": "https://trasteverefoodtour.com/roman-street-food-glossary"
+    },
+    {
+      "id": "pricing-012",
+      "fact": "Un etto is 100 grams, the working unit at any deli or bakery counter — pizza al taglio and cured meats are sold this way, and it's why you can't buy a taste of five things without ending up with half a kilo.",
+      "figures": [
+        "100"
+      ],
+      "topics": [
+        "pricing",
+        "dishes",
+        "logistics"
+      ],
+      "sourceSlug": "roman-street-food-glossary",
+      "sourceUrl": "https://trasteverefoodtour.com/roman-street-food-glossary"
+    },
+    {
       "id": "timing-005",
       "fact": "Travellers who count their steps in Rome report 20,000 to 30,000 a day, and more on big sightseeing days.",
       "figures": [
@@ -579,6 +579,79 @@
     },
     {
       "id": "pricing-013",
+      "fact": "Across 3,011 rated reviews of three Trastevere restaurants, 68 describe being charged for one of four small things.",
+      "figures": [
+        "3,011",
+        "68"
+      ],
+      "topics": [
+        "pricing",
+        "value"
+      ],
+      "sourceSlug": "trastevere-bill-extra-charges-tap-water",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-bill-extra-charges-tap-water"
+    },
+    {
+      "id": "pricing-014",
+      "fact": "Counts are 41 reviews for water, 37 for bread, 10 for olive oil and 8 for service or cover; 68 name at least one and 27 name more than one, which is why those two rows are not the sum of the others.",
+      "figures": [
+        "41",
+        "37",
+        "10",
+        "8",
+        "68",
+        "27"
+      ],
+      "topics": [
+        "pricing",
+        "value"
+      ],
+      "sourceSlug": "trastevere-bill-extra-charges-tap-water",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-bill-extra-charges-tap-water"
+    },
+    {
+      "id": "pricing-015",
+      "fact": "The sums are small — one and a half to six and a half euros a line, in reviews from 2023 to 2026.",
+      "figures": [
+        "2023",
+        "2026"
+      ],
+      "topics": [
+        "pricing"
+      ],
+      "sourceSlug": "trastevere-bill-extra-charges-tap-water",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-bill-extra-charges-tap-water"
+    },
+    {
+      "id": "pricing-016",
+      "fact": "These are amounts you would not notice on a receipt at home, and the complaint is not universal — 31 reviews out of 285 poor ones name any of these charges, so this is not what usually ruins a Trastevere meal.",
+      "figures": [
+        "31",
+        "285"
+      ],
+      "topics": [
+        "pricing",
+        "value"
+      ],
+      "sourceSlug": "trastevere-bill-extra-charges-tap-water",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-bill-extra-charges-tap-water"
+    },
+    {
+      "id": "pricing-017",
+      "fact": "What reviewers describe far more often is being charged per item instead: water as its own line, bread as its own line, olive oil as its own line, and sometimes a service figure on top, quoted anywhere from one and a half euros to four euros a head, or as five per cent, in reviews from 2025 and 2026.",
+      "figures": [
+        "2025",
+        "2026"
+      ],
+      "topics": [
+        "pricing",
+        "value"
+      ],
+      "sourceSlug": "trastevere-bill-extra-charges-tap-water",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-bill-extra-charges-tap-water"
+    },
+    {
+      "id": "pricing-018",
       "fact": "Trastevere food tours start from around €90 for the classic evening format — roughly 3–4 hours, 6–7 stops, about 10 tastings, amounting to a full dinner with wine.",
       "figures": [
         "€90",
@@ -594,7 +667,7 @@
       "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
     },
     {
-      "id": "pricing-014",
+      "id": "pricing-019",
       "fact": "Pasta-class combos run about €130–150.",
       "figures": [
         "€130–150"
@@ -607,7 +680,7 @@
       "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
     },
     {
-      "id": "pricing-015",
+      "id": "pricing-020",
       "fact": "Roman street food is inexpensive: supplì cost €1.50–3.50, a trapizzino about €5, pizza al taglio around €2.50 per 100g, a porchetta panino €5–7, pasta at a casual trattoria €7–10, and gelato about €2.50.",
       "figures": [
         "€1.50–3.50",
@@ -626,7 +699,7 @@
       "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
     },
     {
-      "id": "pricing-016",
+      "id": "pricing-021",
       "fact": "Gelato is around €2.50 a scoop, and a quartino of Frascati about €4.",
       "figures": [
         "€2.50",
@@ -641,7 +714,7 @@
       "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
     },
     {
-      "id": "pricing-017",
+      "id": "pricing-022",
       "fact": "A full DIY evening in Trastevere comes to roughly €20–30 per person, versus €90 or more for a guided tour — a three-to-fourfold difference.",
       "figures": [
         "€20–30",
@@ -669,7 +742,7 @@
       "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
     },
     {
-      "id": "pricing-018",
+      "id": "pricing-023",
       "fact": "Start with the tastings-to-price ratio: a tour delivering ten tastings and a sit-down course for €90 is better value than a shorter one at €70 that leaves you hungry.",
       "figures": [
         "€90",
@@ -694,79 +767,6 @@
       ],
       "sourceSlug": "trastevere-food-tour-cost",
       "sourceUrl": "https://trasteverefoodtour.com/trastevere-food-tour-cost"
-    },
-    {
-      "id": "pricing-019",
-      "fact": "Across 3,011 rated reviews of three Trastevere restaurants, 68 describe being charged for one of four small things.",
-      "figures": [
-        "3,011",
-        "68"
-      ],
-      "topics": [
-        "pricing",
-        "value"
-      ],
-      "sourceSlug": "trastevere-bill-extra-charges-tap-water",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-bill-extra-charges-tap-water"
-    },
-    {
-      "id": "pricing-020",
-      "fact": "Counts are 41 reviews for water, 37 for bread, 10 for olive oil and 8 for service or cover; 68 name at least one and 27 name more than one, which is why those two rows are not the sum of the others.",
-      "figures": [
-        "41",
-        "37",
-        "10",
-        "8",
-        "68",
-        "27"
-      ],
-      "topics": [
-        "pricing",
-        "value"
-      ],
-      "sourceSlug": "trastevere-bill-extra-charges-tap-water",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-bill-extra-charges-tap-water"
-    },
-    {
-      "id": "pricing-021",
-      "fact": "The sums are small — one and a half to six and a half euros a line, in reviews from 2023 to 2026.",
-      "figures": [
-        "2023",
-        "2026"
-      ],
-      "topics": [
-        "pricing"
-      ],
-      "sourceSlug": "trastevere-bill-extra-charges-tap-water",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-bill-extra-charges-tap-water"
-    },
-    {
-      "id": "pricing-022",
-      "fact": "These are amounts you would not notice on a receipt at home, and the complaint is not universal — 31 reviews out of 285 poor ones name any of these charges, so this is not what usually ruins a Trastevere meal.",
-      "figures": [
-        "31",
-        "285"
-      ],
-      "topics": [
-        "pricing",
-        "value"
-      ],
-      "sourceSlug": "trastevere-bill-extra-charges-tap-water",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-bill-extra-charges-tap-water"
-    },
-    {
-      "id": "pricing-023",
-      "fact": "What reviewers describe far more often is being charged per item instead: water as its own line, bread as its own line, olive oil as its own line, and sometimes a service figure on top, quoted anywhere from one and a half euros to four euros a head, or as five per cent, in reviews from 2025 and 2026.",
-      "figures": [
-        "2025",
-        "2026"
-      ],
-      "topics": [
-        "pricing",
-        "value"
-      ],
-      "sourceSlug": "trastevere-bill-extra-charges-tap-water",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-bill-extra-charges-tap-water"
     },
     {
       "id": "operators-001",
@@ -1042,61 +1042,6 @@
       "sourceUrl": "https://trasteverefoodtour.com/trastevere-restaurant-queue-how-long-the-wait"
     },
     {
-      "id": "pricing-024",
-      "fact": "children’s plates are not always cheap: one family paid €41 for two plates of spaghetti and meatballs.",
-      "figures": [
-        "€41"
-      ],
-      "topics": [
-        "pricing",
-        "dishes",
-        "kids-families"
-      ],
-      "sourceSlug": "trastevere-restaurants-with-kids",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-restaurants-with-kids"
-    },
-    {
-      "id": "value-010",
-      "fact": "Tonnarello carries 109,161 Google Maps reviews and Nannarella carries 4,767 — a difference of twenty-three times — and they rate within a tenth of a star of each other.",
-      "figures": [
-        "109,161",
-        "4,767"
-      ],
-      "topics": [
-        "value",
-        "neighborhoods"
-      ],
-      "sourceSlug": "trastevere-restaurant-reviews-what-they-hide",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-restaurant-reviews-what-they-hide"
-    },
-    {
-      "id": "value-011",
-      "fact": "Whatever those 109,161 reviews are measuring, it is not a quality advantage over a place with 4,767.",
-      "figures": [
-        "109,161",
-        "4,767"
-      ],
-      "topics": [
-        "value",
-        "neighborhoods"
-      ],
-      "sourceSlug": "trastevere-restaurant-reviews-what-they-hide",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-restaurant-reviews-what-they-hide"
-    },
-    {
-      "id": "value-012",
-      "fact": "Our three restaurants land within 0.21 stars of themselves across Google Maps and TripAdvisor, so a bigger gap than that is a signal worth investigating.",
-      "figures": [
-        "0.21"
-      ],
-      "topics": [
-        "value",
-        "neighborhoods"
-      ],
-      "sourceSlug": "trastevere-restaurant-reviews-what-they-hide",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-restaurant-reviews-what-they-hide"
-    },
-    {
       "id": "neighborhoods-003",
       "fact": "Five names — Da Enzo al 29, Tonnarello, Dar Poeta, Trapizzino and Nannarella — take 78 of the 143 mentions, 55% of the total, and turn up in 72% of every discussion that names any restaurant at all.",
       "figures": [
@@ -1142,6 +1087,61 @@
       ],
       "sourceSlug": "trastevere-restaurant-recommendations-same-five",
       "sourceUrl": "https://trasteverefoodtour.com/trastevere-restaurant-recommendations-same-five"
+    },
+    {
+      "id": "value-010",
+      "fact": "Tonnarello carries 109,161 Google Maps reviews and Nannarella carries 4,767 — a difference of twenty-three times — and they rate within a tenth of a star of each other.",
+      "figures": [
+        "109,161",
+        "4,767"
+      ],
+      "topics": [
+        "value",
+        "neighborhoods"
+      ],
+      "sourceSlug": "trastevere-restaurant-reviews-what-they-hide",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-restaurant-reviews-what-they-hide"
+    },
+    {
+      "id": "value-011",
+      "fact": "Whatever those 109,161 reviews are measuring, it is not a quality advantage over a place with 4,767.",
+      "figures": [
+        "109,161",
+        "4,767"
+      ],
+      "topics": [
+        "value",
+        "neighborhoods"
+      ],
+      "sourceSlug": "trastevere-restaurant-reviews-what-they-hide",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-restaurant-reviews-what-they-hide"
+    },
+    {
+      "id": "value-012",
+      "fact": "Our three restaurants land within 0.21 stars of themselves across Google Maps and TripAdvisor, so a bigger gap than that is a signal worth investigating.",
+      "figures": [
+        "0.21"
+      ],
+      "topics": [
+        "value",
+        "neighborhoods"
+      ],
+      "sourceSlug": "trastevere-restaurant-reviews-what-they-hide",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-restaurant-reviews-what-they-hide"
+    },
+    {
+      "id": "pricing-024",
+      "fact": "children’s plates are not always cheap: one family paid €41 for two plates of spaghetti and meatballs.",
+      "figures": [
+        "€41"
+      ],
+      "topics": [
+        "pricing",
+        "dishes",
+        "kids-families"
+      ],
+      "sourceSlug": "trastevere-restaurants-with-kids",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-restaurants-with-kids"
     },
     {
       "id": "operators-011",
@@ -1231,34 +1231,6 @@
       "sourceUrl": "https://trasteverefoodtour.com/trastevere-reviews-that-name-the-waiter"
     },
     {
-      "id": "logistics-004",
-      "fact": "Rude or dismissive service is named in 13% of the worst-rated reviews of Trastevere's most-queued restaurants, against 1% of the best — second only to complaints about the food itself.",
-      "figures": [
-        "13%",
-        "1%"
-      ],
-      "topics": [
-        "logistics",
-        "neighborhoods"
-      ],
-      "sourceSlug": "trastevere-table-service-rushed-or-welcomed",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-table-service-rushed-or-welcomed"
-    },
-    {
-      "id": "timing-011",
-      "fact": "Sixty-one reviews give advice about when to show up, and the striking thing is who gives it: 53 of those 61 are four- and five-star reviews.",
-      "figures": [
-        "53",
-        "61"
-      ],
-      "topics": [
-        "timing",
-        "booking"
-      ],
-      "sourceSlug": "trastevere-table-service-rushed-or-welcomed",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-table-service-rushed-or-welcomed"
-    },
-    {
       "id": "dishes-005",
       "fact": "Reviews naming cacio e pepe carry a one- or two-star rating 17.8% of the time against 10.1% for carbonara — nearly double.",
       "figures": [
@@ -1312,7 +1284,7 @@
       "sourceUrl": "https://trasteverefoodtour.com/trastevere-seasoning-complaints-salt-bland"
     },
     {
-      "id": "timing-012",
+      "id": "timing-011",
       "fact": "A rushed meal costs 1.69 stars.",
       "figures": [
         "1.69"
@@ -1388,6 +1360,34 @@
       ],
       "sourceSlug": "trastevere-seasoning-complaints-salt-bland",
       "sourceUrl": "https://trasteverefoodtour.com/trastevere-seasoning-complaints-salt-bland"
+    },
+    {
+      "id": "logistics-004",
+      "fact": "Rude or dismissive service is named in 13% of the worst-rated reviews of Trastevere's most-queued restaurants, against 1% of the best — second only to complaints about the food itself.",
+      "figures": [
+        "13%",
+        "1%"
+      ],
+      "topics": [
+        "logistics",
+        "neighborhoods"
+      ],
+      "sourceSlug": "trastevere-table-service-rushed-or-welcomed",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-table-service-rushed-or-welcomed"
+    },
+    {
+      "id": "timing-012",
+      "fact": "Sixty-one reviews give advice about when to show up, and the striking thing is who gives it: 53 of those 61 are four- and five-star reviews.",
+      "figures": [
+        "53",
+        "61"
+      ],
+      "topics": [
+        "timing",
+        "booking"
+      ],
+      "sourceSlug": "trastevere-table-service-rushed-or-welcomed",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-table-service-rushed-or-welcomed"
     },
     {
       "id": "dishes-014",
@@ -1492,173 +1492,6 @@
       "sourceUrl": "https://trasteverefoodtour.com/trastevere-tiramisu-safest-order"
     },
     {
-      "id": "dishes-021",
-      "fact": "The neighborhood is also where the trapizzino was invented in 2008, and where Mercato di Testaccio sits in a glass-and-steel box built over a first-century Roman warehouse — a modern food hall mixing grocery stalls with genuinely good street food, and one of the best lunches in the city.",
-      "figures": [
-        "2008"
-      ],
-      "topics": [
-        "dishes",
-        "markets"
-      ],
-      "sourceSlug": "trastevere-vs-rome-food-neighborhoods",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-vs-rome-food-neighborhoods"
-    },
-    {
-      "id": "markets-001",
-      "fact": "Markets open around 7 a.m., finish by about 2 p.m., and are almost all closed on Sundays.",
-      "figures": [
-        "7 a.m.",
-        "2 p.m."
-      ],
-      "topics": [
-        "markets",
-        "timing"
-      ],
-      "sourceSlug": "trastevere-vs-rome-food-neighborhoods",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-vs-rome-food-neighborhoods"
-    },
-    {
-      "id": "markets-002",
-      "fact": "Mercato Trionfale, up in Prati, is Rome's largest with over 800 stalls, and it's a market for locals buying raw ingredients — no street food, no concessions to visitors, housed in a plain concrete building.",
-      "figures": [
-        "800"
-      ],
-      "topics": [
-        "markets"
-      ],
-      "sourceSlug": "trastevere-vs-rome-food-neighborhoods",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-vs-rome-food-neighborhoods"
-    },
-    {
-      "id": "timing-013",
-      "fact": "Rome's food has two peak seasons: March to May, which is artichoke season — the moment for carciofi alla giudia and carciofi alla romana — along with fava beans and fresh pecorino; and September to November, which brings porcini, truffles from Umbria, and the new olive oil.",
-      "figures": [
-        "March to May",
-        "September to November"
-      ],
-      "topics": [
-        "timing",
-        "dishes"
-      ],
-      "sourceSlug": "trastevere-vs-rome-food-neighborhoods",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-vs-rome-food-neighborhoods"
-    },
-    {
-      "id": "timing-014",
-      "fact": "August is the slowest month in Rome, and many trattorias close for two to three weeks around ferragosto.",
-      "figures": [
-        "two to three weeks"
-      ],
-      "topics": [
-        "timing"
-      ],
-      "sourceSlug": "trastevere-vs-rome-food-neighborhoods",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-vs-rome-food-neighborhoods"
-    },
-    {
-      "id": "format-duration-003",
-      "fact": "Across six or seven stops you'll get roughly ten food tastings and five or six drinks in three to four hours.",
-      "figures": [
-        "six or seven",
-        "ten",
-        "five or six",
-        "three to four"
-      ],
-      "topics": [
-        "format-duration",
-        "dishes",
-        "wine-drinks"
-      ],
-      "sourceSlug": "trastevere-twilight-food-tour-format",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-twilight-food-tour-format"
-    },
-    {
-      "id": "timing-015",
-      "fact": "Romans don't sit down to dinner before about 8 p.m., and the ritual that precedes it, the aperitivo, is a genuine institution rather than a marketing device: a drink and something to pick at, taken standing or seated at an enoteca, in the hour when the working day dissolves into the evening.",
-      "figures": [
-        "8 p.m."
-      ],
-      "topics": [
-        "timing",
-        "wine-drinks"
-      ],
-      "sourceSlug": "trastevere-twilight-food-tour-format",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-twilight-food-tour-format"
-    },
-    {
-      "id": "timing-016",
-      "fact": "Some operators run an earlier, express departure — typically around 6:15 p.m., lasting about two and a half hours — that trims the evening to its four essentials: a spritz, supplì, a sit-down dinner, and gelato.",
-      "figures": [
-        "6:15 p.m.",
-        "two and a half hours"
-      ],
-      "topics": [
-        "timing",
-        "format-duration",
-        "dishes"
-      ],
-      "sourceSlug": "trastevere-twilight-food-tour-format",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-twilight-food-tour-format"
-    },
-    {
-      "id": "booking-005",
-      "fact": "Arrive about ten minutes early — several operators state that late arrivals aren't eligible for a refund, and a tour packed with timed reservations genuinely can't wait.",
-      "figures": [
-        "ten minutes"
-      ],
-      "topics": [
-        "booking",
-        "logistics",
-        "timing"
-      ],
-      "sourceSlug": "trastevere-twilight-food-tour-format",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-twilight-food-tour-format"
-    },
-    {
-      "id": "logistics-005",
-      "fact": "Tours include alcohol; participants must be of legal drinking age in Italy (18).",
-      "figures": [
-        "18"
-      ],
-      "topics": [
-        "logistics",
-        "wine-drinks"
-      ],
-      "sourceSlug": "trastevere-twilight-food-tour-format",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-twilight-food-tour-format"
-    },
-    {
-      "id": "pricing-025",
-      "fact": "At Trastevere's best-known trattorias, travellers report paying about fifteen euros for a Roman pasta in 2023 and 2024, and sixteen to seventeen by 2025 and 2026.",
-      "figures": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ],
-      "topics": [
-        "pricing",
-        "dishes"
-      ],
-      "sourceSlug": "trastevere-trattoria-prices-what-travellers-paid",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-trattoria-prices-what-travellers-paid"
-    },
-    {
-      "id": "pricing-026",
-      "fact": "The same dishes cost a euro or two more each year, and the artichoke rose by almost half between 2023 and 2026.",
-      "figures": [
-        "2023",
-        "2026"
-      ],
-      "topics": [
-        "pricing",
-        "dishes"
-      ],
-      "sourceSlug": "trastevere-trattoria-prices-what-travellers-paid",
-      "sourceUrl": "https://trasteverefoodtour.com/trastevere-trattoria-prices-what-travellers-paid"
-    },
-    {
       "id": "operators-016",
       "fact": "Across 5,029 reviews of three well-known Trastevere restaurants, a menu in English or with photos is mentioned six times — because those restaurants are not that kind of place.",
       "figures": [
@@ -1700,59 +1533,171 @@
       "sourceUrl": "https://trasteverefoodtour.com/trastevere-tourist-traps-detection"
     },
     {
-      "id": "pricing-027",
-      "fact": "paying €90 for a sequence you can't eat is worse — and Rome's vegetable cooking is good enough that a self-directed vegan route is a real evening, not a consolation prize.",
+      "id": "pricing-025",
+      "fact": "At Trastevere's best-known trattorias, travellers report paying about fifteen euros for a Roman pasta in 2023 and 2024, and sixteen to seventeen by 2025 and 2026.",
       "figures": [
-        "€90"
+        "2023",
+        "2024",
+        "2025",
+        "2026"
       ],
       "topics": [
         "pricing",
-        "dietary"
+        "dishes"
       ],
-      "sourceSlug": "vegetarian-vegan-gluten-free-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/vegetarian-vegan-gluten-free-trastevere-food-tour"
+      "sourceSlug": "trastevere-trattoria-prices-what-travellers-paid",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-trattoria-prices-what-travellers-paid"
     },
     {
-      "id": "pricing-028",
-      "fact": "Build your own route through AIC-certified restaurants, where the protections are real and enforced, and spend the €90 on a very good gluten-free dinner instead.",
+      "id": "pricing-026",
+      "fact": "The same dishes cost a euro or two more each year, and the artichoke rose by almost half between 2023 and 2026.",
       "figures": [
-        "€90"
+        "2023",
+        "2026"
       ],
       "topics": [
         "pricing",
-        "dietary",
-        "logistics"
+        "dishes"
       ],
-      "sourceSlug": "vegetarian-vegan-gluten-free-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/vegetarian-vegan-gluten-free-trastevere-food-tour"
+      "sourceSlug": "trastevere-trattoria-prices-what-travellers-paid",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-trattoria-prices-what-travellers-paid"
     },
     {
-      "id": "pricing-029",
-      "fact": "it's also the difference between a booking that works and a €90 evening of politely declining plates — and in Rome, the payoff for that small effort is unusually large.",
+      "id": "format-duration-003",
+      "fact": "Across six or seven stops you'll get roughly ten food tastings and five or six drinks in three to four hours.",
       "figures": [
-        "€90"
+        "six or seven",
+        "ten",
+        "five or six",
+        "three to four"
       ],
       "topics": [
-        "pricing",
+        "format-duration",
+        "dishes",
+        "wine-drinks"
+      ],
+      "sourceSlug": "trastevere-twilight-food-tour-format",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-twilight-food-tour-format"
+    },
+    {
+      "id": "timing-013",
+      "fact": "Romans don't sit down to dinner before about 8 p.m., and the ritual that precedes it, the aperitivo, is a genuine institution rather than a marketing device: a drink and something to pick at, taken standing or seated at an enoteca, in the hour when the working day dissolves into the evening.",
+      "figures": [
+        "8 p.m."
+      ],
+      "topics": [
+        "timing",
+        "wine-drinks"
+      ],
+      "sourceSlug": "trastevere-twilight-food-tour-format",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-twilight-food-tour-format"
+    },
+    {
+      "id": "timing-014",
+      "fact": "Some operators run an earlier, express departure — typically around 6:15 p.m., lasting about two and a half hours — that trims the evening to its four essentials: a spritz, supplì, a sit-down dinner, and gelato.",
+      "figures": [
+        "6:15 p.m.",
+        "two and a half hours"
+      ],
+      "topics": [
+        "timing",
+        "format-duration",
+        "dishes"
+      ],
+      "sourceSlug": "trastevere-twilight-food-tour-format",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-twilight-food-tour-format"
+    },
+    {
+      "id": "booking-005",
+      "fact": "Arrive about ten minutes early — several operators state that late arrivals aren't eligible for a refund, and a tour packed with timed reservations genuinely can't wait.",
+      "figures": [
+        "ten minutes"
+      ],
+      "topics": [
         "booking",
-        "dietary"
+        "logistics",
+        "timing"
       ],
-      "sourceSlug": "vegetarian-vegan-gluten-free-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/vegetarian-vegan-gluten-free-trastevere-food-tour"
+      "sourceSlug": "trastevere-twilight-food-tour-format",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-twilight-food-tour-format"
     },
     {
-      "id": "dishes-022",
-      "fact": "Vegan options have expanded substantially in the city, vegan gelato is widely available, and traditional Roman vegetable cooking is genuinely vegan: carciofi alla romana (artichokes with mint and garlic, in season roughly February to May), cicoria ripassata (chicory sautéed with oil, garlic and chili), pizza rossa or marinara (no cheese), bruschetta, and the whole contorni section.",
+      "id": "logistics-005",
+      "fact": "Tours include alcohol; participants must be of legal drinking age in Italy (18).",
       "figures": [
-        "February to May"
+        "18"
+      ],
+      "topics": [
+        "logistics",
+        "wine-drinks"
+      ],
+      "sourceSlug": "trastevere-twilight-food-tour-format",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-twilight-food-tour-format"
+    },
+    {
+      "id": "dishes-021",
+      "fact": "The neighborhood is also where the trapizzino was invented in 2008, and where Mercato di Testaccio sits in a glass-and-steel box built over a first-century Roman warehouse — a modern food hall mixing grocery stalls with genuinely good street food, and one of the best lunches in the city.",
+      "figures": [
+        "2008"
       ],
       "topics": [
         "dishes",
-        "timing",
-        "dietary"
+        "markets"
       ],
-      "sourceSlug": "vegetarian-vegan-gluten-free-trastevere-food-tour",
-      "sourceUrl": "https://trasteverefoodtour.com/vegetarian-vegan-gluten-free-trastevere-food-tour"
+      "sourceSlug": "trastevere-vs-rome-food-neighborhoods",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-vs-rome-food-neighborhoods"
+    },
+    {
+      "id": "markets-001",
+      "fact": "Markets open around 7 a.m., finish by about 2 p.m., and are almost all closed on Sundays.",
+      "figures": [
+        "7 a.m.",
+        "2 p.m."
+      ],
+      "topics": [
+        "markets",
+        "timing"
+      ],
+      "sourceSlug": "trastevere-vs-rome-food-neighborhoods",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-vs-rome-food-neighborhoods"
+    },
+    {
+      "id": "markets-002",
+      "fact": "Mercato Trionfale, up in Prati, is Rome's largest with over 800 stalls, and it's a market for locals buying raw ingredients — no street food, no concessions to visitors, housed in a plain concrete building.",
+      "figures": [
+        "800"
+      ],
+      "topics": [
+        "markets"
+      ],
+      "sourceSlug": "trastevere-vs-rome-food-neighborhoods",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-vs-rome-food-neighborhoods"
+    },
+    {
+      "id": "timing-015",
+      "fact": "Rome's food has two peak seasons: March to May, which is artichoke season — the moment for carciofi alla giudia and carciofi alla romana — along with fava beans and fresh pecorino; and September to November, which brings porcini, truffles from Umbria, and the new olive oil.",
+      "figures": [
+        "March to May",
+        "September to November"
+      ],
+      "topics": [
+        "timing",
+        "dishes"
+      ],
+      "sourceSlug": "trastevere-vs-rome-food-neighborhoods",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-vs-rome-food-neighborhoods"
+    },
+    {
+      "id": "timing-016",
+      "fact": "August is the slowest month in Rome, and many trattorias close for two to three weeks around ferragosto.",
+      "figures": [
+        "two to three weeks"
+      ],
+      "topics": [
+        "timing"
+      ],
+      "sourceSlug": "trastevere-vs-rome-food-neighborhoods",
+      "sourceUrl": "https://trasteverefoodtour.com/trastevere-vs-rome-food-neighborhoods"
     },
     {
       "id": "wine-drinks-004",
@@ -1847,6 +1792,61 @@
       ],
       "sourceSlug": "trastevere-wine-aperitivo-what-to-drink",
       "sourceUrl": "https://trasteverefoodtour.com/trastevere-wine-aperitivo-what-to-drink"
+    },
+    {
+      "id": "pricing-027",
+      "fact": "paying €90 for a sequence you can't eat is worse — and Rome's vegetable cooking is good enough that a self-directed vegan route is a real evening, not a consolation prize.",
+      "figures": [
+        "€90"
+      ],
+      "topics": [
+        "pricing",
+        "dietary"
+      ],
+      "sourceSlug": "vegetarian-vegan-gluten-free-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/vegetarian-vegan-gluten-free-trastevere-food-tour"
+    },
+    {
+      "id": "pricing-028",
+      "fact": "Build your own route through AIC-certified restaurants, where the protections are real and enforced, and spend the €90 on a very good gluten-free dinner instead.",
+      "figures": [
+        "€90"
+      ],
+      "topics": [
+        "pricing",
+        "dietary",
+        "logistics"
+      ],
+      "sourceSlug": "vegetarian-vegan-gluten-free-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/vegetarian-vegan-gluten-free-trastevere-food-tour"
+    },
+    {
+      "id": "pricing-029",
+      "fact": "it's also the difference between a booking that works and a €90 evening of politely declining plates — and in Rome, the payoff for that small effort is unusually large.",
+      "figures": [
+        "€90"
+      ],
+      "topics": [
+        "pricing",
+        "booking",
+        "dietary"
+      ],
+      "sourceSlug": "vegetarian-vegan-gluten-free-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/vegetarian-vegan-gluten-free-trastevere-food-tour"
+    },
+    {
+      "id": "dishes-022",
+      "fact": "Vegan options have expanded substantially in the city, vegan gelato is widely available, and traditional Roman vegetable cooking is genuinely vegan: carciofi alla romana (artichokes with mint and garlic, in season roughly February to May), cicoria ripassata (chicory sautéed with oil, garlic and chili), pizza rossa or marinara (no cheese), bruschetta, and the whole contorni section.",
+      "figures": [
+        "February to May"
+      ],
+      "topics": [
+        "dishes",
+        "timing",
+        "dietary"
+      ],
+      "sourceSlug": "vegetarian-vegan-gluten-free-trastevere-food-tour",
+      "sourceUrl": "https://trasteverefoodtour.com/vegetarian-vegan-gluten-free-trastevere-food-tour"
     },
     {
       "id": "kids-families-002",

@@ -1,0 +1,4905 @@
+{
+  "firma": "35e65a4695454cae",
+  "articulos": {
+    "absinthe-las-vegas-five-star-reviews-warn": {
+      "hash": "f1efa6123b2c035b220a28f6de40bd770a794fd5ec3acd7a39b1fa5b2b23dc27",
+      "candidatos": [
+        {
+          "fact": "28.9% of the four- and five-star reviews carry an explicit warning, against 12% of the one- and two-star ones.",
+          "figures": [
+            "28.9%",
+            "12%"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "The largest single pattern — some version of “if you are easily offended, this is not for you” — appears in 16.6% of the good reviews and 2% of the bad ones.",
+          "figures": [
+            "16.6%",
+            "2%"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "“I’m not a prude” appears in four of the 100 bad reviews and in none of the 356 good ones.",
+          "figures": [
+            "four",
+            "100",
+            "356"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Twelve percent of the bad reviews say they walked out, against 1.1% of the good ones.",
+          "figures": [
+            "Twelve percent",
+            "1.1%"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "The audience being teased is named in 14% of the good reviews and 5% of the bad ones — the fans bring it up nearly three times as often, because for them it is the point.",
+          "figures": [
+            "14%",
+            "5%"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Eight of the 356 positive reviews give explicit seating advice; none of the 100 negative ones do",
+          "figures": [
+            "Eight",
+            "356",
+            "100"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "The seating is genuinely uncomfortable — it comes up in 45% of the bad reviews and 37% of the good ones — and the fans treat it as a solved problem rather than a reason not to go.",
+          "figures": [
+            "45%",
+            "37%"
+          ],
+          "topics": [
+            "shows"
+          ]
+        }
+      ]
+    },
+    "antelope-canyon-tour-from-las-vegas-what-reviews-say": {
+      "hash": "b24a9ed22f6ebb0180145684e8d3a60d643836806b025da0fca3f87410915382",
+      "candidatos": [
+        {
+          "fact": "Of the 154 reviews, half name Horseshoe Bend, and some also mention a stop at Lake Powell.",
+          "figures": [
+            "154"
+          ],
+          "topics": [
+            "desert-parks",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Of the 154, 80.5% mention the guide or the driver, often by name, for keeping time, explaining the route and helping with photos.",
+          "figures": [
+            "154",
+            "80.5%"
+          ],
+          "topics": [
+            "guides",
+            "operators"
+          ],
+          "scale": "This article reads 154 reviews that mention Antelope Canyon: 89 from TripAdvisor, collected without filtering by rating, and 65 from Google Maps, of Las Vegas tour listings, mostly National Park Express (90) and MaxTour (50)."
+        },
+        {
+          "fact": "A guide that reviewers call Mama, on one operator's tours, is named in 60 of the 154 reviews.",
+          "figures": [
+            "60",
+            "154"
+          ],
+          "topics": [
+            "guides",
+            "operators"
+          ]
+        },
+        {
+          "fact": "Without those 60, the share that mentions a guide or driver stays at 79.8%, so the praise is not a single guide's; the photos, as the next section shows, partly are.",
+          "figures": [
+            "60",
+            "79.8%"
+          ],
+          "topics": [
+            "guides",
+            "operators"
+          ],
+          "scale": "One guide is named in 60 of the 154 reviews, and the figures that change without them are given both ways."
+        },
+        {
+          "fact": "The Navajo Nation's page warns that closures are possible due to inclement weather, and it lists an entry fee of $15 per person, per location, per day, with guided tours at an additional cost.",
+          "figures": [
+            "$15"
+          ],
+          "topics": [
+            "pricing",
+            "tickets"
+          ]
+        },
+        {
+          "fact": "Of the 154 reviews, 42.9% mention photos, and many describe the guide taking them, at Horseshoe Bend or in the canyon.",
+          "figures": [
+            "154",
+            "42.9%"
+          ],
+          "topics": [
+            "guides",
+            "adventure-activities"
+          ]
+        },
+        {
+          "fact": "Without the 60 reviews that name the one guide, that share falls to 28.7%: photos are part of the day for many reviewers, and a large part of what that one guide's passengers remember.",
+          "figures": [
+            "60",
+            "28.7%"
+          ],
+          "topics": [
+            "guides",
+            "operators"
+          ]
+        },
+        {
+          "fact": "The reviews name three: 32 mention Lower Antelope Canyon, 12 mention Upper Antelope Canyon, and 10 mention Canyon X.",
+          "figures": [
+            "32",
+            "12",
+            "10"
+          ],
+          "topics": [
+            "desert-parks",
+            "adventure-activities"
+          ]
+        },
+        {
+          "fact": "Only five of the 154 are below four stars, and two of those five describe the same thing: Lower Antelope Canyon was closed and the tour went to Canyon X instead.",
+          "figures": [
+            "154"
+          ],
+          "topics": [
+            "booking",
+            "desert-parks"
+          ],
+          "scale": "We read 154 TripAdvisor and Google Maps reviews of Las Vegas tours that mention Antelope Canyon."
+        },
+        {
+          "fact": "146 of the 154 were written between March and September 2026, so the figures describe that window.",
+          "figures": [
+            "146",
+            "154"
+          ],
+          "topics": [
+            "logistics"
+          ],
+          "scale": "We read 154 TripAdvisor and Google Maps reviews of Las Vegas tours that mention Antelope Canyon."
+        },
+        {
+          "fact": "Reviewers describe days of 14 or 15 hours, and some call it long but worth it.",
+          "figures": [
+            "14",
+            "15"
+          ],
+          "topics": [
+            "timing",
+            "logistics"
+          ]
+        }
+      ]
+    },
+    "are-las-vegas-grand-canyon-helicopter-tours-safe": {
+      "hash": "073575a3e8897cfd812dec85a4a68f3f88b1365b6bc86606f27eaf1225f262b5",
+      "candidatos": [
+        {
+          "fact": "In the places those tours fly, from Las Vegas and Boulder City in Nevada to Hoover Dam, Meadview, Temple Bar, Peach Springs and Grand Canyon West in Arizona, the database lists 20 cases since 2000: 18 accidents and 2 incidents.",
+          "figures": [
+            "20",
+            "18",
+            "2"
+          ],
+          "topics": [
+            "helicopter",
+            "grand-canyon",
+            "hoover-dam"
+          ]
+        },
+        {
+          "fact": "The most recent fatal accident on these routes was in February 2018.",
+          "figures": [
+            "February 2018"
+          ],
+          "topics": [
+            "helicopter"
+          ]
+        },
+        {
+          "fact": "Since then, the database lists two accidents in these places, in 2022 and 2025, and nobody died in either.",
+          "figures": [
+            "2022",
+            "2025"
+          ],
+          "topics": [
+            "helicopter"
+          ]
+        },
+        {
+          "fact": "In August 2001, a Papillon Airways helicopter returning to Las Vegas from the west Grand Canyon descended out of control near Meadview, Arizona.",
+          "figures": [
+            "August 2001"
+          ],
+          "topics": [
+            "helicopter",
+            "grand-canyon",
+            "operators"
+          ]
+        },
+        {
+          "fact": "In September 2003, a Sundance Helicopters flight hit a canyon wall in Descent Canyon, near Grand Canyon West Airport, on its way down to a landing site by the Colorado River.",
+          "figures": [
+            "September 2003"
+          ],
+          "topics": [
+            "helicopter",
+            "grand-canyon",
+            "operators"
+          ]
+        },
+        {
+          "fact": "In December 2011, a Sundance Helicopters \"Twilight tour\" toward Hoover Dam crashed in the mountains about 14 miles east of Las Vegas.",
+          "figures": [
+            "December 2011",
+            "14"
+          ],
+          "topics": [
+            "helicopter",
+            "hoover-dam",
+            "operators"
+          ]
+        },
+        {
+          "fact": "In February 2018, a Papillon Airways helicopter lost control while approaching its landing site at Quartermaster Canyon, in gusting tailwinds.",
+          "figures": [
+            "February 2018"
+          ],
+          "topics": [
+            "helicopter",
+            "grand-canyon",
+            "operators"
+          ]
+        },
+        {
+          "fact": "The NTSB final report gives two dates for when the operator finished fitting such systems to its EC130 B4 and AS350-series fleet: August 2018 in its analysis of the fuel system, and August 2019 in its list of the operator's safety actions after the accident.",
+          "figures": [
+            "August 2018",
+            "August 2019"
+          ],
+          "topics": [
+            "helicopter",
+            "operators"
+          ]
+        },
+        {
+          "fact": "A federal law, the FAA Reauthorization Act of 2018, now bars helicopters manufactured after April 5, 2020 from flying in US airspace unless they are certified with one.",
+          "figures": [
+            "2018",
+            "April 5, 2020"
+          ],
+          "topics": [
+            "helicopter"
+          ]
+        },
+        {
+          "fact": "The same list includes an added windsock and a weather station at the accident site that sends real-time wind to the operator's base, survival equipment and trauma kits at its remote landing sites, new satellite phones, aircraft tracking every 15 seconds instead of every 15 minutes, and more training on the loss of tail rotor effectiveness that the NTSB found in this crash.",
+          "figures": [
+            "15 seconds",
+            "15 minutes"
+          ],
+          "topics": [
+            "helicopter",
+            "operators"
+          ]
+        },
+        {
+          "fact": "Commercial operators flying there must hold a Part 135 certificate, and aircraft may not fly within 500 feet of terrain between the north and south rims except to take off or land.",
+          "figures": [
+            "500 feet"
+          ],
+          "topics": [
+            "grand-canyon",
+            "helicopter",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Most of the 20 cases in the database ended without serious injury.",
+          "figures": [
+            "20"
+          ],
+          "topics": [
+            "helicopter"
+          ]
+        },
+        {
+          "fact": "The most serious since 2018 happened at Boulder City in December 2022, when a pilot lost directional control while hover-taxiing; the NTSB also found that the seats did not absorb energy consistently, which made the injuries worse.",
+          "figures": [
+            "2018",
+            "December 2022"
+          ],
+          "topics": [
+            "helicopter"
+          ]
+        },
+        {
+          "fact": "In December 2025 at Las Vegas, an unidentified object struck a tail rotor blade, and nobody was hurt.",
+          "figures": [
+            "December 2025"
+          ],
+          "topics": [
+            "helicopter"
+          ]
+        },
+        {
+          "fact": "In 1,182 TripAdvisor reviews of three Las Vegas helicopter operators, 95 mention feeling safe or the safety briefing, and 92 of those are at four or five stars.",
+          "figures": [
+            "1,182",
+            "95",
+            "92"
+          ],
+          "topics": [
+            "helicopter",
+            "operators"
+          ]
+        },
+        {
+          "fact": "In May 2014 at Peach Springs, a tour company's helicopter was being repositioned under general aviation rules with no passengers on board, and the pilot died.",
+          "figures": [
+            "May 2014"
+          ],
+          "topics": [
+            "helicopter",
+            "operators"
+          ]
+        }
+      ]
+    },
+    "blue-man-group-las-vegas-what-divides-the-reviews": {
+      "hash": "7eb58af1c5e10421e621bb5be597bc9e43a8824d0fbb02922061f5a9261cac37",
+      "candidatos": [
+        {
+          "fact": "Twenty-seven percent of the one- and two-star reviews mention how long something took, against 5 percent of the four- and five-star ones.",
+          "figures": [
+            "Twenty-seven percent",
+            "5 percent"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "The paint and the ponchos appear in 8.6 percent of the bad reviews and 8.5 percent of the good ones.",
+          "figures": [
+            "8.6 percent",
+            "8.5 percent"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Twenty-two of the 81 low-rated reviews name a duration, count the minutes to a point, or say the show dragged — 27.2 percent, against 5.0 percent of the 377 high-rated ones.",
+          "figures": [
+            "Twenty-two",
+            "81",
+            "27.2 percent",
+            "5.0 percent",
+            "377"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Thirteen of the 81 low-rated reviews describe leaving early.",
+          "figures": [
+            "Thirteen",
+            "81"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Thirteen of 500 reviewers describe leaving before the end.",
+          "figures": [
+            "Thirteen",
+            "500"
+          ],
+          "topics": [
+            "shows"
+          ]
+        }
+      ]
+    },
+    "cartzilla-las-vegas-shopping-cart-tour": {
+      "hash": "9e8348700b35b8f5f4cbf9acacce843e8360b4179896467838ca6f0613b94a4b",
+      "candidatos": [
+        {
+          "fact": "Cartzilla is a one-hour ride up and down the Las Vegas Strip in a giant motorized shopping cart that seats seven, built from a Chevy Suburban.",
+          "figures": [
+            "one-hour",
+            "seven"
+          ],
+          "topics": [
+            "adventure-activities",
+            "getting-around"
+          ]
+        },
+        {
+          "fact": "Cartzilla is a single vehicle: a shopping cart over 10 feet tall at the handle, built on what was once a Chevy Suburban, with a 400-horsepower LS1 engine, a sound system, lights and cooling misters.",
+          "figures": [
+            "10 feet",
+            "400-horsepower"
+          ],
+          "topics": [
+            "adventure-activities"
+          ]
+        },
+        {
+          "fact": "The ride is one hour, in the open air, up and down Las Vegas Boulevard.",
+          "figures": [
+            "one hour"
+          ],
+          "topics": [
+            "adventure-activities",
+            "timing"
+          ]
+        },
+        {
+          "fact": "The cart has seven seats, one rider per seat, and the operator asks you to bring a playlist for the sound system.",
+          "figures": [
+            "seven"
+          ],
+          "topics": [
+            "adventure-activities"
+          ]
+        },
+        {
+          "fact": "In October 2026 its booking page showed seats from $69 per person; the listing on this site showed $79 per person, with bottled water included and a free hat for kids.",
+          "figures": [
+            "$69",
+            "$79"
+          ],
+          "topics": [
+            "pricing",
+            "booking",
+            "kids-families"
+          ]
+        },
+        {
+          "fact": "On the date we checked, October 18, 2026, the booking page showed four evening departures between 7:00 and 8:30 pm, all sold out.",
+          "figures": [
+            "October 18, 2026",
+            "four",
+            "7:00",
+            "8:30 pm"
+          ],
+          "topics": [
+            "booking",
+            "timing",
+            "crowds"
+          ]
+        },
+        {
+          "fact": "The listing adds that being three minutes late may cost you the ride.",
+          "figures": [
+            "three minutes"
+          ],
+          "topics": [
+            "logistics",
+            "booking"
+          ]
+        },
+        {
+          "fact": "The operator's cancellation policy, updated July 26, 2026, gives a full refund or a new time up to 48 hours before the ride, and nothing after that; it says it applies to bookings made on its website, by phone or through any authorized booking channel.",
+          "figures": [
+            "July 26, 2026",
+            "48 hours"
+          ],
+          "topics": [
+            "cancellation",
+            "booking"
+          ]
+        },
+        {
+          "fact": "The listing on this site says the ride can be cancelled for a full refund up to 24 hours before.",
+          "figures": [
+            "24 hours"
+          ],
+          "topics": [
+            "cancellation",
+            "booking"
+          ]
+        },
+        {
+          "fact": "The listing gives an age range of 4 to 80, with one booster seat available on request and no infant seats.",
+          "figures": [
+            "4 to 80",
+            "one"
+          ],
+          "topics": [
+            "kids-families",
+            "booking"
+          ]
+        },
+        {
+          "fact": "Boarding is up four steps, and the driver can help.",
+          "figures": [
+            "four"
+          ],
+          "topics": [
+            "logistics",
+            "kids-families"
+          ]
+        }
+      ]
+    },
+    "cirque-du-soleil-las-vegas-random-reviews": {
+      "hash": "d9f6d06c0588b44cf35a9a664d57c096992c28e5237e6ce248371b00aed89f09",
+      "candidatos": [
+        {
+          "fact": "Across 1,361 reviews of the three Cirque du Soleil shows on the Strip, the word “random” appears 21 times in the bad ones and zero times in the 1,146 good ones.",
+          "figures": [
+            "1,361",
+            "21",
+            "1,146"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "“Random” appears in 21 of the 215 bad reviews and in none of the 1,146 good ones.",
+          "figures": [
+            "21",
+            "215",
+            "1,146"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "“No plot” and “no story” come close: 14% of the bad reviews, six of the 1,146 good ones.",
+          "figures": [
+            "14%",
+            "1,146"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Among reviewers who say they could not follow it, 41% mention the clowns.",
+          "figures": [
+            "41%"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "the word “expect” appears in 15% of the bad Cirque reviews and 5% of the good ones.",
+          "figures": [
+            "15%",
+            "5%"
+          ],
+          "topics": [
+            "shows"
+          ]
+        }
+      ]
+    },
+    "death-valley-from-las-vegas": {
+      "hash": "734701c915b2c8eedc5add9da377534582db0bf977ce521ea1e081017410f8f3",
+      "candidatos": [
+        {
+          "fact": "Death Valley National Park is about a two-and-a-half-hour drive from Las Vegas to the Furnace Creek Visitor Center, in California but on the same Pacific clock.",
+          "figures": [
+            "two-and-a-half-hour"
+          ],
+          "topics": [
+            "desert-parks",
+            "timing",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Entry is $30 per private vehicle or $15 per person, and unlike Zion and Grand Canyon National Park it adds no surcharge for non-US residents.",
+          "figures": [
+            "$30",
+            "$15"
+          ],
+          "topics": [
+            "desert-parks",
+            "pricing",
+            "tickets"
+          ]
+        },
+        {
+          "fact": "The National Park Service says summer temperatures can reach 130°F, with nights that stay as warm as 90°F, and the hottest air temperature ever recorded there was 134°F at Furnace Creek in 1913.",
+          "figures": [
+            "130°F",
+            "90°F",
+            "134°F",
+            "1913"
+          ],
+          "topics": [
+            "desert-parks",
+            "timing"
+          ]
+        },
+        {
+          "fact": "Zion and Grand Canyon National Park charge non-US residents aged 16 and over an extra $100 per person.",
+          "figures": [
+            "$100",
+            "16"
+          ],
+          "topics": [
+            "desert-parks",
+            "pricing",
+            "tickets"
+          ]
+        },
+        {
+          "fact": "Day tours from Las Vegas are listed at around 7 to 12 hours, including sunset and stargazing versions.",
+          "figures": [
+            "7",
+            "12"
+          ],
+          "topics": [
+            "desert-parks",
+            "timing",
+            "tickets"
+          ]
+        }
+      ]
+    },
+    "first-time-las-vegas-how-to-plan": {
+      "hash": "ed9469ce15cf4b4871e1e51a7f44274fdc49f1d2368033ee2521a5a603474508",
+      "candidatos": [
+        {
+          "fact": "Downtown (Fremont) is its own scene — more old-school Vegas, more affordable, a different energy — and it's a great choice if that's the vibe you want, but it's a 10–15 minute drive from the Strip, not a walk.",
+          "figures": [
+            "10–15"
+          ],
+          "topics": [
+            "strip-fremont",
+            "getting-around",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "don't line up a dinner at one hotel and a show at the neighboring one with no buffer — those resorts are bigger than they look, and \"next door\" can be a 25-minute walk.",
+          "figures": [
+            "25-minute"
+          ],
+          "topics": [
+            "logistics",
+            "getting-around",
+            "timing"
+          ]
+        },
+        {
+          "fact": "The fountains are free and take 15 minutes — easy yes.",
+          "figures": [
+            "15 minutes"
+          ],
+          "topics": [
+            "shows",
+            "timing"
+          ]
+        },
+        {
+          "fact": "The trade-off: Capping a first trip at 3–4 nights means leaving some things undone.",
+          "figures": [
+            "3–4"
+          ],
+          "topics": [
+            "booking",
+            "timing"
+          ]
+        }
+      ]
+    },
+    "fremont-street-experience-what-reviews-say": {
+      "hash": "c3dc23d0ef938332591205fb73d19183bfd9d80886e6b7f99a6c3952d6a9a221",
+      "candidatos": [
+        {
+          "fact": "In 300 reviews of Fremont Street collected without filtering, 24.4% of the four- and five-star ones mention the overhead screen and the light show.",
+          "figures": [
+            "300",
+            "24.4%"
+          ],
+          "topics": [
+            "strip-fremont",
+            "shows"
+          ]
+        },
+        {
+          "fact": "Among the one- and two-star reviews, 40.5% mention dirt or smell, 37.8% mention panhandlers or street performers, 27% mention children and 18.9% say they felt unsafe.",
+          "figures": [
+            "40.5%",
+            "37.8%",
+            "27%",
+            "18.9%"
+          ],
+          "topics": [
+            "strip-fremont",
+            "crowds",
+            "kids-families"
+          ]
+        },
+        {
+          "fact": "Children are mentioned in 27% of the low-rated reviews and 9.7% of the high-rated ones.",
+          "figures": [
+            "27%",
+            "9.7%"
+          ],
+          "topics": [
+            "kids-families",
+            "strip-fremont"
+          ]
+        },
+        {
+          "fact": "Street performers and people asking for money appear in 37.8% of the low-rated reviews and 17.1% of the high-rated ones — the same feature described twice, as color or as hassle.",
+          "figures": [
+            "37.8%",
+            "17.1%"
+          ],
+          "topics": [
+            "strip-fremont",
+            "crowds"
+          ]
+        },
+        {
+          "fact": "Time of day is mentioned at the same rate by both camps, 16.6% and 16.2%, which makes it a description rather than a fault.",
+          "figures": [
+            "16.6%",
+            "16.2%"
+          ],
+          "topics": [
+            "timing",
+            "strip-fremont"
+          ]
+        },
+        {
+          "fact": "Reviewers are split: 18.9% of the low-rated reviews say they felt unsafe, against 8.3% of the high-rated ones, and several of the latter credit the visible police presence.",
+          "figures": [
+            "18.9%",
+            "8.3%"
+          ],
+          "topics": [
+            "strip-fremont",
+            "crowds"
+          ]
+        }
+      ]
+    },
+    "fremont-street-live-music-what-reviews-say": {
+      "hash": "c1262abd5b509f56db541ed4056d5d281f646c9c5992cda1d67b098a10d3a71f",
+      "candidatos": [
+        {
+          "fact": "Seventy-three of 300 Fremont Street reviews mention the live music, and 55 of those are rated four or five stars.",
+          "figures": [
+            "Seventy-three",
+            "300",
+            "55"
+          ],
+          "topics": [
+            "shows",
+            "strip-fremont"
+          ]
+        },
+        {
+          "fact": "Reviewers describe multiple stages along the covered street with no ticket, and \"free\" is named in nine of the 73 reviews that mention the music.",
+          "figures": [
+            "nine",
+            "73"
+          ],
+          "topics": [
+            "pricing",
+            "strip-fremont",
+            "shows"
+          ]
+        }
+      ]
+    },
+    "fremont-street-old-casinos-what-reviews-say": {
+      "hash": "f4e7aef0368acd3046c87705e2e6392a2de482ea329612e5da3da6537bad41f4",
+      "candidatos": [
+        {
+          "fact": "Thirty-four of 300 Fremont Street reviews mention the old casinos, and 21 of them use the phrase \"old Vegas\" or something close to it.",
+          "figures": [
+            "Thirty-four",
+            "300",
+            "21"
+          ],
+          "topics": [
+            "strip-fremont"
+          ]
+        },
+        {
+          "fact": "Reviewers name the Golden Nugget most often — 13 of the 34 mentions — along with the Four Queens and El Cortez.",
+          "figures": [
+            "13",
+            "34"
+          ],
+          "topics": [
+            "strip-fremont"
+          ]
+        },
+        {
+          "fact": "Ten of the 34 are rated one to three stars, and those use the same nostalgia as a complaint.",
+          "figures": [
+            "Ten",
+            "34"
+          ],
+          "topics": [
+            "strip-fremont"
+          ],
+          "scale": "Thirty-four of 300 Fremont Street reviews mention the old casinos, and 21 of them use the phrase \"old Vegas\" or something close to it."
+        }
+      ]
+    },
+    "fremont-street-zip-line-what-reviews-say": {
+      "hash": "3b64a928490f375303a472432718e752fb03800aca39777e87c21e74662eb59e",
+      "candidatos": [
+        {
+          "fact": "Fifty-six of 300 Fremont Street reviews mention the zip line, SlotZilla.",
+          "figures": [
+            "300"
+          ],
+          "topics": [
+            "strip-fremont",
+            "adventure-activities"
+          ]
+        },
+        {
+          "fact": "Thirty-seven of the 56 mention it the way you would mention a landmark: in a list of what the street contains.",
+          "figures": [
+            "56"
+          ],
+          "topics": [
+            "strip-fremont",
+            "adventure-activities"
+          ],
+          "scale": "Fifty-six of 300 Fremont Street reviews mention the zip line, SlotZilla."
+        },
+        {
+          "fact": "Eleven of the 56 are rated one to three stars, and the two that are specifically about the ride say different things.",
+          "figures": [
+            "56"
+          ],
+          "topics": [
+            "strip-fremont",
+            "adventure-activities"
+          ],
+          "scale": "Fifty-six of 300 Fremont Street reviews mention the zip line, SlotZilla."
+        }
+      ]
+    },
+    "grand-canyon-airplane-tour-from-las-vegas": {
+      "hash": "d3a6079daa084d388370d6797de7836b3f6d62bda5d6ef8b94054ddf47479364",
+      "candidatos": [
+        {
+          "fact": "The West Rim flight is about an hour in the air, does not land, and takes about four hours with transfers.",
+          "figures": [
+            "an hour",
+            "four hours"
+          ],
+          "topics": [
+            "grand-canyon",
+            "timing",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "In October 2026 the four-hour flights were listed at $214 to $264 by plane and $529 by helicopter.",
+          "figures": [
+            "October 2026",
+            "$214",
+            "$264",
+            "$529",
+            "four-hour"
+          ],
+          "topics": [
+            "grand-canyon",
+            "helicopter",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "The listings put it 30 to 50 minutes from the Strip, with hotel pickup as an option.",
+          "figures": [
+            "30 to 50 minutes"
+          ],
+          "topics": [
+            "logistics",
+            "getting-around",
+            "grand-canyon"
+          ]
+        },
+        {
+          "fact": "The listings describe a flight of about an hour to 70 minutes over Lake Mead, Hoover Dam, the Colorado River and the western end of the canyon, including Eagle Point and the Skywalk, seen from above.",
+          "figures": [
+            "an hour",
+            "70 minutes"
+          ],
+          "topics": [
+            "grand-canyon",
+            "hoover-dam",
+            "timing"
+          ]
+        },
+        {
+          "fact": "The operator says its tours have headset narration in many languages, including Spanish, German, French, Japanese and Mandarin, and that every airplane and helicopter passenger is weighed at check-in, with an extra-seat fee for passengers over 300 pounds that ranges from $50 to $250 depending on the product.",
+          "figures": [
+            "300 pounds",
+            "$50",
+            "$250"
+          ],
+          "topics": [
+            "grand-canyon",
+            "helicopter",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "A flight from Boulder City to Bar 10 Ranch, which the listing places at the Grand Canyon's North Rim, with a two-hour ATV or 4x4 ground tour and a ranch lunch, about eight hours in total.",
+          "figures": [
+            "two-hour",
+            "eight hours"
+          ],
+          "topics": [
+            "grand-canyon",
+            "adventure-activities",
+            "timing"
+          ]
+        },
+        {
+          "fact": "A flight to Grand Canyon West, then a helicopter down to the floor of the canyon, about seven to eight hours, listed at $624.",
+          "figures": [
+            "seven to eight hours",
+            "$624"
+          ],
+          "topics": [
+            "grand-canyon",
+            "helicopter",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "The Eagle Point bus tour to Grand Canyon West was listed at $94 in October 2026 and takes 10 to 12 hours door to door, with time at the rim.",
+          "figures": [
+            "$94",
+            "October 2026",
+            "10 to 12 hours"
+          ],
+          "topics": [
+            "grand-canyon",
+            "pricing",
+            "timing"
+          ]
+        },
+        {
+          "fact": "In the places these tours fly, the NTSB database lists seven Part 135 airplane cases since 2000, all without injuries.",
+          "figures": [
+            "seven",
+            "2000"
+          ],
+          "topics": [
+            "grand-canyon",
+            "helicopter",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "In December 2004 near Meadview, a weather-scouting flight with no passengers, flown under general aviation rules, in which the pilot died.",
+          "figures": [
+            "December 2004"
+          ],
+          "topics": [
+            "grand-canyon",
+            "helicopter",
+            "logistics"
+          ]
+        }
+      ]
+    },
+    "grand-canyon-coach-tour-guide-quality": {
+      "hash": "679407bf5aec838d8d5cf9838d01bd62c4970e6db8d6d1e05efc6e6a35c4a685",
+      "candidatos": [
+        {
+          "fact": "In 5,467 four- and five-star reviews of Las Vegas coach operators that run Grand Canyon day trips, 60.7% mention the guide or the driver, and 1,896 name them.",
+          "figures": [
+            "5,467",
+            "60.7%",
+            "1,896"
+          ],
+          "topics": [
+            "grand-canyon",
+            "guides",
+            "operators"
+          ]
+        },
+        {
+          "fact": "Knowledge is praised in 14.2% of the happy reviews against 2.1% of the unhappy, humour in 6.5% against 0.3%.",
+          "figures": [
+            "14.2%",
+            "2.1%",
+            "6.5%",
+            "0.3%"
+          ],
+          "topics": [
+            "grand-canyon",
+            "guides"
+          ]
+        },
+        {
+          "fact": "Safe driving over a long desert day appears in 4.6% of the happy reviews and in none of the unhappy ones.",
+          "figures": [
+            "4.6%"
+          ],
+          "topics": [
+            "grand-canyon",
+            "guides",
+            "logistics"
+          ]
+        }
+      ]
+    },
+    "grand-canyon-comedy-tour-what-reviews-describe": {
+      "hash": "ff57683fbe385c83628dc1cc5eae3402ce62da7a9589f5dc4813786d7e0be7ab",
+      "candidatos": [
+        {
+          "fact": "One Las Vegas operator, Comedy on Deck Tours, sells the Grand Canyon day trip as a comedy show with a canyon in it, and the reviews take the premise seriously: 50.1% of 1,275 positive reviews mention the comedy.",
+          "figures": [
+            "50.1%",
+            "1,275"
+          ],
+          "topics": [
+            "grand-canyon",
+            "operators",
+            "shows"
+          ]
+        },
+        {
+          "fact": "Strip the comedy out and what remains is a standard Las Vegas canyon day, and reviewers describe it in those terms: 25.3% write about the stops and 22.0% about the food, which on this operator includes both a breakfast and a lunch.",
+          "figures": [
+            "25.3%",
+            "22.0%"
+          ],
+          "topics": [
+            "grand-canyon",
+            "food-tours",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Of the 1,287 reviews, 1,275 are at four or five stars, seven at three and five at one or two.",
+          "figures": [
+            "1,287",
+            "1,275"
+          ],
+          "topics": [
+            "operators",
+            "grand-canyon"
+          ]
+        }
+      ]
+    },
+    "grand-canyon-day-trip-from-las-vegas-how-long": {
+      "hash": "89f00ab144fd161d28f8224b05edf8560f0c637422121a1208f1918224abefd8",
+      "candidatos": [
+        {
+          "fact": "In 70 reviews that give a figure, a West Rim coach day runs about 10 to 12 hours door to door, a South Rim day about 14 to 15, and a Hoover Dam tour about 3 to 6.",
+          "figures": [
+            "70",
+            "10 to 12",
+            "14 to 15",
+            "3 to 6"
+          ],
+          "topics": [
+            "grand-canyon",
+            "hoover-dam",
+            "timing"
+          ]
+        },
+        {
+          "fact": "Of the reviews that state a pickup time, most fall between 5am and 7am, and 6am is the most common single figure.",
+          "figures": [
+            "5am",
+            "7am",
+            "6am"
+          ],
+          "topics": [
+            "timing",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "A show that ends near midnight and a 5:40am lobby call are not compatible, and the reviews that mention both say so.",
+          "figures": [
+            "5:40am"
+          ],
+          "topics": [
+            "timing",
+            "logistics",
+            "shows"
+          ]
+        },
+        {
+          "fact": "Late pickups and waits appear in 7.9% of the low-rated reviews and 0.5% of the high-rated ones, and these too concentrate: 32 of the 43 belong to one operator.",
+          "figures": [
+            "7.9%",
+            "0.5%",
+            "32",
+            "43"
+          ],
+          "topics": [
+            "operators",
+            "booking",
+            "logistics"
+          ]
+        }
+      ]
+    },
+    "grand-canyon-skywalk-tickets-price-phone-rule": {
+      "hash": "bd4356abd29defd5a1083f285c531d5b7cc79977516a00e0c177aab5408fedfe",
+      "candidatos": [
+        {
+          "fact": "In October 2026 it was included in two passes on the official site: the All-Access Pass at $99 and the Sunset Pass at $59, after 3 pm.",
+          "figures": [
+            "2026",
+            "$99",
+            "$59",
+            "3 pm"
+          ],
+          "topics": [
+            "tickets",
+            "pricing",
+            "grand-canyon"
+          ]
+        },
+        {
+          "fact": "The $67 General Admission ticket does not include it, and tribal taxes and fees are added.",
+          "figures": [
+            "$67"
+          ],
+          "topics": [
+            "tickets",
+            "pricing",
+            "grand-canyon"
+          ]
+        },
+        {
+          "fact": "Phones are now permitted on the glass, while cameras and bags go in free lockers; reviews from 2023 to early 2025 describe phones being banned.",
+          "figures": [
+            "2023",
+            "2025"
+          ],
+          "topics": [
+            "grand-canyon",
+            "tickets",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "The All-Access Pass adds the zipline, guided tours and exhibits, performances, the arcade, the shuttle between the viewpoints, and a $10 food and a $10 merchandise discount, each valid on a purchase of at least $20.",
+          "figures": [
+            "$10",
+            "$10",
+            "$20"
+          ],
+          "topics": [
+            "pricing",
+            "tickets",
+            "grand-canyon"
+          ]
+        },
+        {
+          "fact": "The Sunset Pass is entry after 3 pm with the Skywalk, Eagle Point, Guano Point and the shuttle.",
+          "figures": [
+            "3 pm"
+          ],
+          "topics": [
+            "tickets",
+            "timing",
+            "grand-canyon"
+          ]
+        },
+        {
+          "fact": "Tickets can be cancelled without penalty up to 48 hours before the visit date; inside 48 hours, cancellations and refunds are not accepted, and some packages have their own policies.",
+          "figures": [
+            "48 hours",
+            "48 hours"
+          ],
+          "topics": [
+            "cancellation",
+            "tickets",
+            "grand-canyon"
+          ]
+        },
+        {
+          "fact": "The ticket page says the last ticket is sold daily at 4:30 pm.",
+          "figures": [
+            "4:30 pm"
+          ],
+          "topics": [
+            "timing",
+            "tickets",
+            "grand-canyon"
+          ]
+        },
+        {
+          "fact": "The FAQ gives a last entry of 6:00 pm from mid-March through October and 5:00 pm from November to March, and elsewhere a summer last entry of 5:30 pm.",
+          "figures": [
+            "6:00 pm",
+            "5:00 pm",
+            "5:30 pm"
+          ],
+          "topics": [
+            "timing",
+            "tickets",
+            "grand-canyon"
+          ]
+        },
+        {
+          "fact": "The official site lists two packages that include the All-Access Pass: a helicopter and pontoon package at $418 per person, about 15 minutes in the air and 15 on the Colorado River, about 45 minutes in all; and a bus tour from Las Vegas at $189 per person with hotel pickup, snacks and a Hoover Dam photo stop.",
+          "figures": [
+            "$418",
+            "15",
+            "15",
+            "45",
+            "$189"
+          ],
+          "topics": [
+            "pricing",
+            "helicopter",
+            "hoover-dam"
+          ]
+        },
+        {
+          "fact": "The zipline at Hualapai Point, included in the All-Access Pass, has its own limits: riders must weigh between 90 and 275 pounds and be at least 4 feet tall, riders 12 and younger must be with a parent or guardian 16 or older, and it is not open to pregnant women or to people with previous neck or back injuries.",
+          "figures": [
+            "90",
+            "275",
+            "4",
+            "12",
+            "16"
+          ],
+          "topics": [
+            "adventure-activities",
+            "grand-canyon",
+            "kids-families"
+          ]
+        }
+      ]
+    },
+    "grand-canyon-south-rim-tour-from-las-vegas-what-reviews-say": {
+      "hash": "c89731b431cb521bd3817e5e7238193e0856e6e90b56ee6c6fe45d2ff37099f7",
+      "candidatos": [
+        {
+          "fact": "The National Park Service lists a standard entrance pass of $20 to $35, and adds that non-US residents must pay a $100 per person fee in addition to the standard entrance fee, unless admitted with an annual or America the Beautiful pass.",
+          "figures": [
+            "$20 to $35",
+            "$100"
+          ],
+          "topics": [
+            "grand-canyon",
+            "pricing",
+            "tickets"
+          ]
+        },
+        {
+          "fact": "Of the 206 at four and five stars, 69.9% mention the guide or the driver, and some call it a long day that was worth it.",
+          "figures": [
+            "206",
+            "69.9%"
+          ],
+          "topics": [
+            "guides",
+            "grand-canyon",
+            "operators"
+          ]
+        },
+        {
+          "fact": "None of the 44 low-rated reviews has the canyon itself as its main complaint.",
+          "figures": [
+            "44"
+          ],
+          "topics": [
+            "grand-canyon",
+            "operators"
+          ]
+        },
+        {
+          "fact": "Of the 44 at one or two stars, 17 describe a tour that was cancelled before it left, and 13 of those 17 are about one seller, in 2025 and 2026.",
+          "figures": [
+            "44",
+            "17",
+            "13",
+            "2025",
+            "2026"
+          ],
+          "topics": [
+            "cancellation",
+            "booking",
+            "operators"
+          ]
+        },
+        {
+          "fact": "Cancellation appears in 40.9% of the low-rated reviews and in 2.9% of the good ones, and the gap holds in short and long reviews alike.",
+          "figures": [
+            "40.9%",
+            "2.9%"
+          ],
+          "topics": [
+            "cancellation",
+            "operators"
+          ]
+        },
+        {
+          "fact": "National Park Express, with 110 reviews in this sample, has one review at one or two stars and no cancellation among them.",
+          "figures": [
+            "110"
+          ],
+          "topics": [
+            "operators",
+            "cancellation"
+          ]
+        },
+        {
+          "fact": "None of the 254 reviews mentions an entrance fee of any kind.",
+          "figures": [
+            "254"
+          ],
+          "topics": [
+            "grand-canyon",
+            "tickets",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "The other 27 low-rated reviews are about the operation: pickups late or disorganized (8), the guide or driver (7), a bus that never arrived (4), the ratio of driving to time at the canyon (4), and other issues (4).",
+          "figures": [
+            "27",
+            "8",
+            "7",
+            "4"
+          ],
+          "topics": [
+            "logistics",
+            "guides",
+            "operators"
+          ]
+        }
+      ]
+    },
+    "grand-canyon-tour-reviews-google-vs-tripadvisor": {
+      "hash": "a70e5b588cf9f776f1607512b855c84d4a864b55e0a6c49bb7abf99e026beac1",
+      "candidatos": [
+        {
+          "fact": "At Grand Canyon West, 78% of the Google reviews are four or five stars and 26% of the TripAdvisor ones are.",
+          "figures": [
+            "78%",
+            "26%"
+          ],
+          "topics": [
+            "grand-canyon",
+            "booking"
+          ]
+        },
+        {
+          "fact": "In the reviews we collected without filtering by rating, 78% of 526 Google reviews are four or five stars.",
+          "figures": [
+            "78%",
+            "526"
+          ],
+          "topics": [
+            "grand-canyon",
+            "booking"
+          ]
+        },
+        {
+          "fact": "For one of the coach operators, 93% of the TripAdvisor reviews we read are positive and 78% of the Google ones are — the reverse.",
+          "figures": [
+            "93%",
+            "78%"
+          ],
+          "topics": [
+            "operators",
+            "booking"
+          ]
+        },
+        {
+          "fact": "In our samples, taken newest first, one operator's 320 TripAdvisor reviews span three months — about 105 reviews a month.",
+          "figures": [
+            "320",
+            "three months",
+            "105"
+          ],
+          "topics": [
+            "operators",
+            "booking"
+          ]
+        },
+        {
+          "fact": "At the other extreme, 160 reviews of Grand Canyon West span almost three years, about five a month, and 280 reviews of Hoover Dam span nearly four.",
+          "figures": [
+            "160",
+            "three years",
+            "five",
+            "280",
+            "four"
+          ],
+          "topics": [
+            "grand-canyon",
+            "hoover-dam",
+            "booking"
+          ]
+        }
+      ]
+    },
+    "grand-canyon-west-coach-day-hour-by-hour": {
+      "hash": "f5958fe96683804d1aa2f1f17612a8826e96fae31dd707aea40269d6bd0af07d",
+      "candidatos": [
+        {
+          "fact": "Across 111 reviews that state two or more clock times, the day runs like this: pickup around 6am, often at a hotel that is not yours, a breakfast stop, the Hoover Dam bridge, then the West Rim, where a second shuttle takes you between viewpoints.",
+          "figures": [
+            "111",
+            "6am"
+          ],
+          "topics": [
+            "grand-canyon",
+            "timing",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "The pickup is raised in 22.8% of the low-rated reviews and 4.6% of the high-rated ones, which makes it the single most complained-about stop of the day.",
+          "figures": [
+            "22.8%",
+            "4.6%"
+          ],
+          "topics": [
+            "grand-canyon",
+            "timing",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Lunch is included on many of these tours, and it is mentioned in 9.8% of the low-rated reviews against 5.7% of the high-rated ones.",
+          "figures": [
+            "9.8%",
+            "5.7%"
+          ],
+          "topics": [
+            "food-tours",
+            "grand-canyon",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Toilets follow the same pattern, mentioned in 4.4% of the low-rated reviews and 1.3% of the high-rated ones.",
+          "figures": [
+            "4.4%",
+            "1.3%"
+          ],
+          "topics": [
+            "grand-canyon",
+            "logistics",
+            "timing"
+          ]
+        },
+        {
+          "fact": "Of the reviews that state an hour, the middle sits at about 6:10am, with some before 5am and the Hoover Dam half-day tours leaving later in the morning.",
+          "figures": [
+            "6:10am",
+            "5am"
+          ],
+          "topics": [
+            "grand-canyon",
+            "timing",
+            "hoover-dam"
+          ]
+        },
+        {
+          "fact": "Most reviews that give a time describe the late afternoon or the evening, with some after 10pm.",
+          "figures": [
+            "10pm"
+          ],
+          "topics": [
+            "grand-canyon",
+            "timing",
+            "logistics"
+          ]
+        }
+      ]
+    },
+    "grand-canyon-west-helicopter-boat-add-on-from-las-vegas": {
+      "hash": "83a2fefebd358e85bef8dde21aa4765f53bad41c0de9696bd7ac903c39d18ecc",
+      "candidatos": [
+        {
+          "fact": "Among the 83 reviews at four and five stars, 22 single out the helicopter or the add-on, not just the tour, as worth it, the highlight, or something to add.",
+          "figures": [
+            "83",
+            "22"
+          ],
+          "topics": [
+            "grand-canyon",
+            "helicopter",
+            "adventure-activities"
+          ]
+        },
+        {
+          "fact": "In 12 of the 83 good reviews, the guide is the one who offered the add-on, recommended it or booked it on the way.",
+          "figures": [
+            "12",
+            "83"
+          ],
+          "topics": [
+            "guides",
+            "grand-canyon",
+            "helicopter"
+          ]
+        },
+        {
+          "fact": "Of the 25 low-rated reviews, 5 describe buyers who lost part of the visit to the add-on: a Skywalk line abandoned, a lunch skipped, a viewpoint missed, or hours of waiting.",
+          "figures": [
+            "25",
+            "5"
+          ],
+          "topics": [
+            "grand-canyon",
+            "helicopter",
+            "adventure-activities"
+          ]
+        }
+      ]
+    },
+    "grand-canyon-west-skywalk-eagle-point-guano-point": {
+      "hash": "dec26d0df673d04f3059cc7d9f74fd64187f146c00ea42a7055f7b32d959b9fb",
+      "candidatos": [
+        {
+          "fact": "In the representative sample, the price of entry appears in 40% of the one- and two-star reviews — 32 of 80 — and in 2.4% of the four- and five-star ones.",
+          "figures": [
+            "40%",
+            "32",
+            "80",
+            "2.4%"
+          ],
+          "topics": [
+            "pricing",
+            "tickets",
+            "grand-canyon"
+          ]
+        },
+        {
+          "fact": "The shuttle is mentioned at almost the same rate by happy and unhappy reviewers — 2.9% and 3.8% — which puts it in the category of things that describe the place rather than explain a bad day.",
+          "figures": [
+            "2.9%",
+            "3.8%"
+          ],
+          "topics": [
+            "logistics",
+            "grand-canyon"
+          ]
+        },
+        {
+          "fact": "Queues and waiting appear in 7.5% of the low-rated reviews and 2.2% of the high-rated ones — a real gap, but a fraction of the one the price produces.",
+          "figures": [
+            "7.5%",
+            "2.2%"
+          ],
+          "topics": [
+            "crowds",
+            "grand-canyon"
+          ]
+        },
+        {
+          "fact": "Reviewers who bought the photographs report prices in the range of $25 for one and $50 to $69 for a package, at the time they visited.",
+          "figures": [
+            "$25",
+            "$50",
+            "$69"
+          ],
+          "topics": [
+            "pricing",
+            "grand-canyon"
+          ]
+        },
+        {
+          "fact": "The trade-off: walking on glass 4,000 feet above the floor is the one thing at this site you cannot do anywhere else, and the people who wanted that experience say it delivered.",
+          "figures": [
+            "4,000 feet"
+          ],
+          "topics": [
+            "grand-canyon",
+            "adventure-activities"
+          ]
+        }
+      ]
+    },
+    "grand-canyon-west-vs-south-rim-from-las-vegas": {
+      "hash": "88a99839a55cc000d6baff5682128dbe34d80987eb3bb4f2dca6c7df0c6e0084",
+      "candidatos": [
+        {
+          "fact": "Grand Canyon West is ~125 miles from Las Vegas (2–2.5 hours each way), home to the Skywalk, and easy to fit around a Vegas trip.",
+          "figures": [
+            "125",
+            "2–2.5"
+          ],
+          "topics": [
+            "grand-canyon",
+            "logistics",
+            "timing"
+          ]
+        },
+        {
+          "fact": "The South Rim is ~275 miles away (4.5–5 hours each way) and delivers the deep, classic postcard views, but turns your free day into a 13–15 hour marathon.",
+          "figures": [
+            "275",
+            "4.5–5",
+            "13–15"
+          ],
+          "topics": [
+            "grand-canyon",
+            "logistics",
+            "timing"
+          ]
+        },
+        {
+          "fact": "Phones are now permitted, according to the official site in October 2026; reviews from before mid-2025 describe a no-phone rule, when the only photos were the ones sold by the official photographers, which are now optional.",
+          "figures": [
+            "October 2026",
+            "mid-2025"
+          ],
+          "topics": [
+            "grand-canyon",
+            "tickets"
+          ]
+        },
+        {
+          "fact": "At roughly 275 miles each way it’s four and a half to five hours of driving before traffic, and doing it yourself means one person spends nine or ten hours at the wheel and still has to be alert for the drive home in the dark.",
+          "figures": [
+            "275"
+          ],
+          "topics": [
+            "grand-canyon",
+            "logistics",
+            "getting-around"
+          ]
+        },
+        {
+          "fact": "Tickets stop selling at 4:30 in the afternoon, which is the detail that ruins the occasional late start.",
+          "figures": [
+            "4:30"
+          ],
+          "topics": [
+            "grand-canyon",
+            "tickets"
+          ]
+        },
+        {
+          "fact": "Since January 1, 2026, non-US residents aged 16 and over pay an extra $100 per person on top of the standard entrance fee, at the Grand Canyon and ten other national parks.",
+          "figures": [
+            "January 1, 2026",
+            "16",
+            "$100"
+          ],
+          "topics": [
+            "grand-canyon",
+            "desert-parks",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Antelope Canyon and Horseshoe Bend are both at Page, Arizona, which is about 271 miles from Las Vegas — five and a half hours each way on its own, before you add the leg between Page and either rim.",
+          "figures": [
+            "271"
+          ],
+          "topics": [
+            "desert-parks",
+            "logistics",
+            "grand-canyon"
+          ]
+        },
+        {
+          "fact": "If it's your first Vegas trip with 3 or 4 nights and the canyon is one item on a packed list, West is usually the kinder choice — you get the canyon without sacrificing a full day and a night of energy.",
+          "figures": [
+            "3",
+            "4"
+          ],
+          "topics": [
+            "grand-canyon",
+            "booking",
+            "timing"
+          ]
+        },
+        {
+          "fact": "If you're traveling with young kids, West again tends to be the less punishing option; a 5-hour bus leg each way is a hard sell for small children, and the medical reality of desert heat makes a long exposed day riskier.",
+          "figures": [
+            "5-hour"
+          ],
+          "topics": [
+            "kids-families",
+            "grand-canyon"
+          ]
+        }
+      ]
+    },
+    "grand-canyon-west-zip-line-what-reviews-say": {
+      "hash": "261584925f380334e4b210b3ae5815c5eb0de0eb50376b12b62a2ad0090e66e5",
+      "candidatos": [
+        {
+          "fact": "Sixty-four reviews across 11 listings mention the zip line at Grand Canyon West, and 52 of them are rated four or five stars.",
+          "figures": [
+            "11",
+            "52"
+          ],
+          "topics": [
+            "grand-canyon",
+            "adventure-activities",
+            "tickets"
+          ]
+        },
+        {
+          "fact": "Twelve of the 64 are rated one to three stars — a small minority, and mostly about the price of the day rather than the line.",
+          "figures": [
+            "64"
+          ],
+          "topics": [
+            "grand-canyon",
+            "adventure-activities",
+            "pricing"
+          ]
+        }
+      ]
+    },
+    "hoover-dam-from-las-vegas-photo-stop-or-dam-tour": {
+      "hash": "c156809aa24a188fa8dda62f4f3fcefeb3b98f1a147600e6794877764bb07664",
+      "candidatos": [
+        {
+          "fact": "A coach tour that \"includes Hoover Dam\" usually means a stop of about half an hour, often at the bridge above it.",
+          "figures": [
+            "half an hour"
+          ],
+          "topics": [
+            "hoover-dam",
+            "timing",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Across the reviews of six coach operators that mention Hoover Dam, how long they had is raised in 40% of the one- and two-star reviews and 8.9% of the four- and five-star ones.",
+          "figures": [
+            "six",
+            "40%",
+            "8.9%"
+          ],
+          "topics": [
+            "hoover-dam",
+            "timing",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Heat is the other thing that turns a wait into a complaint, mentioned in 11% of the low-rated tour reviews and 4.8% of the high-rated ones.",
+          "figures": [
+            "11%",
+            "4.8%"
+          ],
+          "topics": [
+            "hoover-dam",
+            "timing",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Parking is the most mentioned practical subject of all, in 16% of the high-rated reviews: there is a paid garage and some free roadside parking further out, and reviewers who arrived late describe a walk.",
+          "figures": [
+            "16%"
+          ],
+          "topics": [
+            "hoover-dam",
+            "logistics",
+            "getting-around"
+          ]
+        }
+      ]
+    },
+    "hoover-dam-helicopter-tour-from-las-vegas": {
+      "hash": "29a4fc564dff2161b611a14e2a4c2421057cabe12c52a0a1e27e89ecf1314743",
+      "candidatos": [
+        {
+          "fact": "Of the 196 reviews that mention Hoover Dam, 176 also mention the canyon, 128 mention a landing or a picnic, and 76 mention Lake Mead.",
+          "figures": [
+            "196",
+            "176",
+            "128",
+            "76"
+          ],
+          "topics": [
+            "helicopter",
+            "hoover-dam",
+            "grand-canyon"
+          ]
+        },
+        {
+          "fact": "Reviews that mention the dam are, overwhelmingly, good reviews: 187 of the 196 are at four or five stars, and only 7 are at one or two.",
+          "figures": [
+            "187",
+            "196",
+            "7"
+          ],
+          "topics": [
+            "helicopter",
+            "hoover-dam"
+          ]
+        },
+        {
+          "fact": "Reviews that mention the dam also mention a front seat more often than the sample as a whole: 14.3% of the 196, against 8.8% of all 1,182.",
+          "figures": [
+            "14.3%",
+            "196",
+            "8.8%",
+            "1,182"
+          ],
+          "topics": [
+            "helicopter",
+            "hoover-dam",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Reviews that mention the dam describe the pilot's commentary more often than the sample as a whole: 41.8% of the 196 use words like commentary, facts or history, against 31.0% of all 1,182.",
+          "figures": [
+            "41.8%",
+            "196",
+            "31.0%",
+            "1,182"
+          ],
+          "topics": [
+            "helicopter",
+            "hoover-dam",
+            "guides"
+          ]
+        }
+      ]
+    },
+    "hoover-dam-lake-mead-boulder-city-day": {
+      "hash": "0ebe93642fc83db9a1dff4479d161a078fa098fc9f82a1012eeef4f57d7c1a78",
+      "candidatos": [
+        {
+          "fact": "Hoover Dam sits about 45 minutes from the Strip, which leaves most of a day to fill.",
+          "figures": [
+            "45 minutes"
+          ],
+          "topics": [
+            "hoover-dam",
+            "timing",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Five minutes of checking beats arguing in a queue in 40-degree heat.",
+          "figures": [
+            "40-degree"
+          ],
+          "topics": [
+            "hoover-dam",
+            "tickets",
+            "logistics"
+          ]
+        }
+      ]
+    },
+    "hoover-dam-tour-from-las-vegas": {
+      "hash": "2231baeb25f403b5c3c256a098b2bf4af242ef1554b18b449563c6bdb3d5d106",
+      "candidatos": [
+        {
+          "fact": "Hoover Dam is an easy half-day trip from Las Vegas — about a 35–45 minute drive — and worth it if engineering, history, or a break from the Strip appeals to you.",
+          "figures": [
+            "35–45 minute"
+          ],
+          "topics": [
+            "hoover-dam",
+            "timing",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Hoover Dam sits about 35 to 45 minutes from the Strip, which makes self-driving tempting — and it works, with caveats.",
+          "figures": [
+            "35 to 45 minutes"
+          ],
+          "topics": [
+            "hoover-dam",
+            "getting-around"
+          ]
+        },
+        {
+          "fact": "You'll pass through a mandatory security checkpoint (keep your vehicle tidy to speed it up), and parking runs around $10 on the Nevada side, with a free lot farther out on the Arizona side.",
+          "figures": [
+            "$10"
+          ],
+          "topics": [
+            "hoover-dam",
+            "logistics",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "The Self-Guided Visitor Center Tour (around $15) is the lightest — exhibits, a film, a 3D model, and the observation deck with 360-degree views of the dam, Colorado River, Lake Mead, and the bypass bridge.",
+          "figures": [
+            "$15"
+          ],
+          "topics": [
+            "hoover-dam",
+            "tickets",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "The Guided Powerplant Tour (roughly $15–25, about 30 minutes) takes you down to see the generators in the Nevada powerhouse and a viewing platform over a massive penstock — your first real look inside.",
+          "figures": [
+            "$15–25",
+            "30 minutes"
+          ],
+          "topics": [
+            "hoover-dam",
+            "tickets",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "The Guided Dam Tour (around $30–40, about an hour) is the deepest experience: it includes the powerplant portion plus a walk through the original construction tunnels, an elevator ride, and a view of the Colorado River through an inspection ventilation shaft.",
+          "figures": [
+            "$30–40"
+          ],
+          "topics": [
+            "hoover-dam",
+            "tickets",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Plan for a genuine half day, roughly four to five hours door to door if you're doing a guided tour or a thorough self-drive visit.",
+          "figures": [
+            "four to five hours"
+          ],
+          "topics": [
+            "hoover-dam",
+            "timing",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Tours and the visitor center generally operate from around 9 AM to 5 PM, with the last guided tour departing in the mid-afternoon (often around 3:45 PM), so don't leave it too late in the day.",
+          "figures": [
+            "9 AM",
+            "5 PM",
+            "3:45 PM"
+          ],
+          "topics": [
+            "hoover-dam",
+            "timing"
+          ]
+        },
+        {
+          "fact": "The Guided Dam Tour (~$30–40, ~1 hour) is the most in-depth — adding the original construction tunnels and a Colorado River view — but it's sold on-site only and sells out daily, so arrive early.",
+          "figures": [
+            "$30–40",
+            "1 hour"
+          ],
+          "topics": [
+            "hoover-dam",
+            "tickets",
+            "pricing"
+          ]
+        }
+      ]
+    },
+    "horseshoe-bend-from-las-vegas-what-reviews-say": {
+      "hash": "b29da501adc8aa515b8d6fde6a8dfac6c783e88d2cf970f6f2db065b1157d0b9",
+      "candidatos": [
+        {
+          "fact": "Only one of the 84 reviews is rated below four stars.",
+          "figures": [
+            "84"
+          ],
+          "topics": [
+            "grand-canyon",
+            "desert-parks"
+          ]
+        },
+        {
+          "fact": "Ten of the 84 mention photographs, and the pattern is specific: the guide takes them.",
+          "figures": [
+            "84"
+          ],
+          "topics": [
+            "grand-canyon",
+            "guides"
+          ],
+          "scale": "Eighty-four reviews across five operators mention Horseshoe Bend, and only one is rated below four stars."
+        },
+        {
+          "fact": "Fifteen of the 84 mention the temperature, water or shade, and they mention it alongside what the operator handed them.",
+          "figures": [
+            "84"
+          ],
+          "topics": [
+            "grand-canyon",
+            "logistics"
+          ],
+          "scale": "Eighty-four reviews across five operators mention Horseshoe Bend, and only one is rated below four stars."
+        },
+        {
+          "fact": "In 84 reviews of a place famous for a sheer unfenced drop above a river, three mention the edge and six mention the walk to reach it.",
+          "figures": [
+            "84"
+          ],
+          "topics": [
+            "grand-canyon",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "One reviewer describes a 4:45 in the morning pickup.",
+          "figures": [
+            "4:45"
+          ],
+          "topics": [
+            "grand-canyon",
+            "timing",
+            "logistics"
+          ]
+        }
+      ]
+    },
+    "how-long-are-las-vegas-shows": {
+      "hash": "727dc7520ca946cb64966a82d0b55ebd790524e31f73afa80e41dff2eb5c5e81",
+      "candidatos": [
+        {
+          "fact": "The four Cirque du Soleil shows we measured in Las Vegas (O, Mystère, KÀ and Michael Jackson ONE) are listed at 90 minutes with no intermission, and 38 of the 39 reviewers who timed them say 90.",
+          "figures": [
+            "90",
+            "38",
+            "39"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Absinthe is listed at about 80 minutes, and the 17 reviewers who timed it disagree with each other more than for any other show: their figures run from under an hour to ninety minutes.",
+          "figures": [
+            "80",
+            "17"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Blue Man Group lists its show at roughly 90 to 105 minutes.",
+          "figures": [
+            "90",
+            "105"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "The Wizard of Oz at Sphere is listed at approximately 75 minutes, and doors open 45 minutes before the time on the ticket.",
+          "figures": [
+            "75",
+            "45"
+          ],
+          "topics": [
+            "shows",
+            "strip-fremont"
+          ]
+        },
+        {
+          "fact": "The original 1939 film runs 102 minutes, so the Sphere version is shorter by more than twenty minutes.",
+          "figures": [
+            "1939",
+            "102"
+          ],
+          "topics": [
+            "shows",
+            "strip-fremont"
+          ]
+        },
+        {
+          "fact": "O is listed at 90 minutes with no intermission, and all eight reviewers in our sample who timed it say ninety.",
+          "figures": [
+            "90"
+          ],
+          "topics": [
+            "shows"
+          ]
+        }
+      ]
+    },
+    "how-much-las-vegas-trip-costs": {
+      "hash": "f1e066c27dff4fbb0232803e3385c9521829e491a082860672623a05e9068e91",
+      "candidatos": [
+        {
+          "fact": "Almost every Strip hotel adds a mandatory resort fee — typically $40 to $55 per night before tax — that you pay whether or not you touch the wifi, gym, or pool it supposedly covers.",
+          "figures": [
+            "$40",
+            "$55"
+          ],
+          "topics": [
+            "resort-fees",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "A room advertised at a tempting rate can land 25% higher at checkout once the fee and taxes are added.",
+          "figures": [
+            "25%"
+          ],
+          "topics": [
+            "resort-fees",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "If you're driving, add parking: most Strip garages charge guests $20 to $25 a day for self-parking, with valet running $40 to $50.",
+          "figures": [
+            "$20",
+            "$25",
+            "$40",
+            "$50"
+          ],
+          "topics": [
+            "pricing",
+            "getting-around"
+          ]
+        }
+      ]
+    },
+    "how-to-book-a-las-vegas-tour-without-getting-burned": {
+      "hash": "4e786a43eb1944db87f985a25e61a481a0c87aaf530096c7da0a5bdd2f8cd2d9",
+      "candidatos": [
+        {
+          "fact": "Twenty-three reviews describe a refund being refused, delayed or never arriving, and all 23 come from reviews rated one to three stars.",
+          "figures": [
+            "23"
+          ],
+          "topics": [
+            "cancellation",
+            "booking"
+          ]
+        }
+      ]
+    },
+    "how-to-choose-las-vegas-shows": {
+      "hash": "2417a193e7a3bb93a446497715b01a3be69d3cb0566ea29c801f92e33be8ccc9",
+      "candidatos": [
+        {
+          "fact": "Don't stack a 14-hour Grand Canyon day and a late-night show back to back.",
+          "figures": [
+            "14-hour"
+          ],
+          "topics": [
+            "timing",
+            "shows",
+            "grand-canyon"
+          ]
+        }
+      ]
+    },
+    "how-to-get-around-las-vegas": {
+      "hash": "aa5823eb04bbffdb1f237b886c057a28cfdbdb4231624c69aa3d55815b0e3e74",
+      "candidatos": [
+        {
+          "fact": "Harry Reid International Airport sits just a few miles from the Strip — most hotels are a 10 to 15 minute drive.",
+          "figures": [
+            "10 to 15 minute"
+          ],
+          "topics": [
+            "getting-around",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "RTC public buses (routes 108 or 109) connect to the Strip and to the Deuce, getting you to your hotel for a fraction of the cost if you don't mind the extra time and a transfer.",
+          "figures": [
+            "108",
+            "109"
+          ],
+          "topics": [
+            "getting-around",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "The Deuce is the workhorse of Las Vegas transport — a 24-hour double-decker bus that runs the full length of the Strip, roughly nine miles from Mandalay Bay at the south end up to the Fremont Street Experience downtown, stopping at nearly every major resort along the way.",
+          "figures": [
+            "24-hour",
+            "nine miles"
+          ],
+          "topics": [
+            "getting-around",
+            "strip-fremont"
+          ]
+        },
+        {
+          "fact": "It comes about every 15 minutes during the day and a bit less often overnight, and because it runs around the clock, it's a lifeline for late nights.",
+          "figures": [
+            "15 minutes"
+          ],
+          "topics": [
+            "getting-around",
+            "timing"
+          ]
+        },
+        {
+          "fact": "RTC offers options including 2-hour, 24-hour, and multi-day passes, and if you're going to hop on and off several times a day, a 24-hour or 3-day pass quickly beats paying for multiple rideshares.",
+          "figures": [
+            "2-hour",
+            "24-hour",
+            "3-day"
+          ],
+          "topics": [
+            "getting-around",
+            "booking",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "The Las Vegas Monorail runs along the east side of the Strip with seven stops, from SAHARA down to MGM Grand, passing major resorts and the Convention Center; it covers the full line in under 15 minutes and is genuinely useful for skipping traffic, especially during conventions.",
+          "figures": [
+            "seven",
+            "15 minutes"
+          ],
+          "topics": [
+            "getting-around",
+            "strip-fremont"
+          ]
+        },
+        {
+          "fact": "Both run frequently — every several minutes — and cover their routes in well under ten minutes.",
+          "figures": [
+            "ten minutes"
+          ],
+          "topics": [
+            "getting-around",
+            "timing"
+          ]
+        },
+        {
+          "fact": "The airport's Rental Car Center runs 24/7 with a dedicated shuttle.",
+          "figures": [
+            "24/7"
+          ],
+          "topics": [
+            "getting-around",
+            "logistics"
+          ]
+        }
+      ]
+    },
+    "is-the-grand-canyon-day-trip-from-las-vegas-worth-it": {
+      "hash": "9a0d4e52a4d9a6c2e314130d0fca7362297936585f162643eb6ead61a09f1e85",
+      "candidatos": [
+        {
+          "fact": "By the reviews, yes for a first visit: 13.6% of high-rated reviewers volunteer that they would do it again or call it a must, against 1.5% of the low-rated ones.",
+          "figures": [
+            "13.6%",
+            "1.5%"
+          ],
+          "topics": [
+            "grand-canyon",
+            "booking"
+          ]
+        },
+        {
+          "fact": "\"Not worth it\" appears in 8.8% of the one- and two-star reviews and 0.1% of the four- and five-star ones.",
+          "figures": [
+            "8.8%",
+            "0.1%"
+          ],
+          "topics": [
+            "grand-canyon",
+            "tickets"
+          ]
+        }
+      ]
+    },
+    "ka-cirque-du-soleil-las-vegas-boring-reviews": {
+      "hash": "6d45927e6b7a8f677ff8eed8dcb293815893895538514392bcf08c0208a0f1f3",
+      "candidatos": [
+        {
+          "fact": "Boredom-related language (boring, slow, asleep) appears in 49.0% of the one- and two-star reviews and 5.9% of the four- and five-star ones, where five of the thirteen use it to reject the criticism.",
+          "figures": [
+            "49.0%",
+            "5.9%"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "In twelve of the 49 low-rated reviews, the writer, or someone they came with, fell asleep or could not keep their eyes open.",
+          "figures": [
+            "49"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Three of the 222 good reviews mention sleep.",
+          "figures": [
+            "222"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Eleven of the 49 one- and two-star reviews praise the stage or the set in the same review that gives the show one or two stars.",
+          "figures": [
+            "49"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "The acrobatics do not separate the two groups either: 28.6% of the low-rated reviews mention them and 26.6% of the good ones do.",
+          "figures": [
+            "28.6%",
+            "26.6%"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Thirteen of the 222 good reviews use the same words, and five of those thirteen are arguing with the people who called it boring.",
+          "figures": [
+            "222"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "What the ratings do say is that the group that loved it is far larger, 222 reviews against 49, and that the smaller group describes the same thing again and again.",
+          "figures": [
+            "222",
+            "49"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Boredom-related words (boring, slow, asleep) appear in 49.0% of KÀ's one- and two-star reviews and 5.9% of the four- and five-star ones, and five of those good reviews use them to disagree.",
+          "figures": [
+            "49.0%",
+            "5.9%"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "The sample is 300 reviews collected without filtering by rating.",
+          "figures": [
+            "300"
+          ],
+          "topics": [
+            "shows"
+          ]
+        }
+      ]
+    },
+    "las-vegas-atv-tour-what-reviews-say": {
+      "hash": "e38d2e0befd5a13c8edd733a37c00b17380f9af0b3c93622a6d423d3a7dc5e04",
+      "candidatos": [
+        {
+          "fact": "Of 300 reviews of one Las Vegas ATV tour operator, listed on TripAdvisor as Las Vegas ATVs, 154 name one guide and only 34 describe the terrain.",
+          "figures": [
+            "300",
+            "154",
+            "34"
+          ],
+          "topics": [
+            "adventure-activities",
+            "guides",
+            "operators"
+          ]
+        },
+        {
+          "fact": "The median review is 130 characters long: a first name and an adjective.",
+          "figures": [
+            "130"
+          ],
+          "topics": [
+            "guides",
+            "operators"
+          ]
+        },
+        {
+          "fact": "119 of the 300 are under a hundred characters.",
+          "figures": [
+            "119",
+            "300"
+          ],
+          "topics": [
+            "guides",
+            "operators"
+          ]
+        },
+        {
+          "fact": "Of the 300, 225 name a guide.",
+          "figures": [
+            "300",
+            "225"
+          ],
+          "topics": [
+            "guides",
+            "operators"
+          ]
+        },
+        {
+          "fact": "The reviews that name him average 4.97 against 4.81 for the rest of the sample.",
+          "figures": [
+            "4.97",
+            "4.81"
+          ],
+          "topics": [
+            "guides",
+            "operators"
+          ],
+          "scale": "Eight of the 300 are rated one to three stars, and the quotes that describe the ride come from those eight."
+        },
+        {
+          "fact": "The other names in the file — Alex with 22, Brett with 14, Kenny with 11 — are a long way behind.",
+          "figures": [
+            "22",
+            "14",
+            "11"
+          ],
+          "topics": [
+            "guides",
+            "operators"
+          ]
+        },
+        {
+          "fact": "Eight of the 300 are rated one to three stars, and the quotes that describe the ride come from those eight.",
+          "figures": [
+            "300"
+          ],
+          "topics": [
+            "guides",
+            "operators",
+            "adventure-activities"
+          ]
+        }
+      ]
+    },
+    "las-vegas-casino-gambling-responsibly": {
+      "hash": "ece33b6ef7da695601cf43168248ba0140a0dfaa51065b4c3e728063a30fbde9",
+      "candidatos": [
+        {
+          "fact": "The games with the lowest house edge — meaning your money lasts longer — are blackjack (under about 1% if you play basic strategy at a table that pays 3:2), baccarat (betting banker or player, around 1%), and craps (sticking to the basic pass/don't-pass bets, around 1.4%)",
+          "figures": [
+            "1%",
+            "3:2",
+            "1%",
+            "1.4%"
+          ],
+          "topics": [
+            "nightlife",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Roulette is middling on a single-zero wheel (about 2.7%) and worse on double-zero (about 5.3%)",
+          "figures": [
+            "2.7%",
+            "5.3%"
+          ],
+          "topics": [
+            "nightlife",
+            "pricing"
+          ],
+          "scale": "Every game has a built-in house edge — the percentage the casino expects to keep, on average, of everything wagered over time"
+        },
+        {
+          "fact": "Steer clear of 6:5 blackjack (the payout rule quietly doubles the house edge versus a 3:2 table), triple-zero roulette, exotic craps bets like \"any seven,\" the tie bet in baccarat, and most slots and side bets, which carry high and unpredictable edges",
+          "figures": [
+            "6:5",
+            "3:2"
+          ],
+          "topics": [
+            "nightlife",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "In the U.S., the National Problem Gambling Helpline offers free, confidential support 24/7 — call 1-800-MY-RESET, text 800GAM, or chat at ncpgambling.org/chat",
+          "figures": [
+            "24/7",
+            "1-800-MY-RESET",
+            "800GAM"
+          ],
+          "topics": [
+            "nightlife",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Tip the dealer occasionally and your cocktail server a dollar or two per drink — it's expected and keeps the service coming",
+          "figures": [
+            "a dollar or two"
+          ],
+          "topics": [
+            "nightlife",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Gambling is for adults 21+ and should be treated as paid entertainment, never as a source of income",
+          "figures": [
+            "21+"
+          ],
+          "topics": [
+            "nightlife",
+            "logistics"
+          ]
+        }
+      ]
+    },
+    "las-vegas-chapel-wedding-limo-and-transport": {
+      "hash": "b5ca9a2eab5d94cf7173de9ab8c0915350dc3b0cf351ac96a76585cd7ab8f590",
+      "candidatos": [
+        {
+          "fact": "Seventy-three of 300 reviews of The Little Vegas Chapel in Las Vegas mention the limousine, and exactly one of those is rated below four stars.",
+          "figures": [
+            "300"
+          ],
+          "topics": [
+            "weddings"
+          ]
+        }
+      ]
+    },
+    "las-vegas-chapel-wedding-what-you-are-buying": {
+      "hash": "147fdb7b000e23a958f82604672246f65eef1a02036efa224b4559a10d942e60",
+      "candidatos": [
+        {
+          "fact": "Elvis appears in 35.1% of the positive reviews of The Little Vegas Chapel, which makes him popular rather than standard.",
+          "figures": [
+            "35.1%"
+          ],
+          "topics": [
+            "weddings"
+          ]
+        }
+      ]
+    },
+    "las-vegas-colorado-river-kayak-what-reviews-say": {
+      "hash": "49bf3d872a610d9b548105adf5f07caaa6a2aac961726f37bb7f02bc97ad9b28",
+      "candidatos": [
+        {
+          "fact": "Twenty-one point seven per cent name Emerald Cave, 18.0% mention the food, and 15.0% mention the wildlife.",
+          "figures": [
+            "18.0%",
+            "15.0%"
+          ],
+          "topics": [
+            "adventure-activities",
+            "desert-parks"
+          ]
+        },
+        {
+          "fact": "Not one of the 300 is rated below four stars.",
+          "figures": [
+            "300"
+          ],
+          "topics": [
+            "booking",
+            "adventure-activities"
+          ],
+          "scale": "We read 300 reviews of Evolution Expeditions and its Colorado River kayak trips from Las Vegas, collected without filtering by rating."
+        },
+        {
+          "fact": "Wildlife is mentioned as often as the effort — 15.0% — and bighorn sheep are the animal people name.",
+          "figures": [
+            "15.0%"
+          ],
+          "topics": [
+            "adventure-activities",
+            "desert-parks"
+          ]
+        }
+      ]
+    },
+    "las-vegas-day-tours-with-kids": {
+      "hash": "a92200ca9d1103b59b7839749769c7ce61ee0de212b4549731e17eaac4b6f84d",
+      "candidatos": [
+        {
+          "fact": "Two hundred and fourteen reviews across 23 Las Vegas listings mention children, leaving shows aside.",
+          "figures": [
+            "23"
+          ],
+          "topics": [
+            "kids-families"
+          ]
+        },
+        {
+          "fact": "What the reviews separate is not young from old: it is a 25-minute flight from an eleven-hour coach day, and both from Fremont Street, where the objection is not the length at all.",
+          "figures": [
+            "25"
+          ],
+          "topics": [
+            "helicopter",
+            "grand-canyon",
+            "strip-fremont"
+          ]
+        },
+        {
+          "fact": "Fifty of the 214 are rated one to three stars, and almost none of those complain about a child's age.",
+          "figures": [
+            "214"
+          ],
+          "topics": [
+            "kids-families"
+          ],
+          "scale": "Two hundred and fourteen reviews across 23 Las Vegas listings mention children, leaving shows aside."
+        },
+        {
+          "fact": "Thirty-six of the 214 are helicopter reviews, and they contain the smallest ages in the whole sample.",
+          "figures": [
+            "214"
+          ],
+          "topics": [
+            "helicopter",
+            "kids-families"
+          ],
+          "scale": "Two hundred and fourteen reviews across 23 Las Vegas listings mention children, leaving shows aside."
+        },
+        {
+          "fact": "Eighty-five of the 214 are Grand Canyon coach reviews, the largest group.",
+          "figures": [
+            "214"
+          ],
+          "topics": [
+            "grand-canyon",
+            "kids-families"
+          ],
+          "scale": "Two hundred and fourteen reviews across 23 Las Vegas listings mention children, leaving shows aside."
+        },
+        {
+          "fact": "Thirty-five of the 214 are Fremont Street reviews, and they behave differently from every other group: seventeen of those 35 are rated one to three stars, close to half.",
+          "figures": [
+            "214",
+            "35"
+          ],
+          "topics": [
+            "strip-fremont",
+            "kids-families"
+          ],
+          "scale": "Two hundred and fourteen reviews across 23 Las Vegas listings mention children, leaving shows aside."
+        },
+        {
+          "fact": "Forty-five of the 214 come from desert adventure listings — shooting ranges, horseback, supercars — and they are the group where an age limit clearly exists, because reviewers describe being sorted into a product by it.",
+          "figures": [
+            "214"
+          ],
+          "topics": [
+            "adventure-activities",
+            "kids-families"
+          ],
+          "scale": "Two hundred and fourteen reviews across 23 Las Vegas listings mention children, leaving shows aside."
+        }
+      ]
+    },
+    "las-vegas-desert-adventure-tours-what-they-ask": {
+      "hash": "dbe2cd5146f4663031063f5d83352cedbcc956ab200e61755f0b79c5abc24f8a",
+      "candidatos": [
+        {
+          "fact": "The most common thing a happy reviewer volunteers is that they had never done it before: 7.2% say so outright, and 4.6% describe the briefing or the practice they were given.",
+          "figures": [
+            "7.2%",
+            "4.6%"
+          ],
+          "topics": [
+            "adventure-activities",
+            "guides"
+          ]
+        },
+        {
+          "fact": "Heat and water appear in 8.4% of the high-rated reviews and in a similar share of the low-rated ones — the signature of something that describes the day rather than ruining it.",
+          "figures": [
+            "8.4%"
+          ],
+          "topics": [
+            "desert-parks",
+            "adventure-activities"
+          ]
+        },
+        {
+          "fact": "The one complaint that never appears is the one you might expect: in the high-rated reviews the guide or instructor is praised in 11.3%, and in the low-rated ones not once.",
+          "figures": [
+            "11.3%"
+          ],
+          "topics": [
+            "guides",
+            "adventure-activities"
+          ]
+        }
+      ]
+    },
+    "las-vegas-food-tour-downtown-or-strip": {
+      "hash": "cfd66dbe8c12ec9baed440074d8e15966fe30f9c55a99c3811d63f492d330f39",
+      "candidatos": [
+        {
+          "fact": "In 300 reviews of Secret Food Tours, a Las Vegas food tour operator, 25 describe walking downtown and 16 describe the Strip.",
+          "figures": [
+            "300",
+            "25",
+            "16"
+          ],
+          "topics": [
+            "food-tours",
+            "strip-fremont"
+          ]
+        },
+        {
+          "fact": "Across both versions, the single most mentioned element is the person leading it, named 221 times in 300 reviews.",
+          "figures": [
+            "221",
+            "300"
+          ],
+          "topics": [
+            "food-tours",
+            "guides"
+          ]
+        }
+      ]
+    },
+    "las-vegas-food-tour-what-you-get": {
+      "hash": "87127f2cfcf895742a7520d496d437ff6b7c053a17333366500f8b451e25676a",
+      "candidatos": [
+        {
+          "fact": "In 300 reviews of Secret Food Tours, a Las Vegas food tour operator, collected without filtering by rating, 35% of the positive ones describe what they learned — the history of the city, the restaurants, the chefs — and 49.5% mention the guide.",
+          "figures": [
+            "300",
+            "35%",
+            "49.5%"
+          ],
+          "topics": [
+            "food-tours",
+            "guides"
+          ]
+        },
+        {
+          "fact": "By the reviews of Secret Food Tours, the value people describe is not the food alone: 35% of positive reviewers describe what they learned about the city, its restaurants and its chefs, and 12.5% say they were taken somewhere they would not have found.",
+          "figures": [
+            "35%",
+            "12.5%"
+          ],
+          "topics": [
+            "food-tours"
+          ]
+        },
+        {
+          "fact": "Walking is mentioned in 6.4% of the positive reviews, usually as a pleasant amount rather than a warning, and a handful mention the heat.",
+          "figures": [
+            "6.4%"
+          ],
+          "topics": [
+            "food-tours",
+            "logistics"
+          ]
+        }
+      ]
+    },
+    "las-vegas-helicopter-cancellation-rebooking": {
+      "hash": "de3b967ea1fa24e070c24c11cdeb1a92dd1c77603939801ccdaf094da3637283",
+      "candidatos": [
+        {
+          "fact": "Across 103 one- and two-star reviews describing a cancellation, 23% mention being offered a rebooking — a seat on a later flight, usually the next day.",
+          "figures": [
+            "103",
+            "23%"
+          ],
+          "topics": [
+            "cancellation",
+            "booking",
+            "helicopter"
+          ]
+        },
+        {
+          "fact": "Among 103 negative reviews describing a cancellation, 17% say they were told less than a day ahead, 13% the day of the flight, 8% within minutes of departure or pickup, and 3% after arriving.",
+          "figures": [
+            "103",
+            "17%",
+            "13%",
+            "8%",
+            "3%"
+          ],
+          "topics": [
+            "cancellation",
+            "timing",
+            "helicopter"
+          ]
+        },
+        {
+          "fact": "Thirteen of the 99 negative reviews that raise a refund name a booking platform — Viator, Expedia, a travel agent, a third-party site.",
+          "figures": [
+            "99"
+          ],
+          "topics": [
+            "cancellation",
+            "booking",
+            "tickets"
+          ]
+        }
+      ]
+    },
+    "las-vegas-helicopter-pilot-commentary": {
+      "hash": "6974916cc064eae656e3c11e1b10ff519330e9c9d082424ec36942d17111bac2",
+      "candidatos": [
+        {
+          "fact": "Of 784 four- and five-star reviews, 70% mention the pilot, 27% describe them as informative and 27% give their name.",
+          "figures": [
+            "784",
+            "70%",
+            "27%",
+            "27%"
+          ],
+          "topics": [
+            "helicopter",
+            "guides"
+          ]
+        },
+        {
+          "fact": "Among unhappy reviews it cuts both ways: of 42 that mention the pilot, 16 praise them despite some other complaint, and 9 say the pilot barely spoke.",
+          "figures": [
+            "42",
+            "16",
+            "9"
+          ],
+          "topics": [
+            "helicopter",
+            "guides"
+          ]
+        },
+        {
+          "fact": "The pilot appears in 70% of the four- and five-star reviews and in 26% of the one- and two-star ones.",
+          "figures": [
+            "70%",
+            "26%"
+          ],
+          "topics": [
+            "helicopter",
+            "guides"
+          ]
+        },
+        {
+          "fact": "The pattern holds at both operators we measured, with nearly identical figures: the pilot appears in 69% and 71% of their good reviews.",
+          "figures": [
+            "69%",
+            "71%"
+          ],
+          "topics": [
+            "helicopter",
+            "operators",
+            "guides"
+          ]
+        },
+        {
+          "fact": "Most unhappy reviews do not mention the pilot at all: 73 of the 98.",
+          "figures": [
+            "73",
+            "98"
+          ],
+          "topics": [
+            "helicopter",
+            "guides"
+          ]
+        }
+      ]
+    },
+    "las-vegas-helicopter-seat-assignment": {
+      "hash": "75c2087bd717d01406fcfa1d5b09f97dabfa29d50504c1d135fb58f4be3d30f2",
+      "candidatos": [
+        {
+          "fact": "Twenty-three of the 308 one- and two-star reviews mention which side of the helicopter they sat on.",
+          "figures": [
+            "Twenty-three",
+            "308"
+          ],
+          "topics": [
+            "helicopter",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Of 427 four- and five-star reviews, two mention the side.",
+          "figures": [
+            "427",
+            "two"
+          ],
+          "topics": [
+            "helicopter",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Being seated by weight appears in 6.8% of the bad reviews and 3.0% of the good — a ratio of 2.2.",
+          "figures": [
+            "6.8%",
+            "3.0%",
+            "2.2"
+          ],
+          "topics": [
+            "helicopter",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "The upgrade is the one part of this that satisfied passengers talk about more than unhappy ones: it appears in 6.1% of the good reviews and 2.6% of the bad.",
+          "figures": [
+            "6.1%",
+            "2.6%"
+          ],
+          "topics": [
+            "helicopter",
+            "pricing",
+            "booking"
+          ]
+        },
+        {
+          "fact": "What they report paying, by the year they wrote: around $50 through most of the last decade, with $100 reported in 2019 and 2022, $120 in 2023, and $30 in 2026 at an operator that charges only if the upgrade actually happens.",
+          "figures": [
+            "$50",
+            "$100",
+            "2019",
+            "2022",
+            "$120",
+            "2023",
+            "$30",
+            "2026"
+          ],
+          "topics": [
+            "helicopter",
+            "pricing",
+            "booking"
+          ]
+        }
+      ]
+    },
+    "las-vegas-helicopter-tour-birthday-anniversary-proposal": {
+      "hash": "3d37f4801a48433be32aa7028ac718d9ee91f5223a16b2595bf9504dcdb0fc8c",
+      "candidatos": [
+        {
+          "fact": "Of the 74 reviews, 41 mention a birthday, 20 an anniversary, 9 a wedding, a honeymoon or a vow renewal, and 4 a proposal.",
+          "figures": [
+            "74",
+            "41",
+            "20",
+            "9",
+            "4"
+          ],
+          "topics": [
+            "helicopter",
+            "weddings"
+          ],
+          "scale": "We read 1,182 TripAdvisor reviews of three Las Vegas helicopter operators; 74 were written around a birthday, an anniversary, a proposal or a wedding."
+        },
+        {
+          "fact": "Nine of the 74 are at one or two stars, too few for a rate.",
+          "figures": [
+            "Nine",
+            "74"
+          ],
+          "topics": [
+            "helicopter",
+            "cancellation"
+          ],
+          "scale": "We read 1,182 TripAdvisor reviews of three Las Vegas helicopter operators; 74 were written around a birthday, an anniversary, a proposal or a wedding."
+        },
+        {
+          "fact": "Of the 74, 37.8% mention champagne or a picnic, against 21.8% of the other 1,108 reviews, and 25.7% mention photos, against 13.9%.",
+          "figures": [
+            "74",
+            "37.8%",
+            "21.8%",
+            "1,108",
+            "25.7%",
+            "13.9%"
+          ],
+          "topics": [
+            "helicopter",
+            "weddings"
+          ]
+        }
+      ]
+    },
+    "las-vegas-helicopter-tour-cancellations": {
+      "hash": "8c58141699fc3ec9ad511d1b1074c6447458a3f3b09dcc524b860c10afff26a0",
+      "candidatos": [
+        {
+          "fact": "A third of the one- and two-star reviews of Las Vegas helicopter operators describe a cancelled flight — against 1.4% of the good ones.",
+          "figures": [
+            "1.4%"
+          ],
+          "topics": [
+            "helicopter",
+            "cancellation"
+          ]
+        },
+        {
+          "fact": "Weather is the only reason that also turns up in five-star reviews, at 5%.",
+          "figures": [
+            "5%"
+          ],
+          "topics": [
+            "helicopter",
+            "cancellation"
+          ]
+        },
+        {
+          "fact": "“They could not fill the aircraft” appears zero times in 784 positive reviews.",
+          "figures": [
+            "zero",
+            "784"
+          ],
+          "topics": [
+            "helicopter",
+            "cancellation"
+          ]
+        },
+        {
+          "fact": "Waiting is just as frequent but far less decisive: it also appears in 6.9% of the good reviews, because a wait is part of a normal flight day.",
+          "figures": [
+            "6.9%"
+          ],
+          "topics": [
+            "helicopter",
+            "timing"
+          ]
+        },
+        {
+          "fact": "Across 103 negative reviews that mention a cancellation, the wording points to the operator in 67 and to the customer in one.",
+          "figures": [
+            "103",
+            "67",
+            "one"
+          ],
+          "topics": [
+            "helicopter",
+            "cancellation"
+          ]
+        },
+        {
+          "fact": "When the reviews do name weather, travelers largely accept it — the 2.90-star average of those cancellations is well above the 1.51 of the rest.",
+          "figures": [
+            "2.90",
+            "1.51"
+          ],
+          "topics": [
+            "helicopter",
+            "cancellation"
+          ],
+          "scale": "When we tagged the corpus by topic, weather-related cancellations separated themselves from the rest, and the two groups do not score alike: 2.90 stars against 1.51."
+        },
+        {
+          "fact": "Across the twelve months of the year, the share of negative helicopter reviews mentioning a cancellation runs between 14% and 37% with no pattern — February and January sit near the top, May and June near the bottom, and July, August and December land in the middle.",
+          "figures": [
+            "14%",
+            "37%"
+          ],
+          "topics": [
+            "helicopter",
+            "cancellation",
+            "timing"
+          ]
+        },
+        {
+          "fact": "Of the 103 negative reviews describing a cancellation, 17% say they were told less than a day ahead, 13% say they were told the day of the flight, and 3% say they found out after arriving at the terminal.",
+          "figures": [
+            "103",
+            "17%",
+            "13%",
+            "3%"
+          ],
+          "topics": [
+            "helicopter",
+            "cancellation",
+            "timing"
+          ]
+        },
+        {
+          "fact": "Money comes up in 28% of the negative reviews and 0.6% of the positive ones.",
+          "figures": [
+            "28%",
+            "0.6%"
+          ],
+          "topics": [
+            "helicopter",
+            "cancellation"
+          ]
+        }
+      ]
+    },
+    "las-vegas-helicopter-tour-ground-time": {
+      "hash": "511bdac98d80ef6efef0d503131253c43c796acd7d6ffa0683852f87fb1bc54c",
+      "candidatos": [
+        {
+          "fact": "The flight rarely disappoints: of 123 low-rated reviews in our sample, only 19 blamed the aircraft, the pilot or the flight itself.",
+          "figures": [
+            "123",
+            "19"
+          ],
+          "topics": [
+            "helicopter",
+            "adventure-activities"
+          ]
+        },
+        {
+          "fact": "Waiting an hour or more shows up in 7 of the 95 one- and two-star reviews and in one of the 784 four- and five-star reviews.",
+          "figures": [
+            "7",
+            "95",
+            "784"
+          ],
+          "topics": [
+            "helicopter",
+            "timing",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "The transfer comes up in about a third of all reviews, and at the same rate in both camps: 35% of the bad reviews and 36% of the good.",
+          "figures": [
+            "35%",
+            "36%"
+          ],
+          "topics": [
+            "helicopter",
+            "getting-around",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "On the other side, 141 of the 784 happy reviews mention a limousine, against two of the bad ones",
+          "figures": [
+            "141",
+            "784"
+          ],
+          "topics": [
+            "helicopter",
+            "getting-around"
+          ]
+        },
+        {
+          "fact": "A fuel surcharge is mentioned in 4.2% of the one- and two-star reviews and 0.8% of the good ones.",
+          "figures": [
+            "4.2%",
+            "0.8%"
+          ],
+          "topics": [
+            "helicopter",
+            "pricing"
+          ]
+        }
+      ]
+    },
+    "las-vegas-helicopter-tour-nervous-flyers": {
+      "hash": "29e9c0984c531c82f553d68c0929ab892e7d55655c22144cd2fe8787d0400353",
+      "candidatos": [
+        {
+          "fact": "Four point nine per cent of the four- and five-star reviews mention being frightened, against 2.0% of the one- and two-star ones.",
+          "figures": [
+            "Four point nine per cent",
+            "2.0%"
+          ],
+          "topics": [
+            "helicopter"
+          ]
+        },
+        {
+          "fact": "Motion sickness appears four times in 1,195.",
+          "figures": [
+            "four",
+            "1,195"
+          ],
+          "topics": [
+            "helicopter"
+          ],
+          "scale": "We read 1,195 reviews of three Las Vegas helicopter operators, collected without filtering by rating."
+        },
+        {
+          "fact": "Of the 54, exactly two gave one or two stars.",
+          "figures": [
+            "54",
+            "two",
+            "one or two"
+          ],
+          "topics": [
+            "helicopter"
+          ],
+          "scale": "Fifty-four say the writer or someone with them was nervous, scared or terrified."
+        },
+        {
+          "fact": "Forty-eight of the 54 mention the pilot.",
+          "figures": [
+            "Forty-eight",
+            "54"
+          ],
+          "topics": [
+            "helicopter",
+            "guides"
+          ],
+          "scale": "Fifty-four say the writer or someone with them was nervous, scared or terrified."
+        },
+        {
+          "fact": "Thirteen of the 54 say the flight was smoother than they expected, which is the other half of the same thing: what frightens people in advance is an imagined ride, and the ride they describe is not it.",
+          "figures": [
+            "Thirteen",
+            "54"
+          ],
+          "topics": [
+            "helicopter"
+          ],
+          "scale": "Fifty-four say the writer or someone with them was nervous, scared or terrified."
+        },
+        {
+          "fact": "Of the 1,195, 1,067 are at four or five stars, 30 at three and 98 at one or two.",
+          "figures": [
+            "1,195",
+            "1,067",
+            "30",
+            "98"
+          ],
+          "topics": [
+            "helicopter",
+            "operators"
+          ],
+          "scale": "We read 1,195 reviews of three Las Vegas helicopter operators, collected without filtering by rating."
+        },
+        {
+          "fact": "The fear group is 54 reviews: 52 positive, none at three stars and two at one or two.",
+          "figures": [
+            "54",
+            "52",
+            "two"
+          ],
+          "topics": [
+            "helicopter"
+          ]
+        }
+      ]
+    },
+    "las-vegas-helicopter-tours-which-worth-it": {
+      "hash": "8691facf63f64d75a4a6e4f96fa31fde393bde33657f85dba0d7bb0bc9d1be7f",
+      "candidatos": [
+        {
+          "fact": "A Strip night flight is the short, affordable thrill: 10–15 minutes over the lights.",
+          "figures": [
+            "10–15 minutes"
+          ],
+          "topics": [
+            "helicopter",
+            "strip-fremont",
+            "timing"
+          ]
+        },
+        {
+          "fact": "The Strip flight is the entry point — a short hop, usually 10 to 15 minutes, that lifts off from a heliport near the airport (about 10 minutes from the Strip) and sweeps over Las Vegas Boulevard.",
+          "figures": [
+            "10 to 15 minutes",
+            "10 minutes"
+          ],
+          "topics": [
+            "helicopter",
+            "timing",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "After the flight out, the helicopter descends below the rim and touches down on the canyon floor at the West Rim — roughly 3,200 feet down — where you typically spend around 20 minutes on a private bluff with a champagne toast and light refreshments.",
+          "figures": [
+            "3,200 feet",
+            "20 minutes"
+          ],
+          "topics": [
+            "grand-canyon",
+            "helicopter",
+            "timing"
+          ]
+        },
+        {
+          "fact": "The thing to know going in: the time actually on the canyon floor is short — around 20 minutes on many landing tours — so you're paying for the descent and the singular experience of standing where most visitors never reach, not for a long stay.",
+          "figures": [
+            "20 minutes"
+          ],
+          "topics": [
+            "grand-canyon",
+            "helicopter",
+            "timing"
+          ]
+        },
+        {
+          "fact": "The flight itself is short — typically 10 to 15 minutes over the Strip and Downtown.",
+          "figures": [
+            "10 to 15 minutes"
+          ],
+          "topics": [
+            "helicopter",
+            "strip-fremont",
+            "timing"
+          ]
+        },
+        {
+          "fact": "With check-in, a safety briefing, and transport to the heliport (about 10 minutes from the Strip), budget roughly 1.5 to 2 hours door to door.",
+          "figures": [
+            "10 minutes",
+            "1.5 to 2 hours"
+          ],
+          "topics": [
+            "helicopter",
+            "timing",
+            "logistics"
+          ]
+        }
+      ]
+    },
+    "las-vegas-horseback-riding-what-the-day-includes": {
+      "hash": "7f77f9a6f5fe46f2bbbb3af84fbe2bc9b50df62c1e7e33bd8f68ab1cea158dec",
+      "candidatos": [
+        {
+          "fact": "The ranch sells a breakfast departure and a sunset one, and the reviews are not evenly split: 39.7% of the positive ones mention breakfast against 11.0% that mention the sunset.",
+          "figures": [
+            "39.7%",
+            "11.0%"
+          ],
+          "topics": [
+            "timing",
+            "adventure-activities"
+          ]
+        },
+        {
+          "fact": "Nineteen of the 290 positive reviewers — 6.6% — describe the same person doing both jobs.",
+          "figures": [
+            "Nineteen",
+            "290",
+            "6.6%"
+          ],
+          "topics": [
+            "guides",
+            "operators"
+          ]
+        },
+        {
+          "fact": "At the ranch the roles change hands: the wranglers who run the trail ride are different people, and they are mentioned in 32.8% of the positive reviews, more often than the food.",
+          "figures": [
+            "32.8%"
+          ],
+          "topics": [
+            "guides",
+            "adventure-activities"
+          ]
+        },
+        {
+          "fact": "By the reviews, no: 9.3% of positive reviewers say it was their first time on a horse and describe a briefing and a horse chosen for them.",
+          "figures": [
+            "9.3%"
+          ],
+          "topics": [
+            "adventure-activities",
+            "kids-families"
+          ]
+        },
+        {
+          "fact": "Reviewers of Wild West Horseback Adventures describe a drive of around 45 minutes each way plus the ride and a meal at the ranch.",
+          "figures": [
+            "45 minutes"
+          ],
+          "topics": [
+            "logistics",
+            "getting-around",
+            "timing"
+          ]
+        },
+        {
+          "fact": "Ten per cent of the positive reviews mention the ranch animals — the goats, the calf, the dog — as part of what they enjoyed, and 7.9% say something about the condition of the horses, almost always that they looked well kept.",
+          "figures": [
+            "Ten per cent",
+            "7.9%"
+          ],
+          "topics": [
+            "adventure-activities",
+            "desert-parks"
+          ]
+        }
+      ]
+    },
+    "las-vegas-nightlife-club-crawls": {
+      "hash": "e64883d044e8f6fb87f78b049454020749f9a7fef1b6d2fa9202c4c5e169e33b",
+      "candidatos": [
+        {
+          "fact": "A club crawl is an organized night that takes a group through three or four bars and clubs with hosts, skip-some-line access, and often a party bus; you trade flexibility for ease.",
+          "figures": [
+            "three or four"
+          ],
+          "topics": [
+            "nightlife",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "The legal age is 21, everyone needs a valid physical ID, and international visitors should carry a passport — a photo on your phone won't cut it.",
+          "figures": [
+            "21"
+          ],
+          "topics": [
+            "nightlife",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Then there are tips: a dollar or two per drink, or 15–20% on a tab, plus something for a host or bus driver on a crawl.",
+          "figures": [
+            "15–20%"
+          ],
+          "topics": [
+            "nightlife",
+            "pricing"
+          ]
+        }
+      ]
+    },
+    "las-vegas-resort-fees-tipping-hidden-charges": {
+      "hash": "b871ec0fcbd173200225c05ba65eae9404839b22fadc52c5dc2e6e738a3fd7b7",
+      "candidatos": [
+        {
+          "fact": "A resort fee is a mandatory daily charge that nearly every Strip and downtown hotel adds on top of your room rate — typically $40 to $55 per night before tax, and higher at some luxury properties.",
+          "figures": [
+            "$40",
+            "$55"
+          ],
+          "topics": [
+            "resort-fees",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "The first is parking: most Strip garages charge guests around $20 to $25 a day for self-parking, with valet running $40 to $50.",
+          "figures": [
+            "$20",
+            "$25",
+            "$40",
+            "$50"
+          ],
+          "topics": [
+            "pricing",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "As a baseline, restaurants and bars run on the standard U.S. norm of 15 to 20% on the pre-tax total — closer to 20% for good service.",
+          "figures": [
+            "15",
+            "20%"
+          ],
+          "topics": [
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Many restaurants, and most large groups, have a service charge or auto-gratuity already added to the bill — often 18 to 20%.",
+          "figures": [
+            "18",
+            "20%"
+          ],
+          "topics": [
+            "pricing"
+          ]
+        },
+        {
+          "fact": "A growing number of Strip restaurants and bars add a CNF charge — short for \"concession and franchise fee\" — typically 3 to 5% of the bill, on top of tax.",
+          "figures": [
+            "3",
+            "5%"
+          ],
+          "topics": [
+            "pricing",
+            "resort-fees"
+          ]
+        },
+        {
+          "fact": "Standard U.S. norms apply: 15–20% at restaurants and bars (or a few dollars per drink), a few dollars for valet when your car returns, a few dollars per night for housekeeping, $1–2 per bag for a bellhop, and 10–15% for rideshares.",
+          "figures": [
+            "15–20%",
+            "$1–2",
+            "10–15%"
+          ],
+          "topics": [
+            "pricing",
+            "getting-around"
+          ]
+        }
+      ]
+    },
+    "las-vegas-shooting-range-what-reviews-describe": {
+      "hash": "e293c1861ce957df6fde337f261e441b4d1115352bc9d8af6b2553ddde6a7db6",
+      "candidatos": [
+        {
+          "fact": "What reviewers describe is a supervised session rather than time on a lane: 22.5% write about being instructed one to one, 17.6% mention that staff are veterans, 16.3% mention the free ride from the hotel and 28.4% mention the military vehicles outside.",
+          "figures": [
+            "22.5%",
+            "17.6%",
+            "16.3%",
+            "28.4%"
+          ],
+          "topics": [
+            "adventure-activities",
+            "operators",
+            "logistics"
+          ],
+          "scale": "Percentages are shares of the 289 positive reviews that mention a theme, found by pattern and then read."
+        },
+        {
+          "fact": "Reviewers of Battlefield Vegas describe a free round-trip ride from their hotel, and 16.3% of the positive ones mention it.",
+          "figures": [
+            "16.3%"
+          ],
+          "topics": [
+            "logistics",
+            "getting-around"
+          ],
+          "scale": "Percentages are shares of the 289 positive reviews that mention a theme, found by pattern and then read."
+        }
+      ]
+    },
+    "las-vegas-show-ratings-what-they-hide": {
+      "hash": "fd3c70e72634dff050dd0700d20b6b012c0a56f52a70c99f362b89478c9363f3",
+      "candidatos": [
+        {
+          "fact": "Absinthe and O both average 3.98 stars, and for both, about one review in five is negative.",
+          "figures": [
+            "3.98"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Absinthe — 3.98 average, 20.0% one- and two-star, 71.2% four- and five-star.",
+          "figures": [
+            "3.98",
+            "20.0%",
+            "71.2%"
+          ],
+          "topics": [
+            "shows"
+          ],
+          "scale": "Absinthe and O both average 3.98 stars, and for both, about one review in five is negative."
+        },
+        {
+          "fact": "O by Cirque du Soleil — 3.98 average, 19.8% one- and two-star, 71.4% four- and five-star.",
+          "figures": [
+            "3.98",
+            "19.8%",
+            "71.4%"
+          ],
+          "topics": [
+            "shows"
+          ],
+          "scale": "Absinthe and O both average 3.98 stars, and for both, about one review in five is negative."
+        },
+        {
+          "fact": "“Raunchy” appears in 23% of Absinthe’s bad reviews and in none of O’s.",
+          "figures": [
+            "23%"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "“Clowns” appears in 42% of O’s and in none of Absinthe’s.",
+          "figures": [
+            "42%"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "For Absinthe, the adult humor appears in 47% of its bad reviews and 46% of its good ones.",
+          "figures": [
+            "47%",
+            "46%"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Craft is the one thing the two camps tend not to fight about: roughly one in five of the bad reviews of each show goes out of its way to praise the performers anyway — 19% for Absinthe, 18% for O.",
+          "figures": [
+            "19%",
+            "18%"
+          ],
+          "topics": [
+            "shows"
+          ]
+        }
+      ]
+    },
+    "las-vegas-show-seats-where-to-sit": {
+      "hash": "fa0d5f9a00d8c2e1580d0cdd30e1e402f97e3de500826b6a8cea4fe164b24de3",
+      "candidatos": [
+        {
+          "fact": "At Michael Jackson ONE, 22 reviewers, nearly all fans, advise sitting further back so you do not miss what happens overhead.",
+          "figures": [
+            "22"
+          ],
+          "topics": [
+            "shows"
+          ]
+        }
+      ]
+    },
+    "las-vegas-shows-with-kids": {
+      "hash": "e31707e856c935ed2eb3cb5dbf77008f5a4716315af661086445c42f89c4a049",
+      "candidatos": [
+        {
+          "fact": "All 21 who took kids to Mystère gave it four or five stars, including parents of four- and five-year-olds.",
+          "figures": [
+            "21"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ]
+        },
+        {
+          "fact": "Blue Man Group had the most families, 31 of 38 happy, but the unhappy ones say the humor lands with young children and not with adults.",
+          "figures": [
+            "31",
+            "38"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ]
+        }
+      ]
+    },
+    "las-vegas-strip-night-helicopter-flight": {
+      "hash": "b724ccdd033c49bc3dae68f01b6b98cac346631a4d0ce4eeb55ab88cd3220ca1",
+      "candidatos": [
+        {
+          "fact": "Eight of the 44 mention photographs or video, and the reviews that describe getting it right describe one thing: being in the front.",
+          "figures": [
+            "44"
+          ],
+          "topics": [
+            "helicopter",
+            "adventure-activities"
+          ],
+          "scale": "This article measures 44 reviews mentioning a night or evening flight over the Strip, across three helicopter operators, drawn from a corpus of 14,656 rated Las Vegas reviews collected in 2026 without filtering by rating."
+        },
+        {
+          "fact": "Three operators appear in these 44 reviews, and all three also run canyon tours that last most of a morning and cost several times more.",
+          "figures": [
+            "44"
+          ],
+          "topics": [
+            "helicopter",
+            "grand-canyon",
+            "pricing"
+          ],
+          "scale": "This article measures 44 reviews mentioning a night or evening flight over the Strip, across three helicopter operators, drawn from a corpus of 14,656 rated Las Vegas reviews collected in 2026 without filtering by rating."
+        },
+        {
+          "fact": "Seven of the 44 are rated one to three stars.",
+          "figures": [
+            "44"
+          ],
+          "topics": [
+            "helicopter",
+            "operators"
+          ],
+          "scale": "This article measures 44 reviews mentioning a night or evening flight over the Strip, across three helicopter operators, drawn from a corpus of 14,656 rated Las Vegas reviews collected in 2026 without filtering by rating."
+        }
+      ]
+    },
+    "las-vegas-supercar-driving-what-reviews-describe": {
+      "hash": "8679da566226328fb9ef70ee45f0c8c8f0a05e536e1880152a9a25b7cb3592d0",
+      "candidatos": [
+        {
+          "fact": "The car is not what people write about: 64.4% mention the instructor and 30.2% name the model they drove.",
+          "figures": [
+            "64.4%",
+            "30.2%"
+          ],
+          "topics": [
+            "guides",
+            "adventure-activities"
+          ]
+        },
+        {
+          "fact": "Read the reviews and you get the name of a person: 192 of the 298 positive reviewers mention their instructor, more than twice as many as mention the model.",
+          "figures": [
+            "192",
+            "298"
+          ],
+          "topics": [
+            "guides"
+          ]
+        },
+        {
+          "fact": "In our reviews they describe one session: 33 of the 300 Exotics Racing reviews, written between July 2025 and June 2026, name the track as SPEEDVEGAS, and some use both names in the same sentence.",
+          "figures": [
+            "33",
+            "300",
+            "July 2025",
+            "June 2026"
+          ],
+          "topics": [
+            "adventure-activities",
+            "operators"
+          ]
+        },
+        {
+          "fact": "In 64.4% of the positive reviews of Exotics Racing we read, the reviewer describes an instructor in the car with them, giving directions on braking, turning and acceleration through the lap.",
+          "figures": [
+            "64.4%"
+          ],
+          "topics": [
+            "guides",
+            "adventure-activities"
+          ]
+        },
+        {
+          "fact": "Three things come up often enough in the reviews collected from low ratings only to be worth raising as questions, and not often enough in the representative sample to be worth counting: the upsell at check-in to more laps or a faster car, the video of your session sold separately, and tipping the instructor, which 5.7% of positive reviewers mention on their own.",
+          "figures": [
+            "5.7%"
+          ],
+          "topics": [
+            "pricing",
+            "guides"
+          ]
+        },
+        {
+          "fact": "In the representative sample of 300 there are exactly two low-rated reviews, and neither is about the driving.",
+          "figures": [
+            "300"
+          ],
+          "topics": [
+            "guides",
+            "adventure-activities"
+          ]
+        }
+      ]
+    },
+    "las-vegas-tour-group-size": {
+      "hash": "a197da5f5bf2c5a8457056b9b158e27f074ad3b408b69ca06e119553347e6666",
+      "candidatos": [
+        {
+          "fact": "Seventy-four reviews across 17 Las Vegas listings praise a small group, and 36 across 14 describe a full coach or a crowd.",
+          "figures": [
+            "17",
+            "36",
+            "14"
+          ],
+          "topics": [
+            "crowds",
+            "operators"
+          ]
+        },
+        {
+          "fact": "Of the 17 listings praised for a small group, eleven also appear among the 36 reviews describing a full or crowded one.",
+          "figures": [
+            "17",
+            "36"
+          ],
+          "topics": [
+            "crowds",
+            "operators"
+          ]
+        },
+        {
+          "fact": "At the largest, the split is almost even: 15 reviews call it a small group, 14 describe a full double-decker.",
+          "figures": [
+            "15",
+            "14"
+          ],
+          "topics": [
+            "crowds",
+            "operators"
+          ]
+        },
+        {
+          "fact": "It appears in 74 reviews across 17 listings, and only ten of those 74 are rated one to three stars.",
+          "figures": [
+            "74",
+            "17"
+          ],
+          "topics": [
+            "crowds",
+            "operators"
+          ]
+        }
+      ]
+    },
+    "las-vegas-tour-pickup-and-meeting-point": {
+      "hash": "900814fac4282b5f6a1fc4553f7f98083063c97ec491e63ff8b8bc9f6c77e237",
+      "candidatos": [
+        {
+          "fact": "Some 132 reviews describe being collected at their hotel door, but only 26 of those are coach tours.",
+          "figures": [
+            "132",
+            "26"
+          ],
+          "topics": [
+            "booking",
+            "logistics",
+            "grand-canyon"
+          ]
+        },
+        {
+          "fact": "One hundred and thirty-three reviews across 21 listings name a specific time between three and seven in the morning.",
+          "figures": [
+            "One hundred and thirty-three",
+            "21",
+            "three",
+            "seven"
+          ],
+          "topics": [
+            "timing",
+            "logistics",
+            "getting-around"
+          ]
+        },
+        {
+          "fact": "The most repeated single time is 6:00 a.m., and 4:30 a.m. appears as often as 6:05 does.",
+          "figures": [
+            "6:00 a.m.",
+            "4:30 a.m.",
+            "6:05"
+          ],
+          "topics": [
+            "timing",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Forty-seven reviews across 11 listings describe waiting for a vehicle that had not arrived, and 31 of those 47 come from reviews rated one to three stars.",
+          "figures": [
+            "Forty-seven",
+            "11",
+            "31",
+            "47",
+            "one to three"
+          ],
+          "topics": [
+            "logistics",
+            "grand-canyon",
+            "getting-around"
+          ]
+        }
+      ]
+    },
+    "las-vegas-tours-customer-service-after-a-problem": {
+      "hash": "b41b95700548edfe8a9f07d4a4e80b3cee72e95ac9624d56bafcd3077dbed70e",
+      "candidatos": [
+        {
+          "fact": "Rudeness and customer service is the clearest: it appears in 13.1% of the one- and two-star reviews and 0.8% of the four- and five-star ones, a gap of 17 times, spread across 17 listings and three different products — coach tours to the canyon, shows and helicopter flights.",
+          "figures": [
+            "13.1%",
+            "0.8%",
+            "17 times",
+            "17 listings"
+          ],
+          "topics": [
+            "grand-canyon",
+            "shows",
+            "helicopter"
+          ]
+        }
+      ]
+    },
+    "las-vegas-tours-walking-and-mobility": {
+      "hash": "fcd7996fc3836d1d70b5ccd95e04822b06c68fc2803d7720843a1ed827db0213",
+      "candidatos": [
+        {
+          "fact": "A reviewer brings a 95-year-old father on a coach tour; another takes an 83-year-old mother in a helicopter.",
+          "figures": [
+            "95",
+            "83"
+          ],
+          "topics": [
+            "grand-canyon",
+            "helicopter",
+            "logistics"
+          ]
+        }
+      ]
+    },
+    "las-vegas-vow-renewal-what-reviews-say": {
+      "hash": "b75727012cf36f77558874bea8c9cc45f89af99843006c722eab54f7e4dee9f8",
+      "candidatos": [
+        {
+          "fact": "Of 300 reviews of The Little Vegas Chapel in Las Vegas, 73 describe a vow renewal rather than a wedding — close to one in four.",
+          "figures": [
+            "300",
+            "73"
+          ],
+          "topics": [
+            "weddings"
+          ]
+        },
+        {
+          "fact": "Elvis appears in 44 of the 73 renewal reviews — 60 percent — against 62 of the other 227, which is 27 percent.",
+          "figures": [
+            "44",
+            "73",
+            "60 percent",
+            "62",
+            "227",
+            "27 percent"
+          ],
+          "topics": [
+            "weddings"
+          ]
+        },
+        {
+          "fact": "Sixteen of the 73 renewal reviews mention friends, other couples, family or witnesses present — 22 percent, against 6 percent of the weddings.",
+          "figures": [
+            "73",
+            "22 percent",
+            "6 percent"
+          ],
+          "topics": [
+            "weddings",
+            "kids-families"
+          ]
+        }
+      ]
+    },
+    "maverick-helicopters-las-vegas-what-reviews-say": {
+      "hash": "f7323371a77aa693a0176f60557830a01dd772f9acfdeaf4e623be68068d8cee",
+      "candidatos": [
+        {
+          "fact": "In our sample of 283 TripAdvisor reviews from June 2025 to September 2026, all are at four or five stars and 64.3% mention the pilot.",
+          "figures": [
+            "283",
+            "June 2025",
+            "September 2026",
+            "64.3%"
+          ],
+          "topics": [
+            "helicopter",
+            "guides",
+            "operators"
+          ]
+        },
+        {
+          "fact": "After the pilot come the landing, mentioned in 21.9% of the reviews, and the price, usually as a judgment that the flight was worth it, in 21.6%.",
+          "figures": [
+            "21.9%",
+            "21.6%"
+          ],
+          "topics": [
+            "helicopter",
+            "grand-canyon",
+            "pricing"
+          ]
+        }
+      ]
+    },
+    "michael-jackson-one-las-vegas-loud-dance-show": {
+      "hash": "af9d0dfadce48fc518efa1c5c2abcabc5a9f67ee8bb5a613359312dfef1c9fa1",
+      "candidatos": [
+        {
+          "fact": "35% of the bad reviews complain it is too loud, against 6% of the good; 22% say it is mostly dancing with little Cirque, against 4%.",
+          "figures": [
+            "35%",
+            "6%",
+            "22%",
+            "4%"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Fourteen of the 65 bad reviews say it is mostly dancing, a musical or a concert, with little of the acrobatics Cirque du Soleil is known for.",
+          "figures": [
+            "65"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Twenty-three of the 65 bad reviews describe the show as too loud, and 10 of the 54 three-star ones do: 35% and 19%.",
+          "figures": [
+            "65",
+            "10",
+            "54",
+            "35%",
+            "19%"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Seven of the 23 good reviews that mention the volume also mention earplugs or ear protection.",
+          "figures": [
+            "23"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Three of the 65 bad reviews say they left before the end, and two of those name the volume as the reason",
+          "figures": [
+            "65"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Music: 48% of bad reviews, 49% of good.",
+          "figures": [
+            "48%",
+            "49%"
+          ],
+          "topics": [
+            "shows"
+          ]
+        }
+      ]
+    },
+    "most-expensive-first-timer-mistakes-las-vegas": {
+      "hash": "763891381235730f0a38804cb291cf9e76e76c5b3cc1ab185a05a00f086d1373",
+      "candidatos": [
+        {
+          "fact": "You find a room advertised at $79 a night, feel like you got a deal, and then checkout reveals a mandatory resort fee stacked on top — typically $40 to $55 per night before tax on the Strip — plus tax on the whole thing.",
+          "figures": [
+            "$79",
+            "$40",
+            "$55"
+          ],
+          "topics": [
+            "resort-fees",
+            "pricing",
+            "booking"
+          ]
+        },
+        {
+          "fact": "A \"cheap\" room can quietly cost 25% more than the headline number.",
+          "figures": [
+            "25%"
+          ],
+          "topics": [
+            "resort-fees",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Add parking if you're renting a car — most Strip garages now charge $20 to $25 a day for guests, with valet running $40 to $50 — and the gap between the advertised rate and the real rate widens further.",
+          "figures": [
+            "$20",
+            "$25",
+            "$40",
+            "$50"
+          ],
+          "topics": [
+            "pricing",
+            "logistics",
+            "getting-around"
+          ]
+        },
+        {
+          "fact": "The Strip is about four miles long, and the resorts are massive — what looks like a 10-minute walk on a map is often 20–30 minutes once you account for the size of the buildings, pedestrian bridges, and casino floors you cross.",
+          "figures": [
+            "10-minute",
+            "20–30 minutes"
+          ],
+          "topics": [
+            "getting-around",
+            "logistics",
+            "strip-fremont"
+          ]
+        },
+        {
+          "fact": "Most Strip hotels charge $40 to $55 per night before tax, averaging around $44.",
+          "figures": [
+            "$40",
+            "$55",
+            "$44"
+          ],
+          "topics": [
+            "resort-fees",
+            "pricing",
+            "booking"
+          ]
+        },
+        {
+          "fact": "A Grand Canyon day trip the same day as a late club night, a 9 a.m. tour after a 2 a.m. bedtime, a dinner reservation you're too wiped to keep — these are the no-shows that quietly drain a budget.",
+          "figures": [
+            "9 a.m.",
+            "2 a.m."
+          ],
+          "topics": [
+            "timing",
+            "logistics",
+            "grand-canyon"
+          ]
+        }
+      ]
+    },
+    "mystere-las-vegas-character-that-splits-reviews": {
+      "hash": "f718d05441c40b1f90eee48c149fe2ab8b4b60f19f60e3e10a37c43f521d2276",
+      "candidatos": [
+        {
+          "fact": "One recurring character — a grown man dressed as a baby — appears in 39.2% of the one- and two-star reviews, 39.0% of the three-star ones and 14.0% of the good ones.",
+          "figures": [
+            "39.2%",
+            "39.0%",
+            "14.0%"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Of the 51 low-rated reviews, 19 use a word of praise about the performers or the acts in the same review that awards one or two stars.",
+          "figures": [
+            "51",
+            "19"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Ten of the 51 low-rated reviews — 19.6% — describe the production or the theater as old or dated, against 6.4% of the good ones.",
+          "figures": [
+            "51",
+            "19.6%",
+            "6.4%"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Two of the 51 low-rated reviews fault the acrobatic acts; 19 of them praise the performers while giving one or two stars.",
+          "figures": [
+            "51",
+            "19"
+          ],
+          "topics": [
+            "shows"
+          ]
+        }
+      ]
+    },
+    "o-cirque-du-soleil-las-vegas-nobody-warns-you": {
+      "hash": "e1d5a163f44b1ba937bdef473945796d350842ead4af08d390f672ad6f4ed269",
+      "candidatos": [
+        {
+          "fact": "On the numbers they are twins: 3.98 average for both, 20.0% and 19.8% at one and two stars, 71.2% and 71.4% at four and five.",
+          "figures": [
+            "3.98",
+            "20.0%",
+            "19.8%",
+            "71.2%",
+            "71.4%"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "28.9% of Absinthe’s positive reviews contain a warning about who should not go, against 1.1% of O’s.",
+          "figures": [
+            "28.9%",
+            "1.1%"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "The clowns appear in 42% of O’s one- and two-star reviews and 10% of its four- and five-star ones, and of the 37 positive reviews that mention them, three actually praise them.",
+          "figures": [
+            "42%",
+            "10%",
+            "37"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Within O’s bad reviews, the ones naming boredom run to a median 405 characters against 558 for the rest.",
+          "figures": [
+            "405",
+            "558"
+          ],
+          "topics": [
+            "shows"
+          ]
+        }
+      ]
+    },
+    "papillon-helicopters-las-vegas-what-reviews-say": {
+      "hash": "9010d6ecbf2565ee8074234161c3b95d3ba58f4bfde1be91a7c6264d432eec02",
+      "candidatos": [
+        {
+          "fact": "In the four- and five-star reviews, 68.3% mention the pilot.",
+          "figures": [
+            "68.3%"
+          ],
+          "topics": [
+            "helicopter",
+            "guides",
+            "grand-canyon"
+          ]
+        },
+        {
+          "fact": "In the one- and two-star reviews, cancellation appears in 35.1% against 2.0% of the good ones, and refunds in 31.2% against 0.8%.",
+          "figures": [
+            "35.1%",
+            "2.0%",
+            "31.2%",
+            "0.8%"
+          ],
+          "topics": [
+            "helicopter",
+            "cancellation",
+            "booking"
+          ]
+        },
+        {
+          "fact": "The sample averages 4.27 stars; the listing publishes 4.5.",
+          "figures": [
+            "4.27",
+            "4.5"
+          ],
+          "topics": [
+            "helicopter",
+            "operators"
+          ]
+        },
+        {
+          "fact": "The good reviews mention the landing in 26.1% and a champagne or picnic stop in 22.1%.",
+          "figures": [
+            "26.1%",
+            "22.1%"
+          ],
+          "topics": [
+            "helicopter",
+            "grand-canyon",
+            "adventure-activities"
+          ]
+        },
+        {
+          "fact": "Waiting appears in 36.4% of the low-rated reviews and 5.6% of the good ones.",
+          "figures": [
+            "36.4%",
+            "5.6%"
+          ],
+          "topics": [
+            "helicopter",
+            "cancellation",
+            "logistics"
+          ]
+        }
+      ]
+    },
+    "red-rock-canyon-from-las-vegas": {
+      "hash": "2b0996527f3bfcadd664c46e3708de02646082a80a27457ee2e38fdc93730808",
+      "candidatos": [
+        {
+          "fact": "Red Rock Canyon is the easiest nature escape from Las Vegas — just 17 miles west, built around a 13-mile scenic drive through red sandstone cliffs.",
+          "figures": [
+            "17",
+            "13-mile"
+          ],
+          "topics": [
+            "desert-parks",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Red Rock Canyon is the antidote to the Strip: a 195,000-acre conservation area of towering red and tan sandstone cliffs, just 17 miles west of Las Vegas.",
+          "figures": [
+            "195,000-acre",
+            "17"
+          ],
+          "topics": [
+            "desert-parks"
+          ]
+        },
+        {
+          "fact": "Its heart is a 13-mile one-way scenic drive that winds past viewpoints, trailheads, and formations like the Calico Hills, with 26 hiking trails and world-class rock climbing branching off it.",
+          "figures": [
+            "13-mile",
+            "26"
+          ],
+          "topics": [
+            "desert-parks",
+            "adventure-activities"
+          ]
+        },
+        {
+          "fact": "you can be standing among desert cliffs less than 30 minutes after leaving your hotel",
+          "figures": [
+            "30 minutes"
+          ],
+          "topics": [
+            "desert-parks",
+            "getting-around",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "From October 1 through May 31, between 8 AM and 5 PM, every passenger vehicle entering the scenic drive needs a timed-entry reservation.",
+          "figures": [
+            "October 1",
+            "May 31",
+            "8 AM",
+            "5 PM"
+          ],
+          "topics": [
+            "desert-parks",
+            "tickets",
+            "timing"
+          ]
+        },
+        {
+          "fact": "reservations release on a rolling 30-day window, so popular weekend slots go early",
+          "figures": [
+            "30-day"
+          ],
+          "topics": [
+            "tickets",
+            "booking"
+          ]
+        },
+        {
+          "fact": "There's a small reservation fee (around $2) on top of the entrance fee of roughly $15 per vehicle, which is good for seven days.",
+          "figures": [
+            "$2",
+            "$15",
+            "seven days"
+          ],
+          "topics": [
+            "pricing",
+            "tickets"
+          ]
+        },
+        {
+          "fact": "The reservation is not required from June 1 through September 30 (peak summer, when it's arguably too hot anyway), and it's not required before 8 AM or after 5 PM year-round — so an early-morning arrival skips the whole system and rewards you with cooler temperatures and better light.",
+          "figures": [
+            "June 1",
+            "September 30",
+            "8 AM",
+            "5 PM"
+          ],
+          "topics": [
+            "tickets",
+            "timing",
+            "desert-parks"
+          ]
+        },
+        {
+          "fact": "The scenic drive is the core: 13 paved miles of viewpoints and pullouts, doable in about 40 minutes without stops or a leisurely couple of hours with them, accessible to everyone.",
+          "figures": [
+            "13",
+            "40 minutes"
+          ],
+          "topics": [
+            "desert-parks",
+            "timing"
+          ]
+        },
+        {
+          "fact": "The best months are roughly October through April, when daytime highs sit in a comfortable 60–75°F range; summer is genuinely hot and exposed, which is part of why the reservation system pauses then.",
+          "figures": [
+            "60–75°F"
+          ],
+          "topics": [
+            "timing",
+            "desert-parks"
+          ]
+        },
+        {
+          "fact": "don't try to combine Red Rock with Valley of Fire in the same day — they're about 90 minutes apart in opposite directions from Vegas, so pick one per day",
+          "figures": [
+            "90 minutes"
+          ],
+          "topics": [
+            "desert-parks",
+            "logistics",
+            "timing"
+          ]
+        }
+      ]
+    },
+    "red-rock-canyon-scooter-tour-what-reviews-say": {
+      "hash": "f2460ca27b935e76cbc4422630b113d97f5d2b5fc7a5ec8acc2df85942128770",
+      "candidatos": [
+        {
+          "fact": "Thirty-one of 300 reviewers of Red Rock Scooter Tours say they had never ridden a scooter, and describe being taught before the ride starts.",
+          "figures": [
+            "Thirty-one",
+            "300"
+          ],
+          "topics": [
+            "adventure-activities",
+            "guides",
+            "desert-parks"
+          ]
+        },
+        {
+          "fact": "A hundred and three of the 300 reviews — about a third — mention safety, being kept safe, or feeling comfortable.",
+          "figures": [
+            "A hundred and three",
+            "300"
+          ],
+          "topics": [
+            "adventure-activities",
+            "guides",
+            "desert-parks"
+          ]
+        }
+      ]
+    },
+    "shin-lim-limitless-las-vegas-what-reviews-say": {
+      "hash": "7004d6ada7aef75714f865f8f5beee16629f698cc16f5c2e0786e052227be0ca",
+      "candidatos": [
+        {
+          "fact": "Of the 285 at four and five stars, 27.4% mention cards, close-up work or sleight of hand, and 21.4% mention America's Got Talent, the show that made him famous.",
+          "figures": [
+            "285",
+            "27.4%",
+            "21.4%"
+          ],
+          "topics": [
+            "shows"
+          ],
+          "scale": "We read 342 TripAdvisor reviews of Shin Lim's LIMITLESS, collected without filtering by rating; 285 are at four or five stars."
+        },
+        {
+          "fact": "The second group of complaints, 6 of the 38, is about the screens: the close-up work is shown on large screens, and some reviewers felt they were watching a broadcast rather than a stage.",
+          "figures": [
+            "6",
+            "38"
+          ],
+          "topics": [
+            "shows"
+          ],
+          "scale": "Of those, 285 are at four or five stars, 19 at three and 38 at one or two."
+        },
+        {
+          "fact": "The 72 reviews written in 2025 and 2026 average 4.17 stars, against 4.43 for the 270 written before.",
+          "figures": [
+            "72",
+            "4.17",
+            "4.43",
+            "270"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "Colin Cloud, a mentalist who performed alongside Shin Lim, is named in 169 of the 342 reviews, written between 2019 and 2024 and once in 2025, and The Mirage is named until mid-2024.",
+          "figures": [
+            "169",
+            "342",
+            "2019",
+            "2024",
+            "2025"
+          ],
+          "topics": [
+            "shows"
+          ]
+        },
+        {
+          "fact": "At The Palazzo Theatre at The Venetian Resort, Wednesday to Sunday at 7:30 pm, according to the resort in October 2026.",
+          "figures": [
+            "7:30 pm",
+            "October 2026"
+          ],
+          "topics": [
+            "shows",
+            "booking",
+            "timing"
+          ]
+        }
+      ]
+    },
+    "sphere-las-vegas-seats-tickets-guide": {
+      "hash": "9a1ded2ed93e3d06b00ea5c69fcfcf4129c9e8e79e5a4a1e72618cfe8778059c",
+      "candidatos": [
+        {
+          "fact": "Avoid the back rows of the 100 level (roughly row 24+), where the overhang blocks the upper screen.",
+          "figures": [
+            "24+"
+          ],
+          "topics": [
+            "shows",
+            "tickets"
+          ]
+        },
+        {
+          "fact": "Its own parking fills up fast and runs pricey, so many visitors take a rideshare or park at a neighboring resort and walk over — budget 15 to 20 minutes for that walk.",
+          "figures": [
+            "15",
+            "20"
+          ],
+          "topics": [
+            "logistics",
+            "getting-around"
+          ]
+        },
+        {
+          "fact": "Arrive early — at least 30 to 45 minutes before showtime.",
+          "figures": [
+            "30",
+            "45"
+          ],
+          "topics": [
+            "shows",
+            "timing"
+          ]
+        }
+      ]
+    },
+    "tournament-of-kings-las-vegas-medieval-dinner-show": {
+      "hash": "56e1af2dfac3c33eaa6c3f01e039e83581b02edf1817620a8ec250c670230531",
+      "candidatos": [
+        {
+          "fact": "Tournament of Kings is the medieval dinner show at Excalibur on the Las Vegas Strip: knights on horseback in a 900-seat arena in the round, with a dinner you eat with your hands.",
+          "figures": [
+            "900"
+          ],
+          "topics": [
+            "shows",
+            "strip-fremont"
+          ]
+        },
+        {
+          "fact": "If anyone in your group has dietary needs, Excalibur says accommodations may be available on request, and that they have to be requested at least four hours before showtime through the Excalibur box office.",
+          "figures": [
+            "four hours"
+          ],
+          "topics": [
+            "shows",
+            "booking",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Excalibur listed performances Wednesday through Monday at 6:00 pm and 8:30 pm in October 2026, with no show on Tuesdays and some additional dark dates through the year.",
+          "figures": [
+            "6:00 pm",
+            "8:30 pm",
+            "October 2026"
+          ],
+          "topics": [
+            "shows",
+            "timing",
+            "booking"
+          ]
+        },
+        {
+          "fact": "The 6:00 pm show ends early enough for children; the 8:30 pm show leaves the start of the evening free.",
+          "figures": [
+            "6:00 pm",
+            "8:30 pm"
+          ],
+          "topics": [
+            "shows",
+            "timing",
+            "kids-families"
+          ]
+        }
+      ]
+    },
+    "valley-of-fire-from-las-vegas": {
+      "hash": "d64bf502ae762f20ddb276e2b1b7ac9121577cc88439a13372182e7af2af204e",
+      "candidatos": [
+        {
+          "fact": "Valley of Fire is the most spectacular day trip from Las Vegas — Nevada's oldest state park, about 50 miles northeast (an hour's drive), full of otherworldly red sandstone, petroglyphs, and hikes like the Fire Wave.",
+          "figures": [
+            "50 miles",
+            "an hour's drive"
+          ],
+          "topics": [
+            "desert-parks",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Valley of Fire sits about 50 miles northeast of the Strip; Red Rock is 17 miles west.",
+          "figures": [
+            "50 miles",
+            "17 miles"
+          ],
+          "topics": [
+            "desert-parks",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "They're in opposite directions, roughly 90 minutes apart, so trying to combine them turns a great day into a driving marathon.",
+          "figures": [
+            "90 minutes"
+          ],
+          "topics": [
+            "desert-parks",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "The trade-off: Choosing Valley of Fire over Red Rock means a longer drive (an hour vs about 30 minutes) and a bigger chunk of your day.",
+          "figures": [
+            "an hour",
+            "30 minutes"
+          ],
+          "topics": [
+            "desert-parks",
+            "logistics",
+            "timing"
+          ]
+        },
+        {
+          "fact": "The undisputed star is the Fire Wave — a swirling formation of red and white sandstone that looks like a frozen wave or scoops of ice cream, reached by an easy 1.5-mile round-trip hike and one of the most photographed spots in Nevada.",
+          "figures": [
+            "1.5-mile"
+          ],
+          "topics": [
+            "desert-parks",
+            "adventure-activities"
+          ]
+        },
+        {
+          "fact": "Plan at least a half day — realistically four to six hours inside the park to do the highlights justice.",
+          "figures": [
+            "half day",
+            "four to six hours"
+          ],
+          "topics": [
+            "desert-parks",
+            "timing"
+          ]
+        },
+        {
+          "fact": "The best months are spring (March–May) and fall (September–November), when temperatures are comfortable.",
+          "figures": [
+            "March–May",
+            "September–November"
+          ],
+          "topics": [
+            "desert-parks",
+            "timing"
+          ]
+        },
+        {
+          "fact": "Nevada State Parks closes the Fire Wave, Seven Wonders Loop, Pastel Canyon and Pink Canyon trails every year from May 15 to September 30 for visitor safety, so between those dates the park's signature hike is off the list.",
+          "figures": [
+            "May 15",
+            "September 30"
+          ],
+          "topics": [
+            "desert-parks",
+            "timing"
+          ]
+        },
+        {
+          "fact": "Entry is simple — there's no timed-entry reservation; you just pay the fee (around $15 per vehicle for out-of-state visitors, less for Nevada plates) at the gate, with self-pay during unstaffed early or late hours.",
+          "figures": [
+            "$15"
+          ],
+          "topics": [
+            "desert-parks",
+            "pricing",
+            "tickets"
+          ]
+        },
+        {
+          "fact": "The Visitor Center (open roughly 9 AM to 4 PM) is worth a stop for maps, exhibits, and current trail conditions.",
+          "figures": [
+            "9 AM",
+            "4 PM"
+          ],
+          "topics": [
+            "desert-parks",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Come prepared for the desert: carry plenty of water — about a gallon per person regardless of season — wear strong sun protection, and bring proper shoes for the short hikes.",
+          "figures": [
+            "a gallon"
+          ],
+          "topics": [
+            "desert-parks",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Red Rock is closer (17 miles west), cheaper to reach, great for a quick escape and climbing — but needs a timed-entry reservation October–May.",
+          "figures": [
+            "17 miles",
+            "October–May"
+          ],
+          "topics": [
+            "desert-parks",
+            "logistics",
+            "timing"
+          ]
+        }
+      ]
+    },
+    "what-to-bring-las-vegas-tour": {
+      "hash": "e2a43fa2957e38302372444922ece06006a58d9bd6540e1debc1c8596175c75d",
+      "candidatos": [
+        {
+          "fact": "Water is what reviewers mention most: 145 times, and they contradict each other because the operators do — 88 say it was provided, 25 say bring your own.",
+          "figures": [
+            "145",
+            "88",
+            "25"
+          ],
+          "topics": [
+            "grand-canyon",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Inside the theaters it is the air conditioning, and 21 reviews across five shows say so.",
+          "figures": [
+            "21"
+          ],
+          "topics": [
+            "shows",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Thirty-six Grand Canyon reviews mention being cold and 22 reviews overall mention footwear.",
+          "figures": [
+            "22"
+          ],
+          "topics": [
+            "grand-canyon",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Fifty-five reviews across 16 listings mention dust or wind.",
+          "figures": [
+            "16"
+          ],
+          "topics": [
+            "desert-parks",
+            "adventure-activities",
+            "logistics"
+          ]
+        }
+      ]
+    },
+    "zion-national-park-from-las-vegas": {
+      "hash": "952091492726cf82535d9a41ff30884b51a909a3fa0713664744f98c0082f546",
+      "candidatos": [
+        {
+          "fact": "Zion National Park is about 170 miles from Las Vegas's airport, in Utah, where the clock runs an hour ahead.",
+          "figures": [
+            "170"
+          ],
+          "topics": [
+            "desert-parks",
+            "getting-around"
+          ]
+        },
+        {
+          "fact": "Entry is $35 per private vehicle or $20 per person, and non-US residents aged 16 and over pay an extra $100 each, including on guided tours.",
+          "figures": [
+            "$35",
+            "$20",
+            "16",
+            "$100"
+          ],
+          "topics": [
+            "desert-parks",
+            "pricing",
+            "tickets"
+          ]
+        },
+        {
+          "fact": "A 4 pm return time on a Zion schedule is 3 pm on your phone in Vegas, and the other way around on the way back.",
+          "figures": [
+            "4 pm",
+            "3 pm"
+          ],
+          "topics": [
+            "desert-parks",
+            "timing"
+          ]
+        },
+        {
+          "fact": "A family of four adults from abroad on a guided day trip owes $400 on top of the tour price unless the tour includes it.",
+          "figures": [
+            "$400"
+          ],
+          "topics": [
+            "desert-parks",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Day tours from Las Vegas are listed at around 10 to 14 hours.",
+          "figures": [
+            "10 to 14"
+          ],
+          "topics": [
+            "desert-parks",
+            "timing",
+            "booking"
+          ]
+        }
+      ]
+    }
+  }
+}

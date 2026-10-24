@@ -1,0 +1,1774 @@
+{
+  "firma": "d2a051cae37f065e",
+  "articulos": {
+    "best-trastevere-food-tours": {
+      "hash": "89d4d52397c9d5c1f1933d8e519019fceb30470fe1b5c2db413747f3a5587d9b",
+      "candidatos": [
+        {
+          "fact": "For most first-timers, the classic evening tour is ideal: 6–7 stops, ~10 tastings, roughly 3–4 hours, from about €90.",
+          "figures": [
+            "6–7",
+            "~10",
+            "3–4",
+            "€90"
+          ],
+          "topics": [
+            "format-duration",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Prices start from around €90 per person, and the small-group format (typically capped at 12 to 14) keeps it personal.",
+          "figures": [
+            "€90",
+            "12 to 14"
+          ],
+          "topics": [
+            "pricing",
+            "group-size"
+          ]
+        },
+        {
+          "fact": "It's the priciest format per hour — expect roughly €130–150 per person — which is worth knowing going in.",
+          "figures": [
+            "€130–150"
+          ],
+          "topics": [
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Tours include alcohol; participants must be of legal drinking age in Italy (18).",
+          "figures": [
+            "18"
+          ],
+          "topics": [
+            "wine-drinks",
+            "logistics"
+          ]
+        }
+      ]
+    },
+    "booking-trastevere-food-tour-cancellations-refunds": {
+      "hash": "2e2b033fce9c552ace404284a4122367cf5cb623e7ccfeeeae9bc262797a5911",
+      "candidatos": []
+    },
+    "campo-de-fiori-jewish-ghetto-trastevere-food-tour": {
+      "hash": "7b734d7e08fa25e9ccea381a18a2726fb40a3a798f87695bcb7922d1c465b6e3",
+      "candidatos": [
+        {
+          "fact": "A combined tour covers Campo de' Fiori, the Jewish Ghetto and Trastevere in about 3.5–4 hours, typically capped at 12 people and priced above a Trastevere-only tour.",
+          "figures": [
+            "3.5–4",
+            "12"
+          ],
+          "topics": [
+            "format-duration",
+            "group-size",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "one operator lists a combined departure at about $145 per adult, against roughly €90 for a single-neighborhood evening.",
+          "figures": [
+            "$145",
+            "€90"
+          ],
+          "topics": [
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Tastings usually include pizza, Roman-Jewish specialties like carciofi alla giudia (fried artichokes) and fried baccalà (salt cod), a pasta course, and gelato — one route offers eight tastings and three drinks across six businesses, enough for a full dinner.",
+          "figures": [
+            "eight",
+            "three",
+            "six"
+          ],
+          "topics": [
+            "dishes",
+            "format-duration"
+          ]
+        },
+        {
+          "fact": "The bakeries are essential too — one on Via del Portico d'Ottavia, the quarter's main street, has been operating since 1794.",
+          "figures": [
+            "1794"
+          ],
+          "topics": [
+            "dishes",
+            "neighborhoods"
+          ]
+        },
+        {
+          "fact": "Carciofi alla giudia is seasonal (roughly February to April) and may not be available year-round.",
+          "figures": [
+            "February",
+            "April"
+          ],
+          "topics": [
+            "dishes",
+            "timing"
+          ]
+        },
+        {
+          "fact": "at least one operator carries children aged 2 and under free.",
+          "figures": [
+            "2"
+          ],
+          "topics": [
+            "kids-families",
+            "pricing"
+          ]
+        }
+      ]
+    },
+    "carciofi-alla-giudia-trastevere": {
+      "hash": "a7ca23209ae5c27c93a3ac1c3a026d2ea72c56629a2a612764ac76fa2c666228",
+      "candidatos": []
+    },
+    "da-enzo-al-29-worth-the-queue": {
+      "hash": "004ec32e5695ff42a61532f7e1034031e49cee8809b37caa70cd7f6e79390c71",
+      "candidatos": [
+        {
+          "fact": "the queue is real and it is not like the others: 57% of its TripAdvisor reviews mention waiting, against 7% at Tonnarello, and the median declared wait is 45 minutes.",
+          "figures": [
+            "57%",
+            "7%",
+            "45 minutes"
+          ],
+          "topics": [
+            "timing",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Of the 516 reviews in our sample that mention queueing at Da Enzo al 29, 48% still gave five stars.",
+          "figures": [
+            "516",
+            "48%"
+          ],
+          "topics": [
+            "value",
+            "timing"
+          ]
+        },
+        {
+          "fact": "Across 141 reviews that name a number, the median wait at Da Enzo is 45 minutes on TripAdvisor and 40 on Google Maps, and more than a third report an hour or more.",
+          "figures": [
+            "141",
+            "45 minutes",
+            "40"
+          ],
+          "topics": [
+            "timing",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "only 17 Tonnarello reviews and 10 Nannarella reviews name a wait time at all, across samples of the same size.",
+          "figures": [
+            "17",
+            "10"
+          ],
+          "topics": [
+            "timing",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "The gap runs from 0.11 to 0.84 stars and never changes direction.",
+          "figures": [
+            "0.11",
+            "0.84"
+          ],
+          "topics": [
+            "value"
+          ]
+        },
+        {
+          "fact": "At Da Enzo the penalty is 0.27 stars on TripAdvisor and 0.11 on Google Maps — noticeable, and nothing like a verdict.",
+          "figures": [
+            "0.27",
+            "0.11"
+          ],
+          "topics": [
+            "value"
+          ]
+        },
+        {
+          "fact": "They rate the restaurant 4.54 against 3.93 for everyone else — the largest gap we found for this venue, larger than the queue penalty itself.",
+          "figures": [
+            "4.54",
+            "3.93"
+          ],
+          "topics": [
+            "value",
+            "timing"
+          ],
+          "scale": "Da Enzo figures are drawn from 1,560 reviews with a star rating — 500 from TripAdvisor and 1,060 from Google Maps."
+        },
+        {
+          "fact": "Among reviews that both give advice about arriving early and state how long they waited, the median wait is 40 minutes.",
+          "figures": [
+            "40 minutes"
+          ],
+          "topics": [
+            "timing"
+          ]
+        },
+        {
+          "fact": "Carbonara is named in 407 reviews, roughly twice as often as anything else, and it is the dish the five-star reviews single out.",
+          "figures": [
+            "407"
+          ],
+          "topics": [
+            "dishes"
+          ]
+        },
+        {
+          "fact": "One practical detail comes up in 104 reviews: staff serve drinks to people standing in the line.",
+          "figures": [
+            "104"
+          ],
+          "topics": [
+            "logistics",
+            "street-food"
+          ]
+        },
+        {
+          "fact": "44 mention feeling rushed, averaging 3.05 stars, and 27 describe the tables as cramped, averaging 3.07.",
+          "figures": [
+            "44",
+            "3.05",
+            "27",
+            "3.07"
+          ],
+          "topics": [
+            "value",
+            "format-duration"
+          ]
+        }
+      ]
+    },
+    "gluten-free-celiac-trastevere": {
+      "hash": "c5d47031ad248232a1c3996a06abdc1141f59d329dbb7f3c36291d7227551245",
+      "candidatos": []
+    },
+    "how-to-book-trastevere-food-tour": {
+      "hash": "e4324c77fa9fae7ca5330cbf0ff43cb070cd1aae92dd824a01cb9c881384829e",
+      "candidatos": [
+        {
+          "fact": "Viator and GetYourGuide both offer free cancellation up to 24 hours before on most tours, plus buyer protection; GetYourGuide refunds faster.",
+          "figures": [
+            "24 hours"
+          ],
+          "topics": [
+            "booking",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Both platforms offer free cancellation up to 24 hours before start on most listings, both give you a fallback if the operator lets you down, and both are secure.",
+          "figures": [
+            "24 hours"
+          ],
+          "topics": [
+            "booking"
+          ]
+        },
+        {
+          "fact": "What you get for it is buyer protection, a review system, self-service cancellation, and someone to escalate to at 9 p.m. when your confirmation hasn't arrived.",
+          "figures": [
+            "9 p.m."
+          ],
+          "topics": [
+            "booking",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "The most obvious is price: without a platform commission in the middle, direct bookings are commonly cited as running around 10–20% cheaper for the same product, though the exact gap varies by operator and isn't guaranteed.",
+          "figures": [
+            "10–20%"
+          ],
+          "topics": [
+            "pricing",
+            "booking"
+          ]
+        },
+        {
+          "fact": "A rough rule that holds up: for a €40 walking tour, direct is fine.",
+          "figures": [
+            "€40"
+          ],
+          "topics": [
+            "pricing",
+            "booking"
+          ]
+        },
+        {
+          "fact": "For a €150 private or premium experience, the platform's protection earns its markup.",
+          "figures": [
+            "€150"
+          ],
+          "topics": [
+            "pricing",
+            "booking"
+          ]
+        },
+        {
+          "fact": "Private food tours in Rome commonly require around a week's notice for a full refund rather than 24 hours — a policy that catches people who assume the standard applies everywhere.",
+          "figures": [
+            "24 hours"
+          ],
+          "topics": [
+            "booking",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Check the group size cap (12–14 is typical) if intimacy matters.",
+          "figures": [
+            "12–14"
+          ],
+          "topics": [
+            "group-size"
+          ]
+        }
+      ]
+    },
+    "how-to-pick-trastevere-food-tour-guide": {
+      "hash": "e86c2edeb2013461224bb482c67f4bcd10b3cb58473ad63e794ed10c536e9504",
+      "candidatos": [
+        {
+          "fact": "You can't audit a guide from a listing, but you can check the structure: group size caps (typically 7–14), whether the operator says its guides are licensed, and how candid it is about what it can't do.",
+          "figures": [
+            "7–14"
+          ],
+          "topics": [
+            "group-size",
+            "guides"
+          ]
+        },
+        {
+          "fact": "The current framework comes from Law 190 of December 2023, subsequently amended, with its implementing regulation published in the official gazette in June 2024 and in force from July 2024.",
+          "figures": [
+            "2023",
+            "2024",
+            "2024"
+          ],
+          "topics": [
+            "guides",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "The enforcement is real — foreign professionals working temporarily in Italy face fines running from roughly €1,500 to €6,000 for failing to file the required prior declaration.",
+          "figures": [
+            "€1,500",
+            "€6,000"
+          ],
+          "topics": [
+            "guides",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Trastevere caps run from about 7 to 14 depending on the operator, and the difference is qualitative: at seven you have a conversation, at fourteen you have an audience, and an unstated cap is itself an answer.",
+          "figures": [
+            "7",
+            "14"
+          ],
+          "topics": [
+            "group-size"
+          ]
+        }
+      ]
+    },
+    "is-trastevere-food-tour-worth-it": {
+      "hash": "3927c9d52c442ff918eda4d89bafe90c8d161cc394e9c6fe6e8e664c7a84d753",
+      "candidatos": [
+        {
+          "fact": "The tells that separate a real trattoria from a tourist trap are free and learnable in ten minutes: no tout outside, no laminated multilingual menu, side streets rather than main piazzas, pasta at €10–12 rather than €15–18.",
+          "figures": [
+            "ten minutes",
+            "€10–12",
+            "€15–18"
+          ],
+          "topics": [
+            "pricing",
+            "dishes",
+            "timing"
+          ]
+        },
+        {
+          "fact": "You do not need to pay €100 to find out that the man waving a laminated menu at you is not your friend.",
+          "figures": [
+            "€100"
+          ],
+          "topics": [
+            "pricing",
+            "value"
+          ]
+        },
+        {
+          "fact": "At €80–120 against €20–30 to eat alone, it's a real premium — worth it on a short trip, less so on a tight budget.",
+          "figures": [
+            "€80–120",
+            "€20–30"
+          ],
+          "topics": [
+            "pricing",
+            "value"
+          ]
+        },
+        {
+          "fact": "Prices confirm it: authentic spots tend to charge around €10–12 for pasta and €15–20 for a secondo, while traps ask €15–18 for pasta and €25 or more for mains without anything to justify it.",
+          "figures": [
+            "€10–12",
+            "€15–20",
+            "€15–18",
+            "€25"
+          ],
+          "topics": [
+            "pricing",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Deli counters also have practical minimum portions of around 100 grams, so tasting five cured meats alone means buying far more food than you can eat — a guide buys one portion and splits it across the group.",
+          "figures": [
+            "100 grams"
+          ],
+          "topics": [
+            "logistics",
+            "dishes",
+            "group-size"
+          ]
+        }
+      ]
+    },
+    "roman-pizza-tonda-al-taglio-bianca": {
+      "hash": "a99d401caba064686e4bc77279221883430eb93d8547dad69647d78e137a1eee",
+      "candidatos": []
+    },
+    "roman-street-food-glossary": {
+      "hash": "c7f6a26a495f3d497f1575f82690fa88107aa81733a6394b07b9ddd0a8a3001c",
+      "candidatos": [
+        {
+          "fact": "Pizza al taglio is Roman pizza by the slab, sold by weight — you point at the tray, indicate how much you want, and they cut and weigh it, which is why the price is quoted per 100 grams rather than per slice.",
+          "figures": [
+            "100"
+          ],
+          "topics": [
+            "pricing",
+            "dishes",
+            "street-food"
+          ]
+        },
+        {
+          "fact": "The house wine of Rome is Frascati, a white from the hills just southeast of the city, and the local unit is the quartino — a quarter-liter carafe, the right amount for one person with lunch, usually around €4.",
+          "figures": [
+            "€4"
+          ],
+          "topics": [
+            "wine-drinks",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Un etto is 100 grams, the working unit at any deli or bakery counter — pizza al taglio and cured meats are sold this way, and it's why you can't buy a taste of five things without ending up with half a kilo.",
+          "figures": [
+            "100"
+          ],
+          "topics": [
+            "pricing",
+            "dishes",
+            "logistics"
+          ]
+        }
+      ]
+    },
+    "rome-coffee-bar-vs-table-cappuccino-rule": {
+      "hash": "f4c73e54f4bf8d561649e956f09a3bc707457559c733dc4894ff679cf30c8519",
+      "candidatos": []
+    },
+    "rome-restaurants-book-ahead-or-wander": {
+      "hash": "04512822d8e0318f6a6bd42c786c62720ef71844f0010b9861969a245df3eb9a",
+      "candidatos": []
+    },
+    "rome-street-food-suppli-trapizzino-maritozzo": {
+      "hash": "14597c08ab8041abec9fc3073afa4563633854e797f359169cb7680c1655e7bd",
+      "candidatos": []
+    },
+    "rome-trip-pacing-steps-food-tour": {
+      "hash": "079726d2a74e706f880420300bff713b990ec7568ca5ae22a2e71a1e2acb4442",
+      "candidatos": [
+        {
+          "fact": "Travellers who count their steps in Rome report 20,000 to 30,000 a day, and more on big sightseeing days.",
+          "figures": [
+            "20,000",
+            "30,000"
+          ],
+          "topics": [
+            "timing",
+            "logistics"
+          ]
+        }
+      ]
+    },
+    "speaking-italian-trastevere-restaurants": {
+      "hash": "0e495b002f4a89781fc55e2d80a2fb40481e182e58e316d2189f3702b7afed0e",
+      "candidatos": []
+    },
+    "staying-in-trastevere-food-noise": {
+      "hash": "48bdb69b6beb7113cfba956f41e2f4b8c04f8504d4bd8d6a27f083dc186d7060",
+      "candidatos": []
+    },
+    "trastevere-after-dark-evening-food-tour": {
+      "hash": "b495f1b4b3d2c941b15ea6c3b618452d36b9db51e7016214349a98abe282efba",
+      "candidatos": []
+    },
+    "trastevere-afternoon-gap-lunch-dinner": {
+      "hash": "742f70e281f8d8a4dd55fcde95848fafdd784ef21f0d5a5d91b321c1fac4cb73",
+      "candidatos": []
+    },
+    "trastevere-aperitivo-what-the-drink-buys": {
+      "hash": "ae43a23f52333f2019bd917018be6202d2f4904a4a032d8016eec86d6370e1f2",
+      "candidatos": []
+    },
+    "trastevere-bill-extra-charges-tap-water": {
+      "hash": "0fead59114f7adbeb17be1992a518c2e1e49b7b242128d8cc47d956675026c95",
+      "candidatos": [
+        {
+          "fact": "Across 3,011 rated reviews of three Trastevere restaurants, 68 describe being charged for one of four small things.",
+          "figures": [
+            "3,011",
+            "68"
+          ],
+          "topics": [
+            "pricing",
+            "value"
+          ]
+        },
+        {
+          "fact": "Counts are 41 reviews for water, 37 for bread, 10 for olive oil and 8 for service or cover; 68 name at least one and 27 name more than one, which is why those two rows are not the sum of the others.",
+          "figures": [
+            "41",
+            "37",
+            "10",
+            "8",
+            "68",
+            "27"
+          ],
+          "topics": [
+            "pricing",
+            "value"
+          ]
+        },
+        {
+          "fact": "The sums are small — one and a half to six and a half euros a line, in reviews from 2023 to 2026.",
+          "figures": [
+            "2023",
+            "2026"
+          ],
+          "topics": [
+            "pricing"
+          ]
+        },
+        {
+          "fact": "These are amounts you would not notice on a receipt at home, and the complaint is not universal — 31 reviews out of 285 poor ones name any of these charges, so this is not what usually ruins a Trastevere meal.",
+          "figures": [
+            "31",
+            "285"
+          ],
+          "topics": [
+            "pricing",
+            "value"
+          ]
+        },
+        {
+          "fact": "What reviewers describe far more often is being charged per item instead: water as its own line, bread as its own line, olive oil as its own line, and sometimes a service figure on top, quoted anywhere from one and a half euros to four euros a head, or as five per cent, in reviews from 2025 and 2026.",
+          "figures": [
+            "2025",
+            "2026"
+          ],
+          "topics": [
+            "pricing",
+            "value"
+          ]
+        }
+      ]
+    },
+    "trastevere-food-tour-by-party-size": {
+      "hash": "5dab54ee2c2f875f506ba94994dbc16bb965a1a2dbbb153f80df5fd693a1bd62",
+      "candidatos": []
+    },
+    "trastevere-food-tour-cost": {
+      "hash": "fef7d4e24d753a5b9d47647efe48069d1bd5573f69f06ed8fe8728f8b5009e76",
+      "candidatos": [
+        {
+          "fact": "Trastevere food tours start from around €90 for the classic evening format — roughly 3–4 hours, 6–7 stops, about 10 tastings, amounting to a full dinner with wine.",
+          "figures": [
+            "€90",
+            "3–4",
+            "6–7",
+            "10"
+          ],
+          "topics": [
+            "pricing",
+            "format-duration"
+          ]
+        },
+        {
+          "fact": "Pasta-class combos run about €130–150.",
+          "figures": [
+            "€130–150"
+          ],
+          "topics": [
+            "pricing",
+            "format-duration"
+          ]
+        },
+        {
+          "fact": "Roman street food is inexpensive: supplì cost €1.50–3.50, a trapizzino about €5, pizza al taglio around €2.50 per 100g, a porchetta panino €5–7, pasta at a casual trattoria €7–10, and gelato about €2.50.",
+          "figures": [
+            "€1.50–3.50",
+            "€5",
+            "€2.50 per 100g",
+            "€5–7",
+            "€7–10",
+            "€2.50"
+          ],
+          "topics": [
+            "pricing",
+            "street-food",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Gelato is around €2.50 a scoop, and a quartino of Frascati about €4.",
+          "figures": [
+            "€2.50",
+            "€4"
+          ],
+          "topics": [
+            "pricing",
+            "wine-drinks",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "A full DIY evening in Trastevere comes to roughly €20–30 per person, versus €90 or more for a guided tour — a three-to-fourfold difference.",
+          "figures": [
+            "€20–30",
+            "€90"
+          ],
+          "topics": [
+            "pricing",
+            "value"
+          ]
+        },
+        {
+          "fact": "Trastevere's best-loved trattorias run real waits, with some famous spots regularly turning over 35 to 40 minute queues at dinner, and tours hold reservations that walk you past them.",
+          "figures": [
+            "35",
+            "40"
+          ],
+          "topics": [
+            "timing",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "Start with the tastings-to-price ratio: a tour delivering ten tastings and a sit-down course for €90 is better value than a shorter one at €70 that leaves you hungry.",
+          "figures": [
+            "€90",
+            "€70"
+          ],
+          "topics": [
+            "pricing",
+            "value"
+          ]
+        },
+        {
+          "fact": "Tours include alcohol; participants must be of legal drinking age in Italy (18).",
+          "figures": [
+            "18"
+          ],
+          "topics": [
+            "wine-drinks",
+            "logistics"
+          ]
+        }
+      ]
+    },
+    "trastevere-food-tour-dietary-restrictions": {
+      "hash": "5067f2286bc239c852c9e5703d4cd2a53d3d5149b3dc513f06c773f8d749a1f0",
+      "candidatos": []
+    },
+    "trastevere-food-tour-guide-quality": {
+      "hash": "f86982c6ec50dfd28af0d4d2d4c554cf1d7519f1d15befdc499ca306801e31bc",
+      "candidatos": []
+    },
+    "trastevere-food-tour-language": {
+      "hash": "234fa9a1fdc9b2df5a852da208f8db8c9f4262a0ed4a96e47128a55e4f41be83",
+      "candidatos": []
+    },
+    "trastevere-food-tour-or-diy": {
+      "hash": "d4a63ef0a9293fbd1d7278a26e88e608cae97b9e79cf10a37283f7369aa56b00",
+      "candidatos": []
+    },
+    "trastevere-food-tour-reviews-across-platforms": {
+      "hash": "efeb514b3d611adbe0cac8f369b5ea52c4a8b53883c58ae9bd55f74aea924bf3",
+      "candidatos": [
+        {
+          "fact": "Nineteen of Trustpilot’s 211 reviews mention Italy.",
+          "figures": [
+            "211"
+          ],
+          "topics": [
+            "operators",
+            "booking"
+          ]
+        },
+        {
+          "fact": "GetYourGuide (4.99 across 124 reviews) samples people who completed a tour.",
+          "figures": [
+            "4.99",
+            "124"
+          ],
+          "topics": [
+            "operators",
+            "booking"
+          ]
+        },
+        {
+          "fact": "Google Maps (4.48 across 3,529 reviews) samples anyone who walked in.",
+          "figures": [
+            "4.48",
+            "3,529"
+          ],
+          "topics": [
+            "operators",
+            "booking"
+          ]
+        },
+        {
+          "fact": "TripAdvisor (4.43 across 1,500 reviews) samples travelers who write reviews as a habit.",
+          "figures": [
+            "4.43",
+            "1,500"
+          ],
+          "topics": [
+            "operators",
+            "booking"
+          ]
+        },
+        {
+          "fact": "GetYourGuide’s 4.99 is accurate for what it measures: satisfaction among people who were served.",
+          "figures": [
+            "4.99"
+          ],
+          "topics": [
+            "operators",
+            "value"
+          ]
+        }
+      ]
+    },
+    "trastevere-food-tour-what-you-actually-get": {
+      "hash": "fdff4b2812d0dd1627cfe10d91aa651042749f0d46756cc6caec4266a9d055b1",
+      "candidatos": []
+    },
+    "trastevere-gelato-how-to-judge-a-gelateria": {
+      "hash": "ab72e3b6c080c173a1e395bbe695c7e1d497eec9c121dda7c334eb339e886561",
+      "candidatos": []
+    },
+    "trastevere-hidden-gem-authentic-what-it-means": {
+      "hash": "8c026358c5726ac38c2bc81a9671a67cd696b1c726e005769c0fb2c66bfc3029",
+      "candidatos": [
+        {
+          "fact": "“Touristy” or “tourist trap” appears in zero of 104 food-tour reviews.",
+          "figures": [
+            "zero",
+            "104"
+          ],
+          "topics": [
+            "operators",
+            "value"
+          ]
+        },
+        {
+          "fact": "It averages GetYourGuide 4.99, with 103 of its 104 reviews at five stars and one at four.",
+          "figures": [
+            "4.99",
+            "103",
+            "104"
+          ],
+          "topics": [
+            "operators",
+            "booking"
+          ]
+        },
+        {
+          "fact": "Nannarella’s Google Maps sample calls it authentic 19 times and touristy 8.",
+          "figures": [
+            "19",
+            "8"
+          ],
+          "topics": [
+            "neighborhoods",
+            "value"
+          ]
+        },
+        {
+          "fact": "Da Enzo al 29 is called authentic 19 times and touristy or a tourist trap 24 times within the same 500-review TripAdvisor sample.",
+          "figures": [
+            "19",
+            "24",
+            "500"
+          ],
+          "topics": [
+            "neighborhoods",
+            "value"
+          ]
+        },
+        {
+          "fact": "“Touristy” or “tourist trap” costs 1.69 stars.",
+          "figures": [
+            "1.69"
+          ],
+          "topics": [
+            "value"
+          ]
+        },
+        {
+          "fact": "Across 5,020 Trastevere restaurant reviews, the ones containing \"authentic\" average 4.44 against an overall 4.47 — no measurable difference.",
+          "figures": [
+            "5,020",
+            "4.44",
+            "4.47"
+          ],
+          "topics": [
+            "value",
+            "neighborhoods"
+          ],
+          "scale": "It averages GetYourGuide 4.99, with 103 of its 104 reviews at five stars and one at four."
+        }
+      ]
+    },
+    "trastevere-in-the-rain-queues-covered-tables": {
+      "hash": "6cc574fb2fa14724b17786d7c109d19f17b25f8b356699d0f88b5fc7a962cc93",
+      "candidatos": []
+    },
+    "trastevere-menu-red-flags": {
+      "hash": "f232b8a3eed5815d9567361c64758b8fcbcf2274e3f223beec2779636293189d",
+      "candidatos": []
+    },
+    "trastevere-off-season-november-to-march": {
+      "hash": "cf25e9327289f024f57f009609151f16573e08f3dcae8dc07c01e9cdd4827dde",
+      "candidatos": []
+    },
+    "trastevere-owner-replies-bad-reviews": {
+      "hash": "c466596438cf1b27e20546961aa921e1a9cac00a5993e98200dbeb04d08ad313",
+      "candidatos": [
+        {
+          "fact": "One of the three had no reply on any of its 301 critical Google reviews, and none on TripAdvisor either.",
+          "figures": [
+            "301"
+          ],
+          "topics": [
+            "operators"
+          ]
+        },
+        {
+          "fact": "The second replied to 38% of its one- to three-star Google reviews, the third to 18%.",
+          "figures": [
+            "38%",
+            "18%"
+          ],
+          "topics": [
+            "operators"
+          ]
+        },
+        {
+          "fact": "Across the 52 replies on Google Maps, half tell the reviewer they should have raised the problem at the table.",
+          "figures": [
+            "52"
+          ],
+          "topics": [
+            "operators"
+          ]
+        }
+      ]
+    },
+    "trastevere-restaurant-queue-how-long-the-wait": {
+      "hash": "199296e0bbd0893a521a5e982565f12bdab001afc7804b39ee0ebe6b194aa213",
+      "candidatos": [
+        {
+          "fact": "Reviewers who waited twenty minutes or less rate these restaurants 4.5 out of 5.",
+          "figures": [
+            "4.5"
+          ],
+          "topics": [
+            "timing",
+            "value"
+          ]
+        },
+        {
+          "fact": "Past twenty minutes the average falls a full point, to 3.5 — and then it stops falling.",
+          "figures": [
+            "3.5"
+          ],
+          "topics": [
+            "timing",
+            "value"
+          ],
+          "scale": "Reviewers who waited twenty minutes or less rate these restaurants 4.5 out of 5."
+        },
+        {
+          "fact": "Reviews that state a wait and also mention arriving before opening report a median of 35 minutes, against 30 for everyone else.",
+          "figures": [
+            "35",
+            "30"
+          ],
+          "topics": [
+            "timing",
+            "booking"
+          ]
+        },
+        {
+          "fact": "Across the rated reviews, 105 people say the wait was worth it and 22 say it was not — roughly five to one.",
+          "figures": [
+            "105",
+            "22"
+          ],
+          "topics": [
+            "value",
+            "timing"
+          ]
+        },
+        {
+          "fact": "The queue is named in 31% of the worst reviews of these restaurants and 13% of the best, which makes it a real fault line rather than local colour.",
+          "figures": [
+            "31%",
+            "13%"
+          ],
+          "topics": [
+            "value",
+            "timing"
+          ]
+        },
+        {
+          "fact": "Season makes no difference we can detect — reviews published across June to August give a median of 30 minutes and those published November to February give the same 30, though this rests on publication dates rather than visit dates and should be treated as weak.",
+          "figures": [
+            "30",
+            "30"
+          ],
+          "topics": [
+            "timing"
+          ]
+        }
+      ]
+    },
+    "trastevere-restaurant-recommendations-same-five": {
+      "hash": "40a20dd6c8eafa0f3c9212d88ee953036ebee99be148eed34f65bf4ecacc575a",
+      "candidatos": [
+        {
+          "fact": "Five names — Da Enzo al 29, Tonnarello, Dar Poeta, Trapizzino and Nannarella — take 78 of the 143 mentions, 55% of the total, and turn up in 72% of every discussion that names any restaurant at all.",
+          "figures": [
+            "78",
+            "143",
+            "55%",
+            "72%"
+          ],
+          "topics": [
+            "neighborhoods",
+            "value"
+          ]
+        },
+        {
+          "fact": "Across 1,061 discussions, five names take 55% of all mentions: Da Enzo al 29 (25), Tonnarello (20), Dar Poeta (13), Trapizzino (11) and Nannarella (9).",
+          "figures": [
+            "1,061",
+            "55%",
+            "25",
+            "20",
+            "13",
+            "11",
+            "9"
+          ],
+          "topics": [
+            "neighborhoods",
+            "value"
+          ]
+        },
+        {
+          "fact": "Roscioli is at Via dei Giubbonari 21, in the Regola district beside Campo de’ Fiori, on the other side of the river.",
+          "figures": [
+            "21"
+          ],
+          "topics": [
+            "neighborhoods"
+          ]
+        }
+      ]
+    },
+    "trastevere-restaurant-reviews-what-they-hide": {
+      "hash": "b8b1c5f1e0f25e6f452a4802a36195f1f98a9fbab65a38d6fcb9b7d414d24aca",
+      "candidatos": [
+        {
+          "fact": "Tonnarello carries 109,161 Google Maps reviews and Nannarella carries 4,767 — a difference of twenty-three times — and they rate within a tenth of a star of each other.",
+          "figures": [
+            "109,161",
+            "4,767"
+          ],
+          "topics": [
+            "value",
+            "neighborhoods"
+          ]
+        },
+        {
+          "fact": "Whatever those 109,161 reviews are measuring, it is not a quality advantage over a place with 4,767.",
+          "figures": [
+            "109,161",
+            "4,767"
+          ],
+          "topics": [
+            "value",
+            "neighborhoods"
+          ]
+        },
+        {
+          "fact": "Our three restaurants land within 0.21 stars of themselves across Google Maps and TripAdvisor, so a bigger gap than that is a signal worth investigating.",
+          "figures": [
+            "0.21"
+          ],
+          "topics": [
+            "value",
+            "neighborhoods"
+          ]
+        }
+      ]
+    },
+    "trastevere-restaurants-with-kids": {
+      "hash": "0c10ba92e59b8b6c06a03e37ad012c8c8055f38d23ca92e46ae0bce1de562baf",
+      "candidatos": [
+        {
+          "fact": "children’s plates are not always cheap: one family paid €41 for two plates of spaghetti and meatballs.",
+          "figures": [
+            "€41"
+          ],
+          "topics": [
+            "pricing",
+            "dishes",
+            "kids-families"
+          ]
+        }
+      ]
+    },
+    "trastevere-reviews-that-name-the-waiter": {
+      "hash": "e48fbed64f3d721929bfd3449c37b2bfdf33d72e2abe0b3161aaeb2bc9f5dfd6",
+      "candidatos": [
+        {
+          "fact": "Across 5,020 Trastevere restaurant reviews, 188 name the person who served them.",
+          "figures": [
+            "5,020",
+            "188"
+          ],
+          "topics": [
+            "operators",
+            "value"
+          ]
+        },
+        {
+          "fact": "188 reviews name a server, and 187 of them rate three stars or better.",
+          "figures": [
+            "188",
+            "187"
+          ],
+          "topics": [
+            "operators",
+            "value"
+          ]
+        },
+        {
+          "fact": "Of 188 reviews that name a server, exactly one rates two stars or below, against 9.2% of all other reviews.",
+          "figures": [
+            "188",
+            "9.2%"
+          ],
+          "topics": [
+            "operators",
+            "value"
+          ]
+        },
+        {
+          "fact": "the habit is wildly uneven by restaurant: 7.4% of Tonnarello’s TripAdvisor reviews name a server against 0.09% of Da Enzo al 29’s Google Maps reviews.",
+          "figures": [
+            "7.4%",
+            "0.09%"
+          ],
+          "topics": [
+            "operators"
+          ]
+        },
+        {
+          "fact": "The one review below three stars that names a staff member is a one-star TripAdvisor account of a 45-minute wait behind fifty people and rude staff at the door — in which the writer stops to say that the waitress, whom they name, was the only good thing about the evening.",
+          "figures": [
+            "45-minute"
+          ],
+          "topics": [
+            "logistics",
+            "timing",
+            "operators"
+          ]
+        },
+        {
+          "fact": "Over 600 characters it is 1.66 — the eleven long reviews that name a server all rate five stars, while the 310 long reviews that do not average 3.34.",
+          "figures": [
+            "1.66",
+            "eleven",
+            "five",
+            "310",
+            "3.34"
+          ],
+          "topics": [
+            "operators",
+            "value"
+          ],
+          "scale": "In short reviews the difference is 0.19 stars."
+        }
+      ]
+    },
+    "trastevere-roman-dishes-what-goes-wrong": {
+      "hash": "c69952508d1790e47767f137f1879d27c0216476ef4c94e6a0c4188f4c9c21d1",
+      "candidatos": [
+        {
+          "fact": "Reviews naming cacio e pepe carry a one- or two-star rating 17.8% of the time against 10.1% for carbonara — nearly double.",
+          "figures": [
+            "17.8%",
+            "10.1%"
+          ],
+          "topics": [
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Cacio e pepe and gricia both fall about a quarter of a star below, and both carry a one-or-two-star share around 17.5%, against 10% for the other two.",
+          "figures": [
+            "17.5%",
+            "10%"
+          ],
+          "topics": [
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Across the 110 one- and two-star reviews naming a Roman pasta, twelve say it was too salty and eleven say it had no flavor at all — together a fifth of the complaints, more than pasta doneness, sauce texture, temperature and greasiness combined.",
+          "figures": [
+            "110"
+          ],
+          "topics": [
+            "dishes"
+          ]
+        }
+      ]
+    },
+    "trastevere-seasoning-complaints-salt-bland": {
+      "hash": "8c4ef3df791d30e24346f5b16ee5b03716edd362e72b658a32d041c37ccae6b2",
+      "candidatos": [
+        {
+          "fact": "Across 5,020 rated reviews of three Trastevere restaurants, the single most damaging thing a diner can write about the food is that it had no taste: those reviews average 1.90 stars against an overall 4.47.",
+          "figures": [
+            "5,020",
+            "1.90",
+            "4.47"
+          ],
+          "topics": [
+            "dishes",
+            "value"
+          ]
+        },
+        {
+          "fact": "A rushed meal costs 1.69 stars.",
+          "figures": [
+            "1.69"
+          ],
+          "topics": [
+            "timing"
+          ]
+        },
+        {
+          "fact": "Food with no flavor costs 2.56.",
+          "figures": [
+            "2.56"
+          ],
+          "topics": [
+            "dishes"
+          ],
+          "scale": "A rushed meal costs 1.69 stars."
+        },
+        {
+          "fact": "Da Enzo al 29’s TripAdvisor sample carries salt complaints at 2.00%, twelve times the rate of Nannarella’s Google Maps sample at 0.16%.",
+          "figures": [
+            "2.00%",
+            "0.16%"
+          ],
+          "topics": [
+            "dishes",
+            "neighborhoods"
+          ]
+        },
+        {
+          "fact": "Salt complaints are rare — 35 in 5,020 reviews — but they are not distributed at random",
+          "figures": [
+            "35",
+            "5,020"
+          ],
+          "topics": [
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Only seven of the 35 salt complaints name a salty ingredient at all — guanciale, pancetta, pecorino or anchovy.",
+          "figures": [
+            "35"
+          ],
+          "topics": [
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Carbonara and meatballs account for most of it — 12 and 10 of the 35 salt complaints — which fits, since both are built on cured pork and hard cheese.",
+          "figures": [
+            "12",
+            "10",
+            "35"
+          ],
+          "topics": [
+            "dishes"
+          ]
+        }
+      ]
+    },
+    "trastevere-table-service-rushed-or-welcomed": {
+      "hash": "5151b1bfb5e5cb654df0e569b2eed7f61784ff04b56aa850fbe82467e07850b5",
+      "candidatos": [
+        {
+          "fact": "Rude or dismissive service is named in 13% of the worst-rated reviews of Trastevere's most-queued restaurants, against 1% of the best — second only to complaints about the food itself.",
+          "figures": [
+            "13%",
+            "1%"
+          ],
+          "topics": [
+            "logistics",
+            "neighborhoods"
+          ]
+        },
+        {
+          "fact": "Sixty-one reviews give advice about when to show up, and the striking thing is who gives it: 53 of those 61 are four- and five-star reviews.",
+          "figures": [
+            "53",
+            "61"
+          ],
+          "topics": [
+            "timing",
+            "booking"
+          ]
+        }
+      ]
+    },
+    "trastevere-tiramisu-safest-order": {
+      "hash": "298a83920f25680a22d06ccddfb54d2e93bf4ee6495c25ae385c4a7d234aaacf",
+      "candidatos": [
+        {
+          "fact": "Tiramisu is named in 457 Trastevere restaurant reviews and averages 4.56 against a 4.35 baseline, with only 5.3% of those reviews rating one or two stars — the best of any dish we measured at scale.",
+          "figures": [
+            "457",
+            "4.56",
+            "4.35",
+            "5.3%"
+          ],
+          "topics": [
+            "dishes",
+            "value"
+          ]
+        },
+        {
+          "fact": "Among the 982 reviews that name a Roman pasta, split them by whether they also name tiramisu: 4.54 against 4.26, and a one-or-two-star rate of 5.1% against 12.9% — two and a half times as many bad evenings on the no-dessert side.",
+          "figures": [
+            "982",
+            "4.54",
+            "4.26",
+            "5.1%",
+            "12.9%"
+          ],
+          "topics": [
+            "dishes"
+          ],
+          "scale": "Tiramisu is named in 457 Trastevere restaurant reviews and averages 4.56 against a 4.35 baseline, with only 5.3% of those reviews rating one or two stars — the best of any dish we measured at scale."
+        },
+        {
+          "fact": "Across 5,020 rated reviews of three Trastevere restaurants, 1,535 name a specific dish.",
+          "figures": [
+            "5,020",
+            "1,535"
+          ],
+          "topics": [
+            "dishes"
+          ]
+        },
+        {
+          "fact": "The baseline for a dish is 4.35, the average of the 1,535 reviews that name any dish, not the 4.47 average of all reviews.",
+          "figures": [
+            "4.35",
+            "1,535",
+            "4.47"
+          ],
+          "topics": [
+            "dishes"
+          ],
+          "scale": "Tiramisu is named in 457 Trastevere restaurant reviews and averages 4.56 against a 4.35 baseline, with only 5.3% of those reviews rating one or two stars — the best of any dish we measured at scale."
+        },
+        {
+          "fact": "Nannarella’s Google Maps sample rates it highest at 4.84 across 50 mentions.",
+          "figures": [
+            "4.84",
+            "50"
+          ],
+          "topics": [
+            "dishes"
+          ],
+          "scale": "Tiramisu is named in 457 Trastevere restaurant reviews and averages 4.56 against a 4.35 baseline, with only 5.3% of those reviews rating one or two stars — the best of any dish we measured at scale."
+        },
+        {
+          "fact": "Da Enzo al 29 is the most discussed, with 166 mentions, and the lowest of the six samples at 4.45, which tracks that restaurant overall rather than its dessert.",
+          "figures": [
+            "166",
+            "4.45"
+          ],
+          "topics": [
+            "dishes"
+          ],
+          "scale": "Tiramisu is named in 457 Trastevere restaurant reviews and averages 4.56 against a 4.35 baseline, with only 5.3% of those reviews rating one or two stars — the best of any dish we measured at scale."
+        },
+        {
+          "fact": "Supplì scores marginally higher but only 26 reviews name it.",
+          "figures": [
+            "26"
+          ],
+          "topics": [
+            "dishes",
+            "street-food"
+          ]
+        }
+      ]
+    },
+    "trastevere-tourist-traps-detection": {
+      "hash": "beffec9bfe58c090188240211a0493c3135e89ec4b6af4942b43871a91df4607",
+      "candidatos": [
+        {
+          "fact": "Across 5,029 reviews of three well-known Trastevere restaurants, a menu in English or with photos is mentioned six times — because those restaurants are not that kind of place.",
+          "figures": [
+            "5,029",
+            "six"
+          ],
+          "topics": [
+            "operators",
+            "neighborhoods"
+          ]
+        },
+        {
+          "fact": "Feeling rushed appears in 4.7% of one- and two-star reviews and 0.21% of five-star ones — twenty-two times more common in the bad ones.",
+          "figures": [
+            "4.7%",
+            "0.21%"
+          ],
+          "topics": [
+            "operators",
+            "timing"
+          ]
+        },
+        {
+          "fact": "The word “overrated” appears in 46 reviews.",
+          "figures": [
+            "46"
+          ],
+          "topics": [
+            "operators",
+            "value"
+          ]
+        }
+      ]
+    },
+    "trastevere-trattoria-prices-what-travellers-paid": {
+      "hash": "63505e9e61284f2fdfb15816d5a774f47819b5ff4768d8eba58add7ba924615f",
+      "candidatos": [
+        {
+          "fact": "At Trastevere's best-known trattorias, travellers report paying about fifteen euros for a Roman pasta in 2023 and 2024, and sixteen to seventeen by 2025 and 2026.",
+          "figures": [
+            "2023",
+            "2024",
+            "2025",
+            "2026"
+          ],
+          "topics": [
+            "pricing",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "The same dishes cost a euro or two more each year, and the artichoke rose by almost half between 2023 and 2026.",
+          "figures": [
+            "2023",
+            "2026"
+          ],
+          "topics": [
+            "pricing",
+            "dishes"
+          ]
+        }
+      ]
+    },
+    "trastevere-twilight-food-tour-format": {
+      "hash": "4713e5fff8b68718b6bfec4c347d20ec712a9033ad536d6606bdc170fbac78d5",
+      "candidatos": [
+        {
+          "fact": "Across six or seven stops you'll get roughly ten food tastings and five or six drinks in three to four hours.",
+          "figures": [
+            "six or seven",
+            "ten",
+            "five or six",
+            "three to four"
+          ],
+          "topics": [
+            "format-duration",
+            "dishes",
+            "wine-drinks"
+          ]
+        },
+        {
+          "fact": "Romans don't sit down to dinner before about 8 p.m., and the ritual that precedes it, the aperitivo, is a genuine institution rather than a marketing device: a drink and something to pick at, taken standing or seated at an enoteca, in the hour when the working day dissolves into the evening.",
+          "figures": [
+            "8 p.m."
+          ],
+          "topics": [
+            "timing",
+            "wine-drinks"
+          ]
+        },
+        {
+          "fact": "Some operators run an earlier, express departure — typically around 6:15 p.m., lasting about two and a half hours — that trims the evening to its four essentials: a spritz, supplì, a sit-down dinner, and gelato.",
+          "figures": [
+            "6:15 p.m.",
+            "two and a half hours"
+          ],
+          "topics": [
+            "timing",
+            "format-duration",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Arrive about ten minutes early — several operators state that late arrivals aren't eligible for a refund, and a tour packed with timed reservations genuinely can't wait.",
+          "figures": [
+            "ten minutes"
+          ],
+          "topics": [
+            "booking",
+            "logistics",
+            "timing"
+          ]
+        },
+        {
+          "fact": "Tours include alcohol; participants must be of legal drinking age in Italy (18).",
+          "figures": [
+            "18"
+          ],
+          "topics": [
+            "logistics",
+            "wine-drinks"
+          ]
+        }
+      ]
+    },
+    "trastevere-vs-rome-food-neighborhoods": {
+      "hash": "0269e476c00d4d81fc332edf3fcb0f5e20c128ac7d9fcc63fa9669847e066c85",
+      "candidatos": [
+        {
+          "fact": "The neighborhood is also where the trapizzino was invented in 2008, and where Mercato di Testaccio sits in a glass-and-steel box built over a first-century Roman warehouse — a modern food hall mixing grocery stalls with genuinely good street food, and one of the best lunches in the city.",
+          "figures": [
+            "2008"
+          ],
+          "topics": [
+            "dishes",
+            "markets"
+          ]
+        },
+        {
+          "fact": "Markets open around 7 a.m., finish by about 2 p.m., and are almost all closed on Sundays.",
+          "figures": [
+            "7 a.m.",
+            "2 p.m."
+          ],
+          "topics": [
+            "markets",
+            "timing"
+          ]
+        },
+        {
+          "fact": "Mercato Trionfale, up in Prati, is Rome's largest with over 800 stalls, and it's a market for locals buying raw ingredients — no street food, no concessions to visitors, housed in a plain concrete building.",
+          "figures": [
+            "800"
+          ],
+          "topics": [
+            "markets"
+          ]
+        },
+        {
+          "fact": "Rome's food has two peak seasons: March to May, which is artichoke season — the moment for carciofi alla giudia and carciofi alla romana — along with fava beans and fresh pecorino; and September to November, which brings porcini, truffles from Umbria, and the new olive oil.",
+          "figures": [
+            "March to May",
+            "September to November"
+          ],
+          "topics": [
+            "timing",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "August is the slowest month in Rome, and many trattorias close for two to three weeks around ferragosto.",
+          "figures": [
+            "two to three weeks"
+          ],
+          "topics": [
+            "timing"
+          ]
+        }
+      ]
+    },
+    "trastevere-vs-testaccio-where-to-eat": {
+      "hash": "524c3003b8b724cf7c46669ab0441e8267ff0a3a3cd477a4bd85d25018a088bc",
+      "candidatos": []
+    },
+    "trastevere-wine-aperitivo-what-to-drink": {
+      "hash": "61944f62bb6fbcfaa9451f005971ed41c82fcf424d8cc742877b2996eea96db1",
+      "candidatos": [
+        {
+          "fact": "In 5,020 Trastevere restaurant reviews, mentioning wine goes with a rating of 3.92 against a 4.32 baseline, and one review in five rates two stars or below.",
+          "figures": [
+            "5,020",
+            "3.92",
+            "4.32"
+          ],
+          "topics": [
+            "wine-drinks"
+          ]
+        },
+        {
+          "fact": "Beer is worse still — 3.30 and 37% bad, though on only 27 reviews.",
+          "figures": [
+            "3.30",
+            "37%",
+            "27"
+          ],
+          "topics": [
+            "wine-drinks"
+          ],
+          "scale": "The baseline is 4.32, the average of the 1,591 reviews that name anything consumed — a dish, a drink or a dessert — not the 4.47 average of all reviews."
+        },
+        {
+          "fact": "Wine sits 0.41 stars below the baseline, with 20.8% of its reviews at one or two stars.",
+          "figures": [
+            "0.41",
+            "20.8%"
+          ],
+          "topics": [
+            "wine-drinks"
+          ]
+        },
+        {
+          "fact": "The spritz is the exception at 4.40, slightly above baseline.",
+          "figures": [
+            "4.40"
+          ],
+          "topics": [
+            "wine-drinks"
+          ],
+          "scale": "The baseline is 4.32, the average of the 1,591 reviews that name anything consumed — a dish, a drink or a dessert — not the 4.47 average of all reviews."
+        },
+        {
+          "fact": "Reviews that name anything they consumed — a dish, a drink, a dessert — average 4.32, below the 4.47 overall.",
+          "figures": [
+            "4.32",
+            "4.47"
+          ],
+          "topics": [
+            "wine-drinks",
+            "dishes"
+          ],
+          "scale": "In 5,020 Trastevere restaurant reviews, mentioning wine goes with a rating of 3.92 against a 4.32 baseline, and one review in five rates two stars or below."
+        },
+        {
+          "fact": "Of the 30 reviews that mention wine and rate three stars or below, only four describe the wine itself as bad, two complain about the pour, one about price and one about temperature.",
+          "figures": [
+            "30"
+          ],
+          "topics": [
+            "wine-drinks"
+          ]
+        },
+        {
+          "fact": "Eleven reviews mention a wine list or selection at all, in 5,020.",
+          "figures": [
+            "5,020"
+          ],
+          "topics": [
+            "wine-drinks"
+          ]
+        }
+      ]
+    },
+    "vegetarian-vegan-gluten-free-trastevere-food-tour": {
+      "hash": "b0fce53c138656e5a5aea0098f85091a8555fd7d6ea2d6d76f6c89cd5800ba95",
+      "candidatos": [
+        {
+          "fact": "paying €90 for a sequence you can't eat is worse — and Rome's vegetable cooking is good enough that a self-directed vegan route is a real evening, not a consolation prize.",
+          "figures": [
+            "€90"
+          ],
+          "topics": [
+            "pricing",
+            "dietary"
+          ]
+        },
+        {
+          "fact": "Build your own route through AIC-certified restaurants, where the protections are real and enforced, and spend the €90 on a very good gluten-free dinner instead.",
+          "figures": [
+            "€90"
+          ],
+          "topics": [
+            "pricing",
+            "dietary",
+            "logistics"
+          ]
+        },
+        {
+          "fact": "it's also the difference between a booking that works and a €90 evening of politely declining plates — and in Rome, the payoff for that small effort is unusually large.",
+          "figures": [
+            "€90"
+          ],
+          "topics": [
+            "pricing",
+            "booking",
+            "dietary"
+          ]
+        },
+        {
+          "fact": "Vegan options have expanded substantially in the city, vegan gelato is widely available, and traditional Roman vegetable cooking is genuinely vegan: carciofi alla romana (artichokes with mint and garlic, in season roughly February to May), cicoria ripassata (chicory sautéed with oil, garlic and chili), pizza rossa or marinara (no cheese), bruschetta, and the whole contorni section.",
+          "figures": [
+            "February to May"
+          ],
+          "topics": [
+            "dishes",
+            "timing",
+            "dietary"
+          ]
+        }
+      ]
+    },
+    "when-to-take-trastevere-food-tour": {
+      "hash": "d44fc18b7f5d1eb0791ca35941ba08c17cf1bd0c861943a4e2cd20753458efc4",
+      "candidatos": []
+    },
+    "which-trastevere-food-tour-fits-you": {
+      "hash": "c35e53a773539d0ff4e708974852988cec438fdd1e415700b5ba93874ed543c9",
+      "candidatos": [
+        {
+          "fact": "One major operator carries children under 4 free without a ticket — but food isn't included for ages 3 and under, and paid tickets with food start at age 4.",
+          "figures": [
+            "4",
+            "3",
+            "4"
+          ],
+          "topics": [
+            "kids-families"
+          ]
+        },
+        {
+          "fact": "Private tours are the most flexible — one takes children from age 4 with adjusted pacing and non-alcoholic options.",
+          "figures": [
+            "4"
+          ],
+          "topics": [
+            "kids-families"
+          ]
+        },
+        {
+          "fact": "A group tour is the sociable option: caps run from about 7 to 14 depending on the operator, which is small enough that you'll genuinely talk to the other guests, and there's a real pleasure in a table of strangers three wines into a Roman evening.",
+          "figures": [
+            "7",
+            "14"
+          ],
+          "topics": [
+            "group-size"
+          ]
+        },
+        {
+          "fact": "Private bookings typically run from 2 guests up to around 20, which makes them equally suited to a couple and to a milestone celebration.",
+          "figures": [
+            "2",
+            "20"
+          ],
+          "topics": [
+            "group-size",
+            "booking"
+          ]
+        },
+        {
+          "fact": "the small caps do the rest — 7 to 12 guests on the tighter tours means a group, not an audience, and the structure of the evening (a shared table, several wines, three hours) does the social work for you without anyone having to force it.",
+          "figures": [
+            "7",
+            "12"
+          ],
+          "topics": [
+            "group-size",
+            "format-duration"
+          ]
+        },
+        {
+          "fact": "A solo traveler wanting company and a couple wanting privacy want opposite things from the same €90.",
+          "figures": [
+            "€90"
+          ],
+          "topics": [
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Age policies, group sizes, private booking terms, and seasonal guidance reflect current 2026 information and vary significantly between operators — child policies range from free entry under 4 to tours that don't recommend children at all, so always check the specific listing.",
+          "figures": [
+            "2026",
+            "4"
+          ],
+          "topics": [
+            "kids-families",
+            "booking"
+          ]
+        },
+        {
+          "fact": "Tours include alcohol; the legal drinking age in Italy is 18.",
+          "figures": [
+            "18"
+          ],
+          "topics": [
+            "wine-drinks"
+          ]
+        }
+      ]
+    }
+  }
+}

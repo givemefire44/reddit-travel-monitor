@@ -1,0 +1,3687 @@
+{
+  "firma": "300d3a6e8cd0c17d",
+  "articulos": {
+    "best-areas-seoul-food-tour": {
+      "hash": "6be545875251c9afac46efb2ff909edb09246cadd9e21d194ef1b4a45f135fa0",
+      "candidatos": [
+        {
+          "fact": "Opened in 1905, it's Korea's oldest permanent market, and its second-floor food alley became internationally famous through Netflix's Street Food: Asia.",
+          "figures": [
+            "1905"
+          ],
+          "topics": [
+            "markets"
+          ]
+        }
+      ]
+    },
+    "best-seoul-food-tours": {
+      "hash": "e96e538fda550d02b80971d906943f6101ef4b7a1ac37a2e21bd339008095e99",
+      "candidatos": [
+        {
+          "fact": "For most first-timers, a classic Gwangjang Market walking tour is the ideal introduction, with prices from around $29.",
+          "figures": [
+            "$29"
+          ],
+          "topics": [
+            "food-tours",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Prices for a group market tour start around $29 and rise with the number of tastings and the level of curation — half-day tours packing in eight to twelve-plus dishes typically run higher.",
+          "figures": [
+            "$29"
+          ],
+          "topics": [
+            "food-tours",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Private tours in Seoul typically start around $150 and climb to $335 or more, depending on duration, group size, and inclusions.",
+          "figures": [
+            "$150",
+            "$335"
+          ],
+          "topics": [
+            "food-tours",
+            "pricing"
+          ]
+        }
+      ]
+    },
+    "breakfast-seoul-markets-gwangjang-namdaemun-mangwon": {
+      "hash": "692a711ae7c1158faff03aa1d7ae025a03429ff0e161d9aca8ff56d5327f021a",
+      "candidatos": [
+        {
+          "fact": "At Namdaemun Market the breakfasts named most are kalguksu and dumplings, and reviewers ate from 7 am.",
+          "figures": [
+            "7 am"
+          ],
+          "topics": [
+            "markets",
+            "dishes",
+            "timing"
+          ]
+        },
+        {
+          "fact": "At Gwangjang Market five reviews put the opening at about 9 am, and two describe eating there at 8.",
+          "figures": [
+            "9 am",
+            "8"
+          ],
+          "topics": [
+            "markets",
+            "timing"
+          ]
+        },
+        {
+          "fact": "Forty reviews describe breakfast at Gwangjang Market, Namdaemun Market or Mangwon Market: 18, 16 and 6.",
+          "figures": [
+            "18",
+            "16",
+            "6"
+          ],
+          "topics": [
+            "markets"
+          ]
+        },
+        {
+          "fact": "At Mangwon Market five reviews also put the opening at about 9, but that is the hour for produce, meat and fish.",
+          "figures": [
+            "9"
+          ],
+          "topics": [
+            "markets",
+            "timing"
+          ]
+        },
+        {
+          "fact": "Mangwon Market starts late: 19 reviews found stalls closed in the morning.",
+          "figures": [
+            "19"
+          ],
+          "topics": [
+            "markets",
+            "timing"
+          ]
+        },
+        {
+          "fact": "Three at Gwangjang Market and one at Namdaemun Market put the arrival of the crowd at about 11.",
+          "figures": [
+            "11"
+          ],
+          "topics": [
+            "markets",
+            "timing",
+            "crowds"
+          ]
+        }
+      ]
+    },
+    "food-prices-seoul-daily-budget": {
+      "hash": "44126e49f64fb73b042e0a7f8d9a7b67ab21c7dab58a543fd7212d1a3336dbda",
+      "candidatos": [
+        {
+          "fact": "A day of eating in Seoul costs roughly ₩20,000–30,000 on a lean budget, ₩30,000–50,000 eating the way office workers do, and ₩50,000–70,000 with a barbecue dinner.",
+          "figures": [
+            "₩20,000–30,000",
+            "₩30,000–50,000",
+            "₩50,000–70,000"
+          ],
+          "topics": [
+            "pricing"
+          ]
+        },
+        {
+          "fact": "The official consumer survey puts the average Seoul price of a gimbap roll at about ₩3,900, kimchi stew with rice at ₩8,700, kalguksu at ₩10,000, bibimbap at ₩11,800, naengmyeon at ₩12,700 and samgyetang at ₩18,200.",
+          "figures": [
+            "₩3,900",
+            "₩8,700",
+            "₩10,000",
+            "₩11,800",
+            "₩12,700",
+            "₩18,200"
+          ],
+          "topics": [
+            "pricing",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "The bowls that visitors seek out, bibimbap and cold noodles, sit a step higher at ₩11,000 to ₩13,000.",
+          "figures": [
+            "₩11,000",
+            "₩13,000"
+          ],
+          "topics": [
+            "pricing",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "well-known cold-noodle houses in Seoul were reported in 2026 at ₩15,000 to ₩18,000 a bowl.",
+          "figures": [
+            "2026",
+            "₩15,000",
+            "₩18,000"
+          ],
+          "topics": [
+            "pricing",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Most street-food items in Seoul cost about ₩2,000 to ₩6,000 each.",
+          "figures": [
+            "₩2,000",
+            "₩6,000"
+          ],
+          "topics": [
+            "pricing",
+            "dishes",
+            "markets"
+          ]
+        },
+        {
+          "fact": "A budget chain sells an Americano for under ₩2,000; a large café chain charges more than twice that, which is more than a roll of gimbap.",
+          "figures": [
+            "₩2,000"
+          ],
+          "topics": [
+            "pricing"
+          ]
+        },
+        {
+          "fact": "A plate of tteokbokki runs about ₩4,000 to ₩6,000 and a hotteok about ₩2,000 to ₩3,000.",
+          "figures": [
+            "₩4,000",
+            "₩6,000",
+            "₩2,000",
+            "₩3,000"
+          ],
+          "topics": [
+            "pricing",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Prices are higher in Myeongdong, where the same tteokbokki is commonly ₩5,000 to ₩7,000.",
+          "figures": [
+            "₩5,000",
+            "₩7,000"
+          ],
+          "topics": [
+            "pricing",
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Restaurants in Korea have been required since 2013 to display final prices, with value-added tax and any service charge already included, so the menu price is what you pay.",
+          "figures": [
+            "2013"
+          ],
+          "topics": [
+            "pricing",
+            "etiquette"
+          ]
+        },
+        {
+          "fact": "A ₩9,000 stew is a stew, a bowl of rice and three or four side dishes.",
+          "figures": [
+            "₩9,000"
+          ],
+          "topics": [
+            "pricing",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Pork belly averages about ₩18,200 a portion as sold, most restaurants require two portions per table, and a dinner for two with a stew and drinks reaches ₩50,000 to ₩80,000.",
+          "figures": [
+            "₩18,200",
+            "two",
+            "₩50,000",
+            "₩80,000"
+          ],
+          "topics": [
+            "pricing",
+            "korean-bbq"
+          ]
+        },
+        {
+          "fact": "Hanwoo, the domestic breed, starts at about ₩40,000 for a small portion and climbs steeply.",
+          "figures": [
+            "₩40,000"
+          ],
+          "topics": [
+            "pricing",
+            "korean-bbq"
+          ]
+        },
+        {
+          "fact": "Everyday food in Seoul is moderately priced: about ₩8,000 to ₩13,000 for a sit-down meal, with tax included and no tipping.",
+          "figures": [
+            "₩8,000",
+            "₩13,000"
+          ],
+          "topics": [
+            "pricing"
+          ]
+        },
+        {
+          "fact": "What costs more is barbecue, at roughly ₩25,000 to ₩40,000 per person, premium hanwoo beef, café coffee at about ₩4,500 to ₩5,000 a cup, and street food in visitor districts such as Myeongdong.",
+          "figures": [
+            "₩25,000",
+            "₩40,000",
+            "₩4,500",
+            "₩5,000"
+          ],
+          "topics": [
+            "pricing",
+            "korean-bbq",
+            "markets"
+          ]
+        }
+      ]
+    },
+    "ganjang-gejang-marinated-crab-mangwon-market": {
+      "hash": "34e4aa06c512c39af67a7ce441c8fed50522f4537a9e46f9ef9faaf88bf54b4d",
+      "candidatos": [
+        {
+          "fact": "Twenty-four of 1,089 reviews of Mangwon Market name marinated crab: 2.2%.",
+          "figures": [
+            "1,089",
+            "2.2%"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "The French reviewer who paid 28,000 won calls it a very good price for a dish Koreans prize.",
+          "figures": [
+            "28,000"
+          ],
+          "topics": [
+            "pricing",
+            "dishes"
+          ]
+        }
+      ]
+    },
+    "group-vs-private-seoul-food-tour": {
+      "hash": "63715e0f2eb1721ec60e08c9e1cf80e004d7a509799b3ee29bc5367fd9a95b7f",
+      "candidatos": [
+        {
+          "fact": "A group food tour is the affordable, social choice — typically $49–110 per person, in a group of around 12–15, following a set route and pace.",
+          "figures": [
+            "$49–110",
+            "12–15"
+          ],
+          "topics": [
+            "food-tours",
+            "pricing",
+            "crowds"
+          ]
+        },
+        {
+          "fact": "A private tour costs more (usually $150–300+) but gives you a flexible pace, a customizable route, and a guide who adapts in real time to market closures and queues.",
+          "figures": [
+            "$150–300+"
+          ],
+          "topics": [
+            "food-tours",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Small-group Seoul food tours typically host around 12–15 people, though the exact size varies and \"small group\" isn't a strictly regulated term — some tours cap lower, and a few labeled \"small group\" run larger, so always check the stated maximum before booking.",
+          "figures": [
+            "12–15"
+          ],
+          "topics": [
+            "food-tours",
+            "crowds"
+          ]
+        }
+      ]
+    },
+    "gwangjang-market-bindaetteok-mung-bean-pancake": {
+      "hash": "c7da20d3406e0fb39b28c9b7e5ec62179d631c1f097677d53c18cf95699b6eed",
+      "candidatos": [
+        {
+          "fact": "Of 1,458 reviews of the market, 142 name the mung bean pancake and 55 say how theirs tasted: 39 call it good, 8 call it average and 8 did not like it, for the grease, the texture or a flavor that did not suit them.",
+          "figures": [
+            "1,458",
+            "142",
+            "55",
+            "39",
+            "8",
+            "8"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Bindaetteok is named in 9.7% of Gwangjang Market reviews, against 0.1% at Namdaemun Market and 0.2% at Mangwon Market.",
+          "figures": [
+            "9.7%",
+            "0.1%",
+            "0.2%"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Inside the Gwangjang Market sample it leans toward the happy reviews: 10.4% (127) of the four- and five-star reviews name it, against 6.2% (15) of those with three stars or fewer.",
+          "figures": [
+            "10.4%",
+            "127",
+            "6.2%",
+            "15"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Nine of the 55 verdicts come from people who rated the market three stars or lower, and four of the nine still say the pancake was good.",
+          "figures": [
+            "55"
+          ],
+          "topics": [
+            "dishes",
+            "markets"
+          ]
+        },
+        {
+          "fact": "One from July 2019 describes a long line for the pancake, and one from February 2020, when visitors were few, found none.",
+          "figures": [
+            "2019",
+            "2020"
+          ],
+          "topics": [
+            "crowds",
+            "timing",
+            "markets"
+          ]
+        },
+        {
+          "fact": "Fifty-seven are written in English, 39 in Chinese, 25 in Korean, 16 in Japanese and 5 in other languages.",
+          "figures": [
+            "39",
+            "25",
+            "16",
+            "5"
+          ],
+          "topics": [
+            "language",
+            "dishes"
+          ],
+          "scale": "That gives 142 reviews: 62 from Google Maps and 80 from TripAdvisor, dated March 2019 to September 2026, with 78 from 2025 or 2026."
+        }
+      ]
+    },
+    "gwangjang-market-blankets-bedding": {
+      "hash": "e13d99a2bde7353486f48fbe8feae09ec516c8ce44611f04c6aa7eb75a1dd084",
+      "candidatos": [
+        {
+          "fact": "Reviewers report Chinese-speaking staff (15 reviews), vacuum packing (9), shipping home (8) and a 10% surcharge for paying by card (6).",
+          "figures": [
+            "15",
+            "9",
+            "8",
+            "10%",
+            "6"
+          ],
+          "topics": [
+            "markets",
+            "payments",
+            "shopping"
+          ]
+        },
+        {
+          "fact": "Of the 139 reviews that mention blankets or bedding, 111 are written in Chinese, 19 in English and 7 in Japanese.",
+          "figures": [
+            "139",
+            "111",
+            "19",
+            "7"
+          ],
+          "topics": [
+            "markets",
+            "language"
+          ]
+        },
+        {
+          "fact": "One, in July 2025, asked whether a blanket was made in Korea, was told yes, and received a box in which the blankets were labeled made in China and only the pillows had been compressed.",
+          "figures": [
+            "2025"
+          ],
+          "topics": [
+            "markets",
+            "shopping"
+          ]
+        },
+        {
+          "fact": "One, in June 2025, says a shop handed over a yellowed blanket when the purchase was carried out rather than shipped.",
+          "figures": [
+            "June 2025"
+          ],
+          "topics": [
+            "markets",
+            "shopping"
+          ]
+        },
+        {
+          "fact": "One arrived after 6 pm and found the shops shut.",
+          "figures": [
+            "6 pm"
+          ],
+          "topics": [
+            "timing",
+            "markets"
+          ]
+        },
+        {
+          "fact": "The trade-off: twenty-three happy buyers out of 26 is a good record, and every one of the three complaints is about something a buyer can check on the spot: the label, the actual item handed over, and the price before paying.",
+          "figures": [
+            "26"
+          ],
+          "topics": [
+            "markets",
+            "shopping"
+          ]
+        },
+        {
+          "fact": "In June 2025 another saw the same kind of blanket at 60,000, 65,000, 70,000 and 75,000 won in different shops, and sale items around 45,000.",
+          "figures": [
+            "June 2025",
+            "60,000",
+            "65,000",
+            "70,000",
+            "75,000",
+            "45,000"
+          ],
+          "topics": [
+            "pricing",
+            "markets"
+          ]
+        },
+        {
+          "fact": "one, heading for the shop asking 65,000 won, had the shop asking 70,000 lower its price unprompted.",
+          "figures": [
+            "65,000",
+            "70,000"
+          ],
+          "topics": [
+            "pricing",
+            "markets"
+          ]
+        },
+        {
+          "fact": "The shops are known by number, and 18 reviews give one.",
+          "figures": [
+            "18"
+          ],
+          "topics": [
+            "markets",
+            "shopping"
+          ]
+        },
+        {
+          "fact": "The number that recurs most, 166-2, appears in four reviews.",
+          "figures": [
+            "166-2",
+            "four"
+          ],
+          "topics": [
+            "markets",
+            "shopping"
+          ]
+        },
+        {
+          "fact": "On hours the sample holds two reports: a reviewer who came after 6 pm in August 2025 found the bedding shops closed, and another notes that some close on Sundays.",
+          "figures": [
+            "6 pm",
+            "August 2025"
+          ],
+          "topics": [
+            "timing",
+            "markets"
+          ]
+        }
+      ]
+    },
+    "gwangjang-market-cash-or-card": {
+      "hash": "7e3a571b9d875816768d8b61ac24837208f1d86098fc164a994b06fd8c33c3d1",
+      "candidatos": [
+        {
+          "fact": "Of 1,458 reviews of Gwangjang Market, 24 say how they paid, and 16 of them say to bring cash or report paying with it.",
+          "figures": [
+            "1,458",
+            "24",
+            "16"
+          ],
+          "topics": [
+            "payments",
+            "markets"
+          ]
+        },
+        {
+          "fact": "Five paid by card at least in part, all five written since May 2025.",
+          "figures": [
+            "May 2025"
+          ],
+          "topics": [
+            "payments",
+            "markets"
+          ]
+        },
+        {
+          "fact": "One, from September 2025, says the stalls in the central aisle that sell tteokbokki and similar dishes take cash.",
+          "figures": [
+            "September 2025"
+          ],
+          "topics": [
+            "payments",
+            "dishes",
+            "markets"
+          ]
+        },
+        {
+          "fact": "The other, from December 2025, describes buying at three places that all asked for cash, and paying by bank transfer because the reviewer had none.",
+          "figures": [
+            "December 2025"
+          ],
+          "topics": [
+            "payments",
+            "markets"
+          ]
+        },
+        {
+          "fact": "A Korean-language review from June 2025 says the same thing from the inside: these days, it notes, the stalls take cards too.",
+          "figures": [
+            "June 2025"
+          ],
+          "topics": [
+            "payments",
+            "language",
+            "markets"
+          ]
+        },
+        {
+          "fact": "A Korean-language review from 2020 goes further and advises bringing plenty of small notes.",
+          "figures": [
+            "2020"
+          ],
+          "topics": [
+            "payments",
+            "language"
+          ]
+        },
+        {
+          "fact": "one reviewer, in 2019, describes a dispute with a shopkeeper over which banknote had been handed over, which is the one risk cash carries that a card does not.",
+          "figures": [
+            "2019"
+          ],
+          "topics": [
+            "payments",
+            "markets"
+          ]
+        }
+      ]
+    },
+    "gwangjang-market-english-menus-pointing-prices": {
+      "hash": "4a0e929aec09ca00d33322c9e46529b0e471716567064f42b7c53abb73834093",
+      "candidatos": [
+        {
+          "fact": "Fourteen of the 1,458 reviews of Gwangjang Market mention a menu the reviewer could read.",
+          "figures": [
+            "1,458"
+          ],
+          "topics": [
+            "markets",
+            "language"
+          ]
+        },
+        {
+          "fact": "Four reviewers writing in Japanese found a Japanese menu between 2019 and 2026, and one of them says every shop had one.",
+          "figures": [
+            "2019",
+            "2026"
+          ],
+          "topics": [
+            "markets",
+            "language"
+          ]
+        },
+        {
+          "fact": "In 2023 three visitors, in a review written in Japanese, pointed at four dishes on the menu and showed “one” with their fingers for each.",
+          "figures": [
+            "2023"
+          ],
+          "topics": [
+            "markets",
+            "language",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "In 2019 another reviewer writing in Japanese signaled one portion of fish cake to a vendor who spoke only Korean; everyone in the group was served and everyone was charged.",
+          "figures": [
+            "2019"
+          ],
+          "topics": [
+            "markets",
+            "language",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "A Korean reviewer describing a visit in 2017 says they worked out afterwards that a stall had used two price lists, one when they ordered and another at the bill.",
+          "figures": [
+            "2017"
+          ],
+          "topics": [
+            "markets",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "a one-star review in Chinese from October 2025 says a stall charged for a dish the table never ordered; the reviewer advises adding up your own bill as you order.",
+          "figures": [
+            "October 2025"
+          ],
+          "topics": [
+            "markets",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "A reviewer writing in Chinese in 2025 says some stalls do not mark prices clearly and suggests asking the price and the portion before ordering.",
+          "figures": [
+            "2025"
+          ],
+          "topics": [
+            "markets",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "A Korean reviewer gives the same advice in 2019: order where there is a price list.",
+          "figures": [
+            "2019"
+          ],
+          "topics": [
+            "markets",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Two Japanese reviews from 2019 and 2020 say many of the clothing and shoe shops showed no prices.",
+          "figures": [
+            "2019",
+            "2020"
+          ],
+          "topics": [
+            "markets",
+            "shopping",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Six reviews mention ordering through a machine, and all six are from 2023 or later.",
+          "figures": [
+            "2023"
+          ],
+          "topics": [
+            "apps",
+            "markets"
+          ]
+        }
+      ]
+    },
+    "gwangjang-market-food-guide": {
+      "hash": "7c146a95b79f1a10138a98fe2d93041cdb7ca1f8b6954ce204e273ea3f2d9959",
+      "candidatos": [
+        {
+          "fact": "Prices are approximate (around ₩1,400 to the US dollar, 2026) and vary by stall and portion; most stalls are cash-only.",
+          "figures": [
+            "₩1,400",
+            "2026"
+          ],
+          "topics": [
+            "pricing",
+            "payments"
+          ]
+        },
+        {
+          "fact": "The food stalls generally run from around 8:30 AM until late — roughly 11:00 to 11:30 PM — but many don't actually open until 10 or 11 in the morning, so an early visit finds only part of the market awake.",
+          "figures": [
+            "8:30 AM",
+            "11:00",
+            "11:30 PM",
+            "10",
+            "11"
+          ],
+          "topics": [
+            "timing"
+          ]
+        },
+        {
+          "fact": "The upper-level fabric shops keep shorter hours, roughly 8:30 AM to 6 PM, Monday to Saturday.",
+          "figures": [
+            "8:30 AM",
+            "6 PM"
+          ],
+          "topics": [
+            "timing",
+            "shopping"
+          ]
+        },
+        {
+          "fact": "After about 10 PM, the fabric stalls close and the food alley takes over entirely, turning into an atmospheric late-night eating scene.",
+          "figures": [
+            "10 PM"
+          ],
+          "topics": [
+            "timing"
+          ]
+        },
+        {
+          "fact": "For the best experience, aim for a weekday late morning (around 9–11 AM) or weekday lunch (11:30 AM–1:30 PM), when the food is freshest and the crowds are still manageable.",
+          "figures": [
+            "9–11 AM",
+            "11:30 AM–1:30 PM"
+          ],
+          "topics": [
+            "timing",
+            "crowds"
+          ]
+        },
+        {
+          "fact": "The market gets packed at peak lunch (roughly 11 AM–2 PM) and again in the evening (6–8 PM), and weekend afternoons are the most crowded of all, with the longest queues at the famous stalls.",
+          "figures": [
+            "11 AM–2 PM",
+            "6–8 PM"
+          ],
+          "topics": [
+            "crowds",
+            "timing"
+          ]
+        },
+        {
+          "fact": "The most convenient stop is Jongno 5-ga Station on Line 1, Exit 8, which brings you out right beside the market's Gate 2 — and Gate 2 drops you straight into the heart of the food alley.",
+          "figures": [
+            "1",
+            "8",
+            "2"
+          ],
+          "topics": [
+            "markets"
+          ]
+        },
+        {
+          "fact": "Alternatively, Euljiro 4-ga Station (Lines 2 and 5) is within walking distance from the market's other side.",
+          "figures": [
+            "2",
+            "5"
+          ],
+          "topics": [
+            "markets"
+          ]
+        },
+        {
+          "fact": "Aim for around ₩30,000–50,000 in cash for a couple of people, and note there are ATMs near Gate 1 if you run short.",
+          "figures": [
+            "₩30,000–50,000",
+            "1"
+          ],
+          "topics": [
+            "payments",
+            "pricing"
+          ]
+        }
+      ]
+    },
+    "gwangjang-market-hanbok-fabric-vintage": {
+      "hash": "321e92f886a34beb375228d959a5cc75eae0a5746d516ef73ecc81f1d730b8ee",
+      "candidatos": []
+    },
+    "gwangjang-market-mayak-gimbap": {
+      "hash": "8a22d19081fc5216d0227a69fff545b1eccf747d798e876d37a89cc91bf77320",
+      "candidatos": [
+        {
+          "fact": "Of 1,458 reviews of the market, 124 name gimbap and 40 of them call it mayak gimbap, the bite-size version.",
+          "figures": [
+            "1,458",
+            "124",
+            "40"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Forty-two say how theirs tasted: 33 call it good, 8 call it ordinary and 1 did not like it.",
+          "figures": [
+            "33",
+            "8",
+            "1"
+          ],
+          "topics": [
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Three reviews name a price, and each says 3,000 won an order: two from 2019 and one from October 2025.",
+          "figures": [
+            "3,000",
+            "2019",
+            "October 2025"
+          ],
+          "topics": [
+            "pricing",
+            "markets"
+          ]
+        },
+        {
+          "fact": "The single negative verdict is a one-star review from 2019 whose writer was also charged twice for another dish.",
+          "figures": [
+            "2019"
+          ],
+          "topics": [
+            "dishes",
+            "payments"
+          ]
+        },
+        {
+          "fact": "Seven of the 42 verdicts come from reviews of three stars or lower, and three of the seven are good.",
+          "figures": [
+            "42"
+          ],
+          "topics": [
+            "dishes"
+          ]
+        }
+      ]
+    },
+    "gwangjang-market-netflix-stall-reviews": {
+      "hash": "468ead8a660d2d525c1e8bcc7c389e64496886742e0bdd8556842f01e964e032",
+      "candidatos": [
+        {
+          "fact": "Of 1,458 reviews of the market, 61 mention the series and 29 describe going to a stall it featured.",
+          "figures": [
+            "1,458",
+            "61",
+            "29"
+          ],
+          "topics": [
+            "markets"
+          ]
+        },
+        {
+          "fact": "Of the 25 who judge the food, 21 are in favour and 4 are not.",
+          "figures": [
+            "25",
+            "21",
+            "4"
+          ],
+          "topics": [
+            "dishes",
+            "markets"
+          ]
+        },
+        {
+          "fact": "Ten of the 61 mention a queue or a wait.",
+          "figures": [
+            "61"
+          ],
+          "topics": [
+            "markets",
+            "crowds"
+          ],
+          "scale": "It comes up in 61 of the 1,458 reviews in our representative sample of the market."
+        },
+        {
+          "fact": "The dishes named alongside the series are the ones it showed: knife-cut noodles in 27 reviews, dumplings in 19, mung bean pancake in 13.",
+          "figures": [
+            "27",
+            "19",
+            "13"
+          ],
+          "topics": [
+            "dishes",
+            "markets"
+          ]
+        },
+        {
+          "fact": "One visitor could not find the stall at all, and a review from September 2026 says some of what the series showed is no longer there",
+          "figures": [
+            "September 2026"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ]
+        }
+      ]
+    },
+    "gwangjang-market-seating-benches": {
+      "hash": "23ef5c3a78d4072e79500d08398dac2ce4dddedb41a3a66c9e57f11dd095a787",
+      "candidatos": [
+        {
+          "fact": "Of 1,458 reviews, 43 talk about sitting.",
+          "figures": [
+            "1,458",
+            "43"
+          ],
+          "topics": [
+            "markets"
+          ]
+        }
+      ]
+    },
+    "gwangjang-market-twisted-donut-kkwabaegi": {
+      "hash": "b9d2fa44bcf236af4acc26d060380c0a410753ee9c2881a35cb900fef705178d",
+      "candidatos": [
+        {
+          "fact": "Of the 53 reviews of Gwangjang Market that name the donut, 31 say how it tasted, and 29 of them say it was good.",
+          "figures": [
+            "53",
+            "31",
+            "29"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "What differs is the wait: sixteen reviews of Gwangjang Market mention a queue for it, and one review of Mangwon Market does.",
+          "figures": [
+            "sixteen",
+            "one"
+          ],
+          "topics": [
+            "markets",
+            "crowds"
+          ]
+        },
+        {
+          "fact": "Three reviewers name the price, and all three say 1,000 won: one in January 2023 and two in June 2025.",
+          "figures": [
+            "1,000 won",
+            "January 2023",
+            "June 2025"
+          ],
+          "topics": [
+            "pricing",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "At Mangwon Market 38 reviews name the donut stall, sixteen say how it tasted and all sixteen liked it.",
+          "figures": [
+            "38",
+            "sixteen"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Four reviews place the stall at the far end of Mangwon Market or on the corner by the crossing.",
+          "figures": [
+            "Four"
+          ],
+          "topics": [
+            "markets"
+          ]
+        },
+        {
+          "fact": "Two note that it opens early: one visitor at 9 am on a Friday found most stalls still shut and the donut stall already open.",
+          "figures": [
+            "9 am"
+          ],
+          "topics": [
+            "markets",
+            "timing"
+          ]
+        },
+        {
+          "fact": "At Namdaemun Market only six reviews mention donuts, and the three who say how they tasted liked them.",
+          "figures": [
+            "six",
+            "three"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "A Japanese reviewer in June 2025 arrived while the stall was getting ready to open at 10 am, an hour that differed from the one listed online, was third in line, and watched a long queue form behind.",
+          "figures": [
+            "June 2025",
+            "10 am"
+          ],
+          "topics": [
+            "timing",
+            "markets"
+          ]
+        }
+      ]
+    },
+    "gwangjang-market-what-reviews-say": {
+      "hash": "53126c2b4d6db22ba9ada46af67c89cf0a76daa71ee28a277b0f178ea10cd44a",
+      "candidatos": [
+        {
+          "fact": "Of the 1,458 reviews written by people who went, 83.4% give four or five stars and the average is 4.30.",
+          "figures": [
+            "1,458",
+            "83.4%",
+            "4.30"
+          ],
+          "topics": [
+            "markets"
+          ]
+        },
+        {
+          "fact": "Of the 411 items that mention the market, 46 argue against going.",
+          "figures": [
+            "411",
+            "46"
+          ],
+          "topics": [
+            "markets"
+          ],
+          "scale": "Advice — 411 items from Reddit, Quora and YouTube that mention the market by name, with their source thread or video recorded."
+        },
+        {
+          "fact": "One or two stars account for 6.7% of visitors.",
+          "figures": [
+            "6.7%"
+          ],
+          "topics": [
+            "markets"
+          ]
+        },
+        {
+          "fact": "Of the 45 that give a verdict on the visit itself, 34 say Gwangjang Market is worth it, 7 say so with a condition (once, if you are nearby, or to look rather than to eat) and 4 say it is not, or only barely.",
+          "figures": [
+            "45",
+            "34",
+            "7",
+            "4"
+          ],
+          "topics": [
+            "markets"
+          ]
+        },
+        {
+          "fact": "Seventeen of the 47 low reviews that call the market expensive are written in Korean, one more than in English.",
+          "figures": [
+            "47"
+          ],
+          "topics": [
+            "markets",
+            "pricing",
+            "language"
+          ]
+        },
+        {
+          "fact": "14.5% of low reviews and 4.3% of high ones say most stalls sell the same few dishes.",
+          "figures": [
+            "14.5%",
+            "4.3%"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Complaints about a vendor’s manner appear in 23 low reviews and five high ones, and they read differently on each side",
+          "figures": [
+            "23"
+          ],
+          "topics": [
+            "markets",
+            "etiquette"
+          ]
+        }
+      ]
+    },
+    "gwangjang-market-when-to-go": {
+      "hash": "e8cd0cacee4e60b0295d548e39c7d95d15b2a26678a0886427f2883bfeca4530",
+      "candidatos": [
+        {
+          "fact": "Of 1,458 reviews of Gwangjang Market, 210 mention an hour, a day or a time of day.",
+          "figures": [
+            "1,458",
+            "210"
+          ],
+          "topics": [
+            "timing",
+            "markets"
+          ]
+        },
+        {
+          "fact": "Twenty-two found something closed from mid-afternoon on: in twelve it was the shops, and four who arrived at 8:30 pm or later found many food stalls shut.",
+          "figures": [
+            "8:30 pm"
+          ],
+          "topics": [
+            "timing",
+            "markets"
+          ]
+        },
+        {
+          "fact": "Not everyone who came late found shutters: two reviewers in the evening group arrived at about 9 pm and still found stalls serving.",
+          "figures": [
+            "9 pm"
+          ],
+          "topics": [
+            "timing",
+            "markets"
+          ]
+        },
+        {
+          "fact": "a 2019 review describes food stalls closing fast at 3 in the afternoon.",
+          "figures": [
+            "2019",
+            "3 in the afternoon"
+          ],
+          "topics": [
+            "timing",
+            "markets"
+          ]
+        },
+        {
+          "fact": "Five reviews put the opening at about 9 am, and three say the crowd arrives from about 11.",
+          "figures": [
+            "9 am",
+            "11"
+          ],
+          "topics": [
+            "timing",
+            "crowds",
+            "markets"
+          ]
+        },
+        {
+          "fact": "Eight reviews name lunch or midday as a peak, and eight name dinner time or the hours after 5 pm.",
+          "figures": [
+            "5 pm"
+          ],
+          "topics": [
+            "timing",
+            "crowds"
+          ]
+        }
+      ]
+    },
+    "gwangjang-market-yukhoe-live-octopus-sannakji": {
+      "hash": "3961307008d157f30a15f2542a8921ffc8f19a5dbb08ea48d12295b9cf61a839",
+      "candidatos": [
+        {
+          "fact": "Of 1,458 reviews of the market, 118 name yukhoe, the raw beef dish, and 70 name live octopus (sannakji).",
+          "figures": [
+            "1,458",
+            "118",
+            "70"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Among reviewers who say how it tasted, 36 of 39 call the yukhoe good and 19 of 24 say the same of the octopus.",
+          "figures": [
+            "36",
+            "39",
+            "19",
+            "24"
+          ],
+          "topics": [
+            "dishes"
+          ]
+        },
+        {
+          "fact": "What stands out is who writes about them: 80 of the 118 reviews that name yukhoe are in Japanese or Chinese, and so are 48 of the 70 that name the octopus.",
+          "figures": [
+            "80",
+            "118",
+            "48",
+            "70"
+          ],
+          "topics": [
+            "dishes",
+            "language"
+          ]
+        },
+        {
+          "fact": "A review cannot establish a cause, and one report among the 49 reviewers who give a verdict on either dish is not a rate.",
+          "figures": [
+            "49"
+          ],
+          "topics": [
+            "dishes",
+            "dietary"
+          ]
+        },
+        {
+          "fact": "One 2025 review, written in Chinese, mentions a half-and-half order that the reviewer found friendly for a first try.",
+          "figures": [
+            "2025"
+          ],
+          "topics": [
+            "dishes",
+            "language"
+          ]
+        }
+      ]
+    },
+    "gwangjang-vs-namdaemun-vs-mangwon-market": {
+      "hash": "f002b3a8aa3a119179d4c2874a2d600c35f043ee0ed894854037007c009df0b0",
+      "candidatos": [
+        {
+          "fact": "In 100 reviews that name two of Gwangjang Market, Namdaemun Market and Mangwon Market, reviewers give Mangwon the local feel (24 reviews), the thinner crowds (23) and the lower prices (12), and give Gwangjang the choice and the size (15).",
+          "figures": [
+            "100",
+            "24",
+            "23",
+            "12",
+            "15"
+          ],
+          "topics": [
+            "markets",
+            "crowds",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Gwangjang is the yardstick: 83 of the 100 are reviews of Mangwon or Namdaemun that bring up Gwangjang.",
+          "figures": [
+            "83",
+            "100"
+          ],
+          "topics": [
+            "markets"
+          ]
+        }
+      ]
+    },
+    "hotteok-seoul-namdaemun-mangwon-gwangjang": {
+      "hash": "a81d19c6e2b3763f38d0693d393d12681aa7447ac169c0d25f654cc9b699bd9e",
+      "candidatos": [
+        {
+          "fact": "At Namdaemun Market the draw is a vegetable hotteok filled with glass noodles, sold near Gate 2, and twelve reviews describe the queue.",
+          "figures": [
+            "2",
+            "twelve"
+          ],
+          "topics": [
+            "markets",
+            "dishes",
+            "crowds"
+          ]
+        },
+        {
+          "fact": "Of the 204 reviews, 84 say how the hotteok tasted, and 76 of those say it was good.",
+          "figures": [
+            "204",
+            "84",
+            "76"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Twenty-nine of the 93 reviews name the vegetable version, also called japchae hotteok: a fried shell filled with glass noodles and vegetables.",
+          "figures": [
+            "Twenty-nine",
+            "93"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Six reviews place the stall at Gate 2, and several more say simply at the entrance.",
+          "figures": [
+            "Six",
+            "2"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "One review from January 2025 names Gate 5.",
+          "figures": [
+            "January 2025",
+            "5"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Forty-one of the 43 verdicts at Namdaemun Market are good.",
+          "figures": [
+            "Forty-one",
+            "43"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ],
+          "scale": "A review counts as a verdict only when the reviewer ate the hotteok and says how it was: 84 do."
+        },
+        {
+          "fact": "Twenty-six of the 29 verdicts are good.",
+          "figures": [
+            "Twenty-six",
+            "29"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ],
+          "scale": "A review counts as a verdict only when the reviewer ate the hotteok and says how it was: 84 do."
+        },
+        {
+          "fact": "Gwangjang Market is known for other things, and only 34 of its 1,458 reviews name hotteok.",
+          "figures": [
+            "34",
+            "1,458"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "The Namdaemun Market price reports rise steadily: 1,000 won in three reviews from late 2019 and early 2020, 2,000 won for the vegetable one in June 2024 and 2,500 won in two reviews from May and June 2025.",
+          "figures": [
+            "1,000 won",
+            "2019",
+            "2020",
+            "2,000 won",
+            "June 2024",
+            "2,500 won",
+            "May",
+            "June 2025"
+          ],
+          "topics": [
+            "markets",
+            "pricing",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "A Korean reviewer waited 50 minutes in February 2023 and concluded that the hotteok is good for a short weekday wait and hard to justify for fifty minutes.",
+          "figures": [
+            "50 minutes",
+            "February 2023",
+            "fifty minutes"
+          ],
+          "topics": [
+            "markets",
+            "timing",
+            "crowds"
+          ]
+        },
+        {
+          "fact": "One one-star review from July 2026 is about the bill.",
+          "figures": [
+            "one-star",
+            "July 2026"
+          ],
+          "topics": [
+            "markets",
+            "pricing"
+          ]
+        }
+      ]
+    },
+    "is-mangwon-market-crowded-weekday-weekend": {
+      "hash": "c324cf55f03e1305d85ea971185b09ed67c40ec4300ea3b59235ed28a84bfaa0",
+      "candidatos": [
+        {
+          "fact": "One reviewer writing in Chinese recommends arriving at 11 or at about 2 p.m., when the shops are open and the lunch crowd is thinner.",
+          "figures": [
+            "11",
+            "2 p.m."
+          ],
+          "topics": [
+            "markets",
+            "timing",
+            "crowds"
+          ]
+        }
+      ]
+    },
+    "is-seoul-food-tour-worth-it": {
+      "hash": "4ea1d79278f928720d81ec1c8a125bb6b2a335c89bc47b7064fc27c4af4e2dcf",
+      "candidatos": [
+        {
+          "fact": "You can eat a full, delicious meal at Gwangjang Market for $20–30, so a tour costing several times that clearly isn't about the price of the dishes.",
+          "figures": [
+            "$20–30"
+          ],
+          "topics": [
+            "pricing",
+            "markets"
+          ]
+        },
+        {
+          "fact": "The famous stalls, especially the Netflix-featured ones at Gwangjang, can have 30 to 40 minute queues at peak times.",
+          "figures": [
+            "30 to 40 minute"
+          ],
+          "topics": [
+            "markets",
+            "timing",
+            "crowds"
+          ]
+        },
+        {
+          "fact": "Next, look for a good tastings-to-price ratio: a tour serving ten-plus dishes is better value than one serving five for a similar price.",
+          "figures": [
+            "ten-plus",
+            "five"
+          ],
+          "topics": [
+            "food-tours",
+            "pricing"
+          ]
+        }
+      ]
+    },
+    "korean-bbq-seoul-guide": {
+      "hash": "a80753b3ff2c3dc909ec268ef9214ff4d6000eec3f3a90a13e4ac12ac5c98d9c",
+      "candidatos": [
+        {
+          "fact": "Pork belly (samgyeopsal) runs roughly ₩15,000–20,000 a portion, a dinner for two about ₩50,000–80,000, and all-you-can-eat about ₩18,000–30,000 a head.",
+          "figures": [
+            "₩15,000–20,000",
+            "₩50,000–80,000",
+            "₩18,000–30,000"
+          ],
+          "topics": [
+            "pricing",
+            "korean-bbq"
+          ]
+        },
+        {
+          "fact": "The Korean word on the menu is inbun, a serving for one person: 1인분 is one portion, 2인분 is two.",
+          "figures": [
+            "1인분",
+            "2인분"
+          ],
+          "topics": [
+            "korean-bbq",
+            "language"
+          ]
+        },
+        {
+          "fact": "The official price surveys count a portion of pork belly as 200 grams, but Korean press reports describe restaurants now selling portions of 150 to 180 grams, which keeps the price on the menu under ₩20,000.",
+          "figures": [
+            "200 grams",
+            "150 to 180 grams",
+            "₩20,000"
+          ],
+          "topics": [
+            "pricing",
+            "korean-bbq"
+          ]
+        },
+        {
+          "fact": "Two portions is therefore less meat than it sounds: about 300 to 360 grams before cooking.",
+          "figures": [
+            "300 to 360"
+          ],
+          "topics": [
+            "korean-bbq",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "The Seoul average for a 200-gram portion passed ₩20,000 in 2024 and stood at about ₩21,300 in the agency’s August 2026 survey.",
+          "figures": [
+            "200-gram",
+            "₩20,000",
+            "2024",
+            "₩21,300",
+            "August 2026"
+          ],
+          "topics": [
+            "pricing",
+            "korean-bbq"
+          ]
+        },
+        {
+          "fact": "a menu that says ₩16,000 or ₩18,000 can cost more per gram than one that says ₩20,000.",
+          "figures": [
+            "₩16,000",
+            "₩18,000",
+            "₩20,000"
+          ],
+          "topics": [
+            "pricing",
+            "korean-bbq"
+          ]
+        },
+        {
+          "fact": "Hanwoo, the domestic breed that Korean diners treat as the premium choice, starts at about ₩40,000 for a portion of 100 to 150 grams and climbs far higher for the best cuts.",
+          "figures": [
+            "₩40,000",
+            "100 to 150 grams"
+          ],
+          "topics": [
+            "pricing",
+            "korean-bbq"
+          ]
+        },
+        {
+          "fact": "For pork belly at an ordinary restaurant, plan on roughly ₩25,000 to ₩40,000 per person including rice or stew and a drink, with menu portions of 150 to 180 grams priced at about ₩15,000 to ₩20,000 each.",
+          "figures": [
+            "₩25,000 to ₩40,000",
+            "150 to 180 grams",
+            "₩15,000 to ₩20,000"
+          ],
+          "topics": [
+            "pricing",
+            "korean-bbq"
+          ]
+        },
+        {
+          "fact": "With a menu portion at ₩15,000 to ₩20,000, the flat price is covered by the second portion.",
+          "figures": [
+            "₩15,000 to ₩20,000"
+          ],
+          "topics": [
+            "pricing",
+            "korean-bbq"
+          ]
+        }
+      ]
+    },
+    "korean-phrases-travelers-used-hangul": {
+      "hash": "9b5e59edf5e8cbcf062ef814ea3fac9f49ac2939caefa5f1e34987ca20e6ea1b",
+      "candidatos": [
+        {
+          "fact": "Two Japanese reviewers of Gwangjang Market, both in 2019, say the same thing from the stalls: one felt the service doubled when they spoke Korean, and the other was chatted to warmly by a vendor in spite of broken Korean.",
+          "figures": [
+            "2019"
+          ],
+          "topics": [
+            "markets",
+            "language"
+          ]
+        }
+      ]
+    },
+    "korean-street-food-glossary": {
+      "hash": "7a13caa2d9e5edc240af124d7b53e7e3a80908c12f268b13cabed27990bf2e1c",
+      "candidatos": [
+        {
+          "fact": "Most dishes cost just ₩1,000–10,000 (about $1–8), so you can sample widely.",
+          "figures": [
+            "₩1,000–10,000",
+            "$1–8"
+          ],
+          "topics": [
+            "pricing",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "the sugar filling is volcanically hot, so let it cool for at least 30 seconds before biting.",
+          "figures": [
+            "30 seconds"
+          ],
+          "topics": [
+            "dishes",
+            "timing"
+          ]
+        },
+        {
+          "fact": "bring cash in small bills — traditional markets and older stalls are frequently cash-only, so carry ₩30,000–50,000 on any market day (ATMs are in every convenience store if you run short).",
+          "figures": [
+            "₩30,000–50,000"
+          ],
+          "topics": [
+            "payments",
+            "markets"
+          ]
+        },
+        {
+          "fact": "winter (November to February) is peak street food season, when hot tteokbokki, odeng broth, hotteok, and bungeoppang are at their most magical, while in humid summer many stalls cut hours or close.",
+          "figures": [
+            "November",
+            "February"
+          ],
+          "topics": [
+            "timing",
+            "weather",
+            "dishes"
+          ]
+        }
+      ]
+    },
+    "mandu-dumplings-seoul-gwangjang-namdaemun-mangwon": {
+      "hash": "00bbe1adad121fe81ef420af19999eadb6125b1e1a7d77bd0d639e3d4726a5ad",
+      "candidatos": [
+        {
+          "fact": "Sixty-five of the 154 reviews say how the mandu tasted, and 53 of those say they were good.",
+          "figures": [
+            "154",
+            "53"
+          ],
+          "topics": [
+            "dishes",
+            "markets"
+          ]
+        },
+        {
+          "fact": "At Gwangjang Market, 16 reviews tie the dumplings to the noodle stall featured on Netflix.",
+          "figures": [
+            "16"
+          ],
+          "topics": [
+            "dishes",
+            "markets"
+          ]
+        },
+        {
+          "fact": "At Gwangjang Market 31 of the 39 reviewers who judged the mandu liked them.",
+          "figures": [
+            "31",
+            "39"
+          ],
+          "topics": [
+            "dishes",
+            "markets"
+          ]
+        },
+        {
+          "fact": "One says the food at several stalls was not good for the price, with small dumplings at 8,000 won.",
+          "figures": [
+            "8,000 won"
+          ],
+          "topics": [
+            "pricing",
+            "dishes",
+            "markets"
+          ]
+        },
+        {
+          "fact": "a Japanese reviewer in July 2025, on a day of 36 degrees, describes dumplings that had been boiled in advance and left out before being reheated to order.",
+          "figures": [
+            "July 2025",
+            "36 degrees"
+          ],
+          "topics": [
+            "weather",
+            "dishes",
+            "markets"
+          ]
+        },
+        {
+          "fact": "At Namdaemun Market 17 of the 21 reviewers who judged the mandu liked them, and four reviews name the shop: Gamegol Son Wang Mandu (가메골 손왕만두), which reviewers also write as Kamegol.",
+          "figures": [
+            "17",
+            "21"
+          ],
+          "topics": [
+            "dishes",
+            "markets"
+          ]
+        },
+        {
+          "fact": "Only 18 reviews of Mangwon Market name mandu, and the five that say how they tasted all liked them.",
+          "figures": [
+            "18"
+          ],
+          "topics": [
+            "dishes",
+            "markets"
+          ]
+        },
+        {
+          "fact": "On price, Gwangjang Market reviewers report 5,000 won an order in May 2019 and January 2020, and one reports 8,000 won for small dumplings in August 2025.",
+          "figures": [
+            "5,000 won",
+            "May 2019",
+            "January 2020",
+            "8,000 won",
+            "August 2025"
+          ],
+          "topics": [
+            "pricing",
+            "dishes",
+            "markets"
+          ]
+        }
+      ]
+    },
+    "mangwon-market-hangang-park-mangnidan-gil-how-to-get-there": {
+      "hash": "4e9ffc166ea88707f260d705e89468c9c49085263b2dbb959d5587d4905a77a5",
+      "candidatos": [
+        {
+          "fact": "The official Visit Seoul listing gives Subway Line 6, Mangwon Station, Exit 2, 351 m.",
+          "figures": [
+            "6",
+            "2",
+            "351 m"
+          ],
+          "topics": [
+            "markets"
+          ]
+        }
+      ]
+    },
+    "mangwon-market-what-to-eat-reviews": {
+      "hash": "11ea3370027b03340dc9197671ab8f8576b18f80ad5ac653d483b0e730422779",
+      "candidatos": [
+        {
+          "fact": "Mangwon Market is a covered neighborhood market in Seoul, and 88.5% of its 1,089 reviews give four or five stars.",
+          "figures": [
+            "88.5%",
+            "1,089"
+          ],
+          "topics": [
+            "markets"
+          ]
+        },
+        {
+          "fact": "Ten reviews say the cooked-food stalls open around 11, and sixteen say there are few seats or that the food is sold to take away.",
+          "figures": [
+            "11"
+          ],
+          "topics": [
+            "timing",
+            "markets"
+          ]
+        },
+        {
+          "fact": "The commonest low review, 49 of 125, says the market is small and not worth a special trip.",
+          "figures": [
+            "49",
+            "125"
+          ],
+          "topics": [
+            "markets"
+          ],
+          "scale": "We read all 125 reviews of three stars or lower and sorted them by what they object to."
+        },
+        {
+          "fact": "Fruit comes up in 138 reviews, more than any dish.",
+          "figures": [
+            "138"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Among cooked food, dakgangjeong leads with 89 reviews, then hotteok, kalguksu and the stuffed fried pepper.",
+          "figures": [
+            "89"
+          ],
+          "topics": [
+            "dishes",
+            "markets"
+          ]
+        },
+        {
+          "fact": "Dakgangjeong is also the only dish with enough low reviews to compare: it is named in 10.4% of them against 7.9% of the high ones, 1.3 times as often.",
+          "figures": [
+            "10.4%",
+            "7.9%",
+            "1.3"
+          ],
+          "topics": [
+            "dishes"
+          ]
+        },
+        {
+          "fact": "One or two stars account for 27 reviews, 2.5%.",
+          "figures": [
+            "27",
+            "2.5%"
+          ],
+          "topics": [
+            "markets"
+          ]
+        },
+        {
+          "fact": "For reviewers writing in other languages, the objection is scale: 26 of 54 say Mangwon Market is small, has little to eat, or is nothing special.",
+          "figures": [
+            "26",
+            "54"
+          ],
+          "topics": [
+            "markets",
+            "language"
+          ]
+        },
+        {
+          "fact": "among the low reviews, 18 of the 71 written in Korean complain about price, and four of them say it has gone up.",
+          "figures": [
+            "18",
+            "71"
+          ],
+          "topics": [
+            "pricing",
+            "language"
+          ]
+        },
+        {
+          "fact": "One suggests ten to eleven, and two found most stalls open by about 10:30.",
+          "figures": [
+            "10:30"
+          ],
+          "topics": [
+            "timing"
+          ]
+        },
+        {
+          "fact": "Three reviews, from January 2023, October 2024 and October 2025, say that some of the best-known stalls close on Mondays.",
+          "figures": [
+            "January 2023",
+            "October 2024",
+            "October 2025"
+          ],
+          "topics": [
+            "timing",
+            "markets"
+          ]
+        },
+        {
+          "fact": "One review from July 2025, written in Chinese, describes the gap between the two: stalls that can take cards but keep the terminal out of sight, or add a surcharge for using it.",
+          "figures": [
+            "July 2025"
+          ],
+          "topics": [
+            "payments",
+            "language"
+          ]
+        },
+        {
+          "fact": "Of the 68 reviews that bring up Gwangjang Market, 12 say Mangwon is cheaper.",
+          "figures": [
+            "68",
+            "12"
+          ],
+          "topics": [
+            "pricing",
+            "markets"
+          ]
+        }
+      ]
+    },
+    "myeongdong-vs-namdaemun-gwangjang-markets": {
+      "hash": "bec0978c611de9ebc73a5a10e5902ff550aa6df66a44ea36d63897ea52945db2",
+      "candidatos": [
+        {
+          "fact": "Myeongdong comes up in 122 reviews of Gwangjang Market, Namdaemun Market and Mangwon Market.",
+          "figures": [
+            "122"
+          ],
+          "topics": [
+            "markets"
+          ]
+        },
+        {
+          "fact": "Forty-two reviews say the market is cheaper than Myeongdong: 30 of Namdaemun Market, 8 of Gwangjang Market and 4 of Mangwon Market.",
+          "figures": [
+            "Forty-two",
+            "30",
+            "8",
+            "4"
+          ],
+          "topics": [
+            "markets",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Namdaemun Market accounts for most of them: 89 of its 1,376 reviews name Myeongdong, which is 6.5%.",
+          "figures": [
+            "89",
+            "1,376",
+            "6.5%"
+          ],
+          "topics": [
+            "markets"
+          ]
+        }
+      ]
+    },
+    "namdaemun-market-childrens-clothing": {
+      "hash": "8879795c96a2dca146828d6674c3765b8a4be02624a474232558d189e4503515",
+      "candidatos": [
+        {
+          "fact": "A review from 2019 describes wholesale hours from 10 p.m. to 5 a.m. with discounts from three pieces.",
+          "figures": [
+            "2019",
+            "10 p.m.",
+            "5 a.m."
+          ],
+          "topics": [
+            "timing",
+            "markets"
+          ]
+        },
+        {
+          "fact": "Nine of the 34 are written in Japanese or Chinese.",
+          "figures": [
+            "34"
+          ],
+          "topics": [
+            "language",
+            "markets"
+          ],
+          "scale": "Thirty-four reviews of Namdaemun Market mention children’s or baby clothing, and thirteen recommend it outright."
+        },
+        {
+          "fact": "Six of the 34 reviews have a complaint.",
+          "figures": [
+            "34"
+          ],
+          "topics": [
+            "shopping",
+            "kids-families"
+          ],
+          "scale": "Thirty-four reviews of Namdaemun Market mention children’s or baby clothing, and thirteen recommend it outright."
+        },
+        {
+          "fact": "A reviewer in 2024 notes that the street-level shops are only the front of several small malls, each specializing in one kind of goods, and that one of them is given over to children’s wear.",
+          "figures": [
+            "2024"
+          ],
+          "topics": [
+            "markets",
+            "shopping",
+            "kids-families"
+          ]
+        },
+        {
+          "fact": "A Japanese reviewer in 2026 describes a vendor of children’s clothing who said looking was fine and then, when nothing was bought, made a remark about Japanese customers, assuming it would not be understood.",
+          "figures": [
+            "2026"
+          ],
+          "topics": [
+            "language",
+            "etiquette",
+            "shopping"
+          ]
+        }
+      ]
+    },
+    "namdaemun-market-crowds-best-time": {
+      "hash": "81718872f762386fcbbe406be77755dd315c62fef6504d419069a512adf98c76",
+      "candidatos": []
+    },
+    "namdaemun-market-red-guides-information": {
+      "hash": "0b50f59f2e930e9cb99538581b4d3fd8f3369e95c850db118c427813c3b3b7e6",
+      "candidatos": [
+        {
+          "fact": "Twenty-two of the 1,376 reviews of Namdaemun Market mention them, and thirteen describe the red clothing.",
+          "figures": [
+            "1,376"
+          ],
+          "topics": [
+            "markets"
+          ]
+        },
+        {
+          "fact": "Fourteen of the 22 reviews are from 2024 or later, and the earliest is from 2019, so this is not a recent experiment.",
+          "figures": [
+            "22",
+            "2024",
+            "2019"
+          ],
+          "topics": [
+            "markets"
+          ]
+        },
+        {
+          "fact": "The trade-off: twenty-two reviews in 1,376 is a small share.",
+          "figures": [
+            "1,376"
+          ],
+          "topics": [
+            "markets"
+          ]
+        },
+        {
+          "fact": "Eleven reviews of Gwangjang Market mention information staff, ten of them from 2024 or later.",
+          "figures": [
+            "2024"
+          ],
+          "topics": [
+            "markets"
+          ]
+        },
+        {
+          "fact": "One review of Mangwon Market, from May 2024, says guides are available there for translation.",
+          "figures": [
+            "May 2024"
+          ],
+          "topics": [
+            "markets"
+          ]
+        }
+      ]
+    },
+    "namdaemun-market-what-to-buy-eat-reviews": {
+      "hash": "a0b065c4a18754bbebd985ad641fbbb19300b3eae8830a73f8a1ae061596c376",
+      "candidatos": [
+        {
+          "fact": "Namdaemun Market is a shopping market first: its 1,376 reviews name clothing (211) and souvenirs (181) more often than any food, and hotteok (93) is the dish they name most.",
+          "figures": [
+            "1,376",
+            "211",
+            "181",
+            "93"
+          ],
+          "topics": [
+            "markets",
+            "shopping",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Four or five stars account for 85.1% of the 1,376 reviews, and one or two stars for 61 of them, 4.4%.",
+          "figures": [
+            "85.1%",
+            "1,376",
+            "61",
+            "4.4%"
+          ],
+          "topics": [
+            "markets"
+          ]
+        },
+        {
+          "fact": "The low reviews object to the goods, not the food: 78 of 205 call them cheap, repetitive or nothing special.",
+          "figures": [
+            "78",
+            "205"
+          ],
+          "topics": [
+            "markets",
+            "shopping"
+          ]
+        },
+        {
+          "fact": "Food is a smaller complaint, raised in 17 low reviews, and so is how vendors behave, in 15.",
+          "figures": [
+            "17",
+            "15"
+          ],
+          "topics": [
+            "markets",
+            "etiquette"
+          ]
+        },
+        {
+          "fact": "Twenty-six reviews, written between 2019 and 2026, say that the shops close in the early evening, or describe arriving in the evening to find them shut.",
+          "figures": [
+            "2019",
+            "2026"
+          ],
+          "topics": [
+            "markets",
+            "timing"
+          ]
+        },
+        {
+          "fact": "Bargaining is the practical point reviews raise most, in 43 of them.",
+          "figures": [
+            "43"
+          ],
+          "topics": [
+            "markets",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Four, from 2024 and 2025, describe a surcharge for paying by card, and three of them put it at 10%.",
+          "figures": [
+            "2024",
+            "2025",
+            "10%"
+          ],
+          "topics": [
+            "payments",
+            "markets"
+          ]
+        },
+        {
+          "fact": "37 reviews say it is easy to get lost; fifteen of them are low reviews.",
+          "figures": [
+            "37"
+          ],
+          "topics": [
+            "markets"
+          ]
+        }
+      ]
+    },
+    "naver-map-kakao-map-google-maps-korea": {
+      "hash": "08853428068ad47b64e678f35176612dc1b38fb1df55a58515993128d41ff061",
+      "candidatos": [
+        {
+          "fact": "In 151 first-hand accounts that name Naver Map or Kakao Map, 42 say Google Maps does not work for navigation in Korea, seven of them written in 2026, and 56 say Naver Map got them around accurately.",
+          "figures": [
+            "151",
+            "42",
+            "2026",
+            "56"
+          ],
+          "topics": [
+            "apps"
+          ]
+        },
+        {
+          "fact": "Searching the Korean apps in English failed in 19 accounts.",
+          "figures": [
+            "19"
+          ],
+          "topics": [
+            "apps",
+            "language"
+          ]
+        },
+        {
+          "fact": "Travelers in August 2026 describe navigation as the biggest struggle of their trip: Google Maps showed them public transport only.",
+          "figures": [
+            "2026"
+          ],
+          "topics": [
+            "apps"
+          ]
+        },
+        {
+          "fact": "A resident who lived in Seoul from 2023 to 2025 found Google Maps fine for subway and bus, and often better than the Korean apps at offering routes with the least walking.",
+          "figures": [
+            "2023",
+            "2025"
+          ],
+          "topics": [
+            "apps"
+          ]
+        },
+        {
+          "fact": "A traveler in 2024 found Kakao Map hard to use because of the language and used Google Maps instead, following the blue dot where walking directions were missing.",
+          "figures": [
+            "2024"
+          ],
+          "topics": [
+            "apps",
+            "language"
+          ]
+        },
+        {
+          "fact": "Korea’s government gave Google conditional approval in 2026 to export map data.",
+          "figures": [
+            "2026"
+          ],
+          "topics": [
+            "apps"
+          ]
+        },
+        {
+          "fact": "Naver Map is named in 127 of the accounts and Kakao Map in 54.",
+          "figures": [
+            "127",
+            "54"
+          ],
+          "topics": [
+            "apps"
+          ]
+        },
+        {
+          "fact": "One traveler in 2026 describes restaurants offering a free soda or side dish in exchange for a five-star review.",
+          "figures": [
+            "2026"
+          ],
+          "topics": [
+            "apps"
+          ]
+        },
+        {
+          "fact": "The worst case is one traveler in 2025 who registered and verified a Naver account before the trip and saved every hotel and place in it.",
+          "figures": [
+            "2025"
+          ],
+          "topics": [
+            "apps"
+          ]
+        }
+      ]
+    },
+    "order-food-seoul-without-korean": {
+      "hash": "54bd06fb2d4be96dfb509988fa4ae2bb8af4df2588d1668c0741a822a1592c82",
+      "candidatos": [
+        {
+          "fact": "On February 27, 2026 the government conditionally approved Google’s request to export the map data, after refusing it in 2007 and 2016.",
+          "figures": [
+            "February 27, 2026",
+            "2007",
+            "2016"
+          ],
+          "topics": [
+            "apps"
+          ]
+        },
+        {
+          "fact": "In late August 2026 Google said it was preparing a full Maps service for Korea, including walking and driving navigation, and gave no date.",
+          "figures": [
+            "August 2026"
+          ],
+          "topics": [
+            "apps"
+          ]
+        },
+        {
+          "fact": "Naver Map works in Korean, English, Chinese and Japanese, and since late 2024 it has translated visitor reviews and its place filters into those languages, including a filter for places suited to eating alone.",
+          "figures": [
+            "late 2024"
+          ],
+          "topics": [
+            "apps",
+            "language"
+          ]
+        },
+        {
+          "fact": "English, Chinese and Japanese are available 24 hours a day, with other languages during daytime hours.",
+          "figures": [
+            "24"
+          ],
+          "topics": [
+            "language",
+            "timing"
+          ]
+        },
+        {
+          "fact": "From inside Korea you dial 1330; from abroad, +82-2-1330.",
+          "figures": [
+            "1330",
+            "+82-2-1330"
+          ],
+          "topics": [
+            "language",
+            "apps"
+          ]
+        }
+      ]
+    },
+    "papago-vs-google-translate-korea": {
+      "hash": "8d2889ad5aedbdd5df940e8f18780d3a88a80a5a78ed12603f674439241a11c8",
+      "candidatos": [
+        {
+          "fact": "Of 102 accounts that name Papago or Google Translate, eighteen name both.",
+          "figures": [
+            "102"
+          ],
+          "topics": [
+            "apps",
+            "language"
+          ]
+        },
+        {
+          "fact": "One used Papago exclusively for three weeks in 2023 and calls it much better with Hangul.",
+          "figures": [
+            "2023"
+          ],
+          "topics": [
+            "apps",
+            "language"
+          ]
+        },
+        {
+          "fact": "The most precise of the four is a Korean speaker writing in 2022, who used both: Google returned results faster through the camera, and Papago picked up Korean context more accurately.",
+          "figures": [
+            "2022"
+          ],
+          "topics": [
+            "apps",
+            "language"
+          ]
+        },
+        {
+          "fact": "One group in 2023 found Google faster on pictures of menus and of products in grocery stores.",
+          "figures": [
+            "2023"
+          ],
+          "topics": [
+            "apps",
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "A traveler in 2025 used the Google camera on signs and museum labels and Papago for speaking.",
+          "figures": [
+            "2025"
+          ],
+          "topics": [
+            "apps",
+            "language"
+          ]
+        },
+        {
+          "fact": "Across all 102 accounts, twelve describe reading a menu with a phone: six with Papago, four with Google Translate and two with ChatGPT.",
+          "figures": [
+            "102"
+          ],
+          "topics": [
+            "apps",
+            "dishes",
+            "language"
+          ]
+        },
+        {
+          "fact": "A third traveler, in 2026, used a custom GPT for translation and Google Translate for quick things.",
+          "figures": [
+            "2026"
+          ],
+          "topics": [
+            "apps",
+            "language"
+          ]
+        },
+        {
+          "fact": "One of the ChatGPT users, in 2025, reports a wild mistranslation at one restaurant and ended up eating beef tartare and clam chowder.",
+          "figures": [
+            "2025"
+          ],
+          "topics": [
+            "apps",
+            "dishes",
+            "language"
+          ]
+        },
+        {
+          "fact": "One describes the routine in 2025: set it from English to Korean, press the microphone, speak, and the app writes out what was said and plays the Korean aloud.",
+          "figures": [
+            "2025"
+          ],
+          "topics": [
+            "apps",
+            "language"
+          ]
+        },
+        {
+          "fact": "A family traveling with children in 2023 advises skipping text-to-speech and handing over the phone, and noticed that people would swipe the screen or take the phone to read it properly.",
+          "figures": [
+            "2023"
+          ],
+          "topics": [
+            "apps",
+            "kids-families",
+            "language"
+          ]
+        },
+        {
+          "fact": "A restaurant owner used Papago to tell his guests the place had been in business for 37 years.",
+          "figures": [
+            "37"
+          ],
+          "topics": [
+            "apps",
+            "language"
+          ]
+        },
+        {
+          "fact": "A vegetarian in 2023 asked restaurants through Papago and found most could make something.",
+          "figures": [
+            "2023"
+          ],
+          "topics": [
+            "language",
+            "dietary",
+            "apps"
+          ]
+        },
+        {
+          "fact": "A family in 2026, traveling with a relative who has severe food allergies, used an allergy card together with Papago and had no severe reaction; they credit equal amounts of luck and caution.",
+          "figures": [
+            "2026"
+          ],
+          "topics": [
+            "dietary",
+            "apps"
+          ]
+        },
+        {
+          "fact": "A traveler with life-threatening allergies in 2023 says Google Lens did a great job on the labels of packaged food and did not risk eating in restaurants at all.",
+          "figures": [
+            "2023"
+          ],
+          "topics": [
+            "dietary",
+            "apps"
+          ]
+        },
+        {
+          "fact": "in 2024 a couple asked a street vendor in Insadong, through Google Translate, whether a candy contained nuts, bought it, and one of them had an allergic reaction.",
+          "figures": [
+            "2024"
+          ],
+          "topics": [
+            "dietary",
+            "language",
+            "markets"
+          ]
+        },
+        {
+          "fact": "Papago’s App Store listing, on October 8, 2026: the developer is NAVER Corp., and the listing describes text, voice, conversation and image translation, with text translation available offline.",
+          "figures": [
+            "October 8, 2026"
+          ],
+          "topics": [
+            "apps",
+            "language"
+          ]
+        }
+      ]
+    },
+    "seoul-cooking-class-market-tour": {
+      "hash": "a93fd03d81523a502d4164dd446862b62b7f98aea14e38ad82fde9b29365cd71",
+      "candidatos": [
+        {
+          "fact": "A cooking class and market tour combo pairs a guided market walk (about an hour) with a hands-on Korean cooking class (around two hours), ending with a meal you cook yourself.",
+          "figures": [
+            "about an hour",
+            "around two hours"
+          ],
+          "topics": [
+            "food-tours",
+            "timing"
+          ]
+        },
+        {
+          "fact": "A cooking class and market tour combo typically runs around three hours in total — roughly an hour in the market and two hours cooking and eating — and costs in the region of $60–100 per person, depending on the menu, group size, and inclusions.",
+          "figures": [
+            "three hours",
+            "$60–100"
+          ],
+          "topics": [
+            "pricing",
+            "timing",
+            "food-tours"
+          ]
+        },
+        {
+          "fact": "Group sizes are small (usually six to twelve people), the classes are taught in English (many hosts also speak Japanese or Chinese), and they finish with everyone sitting down to eat their creations together, typically accompanied by an array of side dishes and often makgeolli.",
+          "figures": [
+            "six to twelve"
+          ],
+          "topics": [
+            "food-tours"
+          ]
+        },
+        {
+          "fact": "In a kimchi class, you'll typically make several types of kimchi — four is common — using fresh cabbage, radish, and cucumber, and take home a sealed jar of your own creation.",
+          "figures": [
+            "four"
+          ],
+          "topics": [
+            "dishes",
+            "food-tours"
+          ]
+        },
+        {
+          "fact": "In a full-course class, you'll make several main dishes and sit down to a complete Korean meal with over ten side dishes, dessert, and rice wine.",
+          "figures": [
+            "over ten"
+          ],
+          "topics": [
+            "dishes",
+            "food-tours"
+          ]
+        }
+      ]
+    },
+    "seoul-food-tour-cost": {
+      "hash": "0cc2ee8ee4eca60b323546f840d13049759c90c3c087bc91cd218d2186e1f5b9",
+      "candidatos": [
+        {
+          "fact": "Seoul food tours generally cost from around $29 for a basic group tour, with most small-group tours in the $49–110 range.",
+          "figures": [
+            "$29",
+            "$49–110"
+          ],
+          "topics": [
+            "food-tours",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Private tours typically cost $150–300+ for three to four hours.",
+          "figures": [
+            "$150–300+",
+            "three to four hours"
+          ],
+          "topics": [
+            "food-tours",
+            "pricing",
+            "timing"
+          ]
+        },
+        {
+          "fact": "eating the same street food yourself at a market like Gwangjang runs about $2–7 per dish, or $20–30 for a full meal",
+          "figures": [
+            "$2–7",
+            "$20–30"
+          ],
+          "topics": [
+            "markets",
+            "dishes",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Step up to a half-day tour packing in more dishes, drinks, or landmarks, and prices typically run $85 to $130.",
+          "figures": [
+            "$85",
+            "$130"
+          ],
+          "topics": [
+            "food-tours",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Night food-and-drink tours, which usually include alcohol, tend to land in the $70 to $100 range.",
+          "figures": [
+            "$70",
+            "$100"
+          ],
+          "topics": [
+            "food-tours",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "At the premium end, private tours generally cost $150 to $300 or more for a three-to-four-hour experience, scaling with guide expertise, group size, and customization.",
+          "figures": [
+            "$150",
+            "$300",
+            "three-to-four-hour"
+          ],
+          "topics": [
+            "food-tours",
+            "pricing",
+            "timing"
+          ]
+        },
+        {
+          "fact": "individual dishes at markets like Gwangjang and Namdaemun typically run $2 to $7 each, and a full, filling meal of several dishes comes to roughly $20 to $30 per person",
+          "figures": [
+            "$2",
+            "$7",
+            "$20",
+            "$30"
+          ],
+          "topics": [
+            "markets",
+            "dishes",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "A whole evening of grazing across a market can stay under about $25.",
+          "figures": [
+            "$25"
+          ],
+          "topics": [
+            "markets",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Approximate USD equivalents at roughly ₩1,400 to the dollar (2025–2026); prices vary by stall and location.",
+          "figures": [
+            "₩1,400",
+            "2025–2026"
+          ],
+          "topics": [
+            "pricing"
+          ]
+        },
+        {
+          "fact": "a tour serving ten-plus dishes for $70 is better value than one serving five for $60",
+          "figures": [
+            "ten-plus",
+            "$70",
+            "five",
+            "$60"
+          ],
+          "topics": [
+            "food-tours",
+            "pricing",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "all figures are approximate ranges that vary by operator, season, demand, and exchange rate (around ₩1,400 per USD)",
+          "figures": [
+            "₩1,400"
+          ],
+          "topics": [
+            "pricing"
+          ]
+        }
+      ]
+    },
+    "seoul-food-tour-etiquette-tipping": {
+      "hash": "6810cd04fd2d94aa2b116dc6fc43345135a193c3f45b1d8c5f1dc8d456102af8",
+      "candidatos": [
+        {
+          "fact": "The one exception is a private tour guide, where a tip is optional and appreciated but never expected (around ₩20,000 for a day, given in an envelope with both hands).",
+          "figures": [
+            "₩20,000"
+          ],
+          "topics": [
+            "etiquette",
+            "food-tours",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Tax and any service charge are already included in the menu price, as Korean rules have required since 2013.",
+          "figures": [
+            "2013"
+          ],
+          "topics": [
+            "pricing",
+            "payments"
+          ]
+        },
+        {
+          "fact": "For any market day, including a food tour through Gwangjang or Namdaemun, carry ₩30,000–50,000 in cash in small bills, which makes transactions easy for fast-moving vendors.",
+          "figures": [
+            "₩30,000–50,000"
+          ],
+          "topics": [
+            "markets",
+            "payments",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Small denominations matter — trying to pay for a ₩3,000 snack with a ₩50,000 note slows everyone down.",
+          "figures": [
+            "₩3,000",
+            "₩50,000"
+          ],
+          "topics": [
+            "payments",
+            "pricing",
+            "markets"
+          ]
+        },
+        {
+          "fact": "Dress for the weather in layers — winter (November to February) is peak street-food season but genuinely cold, while summer is hot and humid — and bring a small pack of tissues or hand wipes, since market stalls don't always offer napkins.",
+          "figures": [
+            "November",
+            "February"
+          ],
+          "topics": [
+            "weather",
+            "timing",
+            "food-tours"
+          ]
+        }
+      ]
+    },
+    "seoul-market-hours-gwangjang-namdaemun-mangwon": {
+      "hash": "37afaed84df901d29b32c3b85a3a6986d2fbda818c3bc41c25fbe93fee06cfde",
+      "candidatos": [
+        {
+          "fact": "At Namdaemun Market, 26 reviewers found shops shut by early evening, at times from 5 to 9 pm.",
+          "figures": [
+            "26",
+            "5",
+            "9 pm"
+          ],
+          "topics": [
+            "markets",
+            "timing"
+          ]
+        },
+        {
+          "fact": "At Gwangjang Market, 40 describe food stalls busy at night, but four who came at 8:30 pm or later found many closed.",
+          "figures": [
+            "40",
+            "8:30 pm"
+          ],
+          "topics": [
+            "markets",
+            "timing"
+          ]
+        },
+        {
+          "fact": "At Mangwon Market, 19 arrived in the morning to closed stalls, and ten say cooked food starts around 11.",
+          "figures": [
+            "19",
+            "11"
+          ],
+          "topics": [
+            "markets",
+            "timing"
+          ]
+        },
+        {
+          "fact": "At Gwangjang Market, 15 reviews say something is closed on Sunday and 15 describe going on a Sunday and finding food and crowds.",
+          "figures": [
+            "15",
+            "15"
+          ],
+          "topics": [
+            "markets",
+            "timing"
+          ]
+        },
+        {
+          "fact": "Twenty-five Mangwon reviews say weekends are packed or advise a weekday, which is 2.3% of its sample.",
+          "figures": [
+            "2.3%"
+          ],
+          "topics": [
+            "markets",
+            "crowds"
+          ]
+        },
+        {
+          "fact": "At Namdaemun Market, two reviews in Japanese had been told the market runs until 11 pm; one arrived after 8 and the other after 9, and both found nearly everything shut.",
+          "figures": [
+            "11 pm",
+            "8",
+            "9"
+          ],
+          "topics": [
+            "markets",
+            "timing"
+          ]
+        }
+      ]
+    },
+    "seoul-market-toilets-gwangjang-namdaemun-mangwon": {
+      "hash": "dbeaec70b5cbb492fef505fc9b2d4b01957c24f09ea6b480518601941bfa663a",
+      "candidatos": [
+        {
+          "fact": "Thirty-seven reviews mention toilets, and 21 of them are about Gwangjang Market.",
+          "figures": [
+            "21"
+          ],
+          "topics": [
+            "markets"
+          ]
+        },
+        {
+          "fact": "All nine at Namdaemun Market and all seven at Mangwon Market are from 2024 or later.",
+          "figures": [
+            "2024"
+          ],
+          "topics": [
+            "markets"
+          ]
+        },
+        {
+          "fact": "Thirty-seven reviews in 3,923 show what stood out, not the average state of the facilities.",
+          "figures": [
+            "3,923"
+          ],
+          "topics": [
+            "markets"
+          ]
+        }
+      ]
+    },
+    "seoul-markets-cheaper-than-supermarkets": {
+      "hash": "7d2f151495e165c20bc23b52d518ab472ccd3c7c4883dc8d44ff0f3e62a59a0c",
+      "candidatos": [
+        {
+          "fact": "Twenty-three reviews of Gwangjang Market, Namdaemun Market and Mangwon Market compare prices with a supermarket, department store or mall: 18 say the market is cheaper and 5 say it is not.",
+          "figures": [
+            "18",
+            "5"
+          ],
+          "topics": [
+            "markets",
+            "pricing",
+            "shopping"
+          ]
+        },
+        {
+          "fact": "A visitor writing in Chinese had seen strawberries at 7,900 won in a supermarket and bought a box at Mangwon Market the next day for 4,000 won, in May 2025.",
+          "figures": [
+            "7,900 won",
+            "4,000 won",
+            "May 2025"
+          ],
+          "topics": [
+            "markets",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "At Namdaemun Market, a reviewer writing in Chinese bought grapes and cherries for more than 5,000 won less than at a hypermarket, in January 2025.",
+          "figures": [
+            "5,000 won",
+            "January 2025"
+          ],
+          "topics": [
+            "markets",
+            "pricing"
+          ]
+        }
+      ]
+    },
+    "seoul-markets-crowds-kids-toilets-access": {
+      "hash": "367d626b58eb8437b0e798c689ec184e5202264334866ec868e7671f5eb6bfe7",
+      "candidatos": [
+        {
+          "fact": "One review in ten of Gwangjang Market says it is crowded: 10.0%, against 4.8% at Namdaemun Market and 5.5% at Mangwon Market.",
+          "figures": [
+            "10.0%",
+            "4.8%",
+            "5.5%"
+          ],
+          "topics": [
+            "markets",
+            "crowds"
+          ]
+        },
+        {
+          "fact": "Among reviews of three stars or fewer, the crowd comes up in 15.3% at Gwangjang Market, 10.4% at Mangwon Market and 6.3% at Namdaemun Market.",
+          "figures": [
+            "15.3%",
+            "10.4%",
+            "6.3%"
+          ],
+          "topics": [
+            "markets",
+            "crowds"
+          ]
+        },
+        {
+          "fact": "Sixty reviews say Mangwon Market is crowded, and 43 of those are in Korean.",
+          "figures": [
+            "43"
+          ],
+          "topics": [
+            "markets",
+            "crowds"
+          ]
+        },
+        {
+          "fact": "Sixty-six reviews of Namdaemun Market say it is crowded, 4.8% of the sample.",
+          "figures": [
+            "4.8%"
+          ],
+          "topics": [
+            "markets",
+            "crowds"
+          ]
+        },
+        {
+          "fact": "One review from 2026 describes a toilet block on three floors, with the ground floor for visitors with disabilities.",
+          "figures": [
+            "2026"
+          ],
+          "topics": [
+            "accessibility",
+            "markets"
+          ]
+        }
+      ]
+    },
+    "seoul-markets-english-language-ordering": {
+      "hash": "db54e0e2d2d087be3404b449c78aa18ee0d13b6383ad22b36095f7ea426f4829",
+      "candidatos": [
+        {
+          "fact": "Of 3,923 reviews of Gwangjang Market, Namdaemun Market and Mangwon Market, 121 say something about language.",
+          "figures": [
+            "3,923",
+            "121"
+          ],
+          "topics": [
+            "markets",
+            "language"
+          ]
+        },
+        {
+          "fact": "Chinese is reported more often, in 26 reviews, and so is Japanese, in 17.",
+          "figures": [
+            "26",
+            "17"
+          ],
+          "topics": [
+            "markets",
+            "language"
+          ]
+        },
+        {
+          "fact": "What reviewers used instead of Korean: translated or picture menus at Gwangjang Market (14 reviews), pointing (12), and the multilingual information guides at Namdaemun Market (22).",
+          "figures": [
+            "14",
+            "12",
+            "22"
+          ],
+          "topics": [
+            "markets",
+            "language"
+          ]
+        },
+        {
+          "fact": "Across the three, 56 reviews report a vendor who understood a foreign language and 17 describe language as a barrier.",
+          "figures": [
+            "56",
+            "17"
+          ],
+          "topics": [
+            "markets",
+            "language"
+          ]
+        }
+      ]
+    },
+    "seoul-markets-open-sunday-holidays": {
+      "hash": "8746be6f07ebd1c88d70f6c2336a46069c32feb2dbeacc753bc24470a7a75457",
+      "candidatos": [
+        {
+          "fact": "Twenty-five Mangwon reviews say weekends are packed or advise a weekday, which is 2.3% of its sample, against 0.8% at Gwangjang Market and 0.6% at Namdaemun Market.",
+          "figures": [
+            "2.3%",
+            "0.8%",
+            "0.6%"
+          ],
+          "topics": [
+            "markets",
+            "crowds",
+            "timing"
+          ]
+        }
+      ]
+    },
+    "seoul-markets-rain-heat-winter": {
+      "hash": "eda9f4b68afa8849b623ffa87c1bd94933691ec35b1efbe8ebba0dc8af27cd50",
+      "candidatos": [
+        {
+          "fact": "Gwangjang Market is covered: eleven reviews recommend it in the rain, and 35 say it is hot or stuffy inside, 34 of them dated June to September.",
+          "figures": [
+            "35",
+            "34"
+          ],
+          "topics": [
+            "markets",
+            "weather"
+          ]
+        },
+        {
+          "fact": "Namdaemun Market is mostly outdoors: thirteen reviews struggled with heat there, and five from 2025 and 2026 describe a new canopy over the main street.",
+          "figures": [
+            "2025",
+            "2026"
+          ],
+          "topics": [
+            "markets",
+            "weather"
+          ]
+        },
+        {
+          "fact": "In the cold, 22 reviews say the hot food is the point.",
+          "figures": [
+            "22"
+          ],
+          "topics": [
+            "weather",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Five reviews from 2025 and 2026 describe a canopy over the main street.",
+          "figures": [
+            "2025",
+            "2026"
+          ],
+          "topics": [
+            "markets",
+            "weather"
+          ]
+        },
+        {
+          "fact": "Thirty-five reviews say it was hot, stuffy or humid, which is 2.4% of its sample, against 0.9% at Namdaemun Market and 0.3% at Mangwon Market.",
+          "figures": [
+            "2.4%",
+            "0.9%",
+            "0.3%"
+          ],
+          "topics": [
+            "markets",
+            "weather"
+          ]
+        },
+        {
+          "fact": "One, in Japanese, describes cooked ingredients sitting out at 36 degrees before being reheated to order, and says it made them uneasy.",
+          "figures": [
+            "36"
+          ],
+          "topics": [
+            "weather",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "One, in Korean, describes food left unprotected at 30 degrees and reports that the group fell ill afterwards.",
+          "figures": [
+            "30"
+          ],
+          "topics": [
+            "weather",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "One Korean-language review from July 2026 draws the line exactly: some parts felt cool enough to walk in comfort, and the food stalls in the middle were hot.",
+          "figures": [
+            "July 2026"
+          ],
+          "topics": [
+            "weather",
+            "markets"
+          ]
+        },
+        {
+          "fact": "At Gwangjang Market five reviews, dated 2019 to 2024, mention that the benches at the stalls are heated.",
+          "figures": [
+            "2019",
+            "2024"
+          ],
+          "topics": [
+            "weather",
+            "markets"
+          ]
+        },
+        {
+          "fact": "The trade-off: the reviews of Namdaemun Market written before 2025 describe a market the canopy has partly replaced.",
+          "figures": [
+            "2025"
+          ],
+          "topics": [
+            "markets",
+            "weather"
+          ]
+        }
+      ]
+    },
+    "seoul-markets-with-kids-strollers": {
+      "hash": "6bae9e20326bd05822757adfe32705442fa02599c0687761e0b63656da2efed2",
+      "candidatos": [
+        {
+          "fact": "In 43 reviews about visiting with children or family, five reviewers of Mangwon Market say it suits children and none warns against it.",
+          "figures": [
+            "43",
+            "five"
+          ],
+          "topics": [
+            "kids-families",
+            "markets"
+          ]
+        },
+        {
+          "fact": "A family writing in Chinese left early with the children and found that most stalls open after 11 a.m., so they waited in a café.",
+          "figures": [
+            "11 a.m."
+          ],
+          "topics": [
+            "markets",
+            "timing",
+            "kids-families"
+          ]
+        }
+      ]
+    },
+    "seoul-night-food-tour": {
+      "hash": "4e82aa1a83ae16fb22bec38b1f003e2ba86c259afdf0dff8f984887b3d5616cd",
+      "candidatos": [
+        {
+          "fact": "guided night food tours generally run around $70–100 per person, but read the inclusions carefully, because some cheaper \"night tours\" don't actually include your dinner or all food costs — a few are essentially guided night walks with a market stop where you pay for your own food.",
+          "figures": [
+            "$70–100"
+          ],
+          "topics": [
+            "food-tours",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "These are usually small-group walking tours (often capped around twelve people) lasting three to four hours, frequently starting at Gwangjang Market and winding through the atmospheric alleys of Jongno and Euljiro.",
+          "figures": [
+            "twelve",
+            "three to four hours"
+          ],
+          "topics": [
+            "food-tours",
+            "markets"
+          ]
+        },
+        {
+          "fact": "Budget-wise, the tent bars are accessible: a full pojangmacha evening with multiple dishes and soju typically runs around ₩25,000–45,000 per person (roughly $18–32).",
+          "figures": [
+            "₩25,000–45,000",
+            "$18–32"
+          ],
+          "topics": [
+            "pricing",
+            "markets"
+          ]
+        },
+        {
+          "fact": "Gwangjang Market transforms at night — from around 7 PM you can settle in for sit-down bindaetteok and makgeolli, and after 10 PM the food alley takes over entirely from the fabric stalls.",
+          "figures": [
+            "7 PM",
+            "10 PM"
+          ],
+          "topics": [
+            "markets",
+            "timing"
+          ]
+        },
+        {
+          "fact": "For the latest hours, Dongdaemun is the standout — its street carts run until roughly 5 AM, making it more active at 2 AM than at 10 PM — and Namdaemun stays busy past 1 AM.",
+          "figures": [
+            "5 AM",
+            "2 AM",
+            "10 PM",
+            "1 AM"
+          ],
+          "topics": [
+            "markets",
+            "timing"
+          ]
+        },
+        {
+          "fact": "For a more local, untouristed evening, Mangwon Market in Mapo-gu is the anti-tourist night market — its pojangmacha operators set up from 6 PM serving grilled skewers, tteokbokki, and sundae at neighborhood prices, in a small, warm covered alley you can explore in under an hour.",
+          "figures": [
+            "6 PM",
+            "under an hour"
+          ],
+          "topics": [
+            "markets",
+            "timing"
+          ]
+        },
+        {
+          "fact": "Gwangjang Market's food alley runs until around 11:30 PM (and takes over from the fabric stalls after 10 PM), while the pojangmacha tent bars of Euljiro and Jongno 3-ga get going in the evening and continue late.",
+          "figures": [
+            "11:30 PM",
+            "10 PM"
+          ],
+          "topics": [
+            "markets",
+            "timing"
+          ]
+        },
+        {
+          "fact": "Seoul's Night Owl (올빼미) bus network runs until around 5 AM, and Kakao T taxis fill any gaps when you want speed.",
+          "figures": [
+            "5 AM"
+          ],
+          "topics": [
+            "timing",
+            "apps"
+          ]
+        }
+      ]
+    },
+    "seoul-night-markets-gwangjang-namdaemun-mangwon": {
+      "hash": "b6339e5b09a2f15a6ecc6a05ebc02277576c6e522e72254498fae9ff6ffaed28",
+      "candidatos": [
+        {
+          "fact": "At Namdaemun Market, 26 reviews found the shops shut by early evening, at hours from 5 to 9 pm, while 30 describe street food or dinner there.",
+          "figures": [
+            "26",
+            "5",
+            "9",
+            "30"
+          ],
+          "topics": [
+            "markets",
+            "timing"
+          ]
+        },
+        {
+          "fact": "At Gwangjang Market, 40 describe food and people at night, and four who arrived at 8:30 pm or later found many stalls closed.",
+          "figures": [
+            "40",
+            "8:30 pm"
+          ],
+          "topics": [
+            "markets",
+            "timing"
+          ],
+          "scale": "Forty reviews describe Gwangjang Market in the evening or at night with food and people, or recommend going then."
+        },
+        {
+          "fact": "At Mangwon Market, two found it closing at about 8.",
+          "figures": [
+            "8"
+          ],
+          "topics": [
+            "markets",
+            "timing"
+          ],
+          "scale": "Two of the three name an hour, and both say about 8 pm."
+        }
+      ]
+    },
+    "seoul-restaurant-reservations-without-korean-number": {
+      "hash": "a1104973ec7f6c8a748cbfc5c547f821b24aab828ae0a717bcb048d9800c408e",
+      "candidatos": [
+        {
+          "fact": "Under national consumer standards in effect since December 18, 2025, reservation-based restaurants such as omakase and fine dining may charge a no-show penalty of up to 40% of the reserved menu price, and general restaurants up to 20%, provided they told you the terms in advance.",
+          "figures": [
+            "December 18, 2025",
+            "40%",
+            "20%"
+          ],
+          "topics": [
+            "reservations",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Under consumer standards that the Korea Fair Trade Commission put into effect on December 18, 2025, a reservation-based restaurant such as an omakase counter or a fine-dining room may set a no-show penalty of up to 40% of the reserved menu price, up from 10%.",
+          "figures": [
+            "December 18, 2025",
+            "40%",
+            "10%"
+          ],
+          "topics": [
+            "reservations",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Since June 4, 2026 a visitor with a passport issued outside Korea can verify their identity in the app from a phone, without a Korean mobile number, and that verification opens the travel services on Naver Map: reservations, orders and payments.",
+          "figures": [
+            "June 4, 2026"
+          ],
+          "topics": [
+            "apps",
+            "reservations"
+          ]
+        }
+      ]
+    },
+    "sundae-korean-blood-sausage-gwangjang-market": {
+      "hash": "ab28cb0f0ed24c8e8afc69ecfefc01ec1fe4e26560f11836864b03de4d5c03cf",
+      "candidatos": [
+        {
+          "fact": "Seven reviews order or name it with tteokbokki, and a set of both with gimbap cost one reviewer 10,000 won in 2025.",
+          "figures": [
+            "10,000 won",
+            "2025"
+          ],
+          "topics": [
+            "dishes",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "39 reviews of the same market say how the mandu tasted, and 31 of them call it good.",
+          "figures": [
+            "39",
+            "31"
+          ],
+          "topics": [
+            "dishes",
+            "markets"
+          ]
+        },
+        {
+          "fact": "Forty-three of 1,458 reviews of Gwangjang Market name sundae: 2.9%.",
+          "figures": [
+            "1,458",
+            "2.9%"
+          ],
+          "topics": [
+            "dishes",
+            "markets"
+          ]
+        },
+        {
+          "fact": "The set at 10,000 won comes from the Japanese reviewer who could not eat the sundae; the same review calls the price very cheap for the amount.",
+          "figures": [
+            "10,000 won"
+          ],
+          "topics": [
+            "pricing",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "One Korean review describes a billing dispute at a stall where the reviewer ate tteokbokki, fish cake, sundae and gimbap, on a visit in December 2017.",
+          "figures": [
+            "December 2017"
+          ],
+          "topics": [
+            "pricing",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Sundae is named about as often in low reviews as in high ones: in 3.3% (8) of the one-to-three-star reviews and 2.9% (35) of the four-and-five-star ones.",
+          "figures": [
+            "3.3%",
+            "8",
+            "2.9%",
+            "35"
+          ],
+          "topics": [
+            "dishes",
+            "markets"
+          ]
+        },
+        {
+          "fact": "Forty-three reviews of Gwangjang Market name sundae, the Korean blood sausage, and 12 say how it tasted: five liked it, six did not and one called it ordinary.",
+          "figures": [
+            "12"
+          ],
+          "topics": [
+            "dishes",
+            "markets"
+          ]
+        }
+      ]
+    },
+    "tteokbokki-seoul-gwangjang-mangwon-namdaemun": {
+      "hash": "6f6756d75c8cea7c6ce428e665cad4a1d8b65bd510503e85abd0885aa8973c5f",
+      "candidatos": [
+        {
+          "fact": "Of the five dishes we have read there, it has the highest share of unhappy eaters: of 33 reviewers who say how it tasted, 22 call it good, 4 ordinary and 7 did not like it, four of those because it was too sweet or had sat in its sauce.",
+          "figures": [
+            "33",
+            "22",
+            "4",
+            "7",
+            "4"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "At Mangwon Market 14 of 18 liked it, and at Namdaemun Market all 8 did.",
+          "figures": [
+            "14",
+            "18",
+            "8"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Reviewers at Gwangjang Market report 4,000 won a plate in 2025 and 2026.",
+          "figures": [
+            "4,000 won",
+            "2025",
+            "2026"
+          ],
+          "topics": [
+            "pricing",
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "At Gwangjang Market it is named in 84 reviews, and it is the only dish we track there that is named more often by unhappy visitors than by happy ones: 6.6% (16) of the reviews with three stars or fewer, against 5.6% (68) of those with four or five.",
+          "figures": [
+            "84",
+            "6.6%",
+            "16",
+            "5.6%",
+            "68"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Three reviews name a price at Gwangjang Market: 4,000 won in October 2025 and again in July 2026, and 3,000 won in December 2019.",
+          "figures": [
+            "4,000 won",
+            "October 2025",
+            "July 2026",
+            "3,000 won",
+            "December 2019"
+          ],
+          "topics": [
+            "pricing",
+            "markets"
+          ]
+        },
+        {
+          "fact": "One reviewer in June 2025 paid 10,000 won for a set of gimbap, tteokbokki and blood sausage, and another says tteokbokki and fish cake cost the same at every stall, so any that looks good will do.",
+          "figures": [
+            "10,000 won",
+            "June 2025"
+          ],
+          "topics": [
+            "pricing",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "Only 17 of the 1,376 reviews of Namdaemun Market name tteokbokki, and none of them has three stars or fewer.",
+          "figures": [
+            "17",
+            "1,376"
+          ],
+          "topics": [
+            "markets",
+            "dishes"
+          ]
+        },
+        {
+          "fact": "One reviewer, in mid-2025, paid 5,000 won for a portion they found small and very chewy.",
+          "figures": [
+            "5,000 won",
+            "mid-2025"
+          ],
+          "topics": [
+            "pricing",
+            "markets"
+          ]
+        }
+      ]
+    },
+    "vegan-vegetarian-halal-food-tour-seoul": {
+      "hash": "28ddf209b6658479415694f7f1dba17cc1381cc664c792251de2f8b57c93e8e7",
+      "candidatos": [
+        {
+          "fact": "Around 95% of market stalls use fish sauce or meat powder, anchovy broth (dashi) is in nearly every soup, and most kimchi and commercial gochujang contain fish sauce or paste — so even vegetable dishes often aren't truly vegan or vegetarian.",
+          "figures": [
+            "95%"
+          ],
+          "topics": [
+            "dietary",
+            "markets"
+          ]
+        },
+        {
+          "fact": "Beyond tours, Seoul has a growing vegan scene — around 100 vegan-friendly restaurants centered on Hongdae, Insadong (for naturally-vegan Buddhist temple cuisine), and Gangnam — findable via the HappyCow app.",
+          "figures": [
+            "100"
+          ],
+          "topics": [
+            "dietary",
+            "apps"
+          ]
+        },
+        {
+          "fact": "Yes — Seoul has dedicated plant-based food tours, most based at Gwangjang Market, that run 100% vegan routes (no meat, fish, dairy, or eggs) with guides who've pre-vetted every stall and handle all ordering.",
+          "figures": [
+            "100%"
+          ],
+          "topics": [
+            "food-tours",
+            "dietary",
+            "markets"
+          ]
+        }
+      ]
+    },
+    "where-locals-eat-seoul-markets": {
+      "hash": "d4777d5158a931f47a62d71b01441f64e4dd65f8204808e6bcc91b3ffc0f4700",
+      "candidatos": [
+        {
+          "fact": "At Mangwon Market, 43.0% of the reviews are written in Korean.",
+          "figures": [
+            "43.0%"
+          ],
+          "topics": [
+            "markets",
+            "language"
+          ]
+        },
+        {
+          "fact": "At Mangwon Market, 147 reviews mention tourists and 83 of them do it to say there are few",
+          "figures": [
+            "147",
+            "83"
+          ],
+          "topics": [
+            "markets",
+            "crowds"
+          ]
+        },
+        {
+          "fact": "At Gwangjang Market, 80 reviews call the market touristy and fifteen more say foreigners are charged more or treated worse.",
+          "figures": [
+            "80"
+          ],
+          "topics": [
+            "markets",
+            "crowds",
+            "pricing"
+          ]
+        },
+        {
+          "fact": "Namdaemun reviews bring up Gwangjang 15 times.",
+          "figures": [
+            "15"
+          ],
+          "topics": [
+            "markets"
+          ]
+        },
+        {
+          "fact": "Across the three markets, 507 reviews mention tourists or foreigners.",
+          "figures": [
+            "507"
+          ],
+          "topics": [
+            "markets",
+            "crowds"
+          ]
+        }
+      ]
+    },
+    "where-to-book-seoul-food-tour": {
+      "hash": "0b8cd82cc47d6e8e086bb04b05f3bf7ffb1b52d16d82ab4e5d25f30b15f8d953",
+      "candidatos": [
+        {
+          "fact": "Its free-cancellation policy applies to most experiences up to 24 hours before start, with refunds typically landing in five to ten business days.",
+          "figures": [
+            "24 hours",
+            "five to ten business days"
+          ],
+          "topics": [
+            "food-tours",
+            "reservations"
+          ]
+        },
+        {
+          "fact": "Its reviews are verified-purchase only, its free-cancellation policy also runs to 24 hours before (sometimes 48) on most tours, and its refunds tend to be faster, often three to five business days.",
+          "figures": [
+            "24 hours",
+            "48",
+            "three to five business days"
+          ],
+          "topics": [
+            "food-tours",
+            "reservations"
+          ]
+        },
+        {
+          "fact": "Most standard activities offer free cancellation up to 24 hours before, though some attraction tickets are non-refundable, and it offers an optional \"Klook Protect\" add-on for extra flexibility.",
+          "figures": [
+            "24 hours"
+          ],
+          "topics": [
+            "food-tours",
+            "reservations"
+          ]
+        },
+        {
+          "fact": "Airbnb Experiences relaunched in 2025 after a two-year pause, and it operates on a fundamentally different model from the others.",
+          "figures": [
+            "2025",
+            "two-year"
+          ],
+          "topics": [
+            "food-tours"
+          ]
+        },
+        {
+          "fact": "Day-trip and specialty tours — the DMZ tour is the classic example — often require confirmation a day or more ahead and have cancellation deadlines two to three days before departure.",
+          "figures": [
+            "a day",
+            "two to three days"
+          ],
+          "topics": [
+            "food-tours",
+            "reservations"
+          ]
+        }
+      ]
+    }
+  }
+}
