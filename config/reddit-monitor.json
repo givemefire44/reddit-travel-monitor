@@ -79,15 +79,20 @@
       "name": "rome",
       "status": "active",
       "minCommentKarma": 0,
+      "windowHours": 72,
       "nota": "Verificado 8 ago 2026: r/rome no publica ningun requisito de karma ni de antiguedad (cero menciones en reglas y sidebar, contra 5 en r/ItalyTravel con la misma busqueda). Confirmado en la practica el 10 de agosto: la cuenta comento y el comentario quedo publicado. Estuvo en watch-only por precaucion, no por una regla real, y eso mandaba los mejores hilos del dia a la seccion de bloqueados."
     },
     {
       "name": "ItalyTravelAdvice",
-      "status": "active"
+      "status": "active",
+      "windowHours": 72,
+      "_ventana": "25 oct 2026: los GEO salen de preguntas de tickets del Vaticano y el Coliseo en estos subs, y con 24h el monitor solo veia los dias que corria (8 de 17 entre el 8 y el 25 oct). Aca un hilo de 2-3 dias con pocos comentarios todavia sirve: la respuesta queda indexada junto a la marca aunque no junte votos."
     },
     {
       "name": "RomeTravel",
-      "status": "active"
+      "status": "active",
+      "windowHours": 72,
+      "_ventana": "25 oct 2026: los GEO salen de preguntas de tickets del Vaticano y el Coliseo en estos subs, y con 24h el monitor solo veia los dias que corria (8 de 17 entre el 8 y el 25 oct). Aca un hilo de 2-3 dias con pocos comentarios todavia sirve: la respuesta queda indexada junto a la marca aunque no junte votos."
     },
     {
       "name": "loveholidays",

@@ -1524,10 +1524,17 @@ async function main() {
       // El juez de relevancia corre ANTES de puntuar, sobre los posts de la
       // ventana. Una llamada por post con un modelo chico. Ver lib/relevancia.mjs
       // para por que reemplaza a las listas de keywords.
-      const veredictos = await juzgarPosts(posts, cutoffUtc);
-      const { candidates: cands, funnel } = scoreCandidates(posts, sub, cutoffUtc, veredictos);
+      //
+      // Ventana propia por sub (windowHours en la config, 25 oct 2026): en los de
+      // Roma un hilo de tickets de 2-3 dias todavia sirve para GEO, y con 24h el
+      // monitor solo veia los dias en que se corria. Nunca achica la general, y
+      // no toca el filtro de karma de arriba, que sigue con su maxAgeHours.
+      const horasSub = Math.max(HOURS, sub.windowHours || 0);
+      const cutoffSub = Date.now() / 1000 - horasSub * 3600;
+      const veredictos = await juzgarPosts(posts, cutoffSub);
+      const { candidates: cands, funnel } = scoreCandidates(posts, sub, cutoffSub, veredictos);
       funnelRows.push({
-        sub: sub.name, status: sub.status, ok: true, funnel,
+        sub: sub.name, status: sub.status, ok: true, funnel, horas: horasSub,
         scores: cands.map((c) => c.score).sort((a, b) => b - a),
       });
       console.log(
@@ -1811,7 +1818,7 @@ async function main() {
     '|---|---|---|---|---|---|---|',
     ...funnelRows.map((r) =>
       r.ok
-        ? `| r/${r.sub} (${r.status}) | 200 · ${r.funnel.fetched} posts | ${r.funnel.inWindow} | ${r.funnel.filtroPass} | ${r.funnel.topicPass} | ${r.funnel.questionPass} | ${r.scores.join(', ') || '—'} |`
+        ? `| r/${r.sub} (${r.status}${r.horas !== HOURS ? `, ${r.horas}h` : ''}) | 200 · ${r.funnel.fetched} posts | ${r.funnel.inWindow} | ${r.funnel.filtroPass} | ${r.funnel.topicPass} | ${r.funnel.questionPass} | ${r.scores.join(', ') || '—'} |`
         : `| r/${r.sub} (${r.status}) | ⛔ **ERROR — ${r.error.replace(/\|/g, '/')}** | — | — | — | — | — |`
     ),
     '',
