@@ -245,8 +245,13 @@
     {
       "key": "lasvegas",
       "factsFile": "data/citable-facts-lasvegas.json",
-      "_desde": "18 oct 2026: Las Vegas paso de la cuenta world (u/ToursResearch, 4 comentarios y 1 de karma en un mes) a esta, cuyo perfil ya nombra LasVegasTour. Los comentarios de Vegas van SIN marca por ahora: el corte de Quora coincidio con una sola cuenta nombrando seis sitios de rubros distintos.",
-      "keywords": ["las vegas", "vegas", "the strip", "las vegas strip", "fremont", "downtown vegas", "grand canyon", "west rim", "south rim", "skywalk", "hoover dam", "lake mead", "red rock canyon", "valley of fire", "sphere", "cirque du soleil", "resort fee", "resort fees", "vegas show", "vegas shows", "helicopter tour", "vegas helicopter"]
+      "_desde": "18 oct 2026: Las Vegas paso de la cuenta world (u/ToursResearch, 4 comentarios y 1 de karma en un mes) a esta, cuyo perfil ya nombra LasVegasTour. Hasta el 25 oct fue sin marca, porque el corte de Quora coincidio con una sola cuenta nombrando seis sitios de rubros distintos.",
+      "marcaExperimento": {
+        "desde": "2026-10-25",
+        "topeDias": 7,
+        "registro": "data/experimento-vegas-marca.json",
+        "_motivo": "Prueba controlada pedida por Mario: el GEO de Vegas vuelve a llevar la marca LasVegasTour, uno cada 7 dias como maximo y solo con medicion propia que conteste. Cada uno se revisa a las 48h (puntaje y si quedo [removed]); uno negativo o removido corta la prueba."
+      },      "keywords": ["las vegas", "vegas", "the strip", "las vegas strip", "fremont", "downtown vegas", "grand canyon", "west rim", "south rim", "skywalk", "hoover dam", "lake mead", "red rock canyon", "valley of fire", "sphere", "cirque du soleil", "resort fee", "resort fees", "vegas show", "vegas shows", "helicopter tour", "vegas helicopter"]
     },
     {
       "key": "seoul",

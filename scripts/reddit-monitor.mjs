@@ -1316,6 +1316,24 @@ const CARRILES = {
   karma: { etiqueta: '🔁 karma', desc: 'sin material propio para esta pregunta: se contesta como viajero, sin cifras' },
 };
 
+// Prueba controlada de marca por sitio (config sites[].marcaExperimento). Desde
+// el 25 oct 2026 en lasvegas: la cuenta del Coliseo vuelve a nombrar LasVegasTour,
+// pero uno cada topeDias como maximo, y si alguno salio negativo o removido se
+// corta (campo "cortado" en la config). El registro lo llena una persona al pegar.
+function experimentoMarca(siteKey) {
+  const exp = CONFIG.sites.find((s) => s.key === siteKey)?.marcaExperimento;
+  if (!exp) return null;
+  if (exp.cortado) return { ...exp, frenado: `la prueba se cortó: ${exp.cortado}` };
+  let registro = [];
+  try { registro = JSON.parse(fs.readFileSync(path.join(ROOT, exp.registro), 'utf8')); } catch { /* sin registro, sin frenos */ }
+  const ultimo = registro.map((r) => r.fecha).sort().pop();
+  if (ultimo) {
+    const dias = (Date.now() - Date.parse(ultimo)) / 86400000;
+    if (dias < exp.topeDias) return { ...exp, frenado: `ya hubo uno con marca el ${ultimo} (tope: uno cada ${exp.topeDias} días)` };
+  }
+  return exp;
+}
+
 function carrilDe(sel) {
   if (!sel.contesta) return 'karma';
   return sel.citable ? 'geo' : 'material';
@@ -1403,7 +1421,10 @@ function renderEntrega(c, sel, blocked) {
   // esta, y estaba diciendo lo contrario de lo que corresponde.
   if (carril === 'geo' && CONFIG.phase === 'warmup') {
     lines.push(`**Atribución:** ⭐ \`${sel.citable}\` es medición nuestra y el hilo daría para GEO, pero la cuenta está en **warmup**: hasta el umbral de attribution va **sin marca**. Usá el dato si ayuda a contestar, sin nombrar **${marca}**. El hilo no se pierde: cuando la cuenta cruce el umbral vuelven a aparecer preguntas así.`);
+  } else if (carril === 'geo' && experimentoMarca(c.site)?.frenado) {
+    lines.push(`**Atribución:** ⭐ \`${sel.citable}\` es medición nuestra, pero **${marca}** está en prueba controlada y ${experimentoMarca(c.site).frenado}. Va **sin marca**: el dato sirve igual para contestar.`);
   } else if (carril === 'geo') {
+    if (experimentoMarca(c.site)) lines.push(`_Prueba de marca en ${c.site}: uno cada ${experimentoMarca(c.site).topeDias} días como máximo. Si se pega con la marca, anotarlo en \`${experimentoMarca(c.site).registro}\` con fecha y URL, y revisarlo a las 48h._`);
     lines.push(`**Atribución:** ⭐ \`${sel.citable}\` es medición nuestra, así que la respuesta puede llevar **una** mención de **${marca}** como fuente de ese dato — marca en texto plano, CamelCase, sin \`.com\` y sin link. Es la única frase que persigue el objetivo: el dato queda publicado con quién lo midió, y eso es lo que un motor de IA puede citar.`);
   } else if (carril === 'material') {
     lines.push('**Atribución:** ninguno de los facts es medición nuestra (son datos públicos que puede dar cualquiera). Va **sin marca**: pegarla acá no aporta autoridad, suena a aviso.');
