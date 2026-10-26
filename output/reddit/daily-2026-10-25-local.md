@@ -2,7 +2,7 @@
 
 **Fase:** attribution · **Ventana:** 24h · **Facts:** trastevere 141 · vatican 216 · colosseum 1023 · pompeii 143 · milan 82 · lasvegas 398 · seoul 310
 **Comment karma u/RomanColosseumExpert:** (no disponible)
-**Objetivo (menciones sembradas hoy):** 0 🎯 GEO · 1 📌 material · 5 🔁 karma
+**Objetivo (menciones sembradas hoy):** 0 🎯 GEO · 2 📌 material · 4 🔁 karma
 
 > Cero GEO hoy: ninguna de las preguntas del día se contesta con una medición nuestra. Los de karma sirven igual (la cuenta necesita karma para llegar a los subs donde están las preguntas buenas), pero el día no sembró ninguna cita.
 
@@ -12,28 +12,28 @@
 
 | Subreddit | Fetch RSS | En ventana | Filtro | Topic | Pregunta | Scores |
 |---|---|---|---|---|---|---|
-| r/travel (active) | 200 · 100 posts | 38 | 1 | 1 | 1 | 3 |
+| r/travel (active) | 200 · 100 posts | 45 | 2 | 2 | 1 | 2 |
 | r/solotravel (active) | 200 · 100 posts | 3 | 0 | 0 | 0 | — |
 | r/Eurotrip (active) | 200 · 54 posts | 0 | 0 | 0 | 0 | — |
 | r/EuropeTravel (active) | 200 · 100 posts | 5 | 0 | 0 | 0 | — |
 | r/TravelNoPics (active) | 200 · 100 posts | 0 | 0 | 0 | 0 | — |
-| r/Italy (active) | 200 · 100 posts | 9 | 0 | 0 | 0 | — |
+| r/Italy (active) | 200 · 100 posts | 10 | 0 | 0 | 0 | — |
 | r/askitaly (active) | 200 · 100 posts | 1 | 0 | 0 | 0 | — |
-| r/ItalyTravel (active) | 200 · 100 posts | 4 | 0 | 0 | 0 | — |
-| r/rome (active) | 200 · 100 posts | 15 | 2 | 2 | 2 | 7, 5 |
-| r/ItalyTravelAdvice (active) | 200 · 100 posts | 7 | 1 | 1 | 1 | 8 |
-| r/RomeTravel (active) | 200 · 100 posts | 3 | 0 | 0 | 0 | — |
+| r/ItalyTravel (active) | 200 · 100 posts | 5 | 1 | 1 | 1 | 12 |
+| r/rome (active, 72h) | 200 · 100 posts | 31 | 2 | 2 | 2 | 5, 3 |
+| r/ItalyTravelAdvice (active, 72h) | 200 · 100 posts | 26 | 0 | 0 | 0 | — |
+| r/RomeTravel (active, 72h) | 200 · 100 posts | 9 | 1 | 1 | 1 | 7 |
 | r/loveholidays (active) | 200 · 100 posts | 0 | 0 | 0 | 0 | — |
-| r/Bookingcom (active) | 200 · 100 posts | 10 | 2 | 2 | 1 | 3 |
-| r/askhotels (active) | 200 · 100 posts | 6 | 1 | 1 | 1 | 2 |
-| r/TravelHacks (active) | 200 · 100 posts | 1 | 0 | 0 | 0 | — |
-| r/Flights (active) | 200 · 100 posts | 14 | 1 | 1 | 1 | 2 |
-| r/hotels (active) | 200 · 100 posts | 2 | 1 | 1 | 0 | — |
-| r/vegas (active) | 200 · 100 posts | 21 | 2 | 2 | 1 | 5 |
+| r/Bookingcom (active) | 200 · 100 posts | 10 | 3 | 3 | 2 | 6, 3 |
+| r/askhotels (active) | 200 · 100 posts | 4 | 1 | 1 | 1 | 1 |
+| r/TravelHacks (active) | 200 · 100 posts | 2 | 0 | 0 | 0 | — |
+| r/Flights (active) | 200 · 100 posts | 16 | 0 | 0 | 0 | — |
+| r/hotels (active) | 200 · 100 posts | 3 | 1 | 1 | 0 | — |
+| r/vegas (active) | 200 · 100 posts | 17 | 1 | 1 | 1 | 5 |
 | r/LasVegas (active) | 200 · 100 posts | 3 | 1 | 1 | 0 | — |
-| r/GrandCanyon (active) | 200 · 100 posts | 3 | 1 | 1 | 1 | 2 |
-| r/seoul (active) | 200 · 100 posts | 28 | 1 | 1 | 1 | 5 |
-| r/koreatravel (active) | 200 · 100 posts | 10 | 1 | 1 | 1 | 9 |
+| r/GrandCanyon (active) | 200 · 100 posts | 2 | 0 | 0 | 0 | — |
+| r/seoul (active) | 200 · 100 posts | 27 | 1 | 1 | 1 | 4 |
+| r/koreatravel (active) | 200 · 100 posts | 12 | 3 | 3 | 2 | 8, 7 |
 
 _Etapas en el orden real: publicado en las últimas 24h y no sticky/nsfw → **filtro** → match con la taxonomía de topics → pregunta genuina. **El filtro no es el mismo en todos los subs:** en los `active` es el juez decidiendo si el hilo se puede contestar con nuestro material, y en los `watch-only` es el match contra las keywords del sitio. Esta columna se llamaba "Keyword" para los dos, y eso hizo leer tres días de `active` en cero como "nadie habla del tema" cuando lo que decía era "el juez no encontró nada contestable". No hay umbral de score: todo lo que pasa el embudo es candidato._
 
@@ -41,26 +41,51 @@ _El score suma topics + frescura del hilo (≤3h vale 5, ≤6h vale 4, ≤12h va
 
 _El cupo (6) **no** corta por score: corta por carril. Se leen 12 candidatos contra el corpus y entran primero los 🎯 GEO, después los 📌 material y último los 🔁 karma, cada grupo por score. El score mide qué tan leído va a ser el hilo; el carril mide si sirve para lo que existe el sistema. Cortar por score dejaba afuera al GEO de 8h para meter karma de 2h._
 
-_Cortados hoy por cupo: r/travel (🔁 karma, score 3) · r/Bookingcom (🔁 karma, score 3) · r/askhotels (🔁 karma, score 2) · r/Flights (🔁 karma, score 2) · r/GrandCanyon (🔁 karma, score 2)._
+_Cortados hoy por cupo: r/seoul (🔁 karma, score 4) · r/rome (🔁 karma, score 3) · r/Bookingcom (🔁 karma, score 3) · r/travel (🔁 karma, score 2) · r/askhotels (🔁 karma, score 1)._
 
 ---
 
 ## Candidatos (6)
 
+### How strict r colosseum time slots?
+
+- **Hilo:** https://www.reddit.com/r/RomeTravel/comments/1xfbqtb/how_strict_r_colosseum_time_slots/
+- **Subreddit:** r/RomeTravel · **Antigüedad:** 2h · **Comentarios:** n/d (RSS) · **Score:** 7
+- **Carril:** 📌 material — contesta con datos, pero publicos: va sin marca
+- **Sitio:** colosseum
+- **Preguntan:** ¿Qué pasa si llego 35 minutos antes de mi slot en lugar de 30 minutos?
+- **Por qué sirve:** El material cubre políticas de llegada a tientas, horarios de slot y qué sucede cuando llegas fuera de la ventana recomendada para las entradas al Colosseum con Arena Floor e Hypogeum.
+
+**Lo que preguntó, textual:**
+
+> Booked the full exp 2pm slot. I kno it says arrive 30 min ahead. Will u be turned away at say 155?
+
+**Forma que pide esta pregunta:** un renglón — Pregunta puntual de sí/no sobre tolerancia de horario
+
+_Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
+
+**Material que contesta ESTA pregunta (1, elegidos entre 18):**
+
+- `timing-101` "Holders of the standard ticket and of the Full Experience Arena ticket must arrive at least 15 minutes before the printed time and no later than 15 minutes after it." — https://colosseumroman.com/colosseum-timed-entry-window-late-arrival
+
+**Atribución:** ninguno de los facts es medición nuestra (son datos públicos que puede dar cualquiera). Va **sin marca**: pegarla acá no aporta autoridad, suena a aviso.
+
+---
+
 ### Dinner before an 8pm opera in Rome. What’s the normal thing to do?
 
 - **Hilo:** https://www.reddit.com/r/rome/comments/1xf1r2p/dinner_before_an_8pm_opera_in_rome_whats_the/
-- **Subreddit:** r/rome · **Antigüedad:** 5h · **Comentarios:** n/d (RSS) · **Score:** 7
+- **Subreddit:** r/rome · **Antigüedad:** 9h · **Comentarios:** n/d (RSS) · **Score:** 5
 - **Carril:** 📌 material — contesta con datos, pero publicos: va sin marca
 - **Sitio:** trastevere
-- **Preguntan:** ¿Es posible cenar a las 6:30pm en Roma antes de una ópera que empieza a las 8pm, y qué hacen normalmente los locales en esa situación?
-- **Por qué sirve:** El material cubre horarios de servicio de restaurantes en Roma, cuándo abren y cierran, y dinámicas de comida según la hora, incluyendo cenas de noche.
+- **Preguntan:** ¿Es posible cenar en un restaurante a las 18:30 antes de ir a la ópera a las 20:00 en Roma, y qué es lo normal hacer?
+- **Por qué sirve:** El material cubre horarios de apertura de restaurantes, cuándo sirven cena, y la estructura de una comida típica en Roma, incluido si es normal cenar temprano o a qué hora llegan los romanos a los restaurantes.
 
 **Lo que preguntó, textual:**
 
 > Hi! Sorry if this is a silly question, but I’m going to Rome soon and I’ve booked tickets for the opera. The show starts at 8pm, which seems to be right in the middle of dinner time. Would it be normal/possible to have dinner at a restaurant around 6:30pm before the opera? Are restaurants generally serving dinner that early, or would it be better to eat afterwards? I’m just curious what people normally do when going to an evening opera in Rome. Eat early beforehand, have something light and eat properly afterwards, or something else? Thanks! 😊
 
-**Forma que pide esta pregunta:** un párrafo — pregunta una decisión concreta (cenar antes o después) con matices y alternativas, pero no requiere itinerario largo
+**Forma que pide esta pregunta:** un párrafo — Es una decisión (cenar antes o después) con un trade-off (horario romano vs. horario de la ópera) que merece explicación breve, no solo un dato suelto
 
 _Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
 
@@ -69,7 +94,7 @@ _Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 1
 - `timing-013` "Romans don't sit down to dinner before about 8 p.m., and the ritual that precedes it, the aperitivo, is a genuine institution rather than a marketing device: a drink and something to pick at, taken standing or seated at an enoteca, in the hour when the working day dissolves into the evening." — https://trasteverefoodtour.com/trastevere-twilight-food-tour-format
 - `timing-014` "Some operators run an earlier, express departure — typically around 6:15 p.m., lasting about two and a half hours — that trims the evening to its four essentials: a spritz, supplì, a sit-down dinner, and gelato." — https://trasteverefoodtour.com/trastevere-twilight-food-tour-format
 
-**Lo que el corpus no cubre:** nada relevante: confirma que la cena romana normal es a las 8pm y que existe una alternativa tipo aperitivo o tour exprés para cenar antes
+**Lo que el corpus no cubre:** Si un restaurante concreto aceptará reservas a las 18:30 (hay que confirmarlo directamente, pero la norma social y la alternativa del aperitivo/tour exprés cubren la duda principal)
 
 **Atribución:** ninguno de los facts es medición nuestra (son datos públicos que puede dar cualquiera). Va **sin marca**: pegarla acá no aporta autoridad, suena a aviso.
 
@@ -78,11 +103,11 @@ _Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 1
 ### 4 days in Seoul: is this itinerary realistic?
 
 - **Hilo:** https://www.reddit.com/r/koreatravel/comments/1xf6jf7/4_days_in_seoul_is_this_itinerary_realistic/
-- **Subreddit:** r/koreatravel · **Antigüedad:** 2h · **Comentarios:** n/d (RSS) · **Score:** 9
+- **Subreddit:** r/koreatravel · **Antigüedad:** 6h · **Comentarios:** n/d (RSS) · **Score:** 8
 - **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
 - **Sitio:** seoul
-- **Preguntan:** ¿Qué se puede desayunar en tiendas de conveniencia en Seúl y a qué hora abren las cafeterías?
-- **Por qué sirve:** El material cubre qué se come en Seúl, horarios de apertura, opciones de comida callejera y expectativas de diferencias entre cadenas y lugares locales, incluyendo bebidas populares y opciones de desayuno accesibles.
+- **Preguntan:** ¿Qué desayunar en Seúl si los lugares abren tarde, y qué opciones hay en tiendas de conveniencia o cadenas que abren temprano?
+- **Por qué sirve:** El material cubre qué comer en Seúl, horarios de apertura y lo que encontrar en mercados y tiendas, incluyendo opciones de comida de conveniencia y restaurantes sin necesidad de hablar coreano.
 
 **Lo que preguntó, textual:**
 
@@ -91,63 +116,64 @@ _Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 1
 >  Any comments are welcome! Day 1 (Tuesday) Bukchon Hanok Village and Changdeokgung Palace Lunch near the hotel in Ikseon-dong Walk around Myeongdong and along Cheonggyecheon Dinner somewhere in Euljiro 3-ga Day 2 Morning hike in Bukhansan National Park with a mini picnic. Some parts look like slippery rock. Is it worth renting hiking shoes at the Seoul Hiking Tourism Center? Lunch near the hotel, then Gyeongbokgung Palace Evening: N Seoul Tower or Lotte World Tower? If Lotte, i would consider to add Starfield Library and Olympic Park. If N Seoul Tower, we’d walk up through Namsan. Does that make sense? Which has the better views? Day 3 Bike ride along the Han River, then shopping at The Hyundai Seoul End the day with ramyeon at Yeouido Hangang Park, or go to Noryangjin Fish Market Day 4 
 >  Nothing fixed yet. Considering the War Memorial of Korea or a DMZ tour. If it’s sunny, we might just walk around Seoul outdoors. Any suggestions? Questions Does this pace seem doable? Much depends on whether we get sunny or rainy days, but are there any other places you’d suggest we consider? What would you recommend for a rainy day? Thanks a lot in ad
 
-**Forma que pide esta pregunta:** dos o tres frases — Pide recomendaciones concretas de qué comprar y a qué hora abren lugares, algo que se responde en dos o tres frases.
+**Forma que pide esta pregunta:** dos o tres frases — Es una pregunta concreta sobre qué comer/dónde desayunar, pide recomendaciones puntuales, no un plan extenso.
 
 _Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
 
 **Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
 
-**Lo que el corpus no cubre:** Ninguno de los hallazgos trata sobre tiendas de conveniencia, desayuno o horarios de cafeterías; todos son sobre mercados tradicionales, tours gastronómicos y clima.
+**Lo que el corpus no cubre:** No hay hallazgos sobre opciones de desayuno temprano, comida de tienda de conveniencia o cadenas que abren temprano; el listado trata de mercados y horarios de puestos de comida, no de desayuno.
 
 **Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
 
 ---
 
-### First trip to Italy in February; skip Milan for more time in Florence?
+### Studying Winter Abroad at Yonsei
 
-- **Hilo:** https://www.reddit.com/r/ItalyTravelAdvice/comments/1xf89mb/first_trip_to_italy_in_february_skip_milan_for/
-- **Subreddit:** r/ItalyTravelAdvice · **Antigüedad:** 0h · **Comentarios:** n/d (RSS) · **Score:** 8
+- **Hilo:** https://www.reddit.com/r/koreatravel/comments/1xf9juz/studying_winter_abroad_at_yonsei/
+- **Subreddit:** r/koreatravel · **Antigüedad:** 4h · **Comentarios:** n/d (RSS) · **Score:** 7
 - **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
-- **Sitio:** milan
-- **Preguntan:** ¿Vale la pena ir a Milán en un primer viaje a Italia, o es mejor pasar más tiempo en Florencia?
-- **Por qué sirve:** El material cubre qué ver en Milán (La Última Cena, Duomo, Castillo Sforza) y cómo integrar la visita al centro; puede informar sobre si esos sitios valen la pena en un itinerario de primeras veces.
+- **Sitio:** seoul
+- **Preguntan:** ¿Qué ver, comer y hacer en Corea (comida, cultura, vida nocturna, compras, ropa de segunda mano)?
+- **Por qué sirve:** El material cubre mercados de comida de Seúl (qué comer, precios, horarios, multitudes), platos de comida callejera coreana, Korean BBQ, costos de comida y presupuestos diarios, aplicaciones de traducción y mapas para ordenar comida, y tours de comida en Seúl. Aunque no cubre específicamente tiendas de ropa de segunda mano ni vida nocturna detallada, cubre la experiencia de comida y mercados que es parte central de lo que pide.
 
 **Lo que preguntó, textual:**
 
-> Hi everyone! I&#39;m planning my first trip to Italy in early-to-mid February 9 nights total, flying into Rome and out of Venice. Here&#39;s my plan: Rome: 5 nights Florence: day trip from Rome Milan: 2 nights Venice: 2 nights I love art, museums, architecture, walking around cities and trying local food. My main question: is Milan worth it for a first-time visitor, or should I skip it and stay in Florence instead of just day-tripping? Any other tips for Italy in February are welcome too. Thanks so much! 🙂
+> I got accepted to winter abroad at Yonsei University from 22 December to 8th of January. I&#39;m a 19 year old female, and never been to korea. I&#39;m really excited to do so many things, but am completely clueless on what to see or do in korea. if anyone has anything they recommend please let me know!! i really want to experience the food, culture, nightlife and shopping, thrifting, literally everything. Thanks!!!!
 
-**Forma que pide esta pregunta:** un párrafo — Es una decisión de itinerario con trade-off (Milán vs. más tiempo en Florencia) que requiere una recomendación razonada.
+**Forma que pide esta pregunta:** varios párrafos — Pide un panorama amplio de varias categorías (comida, cultura, nightlife, compras, thrift) para un viaje largo, lo que requiere varias recomendaciones encadenadas, no una sola respuesta.
 
 _Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
 
 **Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
 
-**Lo que el corpus no cubre:** No hay hallazgos sobre si Milán merece la pena frente a Florencia en un primer viaje; el listado solo trata logística del Last Supper y tours en Milán.
+**Lo que el corpus no cubre:** La pregunta es un pedido abierto de itinerario general (comida, cultura, vida nocturna, compras, ropa de segunda mano) para un mes en Corea; el shortlist solo cubre detalles puntuales de mercados y restaurantes (horarios, timos, reseñas), no un plan de qué ver y hacer.
 
 **Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
 
 ---
 
-### Roman Breakfast
+### How to transfer travel credits to cash credits or cash?
 
-- **Hilo:** https://www.reddit.com/r/rome/comments/1xf26vj/roman_breakfast/
-- **Subreddit:** r/rome · **Antigüedad:** 5h · **Comentarios:** n/d (RSS) · **Score:** 5
+- **Hilo:** https://www.reddit.com/r/Bookingcom/comments/1xfb5yl/how_to_transfer_travel_credits_to_cash_credits_or/
+- **Subreddit:** r/Bookingcom · **Antigüedad:** 2h · **Comentarios:** n/d (RSS) · **Score:** 6
 - **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
-- **Sitio:** trastevere
-- **Preguntan:** ¿Qué desayunan típicamente los romanos en un bar o café local y qué se recomienda pedir?
-- **Por qué sirve:** El material sobre comer en Roma cubre platos romanos, café, y qué pedir en bares locales versus trampas turísticas, incluyendo precios y dónde comer.
+- **Sitio:** — (sin corpus)
+- **Preguntan:** ¿Cómo convertir créditos de viaje de Booking.com en dinero en efectivo o reembolso?
+- **Por qué sirve:** El material cubre plataformas de reserva, protección del consumidor, ventanas de reembolso, quién asume la pérdida en cancelaciones, y cómo presionar reclamos a operadores que se niegan a resolver disputas.
 
 **Lo que preguntó, textual:**
 
-> Hello! I’m travelling to Rome soon and our accommodation doesn’t include breakfast. Rather than looking for brunch places, I’m curious about what a normal Roman breakfast looks like. What would you typically order at a local bar or café in the morning? Coffee and a cornetto? Are there any other things worth trying? Do you have any recommendation of cafes? Thank you! 😊
+> Has anyone had issues getting compensation from Booking.com ? They cancelled two of our accommodation bookings last minute, leaving my family scrambling to find somewhere else to stay and forcing us to spend way more than we originally budgeted for. They promised me compensation, including around $500 for the first cancellation, but now they’re refusing to pay cash and are only offering travel credits, which I have no use for. The frustrating part is that I was told over the phone that the credits could be converted to cash, but now their claims team is denying it. Every time I email them, they just repeat the same thing and refuse to escalate it.
+>  I’ve been trying to resolve this for ages - my bank can’t do anything about and the only thing left is taking it through courts (which would mean i would pay a fee) Has anyone actually managed to get Booking.com to transfer the travel credits to cash? My case manager keeps sending me the same email over and over refusing to do so and refusing to help.
 
-**Forma que pide esta pregunta:** dos o tres frases — Pide una recomendación concreta de qué pedir, respondible en pocas frases.
+**Forma que pide esta pregunta:** un párrafo — Es una disputa concreta con pasos ya intentados (banco, reclamo, posible vía judicial), requiere explicar opciones y su trade-off, no solo una línea.
 
 _Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
 
 **Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
 
-**Lo que el corpus no cubre:** No hay hallazgos sobre el desayuno romano típico (café, cornetto, costumbres de bar) ni recomendaciones de cafeterías.
+**Lo que el corpus no cubre:** No hay investigación publicada sobre políticas de Booking.com para convertir créditos en efectivo ni sobre disputas de compensación.
 
 **Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
 
@@ -156,57 +182,67 @@ _Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 1
 ### Suggestions for new year eve
 
 - **Hilo:** https://www.reddit.com/r/vegas/comments/1xezd3k/suggestions_for_new_year_eve/
-- **Subreddit:** r/vegas · **Antigüedad:** 7h · **Comentarios:** n/d (RSS) · **Score:** 5
+- **Subreddit:** r/vegas · **Antigüedad:** 11h · **Comentarios:** n/d (RSS) · **Score:** 5
 - **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
 - **Sitio:** lasvegas
-- **Preguntan:** Qué hacer en Las Vegas en Nochevieja y si vale la pena hospedarse en Bellagio o Caesars Palace o solo visitarlos
-- **Por qué sirve:** El material cubre qué hacer en Las Vegas (shows, tours, día a día en el Strip), dónde hospedarse y cómo vale la pena (resorts, resort fees, hidden charges), y cómo moverse por los casinos del Strip sin hospedarse en ellos.
+- **Preguntan:** ¿Qué hacer en Las Vegas en Año Nuevo y si vale la pena hospedarse en Bellagio o Caesars Palace?
+- **Por qué sirve:** El material cubre qué ver y hacer en Las Vegas, dónde hospedarse en los resorts más famosos, cómo son las experiencias en los distintos casinos, el costo real de una estadía, y cómo moverse por la Strip; aunque no cubre específicamente el Año Nuevo como evento, responde si esos resorts valen la pena y qué se puede visitar sin hospedarse ahí.
 
 **Lo que preguntó, textual:**
 
 > Hi Folks, Me and my friends will be in Vegas for 30th 31st Dec this year. So wanted suggestions on things we could do and places we could visit. We are all bachelors, so we want it be wild. Additionally we wanted to book belaggio or caesars place but wanted to know if they are worth it or just overhyped by movies. Even if we dont book it, could we still visit hotel casinos? TIA!
 
-**Forma que pide esta pregunta:** varios párrafos — Piden varias cosas distintas: qué hacer en Nochevieja, si vale la pena alojarse en esos hoteles y si se puede visitar sin reservar, lo que requiere varias respuestas enlazadas.
+**Forma que pide esta pregunta:** varios párrafos — La pregunta combina varias decisiones distintas: planes para Nochevieja, si vale la pena hospedarse en esos hoteles, y si se puede visitar sin reservar, lo que requiere una respuesta con varias partes.
 
 _Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
 
 **Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
 
-**Lo que el corpus no cubre:** No hay hallazgos sobre Nochevieja en Las Vegas, actividades para despedidas de soltero, ni sobre si vale la pena hospedarse en Bellagio o Caesars Palace frente a solo visitarlos.
-
-**Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
-
----
-
-### Good halal food in Seoul
-
-- **Hilo:** https://www.reddit.com/r/seoul/comments/1xexls9/good_halal_food_in_seoul/
-- **Subreddit:** r/seoul · **Antigüedad:** 9h · **Comentarios:** n/d (RSS) · **Score:** 5
-- **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
-- **Sitio:** seoul
-- **Preguntan:** ¿Dónde encontrar comida halal en Seúl y qué platos coreanos son naturalmente halal?
-- **Por qué sirve:** El material sobre comida en Seúl cubre opciones veganas, vegetarianas y halal, incluyendo dónde encontrarlas y qué platos coreanos son adecuados para estas dietas.
-
-**Lo que preguntó, textual:**
-
-> Hi! I am travelling with a Muslim friend to Seoul in a month and would like some recommendations on where to find good halal food spots in Seoul? Is there any Korean food which is naturally halal (sorry I am not Muslim myself)? Thanks!
-
-**Forma que pide esta pregunta:** un párrafo — Pide recomendaciones concretas de lugares y una explicación sobre qué platos son aptos, lo que requiere una respuesta con algo de contexto.
-
-_Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
-
-**Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
-
-**Lo que el corpus no cubre:** No hay hallazgos sobre restaurantes halal certificados ni sobre qué platos coreanos son naturalmente halal.
+**Lo que el corpus no cubre:** No hay hallazgos sobre qué hacer en Año Nuevo en Las Vegas, ni sobre si Bellagio o Caesars Palace valen la pena para hospedarse, ni sobre poder visitar esos casinos sin reservar.
 
 **Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
 
 
-## Bloqueados — buenos hilos donde la cuenta todavía no puede comentar (0)
+## Bloqueados — buenos hilos donde la cuenta todavía no puede comentar (1)
 
 _No están acá por malos: están porque el sub pide más karma del que la cuenta tiene, o porque la config lo dejó en watch-only. Se registran para saber qué se está perdiendo y cuánto vale llegar al umbral._
 
-_Ninguno hoy._
+### Rome/Bologna itinerary check for April 2027 with a 5 year old. Food recommendations especially!
+
+- **Hilo:** https://www.reddit.com/r/ItalyTravel/comments/1xfa5jm/romebologna_itinerary_check_for_april_2027_with_a/
+- **Subreddit:** r/ItalyTravel · **Antigüedad:** 3h · **Comentarios:** n/d (RSS) · **Score:** 12
+- **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
+- **Sitio:** trastevere
+- **Preguntan:** ¿Cuáles son las mejores recomendaciones de restaurantes, mercados y comida tradicional en Roma y Bologna para una familia con un niño de 5 años, especialmente pasta, pizza, platos de carne y mercados?
+- **Por qué sirve:** El material cubre dónde comer en Roma, precios de turista versus barrio, platos romanos tradicionales, los mercados de Trastevere y Testaccio, y comparación entre establecimientos familiares y turísticos. El viajero menciona mercados específicos y restaurantes en las zonas que el material documenta.
+
+**Lo que preguntó, textual:**
+
+> We’re are a couple spending just over two weeks in Italy next April with our son, who will be 5. Food is a big priority for us, especially pasta, pizza, meat dishes, markets, and traditional regional food. We prefer smaller family run kind of restaurants but don’t mind touristy places if they’re really worth visiting. We won’t have a car so public transit only. We’re hoping for a somewhat relaxed trip with time to wander and explore. We don’t want to miss the major sights in Rome, but we’re not big museum people. Nothing is booked yet besides flights and our first two hotels. The flights are set but the hotels are still fully refundable. All restaurants are tentative ideas but I’m very indecisive haha. Rome (April 16–23): Staying at Navona Garden Suites. 
+>  Apr 16: Arrive at airport and take train into Rome. Piazza Navona, Campo de’ Fiori, Via dei Coronari. Antico Forno Roscioli, Hosteria Grappolo d’Oro.
+>  Apr 17: Pantheon, Trevi Fountain, Spanish Steps. Lunch at Armando al Pantheon, dinner at Emma Pizzeria.
+>  Apr 18: Natale di Roma celebrations if they’re happening, Circus Maximus, Jewish Ghetto, Pasticceria Boccione, Monti.
+>  Apr 19: St. Peter’s Basilica, Vatican Museums/Sistine Chapel. Lunch at Pizzarium Bonci.
+>  Apr 20: Colosseum, Roman Forum, Palatine Hill. Lunch at La Taverna dei Fori Imperiali. Maybe Basilica di San Clemente.
+>  Apr 21: Mercato Testaccio, Mordi e Vai/Trapizzino, Aventine Hill and Orange Garden, Trastevere. Dinner at Da Teo or L’Elementare.
+>  Apr 22: Villa Borghese, little park train, Pincio viewpoint. Poldo e Gianna for lunch, Osteria del Sostegno for dinner. Bologna (April 23–29): Staying at Hotel University 
+>  Apr 23: Train from Rome. Piazza Maggiore, Quadrilatero. Sfoglia Rina for lunch, SPAN Pizzeria for dinner.
+>  Apr 24: Mercato Ritrovato, Finestrella di Via Piella, Bologna’s Seven Secrets, Santo Stefano. Dinner at Da Cesari.
+>  Apr 25: Sanctuary of San Luca, Trattoria del Rosso. Osteria Broccaindosso for dinner.
+>  Apr 26: Maranello day trip: Ferrari
+
+**Forma que pide esta pregunta:** varios párrafos — Es un itinerario completo de dos ciudades con múltiples decisiones de restaurantes, mercados y logística con un niño pequeño.
+
+_Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
+
+**Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
+
+**Lo que el corpus no cubre:** El itinerario ya tiene una lista extensa de restaurantes y mercados concretos para Roma y Bolonia; el material disponible trata precios, trucos para detectar trampas turísticas o reseñas generales, pero no evalúa ni valida los lugares específicos mencionados ni cubre Bolonia en absoluto.
+
+**Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
+
+**[NO SE PUEDE PEGAR HOY — r/ItalyTravel pide 150 de comment karma y la cuenta tiene un karma que hoy no se pudo leer]**
+
 
 ---
 
@@ -216,45 +252,41 @@ _Segundo filtro, desde el 7 oct 2026. No busca hilos que nuestro material contes
 
 _Reglas de este carril: **sin marca y sin cifras nuestras**, corto, leyendo antes los comentarios del hilo, y con cada dato verificado afuera. Nunca experiencia propia. Uno por sub por día. Cero es una respuesta válida._
 
-_Descartados después de leer los comentarios, por ya resueltos (4): "Avis No Cars nightmare" (r/travel, 24 comentarios: Ya le confirmaron que es común, explicaron por qué sucede, y algunos ofrecieron soluciones) · "Has anyone successfully booked directly with Air C" (r/Flights, 11 comentarios: Múltiples comentarios convergen en usar trip.com para aerolíneas chinas; el usuario tiene ) · "Rome & Florence: anyone there right now? Looking f" (r/ItalyTravelAdvice, 6 comentarios: Ya hay reportes en tiempo real de gente en Roma y Florencia confirmando que todo funciona ) · "Advice with EasyJet" (r/Flights, 7 comentarios: Ya le aclararon que no puede exigir rerouting en otra aerolínea, que la notificación via a)._
+_Descartados después de leer los comentarios, por ya resueltos (4): "Cathay Pacific: Failure to Honor Published Terms a" (r/Flights, 6 comentarios: Ya le dijeron qué dicen los artículos exactos (3.3.5, 3.3.6, 3.3.7) y que la práctica de C) · "Place to Work Remotely Walking Distance Near Termi" (r/rome, 2 comentarios: Ya le dieron opciones de lugares donde trabajar (internet café con link, Starbucks en Term) · "Current Saudia cancellation policy given the war/R" (r/travel, 5 comentarios: Ya le dijeron que Saudia permite cambios/cancelaciones gratis hasta oct 31 y opciones de c) · "Avis No Cars nightmare" (r/travel, 38 comentarios: 38 comentarios confirmando que es práctica común en Avis/rental companies, explicando por )._
 
-### Air India Express IX 2765 (GOX–DEL) — recent punctuality experiences?
+### booked a rental car with Budget and Priceline, went to pick up rental, was told they didn’t have it, was able to pick up the next day, got charged over $500 more than original price. What do i do?
 
-- **Hilo:** https://www.reddit.com/r/Flights/comments/1xf7ee7/air_india_express_ix_2765_goxdel_recent/
-- **Subreddit:** r/Flights · **Antigüedad:** 1h
-- **Carril:** 🔁 karma — está preocupado por algo que tiene respuesta clara
-- **Lo que cree o le preocupa:** No sabe si llegará a tiempo a su tren porque no conoce la puntualidad del vuelo ni el tiempo de trámites en el aeropuerto
-- **Lo que una buena respuesta deja claro:** Establecer si hay datos públicos de puntualidad de este vuelo y qué tiempo típico tarda el desembarque y recogida de equipaje en T1 Delhi para evaluar si los 2 horas son realistas
-- **Verificar antes de escribir:** Datos de puntualidad de Air India Express IX 2765 (GOX-DEL) y tiempos de trámites en Terminal 1 Delhi
-- **Comentarios del hilo:** 2
-- **Lo que todavía nadie dijo:** Tiempo real de tránsito por T1 desde desembarque hasta salida con equipaje; margen de tiempo entre 11:10 AM y 1:10 PM para conectar a Old Delhi Railway Station
+- **Hilo:** https://www.reddit.com/r/travel/comments/1xf9d5q/booked_a_rental_car_with_budget_and_priceline/
+- **Subreddit:** r/travel · **Antigüedad:** 3h
+- **Carril:** 🔁 karma — no entiende cómo funciona algo
+- **Lo que cree o le preocupa:** Que pagar $500 más del precio acordado por una sustitución de vehículo por culpa de la agencia es obligatorio.
+- **Lo que una buena respuesta deja claro:** Explicar que Priceline o Budget tienen obligación de honrar el precio original, qué es un 'negative booking', qué derechos tiene el consumidor y qué pasos seguir para reclamar.
+- **Verificar antes de escribir:** Qué es un 'negative booking' en reservas de coches; políticas de Priceline y Budget sobre cambios de vehículos; derechos del consumidor en plataformas de viajes.
+- **Comentarios del hilo:** 4
+- **Lo que todavía nadie dijo:** Falta claridad sobre si debe contactar a Priceline o a Budget directamente, y si el sobrecargo $500 se debe realmente a la actualización de precio o a una tarifa de penalización por el 'negative booking'
+- **⚠️ Tema de plata:** solo si la respuesta es precisa y resuelve; si no, se saltea.
 
 **Lo que preguntó, textual:**
 
-> My original Goa–Delhi flight on 13 November was cancelled due to operational reasons, and I was rebooked on IX 2765 on 14 November, scheduled to arrive at Delhi T1 at 11:10 AM.
->  I’m trying to plan my onward journey to Old Delhi Railway Station. My train departs at 1:10 PM, and I cannot move it to 15 November because it’s my birthday.
->  For people who have flown this route recently:
->  How has IX 2765’s punctuality been?
->  How long did it take you to exit T1 after landing, including baggage collection?
->  Is there any historical on-time performance data for this flight?
->  I’m looking for recent experiences and factual information to plan accordingly. Thanks! (This is a domestic flight from Goa (GOX) to Delhi (DEL), departing at 8:25 AM and scheduled to arrive at T1 at 11:10 AM on 14 November 2026. My train from Old Delhi Railway Station is a separate booking at 1:10 PM. I booked my flight through ixigo)
+> Pretty much what the title says ): I booked a rental car yesterday through Priceline, my rental was discounted as a “last minute booking deal”, my price was supposed to be $177 after tax and fees. I was supposed to pay at the counter when picking up my rental. I went to pick up my car yesterday and was told that they didn’t have the car and it was a “negative booking”. they told me the soonest available car would be for today. they asked me if i was able to adjust my booking through Priceline, i said no and the person said they would be there tomorrow (today) they’ll get it sorted out. I went today, was offered a completely different car for the “same price”. turns out that same price was over $400. i asked them why it was that price and they were trying to tell me that it was “now a different rate”. i said i wasn’t going to be paying that much, the person called their boss and he said he can get it down to $286. i asked them why they can’t look at my original booking and adjust that, they wouldn’t really give me an answer besides “that was yesterday’s rates.” at that point a line was starting to form behind me, and i didn’t want to take up so much time. i denied any extra upgrades. they told me there would be about $200 deposit as a hold i’d get back. sounds fine. i left the parking lot and got a notification from my bank stating there was a $730 charge to my card from Budget rental. I have this rental until wednesday. I do not know what to do. do i try to dispute these char
 
 ---
 
-### How to navigate reaching Milan Bergamo airport on the morning of 30th October
+### AJet: Misleading info on cancellation fees & blocked customer support
 
-- **Hilo:** https://www.reddit.com/r/travel/comments/1xf0b57/how_to_navigate_reaching_milan_bergamo_airport_on/
-- **Subreddit:** r/travel · **Antigüedad:** 6h
-- **Carril:** 🔁 karma — está preocupado por algo que tiene respuesta clara
-- **Lo que cree o le preocupa:** Teme que la huelga de las 10am le cancele su vuelo de las 9:50am desde Bérgamo y que no funcionen los autobuses matutinos
-- **Lo que una buena respuesta deja claro:** Aclarar cómo funcionan las huelgas de transporte en Italia (qué sectores se afectan, si vuelos antes de la hora son típicamente seguros, qué ocurre con autobuses de aeropuerto)
-- **Verificar antes de escribir:** Huelga en Italia 30 de octubre 2024, horarios exactos, qué sectores afecta, historial de vuelos operando minutos antes del inicio
-- **Comentarios del hilo:** 7
-- **Lo que todavía nadie dijo:** Confirmación de si los buses de 6:10 AM desde Piazza Luigi di Savoia correrán específicamente durante la huelga; período exacto de la huelga para vuelos de Bergamo
+- **Hilo:** https://www.reddit.com/r/Flights/comments/1xf7l78/ajet_misleading_info_on_cancellation_fees_blocked/
+- **Subreddit:** r/Flights · **Antigüedad:** 5h
+- **Carril:** 🔁 karma — una decisión con respuesta clara
+- **Lo que cree o le preocupa:** Que AJet puede cobrar una tarifa de cancelación diferente a la que verbalmente confirmó el agente.
+- **Lo que una buena respuesta deja claro:** Establecer si hay derecho a reclamación por información falsa del agente y qué pruebas se necesitan; qué organismos regulan a AJet y dónde presentar la reclamación.
+- **Verificar antes de escribir:** Normativa sobre cancelaciones en aerolíneas de bajo costo; derechos del consumidor cuando hay información verbal contradictoria; cómo reclamar contra AJet.
+- **Comentarios del hilo:** 1
+- **Lo que todavía nadie dijo:** Solo hay respuesta automatizada del bot; falta asesoramiento real sobre cómo proceder con la disputa por diferencia de cuota ($107 vs €10 prometido) y cómo escalar la queja contra el bloqueo de soporte
+- **⚠️ Tema de plata:** solo si la respuesta es precisa y resuelve; si no, se saltea.
 
 **Lo que preguntó, textual:**
 
-> Hi, I have a very short two days of travel at Milan coming up this week, this was booked ages ago and is non-refundable. I am flying back to London with a flight from Milan Bergamo that is scheduled at 9:50am on the 30th, I am reading everywhere that there is a strike happening on the 30th but it will only start at 10am. This is my first time in Milan/Italy, and I have some questions. Here are my questions: Do you think my flight will fly given that it is at 9:50am? Will I be able to catch the airport buses from Piazza Luigi di Savoia in the morning? There are buses scheduled at 6:10am that will be perfect for me, will they run? Looking for local/recent tourist feedback My accommodation is a 15-18 minutes walk from Centrale, will it be safe to walk at 5:30am? As metros don&#39;t start till 6am. If I wanted to hail a taxi or ride share, would I be able to do it, is it safe right now or will the ride shares be on strike too? Please help out this solo traveler, social media is flooding with bizarre news aboht Milan so I&#39;m a bit worried, thank you so much.
+> On August 30th, I booked a flight with AJet and called their customer service right after to cancel it. Before confirming, I explicitly asked the agent about the exact cancellation fee. He assured me that only approx. €10 would be deducted. Relying entirely on this statement, I agreed to the cancellation. Had they told me the actual fee was €107, I would never have cancelled the flight. Afterwards, AJet deducted €107 instead of €10. Furthermore, customer support actively blocks passengers: You are forced to submit claims only via their online form, and you only receive copy-pasted automated emails in response. It is completely impossible to reach this department or any supervisor by phone to discuss the issue. If you try to reply or challenge their decision, you cannot continue the conversation; you have to start the entire process from scratch again. The system keeps customers stuck in an endless loop. I am requesting the refund of the overcharged €97. I have already escalated this matter officially to EVZ Austria (European Consumer Centre) and DGCA / SHGM.
 
 ---
 
