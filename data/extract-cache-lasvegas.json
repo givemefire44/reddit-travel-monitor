@@ -438,6 +438,400 @@
         }
       ]
     },
+    "bryce-canyon-zion-day-trip-from-las-vegas": {
+      "hash": "7697bd30d1fda96a62eb389f361377458644f00853a2eaaf755b4148ba99335f",
+      "candidatos": [
+        {
+          "fact": "A Bryce Canyon and Zion day trip from Las Vegas takes 12 to 14 hours, and most of it is driving.",
+          "figures": [
+            "12 to 14 hours"
+          ],
+          "topics": [
+            "desert-parks",
+            "timing",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Visitors who are not U.S. residents pay $100 per person at each park, on top of the tour.",
+          "figures": [
+            "$100"
+          ],
+          "topics": [
+            "desert-parks",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The $234 day is the one with the shorter stops: about 30 minutes at the Zion Canyon Visitor Center, 10 minutes at Checkerboard Mesa and a drive through the Zion-Mount Carmel tunnel, then 90 minutes at Bryce.",
+          "figures": [
+            "$234",
+            "30 minutes",
+            "10 minutes",
+            "90 minutes"
+          ],
+          "topics": [
+            "desert-parks",
+            "timing",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "It runs in a van of up to 20 seats, and a box lunch is included.",
+          "figures": [
+            "20"
+          ],
+          "topics": [
+            "desert-parks",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The $263.99 day gives two hours at Bryce and two at Zion, where the stop is the visitor center, in a group of up to 13; lunch is not included, so bring your own.",
+          "figures": [
+            "$263.99",
+            "two hours",
+            "13"
+          ],
+          "topics": [
+            "desert-parks",
+            "timing",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The trade-off: the $234 day costs $29.99 less and brings lunch, and gives Zion well under an hour.",
+          "figures": [
+            "$234",
+            "$29.99"
+          ],
+          "topics": [
+            "desert-parks",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Bryce Canyon and Zion are two of the 11 national parks that charge a nonresident fee: every visitor who is not a U.S. resident, aged 16 or older, pays $100 per person at each park, on top of the entrance fee.",
+          "figures": [
+            "11",
+            "$100",
+            "16"
+          ],
+          "topics": [
+            "desert-parks",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "On a Bryce and Zion day, that is $200 per person.",
+          "figures": [
+            "$200"
+          ],
+          "topics": [
+            "desert-parks",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The America the Beautiful Non-Resident Annual Pass costs $250, and on a commercial tour it covers the nonresident fee for the pass holder and three more nonresident adults in their party, according to the National Park Service's page on tours and nonresident fees.",
+          "figures": [
+            "$250",
+            "three"
+          ],
+          "topics": [
+            "desert-parks",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "For a single traveler on a two-park day, the pass costs $50 more than the fees.",
+          "figures": [
+            "$50"
+          ],
+          "topics": [
+            "desert-parks",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "For a couple, it costs $250 against $400.",
+          "figures": [
+            "$250",
+            "$400"
+          ],
+          "topics": [
+            "desert-parks",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Children 15 and under pay no nonresident fee.",
+          "figures": [
+            "15"
+          ],
+          "topics": [
+            "desert-parks",
+            "pricing",
+            "kids-families"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The same operator that runs the $234 day also sells a one-way shuttle between Las Vegas, Bryce Canyon, Zion and St. George, from $25 per person.",
+          "figures": [
+            "$234",
+            "$25"
+          ],
+          "topics": [
+            "desert-parks",
+            "pricing",
+            "getting-around"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "In the listing, Las Vegas to Bryce is about three hours direct.",
+          "figures": [
+            "three hours"
+          ],
+          "topics": [
+            "desert-parks",
+            "getting-around",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Las Vegas to Zion goes through Bryce, with a 90-minute stop there, and takes about eight and a half hours.",
+          "figures": [
+            "90-minute",
+            "eight and a half hours"
+          ],
+          "topics": [
+            "desert-parks",
+            "getting-around",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Bryce to Las Vegas goes through Zion, with a stop at the visitor center, and takes about seven.",
+          "figures": [
+            "seven"
+          ],
+          "topics": [
+            "desert-parks",
+            "getting-around",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "In October 2026, the same operator as the $234 day listed a 48-hour tour of the Grand Canyon, Bryce and Zion for $338; longer loops add parks such as Monument Valley, and what they give of each park is a different decision.",
+          "figures": [
+            "48-hour",
+            "$338"
+          ],
+          "topics": [
+            "desert-parks",
+            "grand-canyon",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The National Park Service charges $100 per person aged 16 or older at each park, also on commercial tours.",
+          "figures": [
+            "$100",
+            "16"
+          ],
+          "topics": [
+            "desert-parks",
+            "pricing"
+          ],
+          "scale": null
+        }
+      ]
+    },
+    "bullets-and-burgers-las-vegas-packages-rules": {
+      "hash": "42ca246e70ff8a6256ad9988b46e143f1746f7f2b16b7be46d5876dd5653b49a",
+      "candidatos": [
+        {
+          "fact": "Its own site lists shooting packages from $229 plus tax, and the listing on this site starts lower.",
+          "figures": [
+            "$229"
+          ],
+          "topics": [
+            "pricing",
+            "adventure-activities",
+            "booking"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "A guide collects you at your hotel in a shuttle that seats up to 14 and drives you to an outdoor range in the desert, set, in the operator's words, at the edge of the Lake Mead recreation area.",
+          "figures": [
+            "14"
+          ],
+          "topics": [
+            "adventure-activities",
+            "logistics",
+            "getting-around"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The listing on this site starts at $99 for the shooting experience, with the package tiers on top, and the operator says a package cannot be shared.",
+          "figures": [
+            "$99"
+          ],
+          "topics": [
+            "pricing",
+            "adventure-activities",
+            "booking"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "There is a non-shooter package for anyone in your group who comes along to watch, with the lunch included, from $89.",
+          "figures": [
+            "$89"
+          ],
+          "topics": [
+            "pricing",
+            "adventure-activities"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "On the operator's site, the shooting and ATV combo started at $630 plus tax and the shooting, ATV and helicopter combo at $1,233 plus tax.",
+          "figures": [
+            "$630",
+            "$1,233"
+          ],
+          "topics": [
+            "pricing",
+            "adventure-activities",
+            "helicopter"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The listing on this site prices its shooting tour at $140 with the ATV tour as an add-on.",
+          "figures": [
+            "$140"
+          ],
+          "topics": [
+            "pricing",
+            "adventure-activities"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "In October 2026 it listed laps by car: from $249 for five laps in an Audi R8 V10 to $799 for ten laps in a Lamborghini Huracán Performante, with most cars at $299 for five laps.",
+          "figures": [
+            "$249",
+            "5",
+            "$799",
+            "10",
+            "$299"
+          ],
+          "topics": [
+            "pricing",
+            "adventure-activities"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Drivers must be 18 with a valid license; ride-along passengers must be at least 11, 4 feet 9 inches tall and 80 pounds, and a drifting ride-along costs $120.",
+          "figures": [
+            "18",
+            "11",
+            "4 feet 9 inches",
+            "80 pounds",
+            "$120"
+          ],
+          "topics": [
+            "adventure-activities",
+            "kids-families",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The racing and shooting combo on this site's listing is a different product: laps on a one-mile dirt track in a race truck, a dune buggy or a Razor, followed by a shooting package, from $514.",
+          "figures": [
+            "$514"
+          ],
+          "topics": [
+            "pricing",
+            "adventure-activities"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "One listing on this site offers a full refund up to 24 hours before the tour; the other two say all sales are final.",
+          "figures": [
+            "24"
+          ],
+          "topics": [
+            "cancellation",
+            "booking"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The operator's frequently asked questions give a minimum age of 6 for any adventure, with anyone under 18 accompanied by a parent or legal guardian.",
+          "figures": [
+            "6",
+            "18"
+          ],
+          "topics": [
+            "adventure-activities",
+            "kids-families",
+            "booking"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Pickup is free from most major Strip hotels; from a hotel off the Strip it costs $100, there is no pickup from Airbnb rentals, and a pickup time of your choosing costs $500 for a private shuttle.",
+          "figures": [
+            "$100",
+            "$500"
+          ],
+          "topics": [
+            "pricing",
+            "getting-around",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "In October 2026 the operator's site listed shooting packages from $229 to $2,300 plus tax, per person, and a non-shooter package from $89.",
+          "figures": [
+            "$229",
+            "$2,300",
+            "$89"
+          ],
+          "topics": [
+            "pricing",
+            "adventure-activities"
+          ],
+          "scale": null
+        }
+      ]
+    },
     "cartzilla-las-vegas-shopping-cart-tour": {
       "hash": "9e8348700b35b8f5f4cbf9acacce843e8360b4179896467838ca6f0613b94a4b",
       "candidatos": [
@@ -679,6 +1073,233 @@
             "timing",
             "tickets"
           ]
+        }
+      ]
+    },
+    "emerald-cave-kayak-from-las-vegas-willow-beach-hoover-dam": {
+      "hash": "a27d1de61410366c9a3fef0412b664594a65f09da1ad8a8edfc85f2b380b70f5",
+      "candidatos": [
+        {
+          "fact": "Most launch at Willow Beach, in Arizona, and paddle about 2 miles upriver to the cave; in October 2026 these were listed at $69 to $129, and some include hotel pickup.",
+          "figures": [
+            "2 miles",
+            "$69",
+            "$129"
+          ],
+          "topics": [
+            "adventure-activities",
+            "pricing",
+            "hoover-dam"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The longer trips launch at the base of Hoover Dam and paddle about 12 miles down the Black Canyon, for $199 to $315.",
+          "figures": [
+            "12 miles",
+            "$199",
+            "$315"
+          ],
+          "topics": [
+            "adventure-activities",
+            "pricing",
+            "hoover-dam"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The National Park Service describes about 30 miles of river with beaches, caves, coves and hot springs, and three ways in: a guided tour at the base of Hoover Dam, Willow Beach in Arizona, or Eldorado Canyon in Nevada.",
+          "figures": [
+            "30 miles"
+          ],
+          "topics": [
+            "hoover-dam",
+            "adventure-activities"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Emerald Cave is a small cave 2 miles upriver from Willow Beach.",
+          "figures": [
+            "2 miles"
+          ],
+          "topics": [
+            "adventure-activities",
+            "hoover-dam"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Willow Beach is 14 miles south of Hoover Dam, off US 93 on the Arizona side, with a launch ramp and a marina that rents canoes and kayaks, according to the park.",
+          "figures": [
+            "14 miles"
+          ],
+          "topics": [
+            "hoover-dam",
+            "adventure-activities",
+            "getting-around"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "In the listings we tracked in October 2026, these guided tours cost $69 to $129.",
+          "figures": [
+            "$69",
+            "$129"
+          ],
+          "topics": [
+            "pricing",
+            "adventure-activities"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The day runs three to six hours with the drive, and one listing gives about three and a half hours on the water for a round trip of 4 to 5 miles.",
+          "figures": [
+            "three to six hours",
+            "three and a half hours",
+            "4 to 5 miles"
+          ],
+          "topics": [
+            "adventure-activities",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Some include hotel pickup from the Strip, about an hour each way; others meet you at Willow Beach.",
+          "figures": [
+            "an hour"
+          ],
+          "topics": [
+            "adventure-activities",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "There are also kayak rentals without a guide, listed at $69 to $89.88, where you paddle to the cave at your own pace.",
+          "figures": [
+            "$69",
+            "$89.88"
+          ],
+          "topics": [
+            "pricing",
+            "adventure-activities"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "In the listings we tracked, these trips run seven to twelve hours and cost $199 to $315.",
+          "figures": [
+            "seven to twelve hours",
+            "$199",
+            "$315"
+          ],
+          "topics": [
+            "pricing",
+            "timing",
+            "adventure-activities"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "One of the best reviewed asks you to arrive 40 minutes early for security check-in, gives no hotel pickup and says all sales are final.",
+          "figures": [
+            "40 minutes"
+          ],
+          "topics": [
+            "adventure-activities",
+            "logistics",
+            "cancellation"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "If you would rather not paddle, rafts float the same water from the base of the dam: a 1.5-hour float listed at $69, and a 3-hour motorized float to Willow Beach with lunch listed at $140.",
+          "figures": [
+            "1.5-hour",
+            "$69",
+            "3-hour",
+            "$140"
+          ],
+          "topics": [
+            "adventure-activities",
+            "pricing",
+            "hoover-dam"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Lake Mead National Recreation Area charges an entrance fee of $25 per private vehicle, valid for one to seven days, according to the park's fee page.",
+          "figures": [
+            "$25",
+            "one to seven days"
+          ],
+          "topics": [
+            "pricing",
+            "hoover-dam",
+            "resort-fees"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The guided tour with the most reviews takes ages 12 to 80 and paddlers under 260 pounds; others take children from 4 or 5.",
+          "figures": [
+            "12 to 80",
+            "260 pounds",
+            "4",
+            "5"
+          ],
+          "topics": [
+            "adventure-activities",
+            "kids-families"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The dam launch with the most reviews takes children from 5 and asks for a moderate level of fitness.",
+          "figures": [
+            "5"
+          ],
+          "topics": [
+            "adventure-activities",
+            "kids-families"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The park keeps it free of motorboats and personal watercraft on Sundays and Mondays all year; from the Saturday of Memorial Day weekend to Labor Day, Tuesday to Saturday, there is no horsepower limit and personal watercraft are allowed.",
+          "figures": [],
+          "topics": [
+            "adventure-activities",
+            "timing",
+            "crowds"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Sunset and night trips were listed at $109 to $199 in October 2026, some with a bonfire or lights on the kayaks.",
+          "figures": [
+            "$109",
+            "$199"
+          ],
+          "topics": [
+            "pricing",
+            "adventure-activities"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Cancellation terms vary: most refund up to 24 hours before, and some say all sales are final.",
+          "figures": [
+            "24 hours"
+          ],
+          "topics": [
+            "cancellation",
+            "booking"
+          ],
+          "scale": null
         }
       ]
     },
@@ -1117,12 +1738,11 @@
       ]
     },
     "grand-canyon-day-trip-from-las-vegas-how-long": {
-      "hash": "89f00ab144fd161d28f8224b05edf8560f0c637422121a1208f1918224abefd8",
+      "hash": "714739a5370b639eb748deb3aac6e2ae240beb36753388ec246000a39595246e",
       "candidatos": [
         {
-          "fact": "In 70 reviews that give a figure, a West Rim coach day runs about 10 to 12 hours door to door, a South Rim day about 14 to 15, and a Hoover Dam tour about 3 to 6.",
+          "fact": "a West Rim coach day runs about 10 to 12 hours door to door, a South Rim day about 14 to 15, and a Hoover Dam tour about 3 to 6",
           "figures": [
-            "70",
             "10 to 12",
             "14 to 15",
             "3 to 6"
@@ -1131,33 +1751,168 @@
             "grand-canyon",
             "hoover-dam",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "Of the reviews that state a pickup time, most fall between 5am and 7am, and 6am is the most common single figure.",
+          "fact": "Pickups cluster between 5am and 7am",
+          "figures": [
+            "5am",
+            "7am"
+          ],
+          "topics": [
+            "grand-canyon",
+            "timing",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Reviewers who reach the West Rim most often describe three hours on site",
+          "figures": [
+            "three"
+          ],
+          "topics": [
+            "grand-canyon",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "A West Rim coach day sits at 10 to 12 hours",
+          "figures": [
+            "10 to 12"
+          ],
+          "topics": [
+            "grand-canyon",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "A South Rim day, which is two hours further each way, sits at 14 to 15",
+          "figures": [
+            "two",
+            "14",
+            "15"
+          ],
+          "topics": [
+            "grand-canyon",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Of the reviews that state a pickup time, most fall between 5am and 7am, and 6am is the most common single figure",
           "figures": [
             "5am",
             "7am",
             "6am"
           ],
           "topics": [
+            "grand-canyon",
             "timing",
             "logistics"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "A show that ends near midnight and a 5:40am lobby call are not compatible, and the reviews that mention both say so.",
+          "fact": "Two describe a pickup before 5am",
           "figures": [
-            "5:40am"
+            "Two",
+            "5am"
           ],
           "topics": [
-            "timing",
-            "logistics",
-            "shows"
-          ]
+            "grand-canyon",
+            "timing"
+          ],
+          "scale": null
         },
         {
-          "fact": "Late pickups and waits appear in 7.9% of the low-rated reviews and 0.5% of the high-rated ones, and these too concentrate: 32 of the 43 belong to one operator.",
+          "fact": "Twenty-three reviews across our sample describe being told the night before, being sent to a different hotel, or both",
+          "figures": [
+            "Twenty-three"
+          ],
+          "topics": [
+            "grand-canyon",
+            "logistics",
+            "booking"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Of the reviews that state how long they had at the canyon, three hours is the figure given most often for the West Rim, and it covers all three viewpoints plus the shuttle between them",
+          "figures": [
+            "three"
+          ],
+          "topics": [
+            "grand-canyon",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Among 6,614 four- and five-star reviews in our representative sample, 101 mention the long day",
+          "figures": [
+            "6,614",
+            "101"
+          ],
+          "topics": [
+            "grand-canyon",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Among 546 one- and two-star reviews, 8 do",
+          "figures": [
+            "546",
+            "8"
+          ],
+          "topics": [
+            "grand-canyon",
+            "timing"
+          ],
+          "scale": "Among 6,614 four- and five-star reviews in our representative sample, 101 mention the long day."
+        },
+        {
+          "fact": "That is 1.5% of the happy reviewers and 1.5% of the unhappy ones",
+          "figures": [
+            "1.5%"
+          ],
+          "topics": [
+            "grand-canyon",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "It appears in 28% of the low-rated reviews in our sample and in 0.4% of the high-rated ones",
+          "figures": [
+            "28%",
+            "0.4%"
+          ],
+          "topics": [
+            "grand-canyon",
+            "cancellation"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "of the reviews that mention it, 86 belong to a single operator and 14 to one other",
+          "figures": [
+            "86",
+            "14"
+          ],
+          "topics": [
+            "grand-canyon",
+            "cancellation",
+            "operators"
+          ],
+          "scale": "It appears in 28% of the low-rated reviews in our sample and in 0.4% of the high-rated ones."
+        },
+        {
+          "fact": "Late pickups and waits appear in 7.9% of the low-rated reviews and 0.5% of the high-rated ones, and these too concentrate: 32 of the 43 belong to one operator",
           "figures": [
             "7.9%",
             "0.5%",
@@ -1165,10 +1920,22 @@
             "43"
           ],
           "topics": [
+            "grand-canyon",
             "operators",
-            "booking",
             "logistics"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "the airplane flight over the western canyon takes about four hours with transfers, in our article on Grand Canyon airplane tours",
+          "figures": [
+            "four"
+          ],
+          "topics": [
+            "grand-canyon",
+            "timing"
+          ],
+          "scale": null
         }
       ]
     },
@@ -1782,6 +2549,199 @@
             "adventure-activities",
             "pricing"
           ]
+        }
+      ]
+    },
+    "high-roller-las-vegas-tickets-hours-happy-half-hour": {
+      "hash": "a5a476eb6ebb59af2e33a092433c48afa917b5b979bf1a50001637cd17d8ffa7",
+      "candidatos": [
+        {
+          "fact": "In October 2026 its official page listed adult tickets at $23.50 for daytime, $34.75 for Anytime (the evening ticket) and from $60 for the Happy Half Hour, with an open bar for guests 21 and over, each plus taxes and fees.",
+          "figures": [
+            "$23.50",
+            "$34.75",
+            "$60",
+            "21"
+          ],
+          "topics": [
+            "tickets",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The page gives its window as 12 PM to 5:59 PM in one place and \"Daily, 12 PM to 5 PM\" in another, so if you plan to ride late in the afternoon, check the time on your ticket.",
+          "figures": [
+            "12 PM",
+            "5:59 PM",
+            "12 PM",
+            "5 PM"
+          ],
+          "topics": [
+            "tickets",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The Happy Half Hour is the same 30-minute ride with an open bar and a bartender in the cabin, for guests 21 and over, from noon until closing.",
+          "figures": [
+            "30-minute",
+            "21"
+          ],
+          "topics": [
+            "tickets",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The page gives those cabins a capacity of 25 each.",
+          "figures": [
+            "25"
+          ],
+          "topics": [
+            "tickets",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The official page lists the wheel open from 12:30 PM to 11:30 PM Monday to Thursday, and from 12:30 PM to 1:30 AM on Friday, Saturday and Sunday.",
+          "figures": [
+            "12:30 PM",
+            "11:30 PM",
+            "12:30 PM",
+            "1:30 AM"
+          ],
+          "topics": [
+            "timing",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The ticket listing on this site says the last ride departs at 11:30 PM, without separating weekdays from weekends.",
+          "figures": [
+            "11:30 PM"
+          ],
+          "topics": [
+            "timing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Each ride takes 30 minutes, and the official page suggests allowing at least an hour in total to get in and out.",
+          "figures": [
+            "30 minutes",
+            "an hour"
+          ],
+          "topics": [
+            "timing",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Children's tickets are priced separately on the official page: ages 0 to 3 ride free, and ages 4 to 12 pay $8.50 for daytime and $17.50 for Anytime.",
+          "figures": [
+            "0 to 3",
+            "4 to 12",
+            "$8.50",
+            "$17.50"
+          ],
+          "topics": [
+            "kids-families",
+            "pricing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Seniors 65 and over get $5 off from Sunday to Thursday, 12 PM to 5 PM, which also works through a GovX account.",
+          "figures": [
+            "65",
+            "$5",
+            "12 PM",
+            "5 PM"
+          ],
+          "topics": [
+            "tickets",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Nevada residents get 20% off in January and June, before 5 PM.",
+          "figures": [
+            "20%",
+            "5 PM"
+          ],
+          "topics": [
+            "tickets",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Military get 20% off on military holidays, before 5 PM.",
+          "figures": [
+            "20%",
+            "5 PM"
+          ],
+          "topics": [
+            "tickets",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "In October 2026 the difference between the adult Anytime ticket and the Happy Half Hour was about $25 before taxes and fees on the official page.",
+          "figures": [
+            "$25"
+          ],
+          "topics": [
+            "tickets",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The ticket listing on this site prices the High Roller at $22.47, says the ticket is valid for three days from the date you book, and says all sales are final, with no refund for cancellations.",
+          "figures": [
+            "$22.47",
+            "three days"
+          ],
+          "topics": [
+            "tickets",
+            "pricing",
+            "cancellation"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The two prices are about a dollar apart before fees: $22.47 on the listing against $23.50 plus taxes and fees on the official page.",
+          "figures": [
+            "$22.47",
+            "$23.50"
+          ],
+          "topics": [
+            "tickets",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The official page adds that the High Roller ticket gives discounts of up to 50% at participating shops and restaurants on the Promenade.",
+          "figures": [
+            "50%"
+          ],
+          "topics": [
+            "tickets",
+            "pricing"
+          ],
+          "scale": null
         }
       ]
     },
@@ -2433,7 +3393,7 @@
       ]
     },
     "las-vegas-atv-tour-what-reviews-say": {
-      "hash": "e38d2e0befd5a13c8edd733a37c00b17380f9af0b3c93622a6d423d3a7dc5e04",
+      "hash": "b6680b5a86f3ebf7d1017c87eac94c454fbb58bc9a01cfbab7839a72a2145478",
       "candidatos": [
         {
           "fact": "Of 300 reviews of one Las Vegas ATV tour operator, listed on TripAdvisor as Las Vegas ATVs, 154 name one guide and only 34 describe the terrain.",
@@ -2446,7 +3406,8 @@
             "adventure-activities",
             "guides",
             "operators"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "The median review is 130 characters long: a first name and an adjective.",
@@ -2454,20 +3415,33 @@
             "130"
           ],
           "topics": [
-            "guides",
-            "operators"
-          ]
+            "adventure-activities",
+            "guides"
+          ],
+          "scale": null
         },
         {
-          "fact": "119 of the 300 are under a hundred characters.",
+          "fact": "That one fact produces both the 4.89 average and every complaint in the file.",
+          "figures": [
+            "4.89"
+          ],
+          "topics": [
+            "adventure-activities",
+            "guides"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Those are two complete reviews, and they are typical: 119 of the 300 are under a hundred characters.",
           "figures": [
             "119",
             "300"
           ],
           "topics": [
-            "guides",
-            "operators"
-          ]
+            "adventure-activities",
+            "guides"
+          ],
+          "scale": null
         },
         {
           "fact": "Of the 300, 225 name a guide.",
@@ -2476,9 +3450,21 @@
             "225"
           ],
           "topics": [
-            "guides",
-            "operators"
-          ]
+            "adventure-activities",
+            "guides"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "One hundred and fifty-four of them name Harry, and every one of those is from this year.",
+          "figures": [
+            "154"
+          ],
+          "topics": [
+            "adventure-activities",
+            "guides"
+          ],
+          "scale": null
         },
         {
           "fact": "The reviews that name him average 4.97 against 4.81 for the rest of the sample.",
@@ -2487,10 +3473,10 @@
             "4.81"
           ],
           "topics": [
-            "guides",
-            "operators"
+            "adventure-activities",
+            "guides"
           ],
-          "scale": "Eight of the 300 are rated one to three stars, and the quotes that describe the ride come from those eight."
+          "scale": null
         },
         {
           "fact": "The other names in the file — Alex with 22, Brett with 14, Kenny with 11 — are a long way behind.",
@@ -2500,20 +3486,314 @@
             "11"
           ],
           "topics": [
-            "guides",
-            "operators"
-          ]
+            "adventure-activities",
+            "guides"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Only 34 of the 300 mention the trail, the dust, the rocks or the view.",
+          "figures": [
+            "34",
+            "300"
+          ],
+          "topics": [
+            "adventure-activities",
+            "guides"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "We averaged around 10 mph the entire time, with the fastest speed reaching about 17 mph for only a few seconds.",
+          "figures": [
+            "10",
+            "17"
+          ],
+          "topics": [
+            "adventure-activities"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "24 of the 300 say that is exactly what they were.",
+          "figures": [
+            "24",
+            "300"
+          ],
+          "topics": [
+            "adventure-activities",
+            "guides"
+          ],
+          "scale": "Twenty-four of the 300 say they had never ridden before, and they are uniformly delighted."
+        },
+        {
+          "fact": "Twenty-four of the 300 say they had never ridden before, and they are uniformly delighted.",
+          "figures": [
+            "24",
+            "300"
+          ],
+          "topics": [
+            "adventure-activities",
+            "kids-families"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Seven mention speed at all, and the ones who do are the ones who wanted more of it.",
+          "figures": [
+            "7"
+          ],
+          "topics": [
+            "adventure-activities"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "This experience was advertised as a half-day trip; however, it lasted only about an hour.",
+          "figures": [
+            "an hour"
+          ],
+          "topics": [
+            "adventure-activities",
+            "timing",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "We were then informed that the ATV location was about an hour's drive away, which I was also unaware of prior to booking.",
+          "figures": [
+            "an hour"
+          ],
+          "topics": [
+            "adventure-activities",
+            "logistics",
+            "getting-around"
+          ],
+          "scale": null
         },
         {
           "fact": "Eight of the 300 are rated one to three stars, and the quotes that describe the ride come from those eight.",
           "figures": [
+            "8",
             "300"
           ],
           "topics": [
-            "guides",
-            "operators",
+            "adventure-activities",
+            "guides"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "A further 142 reviews collected from low ratings only were read for patterns.",
+          "figures": [
+            "142"
+          ],
+          "topics": [
+            "adventure-activities",
+            "guides"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "They run from 2022 to 2025, while the representative sample is almost entirely from this year.",
+          "figures": [
+            "2022",
+            "2025"
+          ],
+          "topics": [
+            "adventure-activities",
+            "guides"
+          ],
+          "scale": null
+        }
+      ]
+    },
+    "las-vegas-atv-tours-nellis-dunes-valley-of-fire": {
+      "hash": "98317a8304fc9db597279b892bbb7a7132a3038da0326accca98dbaf887d7e48",
+      "candidatos": [
+        {
+          "fact": "The Nellis Dunes are closest, about 20 miles from downtown, and in the listings we tracked in October 2026 they cost $95 to $174.64 for 30 to 60 minutes of riding.",
+          "figures": [
+            "20 miles",
+            "$95",
+            "$174.64",
+            "30 to 60 minutes"
+          ],
+          "topics": [
+            "adventure-activities",
+            "pricing",
+            "desert-parks"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The Valley of Fire tours take most of a day, about three hours of riding for $199 to $399.",
+          "figures": [
+            "three hours",
+            "$199",
+            "$399"
+          ],
+          "topics": [
+            "adventure-activities",
+            "pricing",
+            "desert-parks"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Rides in the Mojave south of town, near Jean, give about two and a half hours at the wheel.",
+          "figures": [
+            "two and a half hours"
+          ],
+          "topics": [
+            "adventure-activities",
+            "desert-parks"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Several of these tours meet at Mandalay Bay instead of picking you up at your hotel, and the operator charges $20 to $25 to park there unless you come by rideshare.",
+          "figures": [
+            "$20",
+            "$25"
+          ],
+          "topics": [
+            "adventure-activities",
+            "pricing",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "A longer eight-hour option, with 2.5 to 3.5 hours of driving a dune buggy, ATV or UTV, was listed at $925.68.",
+          "figures": [
+            "eight-hour",
+            "2.5 to 3.5 hours",
+            "$925.68"
+          ],
+          "topics": [
+            "adventure-activities",
+            "pricing",
+            "desert-parks"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The Logandale Trails are BLM land with more than 200 miles of trails for off-highway vehicles.",
+          "figures": [
+            "200"
+          ],
+          "topics": [
+            "adventure-activities",
+            "desert-parks"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "It closes to all visitors from December 1 to 14, and Nevada State Parks says guided tours are prohibited during that closure.",
+          "figures": [
+            "December 1",
+            "14"
+          ],
+          "topics": [
+            "desert-parks",
+            "timing",
             "adventure-activities"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Its West Entrance is closed Monday to Thursday for construction that Nevada State Parks expects to last through the end of 2026.",
+          "figures": [
+            "2026"
+          ],
+          "topics": [
+            "desert-parks",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The park's entrance fee is $10 per vehicle, $15 for vehicles from outside Nevada; one listing includes the park fee; on the others, ask.",
+          "figures": [
+            "$10",
+            "$15"
+          ],
+          "topics": [
+            "desert-parks",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Two that leave from Jean give about two and a half hours of driving a Polaris RZR within a four- to five-hour trip, at $114.99 and $219.99 in the listings; one passes Seven Magic Mountains.",
+          "figures": [
+            "two and a half hours",
+            "four- to five-hour",
+            "$114.99",
+            "$219.99"
+          ],
+          "topics": [
+            "adventure-activities",
+            "pricing",
+            "desert-parks"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "To the southeast, rides in Eldorado Canyon pass the Nelson ghost town and, on longer tours, a gold mine, for $140 to $334, with 75 to 90 minutes of riding on the longest.",
+          "figures": [
+            "$140",
+            "$334",
+            "75 to 90 minutes"
+          ],
+          "topics": [
+            "adventure-activities",
+            "pricing",
+            "desert-parks"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Shorter Mojave rides that leave from Mandalay Bay give an hour to an hour and a half of riding in three to four hours, for $105 to $109.",
+          "figures": [
+            "an hour to an hour and a half",
+            "three to four hours",
+            "$105",
+            "$109"
+          ],
+          "topics": [
+            "adventure-activities",
+            "pricing",
+            "desert-parks"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "On those, the driver usually has to be 18 with a valid license, and passengers can be younger: from 12 on the RZR tours south of town, and from 6 as a passenger on one Valley of Fire listing.",
+          "figures": [
+            "18",
+            "12",
+            "6"
+          ],
+          "topics": [
+            "adventure-activities",
+            "kids-families",
+            "desert-parks"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Most allow a full refund up to 24 hours before.",
+          "figures": [
+            "24 hours"
+          ],
+          "topics": [
+            "cancellation",
+            "adventure-activities"
+          ],
+          "scale": null
         }
       ]
     },
@@ -2619,18 +3899,20 @@
       ]
     },
     "las-vegas-colorado-river-kayak-what-reviews-say": {
-      "hash": "49bf3d872a610d9b548105adf5f07caaa6a2aac961726f37bb7f02bc97ad9b28",
+      "hash": "ed1e6ab592aa38bb394c7cf5436257ffca26a453acbb053339da2b1ec4f5edbf",
       "candidatos": [
         {
           "fact": "Twenty-one point seven per cent name Emerald Cave, 18.0% mention the food, and 15.0% mention the wildlife.",
           "figures": [
+            "21.7%",
             "18.0%",
             "15.0%"
           ],
           "topics": [
             "adventure-activities",
-            "desert-parks"
-          ]
+            "guides"
+          ],
+          "scale": "We read 300 reviews of Evolution Expeditions and its Colorado River kayak trips from Las Vegas, collected without filtering by rating."
         },
         {
           "fact": "Not one of the 300 is rated below four stars.",
@@ -2638,20 +3920,121 @@
             "300"
           ],
           "topics": [
-            "booking",
+            "adventure-activities"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "This one comes top: 231 of 300, or 77.0%, narrowly ahead of a guided day-trip operator at 76.6%.",
+          "figures": [
+            "231",
+            "300",
+            "77.0%",
+            "76.6%"
+          ],
+          "topics": [
+            "adventure-activities",
+            "guides"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Twelve per cent of reviewers mention the dam, the canyon or the access arrangements around it, which is the tell for the longer version: launching below Hoover Dam is not something you do on your own schedule.",
+          "figures": [
+            "12"
+          ],
+          "topics": [
+            "hoover-dam",
+            "adventure-activities",
+            "logistics"
+          ],
+          "scale": "We read 300 reviews of Evolution Expeditions and its Colorado River kayak trips from Las Vegas, collected without filtering by rating."
+        },
+        {
+          "fact": "Fifteen per cent of reviewers mention the effort, and what they mostly say is that there was not much of it.",
+          "figures": [
+            "Fifteen per cent"
+          ],
+          "topics": [
             "adventure-activities"
           ],
           "scale": "We read 300 reviews of Evolution Expeditions and its Colorado River kayak trips from Las Vegas, collected without filtering by rating."
         },
         {
-          "fact": "Wildlife is mentioned as often as the effort — 15.0% — and bighorn sheep are the animal people name.",
+          "fact": "Ten give a distance, with a median of four miles.",
           "figures": [
-            "15.0%"
+            "Ten",
+            "four miles"
+          ],
+          "topics": [
+            "adventure-activities"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "We also had to wait in a kayak line for 45 min before entering because of all the tourists.",
+          "figures": [
+            "45 min"
           ],
           "topics": [
             "adventure-activities",
-            "desert-parks"
-          ]
+            "crowds"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "after waiting for a long while to enter Emerald Cove, we had about 10 kayaks crammed in together which was too many.",
+          "figures": [
+            "10"
+          ],
+          "topics": [
+            "adventure-activities",
+            "crowds"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Of the 300 reviews in our representative sample, every single one is at four or five stars.",
+          "figures": [
+            "300"
+          ],
+          "topics": [
+            "adventure-activities"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Of the thirty listings we measured in Las Vegas, two are like that — this one and a helicopter operator — and it means this article contains no failure rate, because there is nothing to compute one from.",
+          "figures": [
+            "thirty",
+            "two"
+          ],
+          "topics": [
+            "adventure-activities",
+            "helicopter"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The separate sample we collected from low ratings only holds 62 reviews.",
+          "figures": [
+            "62"
+          ],
+          "topics": [
+            "adventure-activities"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "That sample averages 4.99 against the 4.9 the listing publishes, so it reproduces its population.",
+          "figures": [
+            "4.99",
+            "4.9"
+          ],
+          "topics": [
+            "adventure-activities"
+          ],
+          "scale": null
         }
       ]
     },
@@ -2736,28 +4119,64 @@
       ]
     },
     "las-vegas-desert-adventure-tours-what-they-ask": {
-      "hash": "dbe2cd5146f4663031063f5d83352cedbcc956ab200e61755f0b79c5abc24f8a",
+      "hash": "fc1d3bb6a25e1acf278fd6d14f0a8af251b81556b9e076ed9d67b4b945a7c897",
       "candidatos": [
         {
-          "fact": "The most common thing a happy reviewer volunteers is that they had never done it before: 7.2% say so outright, and 4.6% describe the briefing or the practice they were given.",
+          "fact": "All five sit between 4.84 and 4.99 in our samples, and each sample matches what its listing publishes to within a tenth.",
           "figures": [
-            "7.2%",
-            "4.6%"
+            "4.84",
+            "4.99"
           ],
           "topics": [
             "adventure-activities",
-            "guides"
-          ]
+            "operators"
+          ],
+          "scale": null
         },
         {
-          "fact": "Heat and water appear in 8.4% of the high-rated reviews and in a similar share of the low-rated ones — the signature of something that describes the day rather than ruining it.",
+          "fact": "Age limits are set by each operator and by the activity — a passenger seat, a horse and a firearm are three different rules — so the reviews tell you that families do this, not what your child is allowed to do.",
+          "figures": [],
+          "topics": [
+            "kids-families",
+            "adventure-activities"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Eight per cent of the high-rated reviews mention children, and they tend to name the age, which is more useful than any policy page.",
           "figures": [
-            "8.4%"
+            "Eight per cent"
           ],
           "topics": [
-            "desert-parks",
+            "kids-families",
             "adventure-activities"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "What we do have is a separate sample of 482 reviews collected from low ratings only.",
+          "figures": [
+            "482"
+          ],
+          "topics": [
+            "adventure-activities",
+            "operators"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Read for themes, three things recur: 56 describe the safety instruction or the lack of it, 52 describe dust, heat or the state of the equipment, and 49 describe a cancellation or a refund that did not arrive.",
+          "figures": [
+            "56",
+            "52",
+            "49"
+          ],
+          "topics": [
+            "adventure-activities",
+            "cancellation",
+            "operators"
+          ],
+          "scale": "What we do have is a separate sample of 482 reviews collected from low ratings only."
         },
         {
           "fact": "The one complaint that never appears is the one you might expect: in the high-rated reviews the guide or instructor is praised in 11.3%, and in the low-rated ones not once.",
@@ -2767,7 +4186,46 @@
           "topics": [
             "guides",
             "adventure-activities"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "There are 1,982 with a star rating, of which 1,500 come from samples collected without filtering by rating, 300 per operator.",
+          "figures": [
+            "1,982",
+            "1,500",
+            "300"
+          ],
+          "topics": [
+            "adventure-activities",
+            "operators"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Each of those five samples was checked against the average its listing publishes: the largest gap is 0.09, so all five reproduce their populations and all five are counted.",
+          "figures": [
+            "0.09"
+          ],
+          "topics": [
+            "adventure-activities",
+            "operators"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Percentages use only those 1,500, split into 1,469 at four or five stars, 11 at three, and 20 at one or two.",
+          "figures": [
+            "1,500",
+            "1,469",
+            "11",
+            "20"
+          ],
+          "topics": [
+            "adventure-activities",
+            "operators"
+          ],
+          "scale": null
         }
       ]
     },
@@ -3167,31 +4625,95 @@
       ]
     },
     "las-vegas-helicopter-tour-ground-time": {
-      "hash": "511bdac98d80ef6efef0d503131253c43c796acd7d6ffa0683852f87fb1bc54c",
+      "hash": "3c8ff533967f81cfc3c04ebbea50c4af7fe678ab9c1af68cf928ef8793d7516b",
       "candidatos": [
         {
-          "fact": "The flight rarely disappoints: of 123 low-rated reviews in our sample, only 19 blamed the aircraft, the pilot or the flight itself.",
+          "fact": "The aircraft, the pilot, and the price or length of the flight were the main complaint in 19 of them, 15%.",
           "figures": [
-            "123",
+            "19",
+            "15%"
+          ],
+          "topics": [
+            "helicopter",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "A cancelled or rescheduled tour led in 38, and the seat — which side you sat on, or a group split up by weight — in 28.",
+          "figures": [
+            "38",
+            "28"
+          ],
+          "topics": [
+            "helicopter",
+            "cancellation"
+          ],
+          "scale": "We read all 123 reviews at three stars or fewer of two Las Vegas helicopter operators and sorted them by the main complaint."
+        },
+        {
+          "fact": "Twenty-one blamed the time on the ground: the pickup, the ride to the terminal, the wait before takeoff and the trip back.",
+          "figures": [
+            "Twenty-one"
+          ],
+          "topics": [
+            "helicopter",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Eleven more were about what the package did or did not include.",
+          "figures": [
+            "Eleven"
+          ],
+          "topics": [
+            "helicopter",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Of the 85 remaining complaints, 32 are about the ground and the extras, 28 about the seat, and 19 about the flight itself.",
+          "figures": [
+            "85",
+            "32",
+            "28",
             "19"
           ],
           "topics": [
             "helicopter",
-            "adventure-activities"
-          ]
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "A Las Vegas helicopter tour is sold by its time in the air, which reviewers describe as about ten minutes over the Strip or roughly half an hour each way to the Grand Canyon.",
+          "figures": [
+            "ten minutes",
+            "half an hour"
+          ],
+          "topics": [
+            "helicopter",
+            "grand-canyon",
+            "timing"
+          ],
+          "scale": null
         },
         {
           "fact": "Waiting an hour or more shows up in 7 of the 95 one- and two-star reviews and in one of the 784 four- and five-star reviews.",
           "figures": [
             "7",
             "95",
+            "one",
             "784"
           ],
           "topics": [
             "helicopter",
             "timing",
             "logistics"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "The transfer comes up in about a third of all reviews, and at the same rate in both camps: 35% of the bad reviews and 36% of the good.",
@@ -3201,20 +4723,35 @@
           ],
           "topics": [
             "helicopter",
-            "getting-around",
-            "logistics"
-          ]
+            "logistics",
+            "getting-around"
+          ],
+          "scale": null
         },
         {
           "fact": "On the other side, 141 of the 784 happy reviews mention a limousine, against two of the bad ones",
           "figures": [
             "141",
-            "784"
+            "784",
+            "two"
           ],
           "topics": [
             "helicopter",
             "getting-around"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Eleven of the low-rated reviews are mainly about something in the package: a surcharge, a paid seat that did not materialize, a \"limo\" that turned out to be something else, or the picnic.",
+          "figures": [
+            "Eleven"
+          ],
+          "topics": [
+            "helicopter",
+            "pricing",
+            "logistics"
+          ],
+          "scale": null
         },
         {
           "fact": "A fuel surcharge is mentioned in 4.2% of the one- and two-star reviews and 0.8% of the good ones.",
@@ -3225,22 +4762,58 @@
           "topics": [
             "helicopter",
             "pricing"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The flight rarely disappoints: of 123 low-rated reviews in our sample, only 19 blamed the aircraft, the pilot or the flight itself.",
+          "figures": [
+            "123",
+            "19"
+          ],
+          "topics": [
+            "helicopter"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "We read the rated TripAdvisor reviews of two Las Vegas helicopter operators in our corpus, Papillon Grand Canyon Helicopters (500) and Grand Canyon Helicopters (412), collected without filtering by rating.",
+          "figures": [
+            "500",
+            "412"
+          ],
+          "topics": [
+            "helicopter",
+            "operators"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "There were 128 reviews at three stars or fewer.",
+          "figures": [
+            "128"
+          ],
+          "topics": [
+            "helicopter"
+          ],
+          "scale": null
         }
       ]
     },
     "las-vegas-helicopter-tour-nervous-flyers": {
-      "hash": "29e9c0984c531c82f553d68c0929ab892e7d55655c22144cd2fe8787d0400353",
+      "hash": "630eebc02b494a055629a7ca2c3f60d168b28677e4a79ba4c53f798db1e33474",
       "candidatos": [
         {
-          "fact": "Four point nine per cent of the four- and five-star reviews mention being frightened, against 2.0% of the one- and two-star ones.",
+          "fact": "Fear appears in 4.9% of the good reviews and 2.0% of the bad ones, so it runs the opposite way to a complaint.",
           "figures": [
-            "Four point nine per cent",
+            "4.9%",
             "2.0%"
           ],
           "topics": [
-            "helicopter"
-          ]
+            "helicopter",
+            "shows"
+          ],
+          "scale": null
         },
         {
           "fact": "Motion sickness appears four times in 1,195.",
@@ -3254,16 +4827,37 @@
           "scale": "We read 1,195 reviews of three Las Vegas helicopter operators, collected without filtering by rating."
         },
         {
-          "fact": "Of the 54, exactly two gave one or two stars.",
+          "fact": "Four point nine per cent of the four- and five-star reviews mention being frightened, against 2.0% of the one- and two-star ones.",
           "figures": [
-            "54",
-            "two",
-            "one or two"
+            "4.9%",
+            "2.0%"
           ],
           "topics": [
             "helicopter"
           ],
-          "scale": "Fifty-four say the writer or someone with them was nervous, scared or terrified."
+          "scale": null
+        },
+        {
+          "fact": "That is a ratio of 0.42, and it means the people who write about fear are overwhelmingly the people who enjoyed themselves.",
+          "figures": [
+            "0.42"
+          ],
+          "topics": [
+            "helicopter"
+          ],
+          "scale": "Four point nine per cent of the four- and five-star reviews mention being frightened, against 2.0% of the one- and two-star ones."
+        },
+        {
+          "fact": "Fifteen of the fifty-four are writing about somebody else",
+          "figures": [
+            "Fifteen",
+            "fifty-four"
+          ],
+          "topics": [
+            "helicopter",
+            "kids-families"
+          ],
+          "scale": null
         },
         {
           "fact": "Forty-eight of the 54 mention the pilot.",
@@ -3275,7 +4869,7 @@
             "helicopter",
             "guides"
           ],
-          "scale": "Fifty-four say the writer or someone with them was nervous, scared or terrified."
+          "scale": null
         },
         {
           "fact": "Thirteen of the 54 say the flight was smoother than they expected, which is the other half of the same thing: what frightens people in advance is an imagined ride, and the ride they describe is not it.",
@@ -3286,7 +4880,73 @@
           "topics": [
             "helicopter"
           ],
-          "scale": "Fifty-four say the writer or someone with them was nervous, scared or terrified."
+          "scale": null
+        },
+        {
+          "fact": "Twenty-seven mention where they sat, and one turns it into advice.",
+          "figures": [
+            "Twenty-seven"
+          ],
+          "topics": [
+            "helicopter"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Four reviews in 1,195 mention motion sickness.",
+          "figures": [
+            "Four",
+            "1,195"
+          ],
+          "topics": [
+            "helicopter"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Of the 54, exactly two gave one or two stars.",
+          "figures": [
+            "54",
+            "two"
+          ],
+          "topics": [
+            "helicopter"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Seven reviewers in our sample say they are afraid of heights, and all seven rated the flight four or five stars.",
+          "figures": [
+            "Seven"
+          ],
+          "topics": [
+            "helicopter"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "This article measures the 1,195 reviews of three Las Vegas helicopter operators in our corpus — 500, 412 and 283 — collected in 2026 without filtering by rating.",
+          "figures": [
+            "1,195",
+            "500",
+            "412",
+            "283",
+            "2026"
+          ],
+          "topics": [
+            "helicopter"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "A fourth operator has 200 reviews in our corpus but all of them were collected from low ratings only, so it appears in no percentage here.",
+          "figures": [
+            "200"
+          ],
+          "topics": [
+            "helicopter"
+          ],
+          "scale": null
         },
         {
           "fact": "Of the 1,195, 1,067 are at four or five stars, 30 at three and 98 at one or two.",
@@ -3297,10 +4957,9 @@
             "98"
           ],
           "topics": [
-            "helicopter",
-            "operators"
+            "helicopter"
           ],
-          "scale": "We read 1,195 reviews of three Las Vegas helicopter operators, collected without filtering by rating."
+          "scale": null
         },
         {
           "fact": "The fear group is 54 reviews: 52 positive, none at three stars and two at one or two.",
@@ -3311,7 +4970,38 @@
           ],
           "topics": [
             "helicopter"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "It spreads across all three operators, the largest contributing 54%.",
+          "figures": [
+            "54%"
+          ],
+          "topics": [
+            "helicopter"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The first pattern we wrote matched any word starting with *terrif*, which also catches *terrific* — praise.",
+          "figures": [],
+          "topics": [
+            "helicopter"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "That mistake added 11 reviews, one of them a one-star that opens by calling the scenery terrific, and it would have turned 54 into 65.",
+          "figures": [
+            "11",
+            "54",
+            "65"
+          ],
+          "topics": [
+            "helicopter"
+          ],
+          "scale": null
         }
       ]
     },
@@ -3598,16 +5288,131 @@
       ]
     },
     "las-vegas-show-ratings-what-they-hide": {
-      "hash": "fd3c70e72634dff050dd0700d20b6b012c0a56f52a70c99f362b89478c9363f3",
+      "hash": "4cfc5e69dca17d1cda29a2dd30501e582a941b3f5fb2ce8a102f75e629e8ecde",
       "candidatos": [
         {
-          "fact": "Absinthe and O both average 3.98 stars, and for both, about one review in five is negative.",
+          "fact": "“Raunchy” appears in 23% of Absinthe’s bad reviews and in none of O’s.",
           "figures": [
-            "3.98"
+            "23%"
           ],
           "topics": [
             "shows"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "“Clowns” appears in 42% of O’s and in none of Absinthe’s.",
+          "figures": [
+            "42%"
+          ],
+          "topics": [
+            "shows"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "For Absinthe, the adult humor appears in 47% of its bad reviews and 46% of its good ones.",
+          "figures": [
+            "47%",
+            "46%"
+          ],
+          "topics": [
+            "shows"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The seats behave the same way — 44% of the bad reviews mention them and 36% of the good ones, and one five-star reviewer treats the discomfort as a problem already solved: “Very uncomfortable seating, glad I read reviews and sat further back.”",
+          "figures": [
+            "44%",
+            "36%"
+          ],
+          "topics": [
+            "shows"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Its clowns appear in 42% of its bad reviews and 10% of its good ones — four times more common among the unhappy.",
+          "figures": [
+            "42%",
+            "10%"
+          ],
+          "topics": [
+            "shows"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Boredom appears in 47% of the bad and 2% of the good.",
+          "figures": [
+            "47%",
+            "2%"
+          ],
+          "topics": [
+            "shows"
+          ],
+          "scale": "O fails the same test."
+        },
+        {
+          "fact": "It appears in the three Cirque du Soleil shows and effectively nowhere else. O 23% of bad reviews, Mystère 14%, Michael Jackson ONE 14% — against Blue Man Group 2%, Shin Lim 3%, and Absinthe zero out of a hundred.",
+          "figures": [
+            "23%",
+            "14%",
+            "14%",
+            "2%",
+            "3%"
+          ],
+          "topics": [
+            "shows"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Among the six shows we measured, averages ran from 3.98 to 4.38 — a narrow band hiding a negative share that runs from 10.2% to 20.0%, which is nearly double.",
+          "figures": [
+            "3.98",
+            "4.38",
+            "10.2%",
+            "20.0%"
+          ],
+          "topics": [
+            "shows"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Roughly one in five of the bad reviews of each show goes out of its way to praise the performers anyway — 19% for Absinthe, 18% for O.",
+          "figures": [
+            "19%",
+            "18%"
+          ],
+          "topics": [
+            "shows"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "In our sample the complaint appears in 14% to 23% of the bad reviews of the three Cirque shows and in 2% or less of the bad reviews of the non-Cirque ones — even though those shows have no story either.",
+          "figures": [
+            "14%",
+            "23%",
+            "2%"
+          ],
+          "topics": [
+            "shows"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "In our sample the gap between the best- and worst-rated show was 0.40 stars, while the share of one- and two-star reviews ranged from about one in ten to one in five.",
+          "figures": [
+            "0.40"
+          ],
+          "topics": [
+            "shows"
+          ],
+          "scale": null
         },
         {
           "fact": "Absinthe — 3.98 average, 20.0% one- and two-star, 71.2% four- and five-star.",
@@ -3619,7 +5424,7 @@
           "topics": [
             "shows"
           ],
-          "scale": "Absinthe and O both average 3.98 stars, and for both, about one review in five is negative."
+          "scale": null
         },
         {
           "fact": "O by Cirque du Soleil — 3.98 average, 19.8% one- and two-star, 71.4% four- and five-star.",
@@ -3631,45 +5436,7 @@
           "topics": [
             "shows"
           ],
-          "scale": "Absinthe and O both average 3.98 stars, and for both, about one review in five is negative."
-        },
-        {
-          "fact": "“Raunchy” appears in 23% of Absinthe’s bad reviews and in none of O’s.",
-          "figures": [
-            "23%"
-          ],
-          "topics": [
-            "shows"
-          ]
-        },
-        {
-          "fact": "“Clowns” appears in 42% of O’s and in none of Absinthe’s.",
-          "figures": [
-            "42%"
-          ],
-          "topics": [
-            "shows"
-          ]
-        },
-        {
-          "fact": "For Absinthe, the adult humor appears in 47% of its bad reviews and 46% of its good ones.",
-          "figures": [
-            "47%",
-            "46%"
-          ],
-          "topics": [
-            "shows"
-          ]
-        },
-        {
-          "fact": "Craft is the one thing the two camps tend not to fight about: roughly one in five of the bad reviews of each show goes out of its way to praise the performers anyway — 19% for Absinthe, 18% for O.",
-          "figures": [
-            "19%",
-            "18%"
-          ],
-          "topics": [
-            "shows"
-          ]
+          "scale": null
         }
       ]
     },
@@ -3688,7 +5455,7 @@
       ]
     },
     "las-vegas-shows-with-kids": {
-      "hash": "e31707e856c935ed2eb3cb5dbf77008f5a4716315af661086445c42f89c4a049",
+      "hash": "a5677752b3bc032511bd6fe2ad3fdc0ed22f01962b2d039f50bd90b137e2d4a7",
       "candidatos": [
         {
           "fact": "All 21 who took kids to Mystère gave it four or five stars, including parents of four- and five-year-olds.",
@@ -3698,7 +5465,8 @@
           "topics": [
             "shows",
             "kids-families"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "Blue Man Group had the most families, 31 of 38 happy, but the unhappy ones say the humor lands with young children and not with adults.",
@@ -3709,7 +5477,256 @@
           "topics": [
             "shows",
             "kids-families"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Michael Jackson ONE's two one-star parents objected to suggestive numbers.",
+          "figures": [
+            "two"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Twenty-one reviewers in our sample say they took children to Mystère.",
+          "figures": [
+            "Twenty-one"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Every one of them gave it four or five stars, sixteen of them five.",
+          "figures": [
+            "sixteen"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ],
+          "scale": "Twenty-one reviewers in our sample say they took children to Mystère."
+        },
+        {
+          "fact": "The ages run from four to fifteen.",
+          "figures": [
+            "four",
+            "fifteen"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "More parents wrote about taking children to Blue Man Group than to any other show here: 38.",
+          "figures": [
+            "38"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Thirty-one of them gave four or five stars, and the youngest children mentioned are three, four and five years old.",
+          "figures": [
+            "Thirty-one",
+            "three",
+            "four",
+            "five"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ],
+          "scale": "More parents wrote about taking children to Blue Man Group than to any other show here: 38."
+        },
+        {
+          "fact": "The seven who gave three stars or fewer tell two different stories.",
+          "figures": [
+            "seven",
+            "three"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Four adult reviewers who did not enjoy it recommend it for children instead:",
+          "figures": [
+            "Four"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Five of the seven unhappy parents say their kids were bored or unimpressed:",
+          "figures": [
+            "Five",
+            "seven"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Thirteen reviewers took children to Michael Jackson ONE, and nine of them gave four or five stars.",
+          "figures": [
+            "Thirteen",
+            "nine"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The youngest mentioned is six.",
+          "figures": [
+            "six"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ],
+          "scale": "Thirteen reviewers took children to Michael Jackson ONE, and nine of them gave four or five stars."
+        },
+        {
+          "fact": "The two one-star reviews from parents are about the same thing: dance numbers they found too suggestive to watch with children, including a pole routine.",
+          "figures": [
+            "two"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Four of the thirteen mention it, including a parent of a six-year-old who solved it with earplugs from the ushers and a family whose children covered their ears.",
+          "figures": [
+            "Four",
+            "thirteen",
+            "six-year-old"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Thirteen reviewers took children to Shin Lim: LIMITLESS, and nine gave four or five stars.",
+          "figures": [
+            "Thirteen",
+            "nine"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Three parents describe a younger child who was bored, restless or struggling to follow, including a grandparent whose ten-year-old granddaughter fell asleep.",
+          "figures": [
+            "Three",
+            "ten-year-old"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "For a child who loves magic and can sit through ninety minutes of detail, it is a highlight.",
+          "figures": [
+            "ninety"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Only six reviewers in our sample took minors to O, too few to draw a pattern.",
+          "figures": [
+            "six"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Four gave five stars, with children aged ten to fifteen:",
+          "figures": [
+            "Four",
+            "ten",
+            "fifteen"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ],
+          "scale": "Only six reviewers in our sample took minors to O, too few to draw a pattern."
+        },
+        {
+          "fact": "We read the rated TripAdvisor reviews of six Las Vegas shows, collected without filtering by rating: 500 each for Mystère, Michael Jackson ONE, Blue Man Group, O and Absinthe, and 343 for Shin Lim: LIMITLESS.",
+          "figures": [
+            "500",
+            "343"
+          ],
+          "topics": [
+            "shows"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The counts are therefore small: 38 families for Blue Man Group, 21 for Mystère, 13 each for Michael Jackson ONE and Shin Lim, and six for O.",
+          "figures": [
+            "38",
+            "21",
+            "13",
+            "six"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Our corpus also holds a separate set of reviews gathered from negative ratings only; nothing in these counts comes from it, and removing it took three unhappy families out of the Mystère figures and four out of Blue Man Group's.",
+          "figures": [
+            "three",
+            "four"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ],
+          "scale": null
         }
       ]
     },
@@ -4569,39 +6586,99 @@
       ]
     },
     "sphere-las-vegas-seats-tickets-guide": {
-      "hash": "9a1ded2ed93e3d06b00ea5c69fcfcf4129c9e8e79e5a4a1e72618cfe8778059c",
+      "hash": "f2bb100fddcbf2d58cd27c169c7c7074f0923b31241f6a12beed0d4bbd18bd33",
       "candidatos": [
         {
-          "fact": "Avoid the back rows of the 100 level (roughly row 24+), where the overhang blocks the upper screen.",
+          "fact": "Sphere lists The Wizard of Oz at about 75 minutes, with doors 45 minutes before and no late seating.",
           "figures": [
-            "24+"
+            "75 minutes",
+            "45 minutes"
+          ],
+          "topics": [
+            "shows",
+            "tickets",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Sphere seats around 17,600 (up to roughly 18,600 depending on configuration) across four levels — 100, 200, 300, and 400 — plus a general-admission floor for some concerts.",
+          "figures": [
+            "17,600",
+            "18,600"
+          ],
+          "topics": [
+            "shows",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Around 10,000 seats are \"haptic,\" meaning they physically rumble in sync with the content, and they're spread throughout the venue rather than reserved for premium areas.",
+          "figures": [
+            "10,000"
+          ],
+          "topics": [
+            "shows"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The 100 level is closest to the stage — great for concerts in the front rows, but be careful: from roughly row 24 back, the overhang of the 200 level above cuts off the top of the screen, which matters enormously in a venue built around a wraparound image.",
+          "figures": [
+            "24"
           ],
           "topics": [
             "shows",
             "tickets"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Avoid the back rows of the 100 level (roughly row 24+), where the overhang blocks the upper screen.",
+          "figures": [
+            "24"
+          ],
+          "topics": [
+            "shows",
+            "tickets"
+          ],
+          "scale": null
         },
         {
           "fact": "Its own parking fills up fast and runs pricey, so many visitors take a rideshare or park at a neighboring resort and walk over — budget 15 to 20 minutes for that walk.",
           "figures": [
-            "15",
-            "20"
+            "15 to 20 minutes"
           ],
           "topics": [
-            "logistics",
-            "getting-around"
-          ]
+            "shows",
+            "getting-around",
+            "logistics"
+          ],
+          "scale": null
         },
         {
           "fact": "Arrive early — at least 30 to 45 minutes before showtime.",
           "figures": [
-            "30",
-            "45"
+            "30 to 45 minutes"
+          ],
+          "topics": [
+            "shows",
+            "timing",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Immersive films run without an intermission (Sphere lists The Wizard of Oz at about 75 minutes), so use the restroom before you go in; there's no graceful moment to slip out once it starts.",
+          "figures": [
+            "75 minutes"
           ],
           "topics": [
             "shows",
             "timing"
-          ]
+          ],
+          "scale": null
         }
       ]
     },
@@ -4837,6 +6914,135 @@
             "adventure-activities",
             "logistics"
           ]
+        }
+      ]
+    },
+    "wizard-of-oz-at-sphere-how-long-tickets-seats": {
+      "hash": "a27c4eba84fd4e2c53e287198edcd6fd96b0b446b91756e5d9920e01e9da2e4b",
+      "candidatos": [
+        {
+          "fact": "The show itself runs about 75 minutes, doors open 45 minutes before, and late seating is not permitted.",
+          "figures": [
+            "75 minutes",
+            "45 minutes"
+          ],
+          "topics": [
+            "shows",
+            "timing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "It is for ages 6 and up.",
+          "figures": [
+            "6"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "In October 2026 the two ticket listings on this site started at $106.45 and $124, and both said sales are final.",
+          "figures": [
+            "$106.45",
+            "$124"
+          ],
+          "topics": [
+            "shows",
+            "pricing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "When we read its calendar on October 28, 2026, showtimes were on sale every month through May 2027, with fewer screenings listed for April and May than for the winter months.",
+          "figures": [
+            "October 28, 2026",
+            "May 2027"
+          ],
+          "topics": [
+            "shows",
+            "timing",
+            "booking"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "That day had three screenings, at 2, 5 and 8 PM.",
+          "figures": [
+            "2",
+            "5",
+            "8 PM"
+          ],
+          "topics": [
+            "shows",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Sphere's own page says the film experience runs approximately 75 minutes, and that doors open 45 minutes before the time on your ticket.",
+          "figures": [
+            "75 minutes",
+            "45 minutes"
+          ],
+          "topics": [
+            "shows",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "One of the listings on this site gives the duration as 2 hours: that is the visit, with the time inside before the show, not a longer film.",
+          "figures": [
+            "2 hours"
+          ],
+          "topics": [
+            "shows",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The two listings on this site, in October 2026, started at $124, with taxes and fees included according to the listing, and at $106.45, which assigns a seating tier at checkout.",
+          "figures": [
+            "$124",
+            "$106.45"
+          ],
+          "topics": [
+            "shows",
+            "pricing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Sphere sets two limits on its page: 8 tickets per transaction and per purchaser for each screening, and 25 tickets per purchaser in a calendar year.",
+          "figures": [
+            "8",
+            "25"
+          ],
+          "topics": [
+            "shows",
+            "tickets",
+            "booking"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Sphere also offers alternative seating without haptics, and sensory rooms on levels 2 and 6, through its Accessibility Services department.",
+          "figures": [
+            "2",
+            "6"
+          ],
+          "topics": [
+            "shows",
+            "kids-families"
+          ],
+          "scale": null
         }
       ]
     },

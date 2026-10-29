@@ -1,18 +1,118 @@
 [
   {
-    "slug": "how-to-book-a-las-vegas-tour-without-getting-burned",
-    "fact": "Seventy-one reviews across 21 listings name the channel.",
-    "reason": "cifra \"71\" no esta en la frase"
+    "slug": "bullets-and-burgers-las-vegas-packages-rules",
+    "fact": "In October 2026 it listed laps by car: from $249 for five laps in an Audi R8 V10 to $799 for ten laps in a Lamborghini Huracán Performante, with most cars at $299 for five laps.",
+    "reason": "cifra \"5\" no esta en la frase"
   },
   {
-    "slug": "how-to-book-a-las-vegas-tour-without-getting-burned",
-    "fact": "Nine reviews describe contacting a company and getting nothing back at all — no answered phone, no reply to an email, a number that did not connect.",
-    "reason": "cifra \"9\" no esta en la frase"
+    "slug": "emerald-cave-kayak-from-las-vegas-willow-beach-hoover-dam",
+    "fact": "The park keeps it free of motorboats and personal watercraft on Sundays and Mondays all year; from the Saturday of Memorial Day weekend to Labor Day, Tuesday to Saturday, there is no horsepower limit and personal watercraft are allowed.",
+    "reason": "sin cifra"
   },
   {
-    "slug": "how-to-book-a-las-vegas-tour-without-getting-burned",
-    "fact": "Thirty-one reviews across 11 listings describe money that was not in the number they compared.",
-    "reason": "cifra \"31\" no esta en la frase"
+    "slug": "grand-canyon-day-trip-from-las-vegas-how-long",
+    "fact": "That is 1.5% of the happy reviewers and 1.5% of the unhappy ones",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "las-vegas-atv-tour-what-reviews-say",
+    "fact": "That one fact produces both the 4.89 average and every complaint in the file.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "las-vegas-atv-tour-what-reviews-say",
+    "fact": "One hundred and fifty-four of them name Harry, and every one of those is from this year.",
+    "reason": "cifra \"154\" no esta en la frase"
+  },
+  {
+    "slug": "las-vegas-atv-tour-what-reviews-say",
+    "fact": "Twenty-four of the 300 say they had never ridden before, and they are uniformly delighted.",
+    "reason": "cifra \"24\" no esta en la frase"
+  },
+  {
+    "slug": "las-vegas-atv-tour-what-reviews-say",
+    "fact": "Seven mention speed at all, and the ones who do are the ones who wanted more of it.",
+    "reason": "cifra \"7\" no esta en la frase"
+  },
+  {
+    "slug": "las-vegas-atv-tour-what-reviews-say",
+    "fact": "This experience was advertised as a half-day trip; however, it lasted only about an hour.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "las-vegas-atv-tour-what-reviews-say",
+    "fact": "Eight of the 300 are rated one to three stars, and the quotes that describe the ride come from those eight.",
+    "reason": "cifra \"8\" no esta en la frase"
+  },
+  {
+    "slug": "las-vegas-colorado-river-kayak-what-reviews-say",
+    "fact": "Twenty-one point seven per cent name Emerald Cave, 18.0% mention the food, and 15.0% mention the wildlife.",
+    "reason": "cifra \"21.7%\" no encontrada"
+  },
+  {
+    "slug": "las-vegas-colorado-river-kayak-what-reviews-say",
+    "fact": "This one comes top: 231 of 300, or 77.0%, narrowly ahead of a guided day-trip operator at 76.6%.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "las-vegas-colorado-river-kayak-what-reviews-say",
+    "fact": "Twelve per cent of reviewers mention the dam, the canyon or the access arrangements around it, which is the tell for the longer version: launching below Hoover Dam is not something you do on your own schedule.",
+    "reason": "cifra \"12\" no encontrada"
+  },
+  {
+    "slug": "las-vegas-colorado-river-kayak-what-reviews-say",
+    "fact": "That sample averages 4.99 against the 4.9 the listing publishes, so it reproduces its population.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "las-vegas-desert-adventure-tours-what-they-ask",
+    "fact": "All five sit between 4.84 and 4.99 in our samples, and each sample matches what its listing publishes to within a tenth.",
+    "reason": "cifra \"4.84\" sin unidad ni escala"
+  },
+  {
+    "slug": "las-vegas-desert-adventure-tours-what-they-ask",
+    "fact": "Age limits are set by each operator and by the activity — a passenger seat, a horse and a firearm are three different rules — so the reviews tell you that families do this, not what your child is allowed to do.",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "las-vegas-helicopter-tour-ground-time",
+    "fact": "We read the rated TripAdvisor reviews of two Las Vegas helicopter operators in our corpus, Papillon Grand Canyon Helicopters (500) and Grand Canyon Helicopters (412), collected without filtering by rating.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "las-vegas-helicopter-tour-nervous-flyers",
+    "fact": "Four point nine per cent of the four- and five-star reviews mention being frightened, against 2.0% of the one- and two-star ones.",
+    "reason": "cifra \"4.9%\" no esta en la frase"
+  },
+  {
+    "slug": "las-vegas-helicopter-tour-nervous-flyers",
+    "fact": "That is a ratio of 0.42, and it means the people who write about fear are overwhelmingly the people who enjoyed themselves.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "las-vegas-helicopter-tour-nervous-flyers",
+    "fact": "This article measures the 1,195 reviews of three Las Vegas helicopter operators in our corpus — 500, 412 and 283 — collected in 2026 without filtering by rating.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "las-vegas-helicopter-tour-nervous-flyers",
+    "fact": "A fourth operator has 200 reviews in our corpus but all of them were collected from low ratings only, so it appears in no percentage here.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "las-vegas-helicopter-tour-nervous-flyers",
+    "fact": "The first pattern we wrote matched any word starting with *terrif*, which also catches *terrific* — praise.",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "las-vegas-helicopter-tour-nervous-flyers",
+    "fact": "That mistake added 11 reviews, one of them a one-star that opens by calling the scenery terrific, and it would have turned 54 into 65.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "las-vegas-shows-with-kids",
+    "fact": "Our corpus also holds a separate set of reviews gathered from negative ratings only; nothing in these counts comes from it, and removing it took three unhappy families out of the Mystère figures and four out of Blue Man Group's.",
+    "reason": "voz editorial interna"
   },
   {
     "slug": "sphere-las-vegas-seats-tickets-guide",
@@ -23,5 +123,10 @@
     "slug": "sphere-las-vegas-seats-tickets-guide",
     "fact": "Around 10,000 seats are \"haptic,\" meaning they physically rumble in sync with the content, and they're spread throughout the venue rather than reserved for premium areas.",
     "reason": "cifra \"10,000\" sin unidad ni escala"
+  },
+  {
+    "slug": "wizard-of-oz-at-sphere-how-long-tickets-seats",
+    "fact": "That day had three screenings, at 2, 5 and 8 PM.",
+    "reason": "apertura no autonoma"
   }
 ]

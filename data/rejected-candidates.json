@@ -1,67 +1,47 @@
 [
   {
-    "slug": "best-colosseum-tour-under-eur50",
-    "fact": "A guide turns piles of stone into stories — how 50,000 spectators were seated by social class, how the hypogeum's 80 elevators launched animals through trapdoors, why the Forum was the beating heart of an empire.",
-    "reason": "cifra \"50,000\" sin unidad ni escala"
+    "slug": "best-time-visit-colosseum-decision-matrix",
+    "fact": "\"The combined ticket with the Imperial Forums costs 18 euros per person and children are free.\" — Google Maps, 5 stars, Italian original",
+    "reason": "frase no textual"
   },
   {
-    "slug": "colosseum-skip-the-line-timed-entry-explained",
-    "fact": "A visitor without timed entry faces those queues plus an additional hour at the ticket window.",
-    "reason": "cifra \"an hour\" no esta en la frase"
+    "slug": "best-time-visit-colosseum-decision-matrix",
+    "fact": "GetYourGuide averages 4.94 across 581 reviews.",
+    "reason": "escala no textual"
   },
   {
-    "slug": "colosseum-tours-and-tickets-how-to-book-and-fix-common-problems",
-    "fact": "This can range from the standard 24-hour ticket to Full Experience options, Arena or Underground access, guided tours, or combined tickets that include the Roman Forum and Palatine Hill.",
+    "slug": "best-time-visit-colosseum-decision-matrix",
+    "fact": "Trustpilot averages 1.63 across 424.",
+    "reason": "escala no textual"
+  },
+  {
+    "slug": "best-time-visit-colosseum-decision-matrix",
+    "fact": "Night tours are described as \"so different from visiting during the day\" — structurally unavailable in morning slots.",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "colosseum-vs-vatican-which-to-visit-first",
+    "fact": "This accounts for the visit itself running slightly over, the transfer (20–40 minutes depending on transport), lunch, security at the second site, and a 15-minute buffer for the unexpected.",
     "reason": "apertura no autonoma"
-  },
-  {
-    "slug": "colosseum-underground-accredited-operators",
-    "fact": "That traveler paid €629.40 for a party of six, lost the underground portion, spent two hours walking the Forum in 34°C heat, queued thirty minutes for a skip-the-line ticket, got twenty minutes on the arena floor, and left early.",
-    "reason": "apertura no autonoma"
-  },
-  {
-    "slug": "colosseum-underground-ticket-vs-educational-tour",
-    "fact": "It also lists a reduced fare of €2 for EU citizens aged 18 to 24.",
-    "reason": "apertura no autonoma"
-  },
-  {
-    "slug": "colosseum-underground-vs-arena-floor",
-    "fact": "You are standing at the center of an ellipse that once held 50,000 spectators, looking up at the terraces from below instead of looking down from above.",
-    "reason": "cifra \"50,000\" sin unidad ni escala"
   },
   {
     "slug": "complete-guide-to-visiting-the-roman-colosseum-step-by-step",
-    "fact": "Yes, the Colosseum uses timed entry with a maximum of 3,000 visitors inside at once.",
+    "fact": "Capacity limit: Maximum 3,000 visitors inside at once",
     "reason": "cifra \"3,000\" sin unidad ni escala"
   },
   {
-    "slug": "forum-pass-super-what-it-includes-which-ticket",
-    "fact": "That traveler had it right: the standard ticket at €18 and the supplement at €4.",
-    "reason": "apertura no autonoma"
+    "slug": "complete-guide-to-visiting-the-roman-colosseum-step-by-step",
+    "fact": "Yes, the Colosseum uses timed entry with a maximum of 3,000 visitors inside at once",
+    "reason": "cifra \"3,000\" sin unidad ni escala"
   },
   {
     "slug": "gladiators-beasts-and-executions-what-really-happened-in-the-colosseum-arena",
-    "fact": "With up to 50,000 spectators seated in strict order—from emperor to senators, soldiers to common citizens, women, and even slaves—the amphitheater mirrored Rome’s rigid social pyramid.",
-    "reason": "cifra \"50,000\" sin unidad ni escala"
+    "fact": "In the first century AD about one fight in five killed the loser; by the third century it was closer to one in two.",
+    "reason": "cifra \"one in five\" no encontrada"
   },
   {
-    "slug": "how-long-colosseum-tour-duration-compared",
-    "fact": "This cap holds whether your overall tour is 2.5 hours or 4 hours.",
-    "reason": "apertura no autonoma"
-  },
-  {
-    "slug": "how-long-colosseum-tour-duration-compared",
-    "fact": "That is 1 hour 45 minutes of dead time the buyer did not budget.",
-    "reason": "apertura no autonoma"
-  },
-  {
-    "slug": "private-colosseum-tour",
-    "fact": "Standing on the arena, you’ll see the Colosseum from their perspective, surrounded by the tiers of stone where up to 50,000 spectators once cheered.",
-    "reason": "cifra \"50,000\" sin unidad ni escala"
-  },
-  {
-    "slug": "skip-the-line-isn-t-magic-my-honest-colosseum-experience",
-    "fact": "This account describes a fifty-person group already waiting at 8am and crowds pressed against the railings by mid-morning",
-    "reason": "apertura no autonoma"
+    "slug": "gladiators-beasts-and-executions-what-really-happened-in-the-colosseum-arena",
+    "fact": "The figure for the first century, the decades when the Colosseum opened, comes from the fight results Romans painted on the walls of Pompeii, according to Alfonso Manas, a researcher at the University of California, Berkeley, quoted by Live Science in 2024: about one fight in five ended with the death of the loser.",
+    "reason": "cifra \"one in five\" no encontrada"
   }
 ]
