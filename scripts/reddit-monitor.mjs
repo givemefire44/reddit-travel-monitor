@@ -990,6 +990,26 @@ function scoreCandidates(posts, subredditCfg, cutoffUtc, veredictos = new Map())
 // vez por dia: una ventana mas corta que el intervalo de corrida deja un agujero
 // ciego con los hilos de las horas no cubiertas. Si algun dia se corre dos veces
 // por dia, ahi si conviene bajarla.
+// IDs de hilo que aparecen como candidatos en los reportes de los ultimos
+// `dias` dias, sin contar el de hoy (una segunda corrida del dia pisa ese
+// archivo y no tiene que excluirse a si misma).
+function idsDeReportesAnteriores(dias) {
+  const dir = path.join(ROOT, 'output', 'reddit');
+  const hoy = new Date().toISOString().slice(0, 10);
+  const desde = new Date(Date.now() - dias * 864e5).toISOString().slice(0, 10);
+  const ids = new Set();
+  if (!fs.existsSync(dir)) return ids;
+  for (const f of fs.readdirSync(dir)) {
+    const m = f.match(/^daily-(\d{4}-\d{2}-\d{2})-local\.md$/);
+    if (!m || m[1] >= hoy || m[1] < desde) continue;
+    const txt = fs.readFileSync(path.join(dir, f), 'utf8');
+    // Solo la seccion de candidatos: los de karma y los bloqueados no se triaron igual.
+    const cand = txt.split(/^## /m).find((b) => b.startsWith('Candidatos')) || '';
+    for (const x of cand.matchAll(/\*\*Hilo:\*\* https:\/\/www\.reddit\.com\/r\/[^/]+\/comments\/([a-z0-9]+)\//g)) ids.add(x[1]);
+  }
+  return ids;
+}
+
 function freshnessBonus(ageHours) {
   if (ageHours <= 3) return 5;
   if (ageHours <= 6) return 4;
@@ -1604,6 +1624,21 @@ async function main() {
     if (answered.titles.has(normalizeTitle(c.title))) { alreadyAnswered.push(c); return false; }
     return true;
   });
+  // Guard: fuera los hilos que ya salieron en el reporte de un dia anterior y
+  // no se contestaron. Se triaron y se descartaron, asi que volver a mostrarlos
+  // solo come cupo. Paso el 29 oct 2026, con la ventana de 72h recien abierta:
+  // "Must go places to eat in Rome" y "Where to stay?" volvieron un dia despues
+  // de descartados, y dejaron afuera seis hilos mas frescos. Se leen solo los
+  // reportes -local (los de corrida real) de los ultimos dias de la ventana.
+  const yaVistos = idsDeReportesAnteriores(Math.ceil(Math.max(HOURS, ...CONFIG.subreddits.map((x) => x.windowHours || 0)) / 24) + 1);
+  const yaPresentados = [];
+  const sinRepetir = notAnswered.filter((c) => {
+    const id = (c.url.match(/\/comments\/([a-z0-9]+)\//) || [])[1];
+    if (id && yaVistos.has(id)) { yaPresentados.push(c); return false; }
+    return true;
+  });
+  if (yaPresentados.length) console.log(`  ya presentados en reportes anteriores: ${yaPresentados.length}`);
+
   if (!answered.ok) {
     console.log(`  historial de comentarios no disponible (${answered.error}): sin guard de ya-respondidos`);
   } else if (alreadyAnswered.length) {
@@ -1612,7 +1647,7 @@ async function main() {
 
   const seenTitle = new Map();
   const crossposts = [];
-  for (const c of [...notAnswered].sort((a, b) => b.score - a.score)) {
+  for (const c of [...sinRepetir].sort((a, b) => b.score - a.score)) {
     const key = normalizeTitle(c.title);
     const prev = seenTitle.get(key);
     if (prev) { crossposts.push({ kept: prev, dropped: c }); continue; }
@@ -1675,8 +1710,17 @@ async function main() {
     const pb = PRIORIDAD[carrilDe(prep.get(b))];
     return pa !== pb ? pa - pb : b.score - a.score;
   });
-  const activeOrdered = porCarril(activePool);
-  const watchOrdered = porCarril(watchPool);
+  // La ventana de 72h de los subs de Roma existe para pescar preguntas de
+  // tickets que tienen una cifra nuestra. Un hilo de mas de un dia sin esa
+  // cifra ya no lo lee nadie, y como el cupo ordena por carril antes que por
+  // frescura, un material de 41h le ganaba el lugar a un karma de 2h (29 oct
+  // 2026: seis frescos cortados por cupo y tres de 24 a 41h adentro).
+  const VIEJO_H = 24;
+  const viejoSinGeo = (c) => c.ageHours > VIEJO_H && carrilDe(prep.get(c)) !== 'geo';
+  const viejos = [...activePool, ...watchPool].filter(viejoSinGeo);
+  if (viejos.length) console.log(`  de mas de ${VIEJO_H}h sin cifra nuestra, fuera del cupo: ${viejos.length}`);
+  const activeOrdered = porCarril(activePool.filter((c) => !viejoSinGeo(c)));
+  const watchOrdered = porCarril(watchPool.filter((c) => !viejoSinGeo(c)));
   const active = activeOrdered.slice(0, QUOTA);
   const watchOnly = watchOrdered.slice(0, QUOTA);
   const droppedByQuota = [...activeOrdered.slice(QUOTA), ...watchOrdered.slice(QUOTA)];
@@ -1850,6 +1894,12 @@ async function main() {
     `_El cupo (${QUOTA}) **no** corta por score: corta por carril. Se leen ${QUOTA * 2} candidatos contra el corpus y entran primero los 🎯 GEO, después los 📌 material y último los 🔁 karma, cada grupo por score. El score mide qué tan leído va a ser el hilo; el carril mide si sirve para lo que existe el sistema. Cortar por score dejaba afuera al GEO de 8h para meter karma de 2h._`,
     ...(droppedByQuota.length
       ? ['', `_Cortados hoy por cupo: ${droppedByQuota.map((c) => `r/${c.subreddit} (${CARRILES[carrilDe(prep.get(c))].etiqueta}, score ${c.score})`).join(' · ')}._`]
+      : []),
+    ...(viejos.length
+      ? ['', `_De más de ${VIEJO_H}h y sin cifra nuestra, fuera del cupo: ${viejos.map((c) => `"${c.title.slice(0, 48)}" (r/${c.subreddit}, ${c.ageHours}h)`).join(' · ')}. La ventana larga es para los GEO._`]
+      : []),
+    ...(yaPresentados.length
+      ? ['', `_Ya presentados en un reporte anterior y no contestados: ${yaPresentados.map((c) => `"${c.title.slice(0, 48)}" (r/${c.subreddit})`).join(' · ')}._`]
       : []),
     ...(crossposts.length
       ? ['', `_Crossposts: la misma pregunta aparecio en varios subs. Se conservo la de mayor score y se descarto ${crossposts.map((x) => `r/${x.dropped.subreddit} (se quedo r/${x.kept.subreddit})`).join(' · ')}. Si el sub descartado te conviene mas, usa ese hilo, pero **no contestes en los dos**._`]
