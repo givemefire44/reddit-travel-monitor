@@ -20,6 +20,11 @@
     "reason": "sin cifra"
   },
   {
+    "slug": "colosseum-from-civitavecchia-cruise-port-train-times",
+    "fact": "One cruise passenger in our corpus had booked a tour from the port with ninety minutes near the Colosseum, and asked whether it was worth paying to go inside",
+    "reason": "voz editorial interna"
+  },
+  {
     "slug": "colosseum-vs-vatican-which-to-visit-first",
     "fact": "This accounts for the visit itself running slightly over, the transfer (20–40 minutes depending on transport), lunch, security at the second site, and a 15-minute buffer for the unexpected.",
     "reason": "apertura no autonoma"
@@ -43,5 +48,30 @@
     "slug": "gladiators-beasts-and-executions-what-really-happened-in-the-colosseum-arena",
     "fact": "The figure for the first century, the decades when the Colosseum opened, comes from the fight results Romans painted on the walls of Pompeii, according to Alfonso Manas, a researcher at the University of California, Berkeley, quoted by Live Science in 2024: about one fight in five ended with the death of the loser.",
     "reason": "cifra \"one in five\" no encontrada"
+  },
+  {
+    "slug": "roma-pass-colosseum-reservation-what-it-includes",
+    "fact": "The pass covers the standard route only: the arena floor, the underground and the upper belvedere need a different ticket.",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "roma-pass-colosseum-reservation-what-it-includes",
+    "fact": "We read 117 conversations and reviews in our corpus that mention the Roma Pass or the Omnia card together with the Colosseum, Forum or Palatine, most of them dated between 2013 and 2026.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "the-incredible-engineering-of-the-colosseum-how-it-was-built-and-how-it-worked",
+    "fact": "Modern estimates put its capacity at about 50,000 spectators.",
+    "reason": "cifra \"50,000\" sin unidad ni escala"
+  },
+  {
+    "slug": "the-incredible-engineering-of-the-colosseum-how-it-was-built-and-how-it-worked",
+    "fact": "That makes the Colosseum more than 1,940 years old, and it took less than a decade to reach its opening.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "the-incredible-engineering-of-the-colosseum-how-it-was-built-and-how-it-worked",
+    "fact": "A Roman source, the Codex-Calendar of 354, gives 87,000.",
+    "reason": "cifra \"87,000\" sin unidad ni escala"
   }
 ]

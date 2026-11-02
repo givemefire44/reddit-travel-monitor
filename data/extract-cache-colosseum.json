@@ -2810,6 +2810,210 @@
         }
       ]
     },
+    "colosseum-from-civitavecchia-cruise-port-train-times": {
+      "hash": "c38aab6df76ec3de844a67919db7394d821a4e9a908d705994572292892c75f9",
+      "candidatos": [
+        {
+          "fact": "A Trenitalia bus links the cruise terminal to Civitavecchia station, and trains to Roma Termini take 1h13 to 1h48 including the bus, from €10.60",
+          "figures": [
+            "1h13",
+            "1h48",
+            "€10.60"
+          ],
+          "topics": [
+            "logistics",
+            "timing",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "On the weekday we checked, the first combination left the port at 8:10 and the last one back reached the port at 18:45",
+          "figures": [
+            "8:10",
+            "18:45"
+          ],
+          "topics": [
+            "timing",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Trenitalia says to choose \"Civitavecchia Porto\" as the origin or destination when you search, and the bus adds €6.00 to the train fare",
+          "figures": [
+            "€6.00"
+          ],
+          "topics": [
+            "pricing",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "children under 3 ride the bus free, there is no limit on the size of your luggage, and every bus has seats reserved for people with reduced mobility",
+          "figures": [
+            "3"
+          ],
+          "topics": [
+            "logistics",
+            "accessibility",
+            "kids-families"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The trade-off: the Portlink saves you finding your own way from the pier to the station, and it costs a fixed €6 on top of the train",
+          "figures": [
+            "€6"
+          ],
+          "topics": [
+            "pricing",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The first combination of the day left at 8:10",
+          "figures": [
+            "8:10"
+          ],
+          "topics": [
+            "timing",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Between 8:10 and 11:30 there were ten, most of them on regional trains taking 1h28 to 1h48 from €10.60",
+          "figures": [
+            "8:10",
+            "11:30",
+            "10",
+            "1h28",
+            "1h48",
+            "€10.60"
+          ],
+          "topics": [
+            "timing",
+            "pricing",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The faster Frecciabianca trains cut the trip to 1h13 or 1h18 and started from €22.00",
+          "figures": [
+            "1h13",
+            "1h18",
+            "€22.00"
+          ],
+          "topics": [
+            "timing",
+            "pricing",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The last one left Termini at 17:12 and reached the port at 18:45",
+          "figures": [
+            "17:12",
+            "18:45"
+          ],
+          "topics": [
+            "timing",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "If the first combination gets you to Termini at 9:48 and the last one back leaves at 17:12, you have about seven and a half hours in Rome, before the metro ride at each end",
+          "figures": [
+            "9:48",
+            "17:12"
+          ],
+          "topics": [
+            "timing",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The park's regulation limits the time inside the Colosseum to 75 minutes on a standard 24h ticket and 90 minutes on a Full Experience ticket",
+          "figures": [
+            "75",
+            "90"
+          ],
+          "topics": [
+            "timing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "One cruise passenger in our corpus had booked a tour from the port with ninety minutes near the Colosseum, and asked whether it was worth paying to go inside",
+          "figures": [
+            "ninety"
+          ],
+          "topics": [
+            "tickets",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Trenitalia's combinations from Civitavecchia Porto to Roma Termini took 1h13 to 1h48 on a weekday in October 2026; for the last leg, the park lists metro Line B, stop Colosseo",
+          "figures": [
+            "1h13",
+            "1h48"
+          ],
+          "topics": [
+            "timing",
+            "logistics",
+            "underground"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "On the weekday we checked, bus-plus-train combinations to Roma Termini started from €10.60 on regional trains and from €22.00 on the faster Frecciabianca",
+          "figures": [
+            "€10.60",
+            "€22.00"
+          ],
+          "topics": [
+            "pricing",
+            "timing",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "On Friday 30 October 2026, the last bus-plus-train combination left Roma Termini at 17:12 and reached the port at 18:45",
+          "figures": [
+            "17:12",
+            "18:45"
+          ],
+          "topics": [
+            "timing",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The standard ticket allows up to 75 minutes inside the Colosseum, plus the Roman Forum and Palatine on the same ticket",
+          "figures": [
+            "75"
+          ],
+          "topics": [
+            "tickets",
+            "timing",
+            "forum-palatine"
+          ],
+          "scale": null
+        }
+      ]
+    },
     "colosseum-full-experience-vs-standard-ticket": {
       "hash": "46682d8aa5944f3124d4d4b4bf20b9df5dbb3554e67def6ab122dd55ba93aa3c",
       "candidatos": [
@@ -10538,6 +10742,141 @@
         }
       ]
     },
+    "roma-pass-colosseum-reservation-what-it-includes": {
+      "hash": "a7d6769fcbafeefc1b7f754c19b77fe18298d5ef28b2ab6f590c0b303b31ba87",
+      "candidatos": [
+        {
+          "fact": "The Roma Pass counts the Colosseum, Roman Forum and Palatine Hill as one free entry, but you still have to book a time for the Colosseum online, on the park's official ticketing site, at most one month ahead.",
+          "figures": [
+            "one"
+          ],
+          "topics": [
+            "tickets",
+            "pricing",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The pass covers the standard route only: the arena floor, the underground and the upper belvedere need a different ticket.",
+          "figures": [],
+          "topics": [
+            "tickets",
+            "arena-floor",
+            "underground"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The park's 2026 visitor regulation describes the Roma Pass ticket the same way: one timed entry to the first and second tiers of the Colosseum, without the arena level, plus one entry to the Roman Forum, Palatine and Imperial Fora.",
+          "figures": [
+            "one",
+            "2026"
+          ],
+          "topics": [
+            "tickets",
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "If you have already used your free entries, the pass still gets you a lower price: the park lists a reduced Roma Pass ticket at €11.50, against €18 for the full standard ticket.",
+          "figures": [
+            "€11.50",
+            "€18"
+          ],
+          "topics": [
+            "pricing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "You can book at most one month ahead.",
+          "figures": [
+            "one month"
+          ],
+          "topics": [
+            "timing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The Roma Pass FAQ recommends booking at least 10 days in advance, and 20 days in high season.",
+          "figures": [
+            "10",
+            "20"
+          ],
+          "topics": [
+            "timing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "We read 117 conversations and reviews in our corpus that mention the Roma Pass or the Omnia card together with the Colosseum, Forum or Palatine, most of them dated between 2013 and 2026.",
+          "figures": [
+            "117",
+            "2013",
+            "2026"
+          ],
+          "topics": [
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "In 2023, two travelers with the pass found no free time slot in the next 25 to 30 days.",
+          "figures": [
+            "2023",
+            "25 to 30"
+          ],
+          "topics": [
+            "tickets",
+            "crowds",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Thirteen reviewers in 2019 described long queues or conflicting instructions when they entered with the pass, under the booking rules of that time.",
+          "figures": [
+            "2019"
+          ],
+          "topics": [
+            "tickets",
+            "crowds"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The Colosseum entry that the pass replaces costs €18 on the official site, and the 48-hour pass costs €38.",
+          "figures": [
+            "€18",
+            "€38",
+            "48-hour"
+          ],
+          "topics": [
+            "pricing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The 72-hour pass, at €62.90, adds a second free entry.",
+          "figures": [
+            "€62.90",
+            "72-hour"
+          ],
+          "topics": [
+            "pricing",
+            "tickets"
+          ],
+          "scale": null
+        }
+      ]
+    },
     "roman-forum": {
       "hash": "5b38da97f18761f1f6acc822f84e8b098a542e2691396c46d6de1e53c8f73bef",
       "candidatos": [
@@ -12081,30 +12420,243 @@
       ]
     },
     "the-incredible-engineering-of-the-colosseum-how-it-was-built-and-how-it-worked": {
-      "hash": "1c8ff76b8c144374b21b58295c85b8da4b5dcdbedc384b0d3b1ffad11e85b31f",
+      "hash": "8a8df1dff16628b7ac93a43ccebef8be4fa17ac6b138a9a0feecb4b48ae00ddb",
       "candidatos": [
         {
-          "fact": "The ellipse measures 189 by 156 metres and held up to 50,000 spectators.",
+          "fact": "It is an ellipse 189 meters long and 156 meters wide, and its outer wall stands 48 meters tall.",
           "figures": [
-            "189",
-            "156",
+            "189 meters",
+            "156 meters",
+            "48 meters"
+          ],
+          "topics": [
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Modern estimates put its capacity at about 50,000 spectators.",
+          "figures": [
             "50,000"
           ],
           "topics": [
             "crowds",
             "logistics"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "Up to 50,000 spectators could enter or leave in minutes thanks to 80 entrances and a sophisticated corridor system—what we’d call today “crowd control.”",
+          "fact": "Construction began under Emperor Vespasian in around AD 70–72; some sources say 73–75.",
           "figures": [
-            "50,000",
-            "80"
+            "70–72",
+            "73–75"
           ],
           "topics": [
-            "crowds",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "By the time Vespasian died in 79, the building was finished up to the third story.",
+          "figures": [
+            "79"
+          ],
+          "topics": [
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "His son Titus completed the top level and dedicated it in AD 80, with the inaugural games held in 80 or 81.",
+          "figures": [
+            "80",
+            "80",
+            "81"
+          ],
+          "topics": [
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "That makes the Colosseum more than 1,940 years old, and it took less than a decade to reach its opening.",
+          "figures": [
+            "1,940"
+          ],
+          "topics": [
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "It is estimated to have needed over 100,000 cubic meters of it, and the blocks were laid without mortar: about 300 tons of iron clamps held them together.",
+          "figures": [
+            "100,000",
+            "300 tons"
+          ],
+          "topics": [
             "logistics"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "A Roman source, the Codex-Calendar of 354, gives 87,000.",
+          "figures": [
+            "87,000"
+          ],
+          "topics": [
+            "crowds"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Eighty entrances ringed the ground floor, 76 of them for ordinary spectators, and every entrance and staircase was numbered.",
+          "figures": [
+            "Eighty",
+            "76"
+          ],
+          "topics": [
+            "logistics",
+            "crowds"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The entrances numbered XXIII to LIIII survive.",
+          "figures": [
+            "XXIII",
+            "LIIII"
+          ],
+          "topics": [
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Around the top of the attic, 240 stone brackets held the masts that supported it: a net of ropes covered with canvas, with an opening in the middle.",
+          "figures": [
+            "240"
+          ],
+          "topics": [
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "It covered about two-thirds of the arena and sloped toward the center, which is thought to have caught the wind and sent a breeze over the crowd.",
+          "figures": [
+            "two-thirds"
+          ],
+          "topics": [
+            "weather",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Eighty vertical shafts led up to the arena floor, and lifts and pulleys raised caged animals and pieces of scenery into view.",
+          "figures": [
+            "Eighty"
+          ],
+          "topics": [
+            "underground"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Fire, AD 217. Lightning started a fire that destroyed the wooden upper levels of the interior. Repairs took until about 240.",
+          "figures": [
+            "217",
+            "240"
+          ],
+          "topics": [
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The park dates the abolition of gladiator fights to 438, by order of Emperor Valentinian III, after which the amphitheater began a slow decline.",
+          "figures": [
+            "438"
+          ],
+          "topics": [
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Animal hunts continued until at least 523.",
+          "figures": [
+            "523"
+          ],
+          "topics": [
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "An inscription records repairs under Theodosius II and Valentinian III, possibly after an earthquake in 443.",
+          "figures": [
+            "443"
+          ],
+          "topics": [
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The big one came in 1349: it brought down the outer south side, which stands on less stable ground.",
+          "figures": [
+            "1349"
+          ],
+          "topics": [
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The stripping stopped in 1749, when Pope Benedict XIV banned using the Colosseum as a quarry and consecrated it.",
+          "figures": [
+            "1749"
+          ],
+          "topics": [
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The two triangular brick buttresses at the ends of the surviving outer wall were added in 1807 and 1827 to keep it from falling.",
+          "figures": [
+            "1807",
+            "1827"
+          ],
+          "topics": [
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "A major restoration ran from 1993 to 2000, and a cleaning of the facade sponsored by the shoe company Tod's was completed in 2016.",
+          "figures": [
+            "1993",
+            "2000",
+            "2016"
+          ],
+          "topics": [
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The outer wall is 48 meters (157 feet) tall.",
+          "figures": [
+            "48 meters",
+            "157 feet"
+          ],
+          "topics": [
+            "logistics"
+          ],
+          "scale": null
         }
       ]
     },
@@ -12710,6 +13262,94 @@
     "why-was-the-colosseum-built-the-story-guides-don-t-tell-you": {
       "hash": "8a5dfacc89e9b5a4242cfeb3f08dc59e208702ce7dd45ec9e999bcc11ff19488",
       "candidatos": []
+    },
+    "why-was-the-colosseum-important-why-is-it-famous": {
+      "hash": "90aa4c2b3eb285bcee1ced2799ce045c63d40db4e78fe4bd7d4b7461aad8d96e",
+      "candidatos": [
+        {
+          "fact": "and displayed the emperor's power and Rome's social order to some 50,000 people",
+          "figures": [
+            "50,000"
+          ],
+          "topics": [
+            "forum-palatine",
+            "crowds"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "and one of the New 7 Wonders chosen by a 2007 popular vote",
+          "figures": [
+            "2007"
+          ],
+          "topics": [
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "After the Great Fire of 64, Nero had taken over much of the area for his palace, the Domus Aurea, with an artificial lake in front of it",
+          "figures": [
+            "64"
+          ],
+          "topics": [
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The winners were announced on 7 July 2007 after a popularity poll by web and telephone, and the poll was considered unscientific partly because participants could vote repeatedly",
+          "figures": [
+            "7 July 2007"
+          ],
+          "topics": [
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "UNESCO names the Colosseum among the monuments of antiquity that justify the World Heritage listing of Rome's historic centre, inscribed in 1980, and says the achievements of ancient Rome in architecture served as a universal model for later periods",
+          "figures": [
+            "1980"
+          ],
+          "topics": [
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "UNESCO distanced itself from the project in 2001 and again in 2007",
+          "figures": [
+            "2001",
+            "2007"
+          ],
+          "topics": [
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Because of the ruined interior, large events are impractical, and only a few hundred spectators fit in temporary seating",
+          "figures": [
+            "a few hundred"
+          ],
+          "topics": [
+            "arena-floor",
+            "crowds"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The most recent case our source records is from 2012, so we cannot say how often this happens now",
+          "figures": [
+            "2012"
+          ],
+          "topics": [
+            "forum-palatine"
+          ],
+          "scale": null
+        }
+      ]
     },
     "why-was-the-roman-colosseum-built-the-untold-story": {
       "hash": "9fbe0a7dace7574c7d0cf6ab4cfba07ff8250bef634c06164e75f586a0740290",
