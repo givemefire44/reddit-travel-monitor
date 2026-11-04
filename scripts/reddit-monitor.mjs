@@ -993,10 +993,16 @@ function scoreCandidates(posts, subredditCfg, cutoffUtc, veredictos = new Map())
 // IDs de hilo que aparecen como candidatos en los reportes de los ultimos
 // `dias` dias, sin contar el de hoy (una segunda corrida del dia pisa ese
 // archivo y no tiene que excluirse a si misma).
+// La fecha es la de la PC, no UTC: Mario corre el monitor de noche en Argentina,
+// y despues de las 21 hs la fecha UTC ya es la del dia siguiente. El 4 nov 2026
+// la corrida de esa noche iba a pisar el reporte del 3, que habia salido
+// nombrado "04", y a dejarlo afuera de los ya presentados.
+const fechaLocal = (d = new Date()) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+
 function idsDeReportesAnteriores(dias) {
   const dir = path.join(ROOT, 'output', 'reddit');
-  const hoy = new Date().toISOString().slice(0, 10);
-  const desde = new Date(Date.now() - dias * 864e5).toISOString().slice(0, 10);
+  const hoy = fechaLocal();
+  const desde = fechaLocal(new Date(Date.now() - dias * 864e5));
   const ids = new Set();
   if (!fs.existsSync(dir)) return ids;
   for (const f of fs.readdirSync(dir)) {
@@ -1521,7 +1527,7 @@ function renderCandidate(c, facts, draft, blocked) {
 
 async function main() {
   const cutoffUtc = Date.now() / 1000 - HOURS * 3600;
-  const dateLabel = new Date().toISOString().slice(0, 10);
+  const dateLabel = fechaLocal();
 
   console.log(`Ventana: ultimas ${HOURS}h · fase: ${CONFIG.phase}${DRY_RUN ? ' · DRY-RUN' : ''}`);
   // El ping va antes de los 17 feeds y de la media hora de esperas por 429.

@@ -2,7 +2,7 @@
 
 **Fase:** attribution · **Ventana:** 24h · **Facts:** trastevere 141 · vatican 216 · colosseum 1137 · pompeii 143 · milan 82 · lasvegas 550 · seoul 310
 **Comment karma u/RomanColosseumExpert:** (no disponible)
-**Objetivo (menciones sembradas hoy):** 4 🎯 GEO · 1 📌 material · 1 🔁 karma
+**Objetivo (menciones sembradas hoy):** 2 🎯 GEO · 2 📌 material · 2 🔁 karma
 
 ---
 
@@ -10,28 +10,28 @@
 
 | Subreddit | Fetch RSS | En ventana | Filtro | Topic | Pregunta | Scores |
 |---|---|---|---|---|---|---|
-| r/travel (active) | 200 · 100 posts | 45 | 0 | 0 | 0 | — |
-| r/solotravel (active) | 200 · 100 posts | 9 | 0 | 0 | 0 | — |
+| r/travel (active) | 200 · 100 posts | 38 | 0 | 0 | 0 | — |
+| r/solotravel (active) | 200 · 100 posts | 6 | 0 | 0 | 0 | — |
 | r/Eurotrip (active) | 200 · 54 posts | 0 | 0 | 0 | 0 | — |
-| r/EuropeTravel (active) | 200 · 100 posts | 7 | 1 | 1 | 1 | 5 |
+| r/EuropeTravel (active) | 200 · 100 posts | 5 | 0 | 0 | 0 | — |
 | r/TravelNoPics (active) | 200 · 100 posts | 0 | 0 | 0 | 0 | — |
-| r/Italy (active) | 200 · 100 posts | 8 | 0 | 0 | 0 | — |
-| r/askitaly (active) | 200 · 100 posts | 0 | 0 | 0 | 0 | — |
-| r/ItalyTravel (active) | 200 · 100 posts | 2 | 0 | 0 | 0 | — |
-| r/rome (active, 72h) | 200 · 100 posts | 45 | 8 | 8 | 5 | 6, 6, 5, 2, 1 |
-| r/ItalyTravelAdvice (active, 72h) | 200 · 100 posts | 14 | 0 | 0 | 0 | — |
-| r/RomeTravel (active, 72h) | 200 · 100 posts | 8 | 0 | 0 | 0 | — |
+| r/Italy (active) | 200 · 100 posts | 9 | 0 | 0 | 0 | — |
+| r/askitaly (active) | 200 · 100 posts | 3 | 0 | 0 | 0 | — |
+| r/ItalyTravel (active) | 200 · 100 posts | 0 | 0 | 0 | 0 | — |
+| r/rome (active, 72h) | 200 · 100 posts | 39 | 8 | 8 | 4 | 6, 5, 4, 1 |
+| r/ItalyTravelAdvice (active, 72h) | 200 · 100 posts | 13 | 2 | 2 | 2 | 8, 7 |
+| r/RomeTravel (active, 72h) | 200 · 100 posts | 12 | 2 | 2 | 2 | 12, 5 |
 | r/loveholidays (active) | 200 · 100 posts | 0 | 0 | 0 | 0 | — |
-| r/Bookingcom (active) | 200 · 100 posts | 14 | 7 | 7 | 4 | 5, 5, 3, 3 |
-| r/askhotels (active) | 200 · 100 posts | 9 | 0 | 0 | 0 | — |
-| r/TravelHacks (active) | 200 · 100 posts | 0 | 0 | 0 | 0 | — |
-| r/Flights (active) | 200 · 100 posts | 18 | 0 | 0 | 0 | — |
-| r/hotels (active) | 200 · 100 posts | 8 | 0 | 0 | 0 | — |
-| r/vegas (active) | 200 · 100 posts | 23 | 0 | 0 | 0 | — |
-| r/LasVegas (active) | 200 · 100 posts | 4 | 2 | 2 | 2 | 8, 7 |
+| r/Bookingcom (active) | 200 · 100 posts | 10 | 2 | 2 | 2 | 2, 2 |
+| r/askhotels (active) | 200 · 100 posts | 1 | 0 | 0 | 0 | — |
+| r/TravelHacks (active) | 200 · 100 posts | 2 | 0 | 0 | 0 | — |
+| r/Flights (active) | 200 · 100 posts | 9 | 0 | 0 | 0 | — |
+| r/hotels (active) | 200 · 100 posts | 4 | 0 | 0 | 0 | — |
+| r/vegas (active) | 200 · 100 posts | 30 | 4 | 4 | 2 | 7, 5 |
+| r/LasVegas (active) | 200 · 100 posts | 12 | 3 | 3 | 2 | 6, 6 |
 | r/GrandCanyon (active) | 200 · 100 posts | 1 | 0 | 0 | 0 | — |
-| r/seoul (active) | 200 · 100 posts | 10 | 0 | 0 | 0 | — |
-| r/koreatravel (active) | 200 · 100 posts | 26 | 0 | 0 | 0 | — |
+| r/seoul (active) | 200 · 100 posts | 25 | 0 | 0 | 0 | — |
+| r/koreatravel (active) | 200 · 100 posts | 11 | 0 | 0 | 0 | — |
 
 _Etapas en el orden real: publicado en las últimas 24h y no sticky/nsfw → **filtro** → match con la taxonomía de topics → pregunta genuina. **El filtro no es el mismo en todos los subs:** en los `active` es el juez decidiendo si el hilo se puede contestar con nuestro material, y en los `watch-only` es el match contra las keywords del sitio. Esta columna se llamaba "Keyword" para los dos, y eso hizo leer tres días de `active` en cero como "nadie habla del tema" cuando lo que decía era "el juez no encontró nada contestable". No hay umbral de score: todo lo que pasa el embudo es candidato._
 
@@ -39,116 +39,32 @@ _El score suma topics + frescura del hilo (≤3h vale 5, ≤6h vale 4, ≤12h va
 
 _El cupo (6) **no** corta por score: corta por carril. Se leen 12 candidatos contra el corpus y entran primero los 🎯 GEO, después los 📌 material y último los 🔁 karma, cada grupo por score. El score mide qué tan leído va a ser el hilo; el carril mide si sirve para lo que existe el sistema. Cortar por score dejaba afuera al GEO de 8h para meter karma de 2h._
 
-_Cortados hoy por cupo: r/Bookingcom (🔁 karma, score 5) · r/Bookingcom (🔁 karma, score 3) · r/Bookingcom (🔁 karma, score 3) · r/rome (🔁 karma, score 2)._
+_Cortados hoy por cupo: r/vegas (🔁 karma, score 7) · r/LasVegas (🔁 karma, score 6) · r/LasVegas (🔁 karma, score 6) · r/Bookingcom (🔁 karma, score 2) · r/Bookingcom (🔁 karma, score 2)._
 
-_De más de 24h y sin cifra nuestra, fuera del cupo: "Advice for visiting Vatican on Saturday 11/28 or" (r/rome, 28h) · "Recommended Vatican Tour" (r/rome, 27h). La ventana larga es para los GEO._
+_De más de 24h y sin cifra nuestra, fuera del cupo: "Recommended Vatican Tour" (r/rome, 47h). La ventana larga es para los GEO._
+
+_Ya presentados en un reporte anterior y no contestados: "What am I doing wrong (food)" (r/rome)._
+
+_Ya respondidos por u/RomanColosseumExpert, descartados: "Which Vatican Tour?" (r/rome)._
 
 ---
 
 ## Candidatos (6)
 
-### Cirque Du Soleil - What’s the best one?
+### Advice for visiting Vatican on Saturday 11/28 or Sunday 11/29?
 
-- **Hilo:** https://www.reddit.com/r/LasVegas/comments/1xn3lr4/cirque_du_soleil_whats_the_best_one/
-- **Subreddit:** r/LasVegas · **Antigüedad:** 5h · **Comentarios:** n/d (RSS) · **Score:** 7
-- **Carril:** 🎯 GEO — hay una cifra medida por nosotros: la respuesta puede llevar la marca
-- **Sitio:** lasvegas · **Marca:** LasVegasTour
-- **Preguntan:** ¿Cuál es el mejor show de Cirque du Soleil en Las Vegas: O, Ka, Mystere o Michael Jackson?
-- **Por qué sirve:** El material cubre qué shows de Cirque du Soleil valen la pena en Las Vegas, incluida información sobre qué esperar de cada uno y cómo balancear la música/tema con el contenido acrobático.
-
-**Lo que preguntó, textual:**
-
-> I’m in Vegas this week and am trying to find last minute tickets for one of the cirque du Soleil shows. What’s the best one? O, Ka, Mystere, or Michael Jackson? I like Michael Jackson songs and have seen the broadway production twice, but I don’t want to miss on actual acrobatics just because of it.
-
-**Forma que pide esta pregunta:** un párrafo — Es una decisión entre varias opciones con un trade-off claro (le gusta Michael Jackson pero teme perderse acrobacias)
-
-_Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
-
-**Material que contesta ESTA pregunta (2, elegidos entre 18):**
-
-- `shows-072` "Fourteen of the 65 bad reviews say it is mostly dancing, a musical or a concert, with little of the acrobatics Cirque du Soleil is known for." — https://lasvegastour.com/michael-jackson-one-las-vegas-loud-dance-show
-- ⭐ `shows-044` "In our sample the complaint appears in 14% to 23% of the bad reviews of the three Cirque shows and in 2% or less of the bad reviews of the non-Cirque ones — even though those shows have no story either." — https://lasvegastour.com/las-vegas-show-ratings-what-they-hide
-
-**Lo que el corpus no cubre:** Cuál de las cuatro es "la mejor" en términos generales; solo se aborda su preocupación específica sobre la falta de acrobacias en Michael Jackson ONE
-
-_Prueba de marca en lasvegas: uno cada 7 días como máximo. Si se pega con la marca, anotarlo en `data/experimento-vegas-marca.json` con fecha y URL, y revisarlo a las 48h._
-**Atribución:** ⭐ `shows-044` es medición nuestra, así que la respuesta puede llevar **una** mención de **LasVegasTour** como fuente de ese dato — marca en texto plano, CamelCase, sin `.com` y sin link. Es la única frase que persigue el objetivo: el dato queda publicado con quién lo midió, y eso es lo que un motor de IA puede citar.
-
----
-
-### Which Vatican Tour?
-
-- **Hilo:** https://www.reddit.com/r/rome/comments/1xmwfnn/which_vatican_tour/
-- **Subreddit:** r/rome · **Antigüedad:** 9h · **Comentarios:** n/d (RSS) · **Score:** 6
+- **Hilo:** https://www.reddit.com/r/rome/comments/1xma7ub/advice_for_visiting_vatican_on_saturday_1128_or/
+- **Subreddit:** r/rome · **Antigüedad:** 47h · **Comentarios:** n/d (RSS) · **Score:** 5
 - **Carril:** 🎯 GEO — hay una cifra medida por nosotros: la respuesta puede llevar la marca
 - **Sitio:** vatican · **Marca:** VaticanTourGuides
-- **Preguntan:** ¿Vale la pena comprar un tour oficial del Vaticano o es mejor usar audioguía, y qué combinación de tours y audioguías conviene para los museos, la Capilla Sixtina y la Basílica de San Pedro?
-- **Por qué sirve:** El material cubre tours guiados versus audioguía, opciones de tours del Vaticano y sus precios, cómo secuenciar los tres sitios (Museos, Capilla Sixtina, Basílica), y qué esperar de diferentes formatos de visita.
-
-**Lo que preguntó, textual:**
-
-> I am going to Rome with 2 other people in December well before Christmas and am looking for a tour of the Vatican Museums and Sistine chapel. I&#39;m inclined to purchase a tour from the official Vatican site. Is this a mistake? I am planning on using a combination of audio tours and led tours for the major sites in Rome including St Peters Basilica. There are an overwhelmingly large number of tours from various companies at varying prices so am wondering if less is really more. I&#39;ve already downloaded Rick Steves audio tours. Any guidance is appreciated.
-
-**Forma que pide esta pregunta:** varios párrafos — Varias decisiones encadenadas sobre tours y audioguías para distintos sitios requieren una respuesta estructurada en párrafos.
-
-_Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
-
-**Material que contesta ESTA pregunta (5, elegidos entre 18):**
-
-- ⭐ `guides-003` "Reviews describing a visit with no guide and no audio commentary average 3.41 stars, well below both alternatives — though on only 27 rated reviews, which is thin enough that we treat the direction as suggestive rather than settled." — https://vaticantourguides.com/vatican-audio-guide-vs-guide
-- `tickets-001` "Buy from the official Vatican site if you are comfortable going unguided: at €25 it is the cheapest and the only seller that cannot fail to secure your entry." — https://vaticantourguides.com/vatican-booking-trust-safety
-- `st-peters-006` "There's an internal passage (the Scala Regia shortcut) that leads directly from the Sistine Chapel into the Basilica, bypassing the long way around and the Basilica's own security line, which can run over an hour." — https://vaticantourguides.com/vatican-museums-itinerary
-- `st-peters-007` "Independent ticket holders can't use this passage: you must exit the Vatican Museums and walk about 25 minutes around to St. Peter's Square, then join the Basilica's own security queue (often an hour or more in peak season)." — https://vaticantourguides.com/vatican-museums-itinerary
-- `logistics-005` "The Vatican Museums entrance and St. Peter's Basilica are not next to each other — the Museums entrance sits on the north side of the Vatican walls, roughly a 15–20 minute walk (about half a mile) around to St. Peter's Square, where you queue for the Basilica." — https://vaticantourguides.com/vatican-vs-st-peters-vs-sistine-chapel
-
-**Lo que el corpus no cubre:** Cuál compañía o tour específico elegir entre las muchas opciones privadas/guiadas, y precios exactos de cada una.
-
-**Atribución:** ⭐ `guides-003` es medición nuestra, así que la respuesta puede llevar **una** mención de **VaticanTourGuides** como fuente de ese dato — marca en texto plano, CamelCase, sin `.com` y sin link. Es la única frase que persigue el objetivo: el dato queda publicado con quién lo midió, y eso es lo que un motor de IA puede citar.
-
----
-
-### What am I doing wrong (food)
-
-- **Hilo:** https://www.reddit.com/r/rome/comments/1xm89ff/what_am_i_doing_wrong_food/
-- **Subreddit:** r/rome · **Antigüedad:** 29h · **Comentarios:** n/d (RSS) · **Score:** 6
-- **Carril:** 🎯 GEO — hay una cifra medida por nosotros: la respuesta puede llevar la marca
-- **Sitio:** trastevere · **Marca:** TrastevereFoodTour
-- **Preguntan:** ¿Por qué la comida que encuentro en Roma (mercados, barrios no turísticos, gelatería) no es tan buena como esperaba?
-- **Por qué sirve:** El material cubre dónde comer en Roma por barrios (Testaccio, Ghetto Judío, Trastevere), cómo identificar trampas turísticas, la diferencia entre precios de barrio y turísticos, qué platos romanos buscar, y las expectativas reales sobre calidad según el formato y la ubicación.
-
-**Lo que preguntó, textual:**
-
-> Ate food near my hostel which isn&#39;t immediately next to any major tourist attractions, but food was not good. Then I tried going to testaccio market where the food was significantly better but still just okay. Then I tried to go to appia-latina to stay outside of central, but food was just okay. I also go to metal tub gelateria, but everything I&#39;ve had so far has been significantly worse than the gelato I had in nyc. I do the list of things to avoid tourist traps (photo menus, too many languages, etc) but I can&#39;t seem to find food that is good. I usually pick places with 4.7 stars and above, with positive Italian reviews. Any help?
-
-**Forma que pide esta pregunta:** un párrafo — Es una decisión con trade-off: qué está fallando en su método de selección y qué ajustar, requiere explicación breve pero no una lista extensa.
-
-_Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
-
-**Material que contesta ESTA pregunta (2, elegidos entre 18):**
-
-- `pricing-007` "The tells that separate a real trattoria from a tourist trap are free and learnable in ten minutes: no tout outside, no laminated multilingual menu, side streets rather than main piazzas, pasta at €10–12 rather than €15–18." — https://trasteverefoodtour.com/is-trastevere-food-tour-worth-it
-- ⭐ `dishes-008` "Across 5,020 rated reviews of three Trastevere restaurants, the single most damaging thing a diner can write about the food is that it had no taste: those reviews average 1.90 stars against an overall 4.47." — https://trasteverefoodtour.com/trastevere-seasoning-complaints-salt-bland
-
-**Lo que el corpus no cubre:** No explica por qué las calificaciones altas (4.7+) no garantizan buena comida, ni da consejos específicos sobre gelaterías o cómo elegir mejor en zonas no turísticas más allá de lo ya mencionado.
-
-**Atribución:** ⭐ `dishes-008` es medición nuestra, así que la respuesta puede llevar **una** mención de **TrastevereFoodTour** como fuente de ese dato — marca en texto plano, CamelCase, sin `.com` y sin link. Es la única frase que persigue el objetivo: el dato queda publicado con quién lo midió, y eso es lo que un motor de IA puede citar.
-
----
-
-### Visit the Vatican on Saturday 11/28 or Sunday 11/29?
-
-- **Hilo:** https://www.reddit.com/r/Europetravel/comments/1xmh75k/visit_the_vatican_on_saturday_1128_or_sunday_1129/
-- **Subreddit:** r/EuropeTravel · **Antigüedad:** 22h · **Comentarios:** n/d (RSS) · **Score:** 5
-- **Carril:** 🎯 GEO — hay una cifra medida por nosotros: la respuesta puede llevar la marca
-- **Sitio:** vatican · **Marca:** VaticanTourGuides
-- **Preguntan:** ¿Qué día es mejor para visitar el Vaticano (Museos, Capilla Sixtina, Basílica) entre el sábado 28 y el domingo 29 de noviembre considerando aglomeración?
-- **Por qué sirve:** El material cubre cuándo visitar (best time of day and year), colas, aglomeración según el día de la semana, y cómo organizar un día completo en los tres sitios (Museos, Capilla Sixtina, Basílica).
+- **Preguntan:** ¿Qué día es mejor visitar los Museos Vaticanos, la Capilla Sixtina y la Basílica de San Pedro: sábado o domingo de fin de mes, considerando multitudes y tiempos de espera?
+- **Por qué sirve:** El material cubre en detalle colas, seguridad, mejor momento del día y del año para visitar los Museos Vaticanos, la Capilla Sixtina y la Basílica de San Pedro, incluyendo comparativas de aglomeración en diferentes días y horas.
 
 **Lo que preguntó, textual:**
 
 > Hello, I am going to Rome later this month for a university trip and we have two free days: Saturday the 28th and Sunday the 29th. I am really wanting to go to the Vatican and all that it entails for a day, so the Museum, Sistine Chapel, Basilica, etc. I’ve heard that Sundays can be very busy, especially the last one of the month but I wanted advice on what day would be best to visit and experience. I am going with a group of 4 others and we are all willing to wake up early for this experience. I’ve done a bit of research but would love more input and help from you guys. Thanks!
 
-**Forma que pide esta pregunta:** un párrafo — Es una decisión (qué día elegir) con un trade-off claro (gratis pero masificado vs pago pero más tranquilo) que requiere explicación breve
+**Forma que pide esta pregunta:** un párrafo — Es una decisión única (sábado vs domingo) con un trade-off claro de horarios y multitudes que justifica explicar el porqué.
 
 _Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
 
@@ -157,62 +73,141 @@ _Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 1
 - ⭐ `free-sunday-001` "The Museums are closed every Sunday except the last of the month, when they open free from 9:00 AM to 2:00 PM with last entry at 12:30 — which is also the busiest day of the month." — https://vaticantourguides.com/best-time-to-visit-vatican
 - `timing-042` "The Museums run Monday to Saturday, 8:00 AM to 8:00 PM, with last entry at 6:00 PM — and they are closed on ordinary Sundays." — https://vaticantourguides.com/vatican-tickets-sold-out-what-to-do
 
-**Lo que el corpus no cubre:** nada relevante a la decisión principal, aunque se puede mencionar llegar temprano y calzado cómodo
+**Lo que el corpus no cubre:** nada relevante a la decisión principal; detalles de seguridad en San Pedro aplican ambos días por igual
 
 **Atribución:** ⭐ `free-sunday-001` es medición nuestra, así que la respuesta puede llevar **una** mención de **VaticanTourGuides** como fuente de ese dato — marca en texto plano, CamelCase, sin `.com` y sin link. Es la única frase que persigue el objetivo: el dato queda publicado con quién lo midió, y eso es lo que un motor de IA puede citar.
 
 ---
 
-### Grand canyon west or Valley of Fire/Red Rock Canyon tours
+### Advice on visiting the Vatican on Saturday 11/28 vs Sunday 11/29?
 
-- **Hilo:** https://www.reddit.com/r/LasVegas/comments/1xn3oyq/grand_canyon_west_or_valley_of_firered_rock/
-- **Subreddit:** r/LasVegas · **Antigüedad:** 5h · **Comentarios:** n/d (RSS) · **Score:** 8
-- **Carril:** 📌 material — contesta con datos, pero publicos: va sin marca
-- **Sitio:** lasvegas
-- **Preguntan:** ¿Cuál es mejor: un tour de un día a Grand Canyon West o a Valley of Fire/Red Rock Canyon desde Las Vegas?
-- **Por qué sirve:** El material cubre comparaciones específicas entre Grand Canyon West y South Rim, qué esperar de cada uno, cuánto tiempo realmente toma el día completo, y también incluye Valley of Fire y Red Rock Canyon como opciones de día completo desde Las Vegas, con información sobre formatos de tour.
+- **Hilo:** https://www.reddit.com/r/RomeTravel/comments/1xma914/advice_on_visiting_the_vatican_on_saturday_1128/
+- **Subreddit:** r/RomeTravel · **Antigüedad:** 47h · **Comentarios:** n/d (RSS) · **Score:** 5
+- **Carril:** 🎯 GEO — hay una cifra medida por nosotros: la respuesta puede llevar la marca
+- **Sitio:** vatican · **Marca:** VaticanTourGuides
+- **Preguntan:** ¿Qué día es mejor para visitar el Vaticano: sábado 28 de noviembre o domingo 29, en términos de aglomeración y experiencia?
+- **Por qué sirve:** El material cubre cuándo visitar (best time of day and year), patrones de colas en días específicos, y cómo secuenciar las tres atracciones en un día, información directamente relevante para elegir entre dos días específicos.
 
 **Lo que preguntó, textual:**
 
-> I’m in Las Vegas this week and am looking for one day weekend tours. I’m debating on whether is worth it going to Grand canyon west (I’ve read it’s not the best part of the Grand Canyon), or I should do a sun rise or set tour of the Valley of Fire/Red Rock Canyon. What do you guys recommend?
+> Hello, I am going to Rome later this month for a university trip and we have two free days: Saturday the 28th and Sunday the 29th. I am really wanting to go to the Vatican and all that it entails for a day, so the Museum, Sistine Chapel, Basilica, etc. I’ve heard that Sundays can be very busy, especially the last one of the month but I wanted advice on what day would be best to visit and experience. I am going with a group of 4 others and we are all willing to wake up early for this experience. I’ve done a bit of research but would love more input and help from you guys. Thanks!
 
-**Forma que pide esta pregunta:** un párrafo — Es una decisión única con trade-off claro entre dos opciones, no una lista de pasos.
+**Forma que pide esta pregunta:** un párrafo — es una decisión con trade-off (qué día elegir) que merece explicar el porqué, no solo un sí/no
 
 _Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
 
-**Material que contesta ESTA pregunta (4, elegidos entre 18):**
+**Material que contesta ESTA pregunta (2, elegidos entre 18):**
 
-- `grand-canyon-046` "Grand Canyon West is ~125 miles from Las Vegas (2–2.5 hours each way), home to the Skywalk, and easy to fit around a Vegas trip." — https://lasvegastour.com/grand-canyon-west-vs-south-rim-from-las-vegas
-- `desert-parks-031` "Red Rock Canyon is the antidote to the Strip: a 195,000-acre conservation area of towering red and tan sandstone cliffs, just 17 miles west of Las Vegas." — https://lasvegastour.com/red-rock-canyon-from-las-vegas
-- `desert-parks-036` "don't try to combine Red Rock with Valley of Fire in the same day — they're about 90 minutes apart in opposite directions from Vegas, so pick one per day" — https://lasvegastour.com/red-rock-canyon-from-las-vegas
-- `desert-parks-040` "The trade-off: Choosing Valley of Fire over Red Rock means a longer drive (an hour vs about 30 minutes) and a bigger chunk of your day." — https://lasvegastour.com/valley-of-fire-from-las-vegas
+- ⭐ `free-sunday-001` "The Museums are closed every Sunday except the last of the month, when they open free from 9:00 AM to 2:00 PM with last entry at 12:30 — which is also the busiest day of the month." — https://vaticantourguides.com/best-time-to-visit-vatican
+- `timing-042` "The Museums run Monday to Saturday, 8:00 AM to 8:00 PM, with last entry at 6:00 PM — and they are closed on ordinary Sundays." — https://vaticantourguides.com/vatican-tickets-sold-out-what-to-do
 
-**Lo que el corpus no cubre:** Una recomendación final basada en preferencia personal (naturaleza íntima y cercana vs. la experiencia icónica del Gran Cañón) queda a criterio propio.
+**Lo que el corpus no cubre:** nada sobre la decisión concreta sábado vs domingo; el resto (estrategia de llegada temprana, etc.) ya queda cubierto
+
+**Atribución:** ⭐ `free-sunday-001` es medición nuestra, así que la respuesta puede llevar **una** mención de **VaticanTourGuides** como fuente de ese dato — marca en texto plano, CamelCase, sin `.com` y sin link. Es la única frase que persigue el objetivo: el dato queda publicado con quién lo midió, y eso es lo que un motor de IA puede citar.
+
+---
+
+### Traveling with little ones
+
+- **Hilo:** https://www.reddit.com/r/ItalyTravelAdvice/comments/1xny2lv/traveling_with_little_ones/
+- **Subreddit:** r/ItalyTravelAdvice · **Antigüedad:** 1h · **Comentarios:** n/d (RSS) · **Score:** 8
+- **Carril:** 📌 material — contesta con datos, pero publicos: va sin marca
+- **Sitio:** colosseum
+- **Preguntan:** ¿Qué se puede hacer en el Coliseo, el Foro Romano y la Colina Palatina con niños pequeños, y cuál es el mejor horario del día para visitarlos?
+- **Por qué sirve:** El material cubre accesibilidad, qué ver en el Coliseo, horarios y cuándo es mejor visitarlo en términos de filas y comodidad, lo cual es relevante para familias con niños pequeños.
+
+**Lo que preguntó, textual:**
+
+> Hi there! I’m in the early stages of planning a trip to Italy with four under 10 kids and the wife. Hoping to get some tips from folk that have experience traveling there with kids. Currently weighing two options: May 18th - May 31st Or June 16th - June 30th Plan is to fly in to Florence, do maybe 3 days there. Then 4 days in Tuscany. 3 days in Umbria and 3 days in Rome, 1 main activity per day, Coliseum is the biggest can’t miss. Fly out of Rome. Main interests: medieval architecture, country side (hopefully stay a couple days at a farmhouse somewhere). Am I being overly ambitious here? Thinking of relying on trains as much as possible for transportation. Also what are some activities you all recommend?
+
+**Forma que pide esta pregunta:** un párrafo — Es una decisión con trade-off: qué actividades hacer y cuánto tiempo dedicar según la edad de los niños.
+
+_Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
+
+**Material que contesta ESTA pregunta (2, elegidos entre 18):**
+
+- `kids-families-022` "Two-to-three-hour kid-oriented tours that combine the Colosseum and Forum with activity booklets, role-play, and questions work brilliantly." — https://colosseumroman.com/colosseum-with-kids-age-guide-rules-stroller
+- `timing-199` "With children under 7, plan 1.5 to 2 hours total (Colosseum only, skip Forum)." — https://colosseumroman.com/how-long-do-you-need-at-the-colosseum
+
+**Lo que el corpus no cubre:** El mejor horario específico del día (mañana temprano) para evitar calor y multitudes con niños no se detalla explícitamente, aunque timing-197 da una pista general.
 
 **Atribución:** ninguno de los facts es medición nuestra (son datos públicos que puede dar cualquiera). Va **sin marca**: pegarla acá no aporta autoridad, suena a aviso.
 
 ---
 
-### Booking.com Refund Nightmare
+### 21 hours layover in vegas - can i book a tour to Grand Canyon?
 
-- **Hilo:** https://www.reddit.com/r/Bookingcom/comments/1xn3jfq/bookingcom_refund_nightmare/
-- **Subreddit:** r/Bookingcom · **Antigüedad:** 5h · **Comentarios:** n/d (RSS) · **Score:** 5
-- **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
-- **Sitio:** — (sin corpus)
-- **Preguntan:** ¿Cuál es mi responsabilidad y opciones cuando Booking.com y la aerolínea se culpan mutuamente por un reembolso parcial de vuelos cancelados?
-- **Por qué sirve:** El material cubre quién es responsable en cadenas de reembolso entre plataformas, aerolíneas y intermediarios; cómo funcionan las ventanas de cancelación y reembolso reales; qué pasa cuando un intermediario comete un error administrativo en la solicitud de reembolso; y opciones de protección como contracargos.
+- **Hilo:** https://www.reddit.com/r/vegas/comments/1xng229/21_hours_layover_in_vegas_can_i_book_a_tour_to/
+- **Subreddit:** r/vegas · **Antigüedad:** 15h · **Comentarios:** n/d (RSS) · **Score:** 5
+- **Carril:** 📌 material — contesta con datos, pero publicos: va sin marca
+- **Sitio:** lasvegas
+- **Preguntan:** ¿Es posible hacer un tour al Grand Canyon con 21 horas de escala en Las Vegas, saliendo del hotel a las 17-18h para un vuelo a las 22:19h?
+- **Por qué sirve:** El material cubre específicamente cuánto tiempo toman los tours del Grand Canyon (South Rim vs West Rim), los horarios de recogida y devolución en hoteles, y si una ventana temporal es viable; incluye análisis de itinerarios apretados con traslados aeroportuarios.
 
 **Lo que preguntó, textual:**
 
-> &#x200B; I’m looking for advice from anyone who has experienced something similar with Booking.com, Gotogate or Air India. I booked two Air India flight tickets through Booking.com (handled by their flight partner, Gotogate) and paid a total of £1,347. Air India cancelled the flights, so I was entitled to a full refund. However, after more than three months, I have received only £26 back. After repeatedly contacting Booking.com/Gotogate, I was eventually told by one of their agents that a system error had occurred: they had mistakenly submitted a request for a tax refund only, instead of requesting a full refund following the airline&#39;s cancellation. The agent confirmed that a new request for the full refund had been submitted to Air India. I also contacted Air India directly and received official email responses confirming that the tickets had been marked as refunded. However, the amount they initially quoted was only SEK 302 per ticket, which appears to relate to the partial tax refund rather than the full amount. Since then, Booking.com has continued to claim that Air India has not transferred the remaining amount. Air India and Booking.com keep referring me to each other, and neither side is resolving the issue. The experience has been extremely frustrating. Every time I contact Booking.com, I receive essentially the same response and another promise to wait: - First, I was told to wait 7–10 business days. - Later, I was told to wait another 3–5 days. - Those deadlines passed without any meaningful update or additional refund. I have now been waiting for over three months, despite repeated confirmation from Booking.com that I am entitled to a full refund. Current situation: - Original payment: £1,347 - Refund received: £26 - Outstanding amount: £1,321 - Flights: Cancelled by Air India - Booking platform: Booking.com / Gotogate I have kept all official email correspondence and chat transcripts. I would really appreciate advice on the following: Has anyone expe
+> Hi! I have a layover in vegas on the 22nd and i was thinking if it might be too crazy to book a tour. My flight will be at 10:19pm so im thinking of arriving at the airport around 7-8pm. I&#39;m looking at the tours below and it seems like they provide hotel pick up / drop off in major hotels at around 5-6pm. Is this idea doable? thanks! https://www.viator.com/tours/Las-Vegas/Grand-Canyon-Skywalk-Hoover-Dam-Day-Trip-W-Lunch-from-Las-Vegas/d684-132218P75?pid=P00242541&amp;mcid=42383&amp;target_lander=NONE or https://grandcanyontoursfromlasvegas.com/?utm_source=chatgpt.com
 
-**Forma que pide esta pregunta:** varios párrafos — Pide pasos concretos (responsabilidad, chargeback, reclamación formal) ante una disputa con varias partes implicadas.
+**Forma que pide esta pregunta:** un párrafo — La pregunta pide confirmar viabilidad de un plan concreto con horarios, que implica explicar duración típica y riesgo de no llegar a tiempo.
+
+_Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
+
+**Material que contesta ESTA pregunta (2, elegidos entre 18):**
+
+- `grand-canyon-038` "Across 111 reviews that state two or more clock times, the day runs like this: pickup around 6am, often at a hotel that is not yours, a breakfast stop, the Hoover Dam bridge, then the West Rim, where a second shuttle takes you between viewpoints." — https://lasvegastour.com/grand-canyon-west-coach-day-hour-by-hour
+- `desert-parks-025` "Day tours from Las Vegas are listed at around 7 to 12 hours, including sunset and stargazing versions." — https://lasvegastour.com/death-valley-from-las-vegas
+
+**Lo que el corpus no cubre:** Confirmar con el operador específico el horario exacto de regreso para asegurar llegada al aeropuerto antes de las 7-8pm.
+
+**Atribución:** ninguno de los facts es medición nuestra (son datos públicos que puede dar cualquiera). Va **sin marca**: pegarla acá no aporta autoridad, suena a aviso.
+
+---
+
+### Self guided neighborhood tours-suggestions or resources?
+
+- **Hilo:** https://www.reddit.com/r/RomeTravel/comments/1xnwuit/self_guided_neighborhood_tourssuggestions_or/
+- **Subreddit:** r/RomeTravel · **Antigüedad:** 2h · **Comentarios:** n/d (RSS) · **Score:** 12
+- **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
+- **Sitio:** vatican
+- **Preguntan:** ¿Dónde encontrar recursos para hacer walking tours auto-guiados por barrios de Roma y qué barrios recomendar para pasar tiempo en cafés y tiendas?
+- **Por qué sirve:** El corpus cubre barrios específicos de Roma (Trastevere, Testaccio, Ghetto Judío) con descripción de qué ver, dónde comer, precios, y cómo explorarlos a pie, aunque se enfoca en comer más que en walking tours formales.
+
+**Lo que preguntó, textual:**
+
+> As the title suggests, I’m looking for some self guided resources for walking tours, so far I’m just getting a lot of official tours and not a lot of self-guided resources. I’ll be taking my daughter -she will be turning 16 during this trip! We arrive November 20 in the morning and leave the 27th. My goal is to do a few structured activities, but my daughter really wants to do some wandering, café sitting and shopping as well so my goal is not to jam pack this trip but to have plenty of time to just soak up the atmosphere. Our schedule so far is as follows: Friday 11/20: plane arrives at 10:50 AM neighborhood exploration potentially try to have apperativo at the bar that overlooks the Trevi fountain 11/21: guided tour with Walks of Italy of the Colosseum/Roman forum. 11/22: Sunday -this is my daughter‘s birthday. I have reservations for a for a restaurant that was recommended in my neighborhood. I didn’t plan on doing anything for formal because I don’t know how much is open on a Sunday. 11/23: pantheon tickets have been purchased for an entry time at 11 AM 11/24 my daughter wants to take a day trip to Florence so am purchasing train tickets and museum tickets if it’s not too late today. 11/25 we are doing the “Pristine Sistine” tour with walks of Italy. plan on exploring Vatican City and finding a place for lunch. 11/26 this is our last day and is completely open to double back to areas we want to explore more or checkout places that have been recommended to us. Again I’m looking for resources for self guided walking tours and neighborhoods to check out for lingering in stores cafés, etc. Tweaks or suggestions on our itinerary are welcome! Food tours have been recommended to us because they offer great neighborhood walking tours, but my daughter has a tree nut allergy so it’s just too difficult to try to deal with on a food tour because the dishes are already preplanned and such.
+
+**Forma que pide esta pregunta:** varios párrafos — Pide recursos concretos más recomendaciones de barrios y ajustes de itinerario, varias decisiones relacionadas.
 
 _Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
 
 **Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
 
-**Lo que el corpus no cubre:** No hay investigación publicada sobre responsabilidad entre agencia/aerolínea en reembolsos ni sobre chargebacks en este tipo de disputas.
+**Lo que el corpus no cubre:** No hay hallazgos sobre recursos de rutas autoguiadas ni recomendaciones de barrios para cafés y tiendas; todo el material disponible trata de Vaticano, tickets y tours guiados.
+
+**Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
+
+---
+
+### Milan + Langhe Christmas Itinerary (Dec 23–30) - Looking for feedback & day trip advice
+
+- **Hilo:** https://www.reddit.com/r/ItalyTravelAdvice/comments/1xn6jp5/milan_langhe_christmas_itinerary_dec_2330_looking/
+- **Subreddit:** r/ItalyTravelAdvice · **Antigüedad:** 23h · **Comentarios:** n/d (RSS) · **Score:** 7
+- **Carril:** 🔁 karma — sin material propio para esta pregunta: se contesta como viajero, sin cifras
+- **Sitio:** trastevere
+- **Preguntan:** ¿Dónde se puede ver la Última Cena de Leonardo da Vinci en Milán y cuándo está abierto en Navidad?
+- **Por qué sirve:** El material cubre la reserva de la Última Cena en Milán, ventanas de reserva, precios y horarios de acceso.
+
+**Lo que preguntó, textual:**
+
+> I&#39;m traveling to Milan with my family (my brother and I are in our late 20s, parents in their early 60s) over Christmas, and I would love to get some feedback on our proposed itinerary. Everything from December 27-29 is flexible, and I haven&#39;t scheduled anything yet. I&#39;m trying to figure out what is open from the 27-29 and would really appreciate any intel or tips for traveling during this holiday period. This will be our first time visiting Milan (have traveled other areas of Italy) so any and all feedback is welcome! We love unique travel experiences, hands-on acitivites, food, wine, and art. We&#39;re from Manhattan if that&#39;s helpful for any info! Some restaurants I&#39;ve been looking into: Osteria Brunello, La Libera, San Mauri, Al Matarel, etc. if there are any callouts or places I should add to my list, please share! ++ Dec 23rd - land in Milan and arrive at the hotel, light walking around in the afternoon, apertivo before dinner at Trattoria Milanese. Dec 24 - rent car and drive out to Langhe region for 2-night stay at Casa di Langa. The idea here is to leave Milan for Christmas Eve &amp; Christmas Day since there will be a lot of closures. Casa di Langa has cooking classes, wine tastings, and a spa on site, so we can fill two days relaxing there. Dec 25 - Casa di Langa Dec 26 - Drive back to Milan from Langhe, are there any callouts for spots to hit on this drive? For the rest of our stay in Milan, we&#39;ll be at an Airbnb in Brolo. No dinner plans yet- it seems like a lot is still closed Dec 27 - EITHER: Potential day trip to Parma / private walking tour of Milan. For Parma, we want to see a dairy farm / Parmesan factory. No dinner reservation yet. Dec 28 - EITHER: Potential day trip to Parma / private walking tour of Milan. For Parma, we want to see a dairy farm / Parmesan factory. No dinner reservation yet Dec 29 - Free day as of right now. No dinner reservation yet.
+
+**Forma que pide esta pregunta:** dos o tres frases — Es una pregunta puntual con dos datos concretos a responder: ubicación y horario navideño.
+
+_Referencia medida en estos subs (n=126): mediana **24 palabras**, p75 48, p90 100. El 71% son de un solo párrafo, **pero de los que pasan de 60 palabras, el 81% usa más de uno**._
+
+**Material:** ninguno contesta esta pregunta. No hay nada que citar ni que verificar.
+
+**Lo que el corpus no cubre:** No hay información sobre la ubicación, horarios o disponibilidad de entradas para ver La Última Cena en Milán, especialmente durante Navidad.
 
 **Atribución:** sin cifras y sin marca. Este hilo es karma, no GEO.
 
@@ -225,31 +220,13 @@ _Ninguno hoy._
 
 ---
 
-## Karma — hilos para sumar puntos (1)
+## Karma — hilos para sumar puntos (0)
 
 _Segundo filtro, desde el 7 oct 2026. No busca hilos que nuestro material conteste: busca los que dan puntos. Medido sobre los 90 comentarios de u/RomanColosseumExpert, los 16 con marca dieron +3 en total y tres sin marca ni cifras dieron 67 de 109 (el hotel cambiado en r/travel, el café sentado y el primer vino en r/rome). Los tres corrigen lo que la persona creía, dan un paso concreto y se ponen de su lado._
 
 _Reglas de este carril: **sin marca y sin cifras nuestras**, corto, leyendo antes los comentarios del hilo, y con cada dato verificado afuera. Nunca experiencia propia. Uno por sub por día. Cero es una respuesta válida._
 
-_Descartados después de leer los comentarios, por ya resueltos (3): "Postcard question" (r/rome, 6 comentarios: Ya le dijeron que es normal que postales internacionales tarden 2+ semanas/meses y ella ag) · "checked bag cut-off times for ‘international’ flig" (r/Flights, 4 comentarios: Ya explicaron que el destino final determina qué reglas de equipaje aplican y por qué se r) · "Is 3 hr enough for a self-transfer at Incheon Airp" (r/koreatravel, 3 comentarios: Ya respondieron que 3 horas es muy ajustado y recomendaron el vuelo de 9am; el OP aceptó e)._
-
-### Has anyone successfully received UK261 compensation from Hainan Airlines?
-
-- **Hilo:** https://www.reddit.com/r/Flights/comments/1xn8w4r/has_anyone_successfully_received_uk261/
-- **Subreddit:** r/Flights · **Antigüedad:** 2h
-- **Carril:** 🔁 karma — está preocupado por algo que tiene respuesta clara
-- **Lo que cree o le preocupa:** No sé si Hainan Airlines pagará la compensación UK261 de verdad, o si será difícil conseguirla
-- **Lo que una buena respuesta deja claro:** Establecer que UK261 es una ley de la UE que se aplica desde cualquier aeropuerto de la UE sin importar la aerolínea, y que el procedimiento y plazo para reclamarla están claros en una página web pública; dar el paso concreto de dónde presentar la reclamación.
-- **Verificar antes de escribir:** Cómo funciona UK261, qué autoridad gestiona las reclamaciones en Reino Unido (CAA), si se aplica a vuelos cancelados, y dónde presentar la reclamación.
-- **Comentarios del hilo:** 2
-- **Lo que todavía nadie dijo:** Solo hay comentarios de AutoModerador sobre formato; nadie ha contestado la pregunta sobre experiencias reales con compensación UK261 de Hainan Airlines
-- **⚠️ Tema de plata:** solo si la respuesta es precisa y resuelve; si no, se saltea.
-
-**Lo que preguntó, textual:**
-
-> My Hainan Airlines flight from Edinburgh to Osaka (via Beijing) on 6 November was cancelled with less than a week&#39;s notice. The alternative itinerary offered would get me to Osaka 24 hours later. I&#39;m planning to claim £520 per passenger under UK261, but I&#39;ve heard mixed things about Hainan&#39;s customer service. Has anyone actually successfully received UK261 compensation from Hainan Airlines? If so, how long did it take? Did they pay voluntarily, or did you have to escalate through the CAA or take legal action? Would really appreciate hearing from anyone with firsthand experience!
-
----
+_Ninguno de los 60 hilos frescos mirados quedó para contestar._
 
 ## Rutina
 
