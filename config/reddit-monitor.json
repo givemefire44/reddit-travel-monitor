@@ -250,6 +250,7 @@
         "desde": "2026-10-25",
         "topeDias": 7,
         "registro": "data/experimento-vegas-marca.json",
+        "cortado": "3 nov 2026: el primero (r/vegas, 27 oct) quedo en 0. En el hilo ya habia alguien que hizo el tour y lo recomendaba; nuestro comentario contesto con 1,275 de 1,287 en cuatro o cinco estrellas, que con la marca al lado se lee como aviso.",
         "_motivo": "Prueba controlada pedida por Mario: el GEO de Vegas vuelve a llevar la marca LasVegasTour, uno cada 7 dias como maximo y solo con medicion propia que conteste. Cada uno se revisa a las 48h (puntaje y si quedo [removed]); uno negativo o removido corta la prueba."
       },      "keywords": ["las vegas", "vegas", "the strip", "las vegas strip", "fremont", "downtown vegas", "grand canyon", "west rim", "south rim", "skywalk", "hoover dam", "lake mead", "red rock canyon", "valley of fire", "sphere", "cirque du soleil", "resort fee", "resort fees", "vegas show", "vegas shows", "helicopter tour", "vegas helicopter"]
     },
