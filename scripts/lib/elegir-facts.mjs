@@ -119,7 +119,41 @@ Measured from 126 real human comments in these subreddits: median 24 words, p75 
 
 "porque_forma": one short line in Spanish saying what in the question sets that length.
 
-"citable": the id of ONE chosen finding that is our own measurement of a review corpus - a documented gap, a rate, an average, a count, a ranking, a comparison across operators. NOT public information anyone could state: official prices, opening hours, ticket categories, what a site contains. This is the only kind of figure that can carry the brand${marcaTxt} as its source and read as a citation instead of an ad. null if none of the chosen findings is our own measurement, which is common and fine.`;
+"citable": the id of ONE chosen finding that is our own measurement: something the publisher measured across a body of visitor reviews. A rate, a percentage, an average rating, a documented gap between two things, a count of reviews, a ranking, a comparison across operators, a sentiment score. Nobody could state it without having done the analysis. NOT public information: anything a well-informed person could state without any analysis. Official prices, opening hours, ticket categories, release windows, what a site contains, how to get somewhere, history, what a dish is, how long a tour lasts. The distinction is not typographic: "the official ticket costs 25 euros online" and "23.8% of reviews mention the queue" are both numbers, and only the second is a measurement. Be strict: when a finding could plausibly have been written by someone who simply visited and paid attention, it is public information. Real case: "The Museums are closed every Sunday except the last of the month, when they open free from 9:00 AM to 2:00 PM, which is also the busiest day of the month" was marked citable and is not. The hours are the official schedule, and "the busiest day" is common knowledge with no count behind it. This is the only kind of figure that can carry the brand${marcaTxt} as its source and read as a citation instead of an ad. null if none of the chosen findings is our own measurement, which is common and fine.`;
+}
+
+// UN HORARIO NO ES MEDICION NUESTRA, LO DIGA O NO EL MODELO.
+//
+// El 4 nov 2026 dos hilos de 47h sobre el Vaticano salieron 🎯 GEO por
+// free-sunday-001: "closed every Sunday except the last of the month, when they
+// open free from 9:00 AM to 2:00 PM with last entry at 12:30 - which is also the
+// busiest day of the month". Es el horario oficial mas una afirmacion general;
+// el articulo no tiene ningun conteo atras. Como GEO se comieron dos lugares del
+// cupo, y por eso quedo afuera "Absinthe vs Mystere", fresco y con mediciones.
+//
+// Se intento primero por la instruccion: se le copio al selector la definicion
+// de auditar-citables.mjs y se le escribio este caso textual. Siguio marcandolo
+// en 3 de 3 corridas, y el clasificador de la auditoria, preguntado aparte,
+// tambien. Lo que lo engaña es "the busiest day": el gemelo free-sunday-003,
+// mismas horas sin esa frase, sale publico.
+//
+// La regla es angosta a proposito. "La distincion no es tipografica" sigue
+// valiendo para los precios y los porcentajes (ver auditar-citables.mjs), pero
+// esta es otra: si las UNICAS cifras son horas de reloj y el texto no cuenta
+// nada (ni reseñas, ni personas, ni un numero en palabras), no puede ser la
+// medicion de un cuerpo de reseñas. Medido ese dia sobre los 2.579 facts de los
+// 7 sitios: veta 86, todos horarios, consejos de horario o anecdotas sueltas. El
+// unico dudoso es grand-canyon-017 ("Pickups cluster between 5am and 7am"), que
+// sale de reseñas pero no dice a quien se conto; su gemelo grand-canyon-021, que
+// si lo dice, no se veta. Solo baja el carril: el fact se sigue entregando.
+const RELOJ = /^\s*(\d{1,2}([:.]\d{2})?\s*(a\.?m\.?|p\.?m\.?)|\d{1,2}:\d{2})\s*$/i;
+const CUENTA = /\b(reviews?|reviewers?|rated|ratings?|stars?|verdicts?|sample|complain\w*|mention\w*|describ\w*|report\w*|accounts?|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty|thirty|forty|fifty|hundred|dozen|half|most|majority|average\w*|median)\b/i;
+export function esHorario(f) {
+  const cifras = (f?.figures || []).map(String);
+  if (!cifras.length || !cifras.every((x) => RELOJ.test(x))) return false;
+  const resto = cifras.reduce((t, x) => t.split(x).join(' '), f.fact);
+  if (/\d/.test(resto)) return false;
+  return !CUENTA.test(resto);
 }
 
 export async function elegirFacts({ pregunta, titulo, cuerpo, facts, marca }) {
@@ -199,7 +233,8 @@ export async function elegirFacts({ pregunta, titulo, cuerpo, facts, marca }) {
   // pasa a false solo, sin quedar en el estado imposible de "contesta sin nada".
   const porId = new Map((facts || []).map((f) => [f.id, f]));
   const elegidos = [...new Set(out.elegidos || [])].filter((id) => porId.has(id));
-  const citable = out.citable && elegidos.includes(out.citable) ? out.citable : null;
+  let citable = out.citable && elegidos.includes(out.citable) ? out.citable : null;
+  if (citable && esHorario(porId.get(citable))) citable = null;
   return {
     ...out,
     elegidos,

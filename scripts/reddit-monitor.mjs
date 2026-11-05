@@ -1025,7 +1025,24 @@ function freshnessBonus(ageHours) {
 }
 
 // Terminos de contenido de un texto, para comparar pregunta contra fact.
-const terminos = (s) => (s.toLowerCase().match(/[a-z][a-z'-]{3,}/g) || []);
+//
+// DOS COSAS QUE ESTO NO HACIA, y las dos se midieron el 4 nov 2026 con
+// "Absinthe vs Mystere" (r/vegas). El juez lo aprobo, el corpus tiene 13 facts
+// que nombran esos dos shows, y a la lista corta llegaron 3. El resto eran el
+// monorriel, un campo de tiro y Valley of Fire.
+//
+// Una: las palabras funcionales puntuaban como contenido. El IDF sale de la
+// rareza en el corpus, y en 550 facts "during" (4 facts) pesa 4.9 y "less"
+// 4.1, lo mismo que "absinthe" (9 facts, 4.1). El fact del monorriel juntaba
+// "vegas" + "from" + "during" y le ganaba a cualquiera que solo dijera
+// Absinthe. Una palabra que no dice de que se habla no puede ordenar por tema.
+//
+// Dos: los acentos cortaban la palabra. Los facts dicen "Mystère" y la gente
+// escribe "Mystere"; con [a-z] lo del fact quedaba en "myst" y no matcheaba
+// nunca. Pasa con KÀ, supplì, Colosseo/Mystère y todo lo que venga de Seul.
+const STOP_LEXICO = new Set(('also anyone another anything around back been before being best both cant come could didnt does doing done dont down during each even every from gets getting give going good have having here into just know least less like looking lots made make many maybe more most much must need never next only other others over plan planning please really recommend recommendation recommendations same should since some something still such sure take than thank thanks that thats them then there these they thing things think this those through time times today tomorrow trip very visit visiting want wanted week well were what when where which while will with without would year years your youre'.split(' ')));
+const sinAcentos = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '');
+const terminos = (s) => (sinAcentos(s.toLowerCase()).match(/[a-z][a-z'-]{3,}/g) || []).filter((t) => !STOP_LEXICO.has(t));
 
 // Cuanto pesa cada palabra dentro del corpus de un sitio. "ticket" aparece en
 // 277 de los 873 facts del Coliseo y no distingue nada; "released" aparece en un

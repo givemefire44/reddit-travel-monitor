@@ -52,8 +52,11 @@ const SCHEMA = {
   additionalProperties: false,
 };
 
-// Misma definicion, palabra por palabra, que el campo "citable" del selector.
-// Si las dos se separan, el sistema audita una cosa y publica otra.
+// Misma definicion que el campo "citable" del selector (lib/elegir-facts.mjs).
+// Si las dos se separan, el sistema audita una cosa y publica otra. Ya paso: el
+// 4 nov 2026 la del selector era una version corta sin el "be strict" ni la
+// lista larga de informacion publica, y marco GEO un horario oficial de los
+// Museos Vaticanos en dos hilos. Se le copio esta y se le sumo ese caso.
 const PROMPT = `You are sorting published research findings into two buckets.
 
 OWN MEASUREMENT: something the publisher measured across a body of visitor reviews. A rate, a percentage, an average rating, a documented gap between two things, a count of reviews, a ranking, a comparison across operators, a sentiment score. Nobody could state it without having done the analysis.
