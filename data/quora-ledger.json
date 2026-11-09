@@ -793,12 +793,16 @@
       "titleNormalized": "how to visit pompeii from naples",
       "site": "pompeii",
       "sourceSlugs": [
-        "how-to-get-to-pompeii-from-rome-naples-and-sorrento",
-        "complete-guide-to-visiting-pompeii-everything-you-need-to-know"
+        "complete-guide-to-visiting-pompeii-everything-you-need-to-know",
+        "pompeii-and-herculaneum-how-to-visit-both-and-which-is-better",
+        "how-to-get-to-pompeii-from-rome-naples-and-sorrento"
       ],
       "shingles": [],
-      "generatedAt": "2026-09-17",
-      "estado": "entregado"
+      "generatedAt": "2026-11-09",
+      "estado": "entregado",
+      "entregasPrevias": [
+        "2026-09-17"
+      ]
     },
     {
       "questionUrl": "https://www.quora.com/How-long-does-it-take-to-walk-around-Pompeii",
@@ -924,12 +928,14 @@
       "titleNormalized": "what are some recommended places to eat in rome that are not tourist traps",
       "site": "trastevere",
       "sourceSlugs": [
-        "is-trastevere-food-tour-worth-it",
-        "trastevere-restaurant-recommendations-same-five"
+        "is-trastevere-food-tour-worth-it"
       ],
       "shingles": [],
-      "generatedAt": "2026-09-20",
-      "estado": "entregado"
+      "generatedAt": "2026-11-09",
+      "estado": "entregado",
+      "entregasPrevias": [
+        "2026-09-20"
+      ]
     },
     {
       "questionUrl": "https://www.quora.com/What-should-I-know-about-visiting-Pompeii",
@@ -1312,11 +1318,14 @@
       "site": "trastevere",
       "sourceSlugs": [
         "is-trastevere-food-tour-worth-it",
-        "trastevere-vs-rome-food-neighborhoods"
+        "trastevere-bill-extra-charges-tap-water"
       ],
       "shingles": [],
-      "generatedAt": "2026-09-26",
-      "estado": "entregado"
+      "generatedAt": "2026-11-09",
+      "estado": "entregado",
+      "entregasPrevias": [
+        "2026-09-26"
+      ]
     },
     {
       "questionUrl": "https://www.quora.com/Foodies-Where-is-best-place-to-eat-off-the-beaten-path-in-Rome",
@@ -1350,13 +1359,15 @@
       "titleNormalized": "how to save money on food in rome",
       "site": "trastevere",
       "sourceSlugs": [
-        "is-trastevere-food-tour-worth-it",
-        "roman-street-food-glossary",
-        "trastevere-vs-rome-food-neighborhoods"
+        "trastevere-food-tour-cost",
+        "is-trastevere-food-tour-worth-it"
       ],
       "shingles": [],
-      "generatedAt": "2026-09-27",
-      "estado": "entregado"
+      "generatedAt": "2026-11-09",
+      "estado": "publicada",
+      "entregasPrevias": [
+        "2026-09-27"
+      ]
     },
     {
       "questionUrl": "https://www.quora.com/I-have-a-7-hour-cruise-stop-in-Naples-Should-I-go-to-Sorrento-Pompeii-or-just-tour-Naples",
@@ -1970,6 +1981,20 @@
       "generatedAt": "2026-10-12",
       "estado": "publicada",
       "origen": "manual"
+    },
+    {
+      "questionUrl": "https://www.quora.com/What-are-some-things-to-do-at-night-on-The-Strip-in-Las-Vegas-besides-gamble-and-clubbing",
+      "questionTitle": "What are some things to do at night on The Strip in Las Vegas besides gamble and clubbing?",
+      "titleNormalized": "what are some things to do at night on the strip in las vegas besides gamble and clubbing",
+      "site": "lasvegas",
+      "sourceSlugs": [
+        "las-vegas-helicopter-tours-which-worth-it",
+        "cartzilla-las-vegas-shopping-cart-tour",
+        "how-to-get-around-las-vegas"
+      ],
+      "shingles": [],
+      "generatedAt": "2026-11-09",
+      "estado": "entregado"
     }
   ]
 }
