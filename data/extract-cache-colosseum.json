@@ -12370,18 +12370,19 @@
       "candidatos": []
     },
     "the-eur18-colosseum-ticket-that-costs-usd174": {
-      "hash": "e1c34055ebd3478ff8d51d32f71607608007b2332236672e1269dfb87905f47a",
+      "hash": "1f10943e8dcc0c00672e023b5c5d93a265651eadfe768084dc7f10fa35c3da35",
       "candidatos": [
         {
-          "fact": "The average Colosseum visitor pays $174 for an €18 ticket.",
+          "fact": "The average Colosseum tour is listed at $174, against an €18 ticket.",
           "figures": [
-            "174",
-            "18"
+            "$174",
+            "€18"
           ],
           "topics": [
             "pricing",
             "tickets"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "The Colosseum admits over 41,000 visitors per day — roughly one ticket scanned every 0.7 seconds.",
@@ -12391,8 +12392,9 @@
           ],
           "topics": [
             "crowds",
-            "logistics"
-          ]
+            "timing"
+          ],
+          "scale": null
         },
         {
           "fact": "The Colosseum has 76 tours.",
@@ -12402,20 +12404,81 @@
           "topics": [
             "tickets",
             "operators"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "The median tour price is consistently 30–50% lower than the average at every monument ($99 vs $174 at the Colosseum, $128 vs $194 at the Louvre).",
+          "fact": "Top 3 operators control 18%.",
           "figures": [
-            "30–50%",
-            "$99",
-            "$174",
-            "$128",
-            "$194"
+            "18%"
+          ],
+          "topics": [
+            "operators",
+            "pricing"
+          ],
+          "scale": "The Colosseum has 76 tours."
+        },
+        {
+          "fact": "No single company exceeds 8%.",
+          "figures": [
+            "8%"
+          ],
+          "topics": [
+            "operators",
+            "pricing"
+          ],
+          "scale": "The Colosseum has 76 tours."
+        },
+        {
+          "fact": "The Last Supper (€15 ticket → 9.4x), Pompeii (€18 → 8.6x), and the Colosseum (€18 → 8.5x) cluster at one end.",
+          "figures": [
+            "€15",
+            "9.4x",
+            "€18",
+            "8.6x",
+            "8.5x"
+          ],
+          "topics": [
+            "pricing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The Sagrada Familia (€26 → 4.4x) sits at the other.",
+          "figures": [
+            "€26",
+            "4.4x"
           ],
           "topics": [
             "pricing"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The official ticket is €18. According to Intercoper's analysis of 505 tours across 5 European monuments (prices tracked biweekly since January 2025), the average Colosseum tour costs $174 — a 8.5x markup.",
+          "figures": [
+            "€18",
+            "505",
+            "5",
+            "$174",
+            "8.5x"
+          ],
+          "topics": [
+            "pricing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The median is $99.",
+          "figures": [
+            "$99"
+          ],
+          "topics": [
+            "pricing"
+          ],
+          "scale": "The average Colosseum tour is listed at $174, against an €18 ticket."
         }
       ]
     },

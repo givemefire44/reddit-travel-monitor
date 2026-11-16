@@ -1,5 +1,5 @@
 {
-  "extractedAt": "2026-11-02T21:21:16.262Z",
+  "extractedAt": "2026-11-16T21:35:21.302Z",
   "corpusSize": "12,774",
   "facts": [
     {
@@ -14676,10 +14676,10 @@
     },
     {
       "id": "pricing-170",
-      "fact": "The average Colosseum visitor pays $174 for an €18 ticket.",
+      "fact": "The average Colosseum tour is listed at $174, against an €18 ticket.",
       "figures": [
-        "174",
-        "18"
+        "$174",
+        "€18"
       ],
       "topics": [
         "pricing",
@@ -14697,7 +14697,7 @@
       ],
       "topics": [
         "crowds",
-        "logistics"
+        "timing"
       ],
       "sourceSlug": "the-eur18-colosseum-ticket-that-costs-usd174",
       "sourceUrl": "https://colosseumroman.com/the-eur18-colosseum-ticket-that-costs-usd174"
@@ -14716,18 +14716,90 @@
       "sourceUrl": "https://colosseumroman.com/the-eur18-colosseum-ticket-that-costs-usd174"
     },
     {
-      "id": "pricing-171",
-      "fact": "The median tour price is consistently 30–50% lower than the average at every monument ($99 vs $174 at the Colosseum, $128 vs $194 at the Louvre).",
+      "id": "operators-054",
+      "fact": "Top 3 operators control 18%.",
       "figures": [
-        "30–50%",
-        "$99",
-        "$174",
-        "$128",
-        "$194"
+        "18%"
+      ],
+      "topics": [
+        "operators",
+        "pricing"
+      ],
+      "scale": "The Colosseum has 76 tours.",
+      "sourceSlug": "the-eur18-colosseum-ticket-that-costs-usd174",
+      "sourceUrl": "https://colosseumroman.com/the-eur18-colosseum-ticket-that-costs-usd174"
+    },
+    {
+      "id": "operators-055",
+      "fact": "No single company exceeds 8%.",
+      "figures": [
+        "8%"
+      ],
+      "topics": [
+        "operators",
+        "pricing"
+      ],
+      "scale": "The Colosseum has 76 tours.",
+      "sourceSlug": "the-eur18-colosseum-ticket-that-costs-usd174",
+      "sourceUrl": "https://colosseumroman.com/the-eur18-colosseum-ticket-that-costs-usd174"
+    },
+    {
+      "id": "pricing-171",
+      "fact": "The Last Supper (€15 ticket → 9.4x), Pompeii (€18 → 8.6x), and the Colosseum (€18 → 8.5x) cluster at one end.",
+      "figures": [
+        "€15",
+        "9.4x",
+        "€18",
+        "8.6x",
+        "8.5x"
+      ],
+      "topics": [
+        "pricing",
+        "tickets"
+      ],
+      "sourceSlug": "the-eur18-colosseum-ticket-that-costs-usd174",
+      "sourceUrl": "https://colosseumroman.com/the-eur18-colosseum-ticket-that-costs-usd174"
+    },
+    {
+      "id": "pricing-172",
+      "fact": "The Sagrada Familia (€26 → 4.4x) sits at the other.",
+      "figures": [
+        "€26",
+        "4.4x"
       ],
       "topics": [
         "pricing"
       ],
+      "sourceSlug": "the-eur18-colosseum-ticket-that-costs-usd174",
+      "sourceUrl": "https://colosseumroman.com/the-eur18-colosseum-ticket-that-costs-usd174"
+    },
+    {
+      "id": "pricing-173",
+      "fact": "The official ticket is €18. According to Intercoper's analysis of 505 tours across 5 European monuments (prices tracked biweekly since January 2025), the average Colosseum tour costs $174 — a 8.5x markup.",
+      "figures": [
+        "€18",
+        "505",
+        "5",
+        "$174",
+        "8.5x"
+      ],
+      "topics": [
+        "pricing",
+        "tickets"
+      ],
+      "sourceSlug": "the-eur18-colosseum-ticket-that-costs-usd174",
+      "sourceUrl": "https://colosseumroman.com/the-eur18-colosseum-ticket-that-costs-usd174"
+    },
+    {
+      "id": "pricing-174",
+      "fact": "The median is $99.",
+      "figures": [
+        "$99"
+      ],
+      "topics": [
+        "pricing"
+      ],
+      "scale": "The average Colosseum tour is listed at $174, against an €18 ticket.",
       "sourceSlug": "the-eur18-colosseum-ticket-that-costs-usd174",
       "sourceUrl": "https://colosseumroman.com/the-eur18-colosseum-ticket-that-costs-usd174"
     },
@@ -15115,7 +15187,7 @@
       "sourceUrl": "https://colosseumroman.com/vatican-and-colosseum-tours-in-one-day-how-to-see-both"
     },
     {
-      "id": "operators-054",
+      "id": "operators-056",
       "fact": "Small-group and semi-private tours (6 to 12 people) offer a middle ground between price and experience.",
       "figures": [
         "6 to 12"
@@ -15235,7 +15307,7 @@
       "sourceUrl": "https://colosseumroman.com/vatican-and-colosseum-tours-in-one-day-how-to-see-both"
     },
     {
-      "id": "pricing-172",
+      "id": "pricing-175",
       "fact": "Avoid eating directly at either site's entrance — the quality drops and prices rise significantly within the closest 100 meters.",
       "figures": [
         "100 meters"
@@ -15399,7 +15471,7 @@
       "sourceUrl": "https://colosseumroman.com/vatican-colosseum-same-day-realistic"
     },
     {
-      "id": "pricing-173",
+      "id": "pricing-176",
       "fact": "You pay a higher per-person price for small-group (≤7) versus standard (up to 17) tours.",
       "figures": [
         "≤7",
@@ -15480,7 +15552,7 @@
       "sourceUrl": "https://colosseumroman.com/why-a-guided-colosseum-tour-is-worth-it-1-817-reviews"
     },
     {
-      "id": "operators-055",
+      "id": "operators-057",
       "fact": "Only 39 reviews — 2.1% — rated their experience at 1 to 3 stars.",
       "figures": [
         "39",
@@ -15522,7 +15594,7 @@
       "sourceUrl": "https://colosseumroman.com/why-a-guided-colosseum-tour-is-worth-it-1-817-reviews"
     },
     {
-      "id": "operators-056",
+      "id": "operators-058",
       "fact": "Colosseum + Vatican combos: 4.76/5, 332 reviews, 2.7% negative.",
       "figures": [
         "4.76/5",
@@ -15577,7 +15649,7 @@
       "sourceUrl": "https://colosseumroman.com/why-a-guided-colosseum-tour-is-worth-it-1-817-reviews"
     },
     {
-      "id": "operators-057",
+      "id": "operators-059",
       "fact": "Rome Vatican Full Day Tour with Hotel Pickup hits 30% negative reviews (18 of 60).",
       "figures": [
         "30%",
@@ -15607,7 +15679,7 @@
       "sourceUrl": "https://colosseumroman.com/why-a-guided-colosseum-tour-is-worth-it-1-817-reviews"
     },
     {
-      "id": "operators-058",
+      "id": "operators-060",
       "fact": "Top complaints: feeling overcharged (23% mention \"money\"), tours starting late (23% mention \"late\"), audio guide apps failing (15% mention \"app\").",
       "figures": [
         "23%",
@@ -15663,7 +15735,7 @@
       "sourceUrl": "https://colosseumroman.com/why-a-guided-colosseum-tour-is-worth-it-1-817-reviews"
     },
     {
-      "id": "operators-059",
+      "id": "operators-061",
       "fact": "A 4.9-star tour with 500 reviews is a far more reliable indicator than a 5.0-star tour with 15 reviews.",
       "figures": [
         "4.9-star",
