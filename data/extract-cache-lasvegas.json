@@ -2417,54 +2417,108 @@
       ]
     },
     "grand-canyon-west-vs-south-rim-from-las-vegas": {
-      "hash": "88a99839a55cc000d6baff5682128dbe34d80987eb3bb4f2dca6c7df0c6e0084",
+      "hash": "2116e881978772f015bea1b10271147ba491a0c89a1b45df47a75eff1bae3337",
       "candidatos": [
         {
-          "fact": "Grand Canyon West is ~125 miles from Las Vegas (2–2.5 hours each way), home to the Skywalk, and easy to fit around a Vegas trip.",
+          "fact": "Grand Canyon West is ~130 miles from Las Vegas (about 2 hours 25 minutes each way), home to the Skywalk, and easy to fit around a Vegas trip.",
           "figures": [
-            "125",
-            "2–2.5"
+            "130",
+            "2 hours 25 minutes"
           ],
           "topics": [
             "grand-canyon",
             "logistics",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "The South Rim is ~275 miles away (4.5–5 hours each way) and delivers the deep, classic postcard views, but turns your free day into a 13–15 hour marathon.",
+          "fact": "The South Rim is ~281 miles away (about 4 hours 50 minutes each way) and delivers the deep, classic postcard views, but turns your free day into a 13–15 hour marathon.",
           "figures": [
-            "275",
-            "4.5–5",
-            "13–15"
+            "281",
+            "4 hours 50 minutes",
+            "13–15 hour"
           ],
           "topics": [
             "grand-canyon",
             "logistics",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "Phones are now permitted, according to the official site in October 2026; reviews from before mid-2025 describe a no-phone rule, when the only photos were the ones sold by the official photographers, which are now optional.",
+          "fact": "Cameras and bags are not allowed on the Skywalk and go in free lockers.",
           "figures": [
-            "October 2026",
-            "mid-2025"
+            "free"
           ],
           "topics": [
             "grand-canyon",
-            "tickets"
-          ]
+            "adventure-activities"
+          ],
+          "scale": null
         },
         {
-          "fact": "At roughly 275 miles each way it’s four and a half to five hours of driving before traffic, and doing it yourself means one person spends nine or ten hours at the wheel and still has to be alert for the drive home in the dark.",
+          "fact": "Door to door, you're looking at a 13 to 15 hour day, most of it on the bus.",
           "figures": [
-            "275"
+            "13 to 15 hour"
+          ],
+          "topics": [
+            "grand-canyon",
+            "timing",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "It's about 130 miles from the center of the Strip, and about 2 hours 25 minutes if you don't stop.",
+          "figures": [
+            "130",
+            "2 hours 25 minutes"
           ],
           "topics": [
             "grand-canyon",
             "logistics",
             "getting-around"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "That stretch was paved in August 2014.",
+          "figures": [
+            "August 2014"
+          ],
+          "topics": [
+            "grand-canyon",
+            "logistics",
+            "getting-around"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "At roughly 281 miles each way it’s close to five hours of driving before traffic, and doing it yourself means one person spends nine or ten hours at the wheel and still has to be alert for the drive home in the dark.",
+          "figures": [
+            "281",
+            "nine or ten hours"
+          ],
+          "topics": [
+            "grand-canyon",
+            "getting-around",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "A Grand Canyon flight is genuine transport — it covers in under an hour what the road does in nearly two and a half, and some of them land.",
+          "figures": [
+            "under an hour",
+            "nearly two and a half"
+          ],
+          "topics": [
+            "grand-canyon",
+            "helicopter",
+            "logistics"
+          ],
+          "scale": null
         },
         {
           "fact": "Tickets stop selling at 4:30 in the afternoon, which is the detail that ruins the occasional late start.",
@@ -2473,44 +2527,47 @@
           ],
           "topics": [
             "grand-canyon",
-            "tickets"
-          ]
+            "tickets",
+            "timing"
+          ],
+          "scale": null
         },
         {
-          "fact": "Since January 1, 2026, non-US residents aged 16 and over pay an extra $100 per person on top of the standard entrance fee, at the Grand Canyon and ten other national parks.",
+          "fact": "Since January 1, 2026, visitors who are not United States residents and are aged sixteen or over pay an additional one hundred dollars per person to enter Grand Canyon National Park, on top of the vehicle fee.",
           "figures": [
             "January 1, 2026",
-            "16",
-            "$100"
+            "sixteen",
+            "one hundred dollars"
           ],
           "topics": [
             "grand-canyon",
-            "desert-parks",
-            "pricing"
-          ]
+            "pricing",
+            "tickets"
+          ],
+          "scale": null
         },
         {
-          "fact": "Antelope Canyon and Horseshoe Bend are both at Page, Arizona, which is about 271 miles from Las Vegas — five and a half hours each way on its own, before you add the leg between Page and either rim.",
+          "fact": "The surcharge applies at eleven parks and the Grand Canyon is one of them.",
           "figures": [
-            "271"
+            "eleven"
           ],
           "topics": [
-            "desert-parks",
-            "logistics",
-            "grand-canyon"
-          ]
+            "grand-canyon",
+            "pricing"
+          ],
+          "scale": null
         },
         {
           "fact": "If it's your first Vegas trip with 3 or 4 nights and the canyon is one item on a packed list, West is usually the kinder choice — you get the canyon without sacrificing a full day and a night of energy.",
           "figures": [
-            "3",
-            "4"
+            "3 or 4"
           ],
           "topics": [
             "grand-canyon",
-            "booking",
-            "timing"
-          ]
+            "timing",
+            "kids-families"
+          ],
+          "scale": null
         },
         {
           "fact": "If you're traveling with young kids, West again tends to be the less punishing option; a 5-hour bus leg each way is a hard sell for small children, and the medical reality of desert heat makes a long exposed day riskier.",
@@ -2518,9 +2575,78 @@
             "5-hour"
           ],
           "topics": [
+            "grand-canyon",
             "kids-families",
-            "grand-canyon"
-          ]
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Antelope Canyon and Horseshoe Bend are both at Page, Arizona, which is about 280 miles from Las Vegas — close to five hours each way on its own, before you add the leg between Page and either rim.",
+          "figures": [
+            "280",
+            "five hours"
+          ],
+          "topics": [
+            "grand-canyon",
+            "desert-parks",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Stacking them into one day puts you past eleven hours behind the wheel before you’ve stopped anywhere.",
+          "figures": [
+            "eleven hours"
+          ],
+          "topics": [
+            "grand-canyon",
+            "desert-parks",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "It's about 130 miles and roughly a two-and-a-half-hour drive on paved road the whole way — the last stretch of Diamond Bar Road was paved in 2014, so a standard rental car is fine and the old warnings about a rough dirt section are out of date.",
+          "figures": [
+            "130",
+            "two-and-a-half-hour",
+            "2014"
+          ],
+          "topics": [
+            "grand-canyon",
+            "getting-around",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Since January 1, 2026, non-US residents aged 16 and over pay an extra $100 per person on top of the standard entrance fee, at the Grand Canyon and ten other national parks.",
+          "figures": [
+            "January 1, 2026",
+            "16",
+            "$100",
+            "ten"
+          ],
+          "topics": [
+            "grand-canyon",
+            "pricing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The South Rim runs close to 5 hours of driving each way, which means a 13–15 hour door-to-door day with limited time actually at the canyon.",
+          "figures": [
+            "5 hours",
+            "13–15 hour"
+          ],
+          "topics": [
+            "grand-canyon",
+            "kids-families",
+            "timing"
+          ],
+          "scale": null
         }
       ]
     },
@@ -6362,28 +6488,30 @@
       ]
     },
     "red-rock-canyon-from-las-vegas": {
-      "hash": "2b0996527f3bfcadd664c46e3708de02646082a80a27457ee2e38fdc93730808",
+      "hash": "267b1853d10e6a9577d088e7ea46d35d46c4ead3f88ced8e2089e346d3b8a56b",
       "candidatos": [
         {
-          "fact": "Red Rock Canyon is the easiest nature escape from Las Vegas — just 17 miles west, built around a 13-mile scenic drive through red sandstone cliffs.",
+          "fact": "Red Rock Canyon is the easiest nature escape from Las Vegas — just 18.5 miles west, built around a 13-mile scenic drive through red sandstone cliffs.",
           "figures": [
-            "17",
+            "18.5 miles",
             "13-mile"
           ],
           "topics": [
             "desert-parks",
             "logistics"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "Red Rock Canyon is the antidote to the Strip: a 195,000-acre conservation area of towering red and tan sandstone cliffs, just 17 miles west of Las Vegas.",
+          "fact": "Red Rock Canyon is the antidote to the Strip: a 195,000-acre conservation area of towering red and tan sandstone cliffs, just 18.5 miles west of Las Vegas.",
           "figures": [
             "195,000-acre",
-            "17"
+            "18.5 miles"
           ],
           "topics": [
             "desert-parks"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "Its heart is a 13-mile one-way scenic drive that winds past viewpoints, trailheads, and formations like the Calico Hills, with 26 hiking trails and world-class rock climbing branching off it.",
@@ -6394,18 +6522,20 @@
           "topics": [
             "desert-parks",
             "adventure-activities"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "you can be standing among desert cliffs less than 30 minutes after leaving your hotel",
+          "fact": "you can be standing among desert cliffs about 40 minutes after leaving your hotel",
           "figures": [
-            "30 minutes"
+            "40 minutes"
           ],
           "topics": [
             "desert-parks",
-            "getting-around",
+            "timing",
             "logistics"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "From October 1 through May 31, between 8 AM and 5 PM, every passenger vehicle entering the scenic drive needs a timed-entry reservation.",
@@ -6417,19 +6547,10 @@
           ],
           "topics": [
             "desert-parks",
-            "tickets",
+            "booking",
             "timing"
-          ]
-        },
-        {
-          "fact": "reservations release on a rolling 30-day window, so popular weekend slots go early",
-          "figures": [
-            "30-day"
           ],
-          "topics": [
-            "tickets",
-            "booking"
-          ]
+          "scale": null
         },
         {
           "fact": "There's a small reservation fee (around $2) on top of the entrance fee of roughly $15 per vehicle, which is good for seven days.",
@@ -6439,9 +6560,11 @@
             "seven days"
           ],
           "topics": [
+            "desert-parks",
             "pricing",
-            "tickets"
-          ]
+            "booking"
+          ],
+          "scale": null
         },
         {
           "fact": "The reservation is not required from June 1 through September 30 (peak summer, when it's arguably too hot anyway), and it's not required before 8 AM or after 5 PM year-round — so an early-morning arrival skips the whole system and rewards you with cooler temperatures and better light.",
@@ -6452,10 +6575,11 @@
             "5 PM"
           ],
           "topics": [
-            "tickets",
-            "timing",
-            "desert-parks"
-          ]
+            "desert-parks",
+            "booking",
+            "timing"
+          ],
+          "scale": null
         },
         {
           "fact": "The scenic drive is the core: 13 paved miles of viewpoints and pullouts, doable in about 40 minutes without stops or a leisurely couple of hours with them, accessible to everyone.",
@@ -6466,7 +6590,8 @@
           "topics": [
             "desert-parks",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "The best months are roughly October through April, when daytime highs sit in a comfortable 60–75°F range; summer is genuinely hot and exposed, which is part of why the reservation system pauses then.",
@@ -6474,12 +6599,13 @@
             "60–75°F"
           ],
           "topics": [
-            "timing",
-            "desert-parks"
-          ]
+            "desert-parks",
+            "timing"
+          ],
+          "scale": null
         },
         {
-          "fact": "don't try to combine Red Rock with Valley of Fire in the same day — they're about 90 minutes apart in opposite directions from Vegas, so pick one per day",
+          "fact": "One planning note: don't try to combine Red Rock with Valley of Fire in the same day — they're about 90 minutes apart in opposite directions from Vegas, so pick one per day.",
           "figures": [
             "90 minutes"
           ],
@@ -6487,7 +6613,26 @@
             "desert-parks",
             "logistics",
             "timing"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Yes, for passenger vehicles from October 1 to May 31, between 8 AM and 5 PM — booked ahead on Recreation.gov, not at the gate (about $2 reservation fee plus ~$15 per vehicle for 7 days).",
+          "figures": [
+            "October 1",
+            "May 31",
+            "8 AM",
+            "5 PM",
+            "$2",
+            "$15",
+            "7 days"
+          ],
+          "topics": [
+            "desert-parks",
+            "booking",
+            "pricing"
+          ],
+          "scale": null
         }
       ]
     },
@@ -6734,51 +6879,81 @@
       ]
     },
     "valley-of-fire-from-las-vegas": {
-      "hash": "d64bf502ae762f20ddb276e2b1b7ac9121577cc88439a13372182e7af2af204e",
+      "hash": "334d94ef5d80f25df5dd3dc9649b0da1dbe64d6bbed7736e9bdf12ebfe10ae8c",
       "candidatos": [
         {
-          "fact": "Valley of Fire is the most spectacular day trip from Las Vegas — Nevada's oldest state park, about 50 miles northeast (an hour's drive), full of otherworldly red sandstone, petroglyphs, and hikes like the Fire Wave.",
+          "fact": "Valley of Fire is the most spectacular day trip from Las Vegas — Nevada's oldest state park, about 54 miles northeast (an hour and ten minutes' drive), full of otherworldly red sandstone, petroglyphs, and hikes like the Fire Wave.",
           "figures": [
-            "50 miles",
-            "an hour's drive"
+            "54 miles",
+            "an hour and ten minutes"
           ],
           "topics": [
             "desert-parks",
             "logistics"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "Valley of Fire sits about 50 miles northeast of the Strip; Red Rock is 17 miles west.",
+          "fact": "Unlike Red Rock Canyon, there's no timed-entry reservation — you pay around $15 per vehicle at the gate.",
           "figures": [
-            "50 miles",
-            "17 miles"
+            "$15"
+          ],
+          "topics": [
+            "desert-parks",
+            "pricing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Nevada's oldest state park, about 54 miles northeast of the Strip and roughly an hour and ten minutes' drive, it's a landscape of 150-million-year-old red Aztec sandstone — swirling, fiery rock formations that rival Utah's famous national parks, plus ancient petroglyphs, slot canyons, and arches.",
+          "figures": [
+            "54 miles",
+            "an hour and ten minutes",
+            "150-million-year-old"
           ],
           "topics": [
             "desert-parks",
             "logistics"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "They're in opposite directions, roughly 90 minutes apart, so trying to combine them turns a great day into a driving marathon.",
+          "fact": "Valley of Fire sits about 54 miles northeast of the Strip; Red Rock is about 18.5 miles west.",
           "figures": [
-            "90 minutes"
+            "54 miles",
+            "18.5 miles"
           ],
           "topics": [
             "desert-parks",
             "logistics"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "The trade-off: Choosing Valley of Fire over Red Rock means a longer drive (an hour vs about 30 minutes) and a bigger chunk of your day.",
+          "fact": "The trade-off: Choosing Valley of Fire over Red Rock means a longer drive (an hour and ten minutes vs about 40 minutes) and a bigger chunk of your day.",
           "figures": [
-            "an hour",
-            "30 minutes"
+            "an hour and ten minutes",
+            "40 minutes"
           ],
           "topics": [
             "desert-parks",
             "logistics",
             "timing"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The catches are that you need a vehicle, the drive is about an hour and ten minutes each way, and there's no reliable cell service in the park, so download maps ahead and don't expect to summon a ride back.",
+          "figures": [
+            "an hour and ten minutes"
+          ],
+          "topics": [
+            "desert-parks",
+            "getting-around",
+            "logistics"
+          ],
+          "scale": null
         },
         {
           "fact": "The undisputed star is the Fire Wave — a swirling formation of red and white sandstone that looks like a frozen wave or scoops of ice cream, reached by an easy 1.5-mile round-trip hike and one of the most photographed spots in Nevada.",
@@ -6788,18 +6963,32 @@
           "topics": [
             "desert-parks",
             "adventure-activities"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "Plan at least a half day — realistically four to six hours inside the park to do the highlights justice.",
           "figures": [
-            "half day",
             "four to six hours"
           ],
           "topics": [
             "desert-parks",
+            "timing",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Four hours covers Fire Wave, Rainbow Vista, White Domes, and Elephant Rock; six lets you add the petroglyphs at Atlatl Rock and Mouse's Tank without rushing.",
+          "figures": [
+            "Four hours",
+            "six"
+          ],
+          "topics": [
+            "desert-parks",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "The best months are spring (March–May) and fall (September–November), when temperatures are comfortable.",
@@ -6810,10 +6999,11 @@
           "topics": [
             "desert-parks",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "Nevada State Parks closes the Fire Wave, Seven Wonders Loop, Pastel Canyon and Pink Canyon trails every year from May 15 to September 30 for visitor safety, so between those dates the park's signature hike is off the list.",
+          "fact": "Plan around one more summer rule: Nevada State Parks closes the Fire Wave, Seven Wonders Loop, Pastel Canyon and Pink Canyon trails every year from May 15 to September 30 for visitor safety, so between those dates the park's signature hike is off the list.",
           "figures": [
             "May 15",
             "September 30"
@@ -6821,7 +7011,8 @@
           "topics": [
             "desert-parks",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "Entry is simple — there's no timed-entry reservation; you just pay the fee (around $15 per vehicle for out-of-state visitors, less for Nevada plates) at the gate, with self-pay during unstaffed early or late hours.",
@@ -6832,7 +7023,8 @@
             "desert-parks",
             "pricing",
             "tickets"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "The Visitor Center (open roughly 9 AM to 4 PM) is worth a stop for maps, exhibits, and current trail conditions.",
@@ -6843,7 +7035,8 @@
           "topics": [
             "desert-parks",
             "logistics"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "Come prepared for the desert: carry plenty of water — about a gallon per person regardless of season — wear strong sun protection, and bring proper shoes for the short hikes.",
@@ -6853,19 +7046,59 @@
           "topics": [
             "desert-parks",
             "logistics"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "Red Rock is closer (17 miles west), cheaper to reach, great for a quick escape and climbing — but needs a timed-entry reservation October–May.",
+          "fact": "It's the most photogenic day trip from Vegas: otherworldly red sandstone rivaling Utah's national parks, just 54 miles (about an hour and ten minutes) northeast, and far less crowded than the Grand Canyon.",
           "figures": [
-            "17 miles",
+            "54 miles",
+            "an hour and ten minutes"
+          ],
+          "topics": [
+            "desert-parks",
+            "grand-canyon",
+            "crowds"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Red Rock is closer (about 18.5 miles west), cheaper to reach, great for a quick escape and climbing — but needs a timed-entry reservation October–May.",
+          "figures": [
+            "18.5 miles",
             "October–May"
           ],
           "topics": [
             "desert-parks",
-            "logistics",
-            "timing"
-          ]
+            "timing",
+            "booking"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Valley of Fire is farther (54 miles northeast, ~1 hour 10 minutes) and a bigger commitment, but the red-sandstone scenery is more dramatic and there's no reservation.",
+          "figures": [
+            "54 miles",
+            "1 hour 10 minutes"
+          ],
+          "topics": [
+            "desert-parks",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "It's about 54 miles (an hour and ten minutes) northeast of the Strip, too far to rely on a rideshare for the return, and there's no reliable cell service in the park to call one.",
+          "figures": [
+            "54 miles",
+            "an hour and ten minutes"
+          ],
+          "topics": [
+            "desert-parks",
+            "getting-around",
+            "logistics"
+          ],
+          "scale": null
         }
       ]
     },
