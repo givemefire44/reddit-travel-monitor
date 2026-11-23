@@ -20,9 +20,79 @@
     "reason": "sin cifra"
   },
   {
+    "slug": "colosseum-24h-ticket-vs-24h-only-arena",
+    "fact": "That Reddit traveler emailed the Colosseum help desk and posted the reply: the arena ticket gives access to the arena floor but not to the first and second levels, entry is from the Sperone Stern entrance, the visit inside lasts about 20 to 30 minutes, and it is one-way.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "colosseum-accessibility-lifts-step-free-stroller",
+    "fact": "That ticket goes on sale 30 days ahead.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "colosseum-accessibility-lifts-step-free-stroller",
+    "fact": "Larger combos of 17 people lose stragglers — exactly what the corpus shows happening at security checkpoints",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "colosseum-attic-belvedere-worth-it",
+    "fact": "Eight mention the lift and four mention stairs",
+    "reason": "cifra \"8\" no esta en la frase"
+  },
+  {
+    "slug": "colosseum-attic-belvedere-worth-it",
+    "fact": "The park's page says tickets can be booked 30 days before the visit date. Groups of up to 25 people are admitted every 30 minutes, between 8:30 a.m. and 2:30 p.m",
+    "reason": "cifra \"2:30 p.m.\" no esta en la frase"
+  },
+  {
     "slug": "colosseum-from-civitavecchia-cruise-port-train-times",
     "fact": "One cruise passenger in our corpus had booked a tour from the port with ninety minutes near the Colosseum, and asked whether it was worth paying to go inside",
     "reason": "voz editorial interna"
+  },
+  {
+    "slug": "colosseum-ticket-name-change-id-check",
+    "fact": "Four travelers asked before going whether a copy or a licence would do, and the corpus has no answer for them that holds every time.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "colosseum-ticket-name-change-id-check",
+    "fact": "Eight people in the corpus offered tickets they could not use, and each mentions the name change as what made the handover possible.",
+    "reason": "voz editorial interna"
+  },
+  {
+    "slug": "colosseum-ticket-name-change-id-check",
+    "fact": "For the Full Experience ticket with the arena, the park's page says it can be bought at ticket offices on the day of the visit, though recent travelers report being offered general admission only.",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "colosseum-ticket-name-change-id-check",
+    "fact": "The regulation was approved on April 1, 2026 and updated on October 8, 2026.",
+    "reason": "frase no textual"
+  },
+  {
+    "slug": "colosseum-timed-entry-window-late-arrival",
+    "fact": "Holders of Underground, Attic and Only Arena tickets get no tolerance for delay.",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "colosseum-underground-accredited-operators",
+    "fact": "That traveler paid €629.40 for a party of six, lost the underground portion, spent two hours walking the Forum in 34°C heat, queued thirty minutes for a skip-the-line ticket, got twenty minutes on the arena floor, and left early.",
+    "reason": "apertura no autonoma"
+  },
+  {
+    "slug": "colosseum-underground-accredited-operators",
+    "fact": "Buying at the ticket office on the day is not a fallback for the underground: the park's page for that ticket lists online purchase and no ticket-office sale.",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "colosseum-underground-accredited-operators",
+    "fact": "The one Full Experience ticket its pages list at ticket offices on the day is the arena one, which does not include the underground",
+    "reason": "sin cifra"
+  },
+  {
+    "slug": "colosseum-underground-tour-ticket",
+    "fact": "that name can be changed only once, no later than midnight on the seventh day before the visit, in the cases the regulation lists.",
+    "reason": "apertura no autonoma"
   },
   {
     "slug": "colosseum-vs-vatican-which-to-visit-first",
@@ -50,6 +120,11 @@
     "reason": "cifra \"one in five\" no encontrada"
   },
   {
+    "slug": "private-colosseum-tour",
+    "fact": "Standing on the arena, you’ll see the Colosseum from their perspective, surrounded by the tiers of stone where up to 50,000 spectators once cheered",
+    "reason": "cifra \"50,000\" sin unidad ni escala"
+  },
+  {
     "slug": "roma-pass-colosseum-reservation-what-it-includes",
     "fact": "The pass covers the standard route only: the arena floor, the underground and the upper belvedere need a different ticket.",
     "reason": "sin cifra"
@@ -58,6 +133,26 @@
     "slug": "roma-pass-colosseum-reservation-what-it-includes",
     "fact": "We read 117 conversations and reviews in our corpus that mention the Roma Pass or the Omnia card together with the Colosseum, Forum or Palatine, most of them dated between 2013 and 2026.",
     "reason": "voz editorial interna"
+  },
+  {
+    "slug": "skip-the-colosseum-roman-tour-line",
+    "fact": "Seven come from travelers who had paid in advance and still had to queue at a counter to turn a voucher into a ticket; five of those seven waited between 31 and 60 minutes",
+    "reason": "cifra \"7\" no esta en la frase"
+  },
+  {
+    "slug": "skip-the-colosseum-roman-tour-line",
+    "fact": "Half of them, 13, were 30 minutes or less, 12 were between 31 and 60 minutes, and one was longer",
+    "reason": "cifra \"31-60 minutes\" no encontrada"
+  },
+  {
+    "slug": "skip-the-colosseum-roman-tour-line",
+    "fact": "Forty-three of the 73 accounts date from 2019 or earlier and only 22 from 2023 to 2026",
+    "reason": "cifra \"43\" no encontrada"
+  },
+  {
+    "slug": "skip-the-colosseum-roman-tour-line",
+    "fact": "The regulation is published in Italian; the wording here is our translation",
+    "reason": "sin cifra"
   },
   {
     "slug": "the-incredible-engineering-of-the-colosseum-how-it-was-built-and-how-it-worked",
@@ -73,5 +168,25 @@
     "slug": "the-incredible-engineering-of-the-colosseum-how-it-was-built-and-how-it-worked",
     "fact": "A Roman source, the Codex-Calendar of 354, gives 87,000.",
     "reason": "cifra \"87,000\" sin unidad ni escala"
+  },
+  {
+    "slug": "why-was-the-roman-colosseum-built-the-untold-story",
+    "fact": "His son Titus inaugurated it in 80 A.D.",
+    "reason": "cifra \"80 A.D.\" no esta en la frase"
+  },
+  {
+    "slug": "why-was-the-roman-colosseum-built-the-untold-story",
+    "fact": "The construction of the Colosseum, officially known as the Flavian Amphitheater, began under Emperor Vespasian between the years 70 and 72 A.D.",
+    "reason": "cifra \"72 A.D.\" no esta en la frase"
+  },
+  {
+    "slug": "why-was-the-roman-colosseum-built-the-untold-story",
+    "fact": "It is estimated that between 12,000 and 20,000 Jewish prisoners of war were brought to Rome to work on the building of the amphitheater, enduring exhausting work and harsh conditions.",
+    "reason": "cifra \"12,000\" sin unidad ni escala"
+  },
+  {
+    "slug": "why-was-the-roman-colosseum-built-the-untold-story",
+    "fact": "Animal hunts are said to have continued until 523 A.D.",
+    "reason": "cifra \"523 A.D.\" no esta en la frase"
   }
 ]

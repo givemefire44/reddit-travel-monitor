@@ -1178,7 +1178,7 @@
       ]
     },
     "colosseum-24h-ticket-vs-24h-only-arena": {
-      "hash": "e3627fd347b588c0f33c374bcc65e158591f6b7d74b5a1330d3121ac5c82c41c",
+      "hash": "9da04d7a03ec2e14091f8b60bc1014669f9e734f65c4b238ec0e9c84b4711fd8",
       "candidatos": [
         {
           "fact": "Both cost €18 on the official site, and they are not two versions of the same visit.",
@@ -1188,7 +1188,8 @@
           "topics": [
             "tickets",
             "pricing"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "24H Only Arena is 20 minutes on the arena floor and nothing else inside, plus the Forum, the Palatine and the SUPER sites.",
@@ -1198,29 +1199,8 @@
           "topics": [
             "tickets",
             "arena-floor"
-          ]
-        },
-        {
-          "fact": "On the official ticketing site, read in October 2026, two tickets for individual visitors sit next to each other at €18: \"24h – COLOSSEUM, ROMAN FORUM, PALATINE\" and \"24H ONLY ARENA\".",
-          "figures": [
-            "€18",
-            "October 2026"
           ],
-          "topics": [
-            "tickets",
-            "pricing"
-          ]
-        },
-        {
-          "fact": "The second lists one admission to the arena floor only, at the booked time, for a duration of 20 minutes.",
-          "figures": [
-            "20 minutes"
-          ],
-          "topics": [
-            "tickets",
-            "arena-floor",
-            "timing"
-          ]
+          "scale": null
         },
         {
           "fact": "The arena ticket also has a €2 reduced fare for EU citizens aged 18 to 24, and costs €11.50 with the Roma Pass.",
@@ -1232,19 +1212,76 @@
           "topics": [
             "tickets",
             "pricing"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "The rule itself is the park's: its visitor regulation, updated on October 8, 2026, sets the maximum stay on the arena floor at 20 minutes.",
+          "fact": "That Reddit traveler emailed the Colosseum help desk and posted the reply: the arena ticket gives access to the arena floor but not to the first and second levels, entry is from the Sperone Stern entrance, the visit inside lasts about 20 to 30 minutes, and it is one-way.",
           "figures": [
-            "October 8, 2026",
-            "20 minutes"
+            "20 to 30"
           ],
           "topics": [
             "arena-floor",
-            "logistics",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The 20 to 30 minutes is the help desk's figure; the official page says 20.",
+          "figures": [
+            "20 to 30",
+            "20"
+          ],
+          "topics": [
+            "arena-floor"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The Full Experience ticket with entry to the arena is €24 and lists admission to the Colosseum, the arena, the Forum and Palatine area and the SUPER sites on one ticket.",
+          "figures": [
+            "€24"
+          ],
+          "topics": [
+            "tickets",
+            "pricing",
+            "arena-floor"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The park gives it a 90-minute stay inside the Colosseum.",
+          "figures": [
+            "90-minute"
+          ],
+          "topics": [
+            "tickets",
             "timing"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "the park's regulation lets a standard ticket holder arrive up to 15 minutes after the booked time, and gives the Only Arena ticket no tolerance for delay",
+          "figures": [
+            "15 minutes"
+          ],
+          "topics": [
+            "tickets",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "standard tickets go on sale 30 days before the visit, the Full Experience Arena ticket 7 days before",
+          "figures": [
+            "30 days",
+            "7 days"
+          ],
+          "topics": [
+            "tickets",
+            "logistics"
+          ],
+          "scale": null
         },
         {
           "fact": "For holders of the 24h Colosseum ticket, the official site sells that access separately as a €4 supplement.",
@@ -1253,42 +1290,22 @@
           ],
           "topics": [
             "tickets",
-            "pricing"
-          ]
-        },
-        {
-          "fact": "the arena ticket is closer to a Forum, Palatine and SUPER sites ticket with 20 minutes on the arena floor attached than to a reduced Colosseum ticket.",
-          "figures": [
-            "20 minutes"
-          ],
-          "topics": [
-            "tickets",
-            "arena-floor",
-            "forum-palatine"
-          ]
-        },
-        {
-          "fact": "Two €18 tickets are €36.",
-          "figures": [
-            "€18",
-            "€36"
-          ],
-          "topics": [
             "pricing",
-            "tickets"
-          ]
+            "forum-palatine"
+          ],
+          "scale": null
         },
         {
-          "fact": "The Full Experience ticket with entry to the arena is €24 and lists admission to the Colosseum, the arena, the Forum and Palatine area and the SUPER sites on one ticket.",
+          "fact": "It costs €36 against €24 for the Full Experience ticket with arena entry, and the two tickets use different entrances, so it is two entries rather than one visit.",
           "figures": [
+            "€36",
             "€24"
           ],
           "topics": [
-            "pricing",
             "tickets",
-            "arena-floor",
-            "forum-palatine"
-          ]
+            "pricing"
+          ],
+          "scale": null
         },
         {
           "fact": "The SUPER sites supplement sold to standard ticket holders must be bought for the same day or within 24 hours before or after the Colosseum booking.",
@@ -1297,80 +1314,98 @@
           ],
           "topics": [
             "tickets",
-            "forum-palatine",
-            "timing"
-          ]
-        },
-        {
-          "fact": "The standard 24h ticket includes the Forum and Palatine but not the SUPER sites, which are sold to its holders as a €4 supplement.",
-          "figures": [
-            "€4"
-          ],
-          "topics": [
-            "pricing",
-            "tickets",
             "forum-palatine"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "The park's page for the arena ticket says the same in English, \"at the desired time, within 24 hours before or after the booking time at the Colosseum\"; its tickets page sums up the standard one as \"Valid 24h\".",
+          "fact": "the visitor regulation does, and for these two tickets it is the same: one entry to the Roman Forum, the Palatine and the Imperial Fora, with no set time, \"purché nell’arco di validità delle 24 ore antecedenti o successive l’orario di prenotazione del Colosseo\", that is, within the 24 hours before or after the Colosseum booking",
           "figures": [
-            "24 hours",
-            "24h"
+            "24"
           ],
           "topics": [
-            "tickets",
             "forum-palatine",
-            "timing"
-          ]
+            "tickets"
+          ],
+          "scale": null
         },
         {
-          "fact": "The ticketing listings for the two €18 tickets do not state the window.",
+          "fact": "The Full Experience tickets work differently: valid two consecutive days, with the Forum the day before or the day after the Colosseum booking.",
           "figures": [
-            "€18"
+            "two"
           ],
           "topics": [
-            "tickets",
-            "pricing",
-            "forum-palatine"
-          ]
+            "forum-palatine",
+            "tickets"
+          ],
+          "scale": null
         },
         {
-          "fact": "The rules in this article are the park's: the arena ticket covers the arena floor only, enters and exits from the Sperone Stern side, and allows a stay of up to 20 minutes.",
+          "fact": "its visitor regulation, updated on October 8, 2026, sets the maximum stay on the arena floor at 20 minutes",
           "figures": [
+            "October 8, 2026",
             "20 minutes"
           ],
           "topics": [
-            "tickets",
             "arena-floor",
             "timing"
-          ]
+          ],
+          "scale": null
         }
       ]
     },
     "colosseum-accessibility-lifts-step-free-stroller": {
-      "hash": "fb03cc7a5636bea6e3d59ac75f0cab469ca069a4cecf7030ae37e8198ed167b4",
+      "hash": "dbca7d238290358b6febfc5a0aea8a9638541d5307ebd81e5330b06e040433cd",
       "candidatos": [
         {
-          "fact": "The lift to the upper tier requires a Full Experience ticket (7-day release, sells out in seconds).",
+          "fact": "The upper levels need the Full Experience Attic ticket (€24), and since November 9, 2026, the park reserves its panoramic lift for people with reduced mobility and documented difficulty climbing stairs; the attic itself is reached only by steep steps.",
           "figures": [
-            "7-day"
+            "€24",
+            "November 9, 2026"
           ],
           "topics": [
             "accessibility",
             "tickets",
-            "skip-the-line"
-          ]
+            "pricing"
+          ],
+          "scale": null
         },
         {
-          "fact": "The standard €18 combo leaves you on the lower levels.",
+          "fact": "That ticket goes on sale 30 days ahead.",
           "figures": [
+            "30 days"
+          ],
+          "topics": [
+            "accessibility",
+            "tickets",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Those are sold as separate tickets, at €24 against €18.",
+          "figures": [
+            "€24",
             "€18"
           ],
           "topics": [
             "pricing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The trade-off: You pay €6 over standard entry and book up to 30 days ahead.",
+          "figures": [
+            "€6",
+            "30 days"
+          ],
+          "topics": [
+            "pricing",
+            "tickets",
             "accessibility"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "Small-group tours capped at 7 people solve both: the guide can speak without amplification and a child can stay close.",
@@ -1381,70 +1416,115 @@
             "kids-families",
             "guides",
             "operators"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "Reviewers put the underground at 20–30 minutes",
+          "fact": "Larger combos of 17 people lose stragglers — exactly what the corpus shows happening at security checkpoints",
           "figures": [
-            "20–30"
+            "17"
+          ],
+          "topics": [
+            "crowds",
+            "guides",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Time in the underground is limited to 30 minutes making this part of a tour rushed where there is not enough space to accommodate more time.",
+          "figures": [
+            "30 minutes"
           ],
           "topics": [
             "underground",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "Standard entry tickets are available nearly every day for the next 30 days.",
+          "fact": "Reviewers put the underground at 20–30 minutes",
           "figures": [
-            "30"
+            "20-30"
           ],
           "topics": [
-            "tickets",
+            "underground",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The trade-off: You book an early-morning start (8–9 AM) and accept a faster pace through the underground.",
+          "figures": [
+            "8-9 AM"
+          ],
+          "topics": [
             "timing",
-            "logistics"
-          ]
-        },
-        {
-          "fact": "You arrive 30 minutes early and pre-screenshot the meeting point.",
-          "figures": [
-            "30"
+            "underground",
+            "crowds"
           ],
-          "topics": [
-            "logistics",
-            "operators"
-          ]
+          "scale": null
         },
         {
-          "fact": "one visitor queued an additional hour for reduced-entry collection.",
+          "fact": "The park opens ticket sales 30 days before the visit date.",
           "figures": [
-            "hour"
+            "30 days"
           ],
           "topics": [
             "tickets",
-            "logistics"
-          ]
+            "timing"
+          ],
+          "scale": null
         },
         {
-          "fact": "Standard entry and the Underground Full Experience open 30 days ahead.",
+          "fact": "One ticket runs on a shorter clock: Full Experience Arena, which the park's page says can be bought online from 7 days before the visit.",
           "figures": [
-            "30"
+            "7 days"
           ],
           "topics": [
+            "arena-floor",
             "tickets",
-            "timing",
-            "underground"
-          ]
+            "timing"
+          ],
+          "scale": null
         },
         {
-          "fact": "Arena Floor and lift-inclusive tickets release 7 days in advance on the official site and sell out \"within seconds.\"",
+          "fact": "Night tickets are only available one week in advance for Thursday nights. Full Experience Arena floor tickets are only available 7 days in advance.",
           "figures": [
             "7"
           ],
           "topics": [
+            "night-tours",
+            "arena-floor",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "It goes on sale 30 days ahead, not 7.",
+          "figures": [
+            "30",
+            "7"
+          ],
+          "topics": [
+            "accessibility",
             "tickets",
-            "skip-the-line",
-            "arena-floor"
-          ]
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The park admits groups of up to 25 people every 30 minutes, and says late arrivals are not admitted.",
+          "figures": [
+            "25",
+            "30 minutes"
+          ],
+          "topics": [
+            "logistics",
+            "crowds",
+            "timing"
+          ],
+          "scale": null
         },
         {
           "fact": "The official site is cheaper (€18 combo, kids free) but booking is described as \"a nightmare.\"",
@@ -1454,23 +1534,131 @@
           "topics": [
             "pricing",
             "tickets"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "GetYourGuide small-group tours average 4.94 across 581 items.",
+          "figures": [
+            "4.94",
+            "581"
+          ],
+          "topics": [
+            "operators",
+            "guides"
+          ],
+          "scale": "GetYourGuide: 581 items (avg rating 4.94)"
+        },
+        {
+          "fact": "Trustpilot operator complaints average 1.63 across 424 items — and the dominant failure is meeting-point confusion, which is brutal for anyone with mobility limits",
+          "figures": [
+            "1.63",
+            "424"
+          ],
+          "topics": [
+            "operators",
+            "accessibility",
+            "logistics"
+          ],
+          "scale": "Trustpilot: 424 items (avg rating 1.63)"
+        },
+        {
+          "fact": "The trade-off: You arrive 30 minutes early and pre-screenshot the meeting point.",
+          "figures": [
+            "30 minutes"
+          ],
+          "topics": [
+            "logistics",
+            "operators",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The panoramic lift belongs to the Full Experience Attic ticket (€24), and since November 9, 2026, the park reserves it for people with reduced mobility who have documented difficulty climbing stairs.",
+          "figures": [
+            "€24",
+            "November 9, 2026"
+          ],
+          "topics": [
+            "accessibility",
+            "tickets",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The standard €18 ticket covers the first and second levels.",
+          "figures": [
+            "€18"
+          ],
+          "topics": [
+            "tickets",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The Full Experience Attic ticket, the one with the lift, goes on sale 30 days before the visit date, like standard entry and the underground ticket.",
+          "figures": [
+            "30 days"
+          ],
+          "topics": [
+            "accessibility",
+            "tickets",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Full Experience Arena goes on sale 7 days before.",
+          "figures": [
+            "7 days"
+          ],
+          "topics": [
+            "arena-floor",
+            "tickets",
+            "timing"
+          ],
+          "scale": null
         }
       ]
     },
     "colosseum-accessibility-wheelchair-guide": {
-      "hash": "9fdbedc18e6f5e774ed8545391b8161448247752403457f9c658f915ea6d4e0a",
+      "hash": "92f655ec595caf7a759b54685d21f0f9a809690d93ca0c594e04fde901c092bb",
       "candidatos": [
+        {
+          "fact": "Entry is free for a disabled visitor plus one companion with documentation, though you still need a timed slot.",
+          "figures": [
+            "one"
+          ],
+          "topics": [
+            "accessibility",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Inside, a staff-operated elevator connects the ground floor to the first and second tiers and fits two wheelchairs at a time (the park has been adding further lifts to reach intermediate and upper galleries).",
+          "figures": [
+            "two"
+          ],
+          "topics": [
+            "accessibility"
+          ],
+          "scale": null
+        },
         {
           "fact": "To minimize waiting, aim for an early slot (around 8:30–10:00 a.m.), when elevator queues and crowds are smallest.",
           "figures": [
             "8:30–10:00 a.m."
           ],
           "topics": [
-            "timing",
             "accessibility",
+            "timing",
             "crowds"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "Some third-party operators state that a minimum disability threshold (often cited as 74%) is required to qualify for free entry.",
@@ -1479,8 +1667,21 @@
           ],
           "topics": [
             "accessibility",
-            "pricing"
-          ]
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Your Colosseum ticket also includes the Roman Forum and Palatine Hill (within 24 hours), and their accessibility differs sharply from each other.",
+          "figures": [
+            "24"
+          ],
+          "topics": [
+            "accessibility",
+            "tickets",
+            "forum-palatine"
+          ],
+          "scale": null
         },
         {
           "fact": "The park offers free loaner wheelchairs on a first-come, first-served basis — a few at the Colosseum's first-floor reception near the Sperone Valadier entrance, and more at the Roman Forum and Palatine Hill entrances — but availability isn't guaranteed, so bring your own if you can, especially in peak season (June–August).",
@@ -1489,20 +1690,9 @@
           ],
           "topics": [
             "accessibility",
-            "logistics",
-            "timing"
-          ]
-        },
-        {
-          "fact": "Your Colosseum ticket also includes the Roman Forum and Palatine Hill (within 24 hours), and their accessibility differs sharply from each other.",
-          "figures": [
-            "24 hours"
+            "logistics"
           ],
-          "topics": [
-            "tickets",
-            "forum-palatine",
-            "accessibility"
-          ]
+          "scale": null
         },
         {
           "fact": "Getting there is straightforward: Metro Line B stops at Colosseo, but the station only has a small stair lift that needs staff assistance and does not take larger or powered chairs, buses 75 and 87 stop at Piazza del Colosseo with low-floor ramps, and an accessible taxi is often the most reliable door-to-door option (book ahead, especially at peak times).",
@@ -1511,9 +1701,10 @@
             "87"
           ],
           "topics": [
-            "logistics",
-            "accessibility"
-          ]
+            "accessibility",
+            "logistics"
+          ],
+          "scale": null
         }
       ]
     },
@@ -1578,54 +1769,175 @@
       ]
     },
     "colosseum-attic-belvedere-worth-it": {
-      "hash": "cf7bd01c2e3f9f621c79b3d5e4d1c1d63bc416c52feda3157fde5035211a8bc2",
+      "hash": "2a5d6dd2ee07df557792f7e24309553b0668628df9e761d45ade9b58a1dd3d7d",
       "candidatos": [
         {
-          "fact": "The Attic — also called the Belvedere — is the top section of the Colosseum: its 4th and 5th tiers, the highest publicly accessible part of the monument, standing roughly 50 metres above the ground, about the height of a 16-storey building.",
-          "figures": [
-            "4th",
-            "5th",
-            "50 metres",
-            "16-storey"
-          ],
-          "topics": [
-            "logistics",
-            "accessibility"
-          ]
-        },
-        {
-          "fact": "The Full Experience Attic ticket costs around €24 and includes the Forum and Palatine, but not the Arena Floor or Underground.",
+          "fact": "The Full Experience Attic ticket costs €24 and opens the levels above the standard route: the intermediate gallery, the third level and the attic, where the Belvedere terrace looks over the whole seating bowl",
           "figures": [
             "€24"
           ],
           "topics": [
-            "pricing",
             "tickets",
-            "forum-palatine"
-          ]
+            "pricing",
+            "arena-floor"
+          ],
+          "scale": null
         },
         {
-          "fact": "For decades these upper levels were closed to the public; they were restored between 2018 and 2023 and only recently reopened, which is why so few visitors even know the Attic exists.",
+          "fact": "Since November 9, 2026, the park reserves the panoramic lift for people with reduced mobility, and the attic itself is reached only by steep steps",
           "figures": [
-            "2018",
-            "2023"
+            "November 9, 2026"
           ],
           "topics": [
-            "timing",
-            "crowds"
-          ]
+            "accessibility",
+            "timing"
+          ],
+          "scale": null
         },
         {
-          "fact": "Access to the Attic is sold as the official Full Experience Attic ticket, priced around €24 for adults (plus the small booking fee) — only a few euros above the standard entry ticket, and valid for two consecutive days.",
+          "fact": "Groups of up to 25 go up every 30 minutes",
+          "figures": [
+            "25",
+            "30 minutes"
+          ],
+          "topics": [
+            "logistics",
+            "crowds"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The same work gives the height of the outer wall as 48.50 meters, about 159 feet",
+          "figures": [
+            "48.50",
+            "159"
+          ],
+          "topics": [
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "In our review corpus, 192 authors mention the Colosseum attic",
+          "figures": [
+            "192"
+          ],
+          "topics": [
+            "crowds"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Of those 36, 17 praise the view, 24 mention how few people were up there with them, and 19 say outright that it was worth it or recommend it",
+          "figures": [
+            "36",
+            "17",
+            "24",
+            "19"
+          ],
+          "topics": [
+            "crowds",
+            "pricing"
+          ],
+          "scale": "Thirty-six describe going up themselves."
+        },
+        {
+          "fact": "Eight mention the lift and four mention stairs",
+          "figures": [
+            "8",
+            "4"
+          ],
+          "topics": [
+            "accessibility"
+          ],
+          "scale": "Thirty-six describe going up themselves."
+        },
+        {
+          "fact": "No arena and no underground. Neither appears in the list of what this ticket includes. They belong to the other two Full Experience tickets, each also €24",
+          "figures": [
+            "€24"
+          ],
+          "topics": [
+            "tickets",
+            "arena-floor",
+            "underground"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "All three cost €24, are valid for two consecutive days, allow 90 minutes inside the Colosseum and include the Forum, the Palatine and the SUPER sites",
           "figures": [
             "€24",
-            "two consecutive days"
+            "90 minutes"
           ],
           "topics": [
             "tickets",
             "pricing",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The attic and the underground both go on sale 30 days before the visit; the arena ticket goes on sale 7 days before and is also sold at the ticket offices on the day",
+          "figures": [
+            "30 days",
+            "7 days"
+          ],
+          "topics": [
+            "tickets",
+            "timing",
             "logistics"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The attic and the underground allow no late arrival; the arena ticket allows 15 minutes",
+          "figures": [
+            "15 minutes"
+          ],
+          "topics": [
+            "tickets",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The attic ticket costs €6 more than the standard one and is the only ticket that lists the levels above the second",
+          "figures": [
+            "€6"
+          ],
+          "topics": [
+            "pricing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Access is sold on the Full Experience Attic ticket (€24), which also opens the intermediate gallery and the third level",
+          "figures": [
+            "€24"
+          ],
+          "topics": [
+            "tickets",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The park's page says tickets can be booked 30 days before the visit date. Groups of up to 25 people are admitted every 30 minutes, between 8:30 a.m. and 2:30 p.m",
+          "figures": [
+            "30 days",
+            "25",
+            "30 minutes",
+            "8:30 a.m.",
+            "2:30 p.m."
+          ],
+          "topics": [
+            "tickets",
+            "logistics",
+            "timing"
+          ],
+          "scale": null
         }
       ]
     },
@@ -2506,158 +2818,198 @@
       ]
     },
     "colosseum-free-entry-days-2026-who-qualifies": {
-      "hash": "354506dd1427081bf20b2f0058b41bd94c25f8b1006129bf449e1db39e5feb04",
+      "hash": "7a8714bc9435aed9c9a29033498444e6c44f3e248c77770a5fdd801442373b98",
       "candidatos": [
         {
-          "fact": "The Colosseum is free on the first Sunday of each month and on three national holidays (April 25, June 2, November 4).",
+          "fact": "The Colosseum is free on the first Sunday of each month and on April 25, June 2 and November 4.",
           "figures": [
             "April 25",
             "June 2",
             "November 4"
           ],
           "topics": [
-            "tickets",
-            "timing"
-          ]
-        },
-        {
-          "fact": "Children under 18 enter free year-round (all nationalities).",
-          "figures": [
-            "18"
-          ],
-          "topics": [
-            "tickets",
-            "kids-families"
-          ]
-        },
-        {
-          "fact": "EU citizens 18–25 pay €2.",
-          "figures": [
-            "18–25",
-            "€2"
-          ],
-          "topics": [
             "pricing",
             "tickets"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "Most guides recommend paying €18 for a normal timed ticket on a different day for a dramatically better experience.",
+          "fact": "On any day, visitors under 18 enter free and EU citizens aged 18 to 24 pay €2 instead of €18.",
           "figures": [
+            "18",
+            "18",
+            "24",
+            "€2",
             "€18"
           ],
           "topics": [
             "pricing",
             "tickets"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "Children under 12 must be accompanied by an adult.",
+          "fact": "The notice for Sunday, November 1 and Wednesday, November 4, 2026 set free opening from 8:30 am to 4:30 pm, with last admission at 3:30 pm, and said the tickets were valid on those two days only.",
+          "figures": [
+            "November 1",
+            "November 4",
+            "8:30 am",
+            "4:30 pm",
+            "3:30 pm"
+          ],
+          "topics": [
+            "timing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The reduced ticket costs €2 against €18 for the full one.",
+          "figures": [
+            "€2",
+            "€18"
+          ],
+          "topics": [
+            "pricing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "It is for European Union citizens from 18 until the day of their 25th birthday, on showing an identity document.",
+          "figures": [
+            "18",
+            "25"
+          ],
+          "topics": [
+            "pricing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Children under 12 can enter only with an adult who holds a ticket.",
           "figures": [
             "12"
           ],
           "topics": [
-            "kids-families"
-          ]
+            "kids-families",
+            "tickets"
+          ],
+          "scale": null
         },
         {
-          "fact": "What is included: The standard route — Colosseum levels 1–2, Roman Forum, and Palatine Hill.",
+          "fact": "A 70-year-old pays the same €18 as a 30-year-old.",
           "figures": [
-            "1–2"
+            "70",
+            "€18",
+            "30"
           ],
           "topics": [
-            "tickets",
-            "forum-palatine",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Three said 20 to 40 minutes.",
+          "figures": [
+            "20",
+            "40"
+          ],
+          "topics": [
+            "crowds",
             "logistics"
-          ]
+          ],
+          "scale": "Travelers who queued for the free ticket and gave a time are few in our corpus: five."
         },
         {
-          "fact": "Wait times: 1 to 3+ hours in the ticket distribution line before you even reach security.",
+          "fact": "Two said 90 minutes to 2 hours.",
           "figures": [
-            "1",
-            "3+"
+            "90",
+            "2"
           ],
           "topics": [
             "crowds",
-            "timing"
-          ]
-        },
-        {
-          "fact": "In summer free Sundays (July, August), waits have been reported at 3 to 4 hours.",
-          "figures": [
-            "3",
-            "4"
+            "logistics"
           ],
-          "topics": [
-            "crowds",
-            "timing"
-          ]
+          "scale": "Travelers who queued for the free ticket and gave a time are few in our corpus: five."
         },
         {
-          "fact": "Security screening adds another 30 to 60 minutes on top.",
-          "figures": [
-            "30",
-            "60"
-          ],
-          "topics": [
-            "crowds",
-            "timing"
-          ]
-        },
-        {
-          "fact": "Total time from arriving at the Colosseum to stepping inside can reach 4+ hours on the worst days.",
-          "figures": [
-            "4+"
-          ],
-          "topics": [
-            "crowds",
-            "timing"
-          ]
-        },
-        {
-          "fact": "The standard Colosseum ticket costs €18.",
+          "fact": "The paid standard ticket costs €18 and fixes your entry time.",
           "figures": [
             "€18"
           ],
           "topics": [
             "pricing",
             "tickets"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "A free Sunday \"saves\" you €18 but costs you 2 to 4 hours of waiting in the sun, a significantly worse experience inside, and no access to underground, arena, or other premium areas.",
+          "fact": "The Full Experience tickets cost €24 and are the only ones that open the arena, the underground or the attic.",
           "figures": [
-            "€18",
-            "2",
-            "4"
+            "€24"
           ],
           "topics": [
             "pricing",
-            "crowds",
-            "underground"
-          ]
+            "underground",
+            "arena-floor"
+          ],
+          "scale": null
         },
         {
-          "fact": "You are a local or long-stay visitor who can arrive well before opening (30–60 minutes) and does not mind the wait.",
+          "fact": "Group tours of the Colosseum, Roman Forum and Palatine with a guide start at $39 and most sit between $40 and $75.",
           "figures": [
-            "30–60"
+            "$39",
+            "$40",
+            "$75"
+          ],
+          "topics": [
+            "pricing",
+            "guides",
+            "operators"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Entry with an audio guide app, and no live guide, runs from $28 to $36.",
+          "figures": [
+            "$28",
+            "$36"
+          ],
+          "topics": [
+            "pricing",
+            "operators"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "On November 1 and 4, 2026, free opening ran from 8:30 am to 4:30 pm, with last admission at 3:30 pm.",
+          "figures": [
+            "November 1",
+            "4",
+            "8:30 am",
+            "4:30 pm",
+            "3:30 pm"
           ],
           "topics": [
             "timing",
-            "logistics"
-          ]
+            "tickets"
+          ],
+          "scale": null
         },
         {
-          "fact": "Pay for a normal timed ticket (€18) or a guided tour (€40–€65) on a regular weekday — ideally Tuesday through Thursday.",
+          "fact": "€2 instead of €18, until the day of the 25th birthday, on showing an identity document.",
           "figures": [
+            "€2",
             "€18",
-            "€40–€65"
+            "25"
           ],
           "topics": [
             "pricing",
-            "tickets",
-            "operators"
-          ]
+            "tickets"
+          ],
+          "scale": null
         }
       ]
     },
@@ -3015,181 +3367,338 @@
       ]
     },
     "colosseum-full-experience-vs-standard-ticket": {
-      "hash": "46682d8aa5944f3124d4d4b4bf20b9df5dbb3554e67def6ab122dd55ba93aa3c",
+      "hash": "2791020d1f8174eeb9f37551a4e638cb151650dc783c447076838f8df99a4a05",
       "candidatos": [
         {
-          "fact": "The standard Colosseum ticket (from €18 official) gives you levels 1–2, the Roman Forum, and Palatine Hill on a 24-hour pass.",
+          "fact": "The standard ticket costs €18 and covers the first and second levels of the Colosseum, the Roman Forum and the Palatine.",
           "figures": [
-            "€18",
-            "1–2",
-            "24-hour"
-          ],
-          "topics": [
-            "tickets",
-            "pricing",
-            "timing"
-          ]
-        },
-        {
-          "fact": "The Full Experience ticket (from €24 official, €30–€35 on reseller platforms) adds the arena floor, underground tunnels, SUPER sites, exhibitions, and a Forum admission you can also use the day before or the day after.",
-          "figures": [
-            "€24",
-            "€30–€35"
-          ],
-          "topics": [
-            "tickets",
-            "pricing",
-            "underground"
-          ]
-        },
-        {
-          "fact": "The upgrade costs €6 more on the official site and is worth it for anyone who wants to see the restricted areas where gladiators and animals were staged.",
-          "figures": [
-            "€6"
-          ],
-          "topics": [
-            "tickets",
-            "pricing",
-            "arena-floor"
-          ]
-        },
-        {
-          "fact": "Standard ticket: €18 adults, €2 EU citizens 18–25, free for under 18s.",
-          "figures": [
-            "€18",
-            "€2",
-            "18–25",
-            "18"
+            "€18"
           ],
           "topics": [
             "tickets",
             "pricing"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "Standard skip-the-line: €20–€28 (includes booking fee, sometimes audio guide).",
+          "fact": "Full Experience costs €24 and is three different tickets: one adds the arena, one the underground with the arena, one the attic.",
           "figures": [
-            "€20–€28"
+            "€24"
           ],
           "topics": [
             "tickets",
             "pricing",
-            "skip-the-line"
-          ]
-        },
-        {
-          "fact": "Full Experience reseller: €30–€38 (includes booking fee and service markup).",
-          "figures": [
-            "€30–€38"
-          ],
-          "topics": [
-            "tickets",
-            "pricing",
-            "operators"
-          ]
-        },
-        {
-          "fact": "Guided arena floor tour: €45–€65 (includes guide, headsets, Forum + Palatine).",
-          "figures": [
-            "€45–€65"
-          ],
-          "topics": [
-            "tickets",
-            "pricing",
-            "arena-floor"
-          ]
-        },
-        {
-          "fact": "Guided underground tour: €63–€90 (includes guide, arena, Forum + Palatine).",
-          "figures": [
-            "€63–€90"
-          ],
-          "topics": [
-            "tickets",
-            "pricing",
+            "arena-floor",
             "underground"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "The price difference between standard and Full Experience is modest (€6 on the official site), but the experiential difference is significant.",
+          "fact": "The standard allows 75 minutes inside the Colosseum and Full Experience 90.",
+          "figures": [
+            "75",
+            "90"
+          ],
+          "topics": [
+            "tickets",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The €6 buys one special area, not all three.",
           "figures": [
             "€6"
           ],
           "topics": [
             "tickets",
             "pricing"
-          ]
-        },
-        {
-          "fact": "The views are impressive — the scale of the building is obvious from any angle — but you are seeing the Colosseum the way 95%+ of visitors see it.",
-          "figures": [
-            "95%+"
           ],
-          "topics": [
-            "crowds",
-            "arena-floor"
-          ]
+          "scale": null
         },
         {
-          "fact": "The underground takes you into the hypogeum itself: dim corridors, animal cages, the remains of over 80 elevator mechanisms that launched fighters and beasts through trapdoors in the arena floor above.",
+          "fact": "Each is valid for two consecutive days and adds the SUPER sites of the Forum and Palatine.",
           "figures": [
-            "80"
-          ],
-          "topics": [
-            "underground"
-          ]
-        },
-        {
-          "fact": "Valid for 2 consecutive days instead of 1, which lets you split the Colosseum and Forum visits across separate mornings or afternoons.",
-          "figures": [
-            "2",
-            "1"
+            "two"
           ],
           "topics": [
             "tickets",
-            "timing"
-          ]
+            "forum-palatine"
+          ],
+          "scale": null
         },
         {
-          "fact": "The 90-minute time limit inside the Colosseum applies to this ticket type.",
+          "fact": "No SUPER sites, unless you add the park's €4 supplement for holders of this ticket.",
           "figures": [
-            "90-minute"
+            "€4"
           ],
           "topics": [
-            "timing"
-          ]
+            "tickets",
+            "pricing",
+            "forum-palatine"
+          ],
+          "scale": null
         },
         {
-          "fact": "You are visiting with children over 6 who would be thrilled by the arena floor perspective (underground is not recommended for young children or claustrophobic visitors).",
+          "fact": "No margin for a late arrival: you must be there 30 minutes before the time on the ticket.",
           "figures": [
-            "6"
+            "30"
           ],
           "topics": [
-            "kids-families",
-            "arena-floor"
-          ]
+            "tickets",
+            "timing",
+            "underground"
+          ],
+          "scale": null
         },
         {
-          "fact": "Tickets are released approximately 30 days before each visit date.",
+          "fact": "Since November 9, 2026, the park's page says the panoramic lift is reserved for people with reduced mobility who have documented difficulty climbing stairs, and that the attic itself is reached only by steep steps.",
           "figures": [
-            "30 days"
+            "November 9, 2026"
+          ],
+          "topics": [
+            "tickets",
+            "accessibility"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "A Full Experience ticket costs €6 more and opens one of them, so seeing the underground and the attic means buying two tickets for two visits.",
+          "figures": [
+            "€6"
+          ],
+          "topics": [
+            "tickets",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The standard ticket and the underground and attic tickets go on sale 30 days before the visit.",
+          "figures": [
+            "30"
           ],
           "topics": [
             "tickets",
             "logistics"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "Underground access requires a Full Experience ticket (from €24 official) or a guided underground tour through a third-party operator (€63–€90).",
+          "fact": "The Full Experience Arena ticket goes on sale 7 days before, and its page adds that it can be bought at the ticket offices on the day of the visit.",
           "figures": [
-            "€24",
-            "€63–€90"
+            "7"
+          ],
+          "topics": [
+            "tickets",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The regulation caps underground tickets at eight per day for a single buyer, and sends visitors down in accompanied groups of at most 25 people every 15 minutes.",
+          "figures": [
+            "eight",
+            "25",
+            "15"
           ],
           "topics": [
             "underground",
             "tickets",
+            "crowds"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The attic admits groups of up to 25 every 30 minutes.",
+          "figures": [
+            "25",
+            "30"
+          ],
+          "topics": [
+            "crowds",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The park limits the stay inside the Colosseum: 75 minutes with the standard ticket and 90 with any Full Experience ticket.",
+          "figures": [
+            "75",
+            "90"
+          ],
+          "topics": [
+            "timing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Standard and Full Experience Arena holders must arrive at least 15 minutes before the printed time and no later than 15 minutes after it.",
+          "figures": [
+            "15"
+          ],
+          "topics": [
+            "timing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Underground holders must arrive 30 minutes before, with no tolerance for delay.",
+          "figures": [
+            "30"
+          ],
+          "topics": [
+            "timing",
+            "underground"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Attic holders must arrive 15 minutes before, also with no tolerance; since November 9, 2026, the attic's page also tells them to report to the meeting point 30 minutes after the time on the ticket, and that late arrivals will not be admitted.",
+          "figures": [
+            "15",
+            "November 9, 2026",
+            "30"
+          ],
+          "topics": [
+            "timing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "On the standard ticket, group tours with a live guide run from $39 to $98, and most sit between $40 and $75; private ones start at $285.",
+          "figures": [
+            "$39",
+            "$98",
+            "$40",
+            "$75",
+            "$285"
+          ],
+          "topics": [
+            "pricing",
+            "guides",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "On the arena ticket, tours that name the arena floor run from $38 to $121, and a few cheaper listings, from $36, offer the arena as an option chosen at checkout.",
+          "figures": [
+            "$38",
+            "$121",
+            "$36"
+          ],
+          "topics": [
+            "pricing",
+            "guides",
+            "arena-floor"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "On the underground ticket, group and small-group tours run from $92 to $196, with a private one at $494.",
+          "figures": [
+            "$92",
+            "$196",
+            "$494"
+          ],
+          "topics": [
+            "pricing",
+            "guides",
+            "underground"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The standard-route tours range from 4.1 to 4.8, the arena tours from 4.4 to 4.9, and every underground tour in the catalog is rated 4.5 or higher.",
+          "figures": [
+            "4.1",
+            "4.8",
+            "4.4",
+            "4.9",
+            "4.5"
+          ],
+          "topics": [
+            "guides",
+            "operators"
+          ],
+          "scale": "The rating is the one shown on each tour page."
+        },
+        {
+          "fact": "group tours on the standard ticket start at $39, and tours with the underground start at $92",
+          "figures": [
+            "$39",
+            "$92"
+          ],
+          "topics": [
+            "pricing",
+            "guides",
+            "underground"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "€24 on the park's official ticketing site, for each of its three versions.",
+          "figures": [
+            "€24"
+          ],
+          "topics": [
+            "tickets",
             "pricing"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The reduced price for EU citizens aged 18 to 24 is €2.",
+          "figures": [
+            "18",
+            "24",
+            "€2"
+          ],
+          "topics": [
+            "tickets",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The underground ticket with an educational tour is listed at €32.",
+          "figures": [
+            "€32"
+          ],
+          "topics": [
+            "tickets",
+            "pricing",
+            "underground",
+            "guides"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Two consecutive days: one entrance to the Colosseum at the booked time, and one entrance to the Roman Forum, Palatine and SUPER sites the day before, the same day or the day after.",
+          "figures": [
+            "Two"
+          ],
+          "topics": [
+            "tickets",
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "75 minutes with the standard ticket and 90 minutes with a Full Experience ticket, under the park's visitor regulation.",
+          "figures": [
+            "75",
+            "90"
+          ],
+          "topics": [
+            "timing",
+            "tickets"
+          ],
+          "scale": null
         }
       ]
     },
@@ -3286,7 +3795,7 @@
       ]
     },
     "colosseum-in-rain-what-changes-what-closes": {
-      "hash": "a2a1cf9453877030a0202ce60465c93cb361a276b9cca812ba08d500b26195e6",
+      "hash": "003c1b8802ce88ca290bdde8ca1bff0338296d3d15648f91841a3dbb12e09d8e",
       "candidatos": [
         {
           "fact": "The 30-to-45-minute midday wait of a sunny peak day can drop to 10 to 15 minutes on a rainy morning.",
@@ -3296,31 +3805,29 @@
           ],
           "topics": [
             "crowds",
-            "timing",
-            "weather"
+            "timing"
           ],
           "scale": null
         },
         {
-          "fact": "Its only refund rule covers a forced closure of the site ordered by the public-safety authorities after a natural disaster, paid within 30 days in the way the park announces on its website and social channels.",
+          "fact": "With the standard €18 ticket those two are SUPER sites and need the €4 supplement.",
           "figures": [
-            "30 days"
+            "€18",
+            "€4"
           ],
           "topics": [
-            "tickets",
-            "weather",
-            "pricing"
+            "pricing",
+            "forum-palatine"
           ],
           "scale": null
         },
         {
-          "fact": "Capitoline Museums (10-minute walk): One of the oldest public museums in the world, sitting on Capitoline Hill overlooking the Forum.",
+          "fact": "Bags larger than 30 x 40 x 15 cm (the park has no cloakroom)",
           "figures": [
-            "10-minute"
+            "30 x 40 x 15 cm"
           ],
           "topics": [
-            "logistics",
-            "weather"
+            "logistics"
           ],
           "scale": null
         },
@@ -3333,22 +3840,20 @@
             "1st-century"
           ],
           "topics": [
-            "logistics",
-            "weather"
+            "logistics"
           ],
           "scale": null
         },
         {
-          "fact": "It is small, fascinating, and almost never crowded. Perfect for 45 to 60 minutes.",
+          "fact": "Perfect for 45 to 60 minutes.",
           "figures": [
             "45 to 60 minutes"
           ],
           "topics": [
-            "logistics",
             "timing",
-            "weather"
+            "logistics"
           ],
-          "scale": null
+          "scale": "Basilica di San Clemente (5-minute walk): A 12th-century church built on top of a 4th-century church, built on top of a 1st-century Roman house and a Mithraic temple."
         },
         {
           "fact": "Domus Aurea (5-minute walk, advance booking required): Nero's Golden House, accessible only by guided tour.",
@@ -3357,7 +3862,18 @@
           ],
           "topics": [
             "logistics",
-            "weather"
+            "guides"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Visits run on Fridays, Saturdays and Sundays, except the first Sunday of the month, and must be booked in advance — if your rainy day falls on one of those days with availability, this is an extraordinary alternative.",
+          "figures": [
+            "first Sunday"
+          ],
+          "topics": [
+            "timing",
+            "logistics"
           ],
           "scale": null
         },
@@ -3367,8 +3883,7 @@
             "10-minute"
           ],
           "topics": [
-            "logistics",
-            "weather"
+            "logistics"
           ],
           "scale": null
         },
@@ -3378,9 +3893,31 @@
             "20-minute"
           ],
           "topics": [
-            "logistics",
             "timing",
-            "weather"
+            "logistics"
+          ],
+          "scale": "Church of San Pietro in Vincoli (10-minute walk): Houses Michelangelo's Moses sculpture — a masterwork that rivals anything in the Vatican, in a quiet church with no ticket required."
+        },
+        {
+          "fact": "Capitoline Museums (10-minute walk): One of the oldest public museums in the world, sitting on Capitoline Hill overlooking the Forum.",
+          "figures": [
+            "10-minute"
+          ],
+          "topics": [
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "paid within 30 days in the way the park announces on its website and social channels (article 1 of the regulation updated to October 8, 2026, read November 22, 2026)",
+          "figures": [
+            "30 days",
+            "October 8, 2026",
+            "November 22, 2026"
+          ],
+          "topics": [
+            "tickets",
+            "logistics"
           ],
           "scale": null
         }
@@ -4750,7 +5287,7 @@
       ]
     },
     "colosseum-survival-guide-heat-walking-kids": {
-      "hash": "9fde331985be395813a5b57aa1d7863f0601ff93592907b995a28557588333c2",
+      "hash": "db892f114cf1438a18459b6e44a1d73c93cd5fd9712ce895718f92bfce161b8a",
       "candidatos": [
         {
           "fact": "The Colosseum + Forum + Palatine combo is a 2.5-hour, mostly-outdoor walk with limited shade, no built-in bathroom break, and only 20 minutes inside the underground.",
@@ -4759,10 +5296,11 @@
             "20 minutes"
           ],
           "topics": [
-            "timing",
             "underground",
-            "forum-palatine"
-          ]
+            "timing",
+            "logistics"
+          ],
+          "scale": null
         },
         {
           "fact": "The standard combo runs 2.5 hours, plus walking to the meeting point: 15–20 minutes downhill from Termini, 5 minutes from Colosseo metro.",
@@ -4772,9 +5310,10 @@
             "5 minutes"
           ],
           "topics": [
-            "timing",
-            "logistics"
-          ]
+            "logistics",
+            "timing"
+          ],
+          "scale": null
         },
         {
           "fact": "For combo tours including arena floor and Palatine Hill, expect approximately 4–5 km cumulative walking with elevation changes.",
@@ -4782,22 +5321,11 @@
             "4–5 km"
           ],
           "topics": [
-            "logistics",
             "arena-floor",
-            "forum-palatine"
-          ]
-        },
-        {
-          "fact": "Booking a 7:15 AM or 8:00 AM slot is not about beating crowds — it is about not collapsing.",
-          "figures": [
-            "7:15 AM",
-            "8:00 AM"
+            "forum-palatine",
+            "logistics"
           ],
-          "topics": [
-            "timing",
-            "crowds",
-            "weather"
-          ]
+          "scale": null
         },
         {
           "fact": "You get a tour at 18–24°C cooler than the same route at 1 PM, and the difference between a memory and a medical incident.",
@@ -4808,7 +5336,57 @@
           "topics": [
             "weather",
             "timing"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The single most important variable for families is group size, not tour content. Standard combo: 17 people. Small-group alternative: 7 people.",
+          "figures": [
+            "17",
+            "7"
+          ],
+          "topics": [
+            "kids-families",
+            "tickets",
+            "operators"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "For us our tour was booked for 12pm but our entry to the Colosseum wasn't until 1.45pm.",
+          "figures": [
+            "12pm",
+            "1.45pm"
+          ],
+          "topics": [
+            "skip-the-line",
+            "timing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Time in the underground is limited to 30 minutes making this part of a tour rushed where there is not enough space to accommodate more time.",
+          "figures": [
+            "30 minutes"
+          ],
+          "topics": [
+            "underground",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "You pay a premium ticket price plus ticket-acquisition stress, for only 20–30 minutes of dwell time underground.",
+          "figures": [
+            "20–30 minutes"
+          ],
+          "topics": [
+            "underground",
+            "pricing",
+            "tickets"
+          ],
+          "scale": null
         },
         {
           "fact": "The official combo ticket costs €18 per adult, children free",
@@ -4817,19 +5395,23 @@
           ],
           "topics": [
             "pricing",
-            "tickets"
-          ]
+            "tickets",
+            "kids-families"
+          ],
+          "scale": null
         },
         {
-          "fact": "Independent travelers comfortable self-guiding should book official at €18 and use a pre-downloaded audio app.",
+          "fact": "The combined ticket with the Imperial Forums costs 18 euros per person and children are free.",
           "figures": [
-            "€18"
+            "18"
           ],
           "topics": [
             "pricing",
             "tickets",
-            "guides"
-          ]
+            "forum-palatine",
+            "kids-families"
+          ],
+          "scale": null
         },
         {
           "fact": "You choose either €18 + booking-site friction (official) or €60–€120+ per person (operator).",
@@ -4841,167 +5423,179 @@
             "pricing",
             "operators",
             "tickets"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "You pay a premium and accept a rushed 20–30 minute segment, in exchange for accessing a section most visitors never see.",
+          "fact": "Independent travelers comfortable self-guiding should book official at €18 and use a pre-downloaded audio app.",
           "figures": [
-            "20–30 minute"
+            "€18"
           ],
           "topics": [
-            "underground",
-            "timing",
-            "pricing"
-          ]
-        },
-        {
-          "fact": "Small-group tours (≤7) have flexibility that 17-person tours do not.",
-          "figures": [
-            "≤7",
-            "17-person"
-          ],
-          "topics": [
-            "logistics",
-            "kids-families",
-            "crowds"
-          ]
-        },
-        {
-          "fact": "You manage fluid intake for approximately 3 hours with no guaranteed bathroom break.",
-          "figures": [
-            "3 hours"
-          ],
-          "topics": [
-            "logistics",
-            "timing"
-          ]
-        },
-        {
-          "fact": "Book a slot before 10 AM in summer.",
-          "figures": [
-            "10 AM"
-          ],
-          "topics": [
-            "timing",
-            "weather"
-          ]
-        },
-        {
-          "fact": "In small-group format, guides engage kids directly — one asked a 13-year-old to make a pricing decision as if she were a Roman.",
-          "figures": [
-            "13-year-old"
-          ],
-          "topics": [
-            "kids-families",
+            "pricing",
+            "tickets",
             "guides"
-          ]
-        },
-        {
-          "fact": "For under-6s, neither format is ideal — the 2.5-hour duration is the binding constraint.",
-          "figures": [
-            "2.5-hour"
           ],
-          "topics": [
-            "kids-families",
-            "timing"
-          ]
-        },
-        {
-          "fact": "Ages 7–14 in a small-group tour (≤7 people): yes — documented cases of kids \"engaged the whole time\" with interactive guides.",
-          "figures": [
-            "7–14",
-            "≤7"
-          ],
-          "topics": [
-            "kids-families",
-            "guides"
-          ]
+          "scale": null
         }
       ]
     },
     "colosseum-ticket-name-change-id-check": {
-      "hash": "8324c9003c631bb0d05f966292277effca6aa964a8f2cd8f2a69a178726707e0",
+      "hash": "01d9b839801f64161b58f41cdffb2f5fe928a9eeb6a7628c23f640748ef96471",
       "candidatos": [
         {
-          "fact": "The park's English page gives it this way: for tickets with a visit date from May 9, 2026, the name may be changed \"only once and exclusively by 24:00 (midnight) on the seventh day prior to the visit date\", and only in the cases the regulation lists.",
+          "fact": "A wrong name can be corrected once, up to midnight on the seventh day before the visit.",
+          "figures": [
+            "seventh day"
+          ],
+          "topics": [
+            "tickets",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "For visits from May 9, 2026 the park accepts that change in three cases only.",
           "figures": [
             "May 9, 2026",
-            "24:00"
+            "three"
           ],
           "topics": [
             "tickets",
-            "timing",
             "logistics"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "For visits from May 9, 2026 the park accepts it only for a clerical error in the name, a ticket type assigned to the wrong person in the same purchase, or serious and documented reasons that prevent the visit.",
+          "fact": "Inside the last week nothing can be changed, and there is no refund or new date.",
           "figures": [
-            "May 9, 2026"
+            "last week"
           ],
           "topics": [
             "tickets",
             "logistics"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "The form is what the ticketing site had up on October 11, 2026.",
+          "fact": "Eleven of them mention being asked for a document on the way in, and three reviewers were stopped for not having one.",
           "figures": [
-            "October 11, 2026"
+            "Eleven",
+            "three"
           ],
           "topics": [
             "tickets",
             "logistics"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Four travelers asked before going whether a copy or a licence would do, and the corpus has no answer for them that holds every time.",
+          "figures": [
+            "Four"
+          ],
+          "topics": [
+            "tickets",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Three reviewers describe that happening, and each was sent to the ticket office for a new ticket.",
+          "figures": [
+            "Three"
+          ],
+          "topics": [
+            "tickets",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Six travelers asked about the name before going.",
+          "figures": [
+            "Six"
+          ],
+          "topics": [
+            "tickets",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "for tickets with a visit date from May 9, 2026, the name may be changed \"only once and exclusively by 24:00 (midnight) on the seventh day prior to the visit date\", and only in the cases the regulation lists.",
+          "figures": [
+            "May 9, 2026",
+            "24:00",
+            "seventh day"
+          ],
+          "topics": [
+            "tickets",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Eight people in the corpus offered tickets they could not use, and each mentions the name change as what made the handover possible.",
+          "figures": [
+            "Eight"
+          ],
+          "topics": [
+            "tickets",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Five of the eight say they were asking what they had paid or less.",
+          "figures": [
+            "Five",
+            "eight"
+          ],
+          "topics": [
+            "tickets",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "For the Full Experience ticket with the arena, the park's page says it can be bought at ticket offices on the day of the visit, though recent travelers report being offered general admission only.",
+          "figures": [],
+          "topics": [
+            "tickets",
+            "arena-floor"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The regulation was approved on April 1, 2026 and updated on October 8, 2026.",
+          "figures": [
+            "April 1, 2026",
+            "October 8, 2026"
+          ],
+          "topics": [
+            "tickets",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The older rule comes from the English version approved on October 29, 2024 and the Italian revision published in November 2025.",
+          "figures": [
+            "October 29, 2024",
+            "November 2025"
+          ],
+          "topics": [
+            "tickets",
+            "logistics"
+          ],
+          "scale": null
         }
       ]
     },
     "colosseum-ticket-release-calendar-timing": {
-      "hash": "5d9d855e56d6389d2b44144c9879543aefc258af3da6918c799aa14e597b8ad3",
+      "hash": "da3e60adb261dd09ea1d8d4f3f52944d3861e950954b9ece981a0ff55a3d01a9",
       "candidatos": [
-        {
-          "fact": "Standard combo: 30-day rolling window, same-day available.",
-          "figures": [
-            "30-day"
-          ],
-          "topics": [
-            "tickets",
-            "timing"
-          ]
-        },
-        {
-          "fact": "Arena Floor: 7-day release — be online at the exact drop.",
-          "figures": [
-            "7-day"
-          ],
-          "topics": [
-            "tickets",
-            "timing",
-            "arena-floor"
-          ]
-        },
-        {
-          "fact": "Underground/Attic: technically 30 days but \"sold out within seconds.\"",
-          "figures": [
-            "30 days"
-          ],
-          "topics": [
-            "tickets",
-            "underground",
-            "timing"
-          ]
-        },
-        {
-          "fact": "Night: seasonal; about 7 days ahead in 2025, by travelers' accounts.",
-          "figures": [
-            "7 days",
-            "2025"
-          ],
-          "topics": [
-            "night-tours",
-            "timing"
-          ]
-        },
         {
           "fact": "The official combo (Colosseum + Forum + Palatine Hill) costs €18, children free.",
           "figures": [
@@ -5009,40 +5603,33 @@
           ],
           "topics": [
             "tickets",
-            "pricing",
-            "forum-palatine"
-          ]
+            "pricing"
+          ],
+          "scale": null
         },
         {
           "fact": "If you want Arena or Night, you must be at your screen at the moment of release, exactly 7 days out.",
           "figures": [
-            "7 days"
+            "7"
           ],
           "topics": [
+            "tickets",
             "arena-floor",
             "night-tours",
             "timing"
-          ]
-        },
-        {
-          "fact": "You get the official €18 base price with no reseller markup — if you win the click race.",
-          "figures": [
-            "€18"
           ],
-          "topics": [
-            "pricing",
-            "tickets"
-          ]
+          "scale": null
         },
         {
           "fact": "Once inside the Underground, reviewers put the experience at 20–30 minutes — the scarcity of the ticket vastly outweighs the on-site dwell time.",
           "figures": [
-            "20–30 minutes"
+            "20-30"
           ],
           "topics": [
             "underground",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "An 11:30am tour has been observed going on sale at 12:00, and tickets for a 10:30am slot appearing at 2:10pm.",
@@ -5055,51 +5642,30 @@
           "topics": [
             "tickets",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "One verified case: tickets booked 3 months in advance on the official site, cancelled 2 days before the visit — flights and hotels already purchased around the booking.",
+          "fact": "Around nineteen tickets per release when you catch it at the start — and they are gone in seconds, because operators run bots against the same public queue you are refreshing by hand.",
           "figures": [
-            "3 months",
-            "2 days"
+            "nineteen"
           ],
           "topics": [
             "tickets",
-            "timing",
-            "logistics"
-          ]
-        },
-        {
-          "fact": "Book 4–6 weeks ahead through a vetted operator if the official site shows sold out.",
-          "figures": [
-            "4–6 weeks"
-          ],
-          "topics": [
-            "underground",
-            "operators",
             "timing"
-          ]
-        },
-        {
-          "fact": "Use the gap between meeting time and Colosseum entry (up to 1h45m documented) for the Forum portion.",
-          "figures": [
-            "1h45m"
           ],
-          "topics": [
-            "forum-palatine",
-            "timing",
-            "logistics"
-          ]
+          "scale": null
         },
         {
-          "fact": "One additional timing fact: the Standard ticket gives you single access to Forum and Palatine Hill within a 24-hour window — a feature many travelers waste because they did not know it existed.",
+          "fact": "The cart gives you fifteen minutes.",
           "figures": [
-            "24-hour"
+            "fifteen"
           ],
           "topics": [
             "tickets",
-            "forum-palatine"
-          ]
+            "logistics"
+          ],
+          "scale": null
         },
         {
           "fact": "Trustpilot averages 1.63 across 424 reviews — the lowest of all five platforms, reflecting service-quality failures when the inventory is real but the delivery is not.",
@@ -5108,13 +5674,12 @@
             "424"
           ],
           "topics": [
-            "operators",
-            "tickets"
+            "operators"
           ],
           "scale": "Trustpilot: 424 items (avg rating 1.63)"
         },
         {
-          "fact": "Third-party adds operator failure on top — book through GYG (4.94 avg) for platform-level dispute resolution.",
+          "fact": "book through GYG (4.94 avg) for platform-level dispute resolution",
           "figures": [
             "4.94"
           ],
@@ -5123,11 +5688,46 @@
             "tickets"
           ],
           "scale": "GetYourGuide: 581 items (avg rating 4.94)"
+        },
+        {
+          "fact": "One additional timing fact: the Standard ticket gives you single access to Forum and Palatine Hill within a 24-hour window — a feature many travelers waste because they did not know it existed.",
+          "figures": [
+            "24-hour"
+          ],
+          "topics": [
+            "tickets",
+            "forum-palatine",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Use the gap between meeting time and Colosseum entry (up to 1h45m documented) for the Forum portion.",
+          "figures": [
+            "1h45m"
+          ],
+          "topics": [
+            "forum-palatine",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Book 4–6 weeks ahead through a vetted operator if the official site shows sold out.",
+          "figures": [
+            "4-6"
+          ],
+          "topics": [
+            "underground",
+            "operators",
+            "tickets"
+          ],
+          "scale": null
         }
       ]
     },
     "colosseum-ticket-tiers-standard-arena-underground-night": {
-      "hash": "ad73551dd0bab2c33dcd9fbe5921e1939323c6f3a4885071bcc6f5218c835e6a",
+      "hash": "3f28d6f921c04ee83f03dd34dc37dc3fbc10c3e1a2a7882c1eec8189a658517f",
       "candidatos": [
         {
           "fact": "Standard entry is available 30 days out.",
@@ -5137,31 +5737,11 @@
           "topics": [
             "tickets",
             "timing"
-          ]
-        },
-        {
-          "fact": "Night visits are seasonal; the official site was not selling one in mid-October 2026.",
-          "figures": [
-            "mid-October 2026"
           ],
-          "topics": [
-            "night-tours",
-            "timing"
-          ]
+          "scale": null
         },
         {
-          "fact": "Standard entry covers the main levels (1st and 2nd tiers), inner rings, permanent exhibits, and single-access entry to the Roman Forum and Palatine Hill — all for €18 per adult, children free",
-          "figures": [
-            "€18"
-          ],
-          "topics": [
-            "pricing",
-            "tickets",
-            "forum-palatine"
-          ]
-        },
-        {
-          "fact": "The catch is structural: Arena Floor tickets release only 7 days in advance on the official site.",
+          "fact": "Arena Floor releases 7 days ahead.",
           "figures": [
             "7 days"
           ],
@@ -5169,7 +5749,32 @@
             "tickets",
             "timing",
             "arena-floor"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "At €18 for the combined Colosseum + Forum + Palatine ticket, Standard is the cheapest path to the same Forum/Palatine experience every premium tier includes.",
+          "figures": [
+            "€18"
+          ],
+          "topics": [
+            "pricing",
+            "tickets",
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Arena Floor tickets release only 7 days in advance on the official site.",
+          "figures": [
+            "7"
+          ],
+          "topics": [
+            "arena-floor",
+            "tickets",
+            "timing"
+          ],
+          "scale": null
         },
         {
           "fact": "One reviewer flagged a timing detail worth knowing: a 12:00 booking meant actual Colosseum entry at 1:45 PM — a 1h45m gap filled by Forum and Palatine.",
@@ -5182,17 +5787,19 @@
             "timing",
             "tickets",
             "forum-palatine"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "Time inside is capped at 20–30 minutes — tight, but delivering the only perspective of the Colosseum no other ticket provides.",
           "figures": [
-            "20–30 minutes"
+            "20-30 minutes"
           ],
           "topics": [
             "underground",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "Small-group operators (max 7) hold the inventory most travelers actually book through.",
@@ -5200,61 +5807,82 @@
             "7"
           ],
           "topics": [
-            "operators",
-            "underground"
-          ]
-        },
-        {
-          "fact": "You book 4–6 weeks ahead through an operator, accepting a premium over the €18 base.",
-          "figures": [
-            "4–6 weeks",
-            "€18"
-          ],
-          "topics": [
             "underground",
-            "operators",
-            "pricing"
-          ]
-        },
-        {
-          "fact": "In 2025, travelers described it as a once-a-week evening visit with tickets released one week in advance.",
-          "figures": [
-            "2025"
+            "operators"
           ],
-          "topics": [
-            "night-tours",
-            "timing"
-          ]
+          "scale": null
         },
         {
-          "fact": "Full Experience is the official premium tier, sold as three €24 tickets that each add one area to the Colosseum, Forum and Palatine: the arena floor, the underground with the arena, or the attic",
+          "fact": "Full Experience is the official premium tier, sold as three €24 tickets that each add one area to the Colosseum, Forum and Palatine: the arena floor, the underground with the arena, or the attic.",
           "figures": [
             "€24"
           ],
           "topics": [
+            "tickets",
             "pricing",
-            "tickets"
-          ]
+            "forum-palatine"
+          ],
+          "scale": null
         },
         {
-          "fact": "Arena Floor puts you at gladiator level with a 360-degree view of the stands.",
+          "fact": "What remains: security and metal detectors, group formation, headset distribution, and the booking-to-entry gap (up to 1h45m documented).",
           "figures": [
-            "360-degree"
+            "1h45m"
           ],
           "topics": [
-            "arena-floor"
-          ]
-        },
-        {
-          "fact": "Check what each edition includes before booking: the park's 2024 visitor regulation refers to underground tickets sold as part of its \"A night at the Colosseum\" event, so it is not always the standard zones after dark.",
-          "figures": [
-            "2024"
-          ],
-          "topics": [
-            "night-tours",
-            "underground",
+            "skip-the-line",
             "logistics"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "It is a real advantage — the ticket queue can run an hour — but it is not a walk-right-in pass.",
+          "figures": [
+            "an hour"
+          ],
+          "topics": [
+            "skip-the-line",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "We bought 2 tickets for today at 10:30am for 180 pound sterling and we arrived 10 minutes late and nobody was there to give us our tickets.",
+          "figures": [
+            "2",
+            "10:30am",
+            "180",
+            "10 minutes"
+          ],
+          "topics": [
+            "tickets",
+            "operators",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Since November 9, 2026, the park reserves the panoramic lift for visitors with reduced mobility who have documented difficulty climbing stairs.",
+          "figures": [
+            "November 9, 2026"
+          ],
+          "topics": [
+            "accessibility",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Book through GYG (4.94 avg) rather than low-cost resellers (Trustpilot 1.63 avg) to minimize meeting-point and cancellation risk.",
+          "figures": [
+            "4.94",
+            "1.63"
+          ],
+          "topics": [
+            "operators",
+            "skip-the-line"
+          ],
+          "scale": "\"I paid for the arena upgrade and thought it was well worth it.\" — GetYourGuide, 5 stars, United Kingdom, March 2026"
         }
       ]
     },
@@ -5685,7 +6313,7 @@
       ]
     },
     "colosseum-tickets-what-s-really-included-and-what-isn-t-in-each-option": {
-      "hash": "061ae7dbb919ac7b0d7021bb662f203e15f2a38aa579889b7a74e7ff7a505c70",
+      "hash": "c25d170e4ac30dc734d86df2c179e9231666576d3de6d5833c3ac5679c1fb64f",
       "candidatos": [
         {
           "fact": "The maximum stay inside the Colosseum itself is 75 minutes, as defined in the official visitor regulations.",
@@ -5693,29 +6321,10 @@
             "75 minutes"
           ],
           "topics": [
-            "timing",
-            "tickets"
-          ]
-        },
-        {
-          "fact": "The Forum and Palatine Hill count as a single combined site, so you can enter through either access point once, and you should plan at least 2–3 hours to walk through both areas before closing.",
-          "figures": [
-            "2–3"
-          ],
-          "topics": [
-            "timing",
-            "forum-palatine"
-          ]
-        },
-        {
-          "fact": "One entrance to the Roman Forum, Palatine Hill and associated S.U.P.E.R. sites, valid within a 48-hour window from first use.",
-          "figures": [
-            "48-hour"
-          ],
-          "topics": [
             "tickets",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "According to the Parco archeologico del Colosseo, time on the arena floor typically lasts around 20 minutes, and the ticket is valid for 24 hours, with the last arena admission usually scheduled in mid-afternoon.",
@@ -5724,20 +6333,22 @@
             "24 hours"
           ],
           "topics": [
+            "tickets",
             "arena-floor",
-            "timing",
-            "tickets"
-          ]
+            "timing"
+          ],
+          "scale": null
         },
         {
           "fact": "One timed entrance to the Colosseum arena floor only, accessed via the Sperone Stern side, for approximately 20 minutes on the platform.",
           "figures": [
-            "20 minutes"
+            "20"
           ],
           "topics": [
             "arena-floor",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "Timed entry to the Colosseum with a live guide, usually in a specific language, with a defined group size and duration (commonly 2.5–3 hours for Colosseum, Roman Forum and Palatine Hill combined).",
@@ -5747,24 +6358,45 @@
           "topics": [
             "guides",
             "timing",
-            "tickets"
-          ]
+            "forum-palatine"
+          ],
+          "scale": null
         },
         {
-          "fact": "The standard 24-hour ticket (€18) includes timed entry to the Colosseum's public levels 1 and 2 plus one entrance to the Roman Forum and Palatine Hill on the same day.",
+          "fact": "A small-group or limited-capacity experience, usually lasting 1.5–2 hours, with an emphasis on storytelling, atmosphere and photography in a much quieter setting than daytime visits.",
           "figures": [
-            "24-hour",
-            "€18",
-            "1",
-            "2"
+            "1.5–2 hours"
+          ],
+          "topics": [
+            "night-tours",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Since November 9, 2026, the park reserves the panoramic lift for visitors with reduced mobility.",
+          "figures": [
+            "November 9, 2026"
+          ],
+          "topics": [
+            "accessibility",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The standard 24-hour ticket costs €18 on the park's official ticket pages (read November 21, 2026)",
+          "figures": [
+            "€18"
           ],
           "topics": [
             "tickets",
             "pricing"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "The Full Experience ticket (€24) adds access to restricted areas that the standard ticket does not cover, such as the underground hypogeum, the reconstructed arena floor, or the upper attic levels depending on the variant.",
+          "fact": "The Full Experience ticket costs €24 on the park's official ticket pages (read November 21, 2026) and adds one restricted area that the standard ticket does not cover: the reconstructed arena floor, the underground with the arena, or the attic, depending on which of the three tickets you buy",
           "figures": [
             "€24"
           ],
@@ -5773,20 +6405,34 @@
             "pricing",
             "underground",
             "arena-floor"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "Night tours are after-hours guided experiences lasting 1.5 to 2 hours in small groups, with access to the arena floor and sometimes the underground.",
+          "fact": "Night tours are after-hours guided experiences lasting 1.5 to 2 hours in small groups, with access to the arena floor and sometimes the underground",
           "figures": [
             "1.5",
-            "2"
+            "2 hours"
           ],
           "topics": [
             "night-tours",
             "timing",
-            "arena-floor",
-            "underground"
-          ]
+            "arena-floor"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The park's Full Experience Underground and Arena ticket (€24 on the official ticket pages, read November 21, 2026) includes both the underground and the arena floor",
+          "figures": [
+            "€24"
+          ],
+          "topics": [
+            "tickets",
+            "pricing",
+            "underground",
+            "arena-floor"
+          ],
+          "scale": null
         }
       ]
     },
@@ -5906,51 +6552,86 @@
       ]
     },
     "colosseum-timed-entry-window-late-arrival": {
-      "hash": "7166e7270c146e332f4231bd8cebc5a509bc0d4c2f94e678d89ab2dd1f6341e7",
+      "hash": "58934731496e8a88e5baead26b322f902e44523e4e01f7bbb44a1e2492f05c2b",
       "candidatos": [
         {
           "fact": "Holders of the standard ticket and of the Full Experience Arena ticket must arrive at least 15 minutes before the printed time and no later than 15 minutes after it.",
           "figures": [
-            "15 minutes"
-          ],
-          "topics": [
-            "timing",
-            "tickets"
-          ]
-        },
-        {
-          "fact": "The lesson for an official ticket is narrower: miss the 15-minute margin and the ticket still gives one entry to the Forum and Palatine, but the Colosseum needs a new ticket.",
-          "figures": [
-            "15-minute"
+            "15"
           ],
           "topics": [
             "tickets",
-            "timing",
-            "forum-palatine"
-          ]
+            "timing"
+          ],
+          "scale": null
         },
         {
-          "fact": "Standard and Full Experience Arena: 15 minutes of margin, then the ticket is good for the Forum and Palatine only.",
-          "figures": [
-            "15 minutes"
-          ],
+          "fact": "Holders of Underground, Attic and Only Arena tickets get no tolerance for delay.",
+          "figures": [],
           "topics": [
             "tickets",
             "timing",
-            "forum-palatine"
-          ]
+            "underground"
+          ],
+          "scale": null
         },
         {
-          "fact": "Two consequences: if you assume \"12:00\" means \"be at the Colosseum gate at 12:00,\" you will be 1 hour 45 minutes early for the actual gate.",
+          "fact": "They rebought at €50 per ticket — total damage: £180 + €100.",
+          "figures": [
+            "€50",
+            "£180",
+            "€100"
+          ],
+          "topics": [
+            "tickets",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The 12:00 was the meeting time.",
+          "figures": [
+            "12:00"
+          ],
+          "topics": [
+            "timing",
+            "guides"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The 13:45 was when the Colosseum's access system would let them in.",
+          "figures": [
+            "13:45"
+          ],
+          "topics": [
+            "timing",
+            "guides"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The 105-minute gap was filled by the Forum and Palatine.",
+          "figures": [
+            "105-minute"
+          ],
+          "topics": [
+            "timing",
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "if you assume \"12:00\" means \"be at the Colosseum gate at 12:00,\" you will be 1 hour 45 minutes early for the actual gate",
           "figures": [
             "12:00",
             "1 hour 45 minutes"
           ],
           "topics": [
             "timing",
-            "operators",
             "guides"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "If you plan other activities after the tour based on a \"12:00 + 2.5h = 14:30 finish,\" you will miss them — the real finish is closer to 17:00.",
@@ -5962,73 +6643,64 @@
           ],
           "topics": [
             "timing",
-            "operators"
-          ]
+            "guides"
+          ],
+          "scale": null
         },
         {
-          "fact": "The reality: a potential 90+ minute mismatch — useful if you know to expect it, devastating if you planned other activities around the wrong number.",
+          "fact": "GetYourGuide (4.94 avg) provides platform-level dispute resolution.",
           "figures": [
-            "90+ minute"
+            "4.94"
           ],
           "topics": [
-            "timing",
             "operators",
             "guides"
-          ]
+          ],
+          "scale": "GetYourGuide: 581 items (avg rating 4.94)"
         },
         {
-          "fact": "Inside 15 minutes of the printed time you are still within the park's margin: go to the gate.",
+          "fact": "Pure resellers (Trustpilot 1.63 avg) often do not.",
           "figures": [
-            "15 minutes"
+            "1.63"
           ],
           "topics": [
-            "timing",
-            "tickets"
-          ]
+            "operators"
+          ],
+          "scale": "Trustpilot: 424 items (avg rating 1.63)"
         },
         {
-          "fact": "If you miss one of those slots, the fallback is a standard ticket (€18), and the late ticket still gives one entry to the Roman Forum and Palatine.",
+          "fact": "The realistic fallback: buy a Standard ticket (€18) and accept the forfeited premium upgrade.",
           "figures": [
             "€18"
           ],
           "topics": [
             "tickets",
-            "pricing",
-            "forum-palatine"
-          ]
-        },
-        {
-          "fact": "Very early (90+ min gap): Use the Forum and Palatine as your waiting zone.",
-          "figures": [
-            "90+ min"
+            "pricing"
           ],
-          "topics": [
-            "timing",
-            "forum-palatine"
-          ]
+          "scale": null
         },
         {
-          "fact": "Arrive 30 minutes early, treat the gap as Forum time, and protect the premium you paid for.",
+          "fact": "On the day of the tour, just 4 hours before the start (at 05:36 AM), we received a cold cancellation email.",
           "figures": [
-            "30 minutes"
-          ],
-          "topics": [
-            "timing",
-            "forum-palatine",
-            "tickets"
-          ]
-        },
-        {
-          "fact": "On a guided tour the operator's meeting time applies first: in one documented case, a party 10 minutes late to the meeting point lost £180.",
-          "figures": [
-            "10 minutes",
-            "£180"
+            "4 hours",
+            "05:36 AM"
           ],
           "topics": [
             "operators",
-            "pricing",
             "timing"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Budget 1–2 extra hours beyond the advertised tour duration for guided combos.",
+          "figures": [
+            "1–2"
+          ],
+          "topics": [
+            "timing",
+            "guides"
+          ],
+          "scale": null
         },
         {
           "fact": "One verified case shows a 12:00 PM booking with 1:45 PM actual Colosseum entry — a 1h45m gap filled by Forum and Palatine.",
@@ -6039,30 +6711,21 @@
           ],
           "topics": [
             "timing",
-            "operators",
+            "guides",
             "forum-palatine"
-          ]
-        },
-        {
-          "fact": "Budget 1–2 extra hours beyond the advertised tour duration for guided combos.",
-          "figures": [
-            "1–2"
           ],
-          "topics": [
-            "timing",
-            "operators"
-          ]
+          "scale": null
         },
         {
           "fact": "The underground ticket requires arrival 30 minutes before the printed time.",
           "figures": [
-            "30 minutes"
+            "30"
           ],
           "topics": [
             "underground",
-            "timing",
-            "tickets"
-          ]
+            "timing"
+          ],
+          "scale": null
         }
       ]
     },
@@ -6872,7 +7535,7 @@
       ]
     },
     "colosseum-underground-accredited-operators": {
-      "hash": "6b24dcceb169c4d0a8bdbe8e1a3092fe2b5ec65b70f38dbc9dd63651459f8a35",
+      "hash": "a7b355c3cd4221b5c9d7924f110bf7317d457b1f8e1d9ee53e0154057ce880bc",
       "candidatos": [
         {
           "fact": "The official guided underground ticket costs €32 and is released 30 days ahead.",
@@ -6884,7 +7547,8 @@
             "tickets",
             "pricing",
             "underground"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "Named tickets became mandatory at the Colosseum on 25 June 2022, and the operator ecosystem has been unstable ever since.",
@@ -6893,18 +7557,21 @@
           ],
           "topics": [
             "tickets",
-            "operators"
-          ]
+            "logistics"
+          ],
+          "scale": null
         },
         {
-          "fact": "In October 2025 the Lazio regional administrative court rejected a tour operator’s case against the park’s accreditation rules, calling them reasonable, logical and proportionate, and grounding them explicitly in the need to curb bulk ticket hoarding.",
+          "fact": "In October 2025 the Lazio regional administrative court rejected a tour operator's case against the park's accreditation rules, calling them reasonable, logical and proportionate, and grounding them explicitly in the need to curb bulk ticket hoarding.",
           "figures": [
             "October 2025"
           ],
           "topics": [
+            "tickets",
             "operators",
-            "tickets"
-          ]
+            "underground"
+          ],
+          "scale": null
         },
         {
           "fact": "The ruling also set out the machinery behind the list: a B2B platform for accredited operators kept separate from the public one, annual ticket allocations decided by the park, and a €2 fee per ticket.",
@@ -6912,21 +7579,56 @@
             "€2"
           ],
           "topics": [
+            "tickets",
             "pricing",
-            "operators",
+            "operators"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "That traveler paid €629.40 for a party of six, lost the underground portion, spent two hours walking the Forum in 34°C heat, queued thirty minutes for a skip-the-line ticket, got twenty minutes on the arena floor, and left early.",
+          "figures": [
+            "€629.40",
+            "six",
+            "two hours",
+            "34°C",
+            "thirty minutes",
+            "twenty minutes"
+          ],
+          "topics": [
+            "underground",
+            "pricing",
+            "forum-palatine",
+            "arena-floor",
+            "skip-the-line",
+            "weather"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The refund was roughly 30% of what the tour cost.",
+          "figures": [
+            "30%"
+          ],
+          "topics": [
+            "pricing",
+            "underground",
             "tickets"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "The official guided underground ticket cost €32 and third-party operators resold the same access for five to six times that figure — the arithmetic that keeps the whole grey market in business.",
           "figures": [
-            "€32"
+            "€32",
+            "five to six times"
           ],
           "topics": [
             "pricing",
-            "tickets",
+            "underground",
             "operators"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "The inventory is small, it is released exactly 30 days before the visit date at unpredictable times of day, and it disappears within seconds of appearing.",
@@ -6935,18 +7637,69 @@
           ],
           "topics": [
             "tickets",
+            "underground",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "If you can get the official €32 ticket yourself, take it — the operator premium buys you a guide and a booking someone else had to fight for, not better access.",
+          "fact": "The didactic tour costs 34 euro on the Coop Culture website; tour operators charge five or six times that amount for the exact same ticket.",
           "figures": [
-            "€32"
+            "34 euro",
+            "five or six times"
           ],
           "topics": [
             "pricing",
-            "tickets"
-          ]
+            "underground",
+            "operators"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The price figures above come from that March 2024 account: €32 official, five to six times that through an operator, for the same ticket.",
+          "figures": [
+            "€32",
+            "five to six times"
+          ],
+          "topics": [
+            "pricing",
+            "underground",
+            "operators"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Buying at the ticket office on the day is not a fallback for the underground: the park's page for that ticket lists online purchase and no ticket-office sale.",
+          "figures": [],
+          "topics": [
+            "tickets",
+            "underground",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The one Full Experience ticket its pages list at ticket offices on the day is the arena one, which does not include the underground",
+          "figures": [],
+          "topics": [
+            "tickets",
+            "arena-floor",
+            "underground"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Thirty days before the visit date, at times that vary through the day rather than at a fixed hour, with a smaller release seven days out.",
+          "figures": [
+            "Thirty days",
+            "seven days"
+          ],
+          "topics": [
+            "tickets",
+            "underground",
+            "timing"
+          ],
+          "scale": "How far ahead do official underground tickets go on sale?"
         }
       ]
     },
@@ -7395,192 +8148,549 @@
       ]
     },
     "colosseum-underground-tour-ticket": {
-      "hash": "3167c06830b921e075c48de033c86472d66f06292fa740bcb84224393b1fd898",
+      "hash": "941ea8e3c1f8004d89bd51848cd32eed2bf018efee433d12e145c0b06305151d",
       "candidatos": [
         {
-          "fact": "Imagine more than 30 trapdoors scattered across the arena floor.",
+          "fact": "The park sells its own ticket, Full Experience Underground and Arena, for €24, or €32 with the park's educational tour.",
           "figures": [
-            "30"
-          ],
-          "topics": [
-            "underground"
-          ]
-        },
-        {
-          "fact": "A full Colosseum + Underground + Forum + Palatine visit can easily take 3–4 hours.",
-          "figures": [
-            "3–4 hours"
-          ],
-          "topics": [
-            "timing",
-            "forum-palatine",
-            "underground"
-          ]
-        },
-        {
-          "fact": "When you step into the Colosseum’s underground today, you won’t just see ruins—you’ll feel the echoes of an ancient machine that once amazed 50,000 spectators.",
-          "figures": [
-            "50,000"
-          ],
-          "topics": [
-            "underground",
-            "crowds"
-          ]
-        }
-      ]
-    },
-    "colosseum-underground-vs-arena-floor": {
-      "hash": "c6efb21edc2245868268c7a7f45013b0573d9e3c3824a7bfedaf7f10bf16f931",
-      "candidatos": [
-        {
-          "fact": "Guided arena floor tours (third-party, €45–€65): Include skip-the-line entry, a licensed guide, headsets, the arena floor via the Gladiator's Gate, and usually Roman Forum + Palatine Hill.",
-          "figures": [
-            "€45–€65"
-          ],
-          "topics": [
-            "arena-floor",
-            "pricing",
-            "skip-the-line"
-          ]
-        },
-        {
-          "fact": "Guided underground tours (third-party, €63–€90): Include everything in the arena tour plus full hypogeum access.",
-          "figures": [
-            "€63–€90"
-          ],
-          "topics": [
-            "underground",
-            "pricing"
-          ]
-        },
-        {
-          "fact": "Only about 2% of daily visitors see the hypogeum.",
-          "figures": [
-            "2%"
-          ],
-          "topics": [
-            "underground",
-            "crowds"
-          ]
-        },
-        {
-          "fact": "Time on the arena floor is typically 15 to 30 minutes.",
-          "figures": [
-            "15 to 30 minutes"
-          ],
-          "topics": [
-            "arena-floor",
-            "timing"
-          ]
-        },
-        {
-          "fact": "Underground visits are always guided, typically 30 to 45 minutes in the tunnels.",
-          "figures": [
-            "30 to 45 minutes"
-          ],
-          "topics": [
-            "underground",
-            "timing",
-            "guides"
-          ]
-        },
-        {
-          "fact": "Standard ticket (official site, from €18): Levels 1–2 of the Colosseum, Roman Forum, and Palatine Hill.",
-          "figures": [
-            "€18",
-            "1–2"
+            "€24",
+            "€32"
           ],
           "topics": [
             "tickets",
-            "pricing"
-          ]
+            "pricing",
+            "underground",
+            "arena-floor"
+          ],
+          "scale": null
         },
         {
-          "fact": "Full Experience tickets (official site, €24 each): Everything in the standard ticket plus one premium area per ticket: the arena floor, the underground with the arena (visited in accompanied groups), or the attic.",
+          "fact": "It goes on sale online 30 days before the visit, entry is in accompanied groups of up to 25, and you must arrive 30 minutes early with no tolerance for delay.",
+          "figures": [
+            "30 days",
+            "25",
+            "30 minutes"
+          ],
+          "topics": [
+            "tickets",
+            "underground",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "In our tour catalog, guided underground tours start between $92 and $196.",
+          "figures": [
+            "$92",
+            "$196"
+          ],
+          "topics": [
+            "pricing",
+            "underground",
+            "guides"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "On the official ticketing site it costs €24 and includes entry to the underground levels at the booked time, the arena floor, the Roman Forum and Palatine area, and the SUPER sites.",
           "figures": [
             "€24"
           ],
           "topics": [
             "tickets",
-            "pricing"
-          ]
+            "pricing",
+            "underground",
+            "arena-floor",
+            "forum-palatine"
+          ],
+          "scale": null
         },
         {
-          "fact": "Available only through the official site (colosseo.it), bookable 30 days in advance, and sells out fast — especially the English-language time slots.",
+          "fact": "The park's visitor regulation says the underground is entered in accompanied groups of at most 25 people every 15 minutes.",
+          "figures": [
+            "25",
+            "15 minutes"
+          ],
+          "topics": [
+            "underground",
+            "crowds",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The Full Experience Arena ticket costs the same €24 and does not include the underground.",
+          "figures": [
+            "€24"
+          ],
+          "topics": [
+            "tickets",
+            "pricing",
+            "arena-floor",
+            "underground"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The standard €18 ticket covers the first and second levels only; the regulation says it excludes the arena floor, and it does not include the underground either.",
+          "figures": [
+            "€18"
+          ],
+          "topics": [
+            "tickets",
+            "pricing",
+            "arena-floor",
+            "underground"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The park's page gives €2 for European Union citizens from 18 until the day they turn 25, and the regulation gives free entry to visitors under 18.",
+          "figures": [
+            "€2",
+            "18",
+            "25",
+            "18"
+          ],
+          "topics": [
+            "tickets",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The regulation requires holders of this ticket to be there 30 minutes before the time printed on it, and states that there is no tolerance for delay.",
+          "figures": [
+            "30 minutes"
+          ],
+          "topics": [
+            "timing",
+            "underground",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The standard ticket allows 15 minutes; this one allows none.",
+          "figures": [
+            "15 minutes"
+          ],
+          "topics": [
+            "timing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The park's page sets the stay inside the Colosseum at 90 minutes for this ticket.",
+          "figures": [
+            "90 minutes"
+          ],
+          "topics": [
+            "timing",
+            "underground",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The park's page for this ticket says it can be bought online starting 30 days before the date of the visit.",
           "figures": [
             "30 days"
           ],
           "topics": [
             "tickets",
-            "logistics",
-            "timing"
-          ]
+            "timing",
+            "underground"
+          ],
+          "scale": null
         },
         {
-          "fact": "Evening underground tours run approximately €74.",
+          "fact": "The daily maximum of underground tickets one buyer can purchase is 8.",
           "figures": [
-            "€74"
+            "8"
+          ],
+          "topics": [
+            "tickets",
+            "underground",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "And that name can be changed only once, no later than midnight on the seventh day before the visit, in the cases the regulation lists.",
+          "figures": [
+            "midnight",
+            "seventh day"
+          ],
+          "topics": [
+            "tickets",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "What visitors walk through today covers, by the park's figure, half a hectare, a little over an acre.",
+          "figures": [
+            "half a hectare"
+          ],
+          "topics": [
+            "underground"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Fourteen corridors are visible, set symmetrically on either side of a large central passage.",
+          "figures": [
+            "Fourteen"
+          ],
+          "topics": [
+            "underground"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Platner and Ashby's Topographical Dictionary of Ancient Rome gives the height of these substructures as 5.50 to 6.08 meters, about 18 to 20 feet, and records in them \"traces of dens for wild beasts, elevators, and mechanical appliances of various sorts.\"",
+          "figures": [
+            "5.50",
+            "6.08 meters",
+            "18",
+            "20 feet"
+          ],
+          "topics": [
+            "underground"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "A fire in 217 destroyed the underground and closed the monument until 222.",
+          "figures": [
+            "217",
+            "222"
+          ],
+          "topics": [
+            "underground"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Group size varies too: some listings state a maximum of six or seven people in the title, while the park's own limit for an underground group is 25.",
+          "figures": [
+            "six",
+            "seven",
+            "25"
           ],
           "topics": [
             "underground",
-            "night-tours",
-            "pricing"
-          ]
-        },
+            "crowds",
+            "guides"
+          ],
+          "scale": null
+        }
+      ]
+    },
+    "colosseum-underground-vs-arena-floor": {
+      "hash": "cf4cfaf416621c919d4efb678d6b08b9e997a731818cee7ba0739997f02119ff",
+      "candidatos": [
         {
-          "fact": "VIP small-group underground tours (6–10 people) start around €135–€160.",
+          "fact": "The underground ticket already includes the arena, and it costs the same €24 as the arena ticket.",
           "figures": [
-            "6–10",
-            "€135–€160"
+            "€24"
           ],
           "topics": [
             "underground",
+            "arena-floor",
             "pricing"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "Official underground slots sell out 4 to 8 weeks ahead during peak season (April–October).",
+          "fact": "Full Experience Underground and Arena goes on sale 30 days ahead and allows no late arrival.",
           "figures": [
-            "4 to 8 weeks",
-            "April–October"
+            "30 days"
           ],
           "topics": [
             "underground",
             "tickets",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "You have 2.5 to 3 hours to dedicate to the site.",
+          "fact": "Full Experience Arena goes on sale 7 days ahead and allows 15 minutes.",
           "figures": [
-            "2.5 to 3 hours"
+            "7 days",
+            "15 minutes"
           ],
           "topics": [
+            "arena-floor",
+            "tickets",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "A third ticket, 24H Only Arena, costs €18 for 20 minutes on the arena floor and nothing else inside the Colosseum.",
+          "figures": [
+            "€18",
+            "20 minutes"
+          ],
+          "topics": [
+            "arena-floor",
+            "pricing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "24H Only Arena, €18. The park's page for this ticket describes \"entrance and exit from the Sperone Stern side, with visit only to the floor of the arena\", and says the visit lasts 20 minutes.",
+          "figures": [
+            "€18",
+            "20 minutes"
+          ],
+          "topics": [
+            "arena-floor",
+            "pricing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "With an educational tour the park lists the same ticket at €32.",
+          "figures": [
+            "€32"
+          ],
+          "topics": [
+            "underground",
+            "pricing",
+            "guides"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The regulation says visitors go down \"in gruppi accompagnati\", in accompanied groups, of at most 25 people every 15 minutes.",
+          "figures": [
+            "25",
+            "15 minutes"
+          ],
+          "topics": [
+            "underground",
+            "crowds",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Sale date. The underground ticket can be bought online from 30 days before the visit.",
+          "figures": [
+            "30 days"
+          ],
+          "topics": [
+            "underground",
+            "tickets",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The arena ticket can be bought online from 7 days before, and its page adds that it is also sold at the ticket offices on the day of the visit.",
+          "figures": [
+            "7 days"
+          ],
+          "topics": [
+            "arena-floor",
+            "tickets",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Supply. The underground admits at most 25 people every 15 minutes, and the regulation caps purchases at eight underground tickets per day for a single buyer.",
+          "figures": [
+            "25",
+            "15 minutes",
+            "eight"
+          ],
+          "topics": [
+            "underground",
+            "crowds",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The Only Arena admits 50 people every 20 minutes.",
+          "figures": [
+            "50",
+            "20 minutes"
+          ],
+          "topics": [
+            "arena-floor",
+            "crowds"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Underground holders must arrive 30 minutes before the time on the ticket, with no tolerance for delay.",
+          "figures": [
+            "30 minutes"
+          ],
+          "topics": [
+            "underground",
             "timing",
             "logistics"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "You are willing to book 4 to 8 weeks ahead to secure official slots, or pay €63 to €90 for a third-party tour that includes both.",
+          "fact": "Full Experience Arena holders must arrive 15 minutes before and no later than 15 minutes after.",
           "figures": [
-            "4 to 8 weeks",
-            "€63 to €90"
+            "15 minutes"
           ],
           "topics": [
-            "tickets",
-            "pricing",
-            "timing"
-          ]
+            "arena-floor",
+            "timing",
+            "logistics"
+          ],
+          "scale": null
         },
         {
-          "fact": "Standard Colosseum tickets (from €18) do not include either restricted area.",
+          "fact": "Only Arena holders must arrive 15 minutes before, with no tolerance.",
+          "figures": [
+            "15 minutes"
+          ],
+          "topics": [
+            "arena-floor",
+            "timing",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The park lists 3:00 pm for Full Experience Arena, 4:40 pm for the underground ticket and 6:00 pm for Only Arena.",
+          "figures": [
+            "3:00 pm",
+            "4:40 pm",
+            "6:00 pm"
+          ],
+          "topics": [
+            "arena-floor",
+            "underground",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Stay with the standard ticket (€18) if the view from the first and second levels is enough.",
           "figures": [
             "€18"
           ],
           "topics": [
             "tickets",
             "pricing"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Tours that name the arena floor run from $38 to $121.",
+          "figures": [
+            "$38",
+            "$121"
+          ],
+          "topics": [
+            "arena-floor",
+            "pricing",
+            "operators"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "A few cheaper listings, from $36, are standard tours where the arena is an option chosen at checkout, so the price shown is not the price with the arena.",
+          "figures": [
+            "$36"
+          ],
+          "topics": [
+            "arena-floor",
+            "pricing",
+            "operators"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Tours with the underground run from $92 to $196 for group and small-group formats, with a private one at $494.",
+          "figures": [
+            "$92",
+            "$196",
+            "$494"
+          ],
+          "topics": [
+            "underground",
+            "pricing",
+            "operators"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Every underground tour in the catalog is rated 4.5 or higher.",
+          "figures": [
+            "4.5"
+          ],
+          "topics": [
+            "underground",
+            "operators"
+          ],
+          "scale": "The rating is the one shown on each tour page."
+        },
+        {
+          "fact": "The arena tours range from 4.4 to 4.9.",
+          "figures": [
+            "4.4",
+            "4.9"
+          ],
+          "topics": [
+            "arena-floor",
+            "operators"
+          ],
+          "scale": "The rating is the one shown on each tour page."
+        },
+        {
+          "fact": "The cheapest arena tour is $38 and the cheapest underground tour is $92.",
+          "figures": [
+            "$38",
+            "$92"
+          ],
+          "topics": [
+            "arena-floor",
+            "underground",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "€24 for the Full Experience Underground and Arena ticket on the park's official site, or €32 with an educational tour.",
+          "figures": [
+            "€24",
+            "€32"
+          ],
+          "topics": [
+            "underground",
+            "pricing",
+            "tickets"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The Full Experience Arena ticket also costs €24, and 24H Only Arena costs €18.",
+          "figures": [
+            "€24",
+            "€18"
+          ],
+          "topics": [
+            "arena-floor",
+            "pricing",
+            "tickets"
+          ],
+          "scale": null
         }
       ]
     },
@@ -8393,7 +9503,7 @@
       ]
     },
     "complete-guide-to-visiting-the-roman-colosseum-step-by-step": {
-      "hash": "0e2af11345e5896cbb9e4806f4795ce31803a1ef92617b948b2a76dbae3bd67f",
+      "hash": "4fa841a89b3f4937b6f71ec688dbd0a08e32b0dc9dac4cda3a07d30c6b74e976",
       "candidatos": [
         {
           "fact": "Standard Ticket: €18",
@@ -8427,6 +9537,17 @@
           "topics": [
             "tickets",
             "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Tickets are valid for 24 hours and cover all three sites: the Colosseum, Roman Forum, and Palatine Hill",
+          "figures": [
+            "24"
+          ],
+          "topics": [
+            "tickets",
+            "logistics"
           ],
           "scale": null
         },
@@ -8507,7 +9628,7 @@
           "scale": null
         },
         {
-          "fact": "From Piazza Venezia, it’s a pleasant 15-minute stroll down Via dei Fori Imperiali",
+          "fact": "Walking: From Piazza Venezia, it’s a pleasant 15-minute stroll down Via dei Fori Imperiali",
           "figures": [
             "15-minute"
           ],
@@ -8555,7 +9676,6 @@
         {
           "fact": "EU citizens aged 18–25 pay €2, and children under 18 enter free",
           "figures": [
-            "18–25",
             "€2",
             "18"
           ],
@@ -8633,7 +9753,6 @@
             "$45-95"
           ],
           "topics": [
-            "tickets",
             "pricing",
             "skip-the-line",
             "guides"
@@ -8671,7 +9790,8 @@
             "2.5–3 hours"
           ],
           "topics": [
-            "timing"
+            "timing",
+            "forum-palatine"
           ],
           "scale": null
         },
@@ -8683,8 +9803,7 @@
           "topics": [
             "timing",
             "guides",
-            "underground",
-            "arena-floor"
+            "underground"
           ],
           "scale": null
         },
@@ -8693,28 +9812,6 @@
           "figures": [
             "9:00 AM",
             "3:00 PM"
-          ],
-          "topics": [
-            "timing",
-            "crowds"
-          ],
-          "scale": null
-        },
-        {
-          "fact": "Morning (8:30 – 10:30 AM) → Cooler and fewer crowds, best for photos",
-          "figures": [
-            "8:30 – 10:30 AM"
-          ],
-          "topics": [
-            "timing",
-            "crowds"
-          ],
-          "scale": null
-        },
-        {
-          "fact": "Late Afternoon (after 4:00 PM) → Softer light for pictures, fewer tour groups",
-          "figures": [
-            "4:00 PM"
           ],
           "topics": [
             "timing",
@@ -9193,7 +10290,7 @@
       ]
     },
     "gladiators-beasts-and-executions-what-really-happened-in-the-colosseum-arena": {
-      "hash": "2cc28b211113d8a0f5a66e6a0765d395393dcd0c75d21fe263a63c7f3fe65aa5",
+      "hash": "7d81b410954a38a164ab132c396bb162a17be3a2f2de228466936756ff44a404",
       "candidatos": [
         {
           "fact": "In the first century AD about one fight in five killed the loser; by the third century it was closer to one in two.",
@@ -9203,12 +10300,12 @@
           ],
           "topics": [
             "forum-palatine",
-            "timing"
+            "logistics"
           ],
           "scale": null
         },
         {
-          "fact": "With up to 50,000 spectators seated in strict order, from senators down to the common people, the stands mirrored Rome's social pyramid.",
+          "fact": "With some 50,000 spectators (Encyclopaedia Britannica), seated in strict order from senators down to the common people, the stands mirrored Rome's social pyramid.",
           "figures": [
             "50,000"
           ],
@@ -9248,7 +10345,7 @@
           ],
           "topics": [
             "forum-palatine",
-            "underground"
+            "logistics"
           ],
           "scale": null
         },
@@ -9258,16 +10355,26 @@
             "2025"
           ],
           "topics": [
-            "underground",
-            "forum-palatine"
+            "forum-palatine",
+            "underground"
           ],
           "scale": null
         },
         {
           "fact": "The figure for the first century, the decades when the Colosseum opened, comes from the fight results Romans painted on the walls of Pompeii, according to Alfonso Manas, a researcher at the University of California, Berkeley, quoted by Live Science in 2024: about one fight in five ended with the death of the loser.",
           "figures": [
-            "2024",
-            "one in five"
+            "one in five",
+            "2024"
+          ],
+          "topics": [
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The rate went up again in the third century, to about one in two, as fights in which the loser could not ask for mercy became customary again.",
+          "figures": [
+            "one in two"
           ],
           "topics": [
             "forum-palatine"
@@ -9304,7 +10411,7 @@
           "topics": [
             "forum-palatine"
           ],
-          "scale": null
+          "scale": "A gladiator cemetery excavated at Ephesus, in Turkey, and studied by forensic pathologists in 2006 held at least 68 individuals, almost all men aged 20 to 30."
         },
         {
           "fact": "About 15% had head wounds that killed them.",
@@ -9314,7 +10421,7 @@
           "topics": [
             "forum-palatine"
           ],
-          "scale": null
+          "scale": "A gladiator cemetery excavated at Ephesus, in Turkey, and studied by forensic pathologists in 2006 held at least 68 individuals, almost all men aged 20 to 30."
         },
         {
           "fact": "Commodus, emperor from 180 to 192, went down in history as the emperor-gladiator, and the historian Herodian says he used to sleep in a cell of the Ludus Magnus.",
@@ -9328,7 +10435,7 @@
           "scale": null
         },
         {
-          "fact": "The park that runs the Colosseum dates the end differently: its page on the monument says the gladiatorial games were abolished in 438, by order of Emperor Valentinian III, and that the amphitheater then began a \"slow and steady decline\".",
+          "fact": "its page on the monument says the gladiatorial games were abolished in 438, by order of Emperor Valentinian III, and that the amphitheater then began a \"slow and steady decline\"",
           "figures": [
             "438"
           ],
@@ -10038,19 +11145,19 @@
       ]
     },
     "how-to-get-to-the-colosseum-from-termini-vatican-and-trastevere": {
-      "hash": "46a52ef36b5e92a8ac1c14ae5d9ccd0e22dbf7b6b82a5f356bab3162aeab0723",
+      "hash": "41435876c9e4b83404f389bde2564b7d79d78ffecb27c09dbc8950abb1a342b4",
       "candidatos": [
         {
-          "fact": "Metro Line B from Roma Termini to Colosseo station takes about 5 minutes and costs €1.50–2.00.",
+          "fact": "The fastest way to reach the Colosseum is Metro Line B from Roma Termini (2 stops, 5 minutes).",
           "figures": [
-            "5 minutes",
-            "€1.50–2.00"
+            "2",
+            "5 minutes"
           ],
           "topics": [
-            "timing",
-            "pricing",
-            "logistics"
-          ]
+            "logistics",
+            "timing"
+          ],
+          "scale": null
         },
         {
           "fact": "From the Vatican, take Metro Line A to Termini then transfer to Line B (25–35 minutes total).",
@@ -10058,9 +11165,10 @@
             "25–35 minutes"
           ],
           "topics": [
-            "timing",
-            "logistics"
-          ]
+            "logistics",
+            "timing"
+          ],
+          "scale": null
         },
         {
           "fact": "From Trastevere, take tram line 3 directly to Colosseo (20–25 minutes).",
@@ -10068,22 +11176,21 @@
             "20–25 minutes"
           ],
           "topics": [
-            "timing",
-            "logistics"
-          ]
+            "logistics",
+            "timing"
+          ],
+          "scale": null
         },
         {
-          "fact": "The fastest route is the Leonardo Express train to Roma Termini (32 minutes) plus Metro Line B to Colosseo (5 minutes), totaling 45–60 minutes including walking and transfers.",
+          "fact": "From Fiumicino Airport, the Leonardo Express train to Termini plus Metro Line B takes 45–60 minutes total.",
           "figures": [
-            "32 minutes",
-            "5 minutes",
             "45–60 minutes"
           ],
           "topics": [
-            "timing",
             "logistics",
-            "pricing"
-          ]
+            "timing"
+          ],
+          "scale": null
         },
         {
           "fact": "Buy and validate a standard metro ticket (around €1.50–2.00, valid 100 minutes on Rome public transport) at the machines or newsstands before entering the gates.",
@@ -10092,19 +11199,21 @@
             "100 minutes"
           ],
           "topics": [
-            "pricing",
-            "logistics"
-          ]
+            "logistics",
+            "pricing"
+          ],
+          "scale": null
         },
         {
-          "fact": "When you get off at Colosseo, follow the station exits to street level; from there it is only a 2–5‑minute walk to the Colosseum entrances and security checks.",
+          "fact": "The ride usually takes 15–20 minutes, depending on traffic around Via Cavour and the streets near the Roman Forum.",
           "figures": [
-            "2–5‑minute"
+            "15–20 minutes"
           ],
           "topics": [
             "logistics",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "The distance between Roma Termini and the Colosseum is about 1.5–2 km, so most visitors can walk it in 20–25 minutes at a normal pace.",
@@ -10115,7 +11224,31 @@
           "topics": [
             "logistics",
             "timing"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "A taxi from Roma Termini to the Colosseum usually takes 5–10 minutes and costs more than public transport but is still a relatively short, inexpensive ride.",
+          "figures": [
+            "5–10 minutes"
+          ],
+          "topics": [
+            "logistics",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The metro ride itself takes around 20 minutes, but with walking and waiting you should allow 25–35 minutes door to door.",
+          "figures": [
+            "20 minutes",
+            "25–35 minutes"
+          ],
+          "topics": [
+            "logistics",
+            "timing"
+          ],
+          "scale": null
         },
         {
           "fact": "From streets near the Vatican (for example around Piazza Risorgimento or Via Cicerone), bus 87 runs towards the historic centre and on to the Colosseum, usually in 30–35 minutes.",
@@ -10125,7 +11258,8 @@
           "topics": [
             "logistics",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "The distance between the Vatican and the Colosseum is about 3–4 km, which means roughly 45–60 minutes on foot.",
@@ -10136,7 +11270,8 @@
           "topics": [
             "logistics",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "A taxi from the Vatican to the Colosseum usually takes 15–25 minutes and costs around €15–20, depending on traffic and your exact starting point.",
@@ -10145,9 +11280,33 @@
             "€15–20"
           ],
           "topics": [
-            "pricing",
-            "logistics"
-          ]
+            "logistics",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The journey normally takes 20–25 minutes, with trams running every 10–15 minutes during the day.",
+          "figures": [
+            "20–25 minutes",
+            "10–15 minutes"
+          ],
+          "topics": [
+            "logistics",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The ride is usually 18–25 minutes, depending on traffic along the river and around the Forum.",
+          "figures": [
+            "18–25 minutes"
+          ],
+          "topics": [
+            "logistics",
+            "timing"
+          ],
+          "scale": null
         },
         {
           "fact": "The distance from Trastevere to the Colosseum is roughly 3–4 km, or about 30–40 minutes on foot.",
@@ -10158,7 +11317,8 @@
           "topics": [
             "logistics",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "A taxi from Trastevere to the Colosseum typically takes 5–10 minutes and costs around €15–20, depending on exact pickup point and traffic.",
@@ -10167,37 +11327,61 @@
             "€15–20"
           ],
           "topics": [
-            "pricing",
-            "logistics"
-          ]
+            "logistics",
+            "pricing"
+          ],
+          "scale": null
         },
         {
-          "fact": "Take the Leonardo Express to Roma Termini: it is a non-stop service that runs every 15 minutes from 6:23 to 23:53, takes exactly 32 minutes, and costs €14 per person purchased at the airport machines, Trenitalia desks, or online at vivaticket or trenitalia.com.",
+          "fact": "From Fiumicino Airport to the Colosseum, the fastest and most reliable route is the Leonardo Express to Roma Termini, then Metro Line B to Colosseo, with a total journey of about 50–65 minutes door to door.",
+          "figures": [
+            "50–65 minutes"
+          ],
+          "topics": [
+            "logistics",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Take the Leonardo Express to Roma Termini: it is a non-stop service that runs every 15 minutes for most of the day, with departures from the airport from 5:38 to 23:27, takes 32 minutes, and costs €14 per person, the fare on Trenitalia's page (read November 23, 2026), purchased at the airport machines, Trenitalia desks, or online at vivaticket or trenitalia.com.",
           "figures": [
             "15 minutes",
-            "6:23",
-            "23:53",
+            "5:38",
+            "23:27",
             "32 minutes",
             "€14"
           ],
           "topics": [
+            "logistics",
             "pricing",
-            "timing",
-            "logistics"
-          ]
+            "timing"
+          ],
+          "scale": null
         },
         {
-          "fact": "If you want to save on the rail leg, the FL1 regional train also connects Fiumicino to Termini, stopping at several intermediate stations including Trastevere and Ostiense; it costs €8, runs every 15–30 minutes, and takes about 48 minutes.",
+          "fact": "In Trenitalia's regional timetable (valid from November 14, 2026; read November 23, 2026) it runs from the airport through Parco Leonardo, Fiera di Roma, Ponte Galeria, Muratella, Magliana, Villa Bonelli and Roma Trastevere to Roma Ostiense, in about half an hour, and continues to Roma Tuscolana and Roma Tiburtina.",
           "figures": [
-            "€8",
-            "15–30 minutes",
-            "48 minutes"
+            "half an hour"
           ],
           "topics": [
-            "pricing",
-            "timing",
-            "logistics"
-          ]
+            "logistics",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The fare is €8 on Trenitalia's tariff for regional trains between the airport and stations in Rome's ring zone (in force since October 28, 2024; read November 23, 2026), and Trenitalia lists departures every 15 minutes on working days and every 30 minutes on Sundays and public holidays.",
+          "figures": [
+            "€8",
+            "15 minutes",
+            "30 minutes"
+          ],
+          "topics": [
+            "logistics",
+            "pricing"
+          ],
+          "scale": null
         },
         {
           "fact": "Several shuttle bus operators—including Terravision, SIT Bus Shuttle and TAM—run coaches from Fiumicino Terminal 3 to Roma Termini in roughly 55–70 minutes, depending on traffic, at around €6–7 per person.",
@@ -10206,10 +11390,10 @@
             "€6–7"
           ],
           "topics": [
-            "pricing",
-            "timing",
-            "logistics"
-          ]
+            "logistics",
+            "pricing"
+          ],
+          "scale": null
         },
         {
           "fact": "Official white Rome taxis charge a fixed fare of €55 per vehicle (not per person) from Fiumicino Airport to any destination within the Aurelian Walls, which includes the Colosseum area.",
@@ -10217,9 +11401,35 @@
             "€55"
           ],
           "topics": [
-            "pricing",
-            "logistics"
-          ]
+            "logistics",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The fare covers up to 4 passengers and all luggage, with no supplements for time of day or number of bags; from the 5th passenger onwards a supplement of €5 per extra person applies.",
+          "figures": [
+            "4",
+            "5th",
+            "€5"
+          ],
+          "topics": [
+            "logistics",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The drive normally takes 45–60 minutes but can stretch to 75–90 minutes in heavy traffic, particularly on the A91 and GRA ring road at rush hour.",
+          "figures": [
+            "45–60 minutes",
+            "75–90 minutes"
+          ],
+          "topics": [
+            "logistics",
+            "timing"
+          ],
+          "scale": null
         },
         {
           "fact": "Fiumicino to the Colosseum is about 27–30 km and takes 35–55 minutes by car depending on traffic and route.",
@@ -10230,7 +11440,8 @@
           "topics": [
             "logistics",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "From the Pantheon, you can walk towards Piazza Venezia via narrow streets and then follow Via dei Fori Imperiali straight to the Colosseum, in around 20–25 minutes.",
@@ -10240,7 +11451,8 @@
           "topics": [
             "logistics",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
           "fact": "The walk from the Trevi Fountain to the Colosseum takes roughly 20–25 minutes, depending on the exact streets you choose.",
@@ -10250,10 +11462,34 @@
           "topics": [
             "logistics",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "Arrive at least 15–30 minutes before your booked time, avoid bringing large backpacks or prohibited items, and keep your ticket and ID ready to make the entrance process as smooth as possible.",
+          "fact": "From Roma Termini, it is about 1.5–2 km to the Colosseum, or roughly 20–25 minutes on foot.",
+          "figures": [
+            "1.5–2 km",
+            "20–25 minutes"
+          ],
+          "topics": [
+            "logistics",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Walking from the Vatican to the Colosseum takes close to 45–60 minutes, so it is more of a full sightseeing stroll than just a transfer.",
+          "figures": [
+            "45–60 minutes"
+          ],
+          "topics": [
+            "logistics",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Queues here can be the longest, so it is wise to arrive at least 15–30 minutes before your time slot to clear airport‑style security.",
           "figures": [
             "15–30 minutes"
           ],
@@ -10261,27 +11497,115 @@
             "skip-the-line",
             "timing",
             "logistics"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "The Group Gate is located on the north side of the Colosseum and is reserved for guided groups, typically 14–25 people led by an authorised guide.",
+          "fact": "The Group Gate is located on the north side of the Colosseum and is reserved for guided groups: under the park's regulation, parties of more than 8 people accompanied by a guide and holding tickets for the same booked time.",
           "figures": [
-            "14–25"
+            "8"
           ],
           "topics": [
             "guides",
+            "operators",
             "logistics"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "A regional Trenitalia train from Fiumicino to Roma Termini followed by Metro Line B to Colosseo is the cheapest option, costing around €10–12 total.",
+          "fact": "Arrive at least 15–30 minutes before your booked time, avoid bringing large backpacks or prohibited items, and keep your ticket and ID ready to make the entrance process as smooth as possible.",
           "figures": [
-            "€10–12"
+            "15–30 minutes"
           ],
           "topics": [
+            "timing",
+            "logistics",
+            "skip-the-line"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Metro Line B from Roma Termini to Colosseo station takes about 5 minutes and costs €1.50–2.00.",
+          "figures": [
+            "5 minutes",
+            "€1.50–2.00"
+          ],
+          "topics": [
+            "logistics",
             "pricing",
-            "logistics"
-          ]
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The whole trip takes 25–35 minutes including the transfer and walking at both ends.",
+          "figures": [
+            "25–35 minutes"
+          ],
+          "topics": [
+            "logistics",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The fastest route is the Leonardo Express train to Roma Termini (32 minutes) plus Metro Line B to Colosseo (5 minutes), totaling 45–60 minutes including walking and transfers.",
+          "figures": [
+            "32 minutes",
+            "5 minutes",
+            "45–60 minutes"
+          ],
+          "topics": [
+            "logistics",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Yes, the walk takes about 20–25 minutes and is mostly downhill along Via Cavour through the Monti neighbourhood.",
+          "figures": [
+            "20–25 minutes"
+          ],
+          "topics": [
+            "logistics",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "A taxi from the Vatican area to the Colosseum typically costs €15–20 and takes 15–25 minutes depending on traffic.",
+          "figures": [
+            "€15–20",
+            "15–25 minutes"
+          ],
+          "topics": [
+            "logistics",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The lowest rail fare is the FL1 regional train from Fiumicino Airport to Roma Ostiense, €8 on Trenitalia's tariff (read November 23, 2026), followed by Metro Line B from the adjoining Piramide station, 2 stops to Colosseo.",
+          "figures": [
+            "€8",
+            "2"
+          ],
+          "topics": [
+            "logistics",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The Leonardo Express runs non-stop to Termini and costs €14 for the train alone, the fare on Trenitalia's page (read November 23, 2026).",
+          "figures": [
+            "€14"
+          ],
+          "topics": [
+            "logistics",
+            "pricing"
+          ],
+          "scale": null
         }
       ]
     },
@@ -10430,59 +11754,98 @@
       ]
     },
     "private-colosseum-tour": {
-      "hash": "2046164040f3232499364074db837dad2450062069864c6b5cd85c8617441c03",
+      "hash": "1bb269af59e7224b63fd56a12bcad986d03386ccdb790db07dde71d12ddbf2ec",
       "candidatos": [
         {
-          "fact": "Prices range from $150-$500 depending on access level (underground, arena floor, night tours).",
+          "fact": "In our tour catalog, private Colosseum tours start at $285–$500 (checked November 19, 2026)",
           "figures": [
-            "$150-$500"
-          ],
-          "topics": [
-            "pricing"
-          ]
-        },
-        {
-          "fact": "A private Colosseum tour typically costs $150–$250 for a group of 2–5 people and includes skip-the-line entry, a licensed guide who adapts the visit to your interests, and flexible pacing so you can spend more time where it matters most to you.",
-          "figures": [
-            "$150–$250",
-            "2–5"
+            "$285–$500",
+            "November 19, 2026"
           ],
           "topics": [
             "pricing",
-            "skip-the-line",
-            "guides"
-          ]
-        },
-        {
-          "fact": "Special access tours (underground, night tours) can go up to $400–$500 USD for a small group.",
-          "figures": [
-            "$400–$500"
+            "tickets"
           ],
-          "topics": [
-            "pricing",
-            "underground",
-            "night-tours"
-          ]
+          "scale": null
         },
         {
-          "fact": "Most private tours last 2.5 to 3 hours, covering the Colosseum, Roman Forum, and Palatine Hill.",
+          "fact": "Inside the Colosseum the park's regulation allows 75 minutes with a 24h ticket and 90 with a Full Experience ticket",
           "figures": [
-            "2.5",
-            "3"
+            "75 minutes",
+            "90"
           ],
           "topics": [
             "timing",
-            "forum-palatine"
-          ]
+            "tickets"
+          ],
+          "scale": null
         },
         {
-          "fact": "Combine your tour with a sunset aperitivo in Monti (just 10 minutes away) to end the day like a Roman.",
+          "fact": "Standing on the arena, you’ll see the Colosseum from their perspective, surrounded by the tiers of stone where up to 50,000 spectators once cheered",
+          "figures": [
+            "50,000"
+          ],
+          "topics": [
+            "arena-floor"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Most private tours last 2.5 to 3 hours, covering the Colosseum, Roman Forum, and Palatine Hill",
+          "figures": [
+            "2.5 to 3 hours"
+          ],
+          "topics": [
+            "timing",
+            "logistics",
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Private Colosseum tours in our catalog start between $285 and $500",
+          "figures": [
+            "$285",
+            "$500"
+          ],
+          "topics": [
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Combine your tour with a sunset aperitivo in Monti (just 10 minutes away) to end the day like a Roman",
           "figures": [
             "10 minutes"
           ],
           "topics": [
             "logistics"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Private Colosseum tours in our catalog start at $285–$500 (checked November 19, 2026) and include skip-the-line entry, a licensed guide who adapts the visit to your interests, and flexible pacing so you can spend more time where it matters most to you",
+          "figures": [
+            "$285–$500",
+            "November 19, 2026"
+          ],
+          "topics": [
+            "pricing",
+            "skip-the-line",
+            "guides"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Most private Colosseum tours last between 2.5 and 3 hours, covering the Colosseum, Roman Forum, and Palatine Hill",
+          "figures": [
+            "2.5 and 3 hours"
+          ],
+          "topics": [
+            "timing",
+            "forum-palatine"
+          ],
+          "scale": null
         }
       ]
     },
@@ -11478,467 +12841,487 @@
       "candidatos": []
     },
     "skip-the-colosseum-roman-tour-line": {
-      "hash": "72f0663f54b1c71067690e7d7b2f4dca4c6374e5eba2052353b303308de1ce17",
+      "hash": "a3f4ea34ced0fb29b95d8ccd75ab6e9876b19e4a999f5d37054979b5e065e0fd",
       "candidatos": [
         {
-          "fact": "Every pre-booked Colosseum ticket is a skip-the-line ticket — you bypass the ticket office queue (up to 2–4 hours in summer) and go straight to security (10–45 minutes).",
-          "figures": [
-            "2–4 hours",
-            "10–45 minutes"
-          ],
-          "topics": [
-            "skip-the-line",
-            "timing",
-            "tickets"
-          ]
-        },
-        {
-          "fact": "The official €18 ticket from colosseo.it skips the same line as a €30 reseller product.",
+          "fact": "The official standard ticket costs €18 and goes on sale 30 days ahead; tickets with the arena, underground or attic cost €24",
           "figures": [
             "€18",
-            "€30"
-          ],
-          "topics": [
-            "pricing",
-            "tickets",
-            "skip-the-line"
-          ]
-        },
-        {
-          "fact": "Guided tours (€40–€65) add a guide and sometimes a faster group security channel.",
-          "figures": [
-            "€40–€65"
-          ],
-          "topics": [
-            "pricing",
-            "guides",
-            "skip-the-line"
-          ]
-        },
-        {
-          "fact": "Underground tours (€63–€90) add exclusive access.",
-          "figures": [
-            "€63–€90"
-          ],
-          "topics": [
-            "pricing",
-            "underground"
-          ]
-        },
-        {
-          "fact": "Wait times range from 10 minutes (early morning, off-season) to 45 to 60 minutes (midday, August).",
-          "figures": [
-            "10 minutes",
-            "45 to 60 minutes"
-          ],
-          "topics": [
-            "timing",
-            "crowds"
-          ]
-        },
-        {
-          "fact": "Tickets are released approximately 30 days before each visit date.",
-          "figures": [
-            "30 days"
+            "30 days",
+            "€24"
           ],
           "topics": [
             "tickets",
-            "timing",
-            "logistics"
-          ]
-        },
-        {
-          "fact": "The same official entry ticket resold through platforms like GetYourGuide, Viator, or Tiqets with a markup of €4 to €12.",
-          "figures": [
-            "€4 to €12"
-          ],
-          "topics": [
-            "pricing",
-            "tickets",
-            "operators"
-          ]
-        },
-        {
-          "fact": "If the official site has your date, buy there and save €4–€12.",
-          "figures": [
-            "€4–€12"
-          ],
-          "topics": [
-            "pricing",
-            "tickets"
-          ]
-        },
-        {
-          "fact": "Includes the Colosseum entry ticket, a licensed English-speaking guide, headsets, and a structured 2.5-to-3-hour tour covering the Colosseum (levels 1–2), Roman Forum, and Palatine Hill.",
-          "figures": [
-            "2.5-to-3-hour",
-            "1–2"
-          ],
-          "topics": [
-            "guides",
-            "timing",
-            "forum-palatine"
-          ]
-        },
-        {
-          "fact": "Everything in the guided tour plus access to the restricted areas: the hypogeum tunnels beneath the arena (animal cages, elevator shafts, staging corridors) and the reconstructed arena floor where you stand at gladiator level with a 360-degree view of the stands.",
-          "figures": [
-            "360-degree"
-          ],
-          "topics": [
-            "underground",
-            "arena-floor"
-          ]
-        },
-        {
-          "fact": "Only about 2% of daily visitors see these areas.",
-          "figures": [
-            "2%"
-          ],
-          "topics": [
-            "underground",
-            "arena-floor",
-            "crowds"
-          ]
-        },
-        {
-          "fact": "These tours sell out furthest in advance — 4 to 8 weeks ahead in peak season.",
-          "figures": [
-            "4 to 8 weeks"
-          ],
-          "topics": [
-            "underground",
-            "timing",
-            "logistics"
-          ]
-        },
-        {
-          "fact": "The premium is significant — 8x to 10x the official ticket price.",
-          "figures": [
-            "8x to 10x"
-          ],
-          "topics": [
-            "pricing"
-          ]
-        },
-        {
-          "fact": "The Colosseum experience is excellent at the €40–€65 tier.",
-          "figures": [
-            "€40–€65"
-          ],
-          "topics": [
-            "pricing",
-            "guides"
-          ]
-        },
-        {
-          "fact": "The jump from walk-up (2–4 hour ticket queue + 30–60 min security) to any pre-booked ticket (0 min ticket queue + 10–45 min security) saves 2 to 3 hours in peak season.",
-          "figures": [
-            "2–4 hour",
-            "30–60 min",
-            "0 min",
-            "10–45 min",
-            "2 to 3 hours"
-          ],
-          "topics": [
-            "timing",
-            "skip-the-line",
-            "crowds"
-          ]
-        },
-        {
-          "fact": "A guided tour might save you 10 to 15 minutes in security through the group channel versus the individual line.",
-          "figures": [
-            "10 to 15 minutes"
-          ],
-          "topics": [
-            "timing",
-            "guides",
-            "skip-the-line"
-          ]
-        },
-        {
-          "fact": "A VIP tour might save another 5 to 10 minutes through priority handling.",
-          "figures": [
-            "5 to 10 minutes"
-          ],
-          "topics": [
-            "timing",
-            "skip-the-line"
-          ]
-        },
-        {
-          "fact": "The 8:30 a.m. security wait is 10 to 15 minutes for everyone.",
-          "figures": [
-            "8:30 a.m.",
-            "10 to 15 minutes"
-          ],
-          "topics": [
-            "timing",
-            "crowds"
-          ]
-        },
-        {
-          "fact": "The noon security wait is 30 to 45 minutes for everyone.",
-          "figures": [
-            "30 to 45 minutes"
-          ],
-          "topics": [
-            "timing",
-            "crowds"
-          ]
-        },
-        {
-          "fact": "Do not pay more than €28 for a basic entry ticket without a guide.",
-          "figures": [
-            "€28"
-          ],
-          "topics": [
-            "pricing",
-            "tickets",
-            "skip-the-line"
-          ]
-        },
-        {
-          "fact": "The €25–€50 premium over the official ticket is one of the best investments in Rome tourism.",
-          "figures": [
-            "€25–€50"
-          ],
-          "topics": [
-            "pricing",
-            "guides"
-          ]
-        },
-        {
-          "fact": "Same-day upgrades do not exist, and underground slots sell out 4 to 8 weeks ahead in peak season.",
-          "figures": [
-            "4 to 8 weeks"
-          ],
-          "topics": [
-            "underground",
-            "timing",
-            "skip-the-line"
-          ]
-        },
-        {
-          "fact": "a standard guided tour at €40–€65 delivers 80–90% of the same experience at roughly one-third the price.",
-          "figures": [
-            "€40–€65",
-            "80–90%"
-          ],
-          "topics": [
-            "pricing",
-            "guides"
-          ]
-        },
-        {
-          "fact": "If a product costs €25–€30 and the only difference from the €18 official ticket is the words \"skip the line\" on the listing, you are paying €9–€14 for marketing.",
-          "figures": [
-            "€25–€30",
-            "€18",
-            "€9–€14"
-          ],
-          "topics": [
-            "pricing",
-            "skip-the-line",
-            "tickets"
-          ]
-        },
-        {
-          "fact": "Even with skip-the-line, arriving at 10:30 a.m. means 30 to 45 minutes in the security line.",
-          "figures": [
-            "10:30 a.m.",
-            "30 to 45 minutes"
-          ],
-          "topics": [
-            "timing",
-            "skip-the-line"
-          ]
-        },
-        {
-          "fact": "Booking the earliest time slot (8:30–9:30 a.m.) reduces security waits to 10–15 minutes regardless of ticket type — time of day matters more than ticket tier.",
-          "figures": [
-            "8:30–9:30 a.m.",
-            "10–15 minutes"
-          ],
-          "topics": [
-            "timing",
-            "skip-the-line"
-          ]
-        },
-        {
-          "fact": "Every pre-booked timed ticket — including the €18 official ticket from colosseo.it — skips the ticket office queue.",
-          "figures": [
-            "€18"
-          ],
-          "topics": [
-            "tickets",
-            "skip-the-line",
-            "pricing"
-          ]
-        },
-        {
-          "fact": "The difference between a €18 ticket and a €65 guided tour is not line-skipping.",
-          "figures": [
-            "€18",
-            "€65"
-          ],
-          "topics": [
-            "pricing",
-            "guides",
-            "tickets"
-          ]
-        },
-        {
-          "fact": "The security checkpoint (10–45 minutes) cannot be skipped by any ticket.",
-          "figures": [
-            "10–45 minutes"
-          ],
-          "topics": [
-            "timing",
-            "skip-the-line"
-          ]
-        },
-        {
-          "fact": "Pre-booking any timed ticket saves 2 to 3 hours in peak season by eliminating the ticket office queue entirely.",
-          "figures": [
-            "2 to 3 hours"
-          ],
-          "topics": [
-            "timing",
-            "skip-the-line",
-            "crowds"
-          ]
-        },
-        {
-          "fact": "For most first-time visitors, a guided skip-the-line tour at €40–€65 offers the best balance of value and experience — a licensed guide, headsets, and a structured 2.5-to-3-hour visit of the Colosseum, Forum, and Palatine Hill.",
-          "figures": [
-            "€40–€65",
-            "2.5-to-3-hour"
-          ],
-          "topics": [
-            "guides",
-            "pricing",
-            "forum-palatine"
-          ]
-        },
-        {
-          "fact": "Budget travelers should buy the official €18 ticket at colosseo.it, which skips the same line.",
-          "figures": [
-            "€18"
-          ],
-          "topics": [
-            "pricing",
-            "tickets"
-          ]
-        },
-        {
-          "fact": "History enthusiasts should book an underground tour (€63–€90) 4–8 weeks ahead.",
-          "figures": [
-            "€63–€90",
-            "4–8 weeks"
-          ],
-          "topics": [
-            "underground",
             "pricing",
             "timing"
-          ]
+          ],
+          "scale": null
         },
         {
-          "fact": "Tickets are released approximately 30 days before each visit date and sell out fast in peak season.",
+          "fact": "The regulation adds three limits on that counter: it closes 75 minutes before the park closes, it issues at most 8 tickets per transaction, and staff check that the number of tickets matches the people present",
           "figures": [
-            "30 days"
+            "75 minutes",
+            "8"
           ],
           "topics": [
             "tickets",
-            "timing"
-          ]
+            "logistics"
+          ],
+          "scale": null
         },
         {
-          "fact": "Standard skip-the-line tickets start around $25–$35, while Full Experience options (with Underground and Arena Floor) range from $70–$100.",
+          "fact": "Hand luggage may not exceed 30 x 40 x 15 cm, and the park has no cloakroom",
           "figures": [
-            "$25–$35",
-            "$70–$100"
+            "30 x 40 x 15 cm"
           ],
           "topics": [
-            "pricing",
-            "tickets",
-            "underground"
-          ]
-        },
-        {
-          "fact": "Guided tours typically cost $45–$80 depending on group size and inclusions.",
-          "figures": [
-            "$45–$80"
-          ],
-          "topics": [
-            "pricing",
-            "guides"
-          ]
-        },
-        {
-          "fact": "A VIP small-group tour (€135–€160+) delivers the most intimate, flexible experience with 6–10 people and a dedicated guide.",
-          "figures": [
-            "€135–€160+",
-            "6–10"
-          ],
-          "topics": [
-            "pricing",
-            "guides"
-          ]
-        },
-        {
-          "fact": "Skip-the-line tickets have limited daily capacity and sell out 2–4 weeks ahead for popular times.",
-          "figures": [
-            "2–4 weeks"
-          ],
-          "topics": [
-            "skip-the-line",
-            "timing",
-            "tickets"
-          ]
-        },
-        {
-          "fact": "Many tour operators and resellers offer free cancellation up to 24–48 hours before, but always check the cancellation policy before booking",
-          "figures": [
-            "24–48 hours"
-          ],
-          "topics": [
-            "operators",
             "logistics",
-            "tickets"
-          ]
+            "timing"
+          ],
+          "scale": null
         },
         {
-          "fact": "During peak season, standard ticket holders can wait 2–4 hours in line.",
+          "fact": "The regulation sets a €2 ticket for European Union citizens from 18 until the day they turn 25, and free entry for visitors under 18, with no residence condition for the under-18 rule",
           "figures": [
-            "2–4 hours"
+            "€2",
+            "18",
+            "25"
           ],
           "topics": [
-            "timing",
-            "crowds"
-          ]
+            "tickets",
+            "pricing",
+            "kids-families"
+          ],
+          "scale": null
         },
         {
-          "fact": "Skip-the-line access gets you inside in 15–30 minutes, including security screening.",
+          "fact": "The standard 24h ticket covers the first and second levels, and the regulation says in so many words that it excludes the arena floor",
           "figures": [
-            "15–30 minutes"
+            "24h"
+          ],
+          "topics": [
+            "tickets",
+            "arena-floor"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "It does not include the underground, the attic or the SUPER sites on the Palatine and in the Forum; a €4 supplement adds those sites",
+          "figures": [
+            "€4"
+          ],
+          "topics": [
+            "tickets",
+            "pricing",
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Time inside the Colosseum is capped at 75 minutes",
+          "figures": [
+            "75 minutes"
+          ],
+          "topics": [
+            "tickets",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The 24H Only Arena ticket is the reverse: the arena floor and nothing else inside the monument, for 20 minutes, entering and leaving on the Stern spur side",
+          "figures": [
+            "20 minutes"
+          ],
+          "topics": [
+            "tickets",
+            "arena-floor",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The Full Experience Arena ticket adds the arena to the regular route and allows 90 minutes",
+          "figures": [
+            "90 minutes"
+          ],
+          "topics": [
+            "tickets",
+            "arena-floor",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The regulation says the underground is entered in accompanied groups of up to 25 people every 15 minutes, requires arrival 30 minutes before the printed time, and allows no delay",
+          "figures": [
+            "25",
+            "15 minutes",
+            "30 minutes"
+          ],
+          "topics": [
+            "tickets",
+            "underground",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Since November 9, 2026 the park's page says groups of up to 25 are admitted every 30 minutes and that the panoramic lift is reserved for people with reduced mobility who have documented difficulty climbing stairs",
+          "figures": [
+            "November 9, 2026",
+            "25",
+            "30 minutes"
+          ],
+          "topics": [
+            "tickets",
+            "accessibility",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The standard ticket goes on sale 30 days before the visit date",
+          "figures": [
+            "30 days"
+          ],
+          "topics": [
+            "tickets",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The Full Experience Arena ticket is different: its page says it can be bought online starting 7 days before the visit and at ticket offices on the day of the visit",
+          "figures": [
+            "7 days"
+          ],
+          "topics": [
+            "tickets",
+            "timing",
+            "arena-floor"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The regulation also limits how much one buyer can take: 8 named tickets per online transaction, and for the underground a daily maximum of 8 tickets per buyer",
+          "figures": [
+            "8"
+          ],
+          "topics": [
+            "tickets",
+            "underground",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Parties of more than 8 people, accompanied by a guide and holding tickets for the same booked time, must use the entrance reserved for groups and must carry radios",
+          "figures": [
+            "8"
+          ],
+          "topics": [
+            "guides",
+            "operators",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "From 9 people, guide included, earpieces are compulsory",
+          "figures": [
+            "9"
+          ],
+          "topics": [
+            "guides",
+            "operators",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Of 21,308 traveler reviews, posts and comments collected for this site, 419 use \"skip the line\" or a close variant together with the Colosseum",
+          "figures": [
+            "21,308",
+            "419"
           ],
           "topics": [
             "skip-the-line",
-            "timing"
-          ]
+            "crowds"
+          ],
+          "scale": "Of 21,308 traveler reviews, posts and comments collected for this site, 419 use \"skip the line\" or a close variant together with the Colosseum"
         },
         {
-          "fact": "children under 18 (EU residents) often qualify for free or reduced-price entry.",
+          "fact": "Of those, 160 are questions rather than accounts of a visit, and 38 mention the security check",
           "figures": [
-            "18"
+            "160",
+            "38"
+          ],
+          "topics": [
+            "skip-the-line",
+            "crowds"
+          ],
+          "scale": "Of 21,308 traveler reviews, posts and comments collected for this site, 419 use \"skip the line\" or a close variant together with the Colosseum"
+        },
+        {
+          "fact": "In our dataset, 4,252 items are tagged as being about queues or skip-the-line",
+          "figures": [
+            "4,252"
+          ],
+          "topics": [
+            "crowds",
+            "skip-the-line"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Of those, 216 mention the Colosseum and put a length of time next to a word for waiting",
+          "figures": [
+            "216"
+          ],
+          "topics": [
+            "crowds",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "In 73 of them the writer describes their own wait to get into the Colosseum and says how long it was",
+          "figures": [
+            "73"
+          ],
+          "topics": [
+            "crowds",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Some describe two separate waits, which gives 80 waits in all",
+          "figures": [
+            "80"
+          ],
+          "topics": [
+            "crowds",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "At the ticket office, 26 waits",
+          "figures": [
+            "26"
+          ],
+          "topics": [
+            "crowds",
+            "tickets",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Fifteen come from travelers who arrived with no ticket: 13 of those 15 waited more than 30 minutes and 8 waited more than an hour",
+          "figures": [
+            "15",
+            "13",
+            "30 minutes",
+            "8"
+          ],
+          "topics": [
+            "crowds",
+            "tickets",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Seven come from travelers who had paid in advance and still had to queue at a counter to turn a voucher into a ticket; five of those seven waited between 31 and 60 minutes",
+          "figures": [
+            "7",
+            "5",
+            "31-60 minutes"
+          ],
+          "topics": [
+            "crowds",
+            "tickets",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "At the security check or the entry line, ticket in hand, 26 waits",
+          "figures": [
+            "26"
+          ],
+          "topics": [
+            "crowds",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Half of them, 13, were 30 minutes or less, 12 were between 31 and 60 minutes, and one was longer",
+          "figures": [
+            "13",
+            "30 minutes",
+            "12",
+            "31-60 minutes"
+          ],
+          "topics": [
+            "crowds",
+            "timing"
+          ],
+          "scale": "At the security check or the entry line, ticket in hand, 26 waits"
+        },
+        {
+          "fact": "Split by what the traveler held: of 9 waits with an advance ticket and no guide, 6 were 30 minutes or less",
+          "figures": [
+            "9",
+            "6",
+            "30 minutes"
+          ],
+          "topics": [
+            "crowds",
+            "tickets",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Of 14 waits on a guided tour, 10 were longer than 30 minutes",
+          "figures": [
+            "14",
+            "10",
+            "30 minutes"
+          ],
+          "topics": [
+            "crowds",
+            "guides",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "At a meeting point, waiting for a guide or an operator before joining any line, 13 waits",
+          "figures": [
+            "13"
+          ],
+          "topics": [
+            "crowds",
+            "guides",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "All were 15 minutes or more and 5 were longer than 30",
+          "figures": [
+            "15 minutes",
+            "5",
+            "30"
+          ],
+          "topics": [
+            "crowds",
+            "guides",
+            "timing"
+          ],
+          "scale": "At a meeting point, waiting for a guide or an operator before joining any line, 13 waits"
+        },
+        {
+          "fact": "Forty-three of the 73 accounts date from 2019 or earlier and only 22 from 2023 to 2026",
+          "figures": [
+            "43",
+            "73",
+            "2019",
+            "22",
+            "2023",
+            "2026"
+          ],
+          "topics": [
+            "crowds",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "In that recent group the pattern holds in a smaller sample: 9 ticket-office waits, 4 of them over an hour, and 6 security waits, 4 of them 30 minutes or less and none over an hour",
+          "figures": [
+            "9",
+            "4",
+            "6",
+            "30 minutes"
+          ],
+          "topics": [
+            "crowds",
+            "tickets",
+            "timing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The name can be changed once, by e-mail, no later than midnight on the seventh day before the visit, and only in the cases the regulation lists",
+          "figures": [
+            "midnight",
+            "seventh day"
+          ],
+          "topics": [
+            "tickets",
+            "logistics"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "These figures come from the tour catalog on this site, not from the park. Prices are in US dollars, set by each operator, and were last checked against the operators' listings on November 19, 2026",
+          "figures": [
+            "November 19, 2026"
+          ],
+          "topics": [
+            "pricing",
+            "operators"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The Roma Pass reduced ticket costs €11.50",
+          "figures": [
+            "€11.50"
+          ],
+          "topics": [
+            "tickets",
+            "pricing"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Children under 12 enter only with an adult who holds a valid ticket",
+          "figures": [
+            "12"
           ],
           "topics": [
             "kids-families",
-            "pricing",
             "tickets"
-          ]
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Standard and Full Experience Arena tickets allow up to 15 minutes after the printed time",
+          "figures": [
+            "15 minutes"
+          ],
+          "topics": [
+            "tickets",
+            "timing",
+            "arena-floor"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The regulation is published in Italian; the wording here is our translation",
+          "figures": [],
+          "topics": [
+            "logistics"
+          ],
+          "scale": null
         }
       ]
     },
@@ -13415,8 +14798,125 @@
       ]
     },
     "why-was-the-roman-colosseum-built-the-untold-story": {
-      "hash": "9fbe0a7dace7574c7d0cf6ab4cfba07ff8250bef634c06164e75f586a0740290",
-      "candidatos": []
+      "hash": "6ce1027b230904782eccfcca9f660d494267ed8c936946758716280528784fad",
+      "candidatos": [
+        {
+          "fact": "His son Titus inaugurated it in 80 A.D.",
+          "figures": [
+            "80 A.D."
+          ],
+          "topics": [
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The construction of the Colosseum, officially known as the Flavian Amphitheater, began under Emperor Vespasian between the years 70 and 72 A.D.",
+          "figures": [
+            "70",
+            "72 A.D."
+          ],
+          "topics": [
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Although Vespasian died in 79 A.D. and could not see it finished, his son and successor, Emperor Titus, completed the work and inaugurated it in 80 A.D. with celebrations that lasted one hundred days.",
+          "figures": [
+            "79 A.D.",
+            "80 A.D.",
+            "one hundred days"
+          ],
+          "topics": [
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The Colosseum was built on the land that had been occupied by Nero's Domus Aurea, a vast and extravagant palatial complex that covered nearly 50 hectares in the heart of Rome.",
+          "figures": [
+            "50 hectares"
+          ],
+          "topics": [
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "It is estimated that between 12,000 and 20,000 Jewish prisoners of war were brought to Rome to work on the building of the amphitheater, enduring exhausting work and harsh conditions.",
+          "figures": [
+            "12,000",
+            "20,000"
+          ],
+          "topics": [
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The number of animals that died in these games is astonishing, with estimates exceeding one million.",
+          "figures": [
+            "one million"
+          ],
+          "topics": [
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The mortality rate in combat was not as high as believed, estimated at just over 10%.",
+          "figures": [
+            "10%"
+          ],
+          "topics": [
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The date most often given for the end of gladiator combats is 404 A.D.; the park that runs the Colosseum dates their abolition to 438, by order of Emperor Valentinian III.",
+          "figures": [
+            "404 A.D.",
+            "438"
+          ],
+          "topics": [
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "Animal hunts are said to have continued until 523 A.D.",
+          "figures": [
+            "523 A.D."
+          ],
+          "topics": [
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The name \"Colosseum\" became popular in the Middle Ages, probably due to its proximity to the \"Colossus of Nero,\" a gigantic bronze statue more than 30 meters high that stood near the amphitheater.",
+          "figures": [
+            "30 meters"
+          ],
+          "topics": [
+            "forum-palatine"
+          ],
+          "scale": null
+        },
+        {
+          "fact": "The total number of victims in three centuries of persecution was a few thousand , which makes it unlikely that the Colosseum was a primary site for large-scale massacres.",
+          "figures": [
+            "three",
+            "a few thousand"
+          ],
+          "topics": [
+            "forum-palatine"
+          ],
+          "scale": null
+        }
+      ]
     }
   }
 }
